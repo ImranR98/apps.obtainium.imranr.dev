@@ -1,0 +1,32 @@
+{
+    "categories": {
+        "tools": {
+            "en": "Tools"
+        },
+        "other": {
+            "en": "Other"
+        }
+    },
+    "apps": [
+        {
+            "config": {
+                "id": "com.nutomic.syncthingandroid",
+                "url": "https://github.com/syncthing/syncthing-android",
+                "author": "syncthing",
+                "name": "Syncthing",
+                "latestVersion": "1.27.1",
+                "apkUrls": "[[\"app-release.apk\",\"https://api.github.com/repos/syncthing/syncthing-android/releases/assets/140137329\"]]",
+                "preferredApkIndex": 0,
+                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+            },
+            "description": {
+                "en": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers."
+            },
+            "icon": "https://raw.githubusercontent.com/syncthing/syncthing/main/assets/logo.ico",
+            "categories": [
+                "tools",
+                "other"
+            ]
+        }
+    ]
+}
