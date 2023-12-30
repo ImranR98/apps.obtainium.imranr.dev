@@ -1,7 +1,8 @@
 let data = null
 
 function getCategoriesSelectorHTML(categories, selectedCategories, langCode) {
-    let html = `<select id="catSelect" style="width: 100%; min-height: 10em;" multiple>`
+    let html = `<label for="catSelect">Select App Categories:</label>
+    <select id="catSelect" style="width: 100%; min-height: 10em;" multiple>`
     for (const key in categories) {
         const category = categories[key]
         const displayName = category[langCode] || key
@@ -55,7 +56,7 @@ function getAppEntryHTML(appJson, langCode, allCategories) {
 
             <p>${description}</p>
             <div>
-                <a href="obtainium://app/${encodeURIComponent(appJson.config)}">Add to Obtainium</a>
+                <a href="obtainium://app/${encodeURIComponent(JSON.stringify(appJson.config))}">Add to Obtainium</a>
             </div>
             <div style="margin-top: 0.5em;">
                 <a href="javascript:void(0);" onclick="copyAppToClipboard('${appJson.config.id}')">Copy App Config to Clipboard</a>
