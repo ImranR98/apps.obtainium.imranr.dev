@@ -1,10 +1,213 @@
 {
+    "strings": {
+        "title": {
+            "en": "Obtainium Apps"
+        },
+        "subtitle": {
+            "en": "Crowdsourced App Configurations for Obtainium"
+        },
+        "categorySelect": {
+            "en": "Select App Categories"
+        },
+        "go": {
+            "en": "Go"
+        },
+        "addToObtainium": {
+            "en": "Add to Obtainium"
+        },
+        "copyAppConfig": {
+            "en": "Copy App Config to Clipboard"
+        },
+        "categories": {
+            "en": "Categories"
+        }
+    },
     "categories": {
-        "tools": {
-            "en": "Tools"
+        "ad_blocker": {
+            "en": "Ad Blocker"
+        },
+        "anime_and_manga": {
+            "en": "Anime & Manga"
+        },
+        "automation": {
+            "en": "Automation"
+        },
+        "barcode_scanner": {
+            "en": "Barcode Scanner"
+        },
+        "battery": {
+            "en": "Battery"
+        },
+        "browser": {
+            "en": "Browser"
+        },
+        "calculator": {
+            "en": "Calculator"
+        },
+        "calendar": {
+            "en": "Calendar"
+        },
+        "call_blocker_and_spam_filter": {
+            "en": "Call Blocker & Spam Filter"
+        },
+        "camera": {
+            "en": "Camera"
+        },
+        "clock_and_time": {
+            "en": "Clock & Time"
+        },
+        "community_clients": {
+            "en": "Community Clients"
+        },
+        "contacts": {
+            "en": "Contacts"
+        },
+        "dialer": {
+            "en": "Dialer"
+        },
+        "dictionaries": {
+            "en": "Dictionaries"
+        },
+        "document_and_pdf_viewer": {
+            "en": "Document & PDF Viewer"
+        },
+        "document_scanner": {
+            "en": "Document Scanner"
+        },
+        "downloader_and_manager": {
+            "en": "Downloader & Manager"
+        },
+        "drawing": {
+            "en": "Drawing"
+        },
+        "email_aliases": {
+            "en": "Email Aliases"
+        },
+        "email_clients": {
+            "en": "Email Clients"
+        },
+        "emulator": {
+            "en": "Emulator"
+        },
+        "file_manager": {
+            "en": "File Manager"
+        },
+        "file_sharing": {
+            "en": "File Sharing"
+        },
+        "firewall": {
+            "en": "Firewall"
+        },
+        "flashcard": {
+            "en": "Flashcard"
+        },
+        "flashlight": {
+            "en": "Flashlight"
+        },
+        "icon_packs": {
+            "en": "Icon Packs"
+        },
+        "image_manipulation": {
+            "en": "Image Manipulation"
+        },
+        "image_viewer_and_gallery": {
+            "en": "Image Viewer & Gallery"
+        },
+        "keyboard": {
+            "en": "Keyboard"
+        },
+        "launcher_and_desktop": {
+            "en": "Launcher & Desktop"
+        },
+        "maps_and_navigation": {
+            "en": "Maps & Navigation"
+        },
+        "media_frontends": {
+            "en": "Media Frontends"
+        },
+        "messaging": {
+            "en": "Messaging"
+        },
+        "miscellaneous": {
+            "en": "Miscellaneous"
+        },
+        "music": {
+            "en": "Music"
+        },
+        "music_and_audio_player": {
+            "en": "Music & Audio Player"
+        },
+        "notes": {
+            "en": "Notes"
+        },
+        "office": {
+            "en": "Office"
+        },
+        "painting": {
+            "en": "Painting"
+        },
+        "password_and_authentication": {
+            "en": "Password & Authentication"
+        },
+        "podcast_and_audio_book_player": {
+            "en": "Podcast & Audio Book Player"
+        },
+        "research_and_development": {
+            "en": "Research & Development"
+        },
+        "rss_readers": {
+            "en": "RSS Readers"
+        },
+        "sandboxing": {
+            "en": "Sandboxing"
+        },
+        "science_and_education": {
+            "en": "Science & Education"
+        },
+        "sms": {
+            "en": "SMS"
+        },
+        "sports_and_health": {
+            "en": "Sports & Health"
+        },
+        "synchronisation": {
+            "en": "Synchronisation"
+        },
+        "system": {
+            "en": "System"
+        },
+        "text_editors": {
+            "en": "Text Editors"
+        },
+        "text-to-speech": {
+            "en": "Text-to-Speech"
+        },
+        "todo_lists": {
+            "en": "ToDo Lists"
+        },
+        "translation": {
+            "en": "Translation"
+        },
+        "url_manipulation": {
+            "en": "URL Manipulation"
+        },
+        "utilities": {
+            "en": "Utilities"
+        },
+        "video_player": {
+            "en": "Video Player"
+        },
+        "vpn": {
+            "en": "VPN"
+        },
+        "wallpapers": {
+            "en": "Wallpapers"
+        },
+        "weather": {
+            "en": "Weather"
         },
         "other": {
-            "en": "Other"
+            "en": "Uncategorized"
         }
     },
     "apps": [
@@ -24,7 +227,7 @@
             },
             "icon": "https://raw.githubusercontent.com/syncthing/syncthing/main/assets/logo.ico",
             "categories": [
-                "tools"
+                "synchronisation"
             ]
         },
         {

@@ -1,6 +1,6 @@
 let data = null
 
-function getCategoriesSelectorHTML(categories, selectedCategories, langCode) {
+function getCategoriesSelectorHTML(categories, selectedCategories, langCode, strings) {
     let selectHTML = `
     <select id="catSelect" class="select is-fullwidth" style="min-height: 6em;" multiple>`
     for (const key in categories) {
@@ -10,9 +10,10 @@ function getCategoriesSelectorHTML(categories, selectedCategories, langCode) {
         selectHTML += `<option value="${key}" ${isSelected ? 'selected' : ''}>${displayName}</option>`
     }
     selectHTML += `</select>`
-    buttonHTML = `<a class="button is-fullwidth is-primary" style="height: 100%;" href="javascript:void(0);" onclick="reloadWithSelected()">Go</a>`
+    buttonHTML = `<a class="button is-fullwidth is-primary" style="height: 100%;" href="javascript:void(0);" onclick="reloadWithSelected()">${strings.go[langCode] || strings.go['en']
+        }</a>`
     let html = `<div class="container">
-    <label for="catSelect" class="label">Select App Categories:</label>
+    <label for="catSelect" class="label">${strings.categorySelect[langCode] || strings.categorySelect['en']}:</label>
         <div class="columns">
             <div class="column">
                 <div class="field is-grouped">
@@ -60,7 +61,7 @@ function copyAppToClipboard(appId) {
     }
 }
 
-function getAppEntryHTML(appJson, langCode, allCategories) {
+function getAppEntryHTML(appJson, langCode, allCategories, strings) {
     const description = appJson.description && appJson.description[langCode] || ''
     const appCats = appJson.categories.map(category =>
         `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${allCategories[category][langCode]}</a>`).join(', ')
@@ -72,14 +73,18 @@ function getAppEntryHTML(appJson, langCode, allCategories) {
                 </p>
 
                 <p class="subtitle">${description}</p>
-                <a class="button is-primary" href="obtainium://app/${encodeURIComponent(JSON.stringify(appJson.config))}">Add to Obtainium</a>
-                <a class="button is-secondary" href="javascript:void(0);" onclick="copyAppToClipboard('${appJson.config.id}')">Copy App Config to Clipboard</a>
-                <p class="is-size-7 mt-4" style="color: #555;">Categories: ${appCats}</p>
+                <a class="button is-primary" href="obtainium://app/${encodeURIComponent(JSON.stringify(appJson.config))}">
+                    ${strings.addToObtainium[langCode] || strings.addToObtainium['en']}
+                </a>
+                <a class="button is-secondary" href="javascript:void(0);" onclick="copyAppToClipboard('${appJson.config.id}')">
+                    ${strings.copyAppConfig[langCode] || strings.copyAppConfig['en']}
+                </a>
+                <p class="is-size-7 mt-4" style="color: #555;">${strings.categories[langCode] || strings.categories['en']}: ${appCats}</p>
             </div>
         </div>`
 }
 
-function getAppEntriesHTML(appsJson, allCategories, selectedCategories, langCode) {
+function getAppEntriesHTML(appsJson, allCategories, selectedCategories, langCode, strings) {
     appsJson = appsJson.map(app => {
         app.categories = app.categories || []
         app.categories = app.categories.filter(c => Object.keys(allCategories).indexOf(c) >= 0) // Ignore any non-existent categories
@@ -91,7 +96,7 @@ function getAppEntriesHTML(appsJson, allCategories, selectedCategories, langCode
         app.categories.some(item => selectedCategories.includes(item))
     )
     if (appsJson.length > 0) {
-        return appsJson.map(appJson => getAppEntryHTML(appJson, langCode, allCategories)).join('\n')
+        return appsJson.map(appJson => getAppEntryHTML(appJson, langCode, allCategories, strings)).join('\n')
     } else {
         return '<strong>No Apps Found!</strong>'
     }
@@ -103,8 +108,10 @@ function render() {
         selectedCategories = Object.keys(data.categories)
     }
     const langCode = ((navigator.language || navigator.userLanguage) || 'en-US').split('-')[0]
-    document.querySelector('#categories').innerHTML = getCategoriesSelectorHTML(data.categories, selectedCategories, langCode)
-    document.querySelector('#apps').innerHTML = getAppEntriesHTML(data.apps, data.categories, selectedCategories, langCode)
+    document.querySelector('#categories').innerHTML = getCategoriesSelectorHTML(data.categories, selectedCategories, langCode, data.strings)
+    document.querySelector('#apps').innerHTML = getAppEntriesHTML(data.apps, data.categories, selectedCategories, langCode, data.strings)
+    document.querySelector('#title').innerHTML = data.strings.title[langCode] || data.strings.title['en']
+    document.querySelector('#subtitle').innerHTML = data.strings.subtitle[langCode] || data.strings.subtitle['en']
 }
 
 async function fetchAsync(url) {
