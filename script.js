@@ -40,7 +40,7 @@ function getIconHTML(url, name) {
     const placeholderStyle = "transform: rotate(0.31rad); opacity: 0.3;"
     const src = url ? url : placeholderImage
     const style = url ? '' : placeholderStyle
-    return `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 0.9em; max-height: 0.9em; border-radius: 5px; ${style}">`
+    return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 0.9em; max-height: 0.9em; border-radius: 5px; ${style}">` : '<div></div>'
 }
 
 function copyToClipboard(text) {
@@ -61,11 +61,10 @@ function copyAppToClipboard(appId) {
 }
 
 function getAppEntryHTML(appJson, langCode, allCategories) {
-    const description = appJson.description[langCode] || ''
+    const description = appJson.description && appJson.description[langCode] || ''
     const appCats = appJson.categories.map(category =>
-        `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${allCategories[category][langCode]}</a>`).join(", ")
-    return `
-        <div class="card mt-4">
+        `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${allCategories[category][langCode]}</a>`).join(', ')
+    return `<div class="card mt-4">
             <div class="card-content">
                 <p class="title is-flex is-justify-content-space-between">
                     <a href="${appJson.config.url}" style="text-decoration: underline; color: inherit;">${appJson.config.name}</a>
@@ -77,8 +76,7 @@ function getAppEntryHTML(appJson, langCode, allCategories) {
                 <a class="button is-secondary" href="javascript:void(0);" onclick="copyAppToClipboard('${appJson.config.id}')">Copy App Config to Clipboard</a>
                 <p class="is-size-7 mt-4" style="color: #555;">Categories: ${appCats}</p>
             </div>
-        </div>
-    `
+        </div>`
 }
 
 function getAppEntriesHTML(appsJson, allCategories, selectedCategories, langCode) {
@@ -93,7 +91,7 @@ function getAppEntriesHTML(appsJson, allCategories, selectedCategories, langCode
         app.categories.some(item => selectedCategories.includes(item))
     )
     if (appsJson.length > 0) {
-        return appsJson.map(appJson => getAppEntryHTML(appJson, langCode, allCategories))
+        return appsJson.map(appJson => getAppEntryHTML(appJson, langCode, allCategories)).join('\n')
     } else {
         return '<strong>No Apps Found!</strong>'
     }
