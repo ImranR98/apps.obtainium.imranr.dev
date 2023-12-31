@@ -2,20 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obtainium Apps</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <script src="script.js"></script>
+    <title>Obtainium Apps</title>
 </head>
 
-<body style="font-family: 'Arial', sans-serif; padding: 0.5em;">
-    <h1>Obtainium Apps</h1>
-    <div id="categories"></div>
-    <p>
-        <small>Note: The content on this page is crowdsourced - use at your own risk.</small>
-    </p>
-    <div id="apps">Please wait...</div>
+<body>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-half">
+                <h1 class="title">Obtainium Apps</h1>
+                <p class="subtitle">Crowdsourced App Configurations for Obtainium</p>
+            </div>
+            <div class="column is-half">
+                <div id="categories">
+                </div>
+            </div>
+        </div>
+        <div class="container" id="apps">
+        </div>
+    </section>
 </body>
 
 </html>

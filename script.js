@@ -1,16 +1,31 @@
 let data = null
 
 function getCategoriesSelectorHTML(categories, selectedCategories, langCode) {
-    let html = `<label for="catSelect">Select App Categories:</label>
-    <select id="catSelect" style="width: 100%; min-height: 10em;" multiple>`
+    let selectHTML = `
+    <select id="catSelect" class="select is-fullwidth" style="min-height: 6em;" multiple>`
     for (const key in categories) {
         const category = categories[key]
         const displayName = category[langCode] || key
         const isSelected = selectedCategories.includes(key)
-        html += `<option value="${key}" ${isSelected ? 'selected' : ''}>${displayName}</option>`
+        selectHTML += `<option value="${key}" ${isSelected ? 'selected' : ''}>${displayName}</option>`
     }
-    html += `</select>
-    <button style="margin-top: 1em; width: 50%;" onclick="reloadWithSelected()">Go</button>`
+    selectHTML += `</select>`
+    buttonHTML = `<a class="button is-fullwidth is-primary" style="height: 100%;" href="javascript:void(0);" onclick="reloadWithSelected()">Go</a>`
+    let html = `<div class="container">
+    <label for="catSelect" class="label">Select App Categories:</label>
+        <div class="columns">
+            <div class="column">
+                <div class="field is-grouped">
+                    <div class="control is-expanded">
+                        ${selectHTML}
+                    </div>
+                    <div class="control">
+                        ${buttonHTML}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`
     return html
 }
 
@@ -50,18 +65,18 @@ function getAppEntryHTML(appJson, langCode, allCategories) {
     const appCats = appJson.categories.map(category =>
         `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${allCategories[category][langCode]}</a>`).join(", ")
     return `
-        <div style="margin: 1em auto; padding: 1em; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-            <h1 style="margin-bottom: 10px;">${getIconHTML(appJson.icon, appJson.config.name)}&nbsp;<a href="${appJson.config.url}" style="text-decoration: underline; color: inherit;">${appJson.config.name}</a></h1>
-            
+        <div class="card mt-4">
+            <div class="card-content">
+                <p class="title is-flex is-justify-content-space-between">
+                    <a href="${appJson.config.url}" style="text-decoration: underline; color: inherit;">${appJson.config.name}</a>
+                    ${getIconHTML(appJson.icon, appJson.config.name)}
+                </p>
 
-            <p>${description}</p>
-            <div>
-                <a href="obtainium://app/${encodeURIComponent(JSON.stringify(appJson.config))}">Add to Obtainium</a>
+                <p class="subtitle">${description}</p>
+                <a class="button is-primary" href="obtainium://app/${encodeURIComponent(JSON.stringify(appJson.config))}">Add to Obtainium</a>
+                <a class="button is-secondary" href="javascript:void(0);" onclick="copyAppToClipboard('${appJson.config.id}')">Copy App Config to Clipboard</a>
+                <p class="is-size-7 mt-4" style="color: #555;">Categories: ${appCats}</p>
             </div>
-            <div style="margin-top: 0.5em;">
-                <a href="javascript:void(0);" onclick="copyAppToClipboard('${appJson.config.id}')">Copy App Config to Clipboard</a>
-            </div>
-            <p style="font-size: 0.9em; color: #555;">Categories: ${appCats}</p>
         </div>
     `
 }
