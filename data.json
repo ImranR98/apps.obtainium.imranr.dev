@@ -12,6 +12,9 @@
         "go": {
             "en": "Go"
         },
+        "search": {
+            "en": "Regex Search"
+        },
         "addToObtainium": {
             "en": "Add to Obtainium"
         },
