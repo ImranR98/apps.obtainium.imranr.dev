@@ -47,7 +47,7 @@ function search(event){
         element.style.display = regex.test([
                 app.config.id,
                 app.config.name,
-                Object.values(app.description||{})
+                Object.values(app.description||{}).join('\n')
             ].join('\n'))?'':'none';
     });
 }
