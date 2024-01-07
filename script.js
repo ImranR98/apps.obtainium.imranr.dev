@@ -2,7 +2,7 @@ let data = null
 const langCode = ((navigator.language || navigator.userLanguage) || 'en-US').split('-')[0]
 
 function getString(key){
-    return data.strings[key][langCode] || data.strings[key]['en'];
+    return getLocalString(data.strings[key]);
 }
 
 function getCategoriesSelectorHTML(categories, selectedCategories) {
@@ -10,7 +10,7 @@ function getCategoriesSelectorHTML(categories, selectedCategories) {
     <select id="catSelect" class="select is-fullwidth" style="min-height: 6em;" multiple>`
     for (const key in categories) {
         const category = categories[key]
-        const displayName = category[langCode] || key
+        const displayName = getLocalString(category) || key
         const isSelected = selectedCategories.includes(key)
         selectHTML += `<option value="${key}" ${isSelected ? 'selected' : ''}>${displayName}</option>`
     }
@@ -66,11 +66,18 @@ function getIconHTML(url, name) {
     return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 0.9em; max-height: 0.9em; border-radius: 5px; ${style}">` : '<div></div>'
 }
 
+function getLocalString(langObject){
+    return langObject ? (langObject[langCode] || langObject.en||'') : '';
+}
+
 function getAppConfigString(appJson){
     const config = appJson.config;
-    config.additionalSettings = JSON.parse(config.additionalSettings);
-    if(appJson.description) config.additionalSettings.about = appJson.description[langCode];
-    config.additionalSettings = JSON.stringify(config.additionalSettings);
+    const description = getLocalString(appJson.description);
+    if(description){
+        config.additionalSettings = JSON.parse(config.additionalSettings);
+        config.additionalSettings.about = description;
+        config.additionalSettings = JSON.stringify(config.additionalSettings);
+    }
     return JSON.stringify(config);
 }
 
@@ -92,9 +99,9 @@ function copyAppToClipboard(appIndex) {
 }
 
 function getAppEntryHTML(appJson, appIndex, allCategories) {
-    const description = appJson.description && appJson.description[langCode] || ''
+    const description = getLocalString(appJson.description);
     const appCats = appJson.categories.map(category =>
-        `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${allCategories[category][langCode]}</a>`).join(', ')
+        `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${getLocalString(allCategories[category])}</a>`).join(', ')
     return `<div class="card mt-4">
             <div class="card-content">
                 <p class="title is-flex is-justify-content-space-between">
