@@ -74,9 +74,9 @@ function getAppConfigString(appJson){
     const config = appJson.config;
     const description = getLocalString(appJson.description);
     if(description){
-        config.additionalSettings = JSON.parse(config.additionalSettings);
-        config.additionalSettings.about = description;
-        config.additionalSettings = JSON.stringify(config.additionalSettings);
+        const settings = JSON.parse(config.additionalSettings);
+        if(!settings.about) settings.about = description;
+        config.additionalSettings = JSON.stringify(settings);
     }
     return JSON.stringify(config);
 }
