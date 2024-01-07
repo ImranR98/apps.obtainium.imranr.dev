@@ -66,6 +66,14 @@ function getIconHTML(url, name) {
     return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 0.9em; max-height: 0.9em; border-radius: 5px; ${style}">` : '<div></div>'
 }
 
+function getAppConfigString(appJson){
+    const config = appJson.config;
+    config.additionalSettings = JSON.parse(config.additionalSettings);
+    if(appJson.description) config.additionalSettings.about = appJson.description[langCode];
+    config.additionalSettings = JSON.stringify(config.additionalSettings);
+    return JSON.stringify(config);
+}
+
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
         alert('Copied!')
@@ -78,7 +86,7 @@ function copyAppToClipboard(appIndex) {
     if (data) {
         let app = data.selectedApps[appIndex]
         if (app) {
-            copyToClipboard(JSON.stringify(app.config))
+            copyToClipboard(getAppConfigString(app))
         }
     }
 }
@@ -95,7 +103,7 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
                 </p>
 
                 <p class="subtitle">${description}</p>
-                <a class="button is-primary" href="obtainium://app/${encodeURIComponent(JSON.stringify(appJson.config))}">
+                <a class="button is-primary" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson))}">
                     ${getString('addToObtainium')}
                 </a>
                 <a class="button is-secondary" href="javascript:void(0);" onclick="copyAppToClipboard('${appIndex}')">
