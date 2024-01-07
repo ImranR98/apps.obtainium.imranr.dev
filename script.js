@@ -16,7 +16,7 @@ function getCategoriesSelectorHTML(categories, selectedCategories) {
     }
     selectHTML += `</select>`
     const buttonHTML = `<a class="button is-fullwidth is-primary" style="height: 100%;" href="javascript:void(0);" onclick="reloadWithSelected()">${getString('go')}</a>`
-    const searchHTML = `<input placeholder="${getString('search')}" type="search" class="input is-fullwidth" style="min-height: 6em;" oninput="search(event)">`
+    const searchHTML = `<input placeholder="${getString('search')}" type="search" class="input is-fullwidth" oninput="search(event)">`
     const html = `<div class="container">
     <label for="catSelect" class="label">${getString('categorySelect')}:</label>
         <div class="columns">
