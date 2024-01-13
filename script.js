@@ -117,7 +117,7 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
                     ${getString('copyAppConfig')}
                 </a>
                 <p class="is-size-7 mt-4" style="color: #555;">${getString('categories')}: ${appCats}</p>
-                ${appJson.configs.length == 1 ? '' : `<hr class="is-divider"><p class="title is-5">Alternative Configurations</p>
+                ${appJson.configs.length == 1 ? '' : `<hr class="is-divider"><p class="title is-5">${getString('altConfigs')}</p>
                 <ul>${appJson.configs.slice(1).map((cfg, ind) => {
         return `
                     <li><div class="is-half is-flex is-align-items-center">
