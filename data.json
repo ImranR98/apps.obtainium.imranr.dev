@@ -215,16 +215,24 @@
     },
     "apps": [
         {
-            "config": {
-                "id": "com.nutomic.syncthingandroid",
-                "url": "https://github.com/syncthing/syncthing-android",
-                "author": "syncthing",
-                "name": "Syncthing",
-                "latestVersion": "1.27.1",
-                "apkUrls": "[[\"app-release.apk\",\"https://api.github.com/repos/syncthing/syncthing-android/releases/assets/140137329\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            },
+            "configs": [
+                {
+                    "id": "com.nutomic.syncthingandroid",
+                    "url": "https://github.com/syncthing/syncthing-android",
+                    "author": "syncthing",
+                    "name": "Syncthing",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                },
+                {
+                    "id": "com.nutomic.syncthingandroid",
+                    "url": "https://f-droid.org/packages/com.nutomic.syncthingandroid",
+                    "author": "F-Droid Official",
+                    "name": "Syncthing",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":\"standardVersionDetection\",\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
             "description": {
                 "en": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers."
             },
@@ -234,208 +242,208 @@
             ]
         },
         {
-            "config": {
-                "id": "com.cheogram.android",
-                "url": "https://git.singpolyma.net/cheogram-android",
-                "author": "singpolyma@singpolyma.net (Stephen Paul Weber)",
-                "name": "Cheogram",
-                "latestVersion": "2.13.0-1",
-                "apkUrls": "[[\"com.cheogram.android_4204700.apk\",\"https://git.singpolyma.net//cheogram-android/refs/download/2.13.0-1/com.cheogram.android_4204700.apk\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"android_\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "com.cheogram.android",
+                    "url": "https://git.singpolyma.net/cheogram-android",
+                    "author": "singpolyma@singpolyma.net (Stephen Paul Weber)",
+                    "name": "Cheogram",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"android_\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "io.homeassistant.companion.android",
-                "url": "https://github.com/home-assistant/android",
-                "author": "home-assistant",
-                "name": "Home Assistant",
-                "latestVersion": "2023.10.2",
-                "apkUrls": "[[\"app-full-release.apk\",\"https://api.github.com/repos/home-assistant/android/releases/assets/129563824\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"app-full-release\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "io.homeassistant.companion.android",
+                    "url": "https://github.com/home-assistant/android",
+                    "author": "home-assistant",
+                    "name": "Home Assistant",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"app-full-release\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "com.tommasoberlose.anotherwidget.azuo",
-                "url": "https://github.com/azuo/another-widget",
-                "author": "azuo",
-                "name": "Another Widget",
-                "latestVersion": "v2.3.3.7",
-                "apkUrls": "[[\"another-widget_2.3.3-patch7.apk\",\"https://api.github.com/repos/azuo/another-widget/releases/assets/107352518\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "com.tommasoberlose.anotherwidget.azuo",
+                    "url": "https://github.com/azuo/another-widget",
+                    "author": "azuo",
+                    "name": "Another Widget",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "org.koreader.launcher",
-                "url": "https://github.com/koreader/koreader",
-                "author": "koreader",
-                "name": "KOReader",
-                "latestVersion": "v2023.10",
-                "apkUrls": "[[\"koreader-android-arm64-v2023.10.apk\",\"https://api.github.com/repos/koreader/koreader/releases/assets/133093073\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"arm64\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "org.koreader.launcher",
+                    "url": "https://github.com/koreader/koreader",
+                    "author": "koreader",
+                    "name": "KOReader",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"arm64\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "io.heckel.ntfy",
-                "url": "https://github.com/binwiederhier/ntfy-android",
-                "author": "binwiederhier",
-                "name": "ntfy",
-                "latestVersion": "v1.16.0",
-                "apkUrls": "[[\"ntfy-1.16.0-fdroid-debug.apk\",\"https://api.github.com/repos/binwiederhier/ntfy-android/releases/assets/87823933\"],[\"ntfy-1.16.0-fdroid-release.apk\",\"https://api.github.com/repos/binwiederhier/ntfy-android/releases/assets/87823917\"],[\"ntfy-1.16.0-play-debug.apk\",\"https://api.github.com/repos/binwiederhier/ntfy-android/releases/assets/87823908\"],[\"ntfy-1.16.0-play-release.apk\",\"https://api.github.com/repos/binwiederhier/ntfy-android/releases/assets/87823897\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "io.heckel.ntfy",
+                    "url": "https://github.com/binwiederhier/ntfy-android",
+                    "author": "binwiederhier",
+                    "name": "ntfy",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "net.mullvad.mullvadvpn",
-                "url": "https://mullvad.net",
-                "author": "Mullvad",
-                "name": "Mullvad VPN",
-                "latestVersion": "2023.10",
-                "apkUrls": "[[\"latest\",\"https://mullvad.net/download/app/apk/latest\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "net.mullvad.mullvadvpn",
+                    "url": "https://mullvad.net",
+                    "author": "Mullvad",
+                    "name": "Mullvad VPN",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "dev.patrickgold.florisboard.beta",
-                "url": "https://github.com/florisboard/florisboard",
-                "author": "florisboard",
-                "name": "FlorisBoard Beta",
-                "latestVersion": "v0.4.0-alpha04",
-                "apkUrls": "[[\"florisboard-0.4.0-alpha04.apk\",\"https://api.github.com/repos/florisboard/florisboard/releases/assets/76585815\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "dev.patrickgold.florisboard.beta",
+                    "url": "https://github.com/florisboard/florisboard",
+                    "author": "florisboard",
+                    "name": "FlorisBoard Beta",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "com.mgoogle.android.gms",
-                "url": "https://github.com/teamvanced/vancedmicrog",
-                "author": "teamvanced",
-                "name": "Vanced microG",
-                "latestVersion": "v0.2.24.220220-220220001",
-                "apkUrls": "[[\"microg.apk\",\"https://api.github.com/repos/TeamVanced/VancedMicroG/releases/assets/59033636\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "com.mgoogle.android.gms",
+                    "url": "https://github.com/teamvanced/vancedmicrog",
+                    "author": "teamvanced",
+                    "name": "Vanced microG",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "net.gsantner.markor",
-                "url": "https://github.com/gsantner/markor",
-                "author": "gsantner",
-                "name": "Markor",
-                "latestVersion": "v2.11.0",
-                "apkUrls": "[[\"net.gsantner.markor-v147-2.11.0-flavorDefault-release.apk\",\"https://api.github.com/repos/gsantner/markor/releases/assets/130102296\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "net.gsantner.markor",
+                    "url": "https://github.com/gsantner/markor",
+                    "author": "gsantner",
+                    "name": "Markor",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "com.beemdevelopment.aegis",
-                "url": "https://github.com/beemdevelopment/aegis",
-                "author": "beemdevelopment",
-                "name": "Aegis",
-                "latestVersion": "v2.2.2",
-                "apkUrls": "[[\"aegis-v2.2.2.apk\",\"https://api.github.com/repos/beemdevelopment/Aegis/releases/assets/125266043\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "com.beemdevelopment.aegis",
+                    "url": "https://github.com/beemdevelopment/aegis",
+                    "author": "beemdevelopment",
+                    "name": "Aegis",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "app.revanced.manager.flutter",
-                "url": "https://github.com/revanced/revanced-manager",
-                "author": "revanced",
-                "name": "ReVanced Manager",
-                "latestVersion": "v1.17.3",
-                "apkUrls": "[[\"revanced-manager-v1.17.3.apk\",\"https://api.github.com/repos/ReVanced/revanced-manager/releases/assets/140205739\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "app.revanced.manager.flutter",
+                    "url": "https://github.com/revanced/revanced-manager",
+                    "author": "revanced",
+                    "name": "ReVanced Manager",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "com.x8bit.bitwarden",
-                "url": "https://github.com/bitwarden/mobile",
-                "author": "bitwarden",
-                "name": "Bitwarden",
-                "latestVersion": "v2023.12.0",
-                "apkUrls": "[[\"com.x8bit.bitwarden.apk\",\"https://api.github.com/repos/bitwarden/mobile/releases/assets/139291124\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"bitwarden.apk\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "com.x8bit.bitwarden",
+                    "url": "https://github.com/bitwarden/mobile",
+                    "author": "bitwarden",
+                    "name": "Bitwarden",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"bitwarden.apk\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "org.breezyweather",
-                "url": "https://github.com/breezy-weather/breezy-weather",
-                "author": "breezy-weather",
-                "name": "Breezy Weather",
-                "latestVersion": "v4.6.12-beta",
-                "apkUrls": "[[\"breezy-weather-arm64-v8a-v4.6.12-beta.apk\",\"https://api.github.com/repos/breezy-weather/breezy-weather/releases/assets/139113639\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "org.breezyweather",
+                    "url": "https://github.com/breezy-weather/breezy-weather",
+                    "author": "breezy-weather",
+                    "name": "Breezy Weather",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "deckers.thibault.aves",
-                "url": "https://github.com/deckerst/aves",
-                "author": "deckerst",
-                "name": "Aves",
-                "latestVersion": "v1.10.0",
-                "apkUrls": "[[\"app-izzy-arm64-v8a-release.apk\",\"https://api.github.com/repos/deckerst/aves/releases/assets/138597246\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"izzy\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "deckers.thibault.aves",
+                    "url": "https://github.com/deckerst/aves",
+                    "author": "deckerst",
+                    "name": "Aves",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"izzy\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "org.tasks",
-                "url": "https://f-droid.org/packages/org.tasks",
-                "author": "Alex Baker",
-                "name": "Tasks",
-                "latestVersion": "13.6.3",
-                "apkUrls": "[[\"org.tasks_130605.apk\",\"https://f-droid.org/repo/org.tasks_130605.apk\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "org.tasks",
+                    "url": "https://f-droid.org/packages/org.tasks",
+                    "author": "Alex Baker",
+                    "name": "Tasks",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "me.ash.reader",
-                "url": "https://github.com/ashinch/readyou",
-                "author": "ashinch",
-                "name": "Read You",
-                "latestVersion": "0.9.8",
-                "apkUrls": "[[\"ReadYou-0.9.8-84156d2.apk\",\"https://api.github.com/repos/Ashinch/ReadYou/releases/assets/108404529\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "me.ash.reader",
+                    "url": "https://github.com/ashinch/readyou",
+                    "author": "ashinch",
+                    "name": "Read You",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         },
         {
-            "config": {
-                "id": "com.catalinagroup.callrecorder",
-                "url": "https://cubeacr.app/latest-update.html",
-                "author": "cubeacr.app",
-                "name": "Cube ACR",
-                "latestVersion": "221118910",
-                "apkUrls": "[[\"https://cubeacr.app//distrib/Cube%20ACR%202.2.100232.apk\",\"https://cubeacr.app//distrib/Cube%20ACR%202.2.100232.apk\"]]",
-                "preferredApkIndex": 0,
-                "additionalSettings": "{\"sortByFileNamesNotLinks\":false,\"reverseSort\":true,\"supportFixedAPKURL\":true,\"customLinkFilterRegex\":\"\",\"intermediateLinkRegex\":\"\",\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionExtractWholePage\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-            }
+            "configs": [
+                {
+                    "id": "com.catalinagroup.callrecorder",
+                    "url": "https://cubeacr.app/latest-update.html",
+                    "author": "cubeacr.app",
+                    "name": "Cube ACR",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"sortByFileNamesNotLinks\":false,\"reverseSort\":true,\"supportFixedAPKURL\":true,\"customLinkFilterRegex\":\"\",\"intermediateLinkRegex\":\"\",\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionExtractWholePage\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ]
         }
     ]
 }

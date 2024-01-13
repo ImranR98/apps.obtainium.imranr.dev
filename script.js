@@ -1,7 +1,7 @@
 let data = null
 const langCode = ((navigator.language || navigator.userLanguage) || 'en-US').split('-')[0]
 
-function getString(key){
+function getString(key) {
     return getLocalString(data.strings[key]);
 }
 
@@ -40,15 +40,15 @@ function getCategoriesSelectorHTML(categories, selectedCategories) {
     return html
 }
 
-function search(event){
-    const regex = new RegExp(event.target.value,'ims');
-    document.querySelectorAll('#apps > *').forEach((element,appIndex) => {
+function search(event) {
+    const regex = new RegExp(event.target.value, 'ims');
+    document.querySelectorAll('#apps > *').forEach((element, appIndex) => {
         const app = data.selectedApps[appIndex];
         element.style.display = regex.test([
-                app.config.id,
-                app.config.name,
-                Object.values(app.description||{}).join('\n')
-            ].join('\n'))?'':'none';
+            app.configs[0].id,
+            Array.from(new Set(app.configs.map(c => c.name))).join(' '),
+            Object.values(app.description || {}).join('\n')
+        ].join('\n')) ? '' : 'none';
     });
 }
 
@@ -66,16 +66,16 @@ function getIconHTML(url, name) {
     return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 0.9em; max-height: 0.9em; border-radius: 5px; ${style}">` : '<div></div>'
 }
 
-function getLocalString(langObject){
-    return langObject ? (langObject[langCode] || langObject.en||'') : '';
+function getLocalString(langObject) {
+    return langObject ? (langObject[langCode] || langObject.en || '') : '';
 }
 
-function getAppConfigString(appJson){
-    const config = appJson.config;
+function getAppConfigString(appJson, configIndex = 0) {
+    const config = appJson.configs[configIndex];
     const description = getLocalString(appJson.description);
-    if(description){
+    if (description) {
         const settings = JSON.parse(config.additionalSettings);
-        if(!settings.about) settings.about = description;
+        if (!settings.about) settings.about = description;
         config.additionalSettings = JSON.stringify(settings);
     }
     return JSON.stringify(config);
@@ -89,11 +89,11 @@ function copyToClipboard(text) {
     })
 }
 
-function copyAppToClipboard(appIndex) {
+function copyAppToClipboard(appIndex, configIndex = 0) {
     if (data) {
         let app = data.selectedApps[appIndex]
         if (app) {
-            copyToClipboard(getAppConfigString(app))
+            copyToClipboard(getAppConfigString(app, configIndex))
         }
     }
 }
@@ -105,18 +105,33 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
     return `<div class="card mt-4">
             <div class="card-content">
                 <p class="title is-flex is-justify-content-space-between">
-                    <a href="${appJson.config.url}" style="text-decoration: underline; color: inherit;">${appJson.config.name}</a>
-                    ${getIconHTML(appJson.icon, appJson.config.name)}
+                    <a href="${appJson.configs[0].url}" style="text-decoration: underline; color: inherit;">${appJson.configs[0].name}</a>
+                    ${getIconHTML(appJson.icon, appJson.configs[0].name)}
                 </p>
 
                 <p class="subtitle">${description}</p>
-                <a class="button is-primary" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson))}">
+                <a class="button is-primary" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson, 0))}">
                     ${getString('addToObtainium')}
                 </a>
-                <a class="button is-secondary" href="javascript:void(0);" onclick="copyAppToClipboard('${appIndex}')">
+                <a class="button is-secondary" href="javascript:void(0);" onclick="copyAppToClipboard('${appIndex}', 0)">
                     ${getString('copyAppConfig')}
                 </a>
                 <p class="is-size-7 mt-4" style="color: #555;">${getString('categories')}: ${appCats}</p>
+                ${appJson.configs.length == 1 ? '' : `<hr class="is-divider"><p class="title is-5">Alternative Configurations</p>
+                <ul>${appJson.configs.slice(1).map((cfg, ind) => {
+        return `
+                    <li><div class="is-half is-flex is-align-items-center">
+                        <p><code>${new URL(cfg.url).host}</code> - <strong>${cfg.name}</strong></p>
+                            <div class="mx-5">
+                                <a class="button is-primary is-small" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson, ind + 1))}">
+                                    ${getString('addToObtainium')}
+                                </a>
+                                <a class="button is-secondary is-small" href="javascript:void(0);" onclick="copyAppToClipboard('${appIndex}', ${ind + 1})">
+                                    ${getString('copyAppConfig')}
+                                </a>
+                            </div>
+                        </div></li>`})}
+                </ul>`}
             </div>
         </div>`
 }
@@ -134,7 +149,7 @@ function getAppEntriesHTML(appsJson, allCategories, selectedCategories) {
     )
     data.selectedApps = appsJson;
     if (appsJson.length > 0) {
-        return appsJson.map((appJson,appIndex) => getAppEntryHTML(appJson, appIndex, allCategories)).join('\n')
+        return appsJson.map((appJson, appIndex) => getAppEntryHTML(appJson, appIndex, allCategories)).join('\n')
     } else {
         return '<strong>No Apps Found!</strong>'
     }
@@ -167,5 +182,3 @@ window.addEventListener('load', () => {
             alert('Error! See console for details.')
         })
 })
-
-// For local testing: python -m http.server 8080
