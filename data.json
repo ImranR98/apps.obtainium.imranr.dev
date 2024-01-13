@@ -4,33 +4,46 @@
             "en": "Obtainium Apps"
         },
         "subtitle": {
-            "en": "Crowdsourced App Configurations for Obtainium"
+            "en": "Crowdsourced App Configurations for Obtainium",
+            "de": "Von der Gemeinschaft erstellte App-Konfigurationen für Obtainium"
         },
         "categorySelect": {
-            "en": "Select App Categories"
+            "en": "Select App Categories",
+            "de": "Wähle eine Kategorie aus"
         },
         "go": {
-            "en": "Go"
+            "en": "Go",
+            "de": "Los"
         },
         "search": {
-            "en": "Regex Search"
+            "en": "Regex Search",
+            "de": "Regex Suche"
         },
         "addToObtainium": {
-            "en": "Add to Obtainium"
+            "en": "Add to Obtainium",
+            "de": "App hinzufügen"
         },
         "copyAppConfig": {
-            "en": "Copy App Config to Clipboard"
+            "en": "Copy App Config to Clipboard",
+            "de": "App in die Zwischenablage kopieren"
         },
         "categories": {
-            "en": "Categories"
+            "en": "Categories",
+            "de": "Kategorien"
         },
         "altConfigs": {
-            "en": "Alternative Configurations"
+            "en": "Alternative Configurations",
+            "de": "Andere Konfigurationen"
         }
     },
     "categories": {
+        "2FA": {
+            "en": "Two Factor Authentification",
+            "de": "Zweifaktorauthentifizierung"
+        },
         "ad_blocker": {
-            "en": "Ad Blocker"
+            "en": "Ad Blocker",
+            "de": "Werberblocker"
         },
         "anime_and_manga": {
             "en": "Anime & Manga"
@@ -42,61 +55,77 @@
             "en": "Barcode Scanner"
         },
         "battery": {
-            "en": "Battery"
+            "en": "Battery",
+            "de": "Akku"
         },
         "browser": {
             "en": "Browser"
         },
         "calculator": {
-            "en": "Calculator"
+            "en": "Calculator",
+            "de": "Taschenrechner"
         },
         "calendar": {
-            "en": "Calendar"
+            "en": "Calendar",
+            "de": "Kalender"
         },
         "call_blocker_and_spam_filter": {
-            "en": "Call Blocker & Spam Filter"
+            "en": "Call Blocker & Spam Filter",
+            "de": "Anrufblocker & Spam Filter"
         },
         "camera": {
-            "en": "Camera"
+            "en": "Camera",
+            "de": "Kamera"
         },
         "clock_and_time": {
-            "en": "Clock & Time"
+            "en": "Clock & Time",
+            "de": "Uhrzeit"
         },
         "community_clients": {
-            "en": "Community Clients"
+            "en": "Community Clients",
+            "de": "Clients für Communitys und Social Media"
         },
         "contacts": {
-            "en": "Contacts"
+            "en": "Contacts",
+            "de": "Kontakte"
         },
         "dialer": {
-            "en": "Dialer"
+            "en": "Dialer",
+            "de": "Telefon"
         },
         "dictionaries": {
-            "en": "Dictionaries"
+            "en": "Dictionaries",
+            "de": "Wörterbücher"
         },
         "document_and_pdf_viewer": {
-            "en": "Document & PDF Viewer"
+            "en": "Document & PDF Viewer",
+            "de": "Dokument-Viewer"
         },
         "document_scanner": {
-            "en": "Document Scanner"
+            "en": "Document Scanner",
+            "de": "Dokumentenscanner"
         },
         "downloader_and_manager": {
             "en": "Downloader & Manager"
         },
         "drawing": {
-            "en": "Drawing"
+            "en": "Drawing",
+            "de": "Bildbearbeitung & (digitales) Malen"
         },
         "email_aliases": {
-            "en": "Email Aliases"
+            "en": "Email Aliases",
+            "de": "Email Aliase"
         },
         "email_clients": {
             "en": "Email Clients"
         },
         "emulator": {
-            "en": "Emulator"
+            "en": "Emulator",
+            "de": "Emulatoren"
         },
         "file_manager": {
-            "en": "File Manager"
+            "en": "File Manager",
+            "de": "Dateimanager"
         },
         "file_sharing": {
             "en": "File Sharing"
@@ -108,19 +137,23 @@
             "en": "Flashcard"
         },
         "flashlight": {
-            "en": "Flashlight"
+            "en": "Flashlight",
+            "de": "Taschenlampe"
         },
         "icon_packs": {
             "en": "Icon Packs"
         },
         "image_manipulation": {
-            "en": "Image Manipulation"
+            "en": "Image Manipulation",
+            "de": "Bildbearbeitung"
         },
         "image_viewer_and_gallery": {
-            "en": "Image Viewer & Gallery"
+            "en": "Image Viewer & Gallery",
+            "de": "Fotoanzeiger & Gallerien"
         },
         "keyboard": {
-            "en": "Keyboard"
+            "en": "Keyboard",
+            "de": "Tastatur"
         },
         "launcher_and_desktop": {
             "en": "Launcher & Desktop"
@@ -132,73 +165,88 @@
             "en": "Media Frontends"
         },
         "messaging": {
-            "en": "Messaging"
+            "en": "Messaging",
+            "de": "Messanger"
         },
         "miscellaneous": {
             "en": "Miscellaneous"
         },
         "music": {
-            "en": "Music"
+            "en": "Music",
+            "de": "Musik"
         },
         "music_and_audio_player": {
-            "en": "Music & Audio Player"
+            "en": "Music & Audio Player",
+            "de": "Musik- & Audio-Player"
         },
         "notes": {
-            "en": "Notes"
+            "en": "Notes",
+            "de": "Notizprogramme"
         },
         "office": {
             "en": "Office"
         },
         "painting": {
-            "en": "Painting"
+            "en": "Painting",
+            "de": "(digitales) Malen"
         },
         "password_and_authentication": {
-            "en": "Password & Authentication"
+            "en": "Password & Authentication",
+            "de": "Passwort(managing) & Authentifizierung"
         },
         "podcast_and_audio_book_player": {
-            "en": "Podcast & Audio Book Player"
+            "en": "Podcast & Audio Book Player",
+            "de": "Podcast-, Hörbuch- & Hörspiel-Player"
         },
         "research_and_development": {
             "en": "Research & Development"
         },
         "rss_readers": {
-            "en": "RSS Readers"
+            "en": "RSS Readers",
+            "de": "RSS Reader"
         },
         "sandboxing": {
             "en": "Sandboxing"
         },
         "science_and_education": {
-            "en": "Science & Education"
+            "en": "Science & Education",
+            "de": "Wissenschaft & Bildung"
         },
         "sms": {
-            "en": "SMS"
+            "en": "SMS & MMS"
         },
         "sports_and_health": {
-            "en": "Sports & Health"
+            "en": "Sports & Health",
+            "de": "Fittnes, Sport & Gesundheit"
         },
         "synchronisation": {
-            "en": "Synchronisation"
+            "en": "Synchronisation",
+            "de": "Synchronisation"
         },
         "system": {
             "en": "System"
         },
         "text_editors": {
-            "en": "Text Editors"
+            "en": "Text Editors",
+            "de": "Text Editoren"
         },
         "text-to-speech": {
             "en": "Text-to-Speech"
         },
         "todo_lists": {
-            "en": "ToDo Lists"
+            "en": "ToDo Lists",
+            "de": "ToDo-Listen"
         },
         "translation": {
-            "en": "Translation"
+            "en": "Translation",
+            "de": "Übersetzer"
         },
         "url_manipulation": {
             "en": "URL Manipulation"
         },
         "utilities": {
-            "en": "Utilities"
+            "en": "Utilities",
+            "de": "Tools & Snippits"
         },
         "video_player": {
             "en": "Video Player"
@@ -210,10 +258,12 @@
             "en": "Wallpapers"
         },
         "weather": {
-            "en": "Weather"
+            "en": "Weather",
+            "de": "Wetter"
         },
         "other": {
-            "en": "Uncategorized"
+            "en": "Uncategorized",
+            "de": "Unkategorisiert"
         }
     },
     "apps": [
@@ -237,7 +287,8 @@
                 }
             ],
             "description": {
-                "en": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers."
+                "en": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.",
+                "de": "Syncthing synchronisiert kontinuierlich Dateien zwischen einem oder mehreren Computeren oder Servern."
             },
             "icon": "https://raw.githubusercontent.com/syncthing/syncthing/main/assets/logo.ico",
             "categories": [
@@ -362,6 +413,10 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "2FA",
+                "password_and_authentication"
             ]
         },
         {
