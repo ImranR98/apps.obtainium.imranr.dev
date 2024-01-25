@@ -30,17 +30,27 @@
             Redirecting to Obtainium...
             <button id="redirectBtn" class="btn btn-primary ml-2">Click here if you are not redirected</button>
         </div>
+        <div id="appLink" class="mt-5" style="display: none;">
+            Don't have Obtainium? Visit <span id="appName">the app's</span> home page <a id="appLinkHref" href="#">here</a>.
+        </div>
     </div>
     <script>
         window.onload = function() {
             var urlParams = new URLSearchParams(window.location.search);
             var redirectUrl = urlParams.get('r');
             if (redirectUrl && redirectUrl.startsWith('obtainium://')) {
+                var appData = JSON.parse(decodeURIComponent(redirectUrl.replace('obtainium://app/', '')));
                 document.getElementById('redirecting').style.display = 'block';
                 window.location.href = redirectUrl;
                 document.getElementById('redirectBtn').onclick = function() {
                     window.location.href = redirectUrl;
                 };
+                document.getElementById('appLink').style.display = 'block';
+                var appLinkHref = document.getElementById('appLinkHref');
+                appLinkHref.href = appData.url;
+                if (appData.name) {
+                    document.getElementById('appName').textContent = appData.name + "'s";
+                }
             } else {
                 document.getElementById('error').style.display = 'block';
             }
