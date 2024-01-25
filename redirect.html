@@ -24,7 +24,7 @@
 <body>
     <div class="container text-center">
         <div id="error" class="alert alert-danger mt-5" style="display: none;">
-            Invalid URL. Redirect should be provided and start with "obtainium://".
+            
         </div>
         <div id="redirecting" class="alert alert-info mt-5" style="display: none;">
             Redirecting to Obtainium...
@@ -62,6 +62,7 @@
                 }
             } else {
                 document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = 'Invalid URL. Redirect should be provided and start with "obtainium://".';
             }
         };
     </script>
