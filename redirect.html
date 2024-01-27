@@ -44,9 +44,9 @@
                 try {
                     var appData = JSON.parse(decodeURIComponent(redirectUrl.replace('obtainium://app/', '')));
                     document.getElementById('redirecting').style.display = 'block';
-                    window.location.href = redirectUrl;
+                    window.location.href = "obtainium://app/" + (encodeURIComponent(redirectUrl.replace('obtainium://app/', '')));
                     document.getElementById('redirectBtn').onclick = function() {
-                        window.location.href = redirectUrl;
+                        window.location.href = "obtainium://app/" + (encodeURIComponent(redirectUrl.replace('obtainium://app/', '')));
                     };
                     document.getElementById('appLink').style.display = 'block';
                     document.getElementById('downloadLink').style.display = 'block';
