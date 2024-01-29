@@ -52,7 +52,7 @@
                         if (!urlPattern.test(appData.url)) {
                             throw new Error;
                         }
-                        redirectUrl = "obtainium://add/" + encodeURIComponent(appData.url);
+                        redirectUrl = "obtainium://add/" + appData.url;
                     }
                     document.getElementById('redirecting').style.display = 'block';
                     window.location.href = redirectUrl;
