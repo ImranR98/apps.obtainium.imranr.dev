@@ -48,6 +48,10 @@
                         redirectUrl = "obtainium://app/" + encodeURIComponent(JSON.stringify(appData));
                     } else if (redirectUrl.startsWith('obtainium://add/')) {
                         appData.url = decodeURIComponent(redirectUrl.replace('obtainium://add/', ''));
+                        var urlPattern = new RegExp('^(http://|https://)');
+                        if (!urlPattern.test(appData.url)) {
+                            throw new Error;
+                        }
                         redirectUrl = "obtainium://add/" + encodeURIComponent(appData.url);
                     }
                     document.getElementById('redirecting').style.display = 'block';
