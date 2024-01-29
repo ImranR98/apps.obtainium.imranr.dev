@@ -40,13 +40,20 @@
         window.onload = function() {
             var urlParams = new URLSearchParams(window.location.search);
             var redirectUrl = urlParams.get('r');
-            if (redirectUrl && redirectUrl.startsWith('obtainium://')) {
+            if (redirectUrl && (redirectUrl.startsWith('obtainium://app/') || redirectUrl.startsWith('obtainium://add/'))) {
                 try {
-                    var appData = JSON.parse(decodeURIComponent(redirectUrl.replace('obtainium://app/', '')));
+                    var appData = {};
+                    if (redirectUrl.startsWith('obtainium://app/')) {
+                        appData = JSON.parse(decodeURIComponent(redirectUrl.replace('obtainium://app/', '')));
+                        redirectUrl = "obtainium://app/" + encodeURIComponent(JSON.stringify(appData));
+                    } else if (redirectUrl.startsWith('obtainium://add/')) {
+                        appData.url = decodeURIComponent(redirectUrl.replace('obtainium://add/', ''));
+                        redirectUrl = "obtainium://add/" + encodeURIComponent(appData.url);
+                    }
                     document.getElementById('redirecting').style.display = 'block';
-                    window.location.href = "obtainium://app/" + (encodeURIComponent(redirectUrl.replace('obtainium://app/', '')));
+                    window.location.href = redirectUrl;
                     document.getElementById('redirectBtn').onclick = function() {
-                        window.location.href = "obtainium://app/" + (encodeURIComponent(redirectUrl.replace('obtainium://app/', '')));
+                        window.location.href = redirectUrl;
                     };
                     document.getElementById('appLink').style.display = 'block';
                     document.getElementById('downloadLink').style.display = 'block';
@@ -61,7 +68,7 @@
                 }
             } else {
                 document.getElementById('error').style.display = 'block';
-                document.getElementById('error').textContent = 'Invalid URL. Redirect should be provided and start with "obtainium://".';
+                document.getElementById('error').textContent = 'Invalid URL. Redirect should be provided and start with "obtainium://add" or "obtainium://app".';
             }
         };
     </script>
