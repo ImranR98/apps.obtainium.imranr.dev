@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtainium Redirect</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <div id="error" class="alert alert-danger mt-5" style="display: none;">
+        </div>
+        <div id="redirecting" class="alert alert-info mt-5 justify-content-center" style="display: none;">
+            <p style="font-size: 20px;">Redirecting to Obtainium...</p>
+            <button id="redirectBtn" class="btn btn-primary" style="padding: 10px 20px; font-size: 18px;">Click here if you are not redirected</button>
+        </div>
+        <div id="appLink" class="mt-5" style="display: none;">
+            Don't have Obtainium? Visit <span id="appName">the app's</span> home page <a id="appLinkHref" href="#">here</a>.
+        </div>
+        <div id="downloadLink" class="mt-5" style="display: none;">
+            OR, <a href="https://github.com/ImranR98/Obtainium/releases/latest">download Obtainium here</a>.
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var redirectUrl = urlParams.get('r');
+            if (redirectUrl && (redirectUrl.startsWith('obtainium://app/') || redirectUrl.startsWith('obtainium://add/'))) {
+                try {
+                    var appData = {};
+                    if (redirectUrl.startsWith('obtainium://app/')) {
+                        appData = JSON.parse(decodeURIComponent(redirectUrl.replace('obtainium://app/', '')));
+                        redirectUrl = "obtainium://app/" + encodeURIComponent(JSON.stringify(appData));
+                    } else if (redirectUrl.startsWith('obtainium://add/')) {
+                        appData.url = decodeURIComponent(redirectUrl.replace('obtainium://add/', ''));
+                        var urlPattern = new RegExp('^(http://|https://)');
+                        if (!urlPattern.test(appData.url)) {
+                            throw new Error;
+                        }
+                        redirectUrl = "obtainium://add/" + appData.url;
+                    }
+                    document.getElementById('redirecting').style.display = 'block';
+                    window.location.href = redirectUrl;
+                    document.getElementById('redirectBtn').onclick = function() {
+                        window.location.href = redirectUrl;
+                    };
+                    document.getElementById('appLink').style.display = 'block';
+                    document.getElementById('downloadLink').style.display = 'block';
+                    var appLinkHref = document.getElementById('appLinkHref');
+                    appLinkHref.href = appData.url;
+                    if (appData.name) {
+                        document.getElementById('appName').textContent = appData.name + "'s";
+                    }
+                } catch (e) {
+                    document.getElementById('error').style.display = 'block';
+                    document.getElementById('error').textContent = 'Invalid URL. Valid app URL could not be found.';
+                }
+            } else {
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = 'Invalid URL. Redirect should be provided and start with "obtainium://add" or "obtainium://app".';
+            }
+        };
+    </script>
+</body>
+</html>
