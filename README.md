@@ -1,9 +1,6 @@
 # apps.obtainium.imranr.dev
 
-See https://github.com/ImranR98/Obtainium/issues/1214 for details.
-
-To test locally: `python -m http.server 8080`
-
+Crowdsourced App Configurations for [Obtainium](https://github.com/ImranR98/Obtainium).
 
 ## URL Redirection
 
@@ -28,6 +25,12 @@ To add an app config to this repo, your app configuration JSON must contain at l
 For example:
 - Minimal app JSON: `{"id":"dev.patrickgold.florisboard.beta","url":"https://github.com/florisboard/florisboard","author":"florisboard","name":"FlorisBoard Beta","additionalSettings":"{\"includePrereleases\":true}"}`
 - As URL: http://apps.obtainium.imranr.dev/redirect.html?r=obtainium://app/%7B%22id%22%3A%22dev.patrickgold.florisboard.beta%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fflorisboard%2Fflorisboard%22%2C%22author%22%3A%22florisboard%22%2C%22name%22%3A%22FlorisBoard%20Beta%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%7D%22%7D
+
+## Usage
+
+- To contribute content, create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with valid changes to `data.json`.
+- To test locally, run: `python -m http.server 8080`
+- See https://github.com/ImranR98/Obtainium/issues/1214 for background/context for this repo.
 
 ## Badge Graphic
 
