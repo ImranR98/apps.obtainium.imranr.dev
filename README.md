@@ -15,7 +15,7 @@ For example:
 
 ## Link Types
 
-Obtainium links are of 2 types:
+As of this writing, there are two types of Obtainium links:
 
 1. `/add`: These redirect the user to the "Add App" page with the URL pre-filled in. The user can then modify any app-specific setting before adding it themselves.
 2. `/app`: These links contain an entire app configuration JSON and opening them in Obtainium results in the app being added directly into the user's list, with the app-specific settings included in the link.
