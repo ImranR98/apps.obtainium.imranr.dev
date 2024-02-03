@@ -514,6 +514,38 @@
                     "additionalSettings": "{\"sortByFileNamesNotLinks\":false,\"reverseSort\":true,\"supportFixedAPKURL\":true,\"customLinkFilterRegex\":\"\",\"intermediateLinkRegex\":\"\",\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionExtractWholePage\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
             ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "com.retroarch.aarch64",
+                    "url": "https://buildbot.libretro.com/nightly/android",
+                    "author": "buildbot.libretro.com",
+                    "name": "RetroArch (AArch64)",
+                    "apkUrls":"[[\"https://buildbot.libretro.com/nightly/android/2024-02-03-RetroArch_aarch64.apk\",\"https://buildbot.libretro.com/nightly/android/2024-02-03-RetroArch_aarch64.apk\"]]",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}-RetroArch_aarch64.apk\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":true,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}-RetroArch_aarch64.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":true,\"sortByFileNamesNotLinks\":true,\"intermediateLinkRegex\":\"\"}"
+                }
+            ],
+            "categories": [
+                "emulator"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "com.retroarch.aarch64",
+                    "url": "https://buildbot.libretro.com/nightly/android",
+                    "author": "buildbot.libretro.com",
+                    "name": "RetroArch (AArch64)",
+                    "apkUrls":"[[\"https://buildbot.libretro.com/nightly/android/2024-02-03-RetroArch_aarch64.apk\",\"https://buildbot.libretro.com/nightly/android/2024-02-03-RetroArch_aarch64.apk\"]]",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}-RetroArch_aarch64.apk\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":true,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}-RetroArch_aarch64.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":true,\"sortByFileNamesNotLinks\":true,\"intermediateLinkRegex\":\"\"}"
+                }
+            ],
+            "categories": [
+                "emulator"
+                ]
         }
     ]
 }
