@@ -140,6 +140,10 @@
             "en": "Flashlight",
             "de": "Taschenlampe"
         },
+        "games": {
+            "en": "Games",
+            "de": "Spiele"
+        },
         "icon_packs": {
             "en": "Icon Packs"
         },
@@ -647,7 +651,112 @@
                 }
             ],
             "categories": [
-                "media_frontends"
+                "launcher_and_desktop"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "app.titanius.launcher",
+                    "url": "https://github.com/dsolonenko/titanius-launcher",
+                    "author": "dsolonenko",
+                    "name": "Titanius Launcher",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "launcher_and_desktop"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "com.dishii.soh",
+                    "url": "https://github.com/Waterdish/Shipwright-Android",
+                    "author": "Waterdish",
+                    "name": "Ship of Harkinian",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "games"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "org.stjr.srb2",
+                    "url": "https://github.com/SRB2-Mobile/SRB2-Android",
+                    "author": "SRB2-Mobile",
+                    "name": "Sonic Robo Blast 2",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "games"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "com.mixplorer.beta",
+                    "url": "https://mixplorer.com/beta",
+                    "author": "mixplorer.com",
+                    "name": "MiXplorer (Beta)",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}"
+                }
+            ],
+            "categories": [
+                "file_manager"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "com.machiav3lli.backup",
+                    "url": "https://github.com/NeoApplications/Neo-Backup",
+                    "author": "NeoApplications",
+                    "name": "Neo Backup",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "utilities"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "org.dolphinemu.mmjr",
+                    "url": "https://github.com/Medard22/Dolphin-MMJR2-VBI",
+                    "author": "Medard22",
+                    "name": "Dolphin |MMJR2| VBI",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "emulator"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "de.langerhans.odintools",
+                    "url": "https://github.com/langerhans/OdinTools",
+                    "author": "langerhans",
+                    "name": "Odin Tools",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "utilities"
                 ]
         }
         
