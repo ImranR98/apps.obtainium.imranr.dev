@@ -310,6 +310,21 @@
         {
             "configs": [
                 {
+                    "id": "de.marmaro.krt.ffupdater",
+                    "url": "https://github.com/Tobi823/ffupdater",
+                    "author": "Tobi823",
+                    "name": "FFUpdater",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"app-full-release\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "downloader_and_manager"
+            ]
+        },
+        {
+            "configs": [
+                {
                     "id": "com.tommasoberlose.anotherwidget.azuo",
                     "url": "https://github.com/azuo/another-widget",
                     "author": "azuo",
@@ -805,7 +820,5 @@
                 "utilities"
                 ]
         }
-    
-        
     ]
 }
