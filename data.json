@@ -553,21 +553,6 @@
         {
             "configs": [
                 {
-                    "id": "org.yuzu.yuzu_emu",
-                    "url": "https://github.com/yuzu-emu/yuzu-android",
-                    "author": "yuzu-emu",
-                    "name": "Yuzu",
-                    "preferredApkIndex": 0,
-                    "additionalSettings": "{\"includePrereleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-                }
-            ],
-            "categories": [
-                "emulator"
-                ]
-        },
-        {
-            "configs": [
-                {
                     "id": "org.vita3k.emulator",
                     "url": "https://github.com/Vita3K/Vita3K-Android",
                     "author": "Vita3K",
@@ -608,21 +593,6 @@
             ],
             "categories": [
                 "miscallaneous"
-                ]
-        },
-        {
-            "configs": [
-                {
-                    "id": "org.citra.citra_emu",
-                    "url": "https://github.com/citra-emu/citra-nightly",
-                    "author": "citra-emu",
-                    "name": "Citra Emulator (Nightly)",
-                    "preferredApkIndex": 0,
-                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Citra Nightly\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-                }
-            ],
-            "categories": [
-                "emulator"
                 ]
         },
         {
