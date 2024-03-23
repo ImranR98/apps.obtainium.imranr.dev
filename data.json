@@ -112,10 +112,6 @@
             "en": "Drawing",
             "de": "Bildbearbeitung & (digitales) Malen"
         },
-        "email_aliases": {
-            "en": "Email Aliases",
-            "de": "Email Aliase"
-        },
         "email_clients": {
             "en": "Email Clients"
         },
@@ -132,13 +128,6 @@
         },
         "firewall": {
             "en": "Firewall"
-        },
-        "flashcard": {
-            "en": "Flashcard"
-        },
-        "flashlight": {
-            "en": "Flashlight",
-            "de": "Taschenlampe"
         },
         "games": {
             "en": "Games",
@@ -179,16 +168,9 @@
             "en": "Music",
             "de": "Musik"
         },
-        "music_and_audio_player": {
-            "en": "Music & Audio Player",
-            "de": "Musik- & Audio-Player"
-        },
         "notes": {
             "en": "Notes",
             "de": "Notizprogramme"
-        },
-        "office": {
-            "en": "Office"
         },
         "painting": {
             "en": "Painting",
@@ -236,10 +218,6 @@
         },
         "text-to-speech": {
             "en": "Text-to-Speech"
-        },
-        "todo_lists": {
-            "en": "ToDo Lists",
-            "de": "ToDo-Listen"
         },
         "translation": {
             "en": "Translation",
@@ -339,7 +317,12 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "weather",
+                "calendar"
             ]
+            
         },
         {
             "configs": [
@@ -351,6 +334,10 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"arm64\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "utilities",
+                "anime_and_manga"
             ]
         },
         {
@@ -363,6 +350,9 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "utilities"
             ]
         },
         {
@@ -375,6 +365,9 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "vpn"
             ]
         },
         {
@@ -387,6 +380,9 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "keyboard"
             ]
         },
         {
@@ -399,6 +395,9 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "system"
             ]
         },
         {
@@ -411,6 +410,9 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "text_editors"
             ]
         },
         {
@@ -439,6 +441,9 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "utilities"
             ]
         },
         {
@@ -481,6 +486,10 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"izzy\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "video_player",
+                "image_viewer_and_gallery"
             ]
         },
         {
@@ -493,6 +502,9 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "utilities"
             ]
         },
         {
@@ -505,6 +517,10 @@
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
+            ],
+            "categories": [
+                "rss_readers",
+                "utilities"
             ]
         },
         {
@@ -528,21 +544,6 @@
                     "name": "RetroArch Nightly (AArch64)",
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}-RetroArch_aarch64.apk\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":true,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}-RetroArch_aarch64.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":true,\"sortByFileNamesNotLinks\":true,\"intermediateLinkRegex\":\"\"}"
-                }
-            ],
-            "categories": [
-                "emulator"
-                ]
-        },
-        {
-            "configs": [
-                {
-                    "id": "org.yuzu.yuzu_emu",
-                    "url": "https://github.com/yuzu-emu/yuzu-android",
-                    "author": "yuzu-emu",
-                    "name": "Yuzu",
-                    "preferredApkIndex": 0,
-                    "additionalSettings": "{\"includePrereleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
             ],
             "categories": [
@@ -588,21 +589,6 @@
                     "name": "LibreTorrent",
                     "preferredApkIndex": 0,
                     "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
-                }
-            ],
-            "categories": [
-                "miscallaneous"
-                ]
-        },
-        {
-            "configs": [
-                {
-                    "id": "org.citra.citra_emu",
-                    "url": "https://github.com/citra-emu/citra-nightly",
-                    "author": "citra-emu",
-                    "name": "Citra Emulator (Nightly)",
-                    "preferredApkIndex": 0,
-                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Citra Nightly\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
                 }
             ],
             "categories": [
@@ -773,7 +759,53 @@
             "categories": [
                 "utilities"
                 ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "org.adaway",
+                    "url": "https://github.com/AdAway/AdAway",
+                    "author": "AdAway",
+                    "name": "AdAway",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "ad_blocker"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "io.github.sds100.keymapper",
+                    "url": "https://github.com/keymapperorg/KeyMapper",
+                    "author": "keymapperorg",
+                    "name": "Key Mapper",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "utilities"
+                ]
+        },
+        {
+            "configs": [
+                {
+                    "id": "org.emunix.unipatcher",
+                    "url": "https://github.com/btimofeev/UniPatcher",
+                    "author": "btimofeev",
+                    "name": "UniPatcher",
+                    "preferredApkIndex": 0,
+                    "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+                }
+            ],
+            "categories": [
+                "utilities"
+                ]
         }
+    
         
     ]
 }
