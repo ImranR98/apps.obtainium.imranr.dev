@@ -8,6 +8,5 @@
             "preferredApkIndex": 0,
             "additionalSettings": "{\"sortByFileNamesNotLinks\":false,\"reverseSort\":true,\"supportFixedAPKURL\":true,\"customLinkFilterRegex\":\"\",\"intermediateLinkRegex\":\"\",\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionExtractWholePage\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
-    ],
-    "optionalOrderIndex": 19
+    ]
 }

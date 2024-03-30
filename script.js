@@ -8,12 +8,17 @@ function getString(key) {
 function getCategoriesSelectorHTML(categories, selectedCategories) {
     let selectHTML = `
     <select id="catSelect" class="select is-fullwidth" style="min-height: 6em;" multiple>`
-    for (const key in categories) {
-        const category = categories[key]
-        const displayName = getLocalString(category) || key
-        const isSelected = selectedCategories.includes(key)
-        selectHTML += `<option value="${key}" ${isSelected ? 'selected' : ''}>${displayName}</option>`
-    }
+    Object.keys(categories)
+        .map(key => {
+            return {
+                key,
+                category: categories[key],
+                displayName: getLocalString(categories[key]) || key,
+                isSelected: selectedCategories.includes(key)
+            }
+        })
+        .sort((da, db) => da.displayName.localeCompare(db.displayName))
+        .forEach(d => selectHTML += `<option value="${d.key}" ${d.isSelected ? 'selected' : ''}>${d.displayName}</option>`)
     selectHTML += `</select>`
     const buttonHTML = `<a class="button is-fullwidth is-primary" style="height: 100%;" href="javascript:void(0);" onclick="reloadWithSelected()">${getString('go')}</a>`
     const searchHTML = `<input placeholder="${getString('search')}" type="search" class="input is-fullwidth" oninput="search(event)">`
@@ -149,7 +154,7 @@ function getAppEntriesHTML(appsJson, allCategories, selectedCategories) {
     )
     data.selectedApps = appsJson;
     if (appsJson.length > 0) {
-        return appsJson.map((appJson, appIndex) => getAppEntryHTML(appJson, appIndex, allCategories)).join('\n')
+        return appsJson.sort((a, b) => a.configs[0].name.localeCompare(b.configs[0].name)).map((appJson, appIndex) => getAppEntryHTML(appJson, appIndex, allCategories)).join('\n')
     } else {
         return '<strong>No Apps Found!</strong>'
     }

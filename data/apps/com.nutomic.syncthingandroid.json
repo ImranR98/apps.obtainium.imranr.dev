@@ -24,6 +24,5 @@
     "icon": "https://raw.githubusercontent.com/syncthing/syncthing/main/assets/logo.ico",
     "categories": [
         "synchronisation"
-    ],
-    "optionalOrderIndex": 1
+    ]
 }
