@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "com.mgoogle.android.gms",
+            "url": "https://github.com/teamvanced/vancedmicrog",
+            "author": "teamvanced",
+            "name": "Vanced microG",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "system"
+    ],
+    "optionalOrderIndex": 10
+}

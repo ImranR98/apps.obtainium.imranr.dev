@@ -28,8 +28,8 @@ For example:
 
 ## Usage
 
-- To contribute content, create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with valid changes to `data.json`.
-- To test locally, run: `python -m http.server 8080`
+- To contribute content, create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with valid changes to the files in `data/`.
+- To test locally, run: `node buildData.js; python -m http.server 8080`
 - See https://github.com/ImranR98/Obtainium/issues/1214 for background/context for this repo.
 
 ## Badge Graphic

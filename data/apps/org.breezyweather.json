@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "org.breezyweather",
+            "url": "https://github.com/breezy-weather/breezy-weather",
+            "author": "breezy-weather",
+            "name": "Breezy Weather",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "weather"
+    ],
+    "optionalOrderIndex": 15
+}

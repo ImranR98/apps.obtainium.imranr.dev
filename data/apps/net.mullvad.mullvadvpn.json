@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "net.mullvad.mullvadvpn",
+            "url": "https://mullvad.net",
+            "author": "Mullvad",
+            "name": "Mullvad VPN",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "vpn"
+    ],
+    "optionalOrderIndex": 8
+}

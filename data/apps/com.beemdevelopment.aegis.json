@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "com.beemdevelopment.aegis",
+            "url": "https://github.com/beemdevelopment/aegis",
+            "author": "beemdevelopment",
+            "name": "Aegis",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "2FA",
+        "password_and_authentication"
+    ],
+    "optionalOrderIndex": 12
+}

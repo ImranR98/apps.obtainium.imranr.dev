@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "io.heckel.ntfy",
+            "url": "https://github.com/binwiederhier/ntfy-android",
+            "author": "binwiederhier",
+            "name": "ntfy",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "utilities"
+    ],
+    "optionalOrderIndex": 7
+}

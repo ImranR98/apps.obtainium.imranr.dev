@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "org.tasks",
+            "url": "https://f-droid.org/packages/org.tasks",
+            "author": "Alex Baker",
+            "name": "Tasks",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "utilities"
+    ],
+    "optionalOrderIndex": 17
+}

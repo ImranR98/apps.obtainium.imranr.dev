@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "deckers.thibault.aves",
+            "url": "https://github.com/deckerst/aves",
+            "author": "deckerst",
+            "name": "Aves",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"izzy\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "video_player",
+        "image_viewer_and_gallery"
+    ],
+    "optionalOrderIndex": 16
+}
