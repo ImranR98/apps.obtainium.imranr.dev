@@ -1,0 +1,37 @@
+{
+    "title": {
+        "en": "Obtainium Apps"
+    },
+    "subtitle": {
+        "en": "Crowdsourced App Configurations for Obtainium",
+        "de": "Von der Gemeinschaft erstellte App-Konfigurationen für Obtainium"
+    },
+    "categorySelect": {
+        "en": "Select App Categories",
+        "de": "Wähle eine Kategorie aus"
+    },
+    "go": {
+        "en": "Go",
+        "de": "Los"
+    },
+    "search": {
+        "en": "Regex Search",
+        "de": "Regex Suche"
+    },
+    "addToObtainium": {
+        "en": "Add to Obtainium",
+        "de": "App hinzufügen"
+    },
+    "copyAppConfig": {
+        "en": "Copy App Config to Clipboard",
+        "de": "App in die Zwischenablage kopieren"
+    },
+    "categories": {
+        "en": "Categories",
+        "de": "Kategorien"
+    },
+    "altConfigs": {
+        "en": "Alternative Configurations",
+        "de": "Andere Konfigurationen"
+    }
+}

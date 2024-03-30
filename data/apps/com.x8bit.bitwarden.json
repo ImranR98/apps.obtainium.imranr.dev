@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "com.x8bit.bitwarden",
+            "url": "https://github.com/bitwarden/mobile",
+            "author": "bitwarden",
+            "name": "Bitwarden",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"bitwarden.apk\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "password_and_authentication"
+    ],
+    "optionalOrderIndex": 14
+}

@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "me.ash.reader",
+            "url": "https://github.com/ashinch/readyou",
+            "author": "ashinch",
+            "name": "Read You",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "rss_readers",
+        "utilities"
+    ],
+    "optionalOrderIndex": 18
+}

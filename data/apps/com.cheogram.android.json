@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "com.cheogram.android",
+            "url": "https://git.singpolyma.net/cheogram-android",
+            "author": "singpolyma@singpolyma.net (Stephen Paul Weber)",
+            "name": "Cheogram",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"android_\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "messaging"
+    ],
+    "optionalOrderIndex": 2
+}

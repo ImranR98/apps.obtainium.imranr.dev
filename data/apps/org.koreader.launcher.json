@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "org.koreader.launcher",
+            "url": "https://github.com/koreader/koreader",
+            "author": "koreader",
+            "name": "KOReader",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"arm64\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "utilities",
+        "anime_and_manga"
+    ],
+    "optionalOrderIndex": 6
+}

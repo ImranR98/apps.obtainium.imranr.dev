@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "io.homeassistant.companion.android",
+            "url": "https://github.com/home-assistant/android",
+            "author": "home-assistant",
+            "name": "Home Assistant",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"app-full-release\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "automation"
+    ],
+    "optionalOrderIndex": 3
+}
