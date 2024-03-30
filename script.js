@@ -5,7 +5,8 @@ function getString(key) {
     return getLocalString(data.strings[key]);
 }
 
-function getCategoriesSelectorHTML(categories, selectedCategories) {
+function getCategoriesSelectorHTML(apps, categories, selectedCategories) {
+    const usedCategories = Array.from(new Set(apps.reduce((prev, curr) => [...prev, ...(curr.categories || [])], [])))
     let selectHTML = `
     <select id="catSelect" class="select is-fullwidth" style="min-height: 6em;" multiple>`
     Object.keys(categories)
@@ -14,11 +15,17 @@ function getCategoriesSelectorHTML(categories, selectedCategories) {
                 key,
                 category: categories[key],
                 displayName: getLocalString(categories[key]) || key,
-                isSelected: selectedCategories.includes(key)
+                isSelected: selectedCategories.includes(key),
+                unused: !usedCategories.includes(key)
             }
         })
-        .sort((da, db) => da.displayName.localeCompare(db.displayName))
-        .forEach(d => selectHTML += `<option value="${d.key}" ${d.isSelected ? 'selected' : ''}>${d.displayName}</option>`)
+        .sort((da, db) => {
+            if (da.unused != db.unused) {
+                return da.unused ? 1 : -1
+            }
+            return da.displayName.localeCompare(db.displayName)
+        })
+        .forEach(d => selectHTML += `<option ${d.unused ? 'disabled' : ''} value="${d.key}" ${d.isSelected ? 'selected' : ''}>${d.displayName}</option>`)
     selectHTML += `</select>`
     const buttonHTML = `<a class="button is-fullwidth is-primary" style="height: 100%;" href="javascript:void(0);" onclick="reloadWithSelected()">${getString('go')}</a>`
     const searchHTML = `<input placeholder="${getString('search')}" type="search" class="input is-fullwidth" oninput="search(event)">`
@@ -165,7 +172,7 @@ function render() {
     if (!selectedCategories || selectedCategories.length == 0) {
         selectedCategories = Object.keys(data.categories)
     }
-    document.querySelector('#categories').innerHTML = getCategoriesSelectorHTML(data.categories, selectedCategories)
+    document.querySelector('#categories').innerHTML = getCategoriesSelectorHTML(data.apps, data.categories, selectedCategories)
     document.querySelector('#apps').innerHTML = getAppEntriesHTML(data.apps, data.categories, selectedCategories)
     document.querySelector('#title').innerHTML = getString('title')
     document.querySelector('#subtitle').innerHTML = getString('subtitle')
