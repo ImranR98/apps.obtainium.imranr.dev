@@ -11,5 +11,8 @@
     ],
     "categories": [
         "utilities"
-    ]
+    ],
+    "description": {
+        "en": "An app for creating custom levels or mods for the game Super Mario 64."
+    }
 }

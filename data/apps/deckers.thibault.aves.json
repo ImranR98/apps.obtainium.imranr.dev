@@ -10,6 +10,9 @@
         }
     ],
     "icon": "https://raw.githubusercontent.com/deckerst/aves/develop/aves_logo.svg",
+    "description": {
+        "en": "Aves is a gallery and metadata explorer app, built for Android with Flutter."
+    },
     "categories": [
         "video_player",
         "image_viewer_and_gallery"

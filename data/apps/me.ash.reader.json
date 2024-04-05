@@ -10,6 +10,9 @@
         }
     ],
     "icon": "https://raw.githubusercontent.com/Ashinch/ReadYou/main/fastlane/metadata/android/en-US/images/icon.png",
+    "description": {
+        "en": "An Android RSS reader presented in Material You style."
+    },
     "categories": [
         "rss_readers",
         "utilities"
