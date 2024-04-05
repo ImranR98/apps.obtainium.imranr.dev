@@ -9,7 +9,7 @@
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
-    "icon": "https://play-lh.googleusercontent.com/oHyjA8ZDaGsCITygSWpFL-_QsDPwvzrSsVVmWPRDs6OnnZADlXyPiCgSSB2WlStkEA=w480-h960",
+    "icon": "https://github.com/azuo/another-widget/blob/patch-develop/app/src/main/res/mipmap-xxhdpi/ic_launcher.png?raw=true",
     "categories": [
         "weather",
         "calendar"

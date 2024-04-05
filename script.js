@@ -75,7 +75,7 @@ function getIconHTML(url, name) {
     const placeholderStyle = "transform: rotate(0.31rad); opacity: 0.3;"
     const src = url ? url : placeholderImage
     const style = url ? '' : placeholderStyle
-    return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 5em; max-height: 0.9em; border-radius: 5px; ${style}">` : '<div></div>'
+    return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 20em; max-height: 3.5em; border-radius: 5px; ${style}">` : '<div></div>'
 }
 
 function getLocalString(langObject) {
@@ -116,12 +116,12 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
         `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${getLocalString(allCategories[category])}</a>`).join(', ')
     return `<div class="card mt-4">
             <div class="card-content">
-                <p class="title is-flex is-justify-content-space-between">
-                    <a href="${appJson.configs[0].url}" style="text-decoration: underline; color: inherit;">${appJson.configs[0].name}</a>
+                <div class="is-flex is-justify-content-space-between">
+                    <a class="title" hef="${appJson.configs[0].url}" style="text-decoration: underline; color: inherit;">${appJson.configs[0].name}</a>
                     ${getIconHTML(appJson.icon, appJson.configs[0].name)}
-                </p>
+                </div>
 
-                <p class="subtitle">${description}</p>
+                ${description ? `<p class="subtitle">${description}</p>` : ''}
                 <a class="button is-primary" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson, 0))}">
                     ${getString('addToObtainium')}
                 </a>
