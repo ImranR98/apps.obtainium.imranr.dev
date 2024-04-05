@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "app.revanced.android.gms",
+            "url": "https://github.com/ReVanced/GmsCore",
+            "author": "ReVanced",
+            "name": "ReVanced microG Services",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"-hw-\",\"invertAPKFilter\":true,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/2758598?s=200&v=4",
+    "categories": [
+        "system"
+    ]
+}

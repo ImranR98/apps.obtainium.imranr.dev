@@ -9,6 +9,7 @@
             "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
+    "icon": "https://f-droid.org/repo/org.tasks/en-US/icon_YftLJ2dGZxgevP1f0n9c9X9HZKYmyz06c370Udel8Tk=.png",
     "categories": [
         "utilities"
     ]

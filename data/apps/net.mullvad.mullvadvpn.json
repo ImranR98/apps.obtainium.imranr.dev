@@ -9,6 +9,7 @@
             "additionalSettings": "{\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
+    "icon": "https://avatars.githubusercontent.com/u/10848549?s=200&v=4",
     "categories": [
         "vpn"
     ]

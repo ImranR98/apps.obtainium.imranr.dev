@@ -75,7 +75,7 @@ function getIconHTML(url, name) {
     const placeholderStyle = "transform: rotate(0.31rad); opacity: 0.3;"
     const src = url ? url : placeholderImage
     const style = url ? '' : placeholderStyle
-    return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 0.9em; max-height: 0.9em; border-radius: 5px; ${style}">` : '<div></div>'
+    return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 5em; max-height: 0.9em; border-radius: 5px; ${style}">` : '<div></div>'
 }
 
 function getLocalString(langObject) {
