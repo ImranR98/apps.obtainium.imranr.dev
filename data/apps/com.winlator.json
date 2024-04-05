@@ -11,5 +11,8 @@
     ],
     "categories": [
         "emulator"
-    ]
+    ],
+    "description": {
+        "en": "A translation app that provides translations between different languages, possibly with additional features or capabilities."
+    }
 }

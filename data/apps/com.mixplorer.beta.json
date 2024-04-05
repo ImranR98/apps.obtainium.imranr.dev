@@ -11,5 +11,8 @@
     ],
     "categories": [
         "file_manager"
-    ]
+    ],
+    "description": {
+        "en": "A file manager app for Android devices, offering advanced features such as root access, cloud storage integration, and customization options."
+    }
 }

@@ -11,5 +11,8 @@
     ],
     "categories": [
         "games"
-    ]
+    ],
+    "description": {
+        "en": "A gaming app, possibly an adventure or strategy game, based on the title."
+    }
 }

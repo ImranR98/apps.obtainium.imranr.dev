@@ -11,5 +11,8 @@
     ],
     "categories": [
         "games"
-    ]
+    ],
+    "description": {
+        "en": "An app related to Sonic Robo Blast 2, a fan-made 3D Sonic the Hedgehog game."
+    }
 }

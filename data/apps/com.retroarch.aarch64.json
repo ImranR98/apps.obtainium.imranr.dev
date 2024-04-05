@@ -11,5 +11,8 @@
     ],
     "categories": [
         "emulator"
-    ]
+    ],
+    "description": {
+        "en": "A nightly build version of RetroArch, a multi-system emulator for various gaming platforms, optimized for devices with AArch64 architecture."
+    }
 }

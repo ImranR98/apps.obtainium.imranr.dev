@@ -11,5 +11,8 @@
     ],
     "categories": [
         "emulator"
-    ]
+    ],
+    "description": {
+        "en": "A nightly build version of Dolphin Emulator, a popular emulator for Nintendo GameCube and Wii games, allowing users to play console games on Android devices."
+    }
 }

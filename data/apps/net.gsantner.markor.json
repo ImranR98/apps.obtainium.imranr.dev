@@ -12,5 +12,8 @@
     "icon": "https://github.com/gsantner/markor/raw/master/app/src/main/ic_launcher-web.png",
     "categories": [
         "text_editors"
-    ]
+    ],
+    "description": {
+        "en": "A text editor and note-taking app for Android devices, offering features like Markdown support and file organization."
+    }
 }

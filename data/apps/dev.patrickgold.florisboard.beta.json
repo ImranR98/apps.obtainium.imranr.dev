@@ -12,5 +12,8 @@
     "icon": "https://raw.githubusercontent.com/florisboard/florisboard/master/app/src/main/res/mipmap-xxhdpi/ic_app_icon_beta.png",
     "categories": [
         "keyboard"
-    ]
+    ],
+    "description": {
+        "en": "A beta version of FlorisBoard, a customizable keyboard app for Android devices, offering features like gesture typing and theme customization."
+    }
 }

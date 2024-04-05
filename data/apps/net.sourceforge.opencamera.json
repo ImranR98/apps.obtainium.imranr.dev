@@ -12,5 +12,8 @@
     "icon": "https://a.fsdn.com/allura/p/opencamera/icon?1673789514?&w=135",
     "categories": [
         "camera"
-    ]
+    ],
+    "description": {
+        "en": "An open-source camera app for Android devices, offering advanced features and manual controls for capturing photos and videos."
+    }
 }

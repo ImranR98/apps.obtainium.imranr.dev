@@ -11,5 +11,8 @@
     ],
     "categories": [
         "utilities"
-    ]
+    ],
+    "description": {
+        "en": "An app for patching ROMs or game files, commonly used in the context of retro gaming and emulation."
+    }
 }

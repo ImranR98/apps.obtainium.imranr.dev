@@ -117,7 +117,7 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
     return `<div class="card mt-4">
             <div class="card-content">
                 <div class="is-flex is-justify-content-space-between">
-                    <a class="title" hef="${appJson.configs[0].url}" style="text-decoration: underline; color: inherit;">${appJson.configs[0].name}</a>
+                    <a class="title" href="${appJson.configs[0].url}" style="text-decoration: underline; color: inherit;">${appJson.configs[0].name}</a>
                     ${getIconHTML(appJson.icon, appJson.configs[0].name)}
                 </div>
 

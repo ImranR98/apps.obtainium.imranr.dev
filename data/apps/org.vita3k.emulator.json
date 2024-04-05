@@ -11,5 +11,8 @@
     ],
     "categories": [
         "emulator"
-    ]
+    ],
+    "description": {
+        "en": "An app related to Vita3K, an experimental PlayStation Vita emulator for PC and Android devices, allowing users to play PS Vita games on these platforms."
+    }
 }

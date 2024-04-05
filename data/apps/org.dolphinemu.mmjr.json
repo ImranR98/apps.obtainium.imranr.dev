@@ -11,5 +11,8 @@
     ],
     "categories": [
         "emulator"
-    ]
+    ],
+    "description": {
+        "en": "An alternative version or build of Dolphin Emulator, possibly with specific optimizations or features."
+    }
 }

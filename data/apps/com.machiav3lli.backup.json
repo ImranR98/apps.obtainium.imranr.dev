@@ -11,5 +11,8 @@
     ],
     "categories": [
         "utilities"
-    ]
+    ],
+    "description": {
+        "en": "A backup and restore tool for Android devices, allowing users to securely back up their data and settings for easy restoration."
+    }
 }

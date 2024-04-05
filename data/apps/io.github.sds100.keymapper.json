@@ -11,5 +11,8 @@
     ],
     "categories": [
         "utilities"
-    ]
+    ],
+    "description": {
+        "en": "An app for remapping keys or buttons on Android devices, allowing users to customize their device's input controls."
+    }
 }

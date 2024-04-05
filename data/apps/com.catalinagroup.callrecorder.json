@@ -9,5 +9,8 @@
             "additionalSettings": "{\"sortByFileNamesNotLinks\":false,\"reverseSort\":true,\"supportFixedAPKURL\":true,\"customLinkFilterRegex\":\"\",\"intermediateLinkRegex\":\"\",\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionExtractWholePage\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
-    "icon": "https://cubeacr.app/favicon.ico"
+    "icon": "https://cubeacr.app/favicon.ico",
+    "description": {
+        "en": "An advanced call recording app for Android, capable of recording phone calls, VoIP conversations, and more, with features like cloud backup and transcription."
+    }
 }

@@ -13,5 +13,8 @@
     "categories": [
         "weather",
         "calendar"
-    ]
+    ],
+    "description": {
+        "en": "A widget app for Android devices, providing various widgets for displaying weather, calendar events, and other information on the home screen."
+    }
 }

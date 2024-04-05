@@ -13,5 +13,8 @@
     "categories": [
         "2FA",
         "password_and_authentication"
-    ]
+    ],
+    "description": {
+        "en": "A two-factor authentication app that generates secure tokens for logging into various online accounts, enhancing account security."
+    }
 }

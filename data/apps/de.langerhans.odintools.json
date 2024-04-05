@@ -11,5 +11,8 @@
     ],
     "categories": [
         "utilities"
-    ]
+    ],
+    "description": {
+        "en": "Tools or utilities related to Samsung's Odin software, commonly used for flashing firmware on Samsung Android devices."
+    }
 }

@@ -13,5 +13,8 @@
     "categories": [
         "utilities",
         "anime_and_manga"
-    ]
+    ],
+    "description": {
+        "en": "An e-book reader app for Android devices, optimized for reading e-books and documents in various formats, including PDF and EPUB."
+    }
 }

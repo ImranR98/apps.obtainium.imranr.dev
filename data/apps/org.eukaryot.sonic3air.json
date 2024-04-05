@@ -11,5 +11,8 @@
     ],
     "categories": [
         "games"
-    ]
+    ],
+    "description": {
+        "en": "An app related to Sonic 3 A.I.R. (Angel Island Revisited), a fan-made project that enhances and modernizes the classic game Sonic the Hedgehog 3."
+    }
 }

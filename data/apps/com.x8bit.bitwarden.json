@@ -12,5 +12,8 @@
     "icon": "https://avatars.githubusercontent.com/u/15990069?s=200&v=4",
     "categories": [
         "password_and_authentication"
-    ]
+    ],
+    "description": {
+        "en": "A password manager app that securely stores and manages passwords and other sensitive information across devices."
+    }
 }

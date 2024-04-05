@@ -12,5 +12,8 @@
     "icon": "https://github.com/breezy-weather/breezy-weather/raw/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp",
     "categories": [
         "weather"
-    ]
+    ],
+    "description": {
+        "en": "A weather app that provides weather forecasts and information, possibly with additional features or customization options."
+    }
 }

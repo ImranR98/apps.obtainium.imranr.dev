@@ -11,5 +11,8 @@
     ],
     "categories": [
         "downloader_and_manager"
-    ]
+    ],
+    "description": {
+        "en": "An app for updating and managing the installation of the popular open-source browser Firefox on Android devices."
+    }
 }

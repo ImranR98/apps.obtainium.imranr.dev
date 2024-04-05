@@ -11,5 +11,8 @@
     ],
     "categories": [
         "miscallaneous"
-    ]
+    ],
+    "description": {
+        "en": "An open-source torrent client app for Android devices, allowing users to download and manage torrent files securely and efficiently."
+    }
 }
