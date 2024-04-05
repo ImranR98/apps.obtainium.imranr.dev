@@ -14,6 +14,6 @@
         "messaging"
     ],
     "description": {
-        "en": "A Telegram client alternative for Android devices, focusing on privacy and security features."
+        "en": "Chat on the Jabber network (XMPP protocol); focus on features for gateway users."
     }
 }
