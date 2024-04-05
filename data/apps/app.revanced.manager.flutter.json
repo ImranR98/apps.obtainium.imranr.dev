@@ -9,7 +9,7 @@
             "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
-    "icon": "https://raw.githubusercontent.com/ReVanced/revanced-manager/main/assets/revanced-headline/revanced-headline-vertical-light.svg",
+    "icon": "https://avatars.githubusercontent.com/u/101597779?s=200&v=4",
     "categories": [
         "utilities"
     ]
