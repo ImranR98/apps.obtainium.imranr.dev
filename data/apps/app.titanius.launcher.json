@@ -9,10 +9,11 @@
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
+    "icon": "https://github.com/dsolonenko/titanius-launcher/blob/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
     "categories": [
         "launcher_and_desktop"
     ],
     "description": {
-        "en": "A customizable launcher app for Android devices, offering various themes, icon packs, and other customization options for the home screen."
+        "en": "Titanius Launcher is a minimalistic, controller-first retro game launcher designed for those who want to enjoy a seamless gaming experience on their Android devices. "
     }
 }
