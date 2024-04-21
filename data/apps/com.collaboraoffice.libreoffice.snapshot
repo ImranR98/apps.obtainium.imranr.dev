@@ -38,4 +38,7 @@
         "en": "LTS Support and Services for Libre Office."
         "de": "LTS-Support und -Service für Libre Office."
     }
+    "categories": [
+        "office"
+    ]
 }
