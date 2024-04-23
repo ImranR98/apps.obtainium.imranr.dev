@@ -5,15 +5,27 @@ function getString(key) {
     return getLocalString(data.strings[key]);
 }
 
-function getCategoriesSelectorHTML(categories, selectedCategories) {
+function getCategoriesSelectorHTML(apps, categories, selectedCategories) {
+    const usedCategories = Array.from(new Set(apps.reduce((prev, curr) => [...prev, ...(curr.categories || [])], [])))
     let selectHTML = `
     <select id="catSelect" class="select is-fullwidth" style="min-height: 6em;" multiple>`
-    for (const key in categories) {
-        const category = categories[key]
-        const displayName = getLocalString(category) || key
-        const isSelected = selectedCategories.includes(key)
-        selectHTML += `<option value="${key}" ${isSelected ? 'selected' : ''}>${displayName}</option>`
-    }
+    Object.keys(categories)
+        .map(key => {
+            return {
+                key,
+                category: categories[key],
+                displayName: getLocalString(categories[key]) || key,
+                isSelected: selectedCategories.includes(key),
+                unused: !usedCategories.includes(key)
+            }
+        })
+        .sort((da, db) => {
+            if (da.unused != db.unused) {
+                return da.unused ? 1 : -1
+            }
+            return da.displayName.localeCompare(db.displayName)
+        })
+        .forEach(d => selectHTML += `<option ${d.unused ? 'disabled' : ''} value="${d.key}" ${d.isSelected ? 'selected' : ''}>${d.displayName}</option>`)
     selectHTML += `</select>`
     const buttonHTML = `<a class="button is-fullwidth is-primary" style="height: 100%;" href="javascript:void(0);" onclick="reloadWithSelected()">${getString('go')}</a>`
     const searchHTML = `<input placeholder="${getString('search')}" type="search" class="input is-fullwidth" oninput="search(event)">`
@@ -63,7 +75,7 @@ function getIconHTML(url, name) {
     const placeholderStyle = "transform: rotate(0.31rad); opacity: 0.3;"
     const src = url ? url : placeholderImage
     const style = url ? '' : placeholderStyle
-    return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 0.9em; max-height: 0.9em; border-radius: 5px; ${style}">` : '<div></div>'
+    return url ? `<img src="${src}" alt="${name || 'App'} Icon" style="max-width: 20em; max-height: 3.5em; border-radius: 5px; ${style}">` : '<div></div>'
 }
 
 function getLocalString(langObject) {
@@ -104,12 +116,12 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
         `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${getLocalString(allCategories[category])}</a>`).join(', ')
     return `<div class="card mt-4">
             <div class="card-content">
-                <p class="title is-flex is-justify-content-space-between">
-                    <a href="${appJson.configs[0].url}" style="text-decoration: underline; color: inherit;">${appJson.configs[0].name}</a>
+                <div class="is-flex is-justify-content-space-between">
+                    <a class="title" href="${appJson.configs[0].url}" target="_blank" style="text-decoration: underline; color: inherit;">${appJson.configs[0].name}</a>
                     ${getIconHTML(appJson.icon, appJson.configs[0].name)}
-                </p>
+                </div>
 
-                <p class="subtitle">${description}</p>
+                ${description ? `<p class="subtitle">${description}</p>` : ''}
                 <a class="button is-primary" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson, 0))}">
                     ${getString('addToObtainium')}
                 </a>
@@ -149,7 +161,7 @@ function getAppEntriesHTML(appsJson, allCategories, selectedCategories) {
     )
     data.selectedApps = appsJson;
     if (appsJson.length > 0) {
-        return appsJson.map((appJson, appIndex) => getAppEntryHTML(appJson, appIndex, allCategories)).join('\n')
+        return appsJson.sort((a, b) => a.configs[0].name.localeCompare(b.configs[0].name)).map((appJson, appIndex) => getAppEntryHTML(appJson, appIndex, allCategories)).join('\n')
     } else {
         return '<strong>No Apps Found!</strong>'
     }
@@ -160,7 +172,7 @@ function render() {
     if (!selectedCategories || selectedCategories.length == 0) {
         selectedCategories = Object.keys(data.categories)
     }
-    document.querySelector('#categories').innerHTML = getCategoriesSelectorHTML(data.categories, selectedCategories)
+    document.querySelector('#categories').innerHTML = getCategoriesSelectorHTML(data.apps, data.categories, selectedCategories)
     document.querySelector('#apps').innerHTML = getAppEntriesHTML(data.apps, data.categories, selectedCategories)
     document.querySelector('#title').innerHTML = getString('title')
     document.querySelector('#subtitle').innerHTML = getString('subtitle')

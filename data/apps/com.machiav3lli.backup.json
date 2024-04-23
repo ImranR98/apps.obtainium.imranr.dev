@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.machiav3lli.backup",
+            "url": "https://github.com/NeoApplications/Neo-Backup",
+            "author": "NeoApplications",
+            "name": "Neo Backup",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "A backup and restore tool for Android devices, allowing users to securely back up their data and settings for easy restoration."
+    }
+}

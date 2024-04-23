@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.dolphinemu.dolphinemu",
+            "url": "https://dolphin-emu.org/download/?ref=btn",
+            "author": "dolphin-emu.org",
+            "name": "Dolphin Emulator (Nightly)",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"https:\\\\/\\\\/dl.dolphin-emu.org\\\\/builds.+dolphin-master-.+.apk\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":true,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d.\\\\d-\\\\d+.apk\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":true,\"sortByFileNamesNotLinks\":true,\"intermediateLinkRegex\":\"\"}"
+        }
+    ],
+    "categories": [
+        "emulator"
+    ],
+    "description": {
+        "en": "A nightly build version of Dolphin Emulator, a popular emulator for Nintendo GameCube and Wii games, allowing users to play console games on Android devices."
+    }
+}

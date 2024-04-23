@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.tommasoberlose.anotherwidget.azuo",
+            "url": "https://github.com/azuo/another-widget",
+            "author": "azuo",
+            "name": "Another Widget",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/azuo/another-widget/blob/patch-develop/app/src/main/res/mipmap-xxhdpi/ic_launcher.png?raw=true",
+    "categories": [
+        "weather",
+        "calendar"
+    ],
+    "description": {
+        "en": "A widget app for Android devices, providing various widgets for displaying weather, calendar events, and other information on the home screen."
+    }
+}

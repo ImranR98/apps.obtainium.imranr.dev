@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.emunix.unipatcher",
+            "url": "https://github.com/btimofeev/UniPatcher",
+            "author": "btimofeev",
+            "name": "UniPatcher",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "An app for patching ROMs or game files, commonly used in the context of retro gaming and emulation."
+    }
+}

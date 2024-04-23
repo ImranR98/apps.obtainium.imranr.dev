@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "io.github.sds100.keymapper",
+            "url": "https://github.com/keymapperorg/KeyMapper",
+            "author": "keymapperorg",
+            "name": "Key Mapper",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "An app for remapping keys or buttons on Android devices, allowing users to customize their device's input controls."
+    }
+}

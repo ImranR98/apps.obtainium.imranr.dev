@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "app.revanced.manager.flutter",
+            "url": "https://github.com/revanced/revanced-manager",
+            "author": "revanced",
+            "name": "ReVanced Manager",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/101597779?s=200&v=4",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "ReVanced Manager is an application that uses ReVanced Patcher to patch Android apps."
+    }
+}

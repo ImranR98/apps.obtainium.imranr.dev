@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.proninyaroslav.libretorrent",
+            "url": "https://github.com/proninyaroslav/libretorrent",
+            "author": "proninyaroslav",
+            "name": "LibreTorrent",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "categories": [
+        "miscallaneous"
+    ],
+    "description": {
+        "en": "An open-source torrent client app for Android devices, allowing users to download and manage torrent files securely and efficiently."
+    }
+}

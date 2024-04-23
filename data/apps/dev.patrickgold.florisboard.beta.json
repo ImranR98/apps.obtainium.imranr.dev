@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "dev.patrickgold.florisboard.beta",
+            "url": "https://github.com/florisboard/florisboard",
+            "author": "florisboard",
+            "name": "FlorisBoard Beta",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/florisboard/florisboard/master/app/src/main/res/mipmap-xxhdpi/ic_app_icon_beta.png",
+    "categories": [
+        "keyboard"
+    ],
+    "description": {
+        "en": "A beta version of FlorisBoard, a customizable keyboard app for Android devices, offering features like gesture typing and theme customization."
+    }
+}

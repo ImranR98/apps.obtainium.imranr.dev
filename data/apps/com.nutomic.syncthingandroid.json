@@ -1,0 +1,28 @@
+{
+    "configs": [
+        {
+            "id": "com.nutomic.syncthingandroid",
+            "url": "https://github.com/syncthing/syncthing-android",
+            "author": "syncthing",
+            "name": "Syncthing",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        },
+        {
+            "id": "com.nutomic.syncthingandroid",
+            "url": "https://f-droid.org/packages/com.nutomic.syncthingandroid",
+            "author": "F-Droid Official",
+            "name": "Syncthing",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":\"standardVersionDetection\",\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "description": {
+        "en": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.",
+        "de": "Syncthing synchronisiert kontinuierlich Dateien zwischen einem oder mehreren Computeren oder Servern."
+    },
+    "icon": "https://raw.githubusercontent.com/syncthing/syncthing/main/assets/logo.ico",
+    "categories": [
+        "synchronisation"
+    ]
+}
