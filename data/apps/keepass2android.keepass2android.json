@@ -1,19 +1,19 @@
 {
     "configs": [
         {
-            "id": "com.nextcloud.client",
-            "url": "https://github.com/nextcloud/android",
-            "author": "nextcloud",
-            "name": "Nextcloud",
+            "id": "keepass2android.keepass2android",
+            "url": "https://github.com/PhilippC/keepass2android",
+            "author": "PhilippC",
+            "name": "keepass2android",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}" 
         }
     ],
-    "icon": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
+    "icon": "https://github.com/PhilippC/keepass2android/raw/master/src/keepass2android/Resources/mipmap-xxxhdpi/ic_launcher_online.png",
     "categories": [
-        "synchronisation", "file_sharing", "document_and_pdf_viewer"
+        "password_and_authentication", "2FA"
     ],
     "description": {
-        "en": "A new generation of online collaboration that puts you in control."
+        "en": "Keepass2Android is a password manager app. Keepass2Android is compatible with Keepass 1 and Keepass 2 on Windows and KeepassX on Linux."
     }
 }
