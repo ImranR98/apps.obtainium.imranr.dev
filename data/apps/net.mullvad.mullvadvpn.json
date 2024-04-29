@@ -2,11 +2,11 @@
     "configs": [
         {
             "id": "net.mullvad.mullvadvpn",
-            "url": "https://mullvad.net",
+            "url": "https://mullvad.net/en/download/vpn/android",
             "author": "Mullvad",
             "name": "Mullvad VPN",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+            "additionalSettings": "{\"trackOnly\":false,\"customLinkFilterRegex\":\"latest$\",\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
     "icon": "https://avatars.githubusercontent.com/u/10848549?s=200&v=4",
