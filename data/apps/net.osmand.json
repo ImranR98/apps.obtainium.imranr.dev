@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "net.osmand",
+            "url": "https://download.osmand.net/releases",
+            "author": "osmandapp",
+            "name": "OsmAnd",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"net.osmand-\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/566635?s=200&v=4",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "OsmAnd is an offline maps and navigation app supported by OpenStreetMap data.",
+        "de": "OsmAnd ist eine offline Karten und Navigationsapp, die auf OpenStreetMap Daten basiert."
+    }
+}
