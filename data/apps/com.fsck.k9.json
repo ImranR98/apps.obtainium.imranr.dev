@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.fsck.k9",
+            "url": "https://github.com/thunderbird/thunderbird-android",
+            "author": "thunderbird",
+            "name": "K-9 Mail",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/thunderbird/thunderbird-android/6b54e8b65bbaaa4f1f4eb39429251e11040c4120/images/K-9_Mail.svg",
+    "categories": [
+        "email_clients"
+    ],
+    "description": {
+        "en": "K-9 Mail is an open-source email client for Android made by Mozilla.",
+        "de": "K-9 Mail ist ein quelloffene Email-App für Android, die von Mozilla entwickelt wird."
+    }
+}
