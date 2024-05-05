@@ -1,6 +1,8 @@
-# apps.obtainium.imranr.dev
+# [apps.obtainium.imranr.dev](https://apps.obtainium.imranr.dev)
 
-Crowdsourced App Configurations for [Obtainium](https://github.com/ImranR98/Obtainium).
+Crowdsourced App Configurations website for [Obtainium](https://github.com/ImranR98/Obtainium). 
+
+The website is accessible at [apps.obtainium.imranr.dev](https://apps.obtainium.imranr.dev)
 
 ## URL Redirection
 
