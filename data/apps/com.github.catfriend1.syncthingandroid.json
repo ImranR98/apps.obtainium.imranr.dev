@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.github.catfriend1.syncthingandroid",
+            "url": "https://github.com/Catfriend1/syncthing-android",
+            "author": "Catfriend1",
+            "name": "Syncthing-Fork",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{}"
+        }
+    ],
+    "categories": [
+        "synchronisation"
+    ],
+    "description": {
+        "en": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.",
+        "de": "Syncthing synchronisiert kontinuierlich Dateien zwischen einem oder mehreren Computeren oder Servern."
+    },
+    "icon": "https://raw.githubusercontent.com/syncthing/syncthing/main/assets/logo.ico"
+}

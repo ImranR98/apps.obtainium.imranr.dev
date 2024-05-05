@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.secuso.privacyFriendlyCodeScanner",
+            "url": "https://github.com/SecUSo/privacy-friendly-qr-scanner",
+            "author": "SecUSo",
+            "name": "QR Scanner (PFA)",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/SecUSo/privacy-friendly-qr-scanner/master/fastlane/metadata/android/en-US/images/icon.png",
+    "description": {
+        "en": "A Privacy Friendly QR Code Scanner for Android.",
+        "de": "Ein QR-Code-Scanner, der deine Privatsphäre achtet."
+    },
+    "categories": [
+        "barcode_scanner"
+    ]
+}

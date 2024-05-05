@@ -9,10 +9,11 @@
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":true,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
+    "icon": "https://github.com/brunodev85/winlator/blob/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
     "categories": [
         "emulator"
     ],
     "description": {
-        "en": "A translation app that provides translations between different languages, possibly with additional features or capabilities."
+        "en": "Winlator is an Android application that lets you to run Windows (x86_64) applications with Wine and Box86/Box64."
     }
 }

@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.kunzisoft.keepass.libre",
+            "url": "https://github.com/Kunzisoft/KeePassDX",
+            "author": "Kunzisoft",
+            "name": "KeePassDX",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{}"
+        }
+    ],
+    "categories": [
+        "password_and_authentication"
+    ],
+    "icon": "https://raw.githubusercontent.com/Kunzisoft/KeePassDX/ac1590810f67456c56e11a494a407e814736e6d8/art/app_store_logo.svg",
+    "description": {
+        "en": "KeePassDX is a password manager that is compatible with keepass databases.",
+        "de": "KeePassDX ist ein Passwortmanager, der mit keepass Datenbanken kompatibel ist."
+    }
+}

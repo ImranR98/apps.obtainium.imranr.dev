@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "org.telegram.messenger.web",
+            "url": "https://telegram.org",
+            "author": "Telegram",
+            "name": "Telegram",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{}"
+        }
+    ],
+    "categories": [
+        "messaging"
+    ],
+    "icon": "https://telegram.org/img/apple-touch-icon.png",
+    "description": {
+        "en": "Telegram is a open-source messanger.",
+        "de": "Telegram ist ein quelloffener Messenger."
+    }
+}

@@ -11,9 +11,10 @@
     ],
     "icon": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
     "categories": [
-        "synchronisation", "file_sharing", "document_and_pdf_viewer"
+        "synchronisation", "file_sharing", "document_and_pdf_viewer", "calendar", "contacts"
     ],
     "description": {
-        "en": "A new generation of online collaboration that puts you in control."
+        "en": "Nextcloud is a cloud solution that can be self-hosted.",
+        "de": "Nextcloud ist eine Cloudanwendung, die selbst gehostet werden kann."
     }
 }
