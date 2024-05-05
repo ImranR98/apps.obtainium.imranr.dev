@@ -99,6 +99,9 @@ function getAppConfigString(appJson, configIndex = 0) {
         if (!settings.about) settings.about = description
         config.additionalSettings = JSON.stringify(settings)
     }
+    if (config.altLabel) {
+        delete config.altLabel
+    }
     return JSON.stringify(config)
 }
 
@@ -142,7 +145,7 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
                 <ul>${appJson.configs.slice(1).map((cfg, ind) => {
         return `
                     <li><div class="is-half is-flex is-align-items-center">
-                        <p><code>${new URL(cfg.url).host}</code> - <strong>${cfg.name}</strong></p>
+                        <p><code>${cfg.altLabel || new URL(cfg.url).host}</code> - <strong>${cfg.name}</strong></p>
                             <div class="mx-5">
                                 <a class="button is-primary is-small" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson, ind + 1))}">
                                     ${getString('addToObtainium')}
