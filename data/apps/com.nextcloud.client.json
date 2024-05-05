@@ -1,0 +1,22 @@
+{
+    "configs": [
+        {
+            "id": "com.nextcloud.client",
+            "url": "https://github.com/nextcloud/android",
+            "author": "nextcloud",
+            "name": "Nextcloud",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{}"
+        }
+    ],
+    "categories": [
+        "calendar",
+        "contacts",
+        "synchronisation"
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
+    "description": {
+        "en": "Nextcloud is a cloud solution that can be self-hosted.",
+        "de": "Nextcloud ist eine Cloudanwendung, die selbst gehostet werden kann."
+    }
+}
