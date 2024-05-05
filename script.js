@@ -124,6 +124,7 @@ function copyAppToClipboard(appIndex, configIndex = 0) {
 
 function getAppEntryHTML(appJson, appIndex, allCategories) {
     const description = getLocalString(appJson.description)
+    const firstAppLabelElement = appJson.configs[0].altLabel || appJson.configs.length > 1 ? `<p class="subtitle is-6"><code>${appJson.configs[0].altLabel || new URL(appJson.configs[0].url).host}</code></p>` : null
     const appCats = appJson.categories.map(category =>
         `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${getLocalString(allCategories[category])}</a>`).join(', ')
     return `<div class="card mt-4">
@@ -134,6 +135,7 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
                 </div>
 
                 ${description ? `<p class="subtitle">${description}</p>` : ''}
+                ${firstAppLabelElement || ''}
                 <a class="button is-primary" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson, 0))}">
                     ${getString('addToObtainium')}
                 </a>
