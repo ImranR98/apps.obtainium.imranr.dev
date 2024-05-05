@@ -1,20 +1,19 @@
 {
     "configs": [
         {
-            "id": "com.nextcloud.client",
-            "url": "https://github.com/nextcloud/android",
-            "author": "nextcloud",
-            "name": "Nextcloud",
+            "id": "org.fossify.calendar",
+            "url": "https://github.com/FossifyOrg/Calendar",
+            "author": "FossifyOrg",
+            "name": "Calendar",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}" 
         }
     ],
-    "icon": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
+    "icon": "https://github.com/FossifyOrg/Calendar/raw/master/graphics/icon.webp",
     "categories": [
-        "synchronisation", "file_sharing", "document_and_pdf_viewer", "calendar", "contacts"
+        "calendar"
     ],
     "description": {
-        "en": "Nextcloud is a cloud solution that can be self-hosted.",
-        "de": "Nextcloud ist eine Cloudanwendung, die selbst gehostet werden kann."
+        "en": "Fossify Calendar: Your open-source powerhouse for managing life, designed with privacy as its core and packed with powerful features to keep you organized."
     }
 }

@@ -1,20 +1,19 @@
 {
     "configs": [
         {
-            "id": "com.nextcloud.client",
-            "url": "https://github.com/nextcloud/android",
-            "author": "nextcloud",
-            "name": "Nextcloud",
+            "id": "org.fossify.gallery",
+            "url": "https://github.com/FossifyOrg/Gallery",
+            "author": "FossifyOrg",
+            "name": "Gallery",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}" 
         }
     ],
-    "icon": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
+    "icon": "https://github.com/FossifyOrg/Gallery/raw/master/graphics/icon.webp",
     "categories": [
-        "synchronisation", "file_sharing", "document_and_pdf_viewer", "calendar", "contacts"
+        "image_viewer_and_gallery"
     ],
     "description": {
-        "en": "Nextcloud is a cloud solution that can be self-hosted.",
-        "de": "Nextcloud ist eine Cloudanwendung, die selbst gehostet werden kann."
+        "en": "Unleash memories, not personal data. Fossify Gallery is the ultimate photo and video app that's as powerful as it is private. No ads, no unnecessary permissions - just a seamless experience tailored for you."
     }
 }

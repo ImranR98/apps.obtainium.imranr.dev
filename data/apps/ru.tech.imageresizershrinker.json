@@ -1,20 +1,19 @@
 {
     "configs": [
         {
-            "id": "com.nextcloud.client",
-            "url": "https://github.com/nextcloud/android",
-            "author": "nextcloud",
-            "name": "Nextcloud",
-            "preferredApkIndex": 0,
+            "id": "ru.tech.imageresizershrinker",
+            "url": "https://github.com/T8RIN/ImageToolbox",
+            "author": "T8RIN",
+            "name": "Image Toolbox",
+            "preferredApkIndex": 1,
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}" 
         }
     ],
-    "icon": "https://avatars.githubusercontent.com/u/19211038?s=200&v=4",
+    "icon": "https://github.com/T8RIN/ImageToolbox/raw/master/fastlane/metadata/android/en-US/images/logo/logo.png",
     "categories": [
-        "synchronisation", "file_sharing", "document_and_pdf_viewer", "calendar", "contacts"
+        "image_manipulation"
     ],
     "description": {
-        "en": "Nextcloud is a cloud solution that can be self-hosted.",
-        "de": "Nextcloud ist eine Cloudanwendung, die selbst gehostet werden kann."
+        "en": "Image Toolbox is an powerful picture editor, which can crop, apply filters, add some drawing, erase background, edit EXIF or even create PDF file."
     }
 }
