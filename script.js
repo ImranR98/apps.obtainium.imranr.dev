@@ -2,7 +2,7 @@ let data = null
 const langCode = ((navigator.language || navigator.userLanguage) || 'en-US').split('-')[0]
 
 function getString(key) {
-    return getLocalString(data.strings[key]);
+    return getLocalString(data.strings[key])
 }
 
 function getCategoriesSelectorHTML(apps, categories, selectedCategories) {
@@ -53,21 +53,21 @@ function getCategoriesSelectorHTML(apps, categories, selectedCategories) {
 }
 
 function search(event) {
-    const regex = new RegExp(event.target.value, 'ims');
+    const regex = new RegExp(event.target.value, 'ims')
     document.querySelectorAll('#apps > *').forEach((element, appIndex) => {
-        const app = data.selectedApps[appIndex];
+        const app = data.selectedApps[appIndex]
         element.style.display = regex.test([
             app.configs[0].id,
             Array.from(new Set(app.configs.map(c => c.name))).join(' '),
             Object.values(app.description || {}).join('\n')
-        ].join('\n')) ? '' : 'none';
-    });
+        ].join('\n')) ? '' : 'none'
+    })
 }
 
 function reloadWithSelected() {
     var selectElement = document.querySelector('#catSelect')
     var selectedValues = Array.from(selectElement.selectedOptions).map(option => option.value).join(',')
-    window.location.href = `?categories=${selectedValues}`;
+    window.location.href = `?categories=${selectedValues}`
 }
 
 function getIconHTML(url, name) {
@@ -79,18 +79,27 @@ function getIconHTML(url, name) {
 }
 
 function getLocalString(langObject) {
-    return langObject ? (langObject[langCode] || langObject.en || '') : '';
+    return langObject ? (langObject[langCode] || langObject.en || '') : ''
 }
 
 function getAppConfigString(appJson, configIndex = 0) {
-    const config = appJson.configs[configIndex];
-    const description = getLocalString(appJson.description);
+    const config = appJson.configs[configIndex]
+    const description = getLocalString(appJson.description)
     if (description) {
-        const settings = JSON.parse(config.additionalSettings);
-        if (!settings.about) settings.about = description;
-        config.additionalSettings = JSON.stringify(settings);
+        if (!config.additionalSettings) {
+            config.additionalSettings = '{}'
+        }
+        let settings
+        try {
+            settings = JSON.parse(config.additionalSettings)
+        } catch (e) {
+            console.error(config)
+            throw e
+        }
+        if (!settings.about) settings.about = description
+        config.additionalSettings = JSON.stringify(settings)
     }
-    return JSON.stringify(config);
+    return JSON.stringify(config)
 }
 
 function copyToClipboard(text) {
@@ -111,7 +120,7 @@ function copyAppToClipboard(appIndex, configIndex = 0) {
 }
 
 function getAppEntryHTML(appJson, appIndex, allCategories) {
-    const description = getLocalString(appJson.description);
+    const description = getLocalString(appJson.description)
     const appCats = appJson.categories.map(category =>
         `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${getLocalString(allCategories[category])}</a>`).join(', ')
     return `<div class="card mt-4">
@@ -159,7 +168,7 @@ function getAppEntriesHTML(appsJson, allCategories, selectedCategories) {
     }).filter(app =>
         app.categories.some(item => selectedCategories.includes(item))
     )
-    data.selectedApps = appsJson;
+    data.selectedApps = appsJson
     if (appsJson.length > 0) {
         return appsJson.sort((a, b) => a.configs[0].name.localeCompare(b.configs[0].name)).map((appJson, appIndex) => getAppEntryHTML(appJson, appIndex, allCategories)).join('\n')
     } else {
