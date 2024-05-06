@@ -2,7 +2,7 @@ let data = null
 const langCode = ((navigator.language || navigator.userLanguage) || 'en-US').split('-')[0]
 
 function getString(key) {
-    return getLocalString(data.strings[key]);
+    return getLocalString(data.strings[key])
 }
 
 function getCategoriesSelectorHTML(apps, categories, selectedCategories) {
@@ -53,21 +53,21 @@ function getCategoriesSelectorHTML(apps, categories, selectedCategories) {
 }
 
 function search(event) {
-    const regex = new RegExp(event.target.value, 'ims');
+    const regex = new RegExp(event.target.value, 'ims')
     document.querySelectorAll('#apps > *').forEach((element, appIndex) => {
-        const app = data.selectedApps[appIndex];
+        const app = data.selectedApps[appIndex]
         element.style.display = regex.test([
             app.configs[0].id,
             Array.from(new Set(app.configs.map(c => c.name))).join(' '),
             Object.values(app.description || {}).join('\n')
-        ].join('\n')) ? '' : 'none';
-    });
+        ].join('\n')) ? '' : 'none'
+    })
 }
 
 function reloadWithSelected() {
     var selectElement = document.querySelector('#catSelect')
     var selectedValues = Array.from(selectElement.selectedOptions).map(option => option.value).join(',')
-    window.location.href = `?categories=${selectedValues}`;
+    window.location.href = `?categories=${selectedValues}`
 }
 
 function getIconHTML(url, name) {
@@ -79,18 +79,30 @@ function getIconHTML(url, name) {
 }
 
 function getLocalString(langObject) {
-    return langObject ? (langObject[langCode] || langObject.en || '') : '';
+    return langObject ? (langObject[langCode] || langObject.en || '') : ''
 }
 
 function getAppConfigString(appJson, configIndex = 0) {
-    const config = appJson.configs[configIndex];
-    const description = getLocalString(appJson.description);
+    const config = appJson.configs[configIndex]
+    const description = getLocalString(appJson.description)
     if (description) {
-        const settings = JSON.parse(config.additionalSettings);
-        if (!settings.about) settings.about = description;
-        config.additionalSettings = JSON.stringify(settings);
+        if (!config.additionalSettings) {
+            config.additionalSettings = '{}'
+        }
+        let settings
+        try {
+            settings = JSON.parse(config.additionalSettings)
+        } catch (e) {
+            console.error(config)
+            throw e
+        }
+        if (!settings.about) settings.about = description
+        config.additionalSettings = JSON.stringify(settings)
     }
-    return JSON.stringify(config);
+    if (config.altLabel) {
+        delete config.altLabel
+    }
+    return JSON.stringify(config)
 }
 
 function copyToClipboard(text) {
@@ -111,7 +123,8 @@ function copyAppToClipboard(appIndex, configIndex = 0) {
 }
 
 function getAppEntryHTML(appJson, appIndex, allCategories) {
-    const description = getLocalString(appJson.description);
+    const description = getLocalString(appJson.description)
+    const firstAppLabelElement = appJson.configs[0].altLabel || appJson.configs.length > 1 ? `<p class="subtitle is-6"><code>${appJson.configs[0].altLabel || new URL(appJson.configs[0].url).host}</code></p>` : null
     const appCats = appJson.categories.map(category =>
         `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${getLocalString(allCategories[category])}</a>`).join(', ')
     return `<div class="card mt-4">
@@ -122,6 +135,7 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
                 </div>
 
                 ${description ? `<p class="subtitle">${description}</p>` : ''}
+                ${firstAppLabelElement || ''}
                 <a class="button is-primary" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson, 0))}">
                     ${getString('addToObtainium')}
                 </a>
@@ -133,7 +147,7 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
                 <ul>${appJson.configs.slice(1).map((cfg, ind) => {
         return `
                     <li><div class="is-half is-flex is-align-items-center">
-                        <p><code>${new URL(cfg.url).host}</code> - <strong>${cfg.name}</strong></p>
+                        <p><code>${cfg.altLabel || new URL(cfg.url).host}</code> - <strong>${cfg.name}</strong></p>
                             <div class="mx-5">
                                 <a class="button is-primary is-small" href="obtainium://app/${encodeURIComponent(getAppConfigString(appJson, ind + 1))}">
                                     ${getString('addToObtainium')}
@@ -159,7 +173,7 @@ function getAppEntriesHTML(appsJson, allCategories, selectedCategories) {
     }).filter(app =>
         app.categories.some(item => selectedCategories.includes(item))
     )
-    data.selectedApps = appsJson;
+    data.selectedApps = appsJson
     if (appsJson.length > 0) {
         return appsJson.sort((a, b) => a.configs[0].name.localeCompare(b.configs[0].name)).map((appJson, appIndex) => getAppEntryHTML(appJson, appIndex, allCategories)).join('\n')
     } else {

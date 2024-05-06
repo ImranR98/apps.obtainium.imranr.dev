@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.handmadeideas.floccus",
+            "url": "https://github.com/floccusaddon/floccus",
+            "author": "floccusaddon",
+            "name": "floccus bookmark sync",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}" 
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/78930063?s=200&v=4",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Sync your bookmarks privately across browsers an devices"
+    }
+}

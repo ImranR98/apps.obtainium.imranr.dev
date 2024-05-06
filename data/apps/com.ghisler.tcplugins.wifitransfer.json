@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.ghisler.tcplugins.SFTP",
+            "url": "https://raw.githubusercontent.com/chrisgch/tca/master/fdroid/repo?fingerprint=3576596cecdd70488d61cfd90799a49b7ffd26a81a8fef1badec88d069fa72c1&appId=com.ghisler.tcplugins.wifitransfer",
+            "author": "totalcmd",
+            "name": "TotalCmd-Wifi Transfer",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"appIdOrName\":\"com.ghisler.tcplugins.wifitransfer\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "FDroidRepo"
+        }
+    ],
+    "categories": [
+        "file_manager"
+    ],
+    "description": {
+        "en": "Total Commander Wifi Transfer plugin"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.schabi.newpipe",
+            "url": "https://github.com/TeamNewPipe/NewPipe",
+            "author": "TeamNewPipe",
+            "name": "NewPipe",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}" 
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/22159318?s=200&v=4",
+    "categories": [
+        "video_player"
+    ],
+    "description": {
+        "en": "A libre lightweight streaming front-end for Android. NewPipe currently supports these services: YouTube, PeerTube, Bandcamp, SoundCloud, media.ccc.de"
+    }
+}

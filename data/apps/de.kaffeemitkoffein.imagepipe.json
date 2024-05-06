@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "de.kaffeemitkoffein.imagepipe",
+            "url": "https://codeberg.org/Starfish/Imagepipe",
+            "author": "Starfish",
+            "name": "Imagepipe",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}" 
+        }
+    ],
+    "icon": "https://codeberg.org/repo-avatars/230-a47fb71f565ec2388d5e78c561a5262d",
+    "categories": [
+        "image_manipulation"
+    ],
+    "description": {
+        "en": "This app reduces image size by changing the resolution and quality of the image. It also removes exif data before sending the image."
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "helium314.keyboard",
+            "url": "https://github.com/Helium314/HeliBoard",
+            "author": "Helium314",
+            "name": "HeliBoard",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}" 
+        }
+    ],
+    "categories": [
+        "keyboard"
+    ],
+    "description": {
+        "en": "HeliBoard is a privacy-conscious and customizable open-source keyboard, based on AOSP / OpenBoard. Does not use internet permission, and thus is 100% offline."
+    }
+}
