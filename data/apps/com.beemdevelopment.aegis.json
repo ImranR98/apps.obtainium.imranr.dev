@@ -9,7 +9,7 @@
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
-    "icon": "https://getaegis.app/images/icon.png",
+    "icon": "https://avatars.githubusercontent.com/u/47433933?s=200&v=4",
     "categories": [
         "2FA",
         "password_and_authentication"
