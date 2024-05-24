@@ -156,7 +156,7 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
                                     ${getString('copyAppConfig')}
                                 </a>
                             </div>
-                        </div></li>`})}
+                        </div></li>`}).join('<br/>')}
                 </ul>`}
             </div>
         </div>`
