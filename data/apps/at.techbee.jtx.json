@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "at.techbee.jtx",
+            "url": "https://github.com/TechbeeAT/jtxBoard",
+            "author": "TechbeeAT",
+            "name": "jtx Board",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://jtx.techbee.at/wp-content/uploads/2021/11/jtx_logo_mit_hintergrund.svg",
+    "categories": [],
+    "description": {
+        "en": "jtx Board allows you to manage your Journals (like meeting minutes), Notes and Tasks in one Android app."
+    }
+}
