@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.koitharu.kotasu",
+            "url": "https://github.com/KotatsuApp/Kotatsu",
+            "author": "KotatsuApp",
+            "name": "Kotatsu",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/KotatsuApp/Kotatsu/devel/metadata/en-US/icon.png",
+    "categories": [
+        "anime_and_manga"
+    ],
+    "description": {
+        "en": "Kotatsu is a free and open source manga reader for Android."
+    }
+}
