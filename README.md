@@ -30,7 +30,9 @@ For example:
 
 ## Usage
 
-- To contribute content, create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with valid changes to the files in `data/`.
+- To contribute content, create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with valid changes/additions to the config files in `data/`.
+  - You can auto-generate config files from an Obtainium export by running `node generateFromExport.js <path to Obtainium export>`
+  - Note: Auto-generated entries will not have icon, category, or description data. Adding those manually is not required but would result in a better user experience.
 - To test locally, run: `node buildData.js; python -m http.server 8080`
 - See https://github.com/ImranR98/Obtainium/issues/1214 for background/context for this repo.
 

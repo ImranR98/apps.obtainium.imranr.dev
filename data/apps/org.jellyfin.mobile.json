@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.jellyfin.mobile",
+            "url": "https://github.com/jellyfin/jellyfin-android",
+            "author": "jellyfin",
+            "name": "Jellyfin",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"libre-release.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": null
+    }
+}

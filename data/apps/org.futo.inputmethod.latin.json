@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.futo.inputmethod.latin",
+            "url": "https://keyboard.futo.org/keyboard.apk",
+            "author": "keyboard.futo.org",
+            "name": "FUTO Keyboard",
+            "additionalSettings": "{\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"trackOnly\":false,\"invertAPKFilter\":false,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"versionDetection\":false,\"autoApkFilterByArch\":false}"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": null
+    }
+}

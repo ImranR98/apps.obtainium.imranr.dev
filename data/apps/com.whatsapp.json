@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.whatsapp",
+            "url": "https://whatsapp.com",
+            "author": "Meta",
+            "name": "WhatsApp",
+            "additionalSettings": "{\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":true,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": null
+    }
+}

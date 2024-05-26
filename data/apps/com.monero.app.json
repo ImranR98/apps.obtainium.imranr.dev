@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.monero.app",
+            "url": "https://github.com/cake-tech/cake_wallet",
+            "author": "cake-tech",
+            "name": "Monero.com",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"Monero\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": null
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "ml.docilealligator.infinityforreddit",
+            "url": "https://github.com/Docile-Alligator/Infinity-For-Reddit",
+            "author": "Docile-Alligator",
+            "name": "Infinity",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"Patreon\",\"invertAPKFilter\":true,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":true,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": null
+    }
+}
