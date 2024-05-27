@@ -1,7 +1,7 @@
 {
     "configs": [
         {
-            "id": "com.collaboraoffice.libreoffice.snapshot",
+            "id": "com.collabora.libreoffice.snapshot",
             "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Snapshot",
             "author": "Collabora Productivity",
             "name": "Collabora Office",
