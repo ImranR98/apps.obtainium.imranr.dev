@@ -1,7 +1,7 @@
 {
     "configs": [
         {
-            "id": "com.collaboraoffice.libreoffice.snapshot",
+            "id": "com.collabora.libreoffice.snapshot",
             "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Snapshot",
             "author": "Collabora Productivity",
             "name": "Collabora Office",
@@ -15,7 +15,7 @@
             "altLabel": "arm64 v8a"
         },
         {
-            "id": "com.collaboraoffice.libreoffice.snapshot",
+            "id": "com.collabora.libreoffice.snapshot",
             "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Snapshot",
             "author": "Collabora Productivity",
             "name": "Collabora Office",
@@ -29,7 +29,7 @@
             "altLabel": "armeabi v7a"
         },
         {
-            "id": "com.collaboraoffice.libreoffice.snapshot",
+            "id": "com.collabora.libreoffice.snapshot",
             "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Snapshot",
             "author": "Collabora Productivity",
             "name": "Collabora Office",
@@ -43,7 +43,7 @@
             "altLabel": "x86"
         },
         {
-            "id": "com.collaboraoffice.libreoffice.snapshot",
+            "id": "com.collabora.libreoffice.snapshot",
             "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Snapshot",
             "author": "Collabora Productivity",
             "name": "Collabora Office",
