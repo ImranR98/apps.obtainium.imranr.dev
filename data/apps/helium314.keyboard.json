@@ -14,6 +14,7 @@
         "keyboard"
     ],
     "description": {
-        "en": "HeliBoard is a privacy-conscious and customizable open-source keyboard, based on AOSP / OpenBoard. Does not use internet permission, and thus is 100% offline."
+        "en": "HeliBoard is a privacy-conscious and customizable open-source keyboard, based on AOSP / OpenBoard. Does not use internet permission, and thus is 100% offline.",
+        "de": "HeliBoard ist eine datenschutzbewusste und anpassbare Open-Source-Tastatur, die auf AOSP / OpenBoard basiert. Verwendet keine Internet-Erlaubnis, und ist somit 100% offline."
     }
 }
