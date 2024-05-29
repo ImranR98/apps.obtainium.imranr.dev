@@ -1,0 +1,5 @@
+:root {
+    --bulma-family-primary: "Liberation Sans", "Arimo", "Arial", sans-serif;
+    --bulma-family-secondary: "Liberation Sans", "Arimo", "Arial", sans-serif;
+    --bulma-family-code: "Liberation Mono", "Cousine", "Courier New", monospace;
+}
