@@ -10,7 +10,9 @@
         }
     ],
     "icon": "https://organicmaps.app/logos/green-on-transparent.svg",
-    "categories": [],
+    "categories": [
+        "maps_and_navigation"
+    ],
     "description": {
         "en": "Organic Maps is a free Android & iOS offline maps app for travelers, tourists, hikers, and cyclists."
     }
