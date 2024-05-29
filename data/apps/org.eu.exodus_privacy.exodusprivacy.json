@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "org.eu.exodus_privacy.exodusprivacy",
+            "url": "https://github.com/Exodus-Privacy/exodus-android-app/",
+            "author": "Exodus Privacy",
+            "name": "Exodus",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{}"
+        }
+    ],
+    "icon": "https://github.com/Exodus-Privacy/exodus-android-app/blob/master/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Exodus show you trackers and permissions in apps installed on your device.",
+        "fr": "Exodus vous montre les pisteurs et permissions des apps de votre smartphone."
+    }
+}
