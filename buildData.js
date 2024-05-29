@@ -6,6 +6,7 @@ const buildData = () => {
     const apps = fs.readdirSync(__dirname + '/data/apps')
         .filter(f => f.endsWith('.json'))
         .map(f => JSON.parse(fs.readFileSync(__dirname + '/data/apps/' + f).toString()))
+    apps.forEach(a => a.configs.forEach(c => JSON.parse(c.additionalSettings || '{}')))
     fs.writeFileSync(__dirname + '/data.json', JSON.stringify({ strings, categories, apps }, null, '    '))
 }
 
