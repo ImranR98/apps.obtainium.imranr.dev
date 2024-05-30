@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "org.scummvm.scummvm",
+            "url": "https://downloads.scummvm.org/frs/scummvm",
+            "author": "ScummVM",
+            "name": "ScummVM",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\d+\\\\.\\\\d+\\\\.\\\\d+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+\\\\.\\\\d+\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\".*android-arm64-v8a.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/365181",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A program which allows you to run certain classic graphical adventure and role-playing games, provided you already have their data files."
+    }
+}
