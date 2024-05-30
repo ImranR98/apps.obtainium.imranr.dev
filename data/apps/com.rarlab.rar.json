@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.rarlab.rar",
+            "url": "https://www.rarlab.com/download.htm",
+            "author": "RARLAB",
+            "name": "RAR",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+ build \\\\d+\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"releaseDateAsVersion\":false,\"supportFixedAPKURL\":false}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/K4ZQnK2FafXDnaAu5TPWWEDVR-ZhR9AiriJ-nUuMUy-9LHafa8VwJhY_UJLRPJzGbmKh",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "A compression program, archiver, backup tool, extractor and basic file manager."
+    }
+}
