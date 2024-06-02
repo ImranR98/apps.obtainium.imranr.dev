@@ -9,8 +9,10 @@
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
-    "icon": "https://play-lh.googleusercontent.com/Mj9p6iprxzwTRUIjB-qnlWTfSE4_K3kIuU0tM0v_u4fcrrtKD6laDZwmun4kbb2x-g=s96",
-    "categories": [],
+    "icon": "https://raw.githubusercontent.com/AChep/keyguard-app/master/artwork/ic_launcher_web.png",
+    "categories": [
+        "password_and_authentication"
+    ],
     "description": {
         "en": "Keyguard is an alternative client for the Bitwarden® platform, created to provide the best user experience possible."
     }
