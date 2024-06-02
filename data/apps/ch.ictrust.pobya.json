@@ -10,7 +10,10 @@
         }
     ],
     "icon": "https://appteka.store/api/1/icon/get?hash=k18%2FFnhlR%2BdpwCLG1rBZrYVq8E%2FZ0ffNeOacJAaifC3tPwZBzz0QvgrycXq31wc8",
-    "categories": [],
+    "categories": [
+        "malwarescanner",
+        "utilities"
+    ],
     "description": {
         "en": "PObY-A, Privacy Owned by You - Android, is an application which aims to help Android users improve the security and privacy of their devices."
     }
