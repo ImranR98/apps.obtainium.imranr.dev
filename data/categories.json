@@ -113,6 +113,10 @@
     "launcher_and_desktop": {
         "en": "Launcher & Desktop"
     },
+    "malwarescanner": {
+        "en": "Virus- & Malwarescanner, security suggestions, permission management"
+        "de": "Viren- & Malwarescanner, Vorschläge zur Erhöhung der Security, Berechtigungsverwaltung"
+    },
     "maps_and_navigation": {
         "en": "Maps & Navigation"
     },
