@@ -10,7 +10,9 @@
         }
     ],
     "icon": "https://f-droid.org/repo/com.aistra.hail/en-US/icon_u7CvMjol4AxutWwPnkgLTgF6bDaYPwlp576Xa283b0M=.png",
-    "categories": [],
+    "categories": [
+        "utilities"
+    ],
     "description": {
         "en": "Hail is a free-as-in-freedom software to freeze Android apps."
     }

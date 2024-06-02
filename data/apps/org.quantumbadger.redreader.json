@@ -1,20 +1,19 @@
 {
     "configs": [
         {
-            "id": "ch.ictrust.pobya",
-            "url": "https://github.com/ICTrust/PObY-A",
-            "author": "ICTrust",
-            "name": "PObY-A",
+            "id": "org.quantumbadger.redreader",
+            "url": "https://github.com/QuantumBadger/RedReader/releases",
+            "author": "QuantumBadger",
+            "name": "RedReader",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
-    "icon": "https://appteka.store/api/1/icon/get?hash=k18%2FFnhlR%2BdpwCLG1rBZrYVq8E%2FZ0ffNeOacJAaifC3tPwZBzz0QvgrycXq31wc8",
+    "icon": "https://github.com/QuantumBadger/RedReader/blob/master/src/main/res/mipmap-hdpi/icon.png",
     "categories": [
-        "malwarescanner",
-        "utilities"
+        "community_clients"
     ],
     "description": {
-        "en": "PObY-A, Privacy Owned by You - Android, is an application which aims to help Android users improve the security and privacy of their devices."
+        "en": "OSS Reddit Client"
     }
 }
