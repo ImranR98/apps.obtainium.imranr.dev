@@ -34,6 +34,10 @@
        }
     ],
     "icon": "https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/products/2020-04-14-08-36-13-8dda6f.png",
+    "description": {
+        "en": "Gecko-based browser",
+        "de": "Browser auf Gecko-Basis"
+    },
     "categories": [
         "browser"
     ]
