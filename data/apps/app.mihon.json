@@ -10,7 +10,7 @@
         }
     ],
     "icon": "https://github.com/mihonapp/mihon/blob/main/.github/assets/logo.png?raw=true",
-    "categories": [],
+    "categories": ["anime_and_manga"],
     "description": {
         "en": "Free and open source manga reader for Android."
     }
