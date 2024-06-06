@@ -10,7 +10,9 @@
         }
     ],
     "icon": "https://camo.githubusercontent.com/5206ba3f4c4ae79daf22ad537c053ad876dc9e9d9f5963dc3e48e6e4818c44c0/68747470733a2f2f6c61776e63686169722e6170702f696d616765732f6c61776e63686169722e77656270",
-    "categories": ["lawnchair"],
+    "categories": [
+        "launcher_and_desktop"
+    ],
     "description": {
         "en": "Lawnchair is a free, open-source home app for Android."
     }
