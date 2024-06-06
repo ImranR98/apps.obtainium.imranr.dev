@@ -10,7 +10,11 @@
         }
     ],
     "icon": "https://jtx.techbee.at/wp-content/uploads/2021/11/jtx_logo_mit_hintergrund.svg",
-    "categories": [],
+    "categories": [
+        "calendar",
+        "notes",
+        "utilities"
+    ],
     "description": {
         "en": "jtx Board allows you to manage your Journals (like meeting minutes), Notes and Tasks in one Android app."
     }
