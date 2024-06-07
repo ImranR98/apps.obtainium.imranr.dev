@@ -1,7 +1,7 @@
 {
     "configs": [
         {
-            "id": "com.ghisler.tcplugins.WindowsLive",
+            "id": "com.ghisler.tcplugins.drive",
             "url": "https://raw.githubusercontent.com/chrisgch/tca/master/fdroid/repo?fingerprint=3576596cecdd70488d61cfd90799a49b7ffd26a81a8fef1badec88d069fa72c1&appId=com.ghisler.tcplugins.drive",
             "author": "totalcmd",
             "name": "Totalcmd-Drive",
@@ -10,6 +10,7 @@
             "overrideSource": "FDroidRepo"
         }
     ],
+    "icon": "https://play-lh.googleusercontent.com/d7_tS5GtKICcytzeo2AwqgPt4cEpoOGMF0Rl-60VpnkcfN9Fvjwg1DkBI7haI2OsniE",
     "categories": [
         "file_manager"
     ],
