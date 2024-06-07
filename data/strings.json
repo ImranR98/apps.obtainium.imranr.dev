@@ -10,6 +10,9 @@
         "en": "Select App Categories",
         "de": "Wähle eine Kategorie aus"
     },
+    "requestAppsButton": {
+        "en": "Request Apps"
+    },
     "go": {
         "en": "Go",
         "de": "Los"
