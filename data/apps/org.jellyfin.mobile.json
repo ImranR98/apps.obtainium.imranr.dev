@@ -10,9 +10,10 @@
     ],
     "icon": null,
     "categories": [
-        "other"
+        "file_sharing",
+        "video_player"
     ],
     "description": {
-        "en": null
+        "en": "Client für Jellyfin"
     }
 }

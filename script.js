@@ -190,6 +190,7 @@ function render() {
     document.querySelector('#apps').innerHTML = getAppEntriesHTML(data.apps, data.categories, selectedCategories)
     document.querySelector('#title').innerHTML = getString('title')
     document.querySelector('#subtitle').innerHTML = getString('subtitle')
+    document.querySelector('#request-apps').innerHTML = getString('requestAppsButton')
 }
 
 async function fetchAsync(url) {
