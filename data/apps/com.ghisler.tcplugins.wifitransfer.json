@@ -1,7 +1,7 @@
 {
     "configs": [
         {
-            "id": "com.ghisler.tcplugins.SFTP",
+            "id": "com.ghisler.tcplugins.wifitransfer",
             "url": "https://raw.githubusercontent.com/chrisgch/tca/master/fdroid/repo?fingerprint=3576596cecdd70488d61cfd90799a49b7ffd26a81a8fef1badec88d069fa72c1&appId=com.ghisler.tcplugins.wifitransfer",
             "author": "totalcmd",
             "name": "TotalCmd-Wifi Transfer",
@@ -10,6 +10,7 @@
             "overrideSource": "FDroidRepo"
         }
     ],
+    "icon": "https://play-lh.googleusercontent.com/UzZHR4IRqVybP39Qj9Krby87Sc7BntwnCUao-vL8sX3QVFwG11QlGj93su_1CfNyRkI",
     "categories": [
         "file_manager"
     ],

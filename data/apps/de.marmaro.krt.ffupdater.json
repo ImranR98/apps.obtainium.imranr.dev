@@ -9,6 +9,7 @@
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"app-full-release\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
+    "icon": "https://f-droid.org/repo/icons-640/de.marmaro.krt.ffupdater.173.png",
     "categories": [
         "downloader_and_manager"
     ],
