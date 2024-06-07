@@ -11,7 +11,8 @@
         "de": "Wähle eine Kategorie aus"
     },
     "requestAppsButton": {
-        "en": "Request Apps"
+        "en": "Request Apps",
+        "de": "Frage nach einer Appkonfiguration"
     },
     "go": {
         "en": "Go",
