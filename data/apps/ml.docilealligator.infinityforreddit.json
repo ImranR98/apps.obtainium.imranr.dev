@@ -10,9 +10,9 @@
     ],
     "icon": null,
     "categories": [
-        "other"
+        "community_clients"
     ],
     "description": {
-        "en": null
+        "en": "FOSS Reddit Client"
     }
 }

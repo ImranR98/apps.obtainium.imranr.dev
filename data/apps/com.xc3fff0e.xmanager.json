@@ -10,9 +10,12 @@
     ],
     "icon": null,
     "categories": [
-        "other"
+        "downloader_and_manager",
+        "music",
+        "podcast_and_audio_book_player"
     ],
     "description": {
-        "en": null
+        "en": "Downloader & Updater for ad-free versions of Spotify and Spotify Light",
+        "de": "Downloader & Updater für werbefreie Varianten von Spotify und Spotify Light"
     }
 }

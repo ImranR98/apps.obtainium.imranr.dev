@@ -9,7 +9,8 @@
         }
     ],
     "categories": [
-        "synchronisation"
+        "synchronisation",
+        "research_and_development"
     ],
     "description": {
         "en": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.",
