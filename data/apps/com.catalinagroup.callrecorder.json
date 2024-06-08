@@ -11,6 +11,7 @@
     ],
     "icon": "https://cubeacr.app/favicon.ico",
     "description": {
-        "en": "An advanced call recording app for Android, capable of recording phone calls, VoIP conversations, and more."
+        "en": "An advanced call recording app for Android, capable of recording phone calls, VoIP conversations, and more.",
+        "de": "Eine fortschrittliche Anrufaufzeichnungs-App für Android, die Telefonanrufe, VoIP-Gespräche und mehr aufzeichnen kann."
     }
 }
