@@ -11,10 +11,10 @@
     ],
     "icon": "https://avatars.githubusercontent.com/u/47433933?s=200&v=4",
     "categories": [
-        "2FA",
-        "password_and_authentication"
+        "2FA"
     ],
     "description": {
-        "en": "A two-factor authentication app that generates secure tokens for logging into various online accounts, enhancing account security."
+        "en": "A two-factor authentication app that generates secure tokens for logging into various online accounts, enhancing account security.",
+        "de": "Eine App zur Zwei-Faktor-Authentifizierung, die sichere Token für die Anmeldung bei verschiedenen Online-Konten erzeugt und so die Kontosicherheit erhöht."
     }
 }
