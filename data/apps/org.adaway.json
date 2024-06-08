@@ -14,6 +14,7 @@
         "ad_blocker"
     ],
     "description": {
-        "en": "An ad-blocking app for Android devices that blocks advertisements in web browsers and apps, enhancing the user experience and privacy."
+        "en": "An ad-blocking app for Android devices that blocks advertisements in web browsers and apps, enhancing the user experience and privacy.",
+        "de": "Eine Werbeblocker-App für Android-Geräte, die Werbung in Webbrowsern und Apps blockiert und so das Nutzererlebnis und den Datenschutz verbessert."
     }
 }
