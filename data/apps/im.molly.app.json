@@ -13,6 +13,7 @@
         "messaging"
     ],
     "description": {
-        "en": null
+        "en": "unofficial FOSS Signal Client",
+        "de": "inoffizieller FOSS Signal Client"
     }
 }
