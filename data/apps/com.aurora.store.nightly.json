@@ -6,7 +6,7 @@
             "author": "Aurora OSS",
             "name": "Aurora Store",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"versionExtractionRegEx\":\"AuroraStore-[0-9]+.[0-9]+.[0-9]+-nightly-signed-(0?[1-9]|[12][0-9]|3[01])-(0?[1-9]|[1][0-2])-(\d{1,6}).apk\"}"
+            "additionalSettings": "{\"versionExtractionRegEx\":\"AuroraStore-[0-9]+.[0-9]+.[0-9]+-nightly-signed-(0?[1-9]|[12][0-9]|3[01])-(0?[1-9]|[1][0-2])-(d{1,6}).apk\"}"
         }
     ],
     "icon": "https://gitlab.com/uploads/-/system/project/avatar/6922885/icon.png",
