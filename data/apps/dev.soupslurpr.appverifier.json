@@ -13,6 +13,7 @@
         "downloader_and_manager"
     ],
     "description": {
-        "en": null
+        "en": "AppVerifier is an app signing certificate hash viewer and verifier. It enables you to easily verify that your apps are genuine with others.",
+        "de": "AppVerifier ist ein App-Signierungszertifikat-Hash-Prüfer. Er ermöglicht es die Echtheit von Apps einfach zu überprüfen."
     }
 }
