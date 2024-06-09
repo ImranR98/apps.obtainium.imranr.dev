@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.futo.platformplayer",
+            "url": "https://grayjay.app/#download/",
+            "author": "grayjay.app",
+            "name": "Grayjay",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"arm64\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": null
+    }
+}
