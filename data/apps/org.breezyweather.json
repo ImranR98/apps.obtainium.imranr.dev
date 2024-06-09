@@ -14,6 +14,7 @@
         "weather"
     ],
     "description": {
-        "en": "A weather app that provides weather forecasts and information, possibly with additional features or customization options."
+        "en": "A weather app that provides weather forecasts and information. There are numerous customization options, such as the ability to choose from which source the weather report is retrieved.",
+        "de": "Eine Wetter-App, die Wettervorhersagen und -informationen bietet. Es gibt zahlreiche Anpassungsoptionen, wie z.B. die Möglichkeit zu wählen von welcher Quelle der Wetterbericht abgerufen wird."
     }
 }

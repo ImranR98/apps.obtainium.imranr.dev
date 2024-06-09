@@ -15,6 +15,7 @@
         "calendar"
     ],
     "description": {
-        "en": "A widget app for Android devices, providing various widgets for displaying weather, calendar events, and other information on the home screen."
+        "en": "A widget app for Android devices, providing various widgets for displaying weather, calendar events, and other information on the home screen.",
+        "de": "Eine Widget-App für Android-Geräte, die verschiedene Widgets für die Anzeige von Wetter, Kalenderereignissen und anderen Informationen auf dem Startbildschirm bereitstellt."
     }
 }

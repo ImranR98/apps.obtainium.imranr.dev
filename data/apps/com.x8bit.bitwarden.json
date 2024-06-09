@@ -14,6 +14,7 @@
         "password_and_authentication"
     ],
     "description": {
-        "en": "A password manager app that securely stores and manages passwords and other sensitive information across devices."
+        "en": "A password manager app that securely stores and manages passwords and other sensitive information across devices.",
+        "de": "Eine Passwortmanager-App, die Passwörter und andere vertrauliche Informationen sicher und geräteübergreifend speichert und verwaltet."
     }
 }
