@@ -2,14 +2,14 @@
     "configs": [
         {
             "id": "com.aurora.store.nightly",
-            "url": "https://www.auroraoss.com/AuroraStore/Release",
+            "url": "https://auroraoss.com/AuroraStore/Nightly",
             "author": "Aurora OSS",
-            "name": "Aurora Store",
+            "name": "Aurora Store Nightly",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"versionExtractionRegEx\":\"AuroraStore-[0-9]+.[0-9]+.[0-9]+-nightly-signed-(0?[1-9]|[12][0-9]|3[01])-(0?[1-9]|[1][0-2])-(d{1,6}).apk\"}"
         }
     ],
-    "icon": "https://gitlab.com/uploads/-/system/project/avatar/6922885/icon.png",
+    "icon": "https://gitlab.com/AuroraOSS/AuroraStore/-/raw/master/app/src/nightly/res/mipmap-hdpi/ic_launcher.png?inline=false",
     "description": {
         "en": "Aurora Store Nightly is the test version of an unofficial FOSS client for Google Play with bare minimum features. Aurora Store allows users to download, update, and search for apps like the Play Store. It works perfectly fine with or without Google Play Services or microG.",
         "de": "Aurora Store Nightly ist die Testversion eines inoffiziellen FOSS-Client für Google Play mit nur minimalen Funktionen. Aurora Store ermöglicht Benutzern das Herunterladen, Aktualisieren und Suchen nach Apps, die sich im Google Play Store befinden. Es funktioniert sowohl mit als auch ohne Google Play Services oder microG."

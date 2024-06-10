@@ -14,6 +14,7 @@
         "calendar", "contacts"
     ],
     "description": {
-        "en": "All-in-one CalDAV/CardDAV/WebDAV solution for Android. Sync your contacts, calendars and tasks."
+        "en": "All-in-one CalDAV/CardDAV/WebDAV solution for Android. Sync your contacts, calendars and tasks.",
+        "de": "All-in-One CalDAV/CardDAV/WebDAV-Lösung für Android. Synchronisieren Sie Ihre Kontakte, Kalender und Aufgaben."
     }
 }
