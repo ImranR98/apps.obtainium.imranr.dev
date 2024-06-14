@@ -1,8 +1,7 @@
 """
 generate_from_url.py
 
-This script is used to generate an app JSON file from an Obtainium redirect URL.
-The URL should be in the format of obtainium://app/{JSON} or obtainium://add/{JSON}.
+This script is used to generate an app config file from an Obtainium redirect URL.
 """
 
 from urllib.parse import unquote
@@ -32,7 +31,7 @@ def extract_json_from_obtainium_url(url):
         return None
 
 def create_new_config():
-    """Create a new app from a URL."""
+    """Create a new app config file."""
     url_input = input("Input URL to extract JSON from: ")
     decoded_url = unquote(url_input)
 
@@ -55,7 +54,7 @@ def create_new_config():
     app_file_path = APP_DATA_PATH + new_app_json["configs"][0]["id"] + ".json"
 
     if os.path.exists(app_file_path):
-        print(Fore.RED + f"File {app_file_path} already exists.")
+        print(Fore.RED + f"File {app_file_path} already exists. Please try updating an existing config instead.")
         return
 
     os.makedirs(os.path.dirname(app_file_path), exist_ok=True)
@@ -66,7 +65,7 @@ def create_new_config():
     print(Fore.GREEN + f"File created at {app_file_path}")
 
 def update_existing_config():
-    """Add a config to an existing app."""
+    """Add an additional config to an existing config file."""
     url_input = unquote(input("Input URL to extract JSON from: "))
 
     if not is_obtainium_url(url_input):
@@ -104,7 +103,7 @@ def update_existing_config():
 def main():
     """Main function."""
     print("1. Create new app config")
-    print("2. Add config to already existing app config")
+    print("2. Add config to already existing app config file")
     user_choice = input("Enter your choice: ")
 
     actions = {"1": create_new_config, "2": update_existing_config}
