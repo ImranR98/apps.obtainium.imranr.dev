@@ -79,7 +79,7 @@ def update_existing_config():
     app_file_path = APP_DATA_PATH + app_file_name_input
 
     if not os.path.exists(app_file_path):
-        print(Fore.RED + f"File {app_file_name_input} does not exist. Please try creating a new config instead.")
+        print(Fore.RED + f"File {app_file_path} does not exist. Please try creating a new config instead.")
         return
 
     app_config_json = extract_json_from_obtainium_url(url_input)
