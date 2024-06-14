@@ -5,10 +5,10 @@
             "url": "https://droidsound-e.web.app/version.json",
             "author": "droidmjt",
             "name": "Droidsound-E",
-            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"droidsounde.+bit.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"DroidSound-E\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+            "additionalSettings": "{\"includePrereleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"droidsounde.+bit.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"DroidSound-E\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false}"
         }
     ],
-    "icon": "https://avatars.githubusercontent.com/u/109746326?s=200&v=4",
+    "icon": "",
     "categories": [
         "music"
     ],
