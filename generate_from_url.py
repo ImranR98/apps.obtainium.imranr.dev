@@ -5,7 +5,6 @@ This script is used to generate an app config file from an Obtainium redirect UR
 """
 
 from urllib.parse import unquote
-import re
 import json
 import os
 
@@ -14,16 +13,15 @@ from colorama import Fore, init
 init(autoreset=True)
 
 APP_URL_PREFIX = "obtainium://app/"
-ADD_URL_PREFIX = "obtainium://add/"
 APP_DATA_PATH = "./data/apps/"
 
 def is_obtainium_url(url):
     """Check if the URL is valid."""
-    return APP_URL_PREFIX in url or ADD_URL_PREFIX in url
+    return APP_URL_PREFIX in url
 
 def extract_json_from_obtainium_url(url):
     """Extract JSON from the URL."""
-    raw_json = re.split(f"{APP_URL_PREFIX}|{ADD_URL_PREFIX}", url)[1]
+    raw_json = url.split(APP_URL_PREFIX, 1)[1]
     try:
         return json.loads(raw_json)
     except json.JSONDecodeError:
