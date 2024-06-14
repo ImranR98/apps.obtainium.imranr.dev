@@ -1,7 +1,7 @@
 """
 generate_from_url.py
 
-This script is used to generate an app JSON file from an Obtainium redirect URL. 
+This script is used to generate an app JSON file from an Obtainium redirect URL.
 The URL should be in the format of obtainium://app/{JSON} or obtainium://add/{JSON}.
 """
 

@@ -33,7 +33,7 @@ For example:
 - To contribute content, create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with valid changes/additions to the config files in `data/`.
   - You can auto-generate config files from an Obtainium export by running `node generateFromExport.js <path to Obtainium export>`
   - Note: Auto-generated entries will not have icon, category, or description data. Adding those manually is not required but would result in a better user experience.
-  - You can also auto-generate config files from an Obtainium URL redirection link by running `generate_from_url.py` 
+  - You can also auto-generate config files from an Obtainium URL redirection link by running `generate_from_url.py`
   - Note: Using `generate_from_url.py` requires you to install "Colorama" by using the `pip` command `pip install colorama`
 - To test locally, run: `node buildData.js && python -m http.server 8080`
 - See https://github.com/ImranR98/Obtainium/issues/1214 for background/context for this repo.
