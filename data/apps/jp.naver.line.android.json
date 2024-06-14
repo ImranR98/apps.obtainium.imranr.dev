@@ -1,0 +1,24 @@
+{
+    "configs": [
+        {
+            "id": "jp.naver.line.android",
+            "url": "https://line-android-universal-download.line-scdn.net/line-apk-download.html",
+            "author": "LY Corporation",
+            "name": "LINE",
+            "additionalSettings": "{\"about\":\"New communication app which allows you to make FREE voice calls and send FREE messages whenever and wherever you are, 24 hours a day!\",\"appName\":\"LINE\",\"trackOnly\":false,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":true,\"versionExtractWholePage\":false,\"versionExtractionRegEx\":\"(?<=\\\\/line\\\\-)[0-9]+\\\\.[0-9]+\\\\.[0-9]+(?=\\\\.apk$)\"}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": "https://line.me/apple-touch-icon-180x180.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "New communication app which allows you to make FREE voice calls and send FREE messages whenever and wherever you are, 24 hours a day!",
+        "zh": "一款全新型態的通訊軟體，讓您隨時隨地享受免費傳訊、免費通話等溝通樂趣。",
+        "ja": "会話を楽しめる「トーク・音声通話・ビデオ通話」をはじめ、人や情報・サービス、企業・ブランドとシームレスに繋がることができます。",
+        "ko": "언제 어디서나 무료로 메시지를 보내고, 깨끗한 음질로 24시간 자유롭게 무료 통화가 가능한 새로운 커뮤니케이션 앱입니다.",
+        "th": "LINE แอพฯ สำหรับการสื่อสารที่คุณสามารถรับ-ส่งข้อความ โทรด้วยเสียงและ วิดีโอได้ทุกที่ทุกเวลา ฟรีตลอด 24 ชั่วโมง",
+        "id": "aplikasi baru untuk komunikasi yang memungkinkan Anda membuat panggilan GRATIS dan mengirim pesan GRATIS kapan pun, dimana pun, 24jam sehari!"
+    }
+}
