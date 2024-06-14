@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.valvesoftware.android.steam.community",
+            "url": "https://store.steampowered.com/mobile",
+            "author": "store.steampowered.com",
+            "name": "Steam",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"https://media.steampowered.com/apps/steam-android/\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+\\\\.\\\\d+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://store.akamai.steamstatic.com/public/images/mobile/steam_logo.png",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": "Buy games, protect your Steam account, and get the latest news from your games and the community."
+    }
+}
