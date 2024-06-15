@@ -5,7 +5,7 @@
             "url": "https://www.zenz-solutions.de/personaldnsfilter-wp/",
             "author": "Zens Solutions",
             "name": "personalDNSfilter",
-            "additionalSettings": "{\"about\":\"personalDNSfilter is a DNS filter proxy that hooks into the domain name resolution and returns the loopback address for filtered hosts.\",\"appName\":\"personalDNSfilter\",\"customLinkFilterRegex\":\"^DOWNLOAD\\\\s+APK$\",\"filterByLinkText\":true,\"supportFixedAPKURL\":true,\"trackOnly\":false,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":true,\"versionExtractWholePage\":true,\"versionExtractionRegEx\":\"(?<=^|[,.\\\\s])(?:C|c)urrent\\\\s+(?:V|v)ersion\\\\s+is\\\\s+((?:[0-9]+\\\\.)+[0-9]+)(?=[,.\\\\s]|$)\"}",
+            "additionalSettings": "{\"about\":\"personalDNSfilter is a DNS filter proxy that hooks into the domain name resolution and returns the loopback address for filtered hosts.\",\"appName\":\"personalDNSfilter\",\"customLinkFilterRegex\":\"^DOWNLOAD\\\\s+APK$\",\"filterByLinkText\":true,\"supportFixedAPKURL\":true,\"trackOnly\":false,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":true,\"versionExtractWholePage\":true,\"versionExtractionRegEx\":\"(?<=(?:\\\\\\\\n)|[,.>\\\\s])(?:C|c)urrent\\\\s+(?:V|v)ersion\\\\s+is\\\\s+((?:[0-9]+\\\\.)+[0-9]+)(?=[,.<\\\\s]|(?:\\\\\\\\n))\"}",
             "overrideSource": "HTML",
             "altLabel": "www.zenz-solutions.de"
         },
