@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.ppsspp.ppssppvr",
+            "url": "https://www.ppsspp.org/download/",
+            "author": "PPSSPP",
+            "name": "PPSSPP VR",
+            "additionalSettings": "{\"about\":\"PPSSPP VR is an open source PSP emulator for your VR devices like Quest and Pico\",\"appName\":\"PPSSPP VR\",\"customLinkFilterRegex\":\"\\\\/[0-9]+(?:_[0-9]+){1,2}\\\\/ppsspp_vr\\\\.apk$\",\"filterByLinkText\":false,\"matchGroupToUse\":\"$1$3.$2$4$6$5\",\"reverseSort\":false,\"skipSort\":false,\"sortByLastLinkSegment\":false,\"trackOnly\":false,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":true,\"versionExtractWholePage\":false,\"versionExtractionRegEx\":\"\\\\/(?:(?:([0-9]+)_([0-9]+)\\\\/ppsspp_vr\\\\.)|(?:([0-9]+)_([0-9]+)_([0-9]+)\\\\/ppsspp_vr(\\\\.)))apk$\"}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": "https://www.ppsspp.org/static/img/platform/ppsspp-icon.png",
+    "categories": [
+        "emulator"
+    ],
+    "description": {
+        "en": "PPSSPP VR is an open source PSP emulator for your VR devices like Quest and Pico"
+    }
+}

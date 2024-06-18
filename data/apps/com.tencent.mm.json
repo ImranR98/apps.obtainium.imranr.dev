@@ -1,0 +1,30 @@
+{
+    "configs": [
+        {
+            "id": "com.tencent.mm",
+            "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_faq_list&head=true",
+            "author": "Tencent",
+            "name": "Weixin",
+            "additionalSettings": "{\"about\":\"Connecting a billion people with calls, chats, and more\",\"apkFilterRegEx\":\"\\\\/(?:.+_)?arm64(?:_.+)?\\\\.apk$\",\"appName\":\"Weixin\",\"autoApkFilterByArch\":false,\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\/readtemplate\\\\?(?:[^#&]*&)*lang\\\\=zh_CN&(?:[^#&]*&)*t\\\\=page\\\\/faq\\\\/android\\\\/[0-9]{3,}\\\\/index&(?:[^#&]*&)*faq\\\\=android_[0-9]{3,}(?:[&#].*)?$\",\"filterByLinkText\":false,\"reverseSort\":true,\"skipSort\":true}],\"invertAPKFilter\":false,\"matchGroupToUse\":\"$1$4.$2$5.$3$6\",\"trackOnly\":false,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":true,\"versionExtractWholePage\":false,\"versionExtractionRegEx\":\"\\\\/weixin(?:(?:([0-9])([0-9])([0-9]))|(?:([0-9]+)([0-9])([0-9]{2})))android.*\\\\.apk$\"}",
+            "overrideSource": "HTML",
+            "altLabel": "arm64 v8a"
+        },
+        {
+            "id": "com.tencent.mm",
+            "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_faq_list&head=true",
+            "author": "Tencent",
+            "name": "Weixin",
+            "additionalSettings": "{\"about\":\"Connecting a billion people with calls, chats, and more\",\"apkFilterRegEx\":\"\\\\/(?:.+_)?arm64(?:_.+)?\\\\.apk$\",\"appName\":\"Weixin\",\"autoApkFilterByArch\":false,\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\/readtemplate\\\\?(?:[^#&]*&)*lang\\\\=zh_CN&(?:[^#&]*&)*t\\\\=page\\\\/faq\\\\/android\\\\/[0-9]{3,}\\\\/index&(?:[^#&]*&)*faq\\\\=android_[0-9]{3,}(?:[&#].*)?$\",\"filterByLinkText\":false,\"reverseSort\":true,\"skipSort\":true}],\"invertAPKFilter\":true,\"matchGroupToUse\":\"$1$4.$2$5.$3$6\",\"trackOnly\":false,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":true,\"versionExtractWholePage\":false,\"versionExtractionRegEx\":\"\\\\/weixin(?:(?:([0-9])([0-9])([0-9]))|(?:([0-9]+)([0-9])([0-9]{2})))android.*\\\\.apk$\"}",
+            "overrideSource": "HTML",
+            "altLabel": "armeabi v7a"
+        }
+    ],
+    "icon": "https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Connecting a billion people with calls, chats, and more",
+        "zh": "連接超過10億用戶，提供聊天和通話等強大功能"
+    }
+}
