@@ -1,0 +1,22 @@
+{
+    "configs": [
+        {
+            "id": "fe.linksheet.nightly",
+            "url": "https://github.com/LinkSheet/nightly",
+            "author": "1fexd",
+            "name": "LinkSheet Nightly",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"Lawnchair.Debug\",\"invertAPKFilter\":true,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/165549212?s=200&v=4",
+    "categories": [
+        "system",
+        "browser",
+        "utilities",
+        "other"
+    ],
+    "description": {
+        "en": "Restore link control on Android 12+"
+    }
+}
