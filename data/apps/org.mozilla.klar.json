@@ -9,7 +9,7 @@
            "altLabel": "arm64 v8a"
        }
     ],
-    "icon": "https://www.mozilla.org/media/protocol/img/logos/firefox/browser/klar/logo-word-hor.67dbe50f7e2a.svg",
+    "icon": "https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/products/2021-10-13-03-37-09-93cfbb_1.png",
     "description": {
         "en": "Stable channel of the Gecko-based Firefox Klar browser. Please note that intermediate versions (127.0.x) are not found, because otherwise the beta versions with a different package name would also be found.",
         "de": "Stabile Variante des auf Gecko-Basis basierenden Browsers Firefox Klar. Bitte beachten Sie, dass Zwischenversionen (127.0.x) nicht gefunden werden, da sonst auch die Beta-Versionen, die einen anderen Paketnamen tragen, gefunden werden würden."
