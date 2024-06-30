@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.brave.browser",
+            "url": "https://github.com/brave/brave-browser",
+            "author": "Brave Software Inc.",
+            "name": "Brave",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":true,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"Relea\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/45370463?s=96&v=4",
+    "categories": [
+        "Browser"
+    ],
+    "description": {
+        "en": "Brave is an open-source web browser for Windows, macOS, Linux, Android and iOS.",
+        "de": "Brave ist ein Open-Source-Webbrowser für Windows, macOS, Linux, Android und iOS."
+    }
+}
