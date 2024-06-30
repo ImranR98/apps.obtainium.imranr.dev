@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "net.vonforst.evmap",
+            "url": "https://github.com/ev-map/EVMap",
+            "author": "ev-map",
+            "name": "EVMap",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/115927597?s=200&v=4",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "Find electric vehicle charging stations",
+        "de": "Finde Elektroauto-Ladestationen in deiner Nähe"
+    }
+}
