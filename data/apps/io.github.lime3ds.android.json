@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "io.github.lime3ds.android",
+            "url": "https://GitHub.com/lime3ds/lime3ds",
+            "author": "lime3ds",
+            "name": "Lime3DS",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Lime3DS\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Lime3DS/Lime3DS/1b1c4f29d4280c750702459fd9a6ada539a4e9a9/dist/lime.svg",
+    "categories": [
+        "emulator"
+    ],
+    "description": {
+        "en": "Lime3DS is a project which aims to revive and continue work on Citra, a popular open-source Nintendo 3DS emulator which ceased development."
+    }
+}
