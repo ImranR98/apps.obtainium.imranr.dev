@@ -1,0 +1,27 @@
+{
+    "configs": [
+        {
+            "id": "me.magnum.melonds",
+            "url": "https://github.com/rafaelvcaetano/melonDS-android",
+            "author": "rafaelvcaetano",
+            "name": "melonDS",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"MelonDS\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        },
+        {
+            "id": "me.magnum.melonds.nightly",
+            "url": "https://github.com/rafaelvcaetano/melonDS-android",
+            "author": "rafaelvcaetano",
+            "name": "melonDS Nightly",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"Nightly Build\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"nightly\\\\-release\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Arisotura/melonDS/master/res/icon/melon_128x128.png",
+    "categories": [
+        "emulator"
+    ],
+    "description": {
+        "en": "Android port of the DS emulator, melonDS."
+    }
+}
