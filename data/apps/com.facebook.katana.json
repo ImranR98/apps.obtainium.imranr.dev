@@ -4,7 +4,7 @@
             "id": "com.facebook.katana",
             "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
             "author": "FiorenMas",
-            "name": "Revanced-And-Revanced-Extended-Non-Root",
+            "name": "Revanced Facebook stable",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"facebook-arm64-v8a-r\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Facebook\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
             "overrideSource": null,
@@ -14,7 +14,7 @@
             "id": "com.facebook.katana",
             "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
             "author": "FiorenMas",
-            "name": "Revanced-And-Revanced-Extended-Non-Root",
+            "name": "Revanced Facebook beta",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"facebook-arm64-v8a-b\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Facebook Beta\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
             "overrideSource": null,
@@ -23,7 +23,7 @@
     ],
     "icon": "null",
     "categories": [
-        "social media"
+        "community_clients"
     ],
     "description": {
         "en": "revanced versions of Facebook"
