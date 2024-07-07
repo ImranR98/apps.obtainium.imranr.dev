@@ -14,7 +14,7 @@
     ],
     "icon": "https://telegram.org/img/apple-touch-icon.png",
     "description": {
-        "en": "Telegram is a messanger where the client is open source.",
-        "de": "Telegram ist ein Messenger, bei dem der Client quelloffen ist."
+        "en": "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
+        "de": "Telegram ist eine Cloud-basierte mobile und Desktop-Messaging-App mit Schwerpunkt auf Sicherheit und Geschwindigkeit."
     }
 }
