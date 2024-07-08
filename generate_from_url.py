@@ -62,6 +62,7 @@ def create_new_config():
         app_file.write('\n')
 
     print(Fore.GREEN + f"File created at {app_file_path}")
+    print(Fore.BLUE + "Ensure that you edit the created JSON file to add categories, descriptions and an icon.")
 
 def update_existing_config():
     """Add an additional config to an existing config file."""
@@ -99,6 +100,7 @@ def update_existing_config():
         app_file.write('\n')
 
     print(Fore.GREEN + f"Config added to {app_file_path}")
+    print(Fore.BLUE + "Ensure that you edit the modified JSON file to add altLabels.")
 
 def main():
     """Main function."""
