@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.ppsspp.ppsspp",
+            "url": "https://www.ppsspp.org/download/",
+            "author": "PPSSPP",
+            "name": "PPSSPP",
+            "additionalSettings": "{\"about\":\"PPSSPP is an open source, fast and portable PSP emulator\",\"appName\":\"PPSSPP\",\"customLinkFilterRegex\":\"\\\\/[0-9]+(?:_[0-9]+){1,2}\\\\/ppsspp\\\\.apk$\",\"filterByLinkText\":false,\"matchGroupToUse\":\"$1$3.$2$4$6$5\",\"reverseSort\":false,\"skipSort\":false,\"sortByLastLinkSegment\":false,\"trackOnly\":false,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":true,\"versionExtractWholePage\":false,\"versionExtractionRegEx\":\"\\\\/(?:(?:([0-9]+)_([0-9]+)\\\\/ppsspp\\\\.)|(?:([0-9]+)_([0-9]+)_([0-9]+)\\\\/ppsspp(\\\\.)))apk$\"}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": "https://www.ppsspp.org/static/img/platform/ppsspp-icon.png",
+    "categories": [
+        "emulator"
+    ],
+    "description": {
+        "en": "PPSSPP is an open source, fast and portable PSP emulator"
+    }
+}

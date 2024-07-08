@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.valvesoftware.android.steam.friendsui",
+            "url": "https://store.steampowered.com/mobile",
+            "author": "store.steampowered.com",
+            "name": "Steam Chat",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"https://cdn.akamai.steamstatic.com/apps/steam-chat/\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://store.akamai.steamstatic.com/public/images/mobile/steam_chat_icon.png",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": "A lightweight app focused on chatting with friends and groups."
+    }
+}

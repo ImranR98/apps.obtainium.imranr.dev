@@ -1,0 +1,30 @@
+{
+    "configs": [
+        {
+            "id": "com.arlosoft.macrodroid.helper",
+            "url": "https://www.macrodroidforum.com/index.php?threads/macrodroid-helper-apk.1/",
+            "author": "ArloSoft",
+            "name": "MacroDroid Helper",
+            "additionalSettings": "{\"about\":\"In order for a number of MacroDroid features to work on devices running Android 10+, a new helper app is now required. This helper app is built against an older target SDK allowing it to still invoke the functionalities.\",\"appName\":\"MacroDroid Helper\",\"customLinkFilterRegex\":\"^https\\\\:\\\\/\\\\/macrodroidlink\\\\.com\\\\/helper\\\\/MacroDroidHelper_v[0-9]+_[0-9]+\\\\.apk$\",\"filterByLinkText\":false,\"matchGroupToUse\":\"$1.$2\",\"reverseSort\":true,\"skipSort\":true,\"trackOnly\":false,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":true,\"versionExtractWholePage\":false,\"versionExtractionRegEx\":\"([0-9]+)_([0-9]+)\"}",
+            "overrideSource": "HTML",
+            "altLabel": "android 13-"
+        },
+        {
+            "id": "com.arlosoft.macrodroid.helper",
+            "url": "https://www.macrodroidforum.com/index.php?threads/macrodroid-helper-apk.1/",
+            "author": "ArloSoft",
+            "name": "MacroDroid Helper",
+            "additionalSettings": "{\"about\":\"For devices running Android 14+, be sure to read the WHOLE POST: https://www.macrodroidforum.com/index.php?threads/macrodroid-helper-apk.1/\",\"appName\":\"MacroDroid Helper\",\"customLinkFilterRegex\":\"^https\\\\:\\\\/\\\\/macrodroidlink\\\\.com\\\\/helper\\\\/MacroDroidHelper_v[0-9]+_[0-9]+\\\\.apk$\",\"filterByLinkText\":false,\"matchGroupToUse\":\"$1.$2\",\"reverseSort\":true,\"skipSort\":true,\"trackOnly\":true,\"versionExtractWholePage\":false,\"versionExtractionRegEx\":\"([0-9]+)_([0-9]+)\"}",
+            "overrideSource": "HTML",
+            "altLabel": "android 14+ (track only)"
+        }
+    ],
+    "icon": "https://static.wixstatic.com/media/7069a3_a6bee0adbcb94573bab11ddcebb3925b~mv2.png/v1/fill/w_160,h_160/onboarding_intro.png",
+    "categories": [
+        "automation",
+        "utilities"
+    ],
+    "description": {
+        "en": "In order for a number of MacroDroid features to work on devices running Android 10+, a new helper app is now required. This helper app is built against an older target SDK allowing it to still invoke the functionalities."
+    }
+}

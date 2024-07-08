@@ -1,0 +1,28 @@
+{
+    "configs": [
+        {
+            "id": "dnsfilter.android",
+            "url": "https://www.zenz-solutions.de/personaldnsfilter-wp/",
+            "author": "Zens Solutions",
+            "name": "personalDNSfilter",
+            "additionalSettings": "{\"about\":\"personalDNSfilter is a DNS filter proxy that hooks into the domain name resolution and returns the loopback address for filtered hosts.\",\"appName\":\"personalDNSfilter\",\"customLinkFilterRegex\":\"^DOWNLOAD\\\\s+APK$\",\"filterByLinkText\":true,\"supportFixedAPKURL\":true,\"trackOnly\":false,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":true,\"versionExtractWholePage\":true,\"versionExtractionRegEx\":\"(?<=(?:\\\\\\\\n)|[,.>\\\\s])(?:C|c)urrent\\\\s+(?:V|v)ersion\\\\s+is\\\\s+((?:[0-9]+\\\\.)+[0-9]+)(?=[,.<\\\\s]|(?:\\\\\\\\n))\"}",
+            "overrideSource": "HTML",
+            "altLabel": "www.zenz-solutions.de"
+        },
+        {
+            "id": "dnsfilter.android",
+            "url": "https://f-droid.org/packages/dnsfilter.android/",
+            "author": "Zens Solutions",
+            "name": "personalDNSfilter",
+            "additionalSettings": "{\"about\":\"personalDNSfilter is a DNS filter proxy that hooks into the domain name resolution and returns the loopback address for filtered hosts.\",\"appName\":\"personalDNSfilter\",\"autoApkFilterByArch\":true,\"trackOnly\":false}",
+            "altLabel": "f-droid.org"
+        }
+    ],
+    "icon": "https://crowdin-static.downloads.crowdin.com/images/project-logo/302308/small/fd8c1c1040b690ed4175ffb6f9208f3b7.png",
+    "categories": [
+        "ad_blocker"
+    ],
+    "description": {
+        "en": "personalDNSfilter is a DNS filter proxy that hooks into the domain name resolution and returns the loopback address for filtered hosts."
+    }
+}
