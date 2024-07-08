@@ -100,8 +100,10 @@ def update_existing_config():
 
 def main():
     """Main function."""
-    print("1. Create new app config")
-    print("2. Add config to already existing app config file")
+    print("""
+1. Create new app config
+2. Add config to already existing app config file
+""")
     user_choice = input("Enter your choice: ")
 
     actions = {"1": create_new_config, "2": update_existing_config}
