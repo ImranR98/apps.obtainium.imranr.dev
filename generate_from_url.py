@@ -50,10 +50,26 @@ def create_new_config():
     }
 
     app_file_path = APP_DATA_PATH + new_app_json["configs"][0]["id"] + ".json"
+    original_app_file_path = app_file_path
+    existing_files = []
 
     if os.path.exists(app_file_path):
-        print(Fore.RED + f"File {app_file_path} already exists. Please try updating an existing config instead.")
-        return
+        existing_files.append(app_file_path)
+    suffix = 1
+    while os.path.exists(f"{original_app_file_path[:-5]}-{suffix}.json"):
+        existing_files.append(f"{original_app_file_path[:-5]}-{suffix}.json")
+        suffix += 1
+
+    if existing_files:
+        print(Fore.YELLOW + "The following files already exist:")
+        for file in existing_files:
+            print(Fore.YELLOW + file)
+        user_choice = input("Do you want to add the file anyway with a different name? (y/n): ")
+        if user_choice.lower() == 'y':
+            app_file_path = f"{original_app_file_path[:-5]}-{suffix}.json"
+        else:
+            print(Fore.RED + "Operation cancelled. Please try updating an existing config instead.")
+            return
 
     os.makedirs(os.path.dirname(app_file_path), exist_ok=True)
 
@@ -62,7 +78,7 @@ def create_new_config():
         app_file.write('\n')
 
     print(Fore.GREEN + f"File created at {app_file_path}")
-    print(Fore.BLUE + "Ensure that you edit the created JSON file to add categories, descriptions and an icon.")
+    print(Fore.BLUE + "Ensure that you edit the created JSON file to add categories, descriptions, and an icon.")
 
 def update_existing_config():
     """Add an additional config to an existing config file."""
