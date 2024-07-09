@@ -78,7 +78,7 @@ def create_new_config():
         app_file.write('\n')
 
     print(Fore.GREEN + f"File created at {app_file_path}")
-    print(Fore.BLUE + "Ensure that you edit the created JSON file to add categories, descriptions, and an icon.")
+    print(Fore.BLUE + "Ensure that you edit the created JSON file to add categories, descriptions and an icon.")
 
 def update_existing_config():
     """Add an additional config to an existing config file."""
@@ -120,10 +120,8 @@ def update_existing_config():
 
 def main():
     """Main function."""
-    print("""
-1. Create new app config
-2. Add config to already existing app config file
-""")
+    print("1. Create new app config")
+    print("2. Add config to already existing app config file")
     user_choice = input("Enter your choice: ")
 
     actions = {"1": create_new_config, "2": update_existing_config}
