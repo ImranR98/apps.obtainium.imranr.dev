@@ -13,7 +13,7 @@
             "id": "com.teslacoilsw.launcher",
             "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
             "author": "FiorenMas",
-            "name": "Nova Launcher stable revanced",
+            "name": "Nova Launcher stable",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"no\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Nova Launcher\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
             "overrideSource": null,
