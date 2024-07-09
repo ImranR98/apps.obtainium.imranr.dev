@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "com.nononsenseapps.feeder",
+            "url": "https://github.com/spacecowboy/Feeder",
+            "author": "spacecowboy",
+            "name": "Feeder",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/spacecowboy/Feeder/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+    "categories": ["rss_readers"],
+    "description": {
+        "en": "An open source feed reader (RSS/Atom/JSONFeed) for Android that allows you to read the latest news and posts from your favorite sites."
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "com.github.stenzek.duckstation",
+            "url": "https://duckstation.org/android",
+            "author": "duckstation.org",
+            "name": "Duckstation",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/stenzek/duckstation/blob/master/data/resources/images/duck.png?raw=true",
+    "categories": ["emulator", "games"],
+    "description": {
+        "en": "Fast PlayStation 1 emulator for x86-64/AArch32/AArch64/RV64"
+    }
+}

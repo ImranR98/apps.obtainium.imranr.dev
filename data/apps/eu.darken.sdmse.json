@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "eu.darken.sdmse",
+            "url": "https://github.com/d4rken-org/sdmaid-se",
+            "author": "d4rken-org",
+            "name": "SD Maid SE",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/d4rken-org/sdmaid-se/blob/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+    "categories": ["file_manager", "utilities"],
+    "description": {
+        "en": "SD Maid SE (AKA SD Maid 2) is a file management tool for Android that specialises in maintenance. Its core purpose is freeing up space and removing unwanted data."
+    }
+}

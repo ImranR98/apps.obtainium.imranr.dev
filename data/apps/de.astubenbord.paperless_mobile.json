@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "de.astubenbord.paperless_mobile",
+            "url": "https://github.com/astubenbord/paperless-mobile",
+            "author": "astubenbord",
+            "name": "Paperless Mobile",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/astubenbord/paperless-mobile/blob/development/assets/logos/paperless_logo_green.png?raw=true",
+    "categories": [
+        "document_scanner",
+        "synchronisation"
+    ],
+    "description": {
+        "en": "Paperless Mobile brings paperless-ngx to your smartphone without any compromises."
+    }
+}
