@@ -16,6 +16,7 @@
         "utilities"
     ],
     "description": {
-        "en": "A to-do list and task management app for Android devices, offering features like task organization, reminders, and synchronization across devices."
+        "en": "A to-do list and task management app for Android devices, offering features like task organization, reminders, and synchronization across devices.",
+        "de": "Eine To-Do-Liste und Aufgabenverwaltungs-App für Android-Geräte, die Funktionen wie Aufgabenorganisation, Erinnerungen und geräteübergreifende Synchronisierung bietet."
     }
 }

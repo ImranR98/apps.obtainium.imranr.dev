@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+          "id":"me.proton.android.drive",
+          "url":"https://protonapps.com/protondrive-android",
+          "author":"Proton AG",
+          "name":"Proton Drive",
+          "additionalSettings":"{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true\"}"
+        }
+    ],
+    "icon": "https://protonapps.com/img/protoncalendar-logo.svg",
+    "categories": [
+        "synchronisation"
+    ],
+    "description": {
+        "en": "Secure cloud storage for your Android device."
+    }
+}

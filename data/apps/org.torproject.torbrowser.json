@@ -8,11 +8,12 @@
             "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"aarch64\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}"
         }
     ],
-    "icon": null,
+    "icon": "https://gitlab.torproject.org/uploads/-/system/project/avatar/426/tor_logo.png?width=96",
     "categories": [
-        "other"
+        "browser"
     ],
     "description": {
-        "en": null
+        "en": "Gecko-based browser that can also access the (Tor-)darknet.",
+        "de": "Gecko basierter Browser, der auch auf das (Tor-)Darknet zugreifen kann."
     }
 }
