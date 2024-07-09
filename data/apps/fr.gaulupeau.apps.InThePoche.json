@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "fr.gaulupeau.apps.InThePoche",
+            "url": "https://github.com/wallabag/android-app",
+            "author": "wallabag",
+            "name": "wallabag",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/wallabag/android-app/blob/master/app/src/release/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+    "categories": ["synchronisation"],
+    "description": {
+        "en": "Android application to read your articles saved in your wallabag. You can also easily add new articles."
+    }
+}

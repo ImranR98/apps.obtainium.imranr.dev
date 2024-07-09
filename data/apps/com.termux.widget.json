@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "com.termux.widget",
+            "url": "https://github.com/termux/termux-widget",
+            "author": "termux",
+            "name": "Termux:Widget",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/termux/termux-app/blob/master/art/ic_launcher2.png?raw=true",
+    "categories": ["research_&_development", "sandboxing", "system"],
+    "description": {
+        "en": "Termux add-on app which adds shortcuts to commands on the home screen."
+    }
+}

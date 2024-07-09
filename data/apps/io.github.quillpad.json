@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "io.github.quillpad",
+            "url": "https://github.com/quillpad/quillpad",
+            "author": "quillpad",
+            "name": "Quillpad",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/quillpad/quillpad/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+    "categories": ["notes", "text_editors"],
+    "description": {
+        "en": "Take beautiful markdown notes and stay organized with task lists. Fork of Quillnote"
+    }
+}

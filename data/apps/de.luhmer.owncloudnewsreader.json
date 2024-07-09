@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "de.luhmer.owncloudnewsreader",
+            "url": "https://github.com/nextcloud/news-android",
+            "author": "nextcloud",
+            "name": "News",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/nextcloud/news-android/blob/master/News-Android-App/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+    "categories": ["rss_readers", "synchronisation"],
+    "description": {
+        "en": "Android client for the Nextcloud news/feed reader app"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "com.github.gotify",
+            "url": "https://github.com/gotify/android",
+            "author": "gotify",
+            "name": "Gotify",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/gotify/android/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+    "categories": ["messaging"],
+    "description": {
+        "en": "Gotify Android connects to gotify/server and shows push notifications on new messages."
+    }
+}
