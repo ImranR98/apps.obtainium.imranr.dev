@@ -113,7 +113,6 @@ def update_existing_config():
 
     with open(app_file_path, "w", encoding="utf-8") as app_file:
         json.dump(existing_app_data, app_file, indent=4, ensure_ascii=False)
-        app_file.write('\n')
 
     print(Fore.GREEN + f"Config added to {app_file_path}")
     print(Fore.BLUE + "Ensure that you edit the modified JSON file to add altLabels.")
