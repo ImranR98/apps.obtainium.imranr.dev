@@ -44,9 +44,9 @@ def create_new_config():
 
     new_app_json = {
         "configs": [app_config_json],
-        "icon": "null",
+        "icon": None,
         "categories": ["other"],
-        "description": {"en": "null"}
+        "description": {"en": None}
     }
 
     app_file_path = APP_DATA_PATH + new_app_json["configs"][0]["id"] + ".json"
@@ -109,7 +109,7 @@ def update_existing_config():
 
     for config in existing_app_data["configs"]:
         if 'altLabel' not in config:
-            config['altLabel'] = "null"
+            config['altLabel'] = None
 
     with open(app_file_path, "w", encoding="utf-8") as app_file:
         json.dump(existing_app_data, app_file, indent=4, ensure_ascii=False)

@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "io.ente.photos.independent",
+            "url": "https://github.com/ente-io/ente",
+            "author": "Ente",
+            "name": "Ente Photos",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"photos-\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"(\\\\d+)\\\\.(\\\\d+)\\\\.(\\\\d+)\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/NjAYv1arl0ckzQRit2EBRtmWn73kg_FJ-om7kOlq2eH9-HPv3KuCqYX6xREI9EsFoXE=w240-h480",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": " Fully open source, End to End Encrypted alternative to Google Photos and Apple Photos. NOTE: This app intentionally has a different ID to the Google Play/F-Droid version."
+    }
+}
