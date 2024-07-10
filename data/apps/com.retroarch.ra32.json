@@ -1,14 +1,15 @@
 {
     "configs": [
         {
-			"id": "com.retroarch.ra32",
-			"url": "https://retroarch.com/?page=platforms",
-			"author": "Libretro",
-			"name": "RetroArch (32-bit)",
-			"preferredApkIndex": 0,
-			"additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"buildbot\\\\.libretro\\\\.com/stable/((:?\\\\d+\\\\.)*\\\\d+)/android/.*\\\\.apk$\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\".*/stable/((:?\\\\d+\\\\.)*\\\\d+)/android/.*\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\bRetroArch_ra32.apk$\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":true}",
-            "overrideSource": "HTML"
-		},
+            "id": "com.retroarch.ra32",
+            "url": "https://retroarch.com/?page=platforms",
+            "author": "Libretro",
+            "name": "RetroArch (32-bit)",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"buildbot\\\\.libretro\\\\.com/stable/((:?\\\\d+\\\\.)*\\\\d+)/android/.*\\\\.apk$\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\".*/stable/((:?\\\\d+\\\\.)*\\\\d+)/android/.*\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\bRetroArch_ra32.apk$\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":true}",
+            "overrideSource": "HTML",
+            "altLabel": "32-bit (retroarch.com)"
+        },
         {
             "id": "com.retroarch.ra32",
             "url": "https://buildbot.libretro.com/nightly/android",
@@ -16,7 +17,18 @@
             "name": "RetroArch Nightly (32-bit)",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}-RetroArch_ra32.apk\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":true,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d{4}-\\\\d{2}-\\\\d{2}-RetroArch_ra32.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":true,\"sortByFileNamesNotLinks\":true,\"intermediateLinkRegex\":\"\"}",
-            "overrideSource": "HTML"
+            "overrideSource": "HTML",
+            "altLabel": "32-bit (Nightly)"
+        },
+        {
+            "id": "com.retroarch.ra32",
+            "url": "https://buildbot.libretro.com/stable/",
+            "author": "buildbot.libretro.com",
+            "name": "App",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false},{\"customLinkFilterRegex\":\"android\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"RetroArch_ra32.apk\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Retro Arch\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": null,
+            "altLabel": "32-bit (buildbot)"
         }
     ],
     "icon": "https://avatars.githubusercontent.com/u/1812827",
