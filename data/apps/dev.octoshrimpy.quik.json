@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "dev.octoshrimpy.quik",
+            "url": "https://github.com/octoshrimpy/quik",
+            "author": "octoshrimpy",
+            "name": "QUIK",
+            "additionalSettings": "{\"apkFilterRegEx\":\"release\",\"invertAPKFilter\":false,\"about\":\"QUIK is an open source replacement for the stock messaging app on Android. It is a continuation of QKSMS.\"}"
+        }
+    ],
+    "icon": "https://github.com/octoshrimpy/quik/blob/master/presentation/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "QUIK is an open source replacement for the stock messaging app on Android. It is a continuation of QKSMS. Only finds release versions and skips debug releases."
+    }
+}
