@@ -1,0 +1,21 @@
+{
+    "configs": [
+        {
+            "id": "com.catchingnow.icebox",
+            "url": "https://coolapk.com/apk/com.catchingnow.icebox",
+            "author": "何若昕",
+            "name": "Ice Box",
+            "additionalSettings": "{\"about\":\"Freeze and hide apps rarely used, they won't be able to steal your battery or cellular data in background.\",\"appName\":\"Ice Box\",\"customLinkFilterRegex\":\"^https\\\\:\\\\/\\\\/dl\\\\.coolapk\\\\.com\\\\/down\\\\?pn\\\\=com\\\\.catchingnow\\\\.icebox(?:[&#].*)?$\",\"filterByLinkText\":false,\"matchGroupToUse\":\"$1\",\"reverseSort\":true,\"skipSort\":true,\"trackOnly\":true,\"useVersionCodeAsOSVersion\":false,\"versionDetection\":false,\"versionExtractWholePage\":true,\"versionExtractionRegEx\":\"\\\\<span(?:\\\\s|(?:\\\\\\\\n))+class\\\\=\\\"list_app_info\\\"\\\\>(?:\\\\s|(?:\\\\\\\\n))+([^<]+)(?:\\\\s|(?:\\\\\\\\n))*\\\\<\\\\/span\\\\>\"}",
+            "overrideSource": "HTML",
+            "altLabel": "track only"
+        }
+    ],
+    "icon": "https://www.catchingnow.com/pic/icebox.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Freeze and hide apps rarely used, they won't be able to steal your battery or cellular data in background.",
+        "zh": "将不常用的应用统统冻起来，防止后台运行，有效的防止它们在后台偷电偷流量。"
+    }
+}
