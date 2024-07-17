@@ -2,7 +2,7 @@
     "configs": [
         {
             "id": "com.x8bit.bitwarden",
-            "url": "https://github.com/bitwarden/android",
+            "url": "https://github.com/bitwarden/mobile",
             "author": "bitwarden",
             "name": "Bitwarden",
             "preferredApkIndex": 0,
