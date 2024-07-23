@@ -11,8 +11,7 @@
         "en": "Anime & Manga"
     },
     "automation": {
-        "en": "Automation",
-        "de": "Automatisierung"
+        "en": "Automation"
     },
     "barcode_scanner": {
         "en": "Barcode Scanner"
@@ -42,7 +41,7 @@
     },
     "clock_and_time": {
         "en": "Clock & Time",
-        "de": "Uhrzeit"
+        "de": "Uhr(zeit)"
     },
     "community_clients": {
         "en": "Community Clients",
@@ -99,8 +98,8 @@
         "de": "Spiele"
     },
     "icon_packs": {
-        "en": "Icon Packs",
-        "de": "Icon Pakete"
+        "en": "Icon Packs"/*,
+        "de": "Icon Pakete"entweder Icon-Zusammenstellung oder Icon Packs*/
     },
     "image_manipulation": {
         "en": "Image Manipulation",
@@ -199,7 +198,6 @@
     },
     "url_manipulation": {
         "en": "URL Manipulation"
-        "de": "URL Veränderung"
     },
     "utilities": {
         "en": "Utilities",
@@ -212,7 +210,7 @@
         "en": "VPN"
     },
     "wallpapers": {
-        "en": "Wallpapers"
+        "en": "Wallpapers",
         "de": "Hintergründe"
     },
     "weather": {
