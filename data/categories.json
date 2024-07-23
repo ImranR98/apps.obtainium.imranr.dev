@@ -98,8 +98,8 @@
         "de": "Spiele"
     },
     "icon_packs": {
-        "en": "Icon Packs"/*,
-        "de": "Icon Pakete"entweder Icon-Zusammenstellung oder Icon Packs*/
+        "en": "Icon Packs",
+        "de": "Icon Pakete"
     },
     "image_manipulation": {
         "en": "Image Manipulation",
