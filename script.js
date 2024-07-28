@@ -194,7 +194,7 @@ function render() {
     document.querySelector('#modal-title').innerHTML = getString('modalTitle')
     document.querySelector('#modal-body-1').innerHTML = getString('modalBody1')
     document.querySelector('#modal-body-2').innerHTML = getString('modalBody2')
-    document.querySelector('#modal-button').innerHTML = getString('modalButton')
+    document.querySelector('#modal-button').innerHTML = getString('modalButtonText');
 
 }
 
