@@ -41,7 +41,7 @@
     },
     "clock_and_time": {
         "en": "Clock & Time",
-        "de": "Uhrzeit"
+        "de": "Uhr(zeit)"
     },
     "community_clients": {
         "en": "Community Clients",
@@ -75,7 +75,8 @@
         "de": "Bildbearbeitung & (digitales) Malen"
     },
     "email_clients": {
-        "en": "Email Clients"
+        "en": "Email Clients",
+        "de": "Emailprogramme"
     },
     "emulator": {
         "en": "Emulator",
@@ -86,7 +87,8 @@
         "de": "Dateimanager"
     },
     "file_sharing": {
-        "en": "File Sharing"
+        "en": "File Sharing",
+        "de": "Dateien teilen"
     },
     "firewall": {
         "en": "Firewall"
@@ -96,7 +98,8 @@
         "de": "Spiele"
     },
     "icon_packs": {
-        "en": "Icon Packs"
+        "en": "Icon Packs",
+        "de": "Icon Pakete"
     },
     "image_manipulation": {
         "en": "Image Manipulation",
@@ -121,14 +124,16 @@
         "en": "Maps & Navigation"
     },
     "media_frontends": {
-        "en": "Media Frontends"
+        "en": "Media Frontends",
+        "de": "Medien Frontends"
     },
     "messaging": {
         "en": "Messaging",
         "de": "Messenger"
     },
     "miscellaneous": {
-        "en": "Miscellaneous"
+        "en": "Miscellaneous",
+        "de": "Verschiedenes"
     },
     "music": {
         "en": "Music",
@@ -151,7 +156,8 @@
         "de": "Podcast-, Hörbuch- & Hörspiel-Player"
     },
     "research_and_development": {
-        "en": "Research & Development"
+        "en": "Research & Development",
+        "de": "Forschung & Entwicklung"
     },
     "rss_readers": {
         "en": "RSS Readers",
@@ -183,7 +189,8 @@
         "de": "Text Editoren"
     },
     "text-to-speech": {
-        "en": "Text-to-Speech"
+        "en": "Text-to-Speech",
+        "de": "Text-zu-Sprache"
     },
     "translation": {
         "en": "Translation",
@@ -203,7 +210,8 @@
         "en": "VPN"
     },
     "wallpapers": {
-        "en": "Wallpapers"
+        "en": "Wallpapers",
+        "de": "Hintergründe"
     },
     "weather": {
         "en": "Weather",
