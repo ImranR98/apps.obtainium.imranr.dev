@@ -37,5 +37,17 @@
     "altConfigs": {
         "en": "Alternative Configurations",
         "de": "Andere Konfigurationen"
+    },
+    "modalTitle": {
+        "en": "Important – Please Read!"
+    },
+    "modalBody1": {
+        "en": "Before you request an app, please take a moment to consider whether the app you want would be suitable for this website. This website is primarily used for configs that people may find difficult to create. If the app you are requesting uses only the default options, please do not submit a request."
+    },
+    "modalBody2": {
+        "en": "If you decide to request an easy-to-add app anyway, your request may be ignored."
+    },
+    "modalButtonText": {
+        "en": "Continue"
     }
 }
