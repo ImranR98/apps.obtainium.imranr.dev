@@ -191,6 +191,16 @@ function render() {
     document.querySelector('#title').innerHTML = getString('title')
     document.querySelector('#subtitle').innerHTML = getString('subtitle')
     document.querySelector('#request-apps').innerHTML = getString('requestAppsButton')
+    document.querySelector('#modal-title').innerHTML = getString('modalTitle')
+    document.querySelector('#modal-body-1').innerHTML = getString('modalBody1')
+    document.querySelector('#modal-body-2').innerHTML = getString('modalBody2')
+    document.querySelector('#modal-button').innerHTML = getString('modalButton')
+
+}
+
+function toggleModal() {
+    const modal = document.getElementById('infoModal');
+    modal.classList.toggle('is-active');
 }
 
 async function fetchAsync(url) {
