@@ -2,7 +2,7 @@
     "configs": [
         {
             "id": "org.dolphinemu.dolphinemu",
-            "url": "https://dolphin-emu.org/download/?ref=btn",
+            "url": "https://dolphin-emu.org/download/",
             "author": "dolphin-emu.org",
             "name": "Dolphin Emulator (Nightly)",
             "preferredApkIndex": 0,
