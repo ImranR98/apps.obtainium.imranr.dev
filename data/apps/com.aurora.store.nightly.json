@@ -6,7 +6,7 @@
             "author": "Aurora OSS",
             "name": "Aurora Store Nightly",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"versionExtractionRegEx\":\"AuroraStore-[0-9]+.[0-9]+.[0-9]+-nightly-signed-(0?[1-9]|[12][0-9]|3[01])-(0?[1-9]|[1][0-2])-(d{1,6}).apk\"}"
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d{2}-\\\\d{2}-\\\\d{4}\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Aurora Store Nightly\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Aurora Store Nightly is the test version of an unofficial FOSS client for Google Play with bare minimum features. Aurora Store allows users to download, update, and search for apps like the Play Store. It works perfectly fine with or without Google Play Services or microG.\"}"
         }
     ],
     "icon": "https://gitlab.com/AuroraOSS/AuroraStore/-/raw/master/app/src/nightly/res/mipmap-hdpi/ic_launcher.png?inline=false",
