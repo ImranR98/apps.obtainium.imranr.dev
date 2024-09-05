@@ -1,0 +1,71 @@
+{
+    "configs": [
+        {
+            "id": "de.spiritcroc.riotx.foss",
+            "url": "https://s2.spiritcroc.de/fdroid/repo?appId=de.spiritcroc.riotx.foss",
+            "author": "SpiritCroc's Apps",
+            "name": "SchildiChat[f]",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"appIdOrName\":\"de.spiritcroc.riotx.foss\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "FDroidRepo",
+            "altLabel": "FOSS-Push Stable (SpiritCroc)"
+        },
+        {
+            "id": "de.spiritcroc.riotx.testing.foss",
+            "url": "https://s2.spiritcroc.de/testing/fdroid/repo?appId=de.spiritcroc.riotx.testing.foss",
+            "author": "SpiritCroc's test builds",
+            "name": "SchildiChat.Beta[f]",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"appIdOrName\":\"de.spiritcroc.riotx.testing.foss\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "FDroidRepo",
+            "altLabel": "FOSS-Push Beta (SpiritCroc)"
+        },
+        {
+            "id": "de.spiritcroc.riotx",
+            "url": "https://f-droid.org/en/packages/de.spiritcroc.riotx",
+            "author": "F-Droid Official",
+            "name": "SchildiChat",
+            "preferredApkIndex": 3,
+            "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "FDroid",
+            "altLabel": "FOSS-Push Stable (F-Droid)"
+        },
+        {
+            "id": "de.spiritcroc.riotx.fcm",
+            "url": "https://s2.spiritcroc.de/fdroid/repo?appId=de.spiritcroc.riotx.fcm",
+            "author": "SpiritCroc's Apps",
+            "name": "SchildiChat[g]",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"appIdOrName\":\"de.spiritcroc.riotx.fcm\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "FDroidRepo",
+            "altLabel": "Google Play Store Stable (SpiritCroc)"
+        },
+        {
+            "id": "de.spiritcroc.riotx.testing.fcm",
+            "url": "https://s2.spiritcroc.de/testing/fdroid/repo?appId=de.spiritcroc.riotx.testing.fcm",
+            "author": "SpiritCroc's test builds",
+            "name": "SchildiChat.Beta[g]",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"appIdOrName\":\"de.spiritcroc.riotx.testing.fcm\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "FDroidRepo",
+            "altLabel": "Google Play Store Beta (SpiritCroc)"
+        },
+        {
+            "id": "de.spiritcroc.riotx",
+            "url": "https://s2.spiritcroc.de/fdroid/repo?appId=de.spiritcroc.riotx",
+            "author": "SpiritCroc's Apps",
+            "name": "SchildiChat",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"appIdOrName\":\"de.spiritcroc.riotx\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "FDroidRepo",
+            "altLabel": "Google FCM-Push"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "community_clients"
+    ],
+    "description": {
+        "en": null
+    }
+}
