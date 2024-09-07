@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="/data/style.css">
-    <script src="script.js?v=20240113"></script>
+    <script src="script.js"></script>
     <title>Obtainium Apps</title>
     <link rel="icon" href="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png">
     <script defer data-domain="apps.obtainium.imranr.dev" src="https://plausible.imranr.dev/js/script.outbound-links.js"></script>
@@ -42,12 +42,17 @@
                 <button class="delete" aria-label="close" onclick="toggleModal()"></button>
             </header>
             <section class="modal-card-body">
-                <p id="modal-body-1">Before you request an app, please take a moment to consider whether the app you want would be suitable for this website. This website is primarily used for configs that people may find difficult to create. If the app you are requesting uses only the default options, please do not submit a request.</p>
+                <p id="modal-body-1">This website is used for configs that people may find difficult to create. If the app you are requesting can be added to Obtainium in one click after entering it's source link (leaving all other settings as default), than the app IS NOT suitable for this website.</p>
                 <br>
-                <p id="modal-body-2">If you decide to request an easy-to-add app anyway, your request may be ignored.</p>
+                <p id="modal-body-2">At a minimum, when making your request, you must provide a link to the app download page and any configs/things you have tried to get the app working so far. Please have a go at adding it yourself before requesting.</p>
+                <br>
+                <div class="field">
+                    <input type="checkbox" id="accept-button" onclick="toggleContinueButton()">
+                    <label for="accept-button">I have read and understand the above information and understand that if I have not followed the above instructions, my request may be ignored</label>
+                </div>
             </section>
             <footer class="modal-card-foot">
-                <a href="https://github.com/ImranR98/apps.obtainium.imranr.dev/discussions/new?category=app-requests" class="button is-primary" id="modal-button" style="width: 100%; display: flex; justify-content: center; align-items: center;">Continue →</a>
+                <a href="https://github.com/ImranR98/apps.obtainium.imranr.dev/discussions/new?category=app-requests" class="button is-primary is-hidden" id="modal-button" style="width: 100%; display: flex; justify-content: center; align-items: center;">Continue →</a>
             </footer>
         </div>
     </div>
