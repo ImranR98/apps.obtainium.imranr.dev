@@ -194,12 +194,19 @@ function render() {
     document.querySelector('#modal-title').innerHTML = getString('modalTitle')
     document.querySelector('#modal-body-1').innerHTML = getString('modalBody1')
     document.querySelector('#modal-body-2').innerHTML = getString('modalBody2')
+    document.querySelector('#accept-button').innerHTML = getString('modalAcceptButton')
     document.querySelector('#modal-button').innerHTML = getString('modalButtonText') + " →"
 }
 
 function toggleModal() {
     const modal = document.getElementById('infoModal');
     modal.classList.toggle('is-active');
+}
+
+function toggleContinueButton() {
+    const checkbox = document.getElementById('accept-button');
+    const continueButton = document.getElementById('modal-button');
+    continueButton.classList.toggle('is-hidden', !checkbox.checked);
 }
 
 async function fetchAsync(url) {
