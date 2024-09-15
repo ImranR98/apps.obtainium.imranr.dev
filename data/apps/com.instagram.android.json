@@ -31,7 +31,7 @@
             "altLabel": "stable (armeabi-v7a)"
         }
     ],
-    "icon": null,
+    "icon": "https://play.google.com/store/apps/details?id=com.instagram.android",
     "categories": [
         "community_clients"
     ],

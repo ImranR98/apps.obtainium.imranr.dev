@@ -13,14 +13,14 @@
             "id": "us.spotco.fennec_dos",
             "url": "https://f-droid.org/packages/us.spotco.fennec_dos",
             "author": "Divested Computing Group",
-            "name": "us.spotco.fennec_dos",
+            "name": "Mull",
             "preferredApkIndex": 1,
             "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
             "overrideSource": null,
             "altLabel": "F-Droid Official"
         }
     ],
-    "icon": null,
+    "icon": "https://github.com/Divested-Mobile/Mull-Fenix/blob/master/fastlane/metadata/android/en-US/images/icon.png",
     "description": {
         "en": "A privacy oriented and deblobbed web browser based on Mozilla technology. It enables many features upstreamed by the Tor Uplift project using preferences from the arkenfox-user.js project."
     },
