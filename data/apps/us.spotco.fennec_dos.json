@@ -20,7 +20,7 @@
             "altLabel": "F-Droid Official"
         }
     ],
-    "icon": "https://github.com/Divested-Mobile/Mull-Fenix/blob/master/fastlane/metadata/android/en-US/images/icon.png",
+    "icon": "https://raw.githubusercontent.com/Divested-Mobile/Mull-Fenix/master/fastlane/metadata/android/en-US/images/icon.png",
     "description": {
         "en": "A privacy oriented and deblobbed web browser based on Mozilla technology. It enables many features upstreamed by the Tor Uplift project using preferences from the arkenfox-user.js project."
     },
