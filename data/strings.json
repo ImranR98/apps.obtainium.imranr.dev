@@ -48,7 +48,7 @@
     },
     "modalBody2": {
         "en": "At a minimum, when making your request, you must provide a link to the app download page and any configs/things you have tried to get the app working so far. Please have a go at adding it yourself before requesting.",
-        "de" "Wenn du eine Anfrage stellst, musst du zumindest einen Link zur Download-Seite der App angeben und alle Konfigurationen/Dinge, die du bisher ausprobiert hast, damit die App funktioniert mitteilen. Bitte versuche, die App selbst hinzuzufügen, bevor du eine Anfrage stellst."
+        "de": "Wenn du eine Anfrage stellst, musst du zumindest einen Link zur Download-Seite der App angeben und alle Konfigurationen/Dinge, die du bisher ausprobiert hast, damit die App funktioniert mitteilen. Bitte versuche, die App selbst hinzuzufügen, bevor du eine Anfrage stellst."
     },
     "modalAcceptButton": {
         "en": "I have read understand the above information and understand that if I have not followed the above insturctions, my request may be ignored.",
