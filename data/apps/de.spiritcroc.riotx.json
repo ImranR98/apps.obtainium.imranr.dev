@@ -58,14 +58,15 @@
             "preferredApkIndex": 0,
             "additionalSettings": "{\"appIdOrName\":\"de.spiritcroc.riotx\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
             "overrideSource": "FDroidRepo",
-            "altLabel": "Google FCM-Push"
+            "altLabel": "Google FCM-Push (SpiritCroc)"
         }
     ],
-    "icon": null,
+    "icon": "https://schildi.chat/img/SchildiChat_nopadding.svg",
     "categories": [
         "community_clients"
     ],
     "description": {
-        "en": null
+        "en": "OpenSource-Matrix Client. For the differences, see https://schildi.chat/android/",
+        "de": "OpenSource-Matrix Client. Zu den Unterschieden siehe https://schildi.chat/android/"
     }
 }
