@@ -3,9 +3,9 @@
         {
             "id": "com.fsck.k9",
             "url": "https://github.com/thunderbird/thunderbird-android",
-            "author": "thunderbird",
+            "author": "Thunderbird",
             "name": "K-9 Mail",
-            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"K-9\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"K-9 Mail is an open-source email client for Android made by Mozilla.\"}"
+            "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"K-9\"}"
         }
     ],
     "icon": "https://raw.githubusercontent.com/thunderbird/thunderbird-android/6b54e8b65bbaaa4f1f4eb39429251e11040c4120/images/K-9_Mail.svg",
