@@ -12,7 +12,7 @@
             "changeLog": null,
             "overrideSource": "HTML",
             "allowIdChange": false,
-            "altLabel": "arm64 v8a"
+            "altLabel": "arm64 v8a (snapshot version)"
         },
         {
             "id": "com.collabora.libreoffice.snapshot",
@@ -26,7 +26,7 @@
             "changeLog": null,
             "overrideSource": "HTML",
             "allowIdChange": false,
-            "altLabel": "armeabi v7a"
+            "altLabel": "armeabi v7a (snapshot version)"
         },
         {
             "id": "com.collabora.libreoffice.snapshot",
@@ -40,7 +40,7 @@
             "changeLog": null,
             "overrideSource": "HTML",
             "allowIdChange": false,
-            "altLabel": "x86"
+            "altLabel": "x86 (snapshot version)"
         },
         {
             "id": "com.collabora.libreoffice.snapshot",
@@ -54,7 +54,7 @@
             "changeLog": null,
             "overrideSource": "HTML",
             "allowIdChange": false,
-            "altLabel": "x86_64"
+            "altLabel": "x86_64 (snapshot version)"
         }
     ],
     "icon": "https://www.collaboraoffice.com/wp-content/uploads/2022/03/cropped-collabora-productivity-nav-icon.png",
