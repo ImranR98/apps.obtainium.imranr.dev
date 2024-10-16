@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "hk.com.hsbc.hsbchkmobilebanking",
+            "url": "https://www.hsbc.com.hk/ways-to-bank/mobile-apps/banking/#how-to-install/",
+            "author": "www.hsbc.com.hk",
+            "name": "HSBC HK",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"apk/([^/]*)\",\"matchGroupToUse\":\"$1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/NTunSEGl0L8Jrrxdpekn91xJaYZwHPIu3PkaO1b8unrqkTTCAWVG27KGAJJtHx7Nug=w240-h480",
+    "categories": [
+        "finance"
+    ],
+    "description": {
+        "en": "With the HSBC HK Mobile Banking app (HSBC HK App), you can manage your everyday banking needs anytime, anywhere. Discover a wide range of features and services on the app, and experience an ease of use like never before.",
+        "zh": "香港滙豐流動理財應用程式（HSBC HK App）隨時隨地滿足您的日常理財需要，讓您以一系列實用功能及服務，盡享前所未有的輕鬆理財體驗。"
+    }
+}
