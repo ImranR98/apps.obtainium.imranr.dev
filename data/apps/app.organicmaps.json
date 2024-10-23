@@ -1,7 +1,7 @@
 {
     "configs": [
         {
-            "id": "app.organicmaps",
+            "id": "app.organicmaps.web",
             "url": "https://github.com/organicmaps/organicmaps",
             "author": "organicmaps",
             "name": "Organic Maps",
