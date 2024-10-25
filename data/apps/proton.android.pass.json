@@ -1,0 +1,21 @@
+{
+    "configs": [
+        {
+            "id": "proton.android.pass",
+            "url": "https://protonapps.com/protonpass-android",
+            "author": "protonapps.com",
+            "name": "Proton Pass",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"An end-to-end encrypted password manager that protects your online identity\"}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "password_and_authentication"
+    ],
+    "description": {
+        "en": "Proton Pass is an end-to-end encrypted password manager that protects your online identity.",
+        "de": "Proton Pass ist ein Ende-zu-Ende verschlüsselter Passwortmanager."
+    }
+}

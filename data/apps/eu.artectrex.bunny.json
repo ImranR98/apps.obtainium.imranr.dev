@@ -1,0 +1,51 @@
+{
+    "configs": [
+        {
+            "id": "eu.artectrex.bunny",
+            "url": "https://gitlab.shinice.net/pixeldroid/bunny/-/releases",
+            "author": "pixeldroid",
+            "name": "bunny",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d+\\\\d+2\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"gitlab-creds\":\"\"}",
+            "overrideSource": "GitLab",
+            "altLabel": "arm64-v8a"
+        },
+        {
+            "id": "eu.artectrex.bunny",
+            "url": "https://gitlab.shinice.net/pixeldroid/bunny/-/releases",
+            "author": "pixeldroid",
+            "name": "bunny",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d+\\\\d+1\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"gitlab-creds\":\"\"}",
+            "overrideSource": "GitLab",
+            "altLabel": "arm"
+        },
+        {
+            "id": "eu.artectrex.bunny",
+            "url": "https://gitlab.shinice.net/pixeldroid/bunny/-/releases",
+            "author": "pixeldroid",
+            "name": "bunny",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d+\\\\d+4\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"gitlab-creds\":\"\"}",
+            "overrideSource": "GitLab",
+            "altLabel": "x86_64"
+        },
+        {
+            "id": "eu.artectrex.bunny",
+            "url": "https://gitlab.shinice.net/pixeldroid/bunny/-/releases",
+            "author": "pixeldroid",
+            "name": "bunny",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d+\\\\d+3\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"gitlab-creds\":\"\"}",
+            "overrideSource": "GitLab",
+            "altLabel": "x86"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": null
+    }
+}
