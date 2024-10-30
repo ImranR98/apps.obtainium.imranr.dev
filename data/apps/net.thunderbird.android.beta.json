@@ -5,7 +5,7 @@
             "url": "https://github.com/thunderbird/thunderbird-android",
             "author": "Thunderbird",
             "name": "Thunderbird Beta",
-            "additionalSettings": "{\"includePrereleases\":true,\"filterReleaseTitlesByRegEx\":\"Thunderbird\"}"
+            "additionalSettings": "{\"includePrereleases\":true,\"filterReleaseTitlesByRegEx\":\"Thunderbird\",\"dontSortReleasesList\":true}"
         }
     ],
     "icon": "https://avatars.githubusercontent.com/u/15187237?s=200&v=4",
