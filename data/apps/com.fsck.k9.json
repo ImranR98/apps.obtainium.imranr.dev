@@ -5,7 +5,16 @@
             "url": "https://github.com/thunderbird/thunderbird-android",
             "author": "Thunderbird",
             "name": "K-9 Mail",
-            "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"K-9\"}"
+            "additionalSettings": "{\"includePrereleases\":false,\"verifyLatestTag\":true,\"useLatestAssetDateAsReleaseDate\":true,\"filterReleaseTitlesByRegEx\":\"K-9\"}",
+            "altLabel": "K-9 Mail"
+        },        
+        {
+            "id": "com.fsck.k9",
+            "url": "https://github.com/thunderbird/thunderbird-android",
+            "author": "Thunderbird",
+            "name": "K-9 Mail",
+            "additionalSettings": "{\"includePrereleases\":true,\"verifyLatestTag\":false,\"useLatestAssetDateAsReleaseDate\":false,"filterReleaseTitlesByRegEx\":\"K-9\"}",
+            "altLabel": "K-9 Mail Beta"
         }
     ],
     "icon": "https://raw.githubusercontent.com/thunderbird/thunderbird-android/6b54e8b65bbaaa4f1f4eb39429251e11040c4120/images/K-9_Mail.svg",
