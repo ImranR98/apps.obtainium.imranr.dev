@@ -37,7 +37,6 @@ If you have read through and understand the above, then you can [open an app req
 
 If you have read through all this and understand, then you can open an PR. Keep these things in mind:
 
-- If possible, provide an app description and icon in the JSON file.
 - Keep the amount of alternative configs to a minimum, only provide the ones that will work the best in the long term.
 - Ensure that you leave as many config options as you can as the default setting. Only change what you need. For example, with a GitHub config you would not add an app with the `Include prereleases` setting enabled unless necessary as not everyone will want prereleases.
 
