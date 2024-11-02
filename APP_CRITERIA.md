@@ -44,6 +44,6 @@ If you have read through all this and understand, then you can open an PR. Keep 
 
 ### What is a simple config?
 
-A simple config is an app that you can add by simply pasting the URL of the website and clicking add in Obtainium, without changing any additional settings. 
+A simple config is an app that you can add by simply pasting the URL of the website and clicking add in Obtainium, without changing any additional settings.
 
 The exception to this is if the URL may be hard to find. For example, the URL which has the links to Signal APKs (https://updates.signal.org/android/latest.json) is not easy to find unless you have knowledge of browser developer tools.
