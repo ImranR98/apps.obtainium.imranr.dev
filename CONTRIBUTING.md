@@ -1,4 +1,4 @@
-## Contributing
+# Contributing
 
 - To contribute content, create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with valid changes/additions to any files in the repo.
 - To test locally, run: `node buildData.js && python -m http.server 8080`
