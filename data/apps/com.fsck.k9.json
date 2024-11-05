@@ -7,7 +7,7 @@
             "name": "K-9 Mail",
             "additionalSettings": "{\"includePrereleases\":false,\"verifyLatestTag\":true,\"useLatestAssetDateAsReleaseDate\":true,\"filterReleaseTitlesByRegEx\":\"K-9\"}",
             "altLabel": "K-9 Mail"
-        },        
+        },
         {
             "id": "com.fsck.k9",
             "url": "https://github.com/thunderbird/thunderbird-android",
