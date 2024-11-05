@@ -18,8 +18,8 @@
         }
     ],
     "description": {
-        "en": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.",
-        "de": "Syncthing synchronisiert kontinuierlich Dateien zwischen einem oder mehreren Computeren oder Servern."
+        "en": "DISCONTINUED: Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.",
+        "de": "EINGESTELLT: Syncthing synchronisiert kontinuierlich Dateien zwischen einem oder mehreren Computeren oder Servern."
     },
     "icon": "https://raw.githubusercontent.com/syncthing/syncthing/main/assets/logo.ico",
     "categories": [
