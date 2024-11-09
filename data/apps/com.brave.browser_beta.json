@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.brave.browser_beta",
+            "url": "https://github.com/brave/brave-browser",
+            "author": "brave",
+            "name": "Brave - Beta",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"Beta\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://private-user-images.githubusercontent.com/10618799/380837434-ed00eb5e-3ad8-4765-8c07-e61af81ed44d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzAxNDAyOTIsIm5iZiI6MTczMDEzOTk5MiwicGF0aCI6Ii8xMDYxODc5OS8zODA4Mzc0MzQtZWQwMGViNWUtM2FkOC00NzY1LThjMDctZTYxYWY4MWVkNDRkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI4VDE4MjYzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEzZWI5NTYzYWUxYjhjNzdjNzBhODM4N2M5N2FiYzRiOWVkMjllYzMxYzY5NDI4N2NjOGMwMGQ5ZWFmY2M1ZjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.BNGszNbgRCpScCcgGBaSuvJkzNLfdnUM931-p5EWNv4",
+    "categories": [
+        "Browser"
+    ],
+    "description": {
+        "en": "Brave is an open-source web browser for Windows, macOS, Linux, Android and iOS.",
+        "de": "Brave ist ein Open-Source-Webbrowser für Windows, macOS, Linux, Android und iOS."
+    }
+}
