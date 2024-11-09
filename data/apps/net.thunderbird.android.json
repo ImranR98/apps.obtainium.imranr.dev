@@ -1,11 +1,11 @@
 {
     "configs": [
         {
-            "id": "net.thunderbird.android.beta",
+            "id": "net.thunderbird.android",
             "url": "https://github.com/thunderbird/thunderbird-android",
             "author": "Thunderbird",
-            "name": "Thunderbird Beta",
-            "additionalSettings": "{\"includePrereleases\":true,\"filterReleaseTitlesByRegEx\":\"Thunderbird\",\"dontSortReleasesList\":true}"
+            "name": "Thunderbird",
+            "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"Thunderbird\"}"
         }
     ],
     "icon": "https://avatars.githubusercontent.com/u/15187237?s=200&v=4",
