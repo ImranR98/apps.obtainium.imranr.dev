@@ -21,7 +21,7 @@
             "altLabel": "cn"
         }
     ],
-    "icon": null,
+    "icon": "https://www.synology.com/img/dsm/drive/icon_drive@2x.png",
     "categories": [
         "synchronisation"
     ],
