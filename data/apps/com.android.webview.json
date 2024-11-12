@@ -7,7 +7,6 @@
             "name": "Android SystemWebView by Cromite",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"arm64_SystemWebView64\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Cromite System WebView\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
-            "overrideSource": "arm64",
             "altLabel": "Cromite (arm64)"
         },
         {
@@ -17,8 +16,8 @@
             "name": "Android SystemWebView by Cromite",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"x64_SystemWebView64\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Cromite System WebView\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
-            "overrideSource": "Cromite (x64)",
-            "altLabel": null
+            "overrideSource": null,
+            "altLabel": "Cromite (x64)"
         },
         {
             "id": "com.android.webview",

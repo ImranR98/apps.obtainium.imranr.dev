@@ -10,7 +10,7 @@
             "overrideSource": "GitHub"
         }
     ],
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tutao/tutanota/refs/heads/master/resources/desktop-icons/icon/64.png",
     "categories": [
         "other"
     ],

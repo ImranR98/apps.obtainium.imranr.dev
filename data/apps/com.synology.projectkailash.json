@@ -21,7 +21,7 @@
             "altLabel": "cn"
         }
     ],
-    "icon": null,
+    "icon": "https://www.synology.com/img/dsm/photos/icon_photos@2x.png",
     "categories": [
         "synchronisation",
         "image_viewer_and_gallery"
