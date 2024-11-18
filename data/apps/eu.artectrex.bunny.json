@@ -41,7 +41,7 @@
             "altLabel": "x86"
         }
     ],
-    "icon": null,
+    "icon": "https://gitlab.shinice.net/pixeldroid/bunny/-/raw/master/bunny_mascot.png",
     "categories": [
         "other"
     ],
