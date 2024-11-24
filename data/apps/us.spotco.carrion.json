@@ -6,7 +6,7 @@
             "author": "DivestOS Official",
             "name": "Carrion",
             "categories": [
-                call_blocker_and_spam_filter
+                "call_blocker_and_spam_filter"
             ],
             "overrideSource": "FDroidRepo"
         }

@@ -6,7 +6,8 @@
             "author": "Guardian Project",
             "name": "Orbot",
             "categories": [
-
+                "vpn",
+                "system"
             ],
             "overrideSource": "FDroidRepo"
         }

@@ -6,7 +6,7 @@
             "author": "DivestOS Official",
             "name": "Extirpater",
             "categories": [
-                system
+                "system"
             ],
             "overrideSource": "FDroidRepo"
         }
