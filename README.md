@@ -4,6 +4,8 @@ Crowdsourced App Configurations website for [Obtainium](https://github.com/Imran
 
 The website is accessible at [apps.obtainium.imranr.dev](https://apps.obtainium.imranr.dev)
 
+Analytics: https://plausible.imranr.dev/apps.obtainium.imranr.dev/
+
 ## About
 
 This website has **two** main parts:
