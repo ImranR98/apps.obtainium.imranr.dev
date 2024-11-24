@@ -4,7 +4,7 @@
             "id": "net.i2p.android",
             "url": "https://github.com/i2p/i2p.android.base",
             "author": "i2p",
-            "name": "I2p"
+            "name": "I2p",
             "categories": [
                 "file_sharing",
                 "browser"
