@@ -1,0 +1,13 @@
+{
+    "apps": [
+        {
+            "id": "com.github.anrimian.musicplayer",
+            "url": "https://github.com/Anrimian/music-player",
+            "author": "Anrimian",
+            "name": "Music Player",
+            "categories": [
+                "music"
+            ]
+        }
+    ]
+}

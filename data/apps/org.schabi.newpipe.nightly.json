@@ -1,0 +1,13 @@
+{
+    "apps": [
+        {
+            "id": "org.schabi.newpipe.nightly",
+            "url": "https://github.com/TeamNewPipe/NewPipe-nightly",
+            "author": "TeamNewPipe",
+            "name": "NewPipe nightly",
+            "categories": [
+                "community_clients"
+            ]
+        }
+    ]
+}

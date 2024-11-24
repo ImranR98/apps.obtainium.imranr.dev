@@ -1,0 +1,13 @@
+{
+    "apps": [
+        {
+            "id": "org.fdroid.basic",
+            "url": "https://f-droid.org/packages/org.fdroid.basic",
+            "author": "Official F-Droid-Repo",
+            "name": "F-Droid Basic",
+            "categories": [
+                "system"
+            ]
+        }
+    ]
+}

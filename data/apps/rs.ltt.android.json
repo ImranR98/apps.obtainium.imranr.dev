@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "id": "rs.ltt.android",
+            "url": "https://ltt.rs/fdroid/repo?fingerprint=9c2e57c85c279e5e1a427f6e87927fc1e2278f62d61d7fcefde9346e568ccf86&appId=rs.ltt.android",
+            "author": "Ltt.rs for Android",
+            "name": "Ltt.rs",
+            "categories": [
+                "email_clients"
+            ],
+            "overrideSource": "FDroidRepo"
+        }
+    ]
+}

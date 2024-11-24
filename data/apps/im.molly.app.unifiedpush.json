@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "id": "im.molly.app.unifiedpush",
+            "url": "https://github.com/mollyim/mollyim-android-unifiedpush",
+            "author": "mollyim",
+            "name": "mollyim-android-unifiedpush",
+            "categories": [
+                "community_clients",
+                "messaging"
+            ]
+        }
+    ]
+}

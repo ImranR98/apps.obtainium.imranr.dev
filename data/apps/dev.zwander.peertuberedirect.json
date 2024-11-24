@@ -1,0 +1,15 @@
+{
+    "apps": [
+        {
+            "id": "dev.zwander.peertuberedirect",
+            "url": "https://github.com/zacharee/MastodonRedirect",
+            "author": "zacharee",
+            "name": "PeerTube Redirect",
+            "categories": [
+                "community_clients",
+                "utilities",
+                "url_manipulation"
+            ]
+        }
+    ]
+}

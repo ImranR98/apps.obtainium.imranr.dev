@@ -1,0 +1,13 @@
+{
+    "apps": [
+        {
+            "id": "dk.dmi.byvejret",
+            "url": "https://apkpure.com/dmi-vejr/dk.dmi.byvejret",
+            "author": "Danmarks Meteorologiske Institut",
+            "name": "DMI",
+            "categories": [
+                "weather"
+            ]
+        }
+    ]
+}

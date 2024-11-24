@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "id": "org.purplei2p.conversations",
+            "url": "https://fdroid.i2pd.xyz/fdroid/repo?appId=org.purplei2p.conversations",
+            "author": "PurpleI2P F-Droid repository",
+            "name": "Conversations-I2P",
+            "categories": [
+                "messaging"
+            ]
+            "overrideSource": "FDroidRepo"
+        }
+    ]
+}

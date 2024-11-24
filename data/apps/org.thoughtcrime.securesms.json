@@ -1,0 +1,15 @@
+{
+    "apps": [
+        {
+            "id": "org.thoughtcrime.securesms",
+            "url": "https://fdroid.twinhelix.com/fdroid/repo?fingerprint=7b03b0232209b21b10a30a63897d3c6bca4f58fe29bc3477e8e3d8cf8e304028&appId=org.thoughtcrime.securesms",
+            "author": "TwinHelix",
+            "name": "Signal-FOSS",
+            "categories": [
+                "messaging",
+                "community_clients"
+            ],
+            "overrideSource": "FDroidRepo"
+        }
+    ]
+}

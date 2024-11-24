@@ -1,0 +1,15 @@
+{
+    "apps": [
+        {
+            "id": "dev.zwander.lemmyredirect",
+            "url": "https://github.com/zacharee/MastodonRedirect",
+            "author": "zacharee",
+            "name": "Lemmy Redirect",
+            "categories": [
+                "community_clients",
+                "utilities",
+                "url_manipulation"
+            ]
+        }
+    ]
+}

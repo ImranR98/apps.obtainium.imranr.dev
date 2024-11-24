@@ -1,0 +1,13 @@
+{
+    "apps": [
+        {
+            "id": "net.osmand.plus",
+            "url": "https://f-droid.org/packages/net.osmand.plus",
+            "author": "F-Droid",
+            "name": "OsmAnd~",
+            "categories": [
+                "maps_and_navigation"
+            ]
+        }
+    ]
+}

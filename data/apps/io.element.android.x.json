@@ -1,0 +1,13 @@
+{
+    "apps": [
+        {
+            "id": "io.element.android.x",
+            "url": "https://github.com/vector-im/element-x-android",
+            "author": "vector-im",
+            "name": "Element X",
+            "categories": [
+                "messaging"
+            ]
+        }
+    ]
+}
