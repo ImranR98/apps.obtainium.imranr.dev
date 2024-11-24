@@ -7,7 +7,7 @@
             "name": "Conversations-I2P",
             "categories": [
                 "messaging"
-            ]
+            ],
             "overrideSource": "FDroidRepo"
         }
     ]
