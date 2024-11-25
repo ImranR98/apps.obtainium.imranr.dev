@@ -8,7 +8,7 @@
             "additionalSettings": "{\"includePrereleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"droidsounde.+bit.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"DroidSound-E\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false}"
         }
     ],
-    "icon": "https://image.winudf.com/v2/image/Y29tLmRyb2lkbWp0LmRyb2lkc291bmRlX2ljb25fMF9hMzBmMmRiZA/icon.png?fakeurl=1",
+    "icon": "https://droidsound-e.web.app/favicon.ico",
     "categories": [
         "music"
     ],
