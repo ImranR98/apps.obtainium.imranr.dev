@@ -5,6 +5,7 @@
             "url": "https://briarproject.org/apk/briar.apk",
             "author": "briarproject.org",
             "name": "Briar",
+            "icon": "https://code.briarproject.org/uploads/-/system/project/avatar/1/briar_logo_transparent.png",
             "categories": [
                 "messaging"
             ],

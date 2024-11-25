@@ -5,6 +5,7 @@
             "url": "https://guardianproject.info/fdroid/repo?appId=org.torproject.android",
             "author": "Guardian Project",
             "name": "Orbot",
+            "icon": "https://orbot.app/en/assets/img/orbot.png",
             "categories": [
                 "vpn",
                 "system"
