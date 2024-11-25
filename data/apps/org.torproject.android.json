@@ -1,0 +1,15 @@
+{
+    "apps": [
+        {
+            "id": "org.torproject.android",
+            "url": "https://guardianproject.info/fdroid/repo?appId=org.torproject.android",
+            "author": "Guardian Project",
+            "name": "Orbot",
+            "categories": [
+                "vpn",
+                "system"
+            ],
+            "overrideSource": "FDroidRepo"
+        }
+    ]
+}

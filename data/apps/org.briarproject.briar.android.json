@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "id": "org.briarproject.briar.android",
+            "url": "https://briarproject.org/apk/briar.apk",
+            "author": "briarproject.org",
+            "name": "Briar",
+            "categories": [
+                "messaging"
+            ],
+            "overrideSource": "DirectAPKLink"
+        }
+    ]
+}

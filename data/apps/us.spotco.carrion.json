@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "id": "us.spotco.carrion",
+            "url": "https://divestos.org/fdroid/official?appId=us.spotco.carrion",
+            "author": "DivestOS Official",
+            "name": "Carrion",
+            "categories": [
+                "call_blocker_and_spam_filter"
+            ],
+            "overrideSource": "FDroidRepo"
+        }
+    ]
+}
