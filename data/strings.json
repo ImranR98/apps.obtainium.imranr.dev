@@ -42,17 +42,11 @@
         "en": "Important – Please Read!",
         "de": "Wichtig - Bitte beachten!"
     },
-    "modalBody1": {
-        "en": "This website is used for configs that people may find difficult to create. If the app you are requesting can be added to Obtainium in one click after entering it's source link (leaving all other settings as default), than the app IS NOT suitable for this website.",
-        "de": "Diese Website wird für Konfigurationen verwendet, deren Erstellung für viele Menschen schwierig ist. Falls die von dir angefragte App mit einem Klick zu Obtainium hinzugefügt werden kann, sobald du den Quelllink eingegeben hast (und alle anderen Einstellungen voreingestellt bleiben), dann ist die App NICHT für diese Website geeignet."
-    },
-    "modalBody2": {
-        "en": "At a minimum, when making your request, you must provide a link to the app download page and any configs/things you have tried to get the app working so far. Please have a go at adding it yourself before requesting.",
-        "de": "Wenn du eine Anfrage stellst, musst du zumindest einen Link zur Download-Seite der App angeben und alle Konfigurationen/Dinge, die du bisher ausprobiert hast, damit die App funktioniert mitteilen. Bitte versuche, die App selbst hinzuzufügen, bevor du eine Anfrage stellst."
+    "appCriteria": {
+        "en": "app criteria"
     },
     "modalAcceptButton": {
-        "en": "I have read understand the above information and understand that if I have not followed the above insturctions, my request may be ignored.",
-        "de": "Ich habe die obigen Informationen gelesen und verstanden, dass mein Antrag ignoriert wird, wenn ich die obigen Hinweise nicht beachtet habe."
+        "en": "I have read understand the and understand that if I have not followed the above instructions, my request may be ignored."
     },
     "modalButtonText": {
         "en": "Continue",
