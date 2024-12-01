@@ -1,0 +1,16 @@
+{
+    "apps": [
+        {
+            "id": "org.futo.circles",
+            "url": "https://app.futo.org/fdroid/repo?appId=org.futo.circles",
+            "author": "FUTO F-Droid Repo",
+            "name": "Circles",
+            "icon": "https://gitlab.futo.org/uploads/-/system/group/avatar/26/circles-logo-appicon.png",
+            "categories": [
+                "community_clients",
+                "messaging"
+            ],
+            "overrideSource": "FDroidRepo"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "apps": [
+        {
+            "id": "org.futo.voiceinput",
+            "url": "https://app.futo.org/fdroid/repo?appId=org.futo.voiceinput",
+            "author": "FUTO F-Droid Repo",
+            "name": "FUTO Voice Input",
+            "icon": "https://futo.org/images/icons/futovoice.png",
+            "categories": [
+                "keyboard",
+                "system"
+            ],
+            "overrideSource": "FDroidRepo"
+        }
+    ]
+}

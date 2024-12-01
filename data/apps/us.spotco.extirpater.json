@@ -1,0 +1,15 @@
+{
+    "apps": [
+        {
+            "id": "us.spotco.extirpater",
+            "url": "https://divestos.org/apks/official/fdroid/repo?fingerprint=e4be8d6abfa4d9d4feef03cdda7ff62a73fd64b75566f6dd4e5e577550be8467&appId=us.spotco.extirpater",
+            "author": "DivestOS Official",
+            "name": "Extirpater",
+            "icon": "https://f-droid.org/repo/us.spotco.extirpater/en-US/icon_HwrF0WGQI9G6lNTf3Wl4jBL3zU3yOXJc_FdAFCnNUbQ=.png",
+            "categories": [
+                "system"
+            ],
+            "overrideSource": "FDroidRepo"
+        }
+    ]
+}
