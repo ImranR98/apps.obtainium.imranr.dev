@@ -4,10 +4,12 @@
             "id": "app.lawnchair",
             "url": "https://github.com/lawnchairlauncher/lawnchair",
             "author": "Lawnchair Launcher",
-            "name": "Lawnchair"
+            "name": "Lawnchair",
+            "preferredApkIndex": 0,
+            "additionalSettings":"{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"Lawnchair.Debug\",\"invertAPKFilter\":true,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
-    "icon": "https://lawnchair.app/images/lawnchair.webp",
+    "icon": "https://avatars.githubusercontent.com/u/34144436?s=48&v=4",
     "categories": ["launcher_and_desktop"],
     "description": {
         "en": "Lawnchair is a free, open-source home app for Android."

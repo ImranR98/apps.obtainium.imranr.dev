@@ -5,6 +5,9 @@
             "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
             "author": "FiorenMas",
             "name": "Revanced Adobe Lightroom",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"lightroom-r\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Lightroom\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": null,
             "altLabel": "stable (universal)"
         },
         {
@@ -12,6 +15,9 @@
             "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
             "author": "FiorenMas",
             "name": "Revanced Adobe Lightroom",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"lightroom-b\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Lightroom Beta\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": null,
             "altLabel": "beta (universal)"
         }
     ],
