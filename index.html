@@ -44,13 +44,9 @@
                 <button class="delete" aria-label="close" onclick="toggleModal()"></button>
             </header>
             <section class="modal-card-body">
-                <p id="modal-body-1">This website is used for configs that people may find difficult to create. If the app you are requesting can be added to Obtainium in one click after entering it's source link (leaving all other settings as default), than the app IS NOT suitable for this website.</p>
-                <br>
-                <p id="modal-body-2">At a minimum, when making your request, you must provide a link to the app download page and any configs/things you have tried to get the app working so far. Please have a go at adding it yourself before requesting.</p>
-                <br>
                 <div class="field">
-                    <input type="checkbox" id="accept-button" onclick="toggleContinueButton()">
-                    <label for="accept-button">I have read and understand the above information and understand that if I have not followed the above instructions, my request may be ignored</label>
+                    <input type="checkbox" id="accept-button" onclick="toggleContinueButton()" style="width: 15px; height: 15px;" unchecked>
+                    <label for="accept-button">I have read and understand the <a id="app-criteria" href="https://github.com/ImranR98/apps.obtainium.imranr.dev/blob/main/APP_CRITERIA.md" style="font-size: 1.2em;">app criteria</a> </label>
                 </div>
             </section>
             <footer class="modal-card-foot">
