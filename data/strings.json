@@ -42,11 +42,16 @@
         "en": "Important – Please Read!",
         "de": "Wichtig - Bitte beachten!"
     },
-    "appCriteria": {
-        "en": "app criteria"
+    "modalAcceptButton1": {
+        "en": "I have read an understand the"
     },
-    "modalAcceptButton": {
-        "en": "I have read and understand the"
+    "appCriteria": {
+        "en": "app criteria",
+        "de": "App-Kriterein"
+    },
+    "modalAcceptButton2": {
+        "en": "",
+        "de": "gelesen und verstanden"
     },
     "modalButtonText": {
         "en": "Continue",

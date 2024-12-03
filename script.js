@@ -193,7 +193,8 @@ function render() {
     document.querySelector('#request-apps').innerHTML = getString('requestAppsButton')
     document.querySelector('#modal-title').innerHTML = getString('modalTitle')
     document.querySelector('#app-criteria').textContent = getString('appCriteria');
-    document.querySelector('#accept-button').innerHTML = getString('modalAcceptButton')
+    document.querySelector('#modal-accept-button-text-1').innerHTML = getString('modalAcceptButton1')
+    document.querySelector('#modal-accept-button-text-2').innerHTML = getString('modalAcceptButton2')
     document.querySelector('#modal-button').innerHTML = getString('modalButtonText') + " →"
 }
 
