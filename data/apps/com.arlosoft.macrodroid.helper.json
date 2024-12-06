@@ -25,6 +25,6 @@
         "utilities"
     ],
     "description": {
-        "en": "In order for a number of MacroDroid features to work on devices running Android 10+, a new helper app is now required. This helper app is built against an older target SDK allowing it to still invoke the functionalities."
+        "en": "1. In order for a number of MacroDroid features to work on devices running Android 10+, a new helper app is now required. This helper app is built against an older target SDK allowing it to still invoke the functionalities.\n2. For devices running Android 14+, be sure to read the WHOLE POST: https://www.macrodroidforum.com/index.php?threads/macrodroid-helper-apk.1/"
     }
 }
