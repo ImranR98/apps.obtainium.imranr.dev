@@ -39,3 +39,8 @@ As of this writing, there are two types of Obtainium links:
 You may want to use the following graphic to link users to your App:
 
 ![Get it on Obtainium](https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png)
+
+With padding:
+
+![badge_obtainium_padded](https://github.com/user-attachments/assets/713d71c5-3dec-4ec4-a3f2-8d28d025a9c6)
+
