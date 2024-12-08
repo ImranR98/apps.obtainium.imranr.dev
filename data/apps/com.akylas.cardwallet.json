@@ -6,7 +6,7 @@
             "author": "Akylas",
             "name": "OSS Card Wallet",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"Card Wallet\",\"versionExtractionRegEx\":\"github/(.+)\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"about\":\"An open source app to scan and store all your cards.\"}"
+            "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"Card Wallet\",\"versionExtractionRegEx\":\"github/(.+)\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"about\":\"\"}"
         }
     ],
     "icon": "https://github.com/Akylas/OSS-DocumentScanner/blob/master/icon_cardwallet.png?raw=true",
