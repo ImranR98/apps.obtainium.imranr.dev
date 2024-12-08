@@ -41,4 +41,3 @@ You may want to use the following graphic to link users to your App:
 ![Get it on Obtainium](https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png)
 
 [`Click here for a version of this image with extra margin space consistent with other common badges (GitHub, F-Droid, etc.)`](https://github.com/user-attachments/assets/713d71c5-3dec-4ec4-a3f2-8d28d025a9c6)
-
