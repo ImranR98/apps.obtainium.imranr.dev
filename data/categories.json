@@ -1,67 +1,81 @@
 {
     "2FA": {
         "en": "Two Factor Authentification",
-        "de": "Zweifaktorauthentifizierung"
+        "de": "Zweifaktorauthentifizierung",
+        "pt": "verificação de dois factores"
     },
     "ad_blocker": {
         "en": "Ad Blocker",
-        "de": "Werberblocker"
+        "de": "Werberblocker",
+        "pt": "bloqueador de anúncios"
     },
     "anime_and_manga": {
         "en": "Anime & Manga"
     },
     "automation": {
-        "en": "Automation"
+        "en": "Automation",
+        "pt": "automatização"
     },
     "barcode_scanner": {
         "en": "Barcode Scanner"
     },
     "battery": {
         "en": "Battery",
-        "de": "Akku"
+        "de": "Akku",
+        "pt": "bateria"
     },
     "browser": {
         "en": "Browser"
     },
     "calculator": {
         "en": "Calculator",
-        "de": "Taschenrechner"
+        "de": "Taschenrechner",
+        "pt": "calculadora"
     },
     "calendar": {
         "en": "Calendar",
-        "de": "Kalender"
+        "de": "Kalender",
+        "pt": "calendário"
     },
     "call_blocker_and_spam_filter": {
         "en": "Call Blocker & Spam Filter",
-        "de": "Anrufblocker & Spam Filter"
+        "de": "Anrufblocker & Spam Filter",
+        "pt": "bloqueador de chamadas e filtro de spam"
     },
     "camera": {
         "en": "Camera",
-        "de": "Kamera"
+        "de": "Kamera",
+        "pt": "câmara"
     },
     "clock_and_time": {
         "en": "Clock & Time",
-        "de": "Uhr(zeit)"
+        "de": "Uhr(zeit)",
+        "pt": "relógio e hora"
     },
     "community_clients": {
         "en": "Community Clients",
-        "de": "Clients für Communitys und Social Media"
+        "de": "Clients für Communitys und Social Media",
+        "pt": "clientes da comunidade"
     },
     "contacts": {
         "en": "Contacts",
-        "de": "Kontakte"
+        "de": "Kontakte",
+        "pt": "contactos"
     },
     "dialer": {
         "en": "Dialer",
-        "de": "Telefon"
+        "de": "Telefon",
+        "pt": "telefone"
     },
     "dictionaries": {
         "en": "Dictionaries",
-        "de": "Wörterbücher"
+        "de": "Wörterbücher",
+        "pt": "dicionário"
     },
     "document_and_pdf_viewer": {
         "en": "Document & PDF Viewer",
-        "de": "Dokument-Viewer"
+        "de": "Dokument-Viewer",
+        "pt": "visualizador de documentos"
     },
     "document_scanner": {
         "en": "Document Scanner",
@@ -158,6 +172,11 @@
     "podcast_and_audio_book_player": {
         "en": "Podcast & Audio Book Player",
         "de": "Podcast-, Hörbuch- & Hörspiel-Player"
+    },
+    "privacy_and_anonymity": {
+        "en": "Privacy & Anonymity",
+        "de": "Privatsphäre und Anonymität",
+        "pt": "Privacidade e anonimato"
     },
     "research_and_development": {
         "en": "Research & Development",
