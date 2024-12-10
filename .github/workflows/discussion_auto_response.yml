@@ -1,0 +1,41 @@
+name: Auto Respond to App Requests
+
+on:
+  discussion:
+    types: [created]
+
+permissions:
+  contents: read
+  discussions: write
+
+jobs:
+  respond:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Post response comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const RESPONSE_CONTENT = fs.readFileSync('.github/discussion_auto_response.md', 'utf8');
+            const discussionId = context.payload.discussion.node_id;
+            const categoryName = context.payload.discussion.category.name;
+
+            if (categoryName === 'App Requests') {
+              const query = `
+                mutation($discussionId: ID!, $body: String!) {
+                  addDiscussionComment(input: {discussionId: $discussionId, body: $body}) {
+                    comment {
+                      id
+                    }
+                  }
+                }
+              `;
+              await github.graphql(query, {
+                discussionId: discussionId,
+                body: RESPONSE_CONTENT
+              });
+            }
