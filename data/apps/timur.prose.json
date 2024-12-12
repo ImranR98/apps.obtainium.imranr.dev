@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "timur.prose",
+            "url": "https://timur.mobi/prose/doc/android/",
+            "author": "timur.mobi",
+            "name": "ProseReader (Optimum)",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d+.\\\\d+.\\\\d+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"ProseReader (Optimum)\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://codeberg.org/timurmobi/prosereader-android/raw/branch/master/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": null
+    }
+}
