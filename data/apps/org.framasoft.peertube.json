@@ -1,0 +1,20 @@
+{
+    "apps": [
+        {
+            "id": "org.framasoft.peertube",
+            "url": "https://asso.framasoft.org/dolo/h/peertube-apk-latest",
+            "author": "asso.framasoft.org",
+            "name": "PeerTube",
+            "icon": "https://framagit.org/framasoft/peertube/mobile-application/-/raw/develop/assets/icon_with_background.png",
+            "categories": [
+                "video_player",
+                "media_frontends",
+                "community_clients"
+            ],
+            "description": {
+                "en": "PeerTube mobile app: discover videos while caring for your attention."
+            },
+            "overrideSource": "DirectAPKLink"
+        }
+    ]
+}
