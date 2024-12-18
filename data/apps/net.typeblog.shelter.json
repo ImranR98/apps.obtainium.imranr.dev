@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "net.typeblog.shelter",
+            "url": "https://fdroid.typeblog.net",
+            "author": "PeterCxy",
+            "name": "Shelter",
+            "additionalSettings": "{\"appIdOrName\":\"https://fdroid.typeblog.net\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "FDroidRepo",
+            "altLabel": "PeterCxy's F-Droid Repo"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/PeterCxy/Shelter/refs/heads/master/metadata/en-US/images/icon.png",
+    "description": {
+        "en": "Isolate your Big Brother Apps, using Work Profiles"
+    },
+    "categories": [
+        "utilities"
+    ]
+}
