@@ -2,246 +2,305 @@
     "2FA": {
         "en": "Two Factor Authentification",
         "de": "Zweifaktorauthentifizierung",
-        "pt": "verificação de dois factores"
+        "pt": "verificação de dois factores",
+        "ja": "二要素認証"
     },
     "ad_blocker": {
         "en": "Ad Blocker",
         "de": "Werberblocker",
-        "pt": "bloqueador de anúncios"
+        "pt": "bloqueador de anúncios",
+        "ja": "広告ブロッカー"
     },
     "anime_and_manga": {
-        "en": "Anime & Manga"
+        "en": "Anime & Manga",
+        "ja": "アニメ＆漫画"
     },
     "automation": {
         "en": "Automation",
-        "pt": "automatização"
+        "pt": "automatização",
+        "ja": "自動化"
     },
     "barcode_scanner": {
-        "en": "Barcode Scanner"
+        "en": "Barcode Scanner",
+        "ja": "バーコードスキャナー"
     },
     "battery": {
         "en": "Battery",
         "de": "Akku",
-        "pt": "bateria"
+        "pt": "bateria",
+        "ja": "バッテリー"
     },
     "browser": {
-        "en": "Browser"
+        "en": "Browser",
+        "ja": "ブラウザ"
     },
     "calculator": {
         "en": "Calculator",
         "de": "Taschenrechner",
-        "pt": "calculadora"
+        "pt": "calculadora",
+        "ja": "電卓"
     },
     "calendar": {
         "en": "Calendar",
         "de": "Kalender",
-        "pt": "calendário"
+        "pt": "calendário",
+        "ja": "カレンダー"
     },
     "call_blocker_and_spam_filter": {
         "en": "Call Blocker & Spam Filter",
         "de": "Anrufblocker & Spam Filter",
-        "pt": "bloqueador de chamadas e filtro de spam"
+        "pt": "bloqueador de chamadas e filtro de spam",
+         "ja": "通話ブロッカー＆スパムフィルター"
     },
     "camera": {
         "en": "Camera",
         "de": "Kamera",
-        "pt": "câmara"
+        "pt": "câmara",
+        "ja": "カメラ"
     },
     "clock_and_time": {
         "en": "Clock & Time",
         "de": "Uhr(zeit)",
-        "pt": "relógio e hora"
+        "pt": "relógio e hora",
+        "ja": "時計＆タイマー"
     },
     "community_clients": {
         "en": "Community Clients",
         "de": "Clients für Communitys und Social Media",
-        "pt": "clientes da comunidade"
+        "pt": "clientes da comunidade",
+        "ja": "コミュニティクライアント"
     },
     "contacts": {
         "en": "Contacts",
         "de": "Kontakte",
-        "pt": "contactos"
+        "pt": "contactos",
+        "ja": "連絡帳"
     },
     "dialer": {
         "en": "Dialer",
         "de": "Telefon",
-        "pt": "telefone"
+        "pt": "telefone",
+        "ja": "電話"
     },
     "dictionaries": {
         "en": "Dictionaries",
         "de": "Wörterbücher",
-        "pt": "dicionário"
+        "pt": "dicionário",
+        "ja": "辞書"
     },
     "document_and_pdf_viewer": {
         "en": "Document & PDF Viewer",
         "de": "Dokument-Viewer",
-        "pt": "visualizador de documentos"
+        "pt": "visualizador de documentos",
+        "ja": "ドキュメント＆PDFビューア"
     },
     "document_scanner": {
         "en": "Document Scanner",
-        "de": "Dokumentenscanner"
+        "de": "Dokumentenscanner",
+        "ja": "ドキュメントスキャナー"
     },
     "downloader_and_manager": {
-        "en": "Downloader & Manager"
+        "en": "Downloader & Manager",
+        "ja": "ダウンロード管理"
     },
     "drawing": {
         "en": "Drawing",
-        "de": "Bildbearbeitung & (digitales) Malen"
+        "de": "Bildbearbeitung & (digitales) Malen",
+        "ja": "図画"
     },
     "email_clients": {
         "en": "Email Clients",
-        "de": "Email-Clients"
+        "de": "Email-Clients",
+        "ja": "メールクライアント"
     },
     "emulator": {
         "en": "Emulator",
-        "de": "Emulatoren"
+        "de": "Emulatoren",
+        "ja": "エミュレーター"
     },
     "file_manager": {
         "en": "File Manager",
-        "de": "Dateimanager"
+        "de": "Dateimanager",
+        "ja": "ファイル管理"
     },
     "file_sharing": {
         "en": "File Sharing",
-        "de": "Dateien teilen"
+        "de": "Dateien teilen",
+        "ja": "ファイル共有"
     },
     "finance": {
         "en": "Finance",
-        "de": "Finanzen"
+        "de": "Finanzen",
+        "ja": "金融"
     },
     "firewall": {
-        "en": "Firewall"
+        "en": "Firewall",
+        "ja": "ファイアウォール"
     },
     "games": {
         "en": "Games",
-        "de": "Spiele"
+        "de": "Spiele",
+        "ja": "ゲーム"
     },
     "icon_packs": {
         "en": "Icon Packs",
-        "de": "Icon Pakete"
+        "de": "Icon Pakete",
+        "ja": "アイコンパック"
     },
     "image_manipulation": {
         "en": "Image Manipulation",
-        "de": "Bildbearbeitung"
+        "de": "Bildbearbeitung",
+        "ja": "画像編集"
     },
     "image_viewer_and_gallery": {
         "en": "Image Viewer & Gallery",
-        "de": "Fotoanzeiger & Gallerien"
+        "de": "Fotoanzeiger & Gallerien",
+        "ja": "画像ビューア＆ギャラリー"
     },
     "keyboard": {
         "en": "Keyboard",
-        "de": "Tastatur"
+        "de": "Tastatur",
+        "ja": "キーボード"
     },
     "launcher_and_desktop": {
-        "en": "Launcher & Desktop"
+        "en": "Launcher & Desktop",
+        "ja": "ランチャー＆デスクトップ"
     },
     "malwarescanner": {
         "en": "Virus- & Malwarescanner, security suggestions, permission management",
-        "de": "Viren- & Malwarescanner, Sicherheitsvorschläge, Berechtigungsverwaltung"
+        "de": "Viren- & Malwarescanner, Sicherheitsvorschläge, Berechtigungsverwaltung",
+        "ja": "ウイルス＆マルウェアスキャナー、セキュリティ提案、権限管理"
     },
     "maps_and_navigation": {
-        "en": "Maps & Navigation"
+        "en": "Maps & Navigation",
+        "ja": "マップ＆ナビ"
     },
     "media_frontends": {
         "en": "Media Frontends",
-        "de": "Medien Frontends"
+        "de": "Medien Frontends",
+        "ja": "メディアフロントエンド"
     },
     "messaging": {
         "en": "Messaging",
-        "de": "Messenger"
+        "de": "Messenger",
+        "ja": "メッセージ"
     },
     "miscellaneous": {
         "en": "Miscellaneous",
-        "de": "Verschiedenes"
+        "de": "Verschiedenes",
+        "ja": "その他"
     },
     "music": {
         "en": "Music",
-        "de": "Musik"
+        "de": "Musik",
+        "ja": "音楽"
     },
     "notes": {
         "en": "Notes",
-        "de": "Notizprogramme"
+        "de": "Notizprogramme",
+        "ja": "ノート"
     },
     "painting": {
         "en": "Painting",
-        "de": "(digitales) Malen"
+        "de": "(digitales) Malen",
+        "ja": "描画"
     },
     "password_and_authentication": {
         "en": "Password & Authentication",
-        "de": "Passwort(managing) & Authentifizierung"
+        "de": "Passwort(managing) & Authentifizierung",
+        "ja": "パスワード＆認証"
     },
     "podcast_and_audio_book_player": {
         "en": "Podcast & Audio Book Player",
-        "de": "Podcast-, Hörbuch- & Hörspiel-Player"
+        "de": "Podcast-, Hörbuch- & Hörspiel-Player",
+        "ja": "ポッドキャスト＆オーディオブックプレーヤー"
     },
     "privacy_and_anonymity": {
         "en": "Privacy & Anonymity",
         "de": "Privatsphäre und Anonymität",
-        "pt": "Privacidade e anonimato"
+        "pt": "Privacidade e anonimato",
+        "ja": "プライバシー＆匿名"
     },
     "research_and_development": {
         "en": "Research & Development",
-        "de": "Forschung & Entwicklung"
+        "de": "Forschung & Entwicklung",
+        "ja": "研究開発"
     },
     "rss_readers": {
         "en": "RSS Readers",
-        "de": "RSS Reader"
+        "de": "RSS Reader",
+        "ja": "RSSリーダー"
     },
     "sandboxing": {
-        "en": "Sandboxing"
+        "en": "Sandboxing",
+        "ja": "サンドボックス"
     },
     "science_and_education": {
         "en": "Science & Education",
-        "de": "Wissenschaft & Bildung"
+        "de": "Wissenschaft & Bildung",
+        "ja": "科学＆教育"
     },
     "sms": {
         "en": "SMS & MMS"
     },
     "sports_and_health": {
         "en": "Sports & Health",
-        "de": "Fittnes, Sport & Gesundheit"
+        "de": "Fittnes, Sport & Gesundheit",
+        "ja": "スポーツ＆健康"
     },
     "synchronisation": {
         "en": "Synchronisation",
-        "de": "Synchronisation"
+        "de": "Synchronisation",
+        "ja": "同期"
     },
     "system": {
-        "en": "System"
+        "en": "System",
+        "ja": "システム"
     },
     "text_editors": {
         "en": "Text Editors",
-        "de": "Text Editoren"
+        "de": "Text Editoren",
+        "ja": "テキストエディター"
     },
     "text-to-speech": {
         "en": "Text-to-Speech",
-        "de": "Text-zu-Sprache"
+        "de": "Text-zu-Sprache",
+        "ja": "音声読み上げ"
     },
     "translation": {
         "en": "Translation",
-        "de": "Übersetzer"
+        "de": "Übersetzer",
+        "ja": "翻訳"
     },
     "url_manipulation": {
-        "en": "URL Manipulation"
+        "en": "URL Manipulation",
+        "ja": "URL操作"
     },
     "utilities": {
         "en": "Utilities",
-        "de": "Tools & Snippits"
+        "de": "Tools & Snippits",
+        "ja": "ユーティリティー"
     },
     "video_player": {
-        "en": "Video Player"
+        "en": "Video Player",
+        "ja": "ビデオプレーヤー"
     },
     "vpn": {
         "en": "VPN"
     },
     "wallpapers": {
         "en": "Wallpapers",
-        "de": "Hintergründe"
+        "de": "Hintergründe",
+        "ja": "壁紙"
     },
     "weather": {
         "en": "Weather",
-        "de": "Wetter"
+        "de": "Wetter",
+        "ja": "天気"
     },
     "other": {
         "en": "Uncategorized",
-        "de": "Unkategorisiert"
+        "de": "Unkategorisiert",
+        "ja": "未分類"
     }
 }
