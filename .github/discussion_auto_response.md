@@ -17,3 +17,15 @@ Wenn Sie feststellen, dass die von Ihnen gewünschte App nicht geeignet ist, sch
 
 Wenn Sie eine Anfrage für eine ungeeignete App offen lassen, wird sie ignoriert werden.
 </details>
+
+<details>
+<summary><i>简体中文</i></summary>
+
+**您好**,
+
+感谢您提出应用程序申请！请确保您已阅读[应用程序标准](https://github.com/ImranR98/apps.obtainium.imranr.dev/blob/main/APP_CRITERIA.md)，以确认您申请的应用程序符合本网站要求。如果您尚未阅读，请即刻阅读。
+
+如果您意识到您提出的应用程序不符合上述标准，请关闭此话题。
+
+如果您提出的应用程序不符合标准，此申请可能会被忽略。
+</details>
