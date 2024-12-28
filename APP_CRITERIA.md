@@ -92,6 +92,6 @@ The exception to this is if the URL may be hard to find. For example, the URL wh
 <span id="simple-config-zh-cn"></span>
 ### 什么是简单配置？
 
-简单配置是指只需粘贴网站链接并在 Obtainium 中单击添加即可添加的应用，无需更改任何其他设置。
+简单配置是指只需粘贴网站链接在 Obtainium 中，无需更改任何其他设置，单击添加即可添加的应用。
 
 如果链接难以找到，则属于例外情况。例如，除非您了解浏览器开发工具，否则很难找到包含 [Signal APK](https://updates.signal.org/android/latest.json) 的链接。
