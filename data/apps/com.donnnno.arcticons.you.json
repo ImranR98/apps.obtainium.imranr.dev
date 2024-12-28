@@ -5,9 +5,7 @@
             "url": "https://github.com/Arcticons-Team/Arcticons",
             "author": "Arcticons-Team",
             "name": "Arcticons Material You",
-            "preferredApkIndex": 0,
-            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"you\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":false,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
-            "overrideSource": "GitHub"
+            "additionalSettings": "{\"versionDetection\":true,\"apkFilterRegEx\":\"you\",\"invertAPKFilter\":false,\"appName\":\"Arcticons Material You\"}"
         }
     ],
     "icon": "https://github.com/Arcticons-Team/Arcticons/blob/main/app/src/you/ic_launcher-playstore.png",

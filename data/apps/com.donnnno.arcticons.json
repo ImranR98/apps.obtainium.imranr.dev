@@ -5,9 +5,7 @@
             "url": "https://github.com/Arcticons-Team/Arcticons",
             "author": "Arcticons-Team",
             "name": "Arcticons",
-            "preferredApkIndex": 0,
-            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"normal\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"github-creds\":\"\"}",
-            "overrideSource": "GitHub"
+            "additionalSettings": "{\"versionDetection\":true,\"apkFilterRegEx\":\"normal\",\"invertAPKFilter\":false,\"appName\":\"Arcticons\"}"
         }
     ],
     "icon": "https://github.com/Arcticons-Team/Arcticons/blob/main/app/src/normal/ic_launcher-playstore.png",
