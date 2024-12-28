@@ -10,11 +10,11 @@
             "overrideSource": null
         }
     ],
-    "icon": null,
+    "icon": "https://github.com/Arcticons-Team/Arcticons/blob/main/app/src/you/ic_launcher-playstore.png",
     "categories": [
-        "other"
+        "icon-packs"
     ],
     "description": {
-        "en": null
+        "en": "A line-based icon pack that adapts to your background."
     }
 }

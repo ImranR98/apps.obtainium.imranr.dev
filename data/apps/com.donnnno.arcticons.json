@@ -10,11 +10,11 @@
             "overrideSource": "GitHub"
         }
     ],
-    "icon": null,
+    "icon": "https://github.com/Arcticons-Team/Arcticons/app/src/normal/ic_launcher-playstore.png",
     "categories": [
-        "other"
+        "icon-packs"
     ],
     "description": {
-        "en": null
+        "en": "A monotone line-based icon pack for dark themed setups."
     }
 }
