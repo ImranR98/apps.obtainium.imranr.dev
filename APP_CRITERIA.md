@@ -1,8 +1,10 @@
 # App Criteria
 
-<center> 
+<div align="center">
+
 [简体中文（中国大陆）](#zh-cn) 
-</center>
+
+</div>
 
 Before opening a new app request/PR with updates to a config, please read the following information to ensure that the app you want is suitable for this site. It will save you and the maintainers of the repo time. If you choose to ignore these instructions, your request/PR may be ignored.
 
