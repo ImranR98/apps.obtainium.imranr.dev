@@ -14,6 +14,7 @@
         "sandboxing", "system", "research_and_development", "emulator"
     ],
     "description": {
-        "en": "Android terminal emulator and Linux environment."
+        "en": "Android terminal emulator and Linux environment.",
+        "zh": "Android 终端模拟器与 Linux 环境。"
     }
 }

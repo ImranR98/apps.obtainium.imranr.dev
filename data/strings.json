@@ -5,71 +5,85 @@
     "subtitle": {
         "en": "Crowdsourced App Configurations for Obtainium",
         "de": "Von der Gemeinschaft erstellte App-Konfigurationen für Obtainium",
-        "ja": "Obtainiumのためのアプリ設定クラウドソーシング"
+        "ja": "Obtainiumのためのアプリ設定クラウドソーシング",
+        "zh": "来自社区共享的 Obtainium 众包应用配置"
     },
     "categorySelect": {
         "en": "Select App Categories",
         "de": "Wähle eine Kategorie aus",
-        "ja": "アプリカテゴリを選択"
+        "ja": "アプリカテゴリを選択",
+        "zh": "选择应用类别"
     },
     "requestAppsButton": {
         "en": "Request Apps",
         "de": "Frage nach einer Appkonfiguration",
-        "ja": "アプリをリクエスト"
+        "ja": "アプリをリクエスト",
+        "zh": "请求应用"
     },
     "go": {
         "en": "Go",
         "de": "Suchen",
-        "ja": "絞り込む"
+        "ja": "絞り込む",
+        "zh": "搜索"
     },
     "search": {
-        "en": "Regex Search",
-        "de": "Regex Suche",
-        "ja": "正規表現で検索"
+        "en": "RegExp Search",
+        "de": "RegExp Suche",
+        "ja": "正規表現で検索",
+        "zh": "正则表达式搜索"
     },
     "addToObtainium": {
         "en": "Add to Obtainium",
         "de": "App hinzufügen",
-        "ja": "Obtainiumに追加"
+        "ja": "Obtainiumに追加",
+        "zh": "添加到 Obtainium"
     },
     "copyAppConfig": {
         "en": "Copy App Config to Clipboard",
         "de": "App in die Zwischenablage kopieren",
-        "ja": "アプリ設定をクリップボードにコピー"
+        "ja": "アプリ設定をクリップボードにコピー",
+        "zh": "复制应用配置"
     },
     "categories": {
         "en": "Categories",
         "de": "Kategorien",
-        "ja": "種類"
+        "ja": "種類",
+        "zh": "类别"
     },
     "altConfigs": {
         "en": "Alternative Configurations",
         "de": "Andere Konfigurationen",
-        "ja": "代替設定"
+        "ja": "代替設定",
+        "zh": "其他配置"
     },
     "modalTitle": {
         "en": "Important – Please Read!",
         "de": "Wichtig - Bitte beachten!",
-        "ja": "重要 - 確認してください"
+        "ja": "重要 - 確認してください",
+        "zh": "重要 - 请注意！"
     },
     "modalAcceptButtonBefore": {
         "en": "I have read an understand the",
         "de": "Ich habe die",
-        "ja": " "
+        "ja": " ",
+        "zh": "已阅读并同意"
     },
     "appCriteria": {
         "en": "app criteria",
         "de": "App-Kriterein",
-        "ja": "アプリの基準"
+        "ja": "アプリの基準",
+        "zh": "应用标准"
     },
     "modalAcceptButtonAfter": {
         "en": "",
         "de": "gelesen und verstanden",
-        "ja": "を読み、内容を理解しました"
+        "ja": "を読み、内容を理解しました",
+        "zh": ""
     },
     "modalButtonText": {
         "en": "Continue",
         "de": "Fortfahren",
-        "ja": "続ける"
+        "ja": "続ける",
+        "zh": "继续"
     }
 }
