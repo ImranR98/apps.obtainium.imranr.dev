@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[简体中文（中国大陆）](#zh-cn) 
+[简体中文（中国大陆）](#zh-cn)
 
 </div>
 
