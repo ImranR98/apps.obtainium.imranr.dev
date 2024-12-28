@@ -26,7 +26,7 @@ function getCategoriesSelectorHTML(apps, categories, selectedCategories) {
             }
         })
         .sort((da, db) => {
-            if (da.unused != db.unused) {
+            if (da.unused !== db.unused) {
                 return da.unused ? 1 : -1
             }
             return da.displayName.localeCompare(db.displayName)
