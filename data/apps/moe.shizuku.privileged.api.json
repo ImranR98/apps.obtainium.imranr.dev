@@ -11,6 +11,9 @@
     "icon": "https://shizuku.rikka.app/logo.png",
     "categories": ["system"],
     "description": {
-        "en": "Using system APIs directly with adb/root privileges from normal apps."
+        "en": "Using system APIs directly with adb/root privileges from normal apps.",
+        "zh": "让你的应用直接使用系统 API",
+        "zh-HK": "讓你的應用程式直接使用系統 API",
+        "zh-TW": "讓你的應用程式直接使用系統 API"
     }
 }

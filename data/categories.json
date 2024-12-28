@@ -3,287 +3,344 @@
         "en": "Two Factor Authentification",
         "de": "Zweifaktorauthentifizierung",
         "pt": "verificação de dois factores",
-        "ja": "二要素認証"
+        "ja": "二要素認証",
+        "zh": "双因素认证"
     },
     "ad_blocker": {
         "en": "Ad Blocker",
         "de": "Werberblocker",
         "pt": "bloqueador de anúncios",
-        "ja": "広告ブロッカー"
+        "ja": "広告ブロッカー",
+        "zh": "广告拦截"
     },
     "anime_and_manga": {
         "en": "Anime & Manga",
-        "ja": "アニメ＆漫画"
+        "ja": "アニメ＆漫画",
+        "zh": "动漫与漫画"
     },
     "automation": {
         "en": "Automation",
         "pt": "automatização",
-        "ja": "自動化"
+        "ja": "自動化",
+        "zh": "自动化"
     },
     "barcode_scanner": {
         "en": "Barcode Scanner",
-        "ja": "バーコードスキャナー"
+        "ja": "バーコードスキャナー",
+        "zh": "扫码器"
     },
     "battery": {
         "en": "Battery",
         "de": "Akku",
         "pt": "bateria",
-        "ja": "バッテリー"
+        "ja": "バッテリー",
+        "zh": "电源管理"
     },
     "browser": {
         "en": "Browser",
-        "ja": "ブラウザ"
+        "ja": "ブラウザ",
+        "zh": "浏览器"
     },
     "calculator": {
         "en": "Calculator",
         "de": "Taschenrechner",
         "pt": "calculadora",
-        "ja": "電卓"
+        "ja": "電卓",
+        "zh": "计算器"
     },
     "calendar": {
         "en": "Calendar",
         "de": "Kalender",
         "pt": "calendário",
-        "ja": "カレンダー"
+        "ja": "カレンダー",
+        "zh": "日历"
     },
     "call_blocker_and_spam_filter": {
         "en": "Call Blocker & Spam Filter",
         "de": "Anrufblocker & Spam Filter",
         "pt": "bloqueador de chamadas e filtro de spam",
-         "ja": "通話ブロッカー＆スパムフィルター"
+        "ja": "通話ブロッカー＆スパムフィルター",
+        "zh": "骚扰电话与短信拦截"
     },
     "camera": {
         "en": "Camera",
         "de": "Kamera",
         "pt": "câmara",
-        "ja": "カメラ"
+        "ja": "カメラ",
+        "zh": "相机"
     },
     "clock_and_time": {
         "en": "Clock & Time",
         "de": "Uhr(zeit)",
         "pt": "relógio e hora",
-        "ja": "時計＆タイマー"
+        "ja": "時計＆タイマー",
+        "zh": "时钟与时间"
     },
     "community_clients": {
         "en": "Community Clients",
         "de": "Clients für Communitys und Social Media",
         "pt": "clientes da comunidade",
-        "ja": "コミュニティクライアント"
+        "ja": "コミュニティクライアント",
+        "zh": "社区驱动的非官方客户端"
     },
     "contacts": {
         "en": "Contacts",
         "de": "Kontakte",
         "pt": "contactos",
-        "ja": "連絡帳"
+        "ja": "連絡帳",
+        "zh": "联系人"
     },
     "dialer": {
         "en": "Dialer",
         "de": "Telefon",
         "pt": "telefone",
-        "ja": "電話"
+        "ja": "電話",
+        "zh": "电话"
     },
     "dictionaries": {
         "en": "Dictionaries",
         "de": "Wörterbücher",
         "pt": "dicionário",
-        "ja": "辞書"
+        "ja": "辞書",
+        "zh": "词典"
     },
     "document_and_pdf_viewer": {
         "en": "Document & PDF Viewer",
         "de": "Dokument-Viewer",
         "pt": "visualizador de documentos",
-        "ja": "ドキュメント＆PDFビューア"
+        "ja": "ドキュメント＆PDFビューア",
+        "zh": "文档与 PDF 查看器"
     },
     "document_scanner": {
         "en": "Document Scanner",
         "de": "Dokumentenscanner",
-        "ja": "ドキュメントスキャナー"
+        "ja": "ドキュメントスキャナー",
+        "zh": "文档扫描"
     },
     "downloader_and_manager": {
         "en": "Downloader & Manager",
-        "ja": "ダウンロード管理"
+        "ja": "ダウンロード管理",
+        "zh": "下载管理"
     },
     "drawing": {
         "en": "Drawing",
         "de": "Bildbearbeitung & (digitales) Malen",
-        "ja": "図画"
+        "ja": "図画",
+        "zh": "绘图"
     },
     "email_clients": {
         "en": "Email Clients",
         "de": "Email-Clients",
-        "ja": "メールクライアント"
+        "ja": "メールクライアント",
+        "zh": "电子邮件客户端"
     },
     "emulator": {
         "en": "Emulator",
         "de": "Emulatoren",
-        "ja": "エミュレーター"
+        "ja": "エミュレーター",
+        "zh": "模拟器"
     },
     "file_manager": {
         "en": "File Manager",
         "de": "Dateimanager",
-        "ja": "ファイル管理"
+        "ja": "ファイル管理",
+        "zh": "文件管理"
     },
     "file_sharing": {
         "en": "File Sharing",
         "de": "Dateien teilen",
-        "ja": "ファイル共有"
+        "ja": "ファイル共有",
+        "zh": "文件共享"
     },
     "finance": {
         "en": "Finance",
         "de": "Finanzen",
-        "ja": "金融"
+        "ja": "金融",
+        "zh": "金融"
     },
     "firewall": {
         "en": "Firewall",
-        "ja": "ファイアウォール"
+        "ja": "ファイアウォール",
+        "zh": "防火墙"
     },
     "games": {
         "en": "Games",
         "de": "Spiele",
-        "ja": "ゲーム"
+        "ja": "ゲーム",
+        "zh": "游戏"
     },
     "icon_packs": {
         "en": "Icon Packs",
         "de": "Icon Pakete",
-        "ja": "アイコンパック"
+        "ja": "アイコンパック",
+        "zh": "图标包"
     },
     "image_manipulation": {
         "en": "Image Manipulation",
         "de": "Bildbearbeitung",
-        "ja": "画像編集"
+        "ja": "画像編集",
+        "zh": "图像编辑"
     },
     "image_viewer_and_gallery": {
         "en": "Image Viewer & Gallery",
         "de": "Fotoanzeiger & Gallerien",
-        "ja": "画像ビューア＆ギャラリー"
+        "ja": "画像ビューア＆ギャラリー",
+        "zh": "图片查看与图库"
     },
     "keyboard": {
         "en": "Keyboard",
         "de": "Tastatur",
-        "ja": "キーボード"
+        "ja": "キーボード",
+        "zh": "输入法"
     },
     "launcher_and_desktop": {
         "en": "Launcher & Desktop",
-        "ja": "ランチャー＆デスクトップ"
+        "ja": "ランチャー＆デスクトップ",
+        "zh": "启动器与桌面"
     },
     "malwarescanner": {
         "en": "Virus- & Malwarescanner, security suggestions, permission management",
         "de": "Viren- & Malwarescanner, Sicherheitsvorschläge, Berechtigungsverwaltung",
-        "ja": "ウイルス＆マルウェアスキャナー、セキュリティ提案、権限管理"
+        "ja": "ウイルス＆マルウェアスキャナー、セキュリティ提案、権限管理",
+        "zh": "病毒与恶意软件扫描、安全建议、权限管理"
     },
     "maps_and_navigation": {
         "en": "Maps & Navigation",
-        "ja": "マップ＆ナビ"
+        "ja": "マップ＆ナビ",
+        "zh": "地图与导航"
     },
     "media_frontends": {
         "en": "Media Frontends",
         "de": "Medien Frontends",
-        "ja": "メディアフロントエンド"
+        "ja": "メディアフロントエンド",
+        "zh": "媒体播放"
     },
     "messaging": {
         "en": "Messaging",
         "de": "Messenger",
-        "ja": "メッセージ"
+        "ja": "メッセージ",
+        "zh": "通信"
     },
     "miscellaneous": {
         "en": "Miscellaneous",
         "de": "Verschiedenes",
-        "ja": "その他"
+        "ja": "その他",
+        "zh": "其它"
     },
     "music": {
         "en": "Music",
         "de": "Musik",
-        "ja": "音楽"
+        "ja": "音楽",
+        "zh": "音乐"
     },
     "notes": {
         "en": "Notes",
         "de": "Notizprogramme",
-        "ja": "ノート"
+        "ja": "ノート",
+        "zh": "笔记"
     },
     "painting": {
         "en": "Painting",
         "de": "(digitales) Malen",
-        "ja": "描画"
+        "ja": "描画",
+        "zh": "绘画"
     },
     "password_and_authentication": {
         "en": "Password & Authentication",
         "de": "Passwort(managing) & Authentifizierung",
-        "ja": "パスワード＆認証"
+        "ja": "パスワード＆認証",
+        "zh": "密码与身份验证"
     },
     "podcast_and_audio_book_player": {
         "en": "Podcast & Audio Book Player",
         "de": "Podcast-, Hörbuch- & Hörspiel-Player",
-        "ja": "ポッドキャスト＆オーディオブックプレーヤー"
+        "ja": "ポッドキャスト＆オーディオブックプレーヤー",
+        "zh": "播客与有声书播放器"
     },
     "privacy_and_anonymity": {
         "en": "Privacy & Anonymity",
         "de": "Privatsphäre und Anonymität",
         "pt": "Privacidade e anonimato",
-        "ja": "プライバシー＆匿名"
+        "ja": "プライバシー＆匿名",
+        "zh": "隐私与匿名"
     },
     "research_and_development": {
         "en": "Research & Development",
         "de": "Forschung & Entwicklung",
-        "ja": "研究開発"
+        "ja": "研究開発",
+        "zh": "研究与开发"
     },
     "rss_readers": {
         "en": "RSS Readers",
         "de": "RSS Reader",
-        "ja": "RSSリーダー"
+        "ja": "RSSリーダー",
+        "zh": "RSS 阅读器"
     },
     "sandboxing": {
         "en": "Sandboxing",
-        "ja": "サンドボックス"
+        "ja": "サンドボックス",
+        "zh": "沙盒"
     },
     "science_and_education": {
         "en": "Science & Education",
         "de": "Wissenschaft & Bildung",
-        "ja": "科学＆教育"
+        "ja": "科学＆教育",
+        "zh": "科学与教育"
     },
     "sms": {
-        "en": "SMS & MMS"
+        "en": "SMS & MMS",
+        "zh": "短信与彩信"
     },
     "sports_and_health": {
         "en": "Sports & Health",
         "de": "Fittnes, Sport & Gesundheit",
-        "ja": "スポーツ＆健康"
+        "ja": "スポーツ＆健康",
+        "zh": "体育与健康"
     },
     "synchronisation": {
         "en": "Synchronisation",
         "de": "Synchronisation",
-        "ja": "同期"
+        "ja": "同期",
+        "zh": "同步"
     },
     "system": {
         "en": "System",
-        "ja": "システム"
+        "ja": "システム",
+        "zh": "系统"
     },
     "text_editors": {
         "en": "Text Editors",
         "de": "Text Editoren",
-        "ja": "テキストエディター"
+        "ja": "テキストエディター",
+        "zh": "文本编辑"
     },
     "text-to-speech": {
         "en": "Text-to-Speech",
         "de": "Text-zu-Sprache",
-        "ja": "音声読み上げ"
+        "ja": "音声読み上げ",
+        "zh": "文本转语音"
     },
     "translation": {
         "en": "Translation",
         "de": "Übersetzer",
-        "ja": "翻訳"
+        "ja": "翻訳",
+        "zh": "翻译"
     },
     "url_manipulation": {
         "en": "URL Manipulation",
-        "ja": "URL操作"
+        "ja": "URL操作",
+        "zh": "网址编辑"
     },
     "utilities": {
         "en": "Utilities",
         "de": "Tools & Snippits",
-        "ja": "ユーティリティー"
+        "ja": "ユーティリティー",
+        "zh": "实用工具"
     },
     "video_player": {
         "en": "Video Player",
-        "ja": "ビデオプレーヤー"
+        "ja": "ビデオプレーヤー",
+        "zh": "视频播放"
     },
     "vpn": {
         "en": "VPN"
@@ -291,16 +348,19 @@
     "wallpapers": {
         "en": "Wallpapers",
         "de": "Hintergründe",
-        "ja": "壁紙"
+        "ja": "壁紙",
+        "zh": "壁纸"
     },
     "weather": {
         "en": "Weather",
         "de": "Wetter",
-        "ja": "天気"
+        "ja": "天気",
+        "zh": "天气"
     },
     "other": {
         "en": "Uncategorized",
         "de": "Unkategorisiert",
-        "ja": "未分類"
+        "ja": "未分類",
+        "zh": "尚未分类"
     }
 }

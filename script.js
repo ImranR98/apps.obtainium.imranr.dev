@@ -1,5 +1,11 @@
 let data = null
-const langCode = ((navigator.language || navigator.userLanguage) || 'en-US').split('-')[0]
+const langCode = (() => {
+    const language = (navigator.language || navigator.userLanguage || 'en-US').split('-')[0];
+    const fullLanguage = navigator.language || navigator.userLanguage || 'en-US';
+    if (fullLanguage === 'zh-HK' || fullLanguage === 'zh-TW') return fullLanguage;
+    return language;
+})();
+
 
 function getString(key) {
     return getLocalString(data.strings[key])
@@ -20,7 +26,7 @@ function getCategoriesSelectorHTML(apps, categories, selectedCategories) {
             }
         })
         .sort((da, db) => {
-            if (da.unused != db.unused) {
+            if (da.unused !== db.unused) {
                 return da.unused ? 1 : -1
             }
             return da.displayName.localeCompare(db.displayName)
