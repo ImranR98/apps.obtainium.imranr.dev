@@ -8,7 +8,7 @@
             "additionalSettings": "{\"versionDetection\":true,\"apkFilterRegEx\":\"black\",\"invertAPKFilter\":false,\"appName\":\"Arcticons Black\"}"
         }
     ],
-    "icon": "https://github.com/Arcticons-Team/Arcticons/blob/main/app/src/black/ic_launcher-playstore.png",
+    "icon": "https://raw.githubusercontent.com/Arcticons-Team/Arcticons/refs/heads/main/app/src/black/ic_launcher-playstore.png",
     "categories": [
         "icon_packs"
     ],
