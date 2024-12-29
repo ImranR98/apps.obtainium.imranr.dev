@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.donnnno.arcticons.daynight",
+            "url": "https://github.com/Arcticons-Team/Arcticons",
+            "author": "Arcticons-Team",
+            "name": "Arcticons Day & Night",
+            "additionalSettings": "{\"versionDetection\":true,\"apkFilterRegEx\":\"dayNight\",\"invertAPKFilter\":false,\"appName\":\"Arcticons Day & Night\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Arcticons-Team/Arcticons/refs/heads/main/app/src/dayNight/ic_launcher-playstore.png",
+    "categories": [
+        "icon_packs"
+    ],
+    "description": {
+        "en": "A line-based icon pack that changes its theme depending on time."
+    }
+}

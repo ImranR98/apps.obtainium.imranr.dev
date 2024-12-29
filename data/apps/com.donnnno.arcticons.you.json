@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.donnnno.arcticons.you",
+            "url": "https://github.com/Arcticons-Team/Arcticons",
+            "author": "Arcticons-Team",
+            "name": "Arcticons Material You",
+            "additionalSettings": "{\"versionDetection\":true,\"apkFilterRegEx\":\"you\",\"invertAPKFilter\":false,\"appName\":\"Arcticons Material You\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Arcticons-Team/Arcticons/refs/heads/main/app/src/you/ic_launcher-playstore.png",
+    "categories": [
+        "icon_packs"
+    ],
+    "description": {
+        "en": "A line-based icon pack that adapts to your background."
+    }
+}
