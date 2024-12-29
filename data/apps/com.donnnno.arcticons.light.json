@@ -5,7 +5,7 @@
             "url": "https://github.com/Arcticons-Team/Arcticons",
             "author": "Arcticons-Team",
             "name": "Arcticons Black",
-            "additionalSettings": "{\"versionDetection\":true,\"apkFilterRegEx\":\"black\",\"invertAPKFilter\":false,\"appName\":\"Arcticons Black\"\"}"
+            "additionalSettings": "{\"versionDetection\":true,\"apkFilterRegEx\":\"black\",\"invertAPKFilter\":false,\"appName\":\"Arcticons Black\"}"
         }
     ],
     "icon": "https://github.com/Arcticons-Team/Arcticons/blob/main/app/src/black/ic_launcher-playstore.png",
