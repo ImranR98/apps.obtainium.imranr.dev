@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.donnnno.arcticons.light",
+            "url": "https://github.com/Arcticons-Team/Arcticons",
+            "author": "Arcticons-Team",
+            "name": "Arcticons Black",
+            "additionalSettings": "{\"versionDetection\":true,\"apkFilterRegEx\":\"black\",\"invertAPKFilter\":false,\"appName\":\"Arcticons Black\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Arcticons-Team/Arcticons/refs/heads/main/app/src/black/ic_launcher-playstore.png",
+    "categories": [
+        "icon_packs"
+    ],
+    "description": {
+        "en": "A monotone line-based icon pack for light themed setups."
+    }
+}
