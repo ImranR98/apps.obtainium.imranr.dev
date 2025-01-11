@@ -8,7 +8,7 @@
             "overrideSource": "DirectAPKLink"
         }
     ],
-    "icon": "https://framagit.org/framasoft/peertube/mobile-application/-/raw/develop/assets/icon_with_background.png",
+    "icon": "https://framasoft.frama.io/peertube/mobile-application/icon_with_background.png",
     "categories": [
         "video_player",
         "media_frontends",
