@@ -10,7 +10,7 @@
     ],
     "icon": "https://brave.com/static-assets/images/brave-release-badge.png",
     "categories": [
-        "Browser"
+        "browser"
     ],
     "description": {
         "en": "Brave is an open-source web browser for Windows, macOS, Linux, Android and iOS.",
