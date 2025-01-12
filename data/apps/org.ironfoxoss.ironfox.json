@@ -2,7 +2,7 @@
     "configs": [
         {
             "id": "org.ironfoxoss.ironfox",
-            "url": "https://fdroid.ironfoxoss.org/fdroid/repo/",
+            "url": "https://fdroid.ironfoxoss.org/fdroid/repo",
             "author": "IronFox OSS",
             "name": "IronFox",
             "additionalSettings": "{\"appIdOrName\":\"org.ironfoxoss.ironfox\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
