@@ -11,7 +11,7 @@
     ],
     "icon": "https://raw.githubusercontent.com/moffatman/chan/refs/heads/master/assets/appicon.png",
     "categories": [
-        "other"
+        "community_clients"
     ],
     "description": {
         "en": "Flutter imageboard browser for iOS and Android."

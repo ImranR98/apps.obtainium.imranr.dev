@@ -12,7 +12,8 @@
     ],
     "icon": "https://raw.githubusercontent.com/Alex313031/Thorium-Android/refs/heads/main/content_shell_app_icon_192.png",
     "categories": [
-        "other"
+        "browser",
+        "system"
     ],
     "description": {
         "en": null

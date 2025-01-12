@@ -12,7 +12,8 @@
     ],
     "icon": "https://store.akamai.steamstatic.com/public/images/mobile/steam_chat_icon.png",
     "categories": [
-        "other"
+        "games",
+        "community_clients"
     ],
     "description": {
         "en": "A lightweight app focused on chatting with friends and groups."
