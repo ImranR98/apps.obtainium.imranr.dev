@@ -43,7 +43,8 @@
     ],
     "icon": "https://raw.githubusercontent.com/Gedsh/InviZible/refs/heads/master/tordnscrypt/src/lite/res/mipmap-xxxhdpi/ic_launcher.webp",
     "categories": [
-        "other"
+        "vpn",
+        "privacy_and_anonymity"
     ],
     "description": {
         "en": null

@@ -342,6 +342,9 @@
         "ja": "ビデオプレーヤー",
         "zh": "视频播放"
     },
+    "video_manipulation": {
+        "en": "Video Manipulation"
+    },
     "vpn": {
         "en": "VPN"
     },

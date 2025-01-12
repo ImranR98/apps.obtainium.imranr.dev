@@ -12,7 +12,9 @@
     ],
     "icon": "https://framerusercontent.com/images/b2bubaEO6BTZACqrAWk75BjOc.webp",
     "categories": [
-        "other"
+        "community_clients",
+        "messaging",
+        "dialer"
     ],
     "description": {
         "en": null

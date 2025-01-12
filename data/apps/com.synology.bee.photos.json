@@ -23,7 +23,8 @@
     ],
     "icon": null,
     "categories": [
-        "other"
+        "image_viewer_and_gallery",
+        "synchronisation"
     ],
     "description": {
         "en": null

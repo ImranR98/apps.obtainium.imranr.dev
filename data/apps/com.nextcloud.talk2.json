@@ -23,7 +23,8 @@
     ],
     "icon": "https://raw.githubusercontent.com/nextcloud/talk-android/refs/heads/master/.idea/icon.png",
     "categories": [
-        "other"
+        "dialer",
+        "messaging"
     ],
     "description": {
         "en": null
