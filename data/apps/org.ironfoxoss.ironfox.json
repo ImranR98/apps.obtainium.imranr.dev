@@ -2,17 +2,16 @@
     "configs": [
         {
             "id": "org.ironfoxoss.ironfox",
-            "url": "https://fdroid.ironfoxoss.org/fdroid/repo/",
+            "url": "https://gitlab.com/ironfox-oss/ironfox",
             "author": "IronFox OSS",
             "name": "IronFox",
-            "additionalSettings": "{\"appIdOrName\":\"org.ironfoxoss.ironfox\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
-            "overrideSource": "FDroidRepo",
-            "altLabel": "IronFox OSS F-Droid"
+            "additionalSettings": "{\"appIdOrName\":\"org.ironfoxoss.ironfox\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "GitLab"
         }
     ],
     "icon": "https://gitlab.com/ironfox-oss/IronFox/-/raw/main/assets/ironfox.png",
     "description": {
-        "en": "IronFox is a secure, hardened and privacy-oriented web browser for Android, based on Firefox."
+        "en": "A privacy and security-oriented Firefox-based browser for Android."
     },
     "categories": [
         "browser"
