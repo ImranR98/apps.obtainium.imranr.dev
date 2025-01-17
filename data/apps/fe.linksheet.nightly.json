@@ -14,7 +14,7 @@
         "system",
         "browser",
         "utilities",
-        "other"
+        "url_manipulation"
     ],
     "description": {
         "en": "Restore link control on Android 12+"

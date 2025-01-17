@@ -12,7 +12,7 @@
     ],
     "icon": "https://codeberg.org/timurmobi/prosereader-android/raw/branch/master/fastlane/metadata/android/en-US/images/icon.png",
     "categories": [
-        "other"
+        "document_and_pdf_viewer"
     ],
     "description": {
         "en": null
