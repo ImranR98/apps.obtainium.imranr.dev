@@ -5,8 +5,18 @@
             "url": "https://gitlab.com/ironfox-oss/ironfox",
             "author": "IronFox OSS",
             "name": "IronFox",
-            "additionalSettings": "{\"appIdOrName\":\"org.ironfoxoss.ironfox\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
-            "overrideSource": "GitLab"
+            "additionalSettings": "{\"appIdOrName\":\"org.ironfoxoss.ironfox\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\"}",
+            "overrideSource": "GitLab",
+            "altLabel": "GitLab"
+        },
+        {
+            "id": "org.ironfoxoss.ironfox",
+            "url": "https://fdroid.ironfoxoss.org/fdroid/repo",
+            "author": "IronFox OSS",
+            "name": "IronFox",
+            "additionalSettings": "{\"appIdOrName\":\"org.ironfoxoss.ironfox\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\"}",
+            "overrideSource": "FDroidRepo",
+            "altLabel": "IronFox OSS's F-Droid Repo"
         }
     ],
     "icon": "https://gitlab.com/ironfox-oss/IronFox/-/raw/main/assets/ironfox.png",
