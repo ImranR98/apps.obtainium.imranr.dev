@@ -1,7 +1,7 @@
 {
     "configs": [
         {
-            "id": "app.lawnchair.debug",
+            "id": "app.lawnchair.nightly",
             "url": "https://github.com/lawnchairlauncher/lawnchair",
             "author": "Lawnchair Launcher",
             "name": "Lawnchair (Debug)",
