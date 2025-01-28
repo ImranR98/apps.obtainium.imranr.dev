@@ -5,7 +5,7 @@
             "url": "https://fdroid.typeblog.net",
             "author": "PeterCxy",
             "name": "Shelter",
-            "additionalSettings": "{\"appIdOrName\":\"https://fdroid.typeblog.net\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "additionalSettings": "{\"appIdOrName\":\"net.typeblog.shelter\",\"pickHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
             "overrideSource": "FDroidRepo",
             "altLabel": "PeterCxy's F-Droid Repo"
         }
