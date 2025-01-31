@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "moe.ampersand.app.ci",
+            "url": "https://github.com/NyaomiDEV/Ampersand",
+            "author": "NyaomiDEV",
+            "name": "Ampersand (CI)",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\((.*)\\\\)$\",\"matchGroupToUse\":\"$1\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":false,\"appName\":\"Ampersand (CI)\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Tracking app for plural systems\",\"refreshBeforeDownload\":true}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/NyaomiDEV/Ampersand/refs/heads/main/resources/icon/512.png",
+    "categories": ["utilities", "notes"],
+    "description": {
+        "en": "Ampersand is a free, open-source tracking app for plural systems."
+    }
+}
