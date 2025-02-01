@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "com.dd3boh.outertune",
+            "url": "https://github.com/DD3Boh/OuterTune",
+            "author": "Davide Garberi",
+            "name": "OuterTune",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "overrideSource": "GitHub"                   
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/DD3Boh/OuterTune/refs/heads/dev/assets/outertune.webp",
+    "categories": ["video_player"],
+    "description": {
+        "en": "Material 3 YouTube Music client & local music player"
+    }
+}
