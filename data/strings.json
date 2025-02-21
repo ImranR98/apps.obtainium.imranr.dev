@@ -1,12 +1,15 @@
 {
     "title": {
-        "en": "Obtainium Apps"
+        "en": "Complex Obtainium Apps"
     },
     "subtitle": {
-        "en": "Crowdsourced App Configurations for Obtainium",
+        "en": "Crowdsourced \"Hard to Add\" App Configurations for Obtainium",
         "de": "Von der Gemeinschaft erstellte App-Konfigurationen für Obtainium",
         "ja": "Obtainiumのためのアプリ設定クラウドソーシング",
         "zh": "来自社区共享的 Obtainium 众包应用配置"
+    },
+    "siteNote": {
+        "en": "This is not an app store or app discovery site.\nMost Apps can be added easily to Obtainium by pasting the source link directly into Obtainium's \"Add App\" page.\nThis site only provides app configurations that are more complicated and thus difficult to add manually."
     },
     "categorySelect": {
         "en": "Select App Categories",
@@ -15,7 +18,7 @@
         "zh": "选择应用类别"
     },
     "requestAppsButton": {
-        "en": "Request Apps",
+        "en": "Request a Complex App Config",
         "de": "Frage nach einer Appkonfiguration",
         "ja": "アプリをリクエスト",
         "zh": "请求应用"
@@ -57,13 +60,13 @@
         "zh": "其他配置"
     },
     "modalTitle": {
-        "en": "Important – Please Read!",
+        "en": "Important - Please Read",
         "de": "Wichtig - Bitte beachten!",
         "ja": "重要 - 確認してください",
         "zh": "重要 - 请注意！"
     },
     "modalAcceptButtonBefore": {
-        "en": "I have read an understand the",
+        "en": "I have read and understood the",
         "de": "Ich habe die",
         "ja": " ",
         "zh": "已阅读并同意"
