@@ -196,6 +196,7 @@ function render() {
     document.querySelector('#apps').innerHTML = getAppEntriesHTML(data.apps, data.categories, selectedCategories)
     document.querySelector('#title').innerHTML = getString('title')
     document.querySelector('#subtitle').innerHTML = getString('subtitle')
+    document.querySelectorAll('.siteNote').forEach(e => e.innerHTML = getString('siteNote').split('\n').map((o, i) => i === 0 ? `<b>${o}</b>` : `<span>${o}</span>`).join('<br/>'))
     document.querySelector('#request-apps').innerHTML = getString('requestAppsButton')
     document.querySelector('#modal-title').innerHTML = getString('modalTitle')
     document.querySelector('#modal-accept-button-text-1').innerHTML = getString('modalAcceptButtonBefore')
