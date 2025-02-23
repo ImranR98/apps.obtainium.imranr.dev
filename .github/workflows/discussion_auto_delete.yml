@@ -54,8 +54,8 @@ jobs:
               }
             );
   
-            # await github.graphql(`
-            #   mutation($discussionId: ID!) {
-            #     deleteDiscussion(input: {id: $discussionId}) { discussion { id } }
-            #   }`, { discussionId: discussion.node_id }
-            # );
+            // await github.graphql(`
+            //   mutation($discussionId: ID!) {
+            //     deleteDiscussion(input: {id: $discussionId}) { discussion { id } }
+            //   }`, { discussionId: discussion.node_id }
+            // );
