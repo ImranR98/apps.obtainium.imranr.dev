@@ -5,6 +5,7 @@ on:
     types: [created]
 
 permissions:
+  issues: write
   discussions: write
 
 jobs:
@@ -28,19 +29,33 @@ jobs:
           else
             echo "too_short=false" >> "$GITHUB_OUTPUT"
           fi
-          echo "$GITHUB_OUTPUT"
+          echo "$GITHUB_OUTPUT""
 
-      - name: Comment and close if too short
+      - name: Notify User via GitHub Mention (Generates Email) then Delete Discussion
         if: steps.validation.outputs.too_short == 'true'
-        run: |
-          curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/repos/${{ github.repository }}/discussions/${{ github.event.discussion.number }}/comments" \
-            -d '{"body": "⚠️ Discussion closed: To protect against spam, discussion posts that do not meet a minimum word and character count are automatically closed. Please provide more details in your post."}'
-
-          curl -X PATCH \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/repos/${{ github.repository }}/discussions/${{ github.event.discussion.number }}" \
-            -d '{"state": "closed"}'
+        uses: actions/github-script@v7
+        env:
+          WORDS: ${{ steps.validation.outputs.words }}
+          CHARS: ${{ steps.validation.outputs.chars }}
+        with:
+          script: |
+            const { discussion } = context.payload;
+  
+            await github.graphql(`
+              mutation($discussionId: ID!, $body: String!) {
+                addDiscussionComment(input: {
+                  discussionId: $discussionId,
+                  body: $body
+                }) { comment { id } }
+              }`,
+              {
+                discussionId: discussion.node_id,
+                body: `⚠️ @${discussion.user.login}\nDiscussion closed: To protect against spam, discussion posts that do not meet a minimum word and character count are automatically deleted. Please provide more details in a new post.`
+              }
+            );
+  
+            await github.graphql(`
+              mutation($discussionId: ID!) {
+                deleteDiscussion(input: {id: $discussionId}) { discussion { id } }
+              }`, { discussionId: discussion.node_id }
+            );
