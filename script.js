@@ -103,6 +103,12 @@ function getAppConfigString(appJson, configIndex = 0) {
             throw e
         }
         if (!settings.about) settings.about = description
+        if (config.name && !settings.appName) {
+            settings.appName = config.name
+        }
+        if (config.author && !settings.appAuthor) {
+            settings.appAuthor = config.author
+        }
         config.additionalSettings = JSON.stringify(settings)
     }
     if (config.altLabel) {
