@@ -28,6 +28,7 @@ jobs:
           else
             echo "too_short=false" >> "$GITHUB_OUTPUT"
           fi
+          echo "$GITHUB_OUTPUT"
 
       - name: Comment and close if too short
         if: steps.validation.outputs.too_short == 'true'
