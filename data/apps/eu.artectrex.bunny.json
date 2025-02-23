@@ -2,41 +2,41 @@
     "configs": [
         {
             "id": "eu.artectrex.bunny",
-            "url": "https://gitlab.shinice.net/pixeldroid/bunny/-/releases",
+            "url": "https://gitlab.shinice.net/pixeldroid/bunny",
             "author": "pixeldroid",
-            "name": "bunny",
+            "name": "Bunny Media Editor",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d+\\\\d+2\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"gitlab-creds\":\"\"}",
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\barm64\\\\b\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
             "overrideSource": "GitLab",
             "altLabel": "arm64-v8a"
         },
         {
             "id": "eu.artectrex.bunny",
-            "url": "https://gitlab.shinice.net/pixeldroid/bunny/-/releases",
+            "url": "https://gitlab.shinice.net/pixeldroid/bunny",
             "author": "pixeldroid",
-            "name": "bunny",
+            "name": "Bunny Media Editor",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d+\\\\d+1\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"gitlab-creds\":\"\"}",
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\barm\\\\b\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
             "overrideSource": "GitLab",
             "altLabel": "arm"
         },
         {
             "id": "eu.artectrex.bunny",
-            "url": "https://gitlab.shinice.net/pixeldroid/bunny/-/releases",
+            "url": "https://gitlab.shinice.net/pixeldroid/bunny",
             "author": "pixeldroid",
-            "name": "bunny",
+            "name": "Bunny Media Editor",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d+\\\\d+4\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"gitlab-creds\":\"\"}",
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\bx86_64\\\\b\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
             "overrideSource": "GitLab",
             "altLabel": "x86_64"
         },
         {
             "id": "eu.artectrex.bunny",
-            "url": "https://gitlab.shinice.net/pixeldroid/bunny/-/releases",
+            "url": "https://gitlab.shinice.net/pixeldroid/bunny",
             "author": "pixeldroid",
-            "name": "bunny",
+            "name": "Bunny Media Editor",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\d+\\\\d+3\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"gitlab-creds\":\"\"}",
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\\\\bx86\\\\b\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
             "overrideSource": "GitLab",
             "altLabel": "x86"
         }
@@ -48,6 +48,6 @@
         "utilities"
     ],
     "description": {
-        "en": null
+        "en": "A free (as in freedom) Android media editor, letting you edit images and videos on your phone."
     }
 }
