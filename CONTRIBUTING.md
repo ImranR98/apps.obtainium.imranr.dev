@@ -3,6 +3,7 @@
 [Deutsch](#beitragen)
 
 </div>
+
 # Contributing
 
 - To contribute content, create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with valid changes/additions to any files in the repo.
@@ -33,7 +34,7 @@ For example:
 
 # Beitragen
 
-- Um Inhalte beizusteuern, erstellen Sie einen [[Pull-Request]] (https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) mit gültigen Änderungen/Ergänzungen zu allen Dateien im Repo.
+- Um Inhalte beizusteuern, erstellen Sie einen [Pull-Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) mit gültigen Änderungen/Ergänzungen zu allen Dateien im Repo.
 - Um Ihre Änderungen lokal zu testen, führen Sie bitte `node buildData.js && python -m http.server 8080` aus
 - Siehe https://github.com/ImranR98/Obtainium/issues/1214 für den Hintergrund/Kontext für dieses Repo.
 
