@@ -59,11 +59,11 @@ Bevor Sie eine neue App-Anfrage oder einen neuen Pull-Request mit einer neuen Ko
 
 ### Bevor Sie eine App-Anfrage öffnen:
 
-1. Überprüfen Sie auf der Konfigurationswebsite, um zu sehen, ob die gewünschte Anwendung dort bereits verfügbar ist.
+1. Überprüfen Sie die Konfigurationswebsite, um zu überprüfen, ob die gewünschte Anwendung dort bereits verfügbar ist.
 
-2. Durchsuchen Sie sowohl offene als auch in geschlossene Diskussionen, um zu sehen, ob diese App bereits von jemand anderem angefordert wurde.
+2. Durchsuchen Sie sowohl offene als auch geschlossene Diskussionen, um zu sehen, ob diese App bereits von jemand anderem angefordert wurde.
 
-3. Fordern Sie keine Anwendungen an, die [**einfache Konfigurationen**](#simple-config-de) sind - siehe unten.
+3. Fordern Sie keine Anwendungen an, die [**einfache Konfigurationen**](#simple-config-de) sind – siehe [unten](#simple-config-de).
 
 4. In der Regel werden Forks und Mods von Apps nicht akzeptiert, es sei denn, sowohl der Paketname als auch der Anzeigename der App wurden geändert. Damit soll verhindert werden, dass Benutzer unwissentlich inoffizielle Versionen von Anwendungen herunterladen.
 
@@ -80,7 +80,7 @@ Nachdem Sie die oben genannten Punkte überprüft haben, können Sie [eine App-A
 
 1. Durchsuchen Sie sowohl offene als auch geschlossene PRs, um zu prüfen, ob bereits jemand versucht hat, die App hinzuzufügen, und um die Begründung einer etwaigen Ablehnung zu finden.
 
-2. Fügen Sie keine Anwendungen hinzu, bei denen es sich um [**einfache Konfigurationen**](#simple-config-de) handelt - siehe unten.
+2. Fügen Sie keine Anwendungen hinzu, bei denen es sich um [**einfache Konfigurationen**](#simple-config-de) handelt – siehe [unten](#simple-config-de).
 
 3. In der Regel werden Forks und Mods von Apps nicht akzeptiert, es sei denn, sowohl der Paketname als auch der Anzeigename der App wurden geändert. Damit soll verhindert werden, dass Benutzer unwissentlich inoffizielle Versionen von Anwendungen herunterladen.
 
