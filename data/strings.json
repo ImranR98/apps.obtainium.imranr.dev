@@ -1,6 +1,7 @@
 {
     "title": {
-        "en": "Complex Obtainium Apps"
+        "en": "Complex Obtainium Apps",
+        "de": "Komplexe Appkonfigurationen"
     },
     "subtitle": {
         "en": "Crowdsourced \"Hard to Add\" App Configurations for Obtainium",
@@ -9,7 +10,8 @@
         "zh": "来自社区共享的 Obtainium 众包应用配置"
     },
     "siteNote": {
-        "en": "This is not an app store or app discovery site.\nMost Apps can be added easily to Obtainium by pasting the source link directly into Obtainium's \"Add App\" page.\nThis site only provides app configurations that are more complicated and thus difficult to add manually."
+        "en": "This is not an app store or app discovery site.\nMost Apps can be added easily to Obtainium by pasting the source link directly into Obtainium's \"Add App\" page.\nThis site only provides app configurations that are more complicated and thus difficult to add manually.",
+        "de": "Dies ist kein App-Store und kein Dienst um Apps vorzuschlagen.\nDie meisten Apps können auf einfache Weise zu Obtainium hinzugefügt werden, indem die URL direkt in die Zeile „Quell-URL der App“ im Tab „App hinzufügen“ eingesetzt wird.\nDiese Seite bietet nur App-Konfigurationen an, die komplizierter sind und daher schwer manuell hinzugefügt werden können."
     },
     "categorySelect": {
         "en": "Select App Categories",
@@ -61,7 +63,7 @@
     },
     "modalTitle": {
         "en": "Important - Please Read",
-        "de": "Wichtig - Bitte beachten!",
+        "de": "Wichtig – Bitte beachten!",
         "ja": "重要 - 確認してください",
         "zh": "重要 - 请注意！"
     },
