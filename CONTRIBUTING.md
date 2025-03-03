@@ -41,7 +41,7 @@ For example:
 
 ## Apps beisteuern
 
-> [!WICHTIG]
+> [!IMPORTANT]
 > Bitte stellen Sie sicher, dass Sie die [App-Kriterien](APP_CRITERIA.md) lesen, bevor Sie einen PR mit neuen/aktualisierten App-Konfigurationen eröffnen.
 
 - Sie können Konfigurationsdateien automatisch aus einem Obtainium-Export generieren, indem Sie `node generateFromExport.js <Pfad zum Obtainium-Export>` ausführen.
