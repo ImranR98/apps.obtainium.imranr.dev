@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[German](#de) ● [简体中文（中国大陆）](#zh-cn)
+[Deutsch](#de) ● [简体中文（中国大陆）](#zh-cn)
 
 </div>
 
@@ -51,8 +51,7 @@ A simple config is an app that you can add by simply pasting the URL of the webs
 The exception to this is if the URL may be hard to find. For example, the URL which has the links to Signal APKs (https://updates.signal.org/android/latest.json) is not easy to find unless you have knowledge of browser developer tools.
 
 <span id="de"></span>
-
-#App-Kriterien
+# App-Kriterien
 
 Bevor Sie eine neue App-Anfrage oder einen neuen Pull-Request mit einer neuen Konfiguration eröffnen, lesen Sie bitte die folgenden Informationen, um sicherzustellen, dass die von Ihnen gewünschte App für diese Website geeignet ist. Dies erspart Ihnen und den Betreuern des Repositoriums Zeit. Wenn Sie sich entscheiden, diese Anweisungen zu ignorieren, wird Ihr(e) Anfrage/PR ignoriert werden.
 
