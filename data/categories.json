@@ -15,17 +15,20 @@
     },
     "anime_and_manga": {
         "en": "Anime & Manga",
+        "de": "Anime & Manga",
         "ja": "アニメ＆漫画",
         "zh": "动漫与漫画"
     },
     "automation": {
         "en": "Automation",
+        "de": "Automation",
         "pt": "automatização",
         "ja": "自動化",
         "zh": "自动化"
     },
     "barcode_scanner": {
         "en": "Barcode Scanner",
+        "de": "Barcode-Scanner",
         "ja": "バーコードスキャナー",
         "zh": "扫码器"
     },
@@ -38,6 +41,7 @@
     },
     "browser": {
         "en": "Browser",
+        "de": "Browser",
         "ja": "ブラウザ",
         "zh": "浏览器"
     },
@@ -119,6 +123,7 @@
     },
     "downloader_and_manager": {
         "en": "Downloader & Manager",
+        "de": "Downloader & Manager",
         "ja": "ダウンロード管理",
         "zh": "下载管理"
     },
@@ -160,6 +165,7 @@
     },
     "firewall": {
         "en": "Firewall",
+        "de": "Firewall",
         "ja": "ファイアウォール",
         "zh": "防火墙"
     },
@@ -195,6 +201,7 @@
     },
     "launcher_and_desktop": {
         "en": "Launcher & Desktop",
+        "de": "Launcher & Desktop",
         "ja": "ランチャー＆デスクトップ",
         "zh": "启动器与桌面"
     },
@@ -206,6 +213,7 @@
     },
     "maps_and_navigation": {
         "en": "Maps & Navigation",
+        "de": "Maps & Navigation",
         "ja": "マップ＆ナビ",
         "zh": "地图与导航"
     },
@@ -278,6 +286,7 @@
     },
     "sandboxing": {
         "en": "Sandboxing",
+        "de": "Sandboxing",
         "ja": "サンドボックス",
         "zh": "沙盒"
     },
@@ -289,6 +298,7 @@
     },
     "sms": {
         "en": "SMS & MMS",
+        "de": "SMS & MMS",
         "zh": "短信与彩信"
     },
     "sports_and_health": {
@@ -305,6 +315,7 @@
     },
     "system": {
         "en": "System",
+        "de": "System",
         "ja": "システム",
         "zh": "系统"
     },
@@ -328,6 +339,7 @@
     },
     "url_manipulation": {
         "en": "URL Manipulation",
+        "de": "URL Manipulation",
         "ja": "URL操作",
         "zh": "网址编辑"
     },

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[简体中文（中国大陆）](#zh-cn)
+[Deutsch](#de) ● [简体中文（中国大陆）](#zh-cn)
 
 </div>
 
@@ -49,6 +49,53 @@ If you've gone through the above steps, then you can open an PR. Keep these thin
 A simple config is an app that you can add by simply pasting the URL of the website and clicking add in Obtainium, without changing any additional settings.
 
 The exception to this is if the URL may be hard to find. For example, the URL which has the links to Signal APKs (https://updates.signal.org/android/latest.json) is not easy to find unless you have knowledge of browser developer tools.
+
+<span id="de"></span>
+# App-Kriterien
+
+Bevor Sie eine neue App-Anfrage oder einen neuen Pull-Request mit einer neuen Konfiguration eröffnen, lesen Sie bitte die folgenden Informationen, um sicherzustellen, dass die von Ihnen gewünschte App für diese Website geeignet ist. Dies erspart Ihnen und den Betreuern des Repositoriums Zeit. Wenn Sie sich entscheiden, diese Anweisungen zu ignorieren, wird Ihr(e) Anfrage/PR ignoriert werden.
+
+
+### Bevor Sie eine App-Anfrage öffnen:
+
+1. Überprüfen Sie die Konfigurationswebsite, um zu überprüfen, ob die gewünschte Anwendung dort bereits verfügbar ist.
+
+2. Durchsuchen Sie sowohl offene als auch geschlossene Diskussionen, um zu sehen, ob diese App bereits von jemand anderem angefordert wurde.
+
+3. Fordern Sie keine Anwendungen an, die [**einfache Konfigurationen**](#simple-config-de) sind – siehe [unten](#simple-config-de).
+
+4. In der Regel werden Forks und Mods von Apps nicht akzeptiert, es sei denn, sowohl der Paketname als auch der Anzeigename der App wurden geändert. Damit soll verhindert werden, dass Benutzer unwissentlich inoffizielle Versionen von Anwendungen herunterladen.
+
+5. Es werden nur Konfigurationen aus offiziellen Quellen der App akzeptiert. Das bedeutet, dass Konfigurationen von Re-Upload-Seiten (z.B. APKPure, APKMirror usw.) NICHT hinzugefügt werden.
+
+
+Nachdem Sie die oben genannten Punkte überprüft haben, können Sie [eine App-Anfrage eröffnen] (https://github.com/ImranR98/apps.obtainium.imranr.dev/discussions/new?category=app-requests). Stellen Sie sicher, dass Sie mindestens die folgenden Informationen angeben:
+
+- Den Link, über den Sie die APK herunterladen können.
+- Was Sie bisher versucht haben, um die App zum Laufen zu bringen. Wenn Sie eine funktionierende Konfiguration haben, sollten Sie selbst einen PR erstellen.
+
+
+### Bevor Sie einen Pull-Request erstellen:
+
+1. Durchsuchen Sie sowohl offene als auch geschlossene PRs, um zu prüfen, ob bereits jemand versucht hat, die App hinzuzufügen, und um die Begründung einer etwaigen Ablehnung zu finden.
+
+2. Fügen Sie keine Anwendungen hinzu, bei denen es sich um [**einfache Konfigurationen**](#simple-config-de) handelt – siehe [unten](#simple-config-de).
+
+3. In der Regel werden Forks und Mods von Apps nicht akzeptiert, es sei denn, sowohl der Paketname als auch der Anzeigename der App wurden geändert. Damit soll verhindert werden, dass Benutzer unwissentlich inoffizielle Versionen von Anwendungen herunterladen.
+
+4. Es werden nur Konfigurationen aus offiziellen Quellen der Anwendung akzeptiert. Das bedeutet, dass Konfigurationen von Re-Upload-Seiten (z.B. APKPure, APKMirror usw.) NICHT hinzugefügt werden.
+
+Nachdem Sie die oben genannten Punkte überprüft haben, können Sie einen PR eröffnen. Stellen Sie sicher, dass Sie mindestens die folgenden Informationen angeben:
+
+- Halten Sie die Anzahl der alternativen Konfigurationen so gering wie möglich und geben Sie nur die an, die langfristig am besten funktionieren.
+- Stellen Sie sicher, dass Sie so viele Konfigurationsoptionen wie möglich als Standardeinstellung belassen. Ändern Sie nur, was zwingend für eine zufriedenstellend lauffähige Konfiguration benötigt wird. Bei einer GitHub-Konfiguration würden Sie zum Beispiel keine App mit der Einstellung „Vorabversionen einbeziehen“ hinzufügen, es sei denn, dies ist notwendig, da nicht jeder Vorabversionen haben möchte.
+
+<span id="simple-config-de"></span>
+### Was ist eine einfache Konfiguration?
+
+Eine einfache Konfiguration ist eine Anwendung, die Sie einfach durch Einfügen der URL der Website und Klicken auf „Hinzufügen“ in Obtainium hinzufügen können, ohne zusätzliche Einstellungen zu ändern.
+
+Davon ausgenommen sind URLs, die möglicherweise schwer zu finden sind. Die URL mit den Links zu den Signal-APKs (https://updates.signal.org/android/latest.json) ist beispielsweise nicht leicht zu finden, es sei denn, Sie verfügen über Kenntnisse der Browser-Entwickler-Tools.
 
 <span id="zh-cn"></span>
 # 应用标准
