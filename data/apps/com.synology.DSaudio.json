@@ -21,7 +21,7 @@
             "altLabel": "cn"
         }
     ],
-    "icon": null,
+    "icon": "https://www.synology.com/img/dsm/audio_station/icon72@2x.png",
     "categories": [
         "music",
         "synchronisation"

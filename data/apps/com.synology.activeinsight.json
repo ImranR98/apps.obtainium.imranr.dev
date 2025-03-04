@@ -21,7 +21,7 @@
             "altLabel": "cn"
         }
     ],
-    "icon": null,
+    "icon": "https://www.synology.com/img/dsm/active-insight/activeinsight_512@2x.png",
     "categories": [
         "utilities",
         "synchronisation"
