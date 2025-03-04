@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "com.mattermost.rn",
+            "url": "https://github.com/mattermost/mattermost-mobile/releases/latest",
+            "author": "Mattermost",
+            "name": "Mattermost",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"/mattermost-mobile/([^/]+)/\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"Mattermost-(arm64-v8a|armeabi-v7a|x86|x86_64)\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Mattermost\",\"appAuthor\":\"Mattermost\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"refreshBeforeDownload\":true}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/9828093?s=48&v=4",
+    "categories": ["messaging"],
+    "description": {
+        "en": "Next generation Android app for Mattermost in React Native."
+    }
+}
