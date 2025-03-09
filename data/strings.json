@@ -11,7 +11,8 @@
     },
     "siteNote": {
         "en": "This is not an app store or app discovery site.\nMost Apps can be added easily to Obtainium by pasting the source link directly into Obtainium's \"Add App\" page.\nThis site only provides app configurations that are more complicated and thus difficult to add manually.",
-        "de": "Dies ist kein App-Store und kein Dienst um Apps vorzuschlagen.\nDie meisten Apps können auf einfache Weise zu Obtainium hinzugefügt werden, indem die URL direkt in die Zeile „Quell-URL der App“ im Tab „App hinzufügen“ eingesetzt wird.\nDiese Seite bietet nur App-Konfigurationen an, die komplizierter sind und daher schwer manuell hinzugefügt werden können."
+        "de": "Dies ist kein App-Store und kein Dienst um Apps vorzuschlagen.\nDie meisten Apps können auf einfache Weise zu Obtainium hinzugefügt werden, indem die URL direkt in die Zeile „Quell-URL der App“ im Tab „App hinzufügen“ eingesetzt wird.\nDiese Seite bietet nur App-Konfigurationen an, die komplizierter sind und daher schwer manuell hinzugefügt werden können.",
+        "zh": "这不是应用商店或应用发现页。\n大多数应用可以通过将源链接直接粘贴到 Obtainium 的“添加应用”页面中以轻松添加到 Obtainium。\n本网站仅提供难以手动添加的更复杂的应用程序配置。"
     },
     "categorySelect": {
         "en": "Select App Categories",
