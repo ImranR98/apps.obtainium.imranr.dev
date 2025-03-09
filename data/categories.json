@@ -356,7 +356,8 @@
     },
     "video_manipulation": {
         "en": "Video Manipulation",
-	    "ja": "ビデオ操作"
+	    "ja": "ビデオ操作",
+        "zh": "视频编辑"
     },
     "vpn": {
         "en": "VPN"
