@@ -6,7 +6,7 @@
       "author": "GeoGebra",
       "name": "GeoGebra",
       "overrideSource": "HTML",
-      "additionalSetings": "{\"versionExtractionRegEx\":\"[0-9]+-[0-9]+-[0-9]+-[0-9]+\"}",
+      "additionalSetings": "{\"versionExtractionRegEx\":\"[0-9]+-[0-9]+-[0-9]+-[0-9]+\",\"apkFilterRegEx\":\"\\\\bCalculator\"}",
       "altLabel": "5.2"
     }
   ],
