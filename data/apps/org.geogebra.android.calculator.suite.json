@@ -1,0 +1,22 @@
+{
+  "configs": [
+    {
+      "id": "org.geogebra.android.calculator.suite",
+      "url": "https://download.geogebra.org/installers/5.2/",
+      "author": "GeoGebra",
+      "name": "GeoGebra",
+      "overrideSource": "HTML",
+      "additionalSettings": "{\"versionExtractionRegEx\":\"[0-9]+-[0-9]+-[0-9]+-[0-9]+\",\"apkFilterRegEx\":\"\\\\bCalculator\"}",
+      "altLabel": "5.2"
+    }
+  ],
+  "icon": "https://play-lh.googleusercontent.com/S-49nyPsFvwd2Q52W9-RNnQbDyKd58VKzaRDIc6vvS2QKvmYlyBZxurt6tNoMX4RFN4u=w480-h960",
+  "description": {
+    "en": "GeoGebra is more than a set of free tools to do math. It’s a platform to connect enthusiastic teachers and students and offer them a new way to explore and learn about math."
+  },
+  "categories": [
+    "calculator",
+    "science_and_education",
+    "drawing"
+  ]
+}
