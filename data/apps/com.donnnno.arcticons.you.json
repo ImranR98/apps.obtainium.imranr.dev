@@ -10,7 +10,8 @@
     ],
     "icon": "https://raw.githubusercontent.com/Arcticons-Team/Arcticons/refs/heads/main/app/src/you/ic_launcher-playstore.png",
     "categories": [
-        "icon_packs"
+        "icon_packs",
+        "wallpapers"
     ],
     "description": {
         "en": "A line-based icon pack that adapts to your background."

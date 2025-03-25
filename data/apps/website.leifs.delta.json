@@ -1,0 +1,44 @@
+{
+    "configs": [
+        {
+            "id": "website.leifs.delta",
+            "url": "https://github.com/Delta-Icons/android",
+            "author": "Delta-Icons",
+            "name": "Delta ",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"v\\\\d+.\\\\d+.\\\\d+\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"delta-v\\\\d+.\\\\d+.\\\\d+.apk\"}",
+            "altLabel": "release"
+        },
+        {
+            "id": "website.leifs.delta",
+            "url": "https://github.com/Delta-Icons/android",
+            "author": "Delta-Icons",
+            "name": "Delta",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"v\\\\d+.\\\\d+.\\\\d+-beta.\\\\d+\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"delta-v\\\\d+.\\\\d+.\\\\d+-beta.\\\\d+.apk\"}",
+            "altLabel": "beta"
+        },
+        {
+            "id": "website.leifs.delta.foss",
+            "url": "https://github.com/Delta-Icons/android",
+            "author": "Delta-Icons",
+            "name": "Delta (foss)",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"v\\\\d+.\\\\d+.\\\\d+\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"delta-v\\\\d+.\\\\d+.\\\\d+-foss.apk\"}",
+            "altLabel": "foss release"
+        },
+        {
+            "id": "website.leifs.delta.foss",
+            "url": "https://github.com/Delta-Icons/android",
+            "author": "Delta-Icons",
+            "name": "Delta (foss)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"v\\\\d+.\\\\d+.\\\\d+-beta.\\\\d+\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"delta-v\\\\d+.\\\\d+.\\\\d+-beta.\\\\d+-foss.apk\"}",
+            "altLabel": "foss beta"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Delta-Icons/android/refs/heads/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "icon_packs",
+        "wallpapers"
+    ],
+    "description": {
+        "en": "Minimalistic pastel icons"
+    }
+}

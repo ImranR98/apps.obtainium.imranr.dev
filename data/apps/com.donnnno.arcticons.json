@@ -10,7 +10,8 @@
     ],
     "icon": "https://raw.githubusercontent.com/Arcticons-Team/Arcticons/refs/heads/main/app/src/normal/ic_launcher-playstore.png",
     "categories": [
-        "icon_packs"
+        "icon_packs",
+        "wallpapers"
     ],
     "description": {
         "en": "A monotone line-based icon pack for dark themed setups."
