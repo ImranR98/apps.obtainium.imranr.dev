@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "app.accrescent.client",
+            "url": "https://github.com/accrescent/accrescent",
+            "author": "accrescent",
+            "name": "Accrescent",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Accrescent\",\"appAuthor\":\"accrescent\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"A novel Android app store focused on security, privacy, and usability.\",\"refreshBeforeDownload\":false,\"dontSortReleasesList\":false}"
+        }
+    ],
+    "icon": "https://github.com/accrescent/accrescent/blob/master/app/src/main/ic_launcher-playstore.png?raw=true",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "A novel Android app store focused on security, privacy, and usability."
+    }
+}

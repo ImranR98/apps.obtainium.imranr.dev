@@ -6,7 +6,7 @@
             "author": "florisboard",
             "name": "FlorisBoard Stable",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"stable\"}"
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"stable\",\"about\":\"Stable track of FlorisBoard, an open-source keyboard for Android which respects your privacy.\"}"
         }
     ],
     "icon": "https://raw.githubusercontent.com/florisboard/florisboard/refs/heads/main/app/src/main/ic_app_icon_stable-playstore.png",
