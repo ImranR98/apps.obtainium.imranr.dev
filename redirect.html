@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,16 @@
     <link href="/data/style.css" rel="stylesheet" >
     <link rel="icon" href="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png">
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f8f9fa;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #ffffff;
+            }
+            .alert {
+                background-color: #333333;
+                color: #ffffff;
+            }
+            /* Add more styles as needed */
         }
     </style>
 </head>
