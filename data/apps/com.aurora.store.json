@@ -2,19 +2,18 @@
     "configs": [
         {
             "id": "com.aurora.store",
-            "url": "https://www.auroraoss.com/AuroraStore/Release",
-            "author": "Aurora OSS",
+            "url": "https://gitlab.com/AuroraOSS/AuroraStore",
+            "author": "AuroraOSS",
             "name": "Aurora Store",
-            "preferredApkIndex": 0,
-            "additionalSettings": "{\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+\",\"appName\":\"Aurora Store\",\"appAuthor\":\"Aurora OSS\",\"about\":\"Aurora Store is an unofficial, FOSS client to Google Play with bare minimum features. Aurora Store allows users to download, update, and search for apps like the Play Store. It works perfectly fine with or without Google Play Services or microG.\"}"
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Aurora Store\",\"appAuthor\":\"Aurora OSS\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Aurora Store is an unofficial, FOSS client to Google Play with bare minimum features. Aurora Store allows users to download, update, and search for apps like the Play Store. It works perfectly fine with or without Google Play Services or microG.\",\"refreshBeforeDownload\":false}"
         }
     ],
     "icon": "https://gitlab.com/AuroraOSS/AuroraStore/-/raw/master/fastlane/metadata/android/en-US/images/icon.png?inline=false",
+    "categories": [
+        "downloader_and_manager"
+    ],
     "description": {
         "en": "Aurora Store is an unofficial, FOSS client to Google Play with bare minimum features. Aurora Store allows users to download, update, and search for apps like the Play Store. It works perfectly fine with or without Google Play Services or microG.",
         "de": "Aurora Store ist ein inoffizieller FOSS-Client für Google Play mit nur minimalen Funktionen. Aurora Store ermöglicht Benutzern das Herunterladen, Aktualisieren und Suchen nach Apps, die sich im Google Play Store befinden. Es funktioniert sowohl mit als auch ohne Google Play Services oder microG."
-    },
-    "categories": [
-        "downloader_and_manager"
-    ]
+    }
 }
