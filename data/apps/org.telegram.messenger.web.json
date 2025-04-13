@@ -2,18 +2,16 @@
     "configs": [
         {
             "id": "org.telegram.messenger.web",
-            "url": "https://telegram.org/dl/android/apk",
+            "url": "https://telegram.org",
             "author": "Telegram",
             "name": "Telegram",
-            "preferredApkIndex": 0,
-            "additionalSettings": "{\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"trackOnly\":false,\"invertAPKFilter\":false,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"versionDetection\":false}",
-            "overrideSource": "DirectAPKLink"
+            "additionalSettings": "{\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Telegram\",\"appAuthor\":\"Telegram\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.\",\"refreshBeforeDownload\":false}"
         }
     ],
+    "icon": "https://github.com/DrKLO/Telegram/blob/master/TMessagesProj/src/main/res/drawable-xxxhdpi/ic_launcher_dr.png?raw=true",
     "categories": [
         "messaging"
     ],
-    "icon": "https://telegram.org/img/apple-touch-icon.png",
     "description": {
         "en": "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
         "de": "Telegram ist eine Cloud-basierte Smartphone- und Desktop-Messaging-App mit Schwerpunkt auf Sicherheit und Geschwindigkeit."

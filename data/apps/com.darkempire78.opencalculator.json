@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.darkempire78.opencalculator",
+            "url": "https://github.com/Darkempire78/OpenCalc",
+            "author": "Darkempire78",
+            "name": "OpenCalc",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"OpenCalc\",\"appAuthor\":\"Darkempire78\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"A simple and beautiful calculator for Android\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://github.com/Darkempire78/OpenCalc/blob/main/app/src/main/ic_launcher-playstore.png?raw=true",
+    "categories": [
+        "calculator"
+    ],
+    "description": {
+        "en": "A simple and beautiful calculator for Android."
+    }
+}

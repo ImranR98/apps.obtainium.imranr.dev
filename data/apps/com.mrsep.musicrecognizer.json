@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.mrsep.musicrecognizer",
+            "url": "https://github.com/aleksey-saenko/MusicRecognizer",
+            "author": "aleksey-saenko",
+            "name": "Audile",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Audile\",\"appAuthor\":\"aleksey-saenko\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"An Android application for music recognition that uses AudD and ACRCloud services to perform song identification.\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://github.com/aleksey-saenko/MusicRecognizer/blob/master/fastlane/metadata/android/en-US/images/icon.png?raw=true",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "An Android application for music recognition that uses AudD and ACRCloud services to perform song identification."
+    }
+}

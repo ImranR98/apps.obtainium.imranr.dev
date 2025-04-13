@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "software.mdev.bookstracker",
+            "url": "https://github.com/mateusz-bak/openreads",
+            "author": "mateusz-bak",
+            "name": "Openreads",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Openreads\",\"appAuthor\":\"mateusz-bak\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"A mobile books tracker written in Flutter that respects your privacy.\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://github.com/mateusz-bak/openreads/blob/master/assets/icons/gplay-icon.png?raw=true",
+    "categories": [
+        "utilities",
+        "anime_and_manga"
+    ],
+    "description": {
+        "en": "A mobile books tracker written in Flutter that respects your privacy."
+    }
+}
