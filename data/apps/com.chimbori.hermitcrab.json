@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.chimbori.hermitcrab",
+            "url": "https://apps.chimbori.com/fdroid/repo?appId=com.chimbori.hermitcrab",
+            "author": "Chimbori Apps",
+            "name": "Hermit – Lite Apps Browser",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"appIdOrName\":\"com.chimbori.hermitcrab\",\"pickHighestVersionCode\":true,\"}",
+            "overrideSource": "FDroidRepo"
+        }
+    ],
+    "icon": "https://apps.chimbori.com/fdroid/repo/com.chimbori.hermitcrab/en-US/icon.png",
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "Advanced Web Browser for Power Users, optimized for Lite Apps & Privacy"
+    }
+}

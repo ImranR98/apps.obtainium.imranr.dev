@@ -1,0 +1,41 @@
+{
+    "configs": [
+        {
+            "id": "ru.zdevs.zarchiver",
+            "url": "https://www.zdevs.ru/en/za/apk.html",
+            "author": "ZDevs",
+            "name": "ZArchiver",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"customLinkFilterRegex\":\"https://www\\\\.zdevs\\\\.ru/files/za/ZArchiver_\\\\d_\\\\d_\\\\d\\\\d_arm64-v8a_release\\\\.apk\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"refreshBeforeDownload\":false}",
+            "overrideSource": null,
+            "altLabel": "arm64"
+        },
+        {
+            "id": "ru.zdevs.zarchiver",
+            "url": "https://www.zdevs.ru/en/za/apk.html",
+            "author": "ZDevs",
+            "name": "ZArchiver",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"customLinkFilterRegex\":\"https://www\\\\.zdevs\\\\.ru/files/za/ZArchiver_\\\\d_\\\\d_\\\\d\\\\d_armeabi-v7a_release\\\\.apk\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"refreshBeforeDownload\":false}",
+            "overrideSource": null,
+            "altLabel": "armeabiv7a"
+        },
+        {
+            "id": "ru.zdevs.zarchiver",
+            "url": "https://www.zdevs.ru/en/za/apk.html",
+            "author": "ZDevs",
+            "name": "ZArchiver",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"customLinkFilterRegex\":\"https://www\\\\.zdevs\\\\.ru/files/za/ZArchiver_\\\\d_\\\\d_\\\\d\\\\d_x86_release\\\\.apk\",\"versionDetection\":true,\"autoApkFilterByArch\":true,\"refreshBeforeDownload\":false}",
+            "overrideSource": null,
+            "altLabel": "X86"
+        }
+    ],
+    "icon": "https://www.zdevs.ru/img/icon_za.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": null
+    }
+}
