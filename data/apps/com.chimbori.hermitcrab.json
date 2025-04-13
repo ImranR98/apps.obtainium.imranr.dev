@@ -6,7 +6,7 @@
             "author": "Chimbori Apps",
             "name": "Hermit – Lite Apps Browser",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"appIdOrName\":\"com.chimbori.hermitcrab\",\"pickHighestVersionCode\":true,\"}",
+            "additionalSettings": "{\"appIdOrName\":\"com.chimbori.hermitcrab\",\"pickHighestVersionCode\":true}",
             "overrideSource": "FDroidRepo"
         }
     ],
