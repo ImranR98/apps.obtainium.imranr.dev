@@ -1,7 +1,7 @@
 {
     "configs": [
         {
-            "id": "org.koitharu.kotasu",
+            "id": "org.koitharu.kotatsu",
             "url": "https://github.com/KotatsuApp/Kotatsu",
             "author": "KotatsuApp",
             "name": "Kotatsu",
