@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "app.revanced.manager.flutter",
+            "url": "https://github.com/revanced/revanced-manager",
+            "author": "ReVanced",
+            "name": "ReVanced Manager",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"ReVanced Manager\",\"appAuthor\":\"ReVanced\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Application to use ReVanced on Android.\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://github.com/ReVanced/revanced-manager/blob/main/android/app/src/main/res/drawable/ic_launcher_round.png?raw=true",
+    "categories": [
+        "automation",
+        "utilities"
+    ],
+    "description": {
+        "en": "Application to use ReVanced on Android."
+    }
+}
