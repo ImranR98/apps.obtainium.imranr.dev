@@ -35,8 +35,8 @@
     ],
     "icon": "https://assets-prod.sumo.prod.webservices.mozgcp.net/media/uploads/products/2020-04-14-08-36-13-8dda6f.png",
     "description": {
-        "en": "Firefox is a free web browser that protects your online privacy and blocks ad trackers by default.",
-        "de": "Browser auf Gecko-Basis",
+        "en": "Firefox is a free Gecko-based web browser that protects your online privacy and blocks ad trackers by default.",
+        "de": "Firefox ist ein kostenloser Webbrowser auf Gecko-Basis, der Ihre Online-Privatsphäre schützt und standardmäßig Werbe-Tracker blockiert.",
         "zh": "基于 Gecko 的浏览器"
     },
     "categories": [
