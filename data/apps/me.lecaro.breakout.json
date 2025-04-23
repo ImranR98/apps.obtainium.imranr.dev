@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "me.lecaro.breakout",
+            "url": "https://archive.lecaro.me/public-files/b71/",
+            "author": "Renan LE CARO",
+            "name": "Breakout 71",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\d\\\\d\\\\d\\\\d\\\\d\\\\d\\\\d\\\\d/\",\"autoLinkFilterByArch\":false,\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"refreshBeforeDownload\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://gitlab.com/uploads/-/system/project/avatar/67156108/icon.png",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An open source game about breaking bricks, catching coins and picking upgrades."
+    }
+}

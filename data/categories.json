@@ -358,6 +358,9 @@
         "en": "Video Manipulation",
 	    "ja": "ビデオ操作",
         "zh": "视频编辑"
+    },"video_calling": {
+        "de": "Videotelefonie",
+        "en": "Video Calling"
     },
     "vpn": {
         "en": "VPN"
