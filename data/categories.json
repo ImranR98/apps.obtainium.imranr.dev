@@ -278,6 +278,10 @@
         "ja": "研究開発",
         "zh": "研究与开发"
     },
+    "recorder": {
+        "en": "Sound recording",
+        "de": "Tonaufzeichnung"
+    },
     "rss_readers": {
         "en": "RSS Readers",
         "de": "RSS Reader",
