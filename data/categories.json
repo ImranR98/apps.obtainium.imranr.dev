@@ -355,19 +355,22 @@
     },
     "video_player": {
         "en": "Video Player",
+        "de": "Video Player",
         "ja": "ビデオプレーヤー",
         "zh": "视频播放"
     },
     "video_manipulation": {
         "en": "Video Manipulation",
+        "de": "Video Manipulation",
 	    "ja": "ビデオ操作",
         "zh": "视频编辑"
     },"video_calling": {
-        "de": "Videotelefonie",
-        "en": "Video Calling"
+        "en": "Video Calling",
+        "de": "Videotelefonie"
     },
     "vpn": {
-        "en": "VPN"
+        "en": "VPN",
+        "de": "VPN"
     },
     "wallpapers": {
         "en": "Wallpapers",
