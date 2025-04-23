@@ -12,7 +12,8 @@
     ],
     "icon": null,
     "categories": [
-        "other"
+        "media_frontends",
+        "video_player"
     ],
     "description": {
         "en": null
