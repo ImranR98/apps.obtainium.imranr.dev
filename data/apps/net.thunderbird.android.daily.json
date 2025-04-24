@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "net.thunderbird.android.daily",
+            "url": "https://ftp.mozilla.org/pub/thunderbird-mobile/android/nightly/",
+            "author": "ftp.mozilla.org",
+            "name": "Thunderbird Nightly",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\d\\\\d\\\\d\\\\d\",\"autoLinkFilterByArch\":false,\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false},{\"customLinkFilterRegex\":\"\\\\d\\\\d\",\"autoLinkFilterByArch\":false,\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false},{\"customLinkFilterRegex\":\"\\\\d\\\\d\\\\d\\\\d-\\\\d\\\\d-\\\\d\\\\d-\\\\d\\\\d-\\\\d\\\\d-\\\\d\\\\d\",\"autoLinkFilterByArch\":false,\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/15187237?s=200&v=4",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": "Thunderbird Nightly for Android – Open Source Email App for Android (fka K-9 Mail)."
+    }
+}
