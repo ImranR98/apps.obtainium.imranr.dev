@@ -1,0 +1,27 @@
+{
+    "configs": [
+        {
+            "id": "com.best.deskclock",
+            "url": "https://github.com/BlackyHawky/Clock",
+            "author": "BlackyHawky",
+            "name": "Clock",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"release\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"refreshBeforeDownload\":false}",
+            "altLabel": "Release"
+        },
+        {
+            "id": "com.best.deskclock",
+            "url": "https://github.com/BlackyHawky/Clock",
+            "author": "BlackyHawky",
+            "name": "Clock",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"dubug\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"refreshBeforeDownload\":false}",
+            "altLabel": "Debug"
+        }
+    ],
+    "icon": "https://github.com/BlackyHawky/Clock/blob/main/fastlane/metadata/android/en-US/images/icon.png?raw=true",
+    "categories": [
+        "clock_and_time"
+    ],
+    "description": {
+        "en": "Customizable and privacy-conscious open-source clock, based on AOSP Clock."
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "me.zhanghai.android.files",
+            "url": "https://github.com/zhanghai/MaterialFiles",
+            "author": "zhanghai",
+            "name": "Material Files",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"universal\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false}"
+        }
+    ],
+    "icon": "https://github.com/zhanghai/MaterialFiles/blob/master/art/launcher_icon-play.png?raw=true",
+    "categories": [
+        "file_manager"
+    ],
+    "description": {
+        "en": "Material Design file manager for Android."
+    }
+}

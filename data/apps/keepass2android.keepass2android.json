@@ -6,7 +6,7 @@
             "author": "PhilippC",
             "name": "keepass2android",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false}"
         }
     ],
     "icon": "https://raw.githubusercontent.com/PhilippC/keepass2android/master/src/keepass2android-app/Resources/mipmap-xxxhdpi/ic_launcher_online.png",
@@ -14,6 +14,6 @@
         "password_and_authentication", "2FA"
     ],
     "description": {
-        "en": "Keepass2Android is a password manager app. Keepass2Android is compatible with Keepass 1 and Keepass 2 on Windows and KeepassX on Linux."
+        "en": "Keepass2Android is an open source password manager application for Android. It is compatible with the popular KeePass 2.x Password Safe for Windows and aims at simple synchronization between devices."
     }
 }
