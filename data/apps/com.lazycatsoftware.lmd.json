@@ -1,0 +1,21 @@
+{
+    "configs": [
+        {
+            "id": "com.lazycatsoftware.lmd",
+            "url": "https://strannikmodz.me/apps/media/253-lazymedia-deluxe-389.html",
+            "author": "strannikmodz.me",
+            "name": "LazyMedia Deluxe",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"id=\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"([0-9]+\\\\.[0-9]+)</h1>\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"LazyMedia Deluxe (Mod)\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "media_frontends",
+        "video_player"
+    ],
+    "description": {
+        "en": null
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "configs": [
+        {
+            "id": "com.brave.browser_nightly",
+            "url": "https://github.com/brave/brave-browser",
+            "author": "Brave",
+            "name": "Brave (Nightly)",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"Nightly\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"BraveMonoarm64.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Brave\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"dontSortReleasesList\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "Brave is an open-source web browser for Windows, macOS, Linux, Android and iOS.",
+        "de": "Brave ist ein Open-Source-Webbrowser für Windows, macOS, Linux, Android und iOS."
+    }
+}
