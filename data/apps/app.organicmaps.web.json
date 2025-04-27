@@ -5,7 +5,6 @@
             "url": "https://git.omaps.dev/organicmaps/organicmaps/",
             "author": "organicmaps",
             "name": "Organic Maps",
-            "preferredApkIndex": 0,
             "additionalSettings": "{\"apkFilterRegEx\":\"web\"}",
             "overrideSource": "Codeberg"
         }
