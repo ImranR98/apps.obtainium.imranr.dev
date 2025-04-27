@@ -1,20 +1,19 @@
 {
-    "configs": [
-        {
-            "id": "app.organicmaps.web",
-            "url": "https://git.omaps.dev/organicmaps/organicmaps/",
-            "author": "organicmaps",
-            "name": "Organic Maps",
-            "preferredApkIndex": 0,
-            "additionalSettings": "{\"apkFilterRegEx\":\"web\"}",
-            "overrideSource": "Codeberg"
-        }
-    ],
-    "icon": "https://git.omaps.dev/organicmaps/organicmaps/raw/branch/master/qt/res/logo.png",
+    "configs": [
+        {
+            "id": "app.organicmaps.web",
+            "url": "https://git.omaps.dev/organicmaps/organicmaps/",
+            "author": "organicmaps",
+            "name": "Organic Maps",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"web\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
+            "overrideSource": "Codeberg"
+        }
+    ],
+    "icon": null,
     "categories": [
-        "maps_and_navigation"
+        "other"
     ],
     "description": {
-        "en": "Organic Maps is a free Android & iOS offline maps app for travellers, tourists, drivers, hikers, and cyclists."
+        "en": null
     }
 }
