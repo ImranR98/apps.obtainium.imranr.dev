@@ -1,0 +1,19 @@
+{
+  "configs": [
+    {
+      "id": "com.aimp.player",
+      "url": "https://www.aimp.ru/?do=download&os=android",
+      "author": "Artem Izmaylov",
+      "name": "AIMP",
+      "apkUrls": "[[\"https://www.aimp.ru/?do=download.file&id=13\"]]",
+      "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"do=download.file&id=13\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d*.\\\\d*\\\\.\\\\d*  \",\"matchGroupToUse\":\"\",\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"An old-school, ad-free, playlist-based audio player for Android\",\"refreshBeforeDownload\":true}"
+    }
+  ],
+  "icon": "https://play-lh.googleusercontent.com/-JkPRxESEsV-NNwIRtK9Rz9scr0dbSG1ZbjqYlD-Fnuc_XlU4gJXK6O3T2GakXChKLw",
+  "categories": [
+    "music"
+  ],
+  "description": {
+    "en": "An old-school, ad-free, playlist-based audio player for Android."
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "us.zoom.videomeetings",
+            "url": "https://zoom.us/client/latest/zoom.apk",
+            "author": "zoom.us",
+            "name": "Zoom",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\"}",
+            "overrideSource": null
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "video_calling"
+    ],
+    "description": {
+        "en": null
+    }
+}

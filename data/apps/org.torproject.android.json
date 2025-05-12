@@ -1,0 +1,32 @@
+{
+  "configs": [
+    {
+      "id": "org.torproject.android",
+      "url": "https://github.com/guardianproject/orbot-android",
+      "author": "guardianproject",
+      "name": "Orbot",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"RC\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"((?:\\\\d+\\\\.?)+-RC-\\\\d+)\",\"matchGroupToUse\":\"$1\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"arm64-v8a\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Orbot\",\"appAuthor\":\"The Guardian Project\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Tor on Android\",\"refreshBeforeDownload\":false}",
+      "altLabel": "arm64v8-stable"
+    },
+    {
+      "id": "org.torproject.android",
+      "url": "https://github.com/guardianproject/orbot-android",
+      "author": "guardianproject",
+      "name": "Orbot (Beta)",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"BETA\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"((?:\\\\d+\\\\.?)+-BETA-\\\\d+)\",\"matchGroupToUse\":\"$1\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"arm64-v8a\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Orbot (Beta)\",\"appAuthor\":\"The Guardian Project\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Tor on Android\",\"refreshBeforeDownload\":false}",
+      "altLabel": "arm64v8-beta"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/guardianproject/orbot-android/9bc9cbeee01821b9b920a5afe846abce5faafaa9/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+  "categories": [
+    "privacy_and_anonymity",
+    "vpn"
+  ],
+  "description": {
+    "de": "Tor auf Android",
+    "en": "Tor on Android",
+    "nl": "Tor op Android",
+    "no": "Tor på Android",
+    "sv": "Tor på Android"
+  }
+}
