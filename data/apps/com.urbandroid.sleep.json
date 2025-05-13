@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.urbandroid.sleep",
+            "url": "https://sleep.urbandroid.org/more/download/",
+            "author": "sleep.urbandroid.org",
+            "name": "Sleep",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"sleep-(\\\\d{8})-prod-release\",\"matchGroupToUse\":\"$1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"sleep-\\\\d{8}-prod-release\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://sleep.urbandroid.org/wp-content/uploads/ic_launcher_round.144.png",
+    "categories": [
+        "clock_and_time"
+    ],
+    "description": {
+        "en": "Sleep as Android is an alarm clock and sleep tracking app"
+    }
+}
