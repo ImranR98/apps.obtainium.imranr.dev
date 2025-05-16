@@ -1,14 +1,14 @@
 {
-    "configs": [
-        {
-            "id": "app.organicmaps.web",
-            "url": "https://git.omaps.dev/organicmaps/organicmaps/",
-            "author": "organicmaps",
-            "name": "Organic Maps",
-            "additionalSettings": "{\"apkFilterRegEx\":\"web\"}",
-            "overrideSource": "Codeberg"
-        }
-    ],
+    "configs": [
+        {
+            "id": "app.organicmaps.web",
+            "url": "https://git.omaps.dev/organicmaps/organicmaps/",
+            "author": "organicmaps",
+            "name": "Organic Maps",
+            "additionalSettings": "{\"apkFilterRegEx\":\"web\"}",
+            "overrideSource": "Codeberg"
+         }
+    ],
     "icon": "https://git.omaps.dev/organicmaps/organicmaps/raw/branch/master/qt/res/logo.png",
     "categories": [
         "maps_and_navigation"
