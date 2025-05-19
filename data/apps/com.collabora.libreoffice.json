@@ -2,7 +2,7 @@
     "configs": [
         {
             "id": "com.collabora.libreoffice",
-            "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Release",
+            "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Release/",
             "author": "Collabora Productivity",
             "name": "Collabora Office",
             "preferredApkIndex": 0,
@@ -16,7 +16,7 @@
         },
         {
             "id": "com.collabora.libreoffice",
-            "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Release",
+            "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Release/",
             "author": "Collabora Productivity",
             "name": "Collabora Office",
             "preferredApkIndex": 0,
@@ -30,7 +30,7 @@
         },
         {
             "id": "com.collabora.libreoffice",
-            "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Release",
+            "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Release/",
             "author": "Collabora Productivity",
             "name": "Collabora Office",
             "preferredApkIndex": 0,
@@ -44,7 +44,7 @@
         },
         {
             "id": "com.collabora.libreoffice",
-            "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Release",
+            "url": "https://collaboraoffice.com/downloads/Collabora-Office-Android-Release/",
             "author": "Collabora Productivity",
             "name": "Collabora Office",
             "preferredApkIndex": 0,
