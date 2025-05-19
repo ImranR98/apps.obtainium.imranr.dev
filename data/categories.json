@@ -280,7 +280,8 @@
     },
     "recorder": {
         "en": "Sound recording",
-        "de": "Tonaufzeichnung"
+        "de": "Tonaufzeichnung",
+        "zh": "录音"
     },
     "rss_readers": {
         "en": "RSS Readers",
@@ -364,9 +365,11 @@
         "de": "Video Manipulation",
 	    "ja": "ビデオ操作",
         "zh": "视频编辑"
-    },"video_calling": {
+    },
+    "video_calling": {
         "en": "Video Calling",
-        "de": "Videotelefonie"
+        "de": "Videotelefonie",
+        "zh": "视频通话"
     },
     "vpn": {
         "en": "VPN",
