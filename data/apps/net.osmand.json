@@ -2,7 +2,7 @@
     "configs": [
         {
             "id": "net.osmand",
-            "url": "https://download.osmand.net/releases",
+            "url": "https://download.osmand.net/releases/",
             "author": "osmandapp",
             "name": "OsmAnd",
             "preferredApkIndex": 0,
