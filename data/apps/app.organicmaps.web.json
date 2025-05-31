@@ -5,8 +5,7 @@
             "url": "https://github.com/organicmaps/organicmaps",
             "author": "organicmaps",
             "name": "Organic Maps",
-            "additionalSettings": "{\"apkFilterRegEx\":\"web\"}",
-            "overrideSource": "Codeberg"
+            "additionalSettings": "{\"apkFilterRegEx\":\"web\"}"
         }
     ],
     "icon": "https://github.com/organicmaps/organicmaps/blob/master/qt/res/logo.png",
