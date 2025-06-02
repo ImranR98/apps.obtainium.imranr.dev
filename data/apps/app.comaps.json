@@ -1,0 +1,16 @@
+{
+    "configs": [
+        {
+            "id": "app.comaps",
+            "url": "https://codeberg.org/comaps/comaps/releases",
+            "author": "CoMaps Contributors",
+            "name": "CoMaps",
+            "additionalSettings": "{\"includePrereleases\":false}"
+        }
+    ],
+    "icon": "https://codeberg.org/comaps/comaps/raw/branch/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": ["maps_and_navigation"],
+    "description": {
+        "en": "Easy map navigation - Discover more of your journey - Powered by the community"
+    }
+}
