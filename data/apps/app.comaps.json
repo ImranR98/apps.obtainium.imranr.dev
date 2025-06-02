@@ -3,7 +3,7 @@
         {
             "id": "app.comaps",
             "url": "https://codeberg.org/comaps/comaps/releases",
-            "author": "CoMaps Team",
+            "author": "CoMaps Contributors",
             "name": "CoMaps",
             "additionalSettings": "{\"includePrereleases\":false}"
         }
