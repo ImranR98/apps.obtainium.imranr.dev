@@ -1,0 +1,31 @@
+{
+    "configs": [
+        {
+            "id": "com.pilot51.voicenotify",
+            "url": "https://github.com/pilot51/voicenotify",
+            "author": "pilot51",
+            "name": "voicenotify",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"[A-Za-z]+_v[0-9](\\\\.[0-9])+\\\\.[A-Za-z]+\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Voice Notify\",\"appAuthor\":\"Pilot_51\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Android app that speaks notifications.\",\"refreshBeforeDownload\":false}",
+            "overrideSource": null,
+            "altLabel": ""
+        },
+        {
+            "id": "com.pilot51.voicenotify",
+            "url": "https://github.com/pilot51/voicenotify",
+            "author": "pilot51",
+            "name": "voicenotify",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"[A-Za-z]+_v[0-9](\\\\.[0-9])+-debug\\\\.[A-Za-z]+\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Voice Notify (Debug)\",\"appAuthor\":\"Pilot_51\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Android app that speaks notifications.\",\"refreshBeforeDownload\":false}",
+            "overrideSource": null,
+            "altLabel": "Debug"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/pilot51/voicenotify/refs/heads/main/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Android app that speaks notifications."
+    }
+}
