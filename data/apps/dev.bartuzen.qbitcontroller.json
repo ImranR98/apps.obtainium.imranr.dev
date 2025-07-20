@@ -8,7 +8,7 @@
             "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
-    "icon": "https://raw.githubusercontent.com/Bartuzen/qBitController/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    "icon": "https://raw.githubusercontent.com/Bartuzen/qBitController/refs/heads/master/composeApp/icon.png",
     "categories": ["synchronisation"],
     "description": {
         "en": "qBitController is a free and open-source app for controlling qBittorrent from an Android device."

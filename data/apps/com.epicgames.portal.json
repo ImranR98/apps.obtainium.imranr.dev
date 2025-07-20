@@ -10,7 +10,7 @@
             "overrideSource": "DirectAPKLink"
         }
     ],
-    "icon": null,
+    "icon": "https://static-assets-prod.epicgames.com/epic-store/static/webpack/../favicon.ico",
     "categories": [
         "downloader_and_manager"
     ],
