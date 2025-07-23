@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.privateinternetaccess.android",
+            "url": "https://www.privateinternetaccess.com/download/android-vpn-app",
+            "author": "www.privateinternetaccess.com",
+            "name": "PIA VPN",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"android-(.+)-\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://assets-cms.privateinternetaccess.com/photos/shares/dashboard/pia.svg",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": null
+    }
+}

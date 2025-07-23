@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.standardnotes",
+            "url": "https://github.com/standardnotes/app",
+            "author": "standardnotes",
+            "name": "Standard Notes (Pre-release)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"Mobile\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":true,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+\\\\.\\\\d+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/standardnotes/app/refs/heads/main/packages/icons/src/Icons/ic-sn-logo-full.svg",
+    "categories": [
+        "notes"
+    ],
+    "description": {
+        "en": "Standard Notes is an end-to-end encrypted note-taking app for digitalists and professionals. Capture your notes, files, and life’s work all in one secure place."
+    }
+}
