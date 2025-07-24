@@ -6,7 +6,7 @@
             "author": "GeoGebra",
             "name": "GeoGebra Calculator Suite",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"versionExtractionRegEx\":\"\\\\d-\\\\d-\\\\d-\\\\d\",\"apkFilterRegEx\":\"\\\\bCalculator\",\"about\":\"GeoGebra is more than a set of free tools to do math. It’s a platform to connect enthusiastic teachers and students and offer them a new way to explore and learn about math.\"}",
+            "additionalSettings": "{\"versionExtractionRegEx\":\"[0-9]+-[0-9]+-[0-9]+-[0-9]+\",\"apkFilterRegEx\":\"\\\\bCalculator\",\"about\":\"GeoGebra is more than a set of free tools to do math. It’s a platform to connect enthusiastic teachers and students and offer them a new way to explore and learn about math.\"}",
             "altLabel": "5.2"
         }
     ],
