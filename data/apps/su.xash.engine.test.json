@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "su.xash.engine.test",
+            "url": "https://github.com/FWGS/xash3d-fwgs",
+            "author": "FWGS Team",
+            "name": "Xash3D FWGS",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"master Build\",\"releaseDateAsVersion\":true}"
+        }
+    ],
+    "icon": "https://github.com/FWGS/xash3d-fwgs/blob/master/game_launch/icon-xash-material.png?raw=true",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Xash3D FWGS is a game engine, aimed to provide compatibility with Half-Life Engine and extend it, as well as to give game developers well known workflow."
+    }
+}
