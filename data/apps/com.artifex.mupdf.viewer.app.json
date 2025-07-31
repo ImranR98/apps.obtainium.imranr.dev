@@ -9,11 +9,11 @@
             "overrideSource": null
         }
     ],
-    "icon": null,
+    "icon": "https://github.com/ArtifexSoftware/mupdf/blob/master/docs/logo/playstore-icon.png?raw=true",
     "categories": [
-        "other"
+        "document_and_pdf_viewer"
     ],
     "description": {
-        "en": null
+        "en": "MuPDF viewer is an app for reading PDF, XPS, CBZ, and unprotected EPUB documents."
     }
 }
