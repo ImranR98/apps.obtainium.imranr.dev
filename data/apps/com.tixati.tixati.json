@@ -1,0 +1,56 @@
+{
+    "configs": [
+        {
+            "id": "com.tixati.tixati",
+            "url": "https://tixati.com/android",
+            "author": "tixati.com",
+            "name": "Tixati",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android\\\\.apk\",\"autoLinkFilterByArch\":true,\"filterByLinkText\":true,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android\\\\.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true}",
+            "overrideSource": null,
+            "altLabel": "universal"
+        },
+        {
+            "id": "com.tixati.tixati",
+            "url": "https://tixati.com/android",
+            "author": "tixati.com",
+            "name": "Tixati",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android-arm-64\\\\.apk\",\"autoLinkFilterByArch\":true,\"filterByLinkText\":true,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android-arm-64\\\\.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true}",
+            "overrideSource": null,
+            "altLabel": "64-Bit ARM"
+        },
+        {
+            "id": "com.tixati.tixati",
+            "url": "https://tixati.com/android",
+            "author": "tixati.com",
+            "name": "Tixati",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android-arm-32\\\\.apk\",\"autoLinkFilterByArch\":true,\"filterByLinkText\":true,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android-arm-32\\\\.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true}",
+            "overrideSource": null,
+            "altLabel": "32-Bit ARM"
+        },
+        {
+            "id": "com.tixati.tixati",
+            "url": "https://tixati.com/android",
+            "author": "tixati.com",
+            "name": "Tixati",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android-x86-64\\\\.apk\",\"autoLinkFilterByArch\":true,\"filterByLinkText\":true,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android-x86-64\\\\.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true}",
+            "overrideSource": null,
+            "altLabel": "64-Bit x86"
+        },
+        {
+            "id": "com.tixati.tixati",
+            "url": "https://tixati.com/android",
+            "author": "tixati.com",
+            "name": "Tixati",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android-x86-32\\\\.apk\",\"autoLinkFilterByArch\":true,\"filterByLinkText\":true,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"[A-Za-z]+-[A-Za-z0-9]+\\\\.([A-Za-z0-9]+(-[A-Za-z0-9]+)+)\\\\.android-x86-32\\\\.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true}",
+            "overrideSource": null,
+            "altLabel": "32-Bit x86"
+        }
+    ],
+    "icon": "https://tixati.com/files/favicon.png",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": "Tixati is a powerful P2P System"
+    }
+}
