@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "moe.low.arc",
+            "url": "https://webapi.lowiro.com/webapi/serve/static/bin/arcaea/apk",
+            "author": "lowiro",
+            "name": "Arcaea",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"customLinkFilterRegex\":\"arcaea-static.lowiro-cdn.net\",\"versionExtractionRegEx\":\"\\\\d\\\\.\\\\d\\\\.\\\\d\",\"about\":\"New Dimension Rhythm Game - Experience sound and story unlike ever before\"}",
+            "altLabel": "c"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/6vtKnbt-Rd5y5KIDHUy5adgZAmHBKBMmat0MiRh53qPYr6KqIvgSsYcqAQCsP_CeXXM=w480-h960",
+    "categories": ["games"],
+    "description": {
+        "en": "New Dimension Rhythm Game - Experience sound and story unlike ever before"
+    }
+}
