@@ -1,0 +1,21 @@
+{
+    "configs": [
+        {
+            "id": "com.zerotier.one",
+            "url": "https://download.zerotier.com/dist/",
+            "author": "download.zerotier.com",
+            "name": "ZeroTier One",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"ETag\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"ZeroTier\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://www.zerotier.com/wp-content/uploads/2025/01/Logo-White.svg",
+    "categories": [
+        "miscellaneous",
+        "utilities",
+        "vpn"
+    ],
+    "description": {
+        "en": "The Zerotier application is a type of VPN / SD-WAN / MESH available for all operating systems https://www.zerotier.com"
+    }
+}
