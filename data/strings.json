@@ -39,6 +39,9 @@
         "ja": "正規表現で検索",
         "zh": "正则表达式搜索"
     },
+    "apkVerification": {
+        "en": "Show apk signature page"
+    },
     "addToObtainium": {
         "en": "Add to Obtainium",
         "de": "App hinzufügen",

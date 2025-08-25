@@ -11,6 +11,7 @@
         }
     ],
     "icon": "https://gitlab.com/uploads/-/system/project/avatar/6922885/icon.png",
+    "apkVerificationLocation": "https://auroraoss.com/aurora-store",
     "categories": [
         "downloader_and_manager"
     ],

@@ -137,14 +137,17 @@ function copyAppToClipboard(appIndex, configIndex = 0) {
 function getAppEntryHTML(appJson, appIndex, allCategories) {
     const description = getLocalString(appJson.description)
     const firstAppLabelElement = appJson.configs[0].altLabel || appJson.configs.length > 1 ? `<p class="subtitle is-6"><code>${appJson.configs[0].altLabel || new URL(appJson.configs[0].url).host}</code></p>` : null
+    const apkVerificationLocation = appJson.apkVerificationLocation
     const appCats = appJson.categories.map(category =>
-        `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${getLocalString(allCategories[category])}</a>`).join(', ')
+        `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${getLocalString(allCategories[category])}</a>`).join(', ');
+	
     return `<div class="card mt-4">
             <div class="card-content">
                 <div class="is-flex is-justify-content-space-between">
                     <a class="title" href="${appJson.configs[0].url}" target="_blank" style="text-decoration: underline; color: inherit;">${appJson.configs[0].name}</a>
                     ${getIconHTML(appJson.icon, appJson.configs[0].name)}
                 </div>
+
 
                 ${description ? `<p class="subtitle">${description}</p>` : ''}
                 ${firstAppLabelElement || ''}
@@ -154,6 +157,10 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
                 <a class="button is-secondary" href="javascript:void(0);" onclick="copyAppToClipboard('${appIndex}', 0)">
                     ${getString('copyAppConfig')}
                 </a>
+		${apkVerificationLocation ? `<a class="button is-secondary" target="_blank" href="${apkVerificationLocation}">
+                    ${getString('apkVerification')}
+                </a>`: ''}
+
                 <p class="is-size-7 mt-4" style="color: #555;">${getString('categories')}: ${appCats}</p>
                 ${appJson.configs.length == 1 ? '' : `<hr class="is-divider"><p class="title is-5">${getString('altConfigs')}</p>
                 <ul>${appJson.configs.slice(1).map((cfg, ind) => {
