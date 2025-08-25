@@ -140,7 +140,7 @@ function getAppEntryHTML(appJson, appIndex, allCategories) {
     const apkVerificationLocation = appJson.apkVerificationLocation
     const appCats = appJson.categories.map(category =>
         `<a href="?categories=${encodeURIComponent(category)}" style="text-decoration: underline;">${getLocalString(allCategories[category])}</a>`).join(', ');
-	
+
     return `<div class="card mt-4">
             <div class="card-content">
                 <div class="is-flex is-justify-content-space-between">
