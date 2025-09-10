@@ -1,7 +1,7 @@
 {
     "configs": [
         {
-            "id": "com.github.catfriend1.syncthingandroid",
+            "id": "com.github.catfriend1.syncthingfork",
             "url": "https://github.com/Catfriend1/syncthing-android",
             "author": "Catfriend1",
             "name": "Syncthing-Fork",
