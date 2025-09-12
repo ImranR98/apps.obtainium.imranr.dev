@@ -2,7 +2,7 @@
     "configs": [
         {
             "id": "com.artifex.mupdf.viewer.app",
-            "url": "https://mupdf.com/_next/data/WfYVeN6fGD-XJcBqm3UU2/releases.json",
+            "url": "https://casper.mupdf.com/releases/releases.json",
             "author": "Artifex Software",
             "name": "MuPDF viewer",
             "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":true,\"reverseSort\":true,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d+.\\\\d+.\\\\d+[A-Za-z]+\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"viewer\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"Artifex Software\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"MuPDF viewer is an app for reading PDF, XPS, CBZ, and unprotected EPUB documents.\",\"refreshBeforeDownload\":false,\"releaseDateAsVersion\":false}",
