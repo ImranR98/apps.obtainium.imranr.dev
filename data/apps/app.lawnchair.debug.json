@@ -10,6 +10,7 @@
         }
     ],
     "icon": "https://raw.githubusercontent.com/LawnchairLauncher/lawnchair/refs/heads/15-dev/lawnchair/res/drawable/ic_launcher_home_comp.png",
+    "apkVerificationLocation": "https://github.com/LawnchairLauncher/lawnchair?tab=readme-ov-file#elsewhere",
     "categories": ["launcher_and_desktop"],
     "description": {
         "en": "Lawnchair is a free, open-source home app for Android. (NOTE: This is the debug version of Lawnchair, for the beta/stable versions see \"Lawnchair\")"
