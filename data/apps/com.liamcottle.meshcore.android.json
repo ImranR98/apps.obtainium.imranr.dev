@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.liamcottle.meshcore.android",
+            "url": "https://files.liamcottle.net/meshcore/",
+            "author": "files.liamcottle.net",
+            "name": "MeshCore",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"v\\\\d+\\\\.\\\\d+\\\\.\\\\d+/$\",\"autoLinkFilterByArch\":false,\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":true}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"v\\\\d+\\\\.\\\\d+\\\\.\\\\d+\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"MeshCore\",\"appAuthor\":\"Liam Cottle\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"A simple, secure, off-grid, mesh communications app powered by the open source MeshCore project.\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://app.meshcore.nz/icons/Icon-192.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "A simple, secure, off-grid, mesh communications app powered by the open source MeshCore project."
+    }
+}
