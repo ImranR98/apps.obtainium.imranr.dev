@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.govee.home",
+            "url": "https://app2.govee.com/bff-app/v1/resource/package-download/configs?appType=0",
+            "author": "app2.govee.com",
+            "name": "Govee Home",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/r-j6kIq2fZCLjbvyAg9S6FqYT4aQSgVSysSxbd-3MtF3QsqOoZWapISRS_ru8kBXQ2vQ=w240-h480",
+    "categories": [
+        "automation"
+    ],
+    "description": {
+        "en": "Govee Home is a smart home automation app that allows you to control and manage your Govee smart devices, including LED lights, sensors, and other connected devices. Monitor device status in real-time, create custom lighting scenes, and automate your smart home."
+    }
+}
