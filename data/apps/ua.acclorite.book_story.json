@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "ua.acclorite.book_story",
+            "url": "https://github.com/Acclorite/book-story",
+            "author": "https://github.com/Acclorite",
+            "name": "Books Story",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"Release\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":true,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\((.*)\\\\)$\",\"matchGroupToUse\":\"$1\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"ampersand-.*\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Ampersand\",\"appAuthor\":\"NyaomiDEV\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Tracking app for plural systems\",\"refreshBeforeDownload\":true,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Acclorite/book-story/refs/heads/master/fastlane/metadata/android/en-US/images/icon.png",
+    "Screenshots": "https://raw.githubusercontent.com/Acclorite/book-story/refs/heads/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png",
+    "categories": ["Document & PDF Viewer", "Uncategorized"],
+    "description": {
+        "en": "Book's Story — Material You eBook reader built with Jetpack Compose. Free & Open source & Ad-free, with extensive customization options and support for multiple file formats."
+    }
+}
