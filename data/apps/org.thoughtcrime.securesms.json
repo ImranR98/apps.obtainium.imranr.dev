@@ -3,19 +3,19 @@
         {
             "id": "org.thoughtcrime.securesms",
             "url": "https://updates.signal.org/android/latest.json",
-            "author": "Signal",
+            "author": "updates.signal.org",
             "name": "Signal",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d+.\\\\d+.\\\\d+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\"versionName\\\"\\\\s*:\\\\s*\\\"([^\\\"]*)\\\"\",\"matchGroupToUse\":\"$1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Signal\",\"appAuthor\":\"Signal Technology Foundation\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Signal is an open-source end-to-end encrypted messaging app.\",\"refreshBeforeDownload\":false}",
             "overrideSource": null
         }
     ],
-    "icon": "https://avatars.githubusercontent.com/u/702459?s=200&v=4",
+    "icon": "https://avatars.githubusercontent.com/signalapp?s=200&v=4",
     "categories": [
         "messaging"
     ],
     "description": {
-        "en": "Signal is an open-source end to end encrypted messaging app.",
-        "de": "Signal ist ein quelloffener Ende zu Ende verschlüsselter Messenger."
+        "en": "Signal is an open-source end-to-end encrypted messaging app.",
+        "de": "Signal ist ein quelloffener Ende-zu-Ende-verschlüsselter Messenger."
     }
 }
