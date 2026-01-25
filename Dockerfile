@@ -14,5 +14,5 @@ EXPOSE 8080
 CMD ["node", "dist/server/entry.mjs"]
 
 # docker build -t imranrdev/apps.obtainium.imranr.dev .
-# docker push docker imranrdev/apps.obtainium.imranr.dev
+# docker push imranrdev/apps.obtainium.imranr.dev
 # docker run --rm -d -p 8080:8080 --name apps.obtainium.imranr.dev imranrdev/apps.obtainium.imranr.dev
