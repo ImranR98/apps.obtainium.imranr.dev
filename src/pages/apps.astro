@@ -267,7 +267,7 @@ const getPaginationItems = (
                 />
                 <div class="min-w-0 flex-1">
                   <h3 class="text-base font-bold text-white truncate mb-1 group-hover:text-primary-100 transition-colors duration-300">
-                    {appConfigs[0].name}
+                    <span><a href={appConfigs[0].url} class="hover:underline">{appConfigs[0].name}</a></span>
                   </h3>
                   <p class="text-gray-400 truncate group-hover:text-gray-300 transition-colors duration-300">
                     by {appConfigs[0].author}
