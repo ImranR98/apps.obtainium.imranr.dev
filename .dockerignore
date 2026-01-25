@@ -1,0 +1,13 @@
+node_modules
+npm-debug.log
+dist
+.env
+.DS_Store
+.git
+.gitignore
+README.md
+.vscode
+.dockerignore
+Dockerfile
+docker-compose.yml
+public/data/apps/mock/

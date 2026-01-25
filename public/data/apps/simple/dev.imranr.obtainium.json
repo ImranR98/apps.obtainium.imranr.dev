@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "dev.imranr.obtainium",
+        "url": "https://github.com/imranr98/obtainium",
+        "author": "imranr98",
+        "name": "Obtainium"
+    },
+    "icon": "https://github.com/ImranR98/Obtainium/raw/main/assets/graphics/icon_small.png",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "Get Android app updates straight from the source."
+    }
+}

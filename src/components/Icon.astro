@@ -1,0 +1,39 @@
+---
+interface Props {
+  src?: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  className?: string;
+  style?: string;
+}
+const {
+  src,
+  alt,
+  width = 64,
+  height = 64,
+  className = "",
+  style = "",
+} = Astro.props;
+---
+
+{
+  src ? (
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      style={`width: ${width}px; height: ${height}px; min-width: ${width}px; min-height: ${height}px ${style}`}
+      class={`rounded-lg object-cover ${className}`}
+      loading="lazy"
+    />
+  ) : (
+    <div
+      class={`bg-gray-200 rounded-lg flex items-center justify-center ${className}`}
+      style={`width: ${width}px; height: ${height}px; min-width: ${width}px; min-height: ${height}px`}
+    >
+      <span class="text-gray-500 ">…</span>
+    </div>
+  )
+}
