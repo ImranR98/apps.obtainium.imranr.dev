@@ -56,7 +56,7 @@ async function processFile(filePath) {
     console.error(`Invalid JSON in ${filePath}:`, err.message)
     return
   }
-  
+
   if (data.icon) {
     const isValid = await validateIcon(data.icon)
     if (!isValid) {
@@ -74,7 +74,7 @@ async function processFile(filePath) {
 async function main() {
   const files = getAllJsonFiles(APPS_DIR)
   console.log(`Found ${files.length} JSON files`)
-  
+
   await Promise.all(files.map(f => processFile(f)))
   console.log('Validation complete')
   if (dryRun) {
