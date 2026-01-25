@@ -1,0 +1,113 @@
+{
+    "title": {
+        "en": "Obtainium Apps"
+    },
+    "subtitle": {
+        "en": "Crowdsourced App Configurations for Obtainium"
+    },
+    "about": {
+        "en": "About"
+    },
+    "contribute": {
+        "en": "Contribute"
+    },
+    "source": {
+        "en": "Source"
+    },
+    "exclusive": {
+        "en": "Exclusive"
+    },
+    "inclusive": {
+        "en": "Inclusive"
+    },
+    "browseAllApps": {
+        "en": "Browse all apps"
+    },
+    "go": {
+        "en": "Go",
+        "de": "Suchen",
+        "ja": "絞り込む",
+        "zh": "搜索"
+    },
+    "categorySelect": {
+        "en": "Select App Categories",
+        "de": "Wähle eine Kategorie aus",
+        "ja": "アプリカテゴリを選択",
+        "zh": "选择应用类别"
+    },
+    "search": {
+        "en": "RegExp Search",
+        "de": "RegExp Suche",
+        "ja": "正規表現で検索",
+        "zh": "正则表达式搜索"
+    },
+    "allCategories": {
+        "en": "All Categories"
+    },
+    "apps": {
+        "en": "Apps"
+    },
+    "install": {
+        "en": "Install"
+    },
+    "copy": {
+        "en": "Copy"
+    },
+    "categories": {
+        "en": "Categories",
+        "de": "Kategorien",
+        "ja": "種類",
+        "zh": "类别"
+    },
+    "invalidUrlPrefix": {
+        "en": "Invalid URL. Redirect should start with \"obtainium://\"."
+    },
+    "invalidUrl": {
+        "en": "Invalid URL. Valid app URL could not be found."
+    },
+    "noRedirectParam": {
+        "en": "No redirect parameter provided."
+    },
+    "obtainiumRedirect": {
+        "en": "Obtainium Redirect"
+    },
+    "redirectDescription": {
+        "en": "Redirecting to Obtainium app..."
+    },
+    "enableJavaScript": {
+        "en": "Enable JavaScript in your browser to redirect to Obtainium."
+    },
+    "redirecting": {
+        "en": "Redirecting to Obtainium..."
+    },
+    "clickToRedirect": {
+        "en": "Click here if you are not redirected"
+    },
+    "dontHaveObtainium": {
+        "en": "Don't have Obtainium? Get"
+    },
+    "manuallyFromHomePage": {
+        "en": "manually from their home page"
+    },
+    "here": {
+        "en": "here"
+    },
+    "downloadObtainium": {
+        "en": "Download Obtainium here"
+    },
+    "browseAppList": {
+        "en": "Browse the full app list here"
+    },
+    "howToUse": {
+        "en": "How to use this page"
+    },
+    "redirectInstructions": {
+        "en": "This page requires a valid Obtainium redirect URL. Make sure you're coming from an app listing."
+    },
+    "browseApps": {
+        "en": "Browse Apps"
+    },
+    "goHome": {
+        "en": "Go Home"
+    }
+}

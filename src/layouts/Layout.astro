@@ -1,0 +1,160 @@
+---
+import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
+import "../styles/global.css";
+
+const { title } = Astro.props;
+const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
+const translations = await getLocalizedStrings(currentLanguage);
+---
+
+<!doctype html>
+<html class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title ? `${title} |` : ""} {translations["title"]}</title>
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png"
+    />
+    <noscript>
+      <style>
+        .jsonly {
+          display: none;
+        }
+      </style>
+    </noscript>
+    <script
+      defer
+      data-domain="apps.obtainium.imranr.dev"
+      src="https://plausible.imranr.dev/js/script.outbound-links.js"></script>
+  </head>
+  <body
+    class="text-gray-100 min-h-screen flex flex-col relative overflow-x-hidden"
+  >
+    <header
+      class="sticky top-0 z-40 border-b border-gray-800 backdrop-blur-sm bg-gray-900/85 group"
+    >
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <div>
+            <h1>
+              <a
+                href="/"
+                class="text-xl font-bold text-primary-100 hover:text-secondary-100"
+                >{translations["title"]}</a
+              >
+            </h1>
+            <h2 class="text-gray-400 text-sm mt-0.5">
+              {translations["subtitle"]}
+            </h2>
+          </div>
+          <div class="flex items-center gap-4">
+            <nav class="flex space-x-4">
+              <a
+                href="https://wiki.obtainium.imranr.dev/"
+                target="_blank"
+                class="text-gray-300 hover:text-secondary-100 transition-colors"
+                >{translations["about"]}</a
+              >
+              <a
+                href="https://github.com/ImranR98/apps.obtainium.imranr.dev/discussions"
+                target="_blank"
+                class="text-gray-300 hover:text-secondary-100 transition-colors"
+                >{translations["contribute"]}</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="grow relative z-10">
+      <slot />
+    </main>
+
+    <footer
+      class="border-t border-gray-800 py-4 mt-8 backdrop-blur-sm bg-gray-900/85"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <a
+          class="text-gray-400 hover:text-primary-100 transition-colors"
+          href="https://github.com/ImranR98/apps.obtainium.imranr.dev"
+          target="_blank"
+        >
+          {translations["source"]}
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script is:inline>
+  (() => {
+    const glows = [];
+    const colors = [
+      "radial-gradient(circle at center, rgba(116, 40, 190, 0.12) 0%, transparent 70%)",
+      "radial-gradient(circle at center, rgba(255, 193, 7, 0.08) 0%, transparent 60%)",
+    ];
+    colors.forEach((color, index) => {
+      const glow = document.createElement("div");
+      glow.className = "fixed pointer-events-none -z-10 opacity-0";
+      glow.style.cssText = `
+        width: ${1200 + index * 400}px;
+        height: ${1200 + index * 400}px;
+        background: ${color};
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: 
+          transform ${0.4 + index * 0.1}s ease-out,
+          opacity ${0.3 + index * 0.1}s ease-out;
+        filter: blur(${20 + index * 10}px);
+      `;
+      document.body.appendChild(glow);
+      glows.push(glow);
+    });
+    let mouseX = 0,
+      mouseY = 0;
+    let rafId;
+    const updateGlow = () => {
+      glows.forEach((glow, index) => {
+        const offset = index * 10;
+        glow.style.opacity = "1";
+        glow.style.transform = `translate(${mouseX + offset}px, ${mouseY + offset}px) translate(-50%, -50%)`;
+      });
+      rafId = requestAnimationFrame(updateGlow);
+    };
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      if (!rafId) {
+        updateGlow();
+      }
+    });
+    document.addEventListener("mouseleave", () => {
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+      glows.forEach((glow) => {
+        glow.style.opacity = "0";
+      });
+    });
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        const targetId = this.getAttribute("href");
+        if (targetId === "#") return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      });
+    });
+  })();
+</script>
