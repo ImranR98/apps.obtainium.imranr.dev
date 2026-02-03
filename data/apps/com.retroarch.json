@@ -26,6 +26,6 @@
         "emulator"
     ],
     "description": {
-        "en": "A multi-system emulator for various gaming platforms."
+        "en": "This is the universal release (32-bit, and AARch64) of RetroArch, a frontend for emulators, game engines and media players."
     }
 }
