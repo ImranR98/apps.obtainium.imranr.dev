@@ -26,6 +26,6 @@
         "emulator"
     ],
     "description": {
-        "en": "A multi-system emulator for various gaming platforms, optimized for devices with AArch64 architecture."
+        "en": "This is the AArch64 release of RetroArch, a frontend for emulators, game engines and media players."
     }
 }
