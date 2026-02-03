@@ -26,6 +26,6 @@
         "emulator"
     ],
     "description": {
-        "en": "A multi-system emulator for various gaming platforms, optimized for devices with 32-bit ARM architecture."
+        "en": "This is the 32-bit release of RetroArch, a frontend for emulators, game engines and media players."
     }
 }
