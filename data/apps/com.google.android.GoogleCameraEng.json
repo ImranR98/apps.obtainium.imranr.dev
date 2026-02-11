@@ -1,0 +1,30 @@
+{
+    "configs": [
+        {
+            "id": "com.google.android.GoogleCameraEng",
+            "url": "https://www.celsoazevedo.com/files/android/google-camera/dev-suggested/",
+            "author": "www.celsoazevedo.com",
+            "name": "Camera",
+            "installedVersion": "9.4.103_V34_ENG",
+            "latestVersion": "9.4.103_V34_ENG",
+            "apkUrls": "[[\"276546380-MGC_9.4.103_V34_ENG.apk\",\"https://1-dontsharethislink.celsoazevedo.com/file/filesc/MGC_9.4.103_V34_ENG.apk\"]]",
+            "otherAssetUrls": "[]",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"dev-bsg/f/dl\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"MGC_([0-9.]+_[A-Z0-9]+_[A-Z0-9]+)\",\"matchGroupToUse\":\"$1\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"ENG\\\\.apk$\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Google Camera (BSG mod)\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"releaseDateAsVersion\":false,\"supportFixedAPKURL\":false}",
+            "lastUpdateCheck": 1770831658051444,
+            "pinned": false,
+            "categories": [],
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false
+        },
+    ],
+    "icon": "https://p.kagi.com/proxy/google-camera.svg?c=JI1-sSJsaZOF_Dr5pc_WLbdWEj2Zmf9m0RpLUoksuk5Z9L3ICQ7ovu6N-c8vRCS-xdtY_kVVs1BONv6JdhF-a9gbI7i05r62o9NI7QpCDZo%3D",
+    "categories": [
+        "camera"
+    ],
+    "description": {
+        "en": "Google Camera Port from Celso Azevedo"
+    }
+}
