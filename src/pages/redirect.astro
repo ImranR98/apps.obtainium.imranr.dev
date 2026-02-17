@@ -1,0 +1,219 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
+
+const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
+const translations = await getLocalizedStrings(currentLanguage);
+
+const url = Astro.url;
+const redirectUrl = url.searchParams.get("r");
+
+let isValid = false;
+let errorMessage = "";
+let appData: any = {};
+let parsedRedirectUrl = "";
+
+if (redirectUrl) {
+  try {
+    if (redirectUrl.startsWith("obtainium://app/")) {
+      const encodedData = redirectUrl.replace("obtainium://app/", "");
+      appData = JSON.parse(decodeURIComponent(encodedData));
+      parsedRedirectUrl =
+        "obtainium://app/" + encodeURIComponent(JSON.stringify(appData));
+      isValid = true;
+    } else if (redirectUrl.startsWith("obtainium://add/")) {
+      appData.url = decodeURIComponent(
+        redirectUrl.replace("obtainium://add/", ""),
+      );
+      const urlPattern = /^(http:\/\/|https:\/\/)/;
+      if (!urlPattern.test(appData.url)) {
+        throw new Error("Invalid URL format");
+      }
+      parsedRedirectUrl = "obtainium://add/" + appData.url;
+      isValid = true;
+    } else {
+      errorMessage = translations["invalidUrlPrefix"];
+    }
+  } catch (e) {
+    errorMessage = translations["invalidUrl"];
+  }
+} else {
+  errorMessage = translations["noRedirectParam"];
+}
+---
+
+<Layout>
+  <div class="container mx-auto px-4 py-6">
+    <div
+      class="max-w-md mx-auto bg-linear-to-br from-gray-900/80 via-gray-900/70 to-gray-950/80 border border-gray-800 rounded-xl p-6 shadow-2xl shadow-gray-900/30"
+    >
+      <!-- Page Title -->
+      <div class="text-center mb-6">
+        <div class="mb-3">
+          <div
+            class="w-12 h-12 mx-auto bg-linear-to-r from-primary-400 to-secondary-500 rounded-lg flex items-center justify-center shadow-lg"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+        </div>
+        <h1
+          class="text-xl font-bold bg-linear-to-r from-primary-100 via-primary-100 to-secondary-300 bg-clip-text text-transparent mb-2"
+        >
+          {translations["obtainiumRedirect"]}
+        </h1>
+        <p class="text-gray-400">
+          {translations["redirectDescription"]}
+        </p>
+      </div>
+
+      <!-- Noscript Warning -->
+      <noscript>
+        <div
+          class="p-3 mb-4 bg-yellow-900/30 border border-yellow-700/30 rounded-md text-yellow-300"
+        >
+          <p>{translations["enableJavaScript"]}</p>
+        </div>
+      </noscript>
+
+      <!-- Error Message -->
+      {
+        errorMessage && (
+          <div class="p-3 mb-4 bg-red-900/30 border border-red-700/30 rounded-md text-red-300">
+            <p>{errorMessage}</p>
+          </div>
+        )
+      }
+
+      <!-- Redirecting Section -->
+      <div
+        id="redirecting"
+        class={`text-center ${isValid ? "" : "hidden"}`}
+        data-redirect-url={parsedRedirectUrl}
+      >
+        <div
+          class="p-4 mb-4 bg-primary-700/20 border border-primary-700/30 rounded-md"
+        >
+          <div class="flex flex-col items-center">
+            <!-- Spinner -->
+            <div class="relative mb-3">
+              <div class="w-10 h-10 border-3 border-gray-800 rounded-full">
+              </div>
+              <div
+                class="w-10 h-10 border-3 border-primary-400 border-t-transparent rounded-full animate-spin absolute top-0 left-0"
+              >
+              </div>
+            </div>
+
+            <!-- Redirecting Text -->
+            <p class="text-base font-medium text-white mb-3">
+              {translations["redirecting"]}
+            </p>
+
+            <!-- Manual Redirect Button -->
+            <a
+              id="redirectBtn"
+              href={parsedRedirectUrl}
+              class="w-full py-2.5 px-4 bg-linear-to-r from-primary-600 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow-lg hover:shadow-primary-400/20"
+            >
+              {translations["clickToRedirect"]}
+            </a>
+          </div>
+        </div>
+
+        <!-- App Link -->
+        {
+          appData.url && (
+            <div class="mb-4 p-3 bg-gray-800/50 border border-gray-700 rounded-md">
+              <p class="text-gray-300 text-sm">
+                {translations["dontHaveObtainium"]}
+                <span class="font-medium text-white">
+                  {appData.name ? appData.name : `"${appData.url}"`}
+                </span>{" "}
+                {translations["manuallyFromHomePage"]}{" "}
+                <a
+                  id="appLinkHref"
+                  href={appData.url}
+                  class="text-primary-400 hover:text-primary-100 font-medium hover:underline transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {translations["here"]}
+                </a>
+                .
+              </p>
+            </div>
+          )
+        }
+
+        <!-- Download Link -->
+        <div class="mb-3">
+          <a
+            href="https://obtainium.imranr.dev/"
+            class="w-full inline-flex justify-center items-center py-2.5 px-4 border border-gray-700 font-medium rounded-md text-gray-300 bg-gray-800/50 hover:bg-gray-700/50 hover:text-white hover:border-gray-600 transition-all duration-200 hover:shadow"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {translations["downloadObtainium"]}
+          </a>
+        </div>
+
+        <!-- Home Link -->
+        <div>
+          <a
+            href="/"
+            class="w-full inline-flex justify-center items-center py-2.5 px-4 font-medium rounded-md text-gray-400 hover:text-white transition-colors duration-200"
+          >
+            {translations["browseAppList"]}
+          </a>
+        </div>
+      </div>
+
+      <!-- Instructions for invalid URL -->
+      {
+        !isValid && !errorMessage && (
+          <div class="text-center p-4 border border-gray-800 rounded-md bg-gray-800/30">
+            <h3 class="text-base font-medium text-white mb-2">
+              {translations["howToUse"]}
+            </h3>
+            <p class="text-gray-400 mb-4">
+              {translations["redirectInstructions"]}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-2 justify-center">
+              <a
+                href="/apps"
+                class="inline-flex justify-center items-center px-4 py-2.5 bg-linear-to-r from-primary-400 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow-lg hover:shadow-primary-400/20"
+              >
+                {translations["browseApps"]}
+              </a>
+              <a
+                href="/"
+                class="inline-flex justify-center items-center px-4 py-2.5 border border-gray-700 font-medium rounded-md text-gray-300 bg-gray-800/50 hover:bg-gray-700/50 hover:text-white transition-all duration-200"
+              >
+                {translations["goHome"]}
+              </a>
+            </div>
+          </div>
+        )
+      }
+    </div>
+  </div>
+  <script>
+    // Auto-redirect for users with JavaScript enabled
+    (function() {
+      const redirectingDiv = document.getElementById('redirecting');
+      if (!redirectingDiv) return;
+      const redirectUrl = redirectingDiv.dataset.redirectUrl;
+      if (!redirectUrl) return;
+        window.location.href = redirectUrl;
+    })();
+  </script>
+</Layout>

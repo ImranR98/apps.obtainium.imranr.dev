@@ -1,0 +1,217 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+  /* Define your Purple as the main Brand color */
+  --color-brand: #7428be;
+  --color-primary-50: #f2eafb;
+  --color-primary-100: #d9c0f2;
+  --color-primary-200: #c096e9;
+  --color-primary-300: #a76be0;
+  --color-primary-400: #8d41d7;
+  --color-primary-500: #7428be;
+  --color-primary-600: #5a1f94;
+  --color-primary-700: #401669;
+  --color-primary-800: #270d3f;
+  --color-primary-900: #0d0415;
+
+  /* Define your Gold as a Secondary color */
+  --color-secondary-50: #FFF8E1;
+  --color-secondary-100: #FFECB3;
+  --color-secondary-200: #FFE082;
+  --color-secondary-300: #FFD54F;
+  --color-secondary-400: #FFCA28;
+  --color-secondary-500: #FFC107;
+  --color-secondary-600: #FFB300;
+  --color-secondary-700: #FFA000;
+  --color-secondary-800: #FF8F00;
+  --color-secondary-900: #FF6F00;
+}
+
+/* Enhanced background with more depth */
+body {
+  background: linear-gradient(to bottom right, #0a0e17, #080c15, #141232);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(116, 40, 190, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 193, 7, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(66, 153, 225, 0.08) 0%, transparent 50%);
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Enhanced glow effect for interactive elements */
+.glow-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 193, 7, 0.1),
+      rgba(116, 40, 190, 0.2),
+      rgba(255, 193, 7, 0.1),
+      transparent);
+  transition: left 0.7s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.glow-card:hover::before {
+  left: 100%;
+}
+
+/* Animated gradient shift */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Subtle floating animation for category icons */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.icon-float {
+  animation: float 4s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * 0.2s);
+}
+
+/* Pulse animation */
+@keyframes subtle-pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-subtle-pulse {
+  animation: subtle-pulse 2s ease-in-out infinite;
+}
+
+/* Custom scrollbar for multi-select */
+select[multiple] {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-300) var(--color-gray-800);
+}
+
+select[multiple]::-webkit-scrollbar {
+  width: 8px;
+}
+
+select[multiple]::-webkit-scrollbar-track {
+  background: var(--color-gray-700);
+  border-radius: 4px;
+}
+
+select[multiple]::-webkit-scrollbar-thumb {
+  background: var(--color-primary-600);
+  border-radius: 4px;
+}
+
+select[multiple]::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-500);
+}
+
+/* Multi-select option styling */
+select[multiple] option {
+  padding: 0.5rem;
+  margin: 0.125rem 0;
+  border-radius: 0.25rem;
+  color: var(--color-gray-300);
+}
+
+select[multiple] option:checked {
+  background: linear-gradient(0deg, var(--color-primary-600), var(--color-primary-600)) !important;
+}
+
+/* Focused state - override browser defaults */
+select[multiple]:focus option:checked {
+  background: linear-gradient(0deg, var(--color-primary-200), var(--color-primary-200)) !important;
+}
+
+/* Fix for Firefox */
+@supports (-moz-appearance:none) {
+  select[multiple]:focus option:checked {
+    background-image: none !important;
+  }
+}
+
+/* Animation classes for toast notifications */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}
+
+.animate-fade-out {
+  animation: fade-out 0.2s ease-out forwards;
+}

@@ -7,7 +7,7 @@
 # Contributing
 
 - To contribute content, create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) with valid changes/additions to any files in the repo.
-- To test locally, run: `node buildData.js && python -m http.server 8080`
+- To test locally, run: `npm run dev` (you should have Node 22 installed, run `npm i` once to install dependencies).
 - See https://github.com/ImranR98/Obtainium/issues/1214 for background/context for this repo.
 
 
@@ -16,15 +16,15 @@
 > [!IMPORTANT]
 > Please make sure to read the [app criteria](APP_CRITERIA.md) before opening a PR with new/updated app configs.
 
-- You can auto-generate config files from an Obtainium export by running `node generateFromExport.js <path to Obtainium export>`
+- You can auto-generate config files from an Obtainium export by running `node scripts/generate_from_export.js <path to Obtainium export>`
 - Note: Auto-generated entries will not have icon, category, or description data. Adding those manually is not required but would result in a better user experience.
-- You can also auto-generate config files from an Obtainium URL redirection link by running `generate_from_url.py`
-- Note: Using `generate_from_url.py` requires you to install "Colorama" by using the `pip` command `pip install colorama`
+- You can also auto-generate config files from an Obtainium URL redirection link by running `scripts/generate_from_url.py`
+- Note: Using `scripts/generate_from_url.py` requires you to install "Colorama" by using the `pip` command `pip install colorama`
 
 
 ### Minimal Example
 
-To add an app config to this repo, your app configuration JSON must contain at least the `id`, `url`, `author`, `name`, and `additionalSettings` keys. Note that for any app-specific setting you don't define in `additionalSettings`, the default value will be used.
+To add an app config to this repo, your app configuration JSON must contain at least the `id`, `url`, `author`, und `name` keys. Note that for any app-specific setting you don't define in `additionalSettings`, the default value will be used.
 
 For example:
 - Minimal app JSON: `{"id":"dev.patrickgold.florisboard.beta","url":"https://github.com/florisboard/florisboard","author":"florisboard","name":"FlorisBoard Beta","additionalSettings":"{\"includePrereleases\":true}"}`
@@ -35,7 +35,7 @@ For example:
 # Beitragen
 
 - Um Inhalte beizusteuern, erstellen Sie einen [Pull-Request](https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) mit gültigen Änderungen/Ergänzungen zu allen Dateien im Repo.
-- Um Ihre Änderungen lokal zu testen, führen Sie bitte `node buildData.js && python -m http.server 8080` aus
+- Um Ihre Änderungen lokal zu testen, führen Sie bitte `npm run dev` aus
 - Siehe https://github.com/ImranR98/Obtainium/issues/1214 für den Hintergrund/Kontext für dieses Repo.
 
 
@@ -44,15 +44,15 @@ For example:
 > [!IMPORTANT]
 > Bitte stellen Sie sicher, dass Sie die [App-Kriterien](APP_CRITERIA.md) lesen, bevor Sie einen PR mit neuen/aktualisierten App-Konfigurationen eröffnen.
 
-- Sie können Konfigurationsdateien automatisch aus einem Obtainium-Export generieren, indem Sie `node generateFromExport.js <Pfad zum Obtainium-Export>` ausführen.
+- Sie können Konfigurationsdateien automatisch aus einem Obtainium-Export generieren, indem Sie `node scripts/generate_from_export.js <Pfad zum Obtainium-Export>` ausführen.
 - Hinweis: Automatisch generierte Einträge haben keine Symbol-, Kategorie- oder Beschreibungsdaten. Diese manuell hinzuzufügen ist nicht zwingend erforderlich, ist aber erwünscht, weil es zu einer besseren Benutzerfreundlichkeit führen würde.
-- Sie können auch automatisch Konfigurationsdateien aus einem Obtainium-URL-Umleitungslink generieren, indem Sie `generate_from_url.py` ausführen.
-- Hinweis: Die Verwendung von `generate_from_url.py` erfordert die Installation von „Colorama“ mit dem `pip` Befehl `pip install colorama`.
+- Sie können auch automatisch Konfigurationsdateien aus einem Obtainium-URL-Umleitungslink generieren, indem Sie `scripts/generate_from_url.py` ausführen.
+- Hinweis: Die Verwendung von `scripts/generate_from_url.py` erfordert die Installation von „Colorama“ mit dem `pip` Befehl `pip install colorama`.
 
 
 ### Minimalbeispiel
 
-Um eine App-Konfiguration zu diesem Repo hinzuzufügen, muss Ihre App-Konfiguration JSON mindestens die Schlüssel `id`, `url`, `author`, `name` und `additionalSettings` enthalten. Beachten Sie, dass für jede app-spezifische Einstellung, die Sie nicht in `additionalSettings` definieren, der Standardwert verwendet wird.
+Um eine App-Konfiguration zu diesem Repo hinzuzufügen, muss Ihre App-Konfiguration JSON mindestens die Schlüssel `id`, `url`, `author`, und `name` enthalten. Beachten Sie, dass für jede app-spezifische Einstellung, die Sie nicht in `additionalSettings` definieren, der Standardwert verwendet wird.
 
 Zum Beispiel:
 - Minimale App JSON: `{„id“: „dev.patrickgold.florisboard.beta“, „url“: „https://github.com/florisboard/florisboard“, „author“: „florisboard“, „name“: „FlorisBoard Beta“, „additionalSettings“:„{\“includePrereleases\„:true}“}`

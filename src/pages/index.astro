@@ -1,0 +1,106 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+import { getCategoriesWithRandomApps, getAppConfig } from "../lib/query";
+import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
+
+const categoryApps = await getCategoriesWithRandomApps(4);
+const categories = Object.keys(categoryApps).sort();
+
+const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
+const translations = await getLocalizedStrings(currentLanguage);
+---
+
+<Layout>
+  <div class="container mx-auto px-4 py-4">
+    <!-- All Apps tile -->
+    <div class="mb-8">
+      <a
+        href="/apps"
+        class="glow-card group relative block p-8 bg-linear-to-br from-gray-900/95 via-gray-900/85 to-gray-950/95 border-2 border-gray-700/60 rounded-2xl hover:border-primary-400/70 transition-all duration-500 hover:shadow-2xl hover:shadow-primary-400/25 shadow-2xl shadow-gray-900/30 transform-gpu overflow-hidden backdrop-blur-sm"
+      >
+        <div
+          class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+        >
+          <div
+            class="absolute inset-0 bg-linear-to-r from-primary-400/10 via-transparent to-secondary-500/10 animate-gradient-shift"
+          >
+          </div>
+        </div>
+        <div
+          class="text-5xl text-center mb-4 relative z-10 group-hover:scale-101 transition-transform duration-500"
+        >
+          📱
+        </div>
+        <div class="text-center relative z-10">
+          <h2 class="text-2xl font-bold mb-3">
+            {translations["allCategories"]}
+          </h2>
+          <div class="mt-6">
+            <span
+              class="inline-flex items-center px-6 py-3 bg-linear-to-r from-primary-600 to-primary-800 text-white font-medium rounded-full group-hover:from-primary-500 group-hover:to-primary-700 transition-all duration-300 shadow-lg group-hover:shadow-xl group-hover:shadow-primary-400/20"
+            >
+              {translations["browseAllApps"]}
+              <svg
+                class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Category tiles grid -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    >
+      {
+        categories.map((cat: string, _: number) => (
+          <a
+            href={`/apps?category=${cat}`}
+            class="group relative block p-4 bg-linear-to-br from-gray-900/90 via-gray-900/80 to-gray-950/90 border border-gray-700/50 rounded-xl hover:border-primary-400/60 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/20 shadow-xl shadow-gray-900/20 transform-gpu backdrop-blur-sm"
+          >
+            <div class="flex items-center justify-between mb-3 relative z-10">
+              <h3 class="text-base font-bold group-hover:scale-105 transition-transform duration-300">
+                {translations[cat]}
+              </h3>
+              <svg
+                class="w-4 h-4 text-gray-400 group-hover:text-primary-400 group-hover:translate-x-1 transition-all duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-3 relative z-10">
+              {categoryApps[cat].map((app, _) => (
+                <Icon
+                  src={app.icon}
+                  alt={getAppConfig(app)[0].name}
+                  width={36}
+                  height={36}
+                  className="rounded-lg group-hover:scale-110 transition-all duration-300 icon-float group-hover:border-primary-400/50"
+                />
+              ))}
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

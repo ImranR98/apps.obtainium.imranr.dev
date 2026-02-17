@@ -1,0 +1,425 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+import {
+  getAppConfig,
+  queryAppsAsync,
+  extractAppParamsFromRequest,
+} from "../lib/query";
+import { getApps } from "../lib/data";
+import {
+  getCurrentLanguage,
+  pickLocalTranslation,
+  getLocalizedStrings,
+} from "../lib/i18n";
+import type { ComplexApp, ComplexAppConfig, SimpleApp } from "../lib/types";
+
+type PaginationItem = { type: "page"; value: number } | { type: "ellipsis" };
+
+const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
+const translations = await getLocalizedStrings(currentLanguage);
+
+const url = Astro.url;
+const allApps = await getApps();
+const allCategories = [
+  ...new Set(allApps.flatMap((app) => app.categories)),
+].sort();
+
+const { categories, categoryMode, type, q, page, limit } =
+  await extractAppParamsFromRequest(Astro.request);
+
+const result = await queryAppsAsync({
+  categories,
+  categoryMode,
+  type,
+  q,
+  page,
+  limit,
+});
+
+let categoryFilterMessage = categories.map((c) => translations[c]).join(", ");
+if (categoryFilterMessage.length > 50) {
+  categoryFilterMessage = `${categoryFilterMessage.slice(0, 50)}...`;
+}
+
+/**
+ * Get app configuration as JSON string with description injection
+ */
+const getAppConfigString = (app: SimpleApp | ComplexApp, configIndex = 0) => {
+  const description = pickLocalTranslation(app.description, currentLanguage);
+
+  if (app.type === "complex") {
+    const config = JSON.parse(JSON.stringify(app.configs[configIndex]));
+    if (description) {
+      try {
+        const settings = JSON.parse(config.additionalSettings || "{}");
+        if (!settings.about) settings.about = description;
+        config.additionalSettings = JSON.stringify(settings);
+      } catch (e) {
+        console.error(config);
+      }
+    }
+    if (config.altLabel) delete config.altLabel;
+    return JSON.stringify(config);
+  }
+  return JSON.stringify(app.config);
+};
+
+/**
+ * Generate href for a given page number
+ */
+const getPageHref = (pageNum: number) => {
+  const params = new URLSearchParams({
+    ...Object.fromEntries(url.searchParams),
+    categories: categories.join(","),
+    category: "",
+    page: String(pageNum),
+  });
+  return `?${params}`;
+};
+
+const PAGINATION_WINDOW_SIZE = 3;
+
+const getPaginationItems = (
+  windowSize = PAGINATION_WINDOW_SIZE,
+): PaginationItem[] => {
+  const totalPages = result.pagination.totalPages;
+  const currentPage = page;
+  const items: PaginationItem[] = [];
+
+  if (totalPages <= windowSize) {
+    for (let i = 1; i <= totalPages; i++) {
+      items.push({ type: "page" as const, value: i });
+    }
+    return items;
+  }
+
+  const pages = new Set<number>();
+  pages.add(1);
+  pages.add(totalPages);
+
+  let startWindow = Math.max(2, currentPage - Math.floor((windowSize - 1) / 2));
+  let endWindow = Math.min(totalPages - 1, currentPage + Math.floor(windowSize / 2));
+
+  if (endWindow - startWindow + 1 > windowSize) {
+    endWindow = startWindow + windowSize - 1;
+  }
+  startWindow = Math.max(2, startWindow);
+  endWindow = Math.min(totalPages - 1, endWindow);
+
+  for (let i = startWindow; i <= endWindow; i++) {
+    pages.add(i);
+  }
+
+  const sorted = Array.from(pages).sort((a, b) => a - b);
+  for (let i = 0; i < sorted.length; i++) {
+    const pageNum = sorted[i];
+    if (i > 0 && sorted[i] - sorted[i - 1] > 1) {
+      items.push({ type: "ellipsis" as const });
+    }
+    items.push({ type: "page" as const, value: pageNum });
+  }
+
+  return items;
+};
+---
+
+<Layout>
+  <div class="container mx-auto px-4 py-4">
+    <!-- Filter/Search Form -->
+    <form
+      method="get"
+      action="/apps"
+      class="bg-linear-to-br from-gray-900/80 via-gray-900/70 to-gray-950/80 border border-gray-800 rounded-xl p-4 mb-6 shadow-lg shadow-gray-900/30"
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+        <!-- Categories column -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center justify-between mb-2">
+            <label class="text-gray-300 font-medium"
+              >{translations["categorySelect"]}</label
+            >
+            <div class="flex items-center space-x-3">
+              <label class="flex items-center">
+                <input
+                  type="radio"
+                  name="categoryMode"
+                  value="exclusive"
+                  checked={categoryMode === "exclusive"}
+                  class="h-3.5 w-3.5 text-primary-400 bg-gray-800 border-gray-700 focus:ring-1 focus:ring-primary-400"
+                />
+                <span class="ml-1.5 text-gray-300"
+                  >{translations["exclusive"]}</span
+                >
+              </label>
+              <label class="flex items-center">
+                <input
+                  type="radio"
+                  name="categoryMode"
+                  value="inclusive"
+                  checked={categoryMode === "inclusive"}
+                  class="h-3.5 w-3.5 text-primary-400 bg-gray-800 border-gray-700 focus:ring-1 focus:ring-primary-400"
+                />
+                <span class="ml-1.5 text-gray-300"
+                  >{translations["inclusive"]}</span
+                >
+              </label>
+            </div>
+          </div>
+
+          <!-- multi-select -->
+          <select
+            name="category"
+            multiple
+            size="5"
+            class="w-full bg-gray-800 border border-gray-700 rounded-md text-gray-300 focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2"
+          >
+            {
+              allCategories.map((cat: string) => (
+                <option
+                  value={cat}
+                  selected={categories.includes(cat)}
+                  class="px-2 py-1.5 hover:bg-gray-700"
+                >
+                  {translations[cat]}
+                </option>
+              ))
+            }
+          </select>
+        </div>
+
+        <!-- App type and search column -->
+        <div class="lg:col-span-2 flex flex-col justify-between">
+          <div class="mb-3 lg:mb-0">
+            <label class="block text-gray-300 font-medium mb-1"
+              >{translations["search"]}</label
+            >
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-2.5 pointer-events-none"
+              >
+                <svg
+                  class="w-3.5 h-3.5 text-gray-500"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
+                </svg>
+              </div>
+              <input
+                type="text"
+                name="q"
+                value={q}
+                placeholder={translations["search"]}
+                class="w-full pl-9 pr-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-gray-300 placeholder-gray-500 focus:ring-1 focus:ring-primary-400 focus:border-primary-400"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="flex space-x-2">
+              <button
+                type="submit"
+                class="flex-1 px-4 py-2 bg-linear-to-r from-primary-600 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow-lg hover:shadow-primary-400/20"
+              >
+                {translations["go"]}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Results header -->
+    <div
+      class="mb-6 p-3 bg-linear-to-r from-gray-900/50 to-gray-950/50 border border-gray-800 rounded-lg"
+    >
+      <p class="text-gray-300">
+        <span class="font-medium text-white">{result.apps.length}</span> / <span
+          class="font-medium">{result.pagination.total}</span
+        >
+        {translations["apps"] || "apps"}
+        {categories.length > 0 && ` • ${categoryFilterMessage}`}
+        {q && ` • "${q}"`}
+      </p>
+    </div>
+
+    <!-- App grid -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6"
+    >
+      {
+        result.apps.map((app) => {
+          const appConfigs = getAppConfig(app);
+          return (
+            <div class="group relative bg-linear-to-br from-gray-900/80 via-gray-900/70 to-gray-950/80 border border-gray-800 rounded-xl p-4 hover:border-primary-400/40 transition-all duration-300 flex flex-col h-full hover:shadow-2xl hover:shadow-primary-400/10 shadow-lg shadow-gray-900/30 transform-gpu">
+              <div class="flex items-start mb-3 relative z-10">
+                <Icon
+                  src={app.icon}
+                  alt={appConfigs[0].name}
+                  width={44}
+                  height={44}
+                  className="mr-3 rounded-lg group-hover:scale-110 transition-transform duration-300 group-hover:border-primary-400/50"
+                />
+                <div class="min-w-0 flex-1">
+                  <h3 class="text-base font-bold text-white truncate mb-1 group-hover:text-primary-100 transition-colors duration-300">
+                    <span><a href={appConfigs[0].url} class="hover:underline">{appConfigs[0].name}</a></span>
+                  </h3>
+                  <p class="text-gray-400 truncate group-hover:text-gray-300 transition-colors duration-300">
+                    by {appConfigs[0].author}
+                  </p>
+                </div>
+                {appConfigs.length > 1 &&
+                  (appConfigs[0] as ComplexAppConfig).altLabel && (
+                    <span class="px-2 py-0.5 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700 group-hover:border-primary-500/50 group-hover:text-primary-200 transition-all duration-300">
+                      {(appConfigs[0] as ComplexAppConfig).altLabel}
+                    </span>
+                  )}
+              </div>
+              <p class="text-gray-300 mb-3 line-clamp-2 group-hover:text-gray-200 transition-colors duration-300">
+                {pickLocalTranslation(app.description, currentLanguage)}
+              </p>
+              {categories.length !== 1 && (
+                <div class="flex flex-wrap gap-1.5 mb-4">
+                  {app.categories.map((cat: string) => (
+                    <span class="px-2 py-0.5 bg-primary-700/30 text-primary-100 text-sm font-medium rounded border border-primary-700/50 group-hover:border-primary-500 group-hover:bg-primary-700/40 transition-all duration-300">
+                      {translations[cat]}
+                    </span>
+                  ))}
+                </div>
+              )}
+              <div class="mt-auto pt-3">
+                <div class="flex gap-2">
+                  <button
+                    type="button"
+                    class="jsonly flex-1 px-3 py-2 bg-linear-to-r from-gray-700 to-gray-800 text-white font-medium rounded-md hover:from-gray-600 hover:to-gray-700 transition-all duration-200 hover:shadow-lg"
+                    onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, 0))})`}
+                  >
+                    {translations["copy"]}
+                  </button>
+                  <a
+                    class="flex-1 px-3 py-2 bg-linear-to-r from-primary-600 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 text-center hover:shadow-lg hover:shadow-primary-400/20"
+                    href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, 0))}`}
+                  >
+                    {translations["install"]}
+                  </a>
+                </div>
+                {appConfigs.length > 1 && (
+                  <div class="space-y-2 pt-3 mt-3 border-t border-gray-800">
+                    {appConfigs.slice(1).map((c: ComplexAppConfig, index) => (
+                      <div class="flex items-center justify-between">
+                        <span class="px-2 py-0.5 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700 group-hover:border-primary-500/50 group-hover:text-primary-200 transition-all duration-300">
+                          {c.altLabel || c.name}
+                        </span>
+                        <div class="flex gap-1.5">
+                          <button
+                            type="button"
+                            class="jsonly px-2 py-1 bg-linear-to-r from-gray-700 to-gray-800 text-white text-sm font-medium rounded hover:from-gray-600 hover:to-gray-700 transition-all duration-200 hover:shadow"
+                            onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, index + 1))})`}
+                          >
+                            {translations["copy"]}
+                          </button>
+                          <a
+                            class="px-2 py-1 bg-linear-to-r from-primary-600 to-primary-700 text-white text-sm font-medium rounded hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow hover:shadow-primary-400/20"
+                            href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, index + 1))}`}
+                          >
+                            {translations["install"]}
+                          </a>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+
+    <!-- Pagination -->
+    {
+      result.pagination.totalPages > 1 && (
+        <div class="flex justify-center mt-8">
+          <nav class="flex items-center justify-center gap-1.5">
+            {page > 1 && (
+              <a
+                href={getPageHref(page - 1)}
+                class="px-3 py-1.5 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-200 hover:shadow"
+              >
+                ←
+              </a>
+            )}
+
+            {/* Unified pagination */}
+            <div class="flex items-center gap-1">
+              {getPaginationItems().map((item) => {
+                if (item.type === "ellipsis") {
+                  return <span class="px-2 text-gray-500">...</span>;
+                }
+                if (item.type === "page") {
+                  return (
+                    <a
+                      href={getPageHref(item.value)}
+                      class={`px-3 py-1.5 rounded-md transition-all duration-200 hover:shadow ${
+                        item.value === page
+                          ? "bg-linear-to-r from-primary-600 to-primary-700 border border-primary-600 text-white shadow-lg shadow-primary-400/20"
+                          : "bg-gray-800 text-gray-300 border border-gray-700 hover:bg-gray-700 hover:text-white"
+                      }`}
+                    >
+                      {item.value}
+                    </a>
+                  );
+                }
+                return null;
+              })}
+            </div>
+            {page < result.pagination.totalPages && (
+              <a
+                href={getPageHref(page + 1)}
+                class="px-3 py-1.5 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-200 hover:shadow"
+              >
+                →
+              </a>
+            )}
+          </nav>
+        </div>
+      )
+    }
+  </div>
+</Layout>
+
+<script is:inline>
+  (() => {
+    window.copyToClipboard = (text) => {
+      navigator.clipboard
+        .writeText(text)
+        .then(() => {
+          const toast = document.createElement("div");
+          toast.className =
+            "fixed top-4 right-4 z-50 px-4 py-3 bg-linear-to-r from-secondary-800 to-secondary-800 border border-secondary-800 rounded-lg shadow-xl flex items-center animate-fade-in";
+          toast.innerHTML = `
+            <div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-white/20 mr-2">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div class="font-medium text-white">Copied to clipboard!</div>
+           `;
+          document.body.appendChild(toast);
+
+          setTimeout(() => {
+            toast.classList.add("animate-fade-out");
+            setTimeout(() => toast.remove(), 300);
+          }, 2000);
+        })
+        .catch(() => {
+          alert("Failed to copy to clipboard");
+        });
+    };
+  })();
+</script>
