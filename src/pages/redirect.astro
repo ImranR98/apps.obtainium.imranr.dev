@@ -119,12 +119,13 @@ if (redirectUrl) {
             </p>
 
             <!-- Manual Redirect Button -->
-            <button
+            <a
               id="redirectBtn"
+              href={parsedRedirectUrl}
               class="w-full py-2.5 px-4 bg-linear-to-r from-primary-600 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow-lg hover:shadow-primary-400/20"
             >
               {translations["clickToRedirect"]}
-            </button>
+            </a>
           </div>
         </div>
 
@@ -205,4 +206,14 @@ if (redirectUrl) {
       }
     </div>
   </div>
+  <script>
+    // Auto-redirect for users with JavaScript enabled
+    (function() {
+      const redirectingDiv = document.getElementById('redirecting');
+      if (!redirectingDiv) return;
+      const redirectUrl = redirectingDiv.dataset.redirectUrl;
+      if (!redirectUrl) return;
+        window.location.href = redirectUrl;
+    })();
+  </script>
 </Layout>
