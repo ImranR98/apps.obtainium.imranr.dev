@@ -55,18 +55,17 @@ export const getApps = async (): Promise<(SimpleApp | ComplexApp)[]> => {
     const cats = Object.keys(await getCategories())
     const files = getAllJsonFiles(APPS_DIR)
     await Promise.all(files.map(async filePath => {
-      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'))
-
-      const appBase = {
-        icon: data.icon,
-        categories: (data.categories as string[] | undefined || []).filter((cat: string) => cats.includes(cat)),
-        description: data.description || {}
-      }
-      if (appBase.categories.length === 0) {
-        appBase.categories.push('other')
-      }
-      if (Array.isArray(data.configs)) {
-        try {
+      try {
+        const data = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+        const appBase = {
+          icon: data.icon,
+          categories: (data.categories as string[] | undefined || []).filter((cat: string) => cats.includes(cat)),
+          description: data.description || {}
+        }
+        if (appBase.categories.length === 0) {
+          appBase.categories.push('other')
+        }
+        if (Array.isArray(data.configs)) {
           data.configs = data.configs.map((c: any) => {
             const settings = JSON.parse(c.additionalSettings || '{}')
             if (c.name && !settings.appName) {
@@ -83,15 +82,15 @@ export const getApps = async (): Promise<(SimpleApp | ComplexApp)[]> => {
             configs: data.configs,
             type: 'complex'
           })
-        } catch (e) {
-          console.error(`Error parsing ${filePath}`)
+        } else {
+          apps.push({
+            ...appBase,
+            config: data.config,
+            type: 'simple'
+          })
         }
-      } else {
-        apps.push({
-          ...appBase,
-          config: data.config,
-          type: 'simple'
-        })
+      } catch (e) {
+        console.error(`Error parsing ${filePath}`, e)
       }
     }))
 
