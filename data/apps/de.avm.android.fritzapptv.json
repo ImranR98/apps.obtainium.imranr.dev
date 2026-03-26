@@ -1,0 +1,23 @@
+{
+    "configs": [
+        {
+            "id": "de.avm.android.fritzapptv",
+            "url": "https://service.avm.de/downloads/fritzapps/FritzAppTV.apk",
+            "author": "FRITZ! GmbH",
+            "name": "FRITZ!App TV",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"invertAPKFilter\":false,\"appName\":\"FRITZ!App TV\",\"appAuthor\":\"FRITZ! GmbH\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"autoApkFilterByArch\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/EqVxqRS74tBkjImE0NrbmXBzygu1UNx9KJUsgF5tbgzDBP0R6j7zcclTvIeRXdVxKFE=w480-h960",
+    "categories": [
+        "media_frontends",
+        "video_player"
+    ],
+    "description": {
+        "en": "Watch TV with the help of your FRITZ!Box Cable router.",
+        "de": "Fernsehen schauen mit Hilfe Ihres FRITZ!Box Cable-Routers.",
+        "pl": "Oglądaj telewizję przy pomocy routera FRITZ!Box Cable."
+    }
+}
