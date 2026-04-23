@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.generalmagic.magicearth",
+            "url": "https://www.magicearth.com",
+            "author": "www.magicearth.com",
+            "name": "Magic Earth",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"-(\\\d.*)-a\",\"matchGroupToUse\":\"$1\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Magic Earth\",\"appAuthor\":\"Magic Lane International BV\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"GPS Navigation, Offline Maps and Crowd-sourced Traffic.\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://www.magicearth.com/_next/static/media/magic-earth-logo-small.a0175362.svg",
+    "categories": [
+        "navigation"
+    ],
+    "description": {
+        "en": "GPS Navigation, Offline Maps and Crowd-sourced Traffic."
+    }
+}
