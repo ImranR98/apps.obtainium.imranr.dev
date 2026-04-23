@@ -2,28 +2,85 @@
     "configs": [
         {
             "id": "org.ironfoxoss.ironfox",
-            "url": "https://gitlab.com/ironfox-oss/ironfox",
+            "url": "https://releases.ironfoxoss.org/ironfox/releases/updates.json",
             "author": "IronFox OSS",
             "name": "IronFox",
-            "additionalSettings": "{\"appIdOrName\":\"org.ironfoxoss.ironfox\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\"}",
-            "overrideSource": "GitLab",
-            "altLabel": "GitLab"
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\"org\\\\.ironfoxoss\\\\.ironfox\\\"\\\\s*:\\\\s*\\\\{.*?\\\"version\\\"\\\\s*:\\\\s*\\\"([^\\\"]+)\\\"\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"universal\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\",\"appAuthor\":\"IronFox OSS\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "universal"
+        },
+        {
+            "id": "org.ironfoxoss.ironfox",
+            "url": "https://releases.ironfoxoss.org/ironfox/releases/updates.json",
+            "author": "IronFox OSS",
+            "name": "IronFox",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\"org\\\\.ironfoxoss\\\\.ironfox\\\"\\\\s*:\\\\s*\\\\{.*?\\\"version\\\"\\\\s*:\\\\s*\\\"([^\\\"]+)\\\"\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"arm64-v8a\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\",\"appAuthor\":\"IronFox OSS\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "arm64-v8a"
+        },
+        {
+            "id": "org.ironfoxoss.ironfox",
+            "url": "https://releases.ironfoxoss.org/ironfox/releases/updates.json",
+            "author": "IronFox OSS",
+            "name": "IronFox",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\"org\\\\.ironfoxoss\\\\.ironfox\\\"\\\\s*:\\\\s*\\\\{.*?\\\"version\\\"\\\\s*:\\\\s*\\\"([^\\\"]+)\\\"\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"armeabi-v7a\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\",\"appAuthor\":\"IronFox OSS\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "armeabi-v7a"
+        },
+        {
+            "id": "org.ironfoxoss.ironfox",
+            "url": "https://releases.ironfoxoss.org/ironfox/releases/updates.json",
+            "author": "IronFox OSS",
+            "name": "IronFox",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\"org\\\\.ironfoxoss\\\\.ironfox\\\"\\\\s*:\\\\s*\\\\{.*?\\\"version\\\"\\\\s*:\\\\s*\\\"([^\\\"]+)\\\"\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"x86_64\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\",\"appAuthor\":\"IronFox OSS\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "x86_64"
         },
         {
             "id": "org.ironfoxoss.ironfox",
             "url": "https://fdroid.ironfoxoss.org/fdroid/repo",
             "author": "IronFox OSS",
             "name": "IronFox",
-            "additionalSettings": "{\"appIdOrName\":\"org.ironfoxoss.ironfox\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\"}",
+            "additionalSettings": "{\"appIdOrName\":\"org.ironfoxoss.ironfox\",\"trackOnly\":false,\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"autoApkFilterByArch\":true,\"appName\":\"IronFox\",\"appAuthor\":\"IronFox OSS\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
             "overrideSource": "FDroidRepo",
-            "altLabel": "IronFox OSS's F-Droid Repo"
+            "allowIdChange": false,
+            "altLabel": "IronFox OSS F-Droid Repo"
         }
     ],
-    "icon": "https://gitlab.com/ironfox-oss/IronFox/-/raw/main/assets/ironfox.png",
+    "icon": "https://assets.ironfoxoss.org/ironfox.png",
+    "apkVerificationLocation": "https://ironfoxoss.org/download/#app-verification",
     "description": {
-        "en": "A privacy and security-oriented Firefox-based browser for Android."
+        "en": "Private, secure, user first web browser for Android.",
+        "de": "Privater, sicherer, benutzerorientierter Webbrowser für Android.",
+        "fr": "Privé, sécurisé, navigateur web pour Android privilégiant l'utilisateur.",
+        "ko": "프라이빗하고, 안전하고, 사용자를 우선하는 안드로이드 웹 브라우저.",
+        "nl": "Een gebruiksvriendelijke Android-browser voor privacy en veiligheid.",
+        "pt": "Privado, seguro, navegador web para Android que põe o usuário primeiro.",
+        "zh": "面向 Android 的私密、安全、用户至上的网页浏览器。",
+        "zh-tw": "為 Android 設計，隱私、安全、將用戶放在首位的瀏覽器。"
     },
     "categories": [
-        "browser"
+        "browser",
+        "document_and_pdf_viewer",
+        "privacy_and_anonymity"
     ]
 }
