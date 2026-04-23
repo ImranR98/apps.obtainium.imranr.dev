@@ -1,0 +1,22 @@
+{
+    "configs": [
+        {
+            "id": "de.avm.android.fritzapp",
+            "url": "https://service.avm.de/downloads/fritzapps/FritzAppFon.apk",
+            "author": "FRITZ! GmbH",
+            "name": "FRITZ!App Fon",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"invertAPKFilter\":false,\"appName\":\"FRITZ!App Fon\",\"appAuthor\":\"FRITZ! GmbH\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"autoApkFilterByArch\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/j2p8bLD9R8YMMyup5pcgccjpKoPDHBu2H1exDvHO6-Vg006Mlf7ihDNV1RTv3yC_VYQ=w480-h960",
+    "categories": [
+        "dialer"
+    ],
+    "description": {
+        "en": "Make landline calls with your smartphone.",
+        "de": "Mit Smartphone im Festnetz telefonieren.",
+        "pl": "Gadaj przez smartfon na numery stacjonarne."
+    }
+}
