@@ -13,7 +13,6 @@
         "utilities"
     ],
     "description": {
-        "en": "Obscura VPN Rust library and multi-platform client with two-party relay privacy architecture.",
-        "de": "Obscura VPN Rust-Bibliothek und plattformübergreifender Client mit Two-Party-Relay-Datenschutzarchitektur."
+        "en": "Obscura VPN Rust library and multi-platform client with two-party relay privacy architecture."
     }
 }
