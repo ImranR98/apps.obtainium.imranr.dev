@@ -1,7 +1,7 @@
 {
     "configs": [
         {
-            "id": "moe.ampersand.app",
+            "id": "moe.ampersand.track.sideload",
             "url": "https://github.com/NyaomiDEV/Ampersand",
             "author": "NyaomiDEV",
             "name": "Ampersand",
