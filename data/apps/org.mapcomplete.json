@@ -1,0 +1,13 @@
+{
+  "configs": [
+    {
+      "id": "org.mapcomplete",
+      "url": "https://source.mapcomplete.org/MapComplete/android-wrapper/releases",
+      "author": "Pieter Vander Vennet",
+      "name": "MapComplete",
+      "description": {
+        "en": "Thematic, editable maps based on OpenStreetMap."
+      }
+    }
+  ]
+}
