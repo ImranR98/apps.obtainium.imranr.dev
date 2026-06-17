@@ -9,6 +9,7 @@
         }
     ],
     "icon": "https://play-lh.googleusercontent.com/v1Qfdb9p3Fi09V9uTOQpapUedtH96_SGG3rDbkd2D8iso0B4cmDUrJJfqH0RBJjtM_o=w480-h960",
+    "apkVerificationLocation": "https://protonapps.com/protoncalendar-android#hash",
     "categories": ["calendar"],
     "description": {
         "en": "Secure, encrypted calendar for your Android devices."
