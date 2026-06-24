@@ -1,0 +1,112 @@
+---
+import Icon from "./Icon.astro";
+import { getAppConfig, getAppConfigString } from "../lib/query";
+import { pickLocalTranslation } from "../lib/i18n";
+import type { SimpleApp, ComplexApp, ComplexAppConfig } from "../lib/types";
+
+interface Props {
+  app: SimpleApp | ComplexApp;
+  translations: Record<string, string>;
+  currentLanguage: string;
+  hideCategories?: boolean;
+}
+
+const { app, translations, currentLanguage, hideCategories = false } =
+  Astro.props;
+const appConfigs = getAppConfig(app);
+---
+
+<div
+  class="group relative bg-surface border border-border rounded-xl p-4 hover:border-border-hover transition-all duration-200 flex flex-col h-full"
+>
+  <div class="flex items-start mb-3">
+    <Icon
+      src={app.icon}
+      alt={appConfigs[0].name}
+      width={44}
+      height={44}
+      className="mr-3 rounded-lg"
+    />
+    <div class="min-w-0 flex-1">
+      <h3 class="text-sm font-semibold text-text truncate">
+        <a
+          href={appConfigs[0].url}
+          class="hover:text-primary-500 transition-colors"
+          >{appConfigs[0].name}</a
+        >
+      </h3>
+      <p class="text-text-subtle text-xs truncate mt-0.5">
+        by {appConfigs[0].author}
+      </p>
+    </div>
+    {appConfigs.length > 1 && (appConfigs[0] as ComplexAppConfig).altLabel && (
+      <span
+        class="px-2 py-0.5 bg-surface-hover text-text-muted text-xs font-medium rounded-md border border-border-hover"
+      >
+        {(appConfigs[0] as ComplexAppConfig).altLabel}
+      </span>
+    )}
+  </div>
+
+  <p class="text-text-muted text-sm mb-3 line-clamp-2">
+    {pickLocalTranslation(app.description, currentLanguage)}
+  </p>
+
+  {!hideCategories && (
+    <div class="flex flex-wrap gap-1.5 mb-4">
+      {app.categories.map((cat: string) => (
+        <span
+          class="px-2 py-0.5 bg-primary-50/80 text-primary-700 text-xs font-medium rounded-md"
+        >
+          {translations[cat]}
+        </span>
+      ))}
+    </div>
+  )}
+
+  <div class="mt-auto pt-3">
+    <div class="flex gap-2">
+      <button
+        type="button"
+        class="jsonly flex-1 px-3 py-2 bg-surface-hover text-text-secondary text-sm font-medium rounded-lg hover:bg-surface-alt transition-colors duration-200"
+        onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, currentLanguage, 0))})`}
+      >
+        {translations["copy"]}
+      </button>
+      <a
+        class="flex-1 px-3 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-500 transition-colors duration-200 text-center"
+        href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, currentLanguage, 0))}`}
+      >
+        {translations["install"]}
+      </a>
+    </div>
+    {appConfigs.length > 1 && (
+      <div class="space-y-2 pt-3 mt-3 border-t border-border">
+        {appConfigs.slice(1).map((c: ComplexAppConfig, index: number) => (
+          <div class="flex items-center justify-between">
+            <span
+              class="px-2 py-0.5 bg-surface-hover text-text-muted text-xs font-medium rounded-md border border-border-hover"
+            >
+              {c.altLabel || c.name}
+            </span>
+            <div class="flex gap-1.5">
+              <button
+                type="button"
+                class="jsonly px-2.5 py-1.5 bg-surface-hover text-text-secondary text-xs font-medium rounded-md hover:bg-surface-alt transition-colors duration-200"
+                onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, currentLanguage, index + 1))})`}
+              >
+                {translations["copy"]}
+              </button>
+              <a
+                class="px-2.5 py-1.5 bg-primary-600 text-white text-xs font-medium rounded-md hover:bg-primary-500 transition-colors duration-200"
+                href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, currentLanguage, index + 1))}`}
+              >
+                {translations["install"]}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+</div>

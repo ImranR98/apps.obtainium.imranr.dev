@@ -1,0 +1,156 @@
+---
+import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
+import "../styles/global.css";
+
+const { title } = Astro.props;
+const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
+const translations = getLocalizedStrings(currentLanguage);
+
+const siteTitle = title
+  ? `${title} | ${translations["title"]}`
+  : translations["title"];
+const siteDescription =
+  translations["subtitle"] || "Crowdsourced app configurations for Obtainium";
+
+const plausibleUrl =
+  import.meta.env.PUBLIC_PLAUSIBLE_URL ||
+  "https://plausible.imranr.dev/js/pa-bEkZjDOsvaKnWDWxQgLWV.js";
+const adsenseId =
+  import.meta.env.PUBLIC_ADSENSE_ID ||
+  "ca-pub-6629162404802829";
+---
+
+<!doctype html>
+<html class="h-full" lang={currentLanguage}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{siteTitle}</title>
+    <meta name="description" content={siteDescription} />
+    <meta name="theme-color" content="#6438B5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1A0E4A" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={siteDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={siteDescription} />
+    <link rel="canonical" href={Astro.url} />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+    <link rel="dns-prefetch" href="https://keepandroidopen.org" />
+    <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: translations["title"],
+      description: siteDescription,
+      url: Astro.url.origin,
+    })}></script>
+    <noscript>
+      <style>
+        .jsonly {
+          display: none;
+        }
+      </style>
+    </noscript>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src={plausibleUrl}></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+    <script
+      is:inline
+      async
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+      crossorigin="anonymous"></script>
+  </head>
+  <body
+    class="text-text min-h-screen flex flex-col relative overflow-x-hidden"
+    style="font-family: 'Montserrat', system-ui, sans-serif;"
+  >
+    <header
+      class="sticky top-0 z-40 border-b border-border bg-surface/80 backdrop-blur-sm"
+    >
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <div>
+            <h1>
+              <a
+                href="/"
+                class="text-lg font-bold text-text hover:text-primary-400 transition-colors"
+                >{translations["title"]}</a
+              >
+            </h1>
+             <h2 class="text-text-secondary font-semibold text-xs mt-0.5">
+              {translations["subtitle"]}
+            </h2>
+          </div>
+          <div class="flex items-center gap-4">
+            <nav class="flex space-x-4">
+              <a
+                href="https://wiki.obtainium.imranr.dev/"
+                target="_blank"
+                class="text-sm font-medium text-text-secondary hover:text-primary-500 transition-colors"
+                >{translations["about"]}</a
+              >
+              <a
+                href="https://github.com/ImranR98/apps.obtainium.imranr.dev/issues"
+                target="_blank"
+                class="text-sm font-medium text-text-secondary hover:text-primary-500 transition-colors"
+                >{translations["contribute"]}</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="grow relative z-10">
+      <slot />
+    </main>
+
+    <footer class="border-t border-border py-4 mt-8">
+      <div class="container mx-auto px-4 text-center">
+        <a
+          class="text-xs text-text-subtle hover:text-primary-400 transition-colors"
+          href="https://github.com/ImranR98/apps.obtainium.imranr.dev"
+          target="_blank"
+        >
+          {translations["source"]}
+        </a>
+      </div>
+    </footer>
+
+    <script is:inline async src="https://keepandroidopen.org/banner.js"></script>
+  </body>
+</html>
+
+<script is:inline>
+  (() => {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        const targetId = this.getAttribute("href");
+        if (targetId === "#") return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    });
+  })();
+</script>

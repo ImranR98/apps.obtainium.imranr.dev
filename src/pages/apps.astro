@@ -1,0 +1,167 @@
+---
+import Layout from "../layouts/Layout.astro";
+import AppCard from "../components/AppCard.astro";
+import FilterForm from "../components/FilterForm.astro";
+import Pagination from "../components/Pagination.astro";
+import {
+  queryAppsAsync,
+  extractAppParamsFromRequest,
+} from "../lib/query";
+import { getApps } from "../lib/data";
+import {
+  getCurrentLanguage,
+  getLocalizedStrings,
+} from "../lib/i18n";
+
+Astro.response.headers.set('Cache-Control', 'public, max-age=300, s-maxage=600');
+
+const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
+const translations = getLocalizedStrings(currentLanguage);
+
+const allApps = getApps();
+const allCategories = [
+  ...new Set(allApps.flatMap((app) => app.categories)),
+].sort();
+
+const { categories, categoryMode, type, q, page, limit } =
+  await extractAppParamsFromRequest(Astro.request);
+
+let result;
+let errorMessage = "";
+try {
+  result = await queryAppsAsync({
+    categories,
+    categoryMode,
+    type,
+    q,
+    page,
+    limit,
+  });
+} catch (e) {
+  errorMessage = "An error occurred while loading apps. Please try again.";
+  result = { apps: [], pagination: { page: 1, limit: 50, total: 0, totalPages: 1 } };
+}
+
+let categoryFilterMessage = categories.map((c) => translations[c]).join(", ");
+const fullCategoryMessage = categoryFilterMessage;
+if (categoryFilterMessage.length > 50) {
+  categoryFilterMessage = `${categoryFilterMessage.slice(0, 50)}...`;
+}
+---
+
+<Layout>
+  <div class="container mx-auto px-4 py-6">
+    <h1 class="sr-only">{translations["apps"] || "Apps"}</h1>
+    <FilterForm
+      translations={translations}
+      allCategories={allCategories}
+      categories={categories}
+      categoryMode={categoryMode}
+      q={q}
+    />
+
+    <!-- Results header -->
+    <div class="mb-6 px-4 py-3 bg-surface border border-border rounded-lg flex items-center justify-between gap-2">
+      <p class="text-text-muted text-sm">
+        <span class="font-medium text-text">{result.apps.length}</span> / <span
+          class="font-medium text-text">{result.pagination.total}</span
+        >
+        {translations["apps"] || "apps"}
+        {categories.length > 0 && ` • `}
+        {categories.length > 0 && (
+          <span title={fullCategoryMessage} class="text-primary-300">{categoryFilterMessage}</span>
+        )}
+        {q && ` • `}
+        {q && <span class="text-primary-300">"{q}"</span>}
+      </p>
+      {(categories.length > 0 || q) && (
+        <a href="/apps" class="text-xs text-text-muted hover:text-primary-500 transition-colors whitespace-nowrap shrink-0">
+          {translations["clearFilters"] || "Clear filters"} &times;
+        </a>
+      )}
+    </div>
+
+    {
+      errorMessage && (
+        <div class="mb-6 p-4 bg-red-900/20 border border-red-800/40 rounded-lg">
+          <p class="text-red-400 text-sm">{errorMessage}</p>
+        </div>
+      )
+    }
+
+    <!-- App grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
+      {
+        result.apps.length === 0 && !errorMessage ? (
+          <div class="col-span-full flex flex-col items-center justify-center py-16 text-center">
+            <div class="w-14 h-14 bg-surface-hover rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-text-subtle" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-text-secondary mb-1">
+              {translations["noAppsFound"] || "No apps found"}
+            </h3>
+            <p class="text-text-subtle text-sm max-w-md">
+              {q
+                ? (translations["noAppsFoundSearch"] || "Try adjusting your search query or filters.")
+                : (translations["noAppsFoundFilters"] || "Try selecting different categories or clearing filters.")}
+            </p>
+          </div>
+        ) : (
+          result.apps.map((app) => (
+            <AppCard
+              app={app}
+              translations={translations}
+              currentLanguage={currentLanguage}
+              hideCategories={categories.length === 1}
+            />
+          ))
+        )
+      }
+    </div>
+
+    {
+      !errorMessage && (
+        <Pagination
+          page={page}
+          totalPages={result.pagination.totalPages}
+          categories={categories}
+          url={Astro.url}
+        />
+      )
+    }
+  </div>
+</Layout>
+
+<script is:inline>
+  (() => {
+    window.copyToClipboard = (text) => {
+      navigator.clipboard
+        .writeText(text)
+        .then(() => {
+          const toast = document.createElement("div");
+          toast.className =
+            "fixed top-4 left-1/2 -translate-x-1/2 z-50 px-4 py-3 bg-primary-600 rounded-lg shadow-xl flex items-center animate-fade-in sm:left-auto sm:right-4 sm:translate-x-0";
+          toast.setAttribute('role', 'status');
+          toast.innerHTML = `
+            <div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-white/20 mr-2">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div class="font-medium text-sm text-white">Copied to clipboard!</div>
+           `;
+          document.body.appendChild(toast);
+
+          setTimeout(() => {
+            toast.classList.add("animate-fade-out");
+            setTimeout(() => toast.remove(), 300);
+          }, 2000);
+        })
+        .catch(() => {
+          alert("Failed to copy to clipboard");
+        });
+    };
+  })();
+</script>

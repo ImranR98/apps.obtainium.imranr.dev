@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #6438B5;
+  --color-primary-50: #EDE7F6;
+  --color-primary-100: #D1C4E9;
+  --color-primary-200: #B39DDB;
+  --color-primary-300: #9575CD;
+  --color-primary-400: #7E57C2;
+  --color-primary-500: #6438B5;
+  --color-primary-600: #512DA8;
+  --color-primary-700: #4527A0;
+  --color-primary-800: #311B92;
+  --color-primary-900: #1A0E4A;
+
+  --color-surface: light-dark(#FFFFFF, #18181b);
+  --color-surface-hover: light-dark(#F0EEF6, #27272a);
+  --color-surface-alt: light-dark(#E8E6ED, #3f3f46);
+  --color-border: light-dark(#E5E4EC, #27272a);
+  --color-border-hover: light-dark(#CCC9D6, #3f3f46);
+  --color-text: light-dark(#1C1B1F, #f4f4f5);
+  --color-text-secondary: light-dark(#49454F, #d4d4d8);
+  --color-text-muted: light-dark(#7B7883, #a1a1aa);
+  --color-text-subtle: light-dark(#9F9BA3, #71717a);
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background: light-dark(#F5F3FA, #0E0E14);
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(ellipse at 25% 0%, rgba(100, 56, 181, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 75% 100%, rgba(100, 56, 181, 0.06) 0%, transparent 50%);
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-8px); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}
+
+.animate-fade-out {
+  animation: fade-out 0.2s ease-out forwards;
+}
+
+select[multiple] {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-300) light-dark(#D0CED6, #27272a);
+}
+
+select[multiple]::-webkit-scrollbar {
+  width: 6px;
+}
+
+select[multiple]::-webkit-scrollbar-track {
+  background: light-dark(#E5E4EC, #27272a);
+  border-radius: 3px;
+}
+
+select[multiple]::-webkit-scrollbar-thumb {
+  background: var(--color-primary-400);
+  border-radius: 3px;
+}
+
+select[multiple] option {
+  padding: 0.5rem;
+  margin: 0.125rem 0;
+  border-radius: 0.375rem;
+  color: light-dark(#49454F, #d4d4d8);
+}
+
+select[multiple] option:checked {
+  background: linear-gradient(0deg, #D1C4E9, #D1C4E9) !important;
+  color: #311B92 !important;
+}
+
+select[multiple]:focus option:checked {
+  background: linear-gradient(0deg, #D1C4E9, #D1C4E9) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  select[multiple] option:checked {
+    background: linear-gradient(0deg, #512DA8, #512DA8) !important;
+    color: #D1C4E9 !important;
+  }
+
+  select[multiple]:focus option:checked {
+    background: linear-gradient(0deg, #B39DDB, #B39DDB) !important;
+  }
+}

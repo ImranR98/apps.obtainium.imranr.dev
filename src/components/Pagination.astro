@@ -1,0 +1,132 @@
+---
+export type Props = {
+  page: number;
+  totalPages: number;
+  categories: string[];
+  url: URL;
+};
+
+const { page, totalPages, categories, url } = Astro.props as Props;
+
+const getPageHref = (pageNum: number) => {
+  const params = new URLSearchParams({
+    ...Object.fromEntries(url.searchParams),
+    categories: categories.join(","),
+    category: "",
+    page: String(pageNum),
+  });
+  return `?${params}`;
+};
+
+const PAGINATION_WINDOW_SIZE = 3;
+
+type PaginationItem = { type: "page"; value: number } | { type: "ellipsis" };
+
+const getPaginationItems = (windowSize = PAGINATION_WINDOW_SIZE): PaginationItem[] => {
+  const items: PaginationItem[] = [];
+
+  if (totalPages <= windowSize) {
+    for (let i = 1; i <= totalPages; i++) {
+      items.push({ type: "page" as const, value: i });
+    }
+    return items;
+  }
+
+  const pages = new Set<number>();
+  pages.add(1);
+  pages.add(totalPages);
+
+  const startWindow = Math.max(2, page - Math.floor((windowSize - 1) / 2));
+  let endWindow = Math.min(totalPages - 1, page + Math.floor(windowSize / 2));
+
+  if (endWindow - startWindow + 1 > windowSize) {
+    endWindow = startWindow + windowSize - 1;
+  }
+
+  for (let i = Math.max(2, startWindow); i <= endWindow; i++) {
+    pages.add(i);
+  }
+
+  const sorted = Array.from(pages).sort((a, b) => a - b);
+  for (let i = 0; i < sorted.length; i++) {
+    const p = sorted[i];
+    if (i > 0 && sorted[i] - sorted[i - 1] > 1) {
+      items.push({ type: "ellipsis" as const });
+    }
+    items.push({ type: "page" as const, value: p });
+  }
+
+  return items;
+};
+---
+
+{
+  totalPages > 1 && (
+    <div class="flex justify-center mt-8">
+      <nav class="flex items-center gap-1" aria-label="Pagination">
+        {page > 1 && (
+          <a
+            href={getPageHref(page - 1)}
+            class="px-3 py-1.5 bg-surface-hover text-text-muted text-sm rounded-lg hover:bg-surface-alt hover:text-text transition-colors duration-200"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </a>
+        )}
+
+        <div class="flex items-center gap-1">
+          {getPaginationItems().map((item) =>
+            item.type === "ellipsis" ? (
+              <span class="px-2 text-text-subtle text-sm">...</span>
+            ) : (
+              <a
+                href={getPageHref(item.value)}
+                class={`px-3 py-1.5 text-sm rounded-lg transition-colors duration-200 ${
+                  item.value === page
+                    ? "bg-primary-600 text-white"
+                    : "bg-surface-hover text-text-muted hover:bg-surface-alt hover:text-text"
+                }`}
+              >
+                {item.value}
+              </a>
+            ),
+          )}
+        </div>
+
+        {page < totalPages && (
+          <a
+            href={getPageHref(page + 1)}
+            class="px-3 py-1.5 bg-surface-hover text-text-muted text-sm rounded-lg hover:bg-surface-alt hover:text-text transition-colors duration-200"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+        )}
+      </nav>
+    </div>
+  )
+}
