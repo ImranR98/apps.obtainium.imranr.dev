@@ -2,10 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import Icon from "../components/Icon.astro";
 import { getCategoriesWithRandomApps, getAppConfig } from "../lib/query";
+import { getApps } from "../lib/data";
 import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
 
+const allApps = getApps();
 const categoryApps = getCategoriesWithRandomApps(4);
 const categories = Object.keys(categoryApps).sort();
+const categoryCounts: Record<string, number> = {};
+for (const app of allApps) {
+  for (const cat of app.categories) {
+    categoryCounts[cat] = (categoryCounts[cat] || 0) + 1
+  }
+}
 
 const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
 const translations = getLocalizedStrings(currentLanguage);
@@ -29,11 +37,11 @@ const translations = getLocalizedStrings(currentLanguage);
               </svg>
             </div>
           </div>
-          <h2 class="text-xl font-semibold text-text mb-2">
+          <h2 class="text-xl font-semibold text-text mb-1">
             {translations["allCategories"]}
           </h2>
-          <p class="text-text-subtle text-sm mb-5">
-            {translations["browseAllApps"]}
+          <p class="text-text-subtle text-xs mb-5">
+            {allApps.length} {translations["apps"] || "apps"}
           </p>
           <span
             class="inline-flex items-center px-5 py-2.5 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-500 transition-colors duration-200"
@@ -70,6 +78,7 @@ const translations = getLocalizedStrings(currentLanguage);
               <h3 class="text-sm font-semibold text-text">
                 {translations[cat]}
               </h3>
+              <span class="text-xs text-text-subtle">{categoryCounts[cat]}</span>
               <svg
                 class="w-3.5 h-3.5 text-text-subtle group-hover:text-primary-400 group-hover:translate-x-0.5 transition-all duration-200"
                 fill="none"

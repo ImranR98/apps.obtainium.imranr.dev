@@ -24,7 +24,7 @@ const { translations, allCategories, categories, categoryMode, q } =
         <label class="text-text-secondary text-sm font-medium"
           >{translations["categorySelect"]}</label
         >
-        <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-3" title={translations["categoryModeHelp"] || "Inclusive: apps in ANY selected category. Exclusive: apps in ALL selected categories."}>
           <label class="flex items-center cursor-pointer">
             <input
               type="radio"
@@ -96,11 +96,11 @@ const { translations, allCategories, categories, categoryMode, q } =
             </svg>
           </div>
           <input
-            type="text"
+            type="search"
             name="q"
             value={q}
             placeholder={translations["search"]}
-            class="w-full pl-10 pr-3 py-2 bg-surface-hover border border-border-hover rounded-lg text-text-secondary placeholder-text-subtle text-sm focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400"
+            class="w-full pl-10 pr-3 py-2 bg-surface-hover border border-border-hover rounded-lg text-text-secondary placeholder-text-subtle text-sm focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 [&::-webkit-search-cancel-button]:hidden"
           />
         </div>
       </div>
@@ -115,3 +115,21 @@ const { translations, allCategories, categories, categoryMode, q } =
     </div>
   </div>
 </form>
+
+<script is:inline>
+  (() => {
+    const searchInput = document.querySelector('input[name="q"]');
+    if (searchInput) {
+      document.addEventListener('keydown', (e) => {
+        if (
+          e.key === '/' &&
+          document.activeElement !== searchInput &&
+          !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName || '')
+        ) {
+          e.preventDefault();
+          searchInput.focus();
+        }
+      });
+    }
+  })();
+</script>
