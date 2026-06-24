@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://apps.obtainium.imranr.dev/sitemap.xml

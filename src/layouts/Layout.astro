@@ -36,16 +36,29 @@ const adsenseId =
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={siteTitle} />
     <meta name="twitter:description" content={siteDescription} />
-    <link
-      rel="icon"
-      href="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png"
-    />
+    <link rel="canonical" href={Astro.url} />
+    <link rel="icon" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+    <link rel="dns-prefetch" href="https://keepandroidopen.org" />
+    <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: translations["title"],
+      description: siteDescription,
+      url: Astro.url.origin,
+    })}></script>
     <noscript>
       <style>
         .jsonly {
@@ -129,8 +142,9 @@ const adsenseId =
         </a>
       </div>
     </footer>
+
+    <script is:inline async src="https://keepandroidopen.org/banner.js"></script>
   </body>
-  <script src="https://keepandroidopen.org/banner.js"></script>
 </html>
 
 <script is:inline>
