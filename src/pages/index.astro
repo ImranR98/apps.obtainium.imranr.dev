@@ -7,13 +7,13 @@ import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
 
 const allApps = getApps();
 const categoryApps = getCategoriesWithRandomApps(4);
-const categories = Object.keys(categoryApps).sort();
 const categoryCounts: Record<string, number> = {};
 for (const app of allApps) {
   for (const cat of app.categories) {
     categoryCounts[cat] = (categoryCounts[cat] || 0) + 1
   }
 }
+const categories = Object.keys(categoryApps).sort((a, b) => (categoryCounts[b] || 0) - (categoryCounts[a] || 0));
 
 const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
 const translations = getLocalizedStrings(currentLanguage);
@@ -78,20 +78,22 @@ const translations = getLocalizedStrings(currentLanguage);
               <h3 class="text-sm font-semibold text-text">
                 {translations[cat]}
               </h3>
-              <span class="text-xs text-text-subtle">{categoryCounts[cat]}</span>
-              <svg
-                class="w-3.5 h-3.5 text-text-subtle group-hover:text-primary-400 group-hover:translate-x-0.5 transition-all duration-200"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+              <div class="flex items-center gap-1.5">
+                <span class="text-xs text-text-subtle">{categoryCounts[cat]}</span>
+                <svg
+                  class="w-3.5 h-3.5 text-text-subtle group-hover:text-primary-400 group-hover:translate-x-0.5 transition-all duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
             </div>
             <div class="flex flex-wrap gap-2">
               {categoryApps[cat].map((app) => (
