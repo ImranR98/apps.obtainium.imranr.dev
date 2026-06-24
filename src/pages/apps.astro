@@ -28,16 +28,24 @@ const allCategories = [
 const { categories, categoryMode, type, q, page, limit } =
   await extractAppParamsFromRequest(Astro.request);
 
-const result = await queryAppsAsync({
-  categories,
-  categoryMode,
-  type,
-  q,
-  page,
-  limit,
-});
+let result;
+let errorMessage = "";
+try {
+  result = await queryAppsAsync({
+    categories,
+    categoryMode,
+    type,
+    q,
+    page,
+    limit,
+  });
+} catch (e) {
+  errorMessage = "An error occurred while loading apps. Please try again.";
+  result = { apps: [], pagination: { page: 1, limit: 50, total: 0, totalPages: 1 } };
+}
 
 let categoryFilterMessage = categories.map((c) => translations[c]).join(", ");
+const fullCategoryMessage = categoryFilterMessage;
 if (categoryFilterMessage.length > 50) {
   categoryFilterMessage = `${categoryFilterMessage.slice(0, 50)}...`;
 }
@@ -243,107 +251,133 @@ const getPaginationItems = (
           class="font-medium">{result.pagination.total}</span
         >
         {translations["apps"] || "apps"}
-        {categories.length > 0 && ` • ${categoryFilterMessage}`}
+        {categories.length > 0 && ` • `}
+        {categories.length > 0 && (
+          <span title={fullCategoryMessage}>{categoryFilterMessage}</span>
+        )}
         {q && ` • "${q}"`}
       </p>
     </div>
+
+    <!-- Error message -->
+    {
+      errorMessage && (
+        <div class="mb-6 p-4 bg-red-900/30 border border-red-700/30 rounded-lg">
+          <p class="text-red-300">{errorMessage}</p>
+        </div>
+      )
+    }
 
     <!-- App grid -->
     <div
       class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6"
     >
       {
-        result.apps.map((app) => {
-          const appConfigs = getAppConfig(app);
-          return (
-            <div class="group relative bg-linear-to-br from-gray-900/80 via-gray-900/70 to-gray-950/80 border border-gray-800 rounded-xl p-4 hover:border-primary-400/40 transition-all duration-300 flex flex-col h-full hover:shadow-2xl hover:shadow-primary-400/10 shadow-lg shadow-gray-900/30 transform-gpu">
-              <div class="flex items-start mb-3 relative z-10">
-                <Icon
-                  src={app.icon}
-                  alt={appConfigs[0].name}
-                  width={44}
-                  height={44}
-                  className="mr-3 rounded-lg group-hover:scale-110 transition-transform duration-300 group-hover:border-primary-400/50"
-                />
-                <div class="min-w-0 flex-1">
-                  <h3 class="text-base font-bold text-white truncate mb-1 group-hover:text-primary-100 transition-colors duration-300">
-                    <span><a href={appConfigs[0].url} class="hover:underline">{appConfigs[0].name}</a></span>
-                  </h3>
-                  <p class="text-gray-400 truncate group-hover:text-gray-300 transition-colors duration-300">
-                    by {appConfigs[0].author}
-                  </p>
+        result.apps.length === 0 && !errorMessage ? (
+          <div class="col-span-full flex flex-col items-center justify-center py-16 text-center">
+            <div class="text-5xl mb-4">🔍</div>
+            <h3 class="text-xl font-bold text-gray-300 mb-2">
+              {translations["noAppsFound"] || "No apps found"}
+            </h3>
+            <p class="text-gray-500 max-w-md">
+              {q
+                ? (translations["noAppsFoundSearch"] || "Try adjusting your search query or filters.")
+                : (translations["noAppsFoundFilters"] || "Try selecting different categories or clearing filters.")}
+            </p>
+          </div>
+        ) : (
+          result.apps.map((app) => {
+            const appConfigs = getAppConfig(app);
+            return (
+              <div class="group relative bg-linear-to-br from-gray-900/80 via-gray-900/70 to-gray-950/80 border border-gray-800 rounded-xl p-4 hover:border-primary-400/40 transition-all duration-300 flex flex-col h-full hover:shadow-2xl hover:shadow-primary-400/10 shadow-lg shadow-gray-900/30 transform-gpu">
+                <div class="flex items-start mb-3 relative z-10">
+                  <Icon
+                    src={app.icon}
+                    alt={appConfigs[0].name}
+                    width={44}
+                    height={44}
+                    className="mr-3 rounded-lg group-hover:scale-110 transition-transform duration-300 group-hover:border-primary-400/50"
+                  />
+                  <div class="min-w-0 flex-1">
+                    <h3 class="text-base font-bold text-white truncate mb-1 group-hover:text-primary-100 transition-colors duration-300">
+                      <span><a href={appConfigs[0].url} class="hover:underline">{appConfigs[0].name}</a></span>
+                    </h3>
+                    <p class="text-gray-400 truncate group-hover:text-gray-300 transition-colors duration-300">
+                      by {appConfigs[0].author}
+                    </p>
+                  </div>
+                  {appConfigs.length > 1 &&
+                    (appConfigs[0] as ComplexAppConfig).altLabel && (
+                      <span class="px-2 py-0.5 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700 group-hover:border-primary-500/50 group-hover:text-primary-200 transition-all duration-300">
+                        {(appConfigs[0] as ComplexAppConfig).altLabel}
+                      </span>
+                    )}
                 </div>
-                {appConfigs.length > 1 &&
-                  (appConfigs[0] as ComplexAppConfig).altLabel && (
-                    <span class="px-2 py-0.5 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700 group-hover:border-primary-500/50 group-hover:text-primary-200 transition-all duration-300">
-                      {(appConfigs[0] as ComplexAppConfig).altLabel}
-                    </span>
-                  )}
-              </div>
-              <p class="text-gray-300 mb-3 line-clamp-2 group-hover:text-gray-200 transition-colors duration-300">
-                {pickLocalTranslation(app.description, currentLanguage)}
-              </p>
-              {categories.length !== 1 && (
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  {app.categories.map((cat: string) => (
-                    <span class="px-2 py-0.5 bg-primary-700/30 text-primary-100 text-sm font-medium rounded border border-primary-700/50 group-hover:border-primary-500 group-hover:bg-primary-700/40 transition-all duration-300">
-                      {translations[cat]}
-                    </span>
-                  ))}
-                </div>
-              )}
-              <div class="mt-auto pt-3">
-                <div class="flex gap-2">
-                  <button
-                    type="button"
-                    class="jsonly flex-1 px-3 py-2 bg-linear-to-r from-gray-700 to-gray-800 text-white font-medium rounded-md hover:from-gray-600 hover:to-gray-700 transition-all duration-200 hover:shadow-lg"
-                    onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, 0))})`}
-                  >
-                    {translations["copy"]}
-                  </button>
-                  <a
-                    class="flex-1 px-3 py-2 bg-linear-to-r from-primary-600 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 text-center hover:shadow-lg hover:shadow-primary-400/20"
-                    href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, 0))}`}
-                  >
-                    {translations["install"]}
-                  </a>
-                </div>
-                {appConfigs.length > 1 && (
-                  <div class="space-y-2 pt-3 mt-3 border-t border-gray-800">
-                    {appConfigs.slice(1).map((c: ComplexAppConfig, index) => (
-                      <div class="flex items-center justify-between">
-                        <span class="px-2 py-0.5 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700 group-hover:border-primary-500/50 group-hover:text-primary-200 transition-all duration-300">
-                          {c.altLabel || c.name}
-                        </span>
-                        <div class="flex gap-1.5">
-                          <button
-                            type="button"
-                            class="jsonly px-2 py-1 bg-linear-to-r from-gray-700 to-gray-800 text-white text-sm font-medium rounded hover:from-gray-600 hover:to-gray-700 transition-all duration-200 hover:shadow"
-                            onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, index + 1))})`}
-                          >
-                            {translations["copy"]}
-                          </button>
-                          <a
-                            class="px-2 py-1 bg-linear-to-r from-primary-600 to-primary-700 text-white text-sm font-medium rounded hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow hover:shadow-primary-400/20"
-                            href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, index + 1))}`}
-                          >
-                            {translations["install"]}
-                          </a>
-                        </div>
-                      </div>
+                <p class="text-gray-300 mb-3 line-clamp-2 group-hover:text-gray-200 transition-colors duration-300">
+                  {pickLocalTranslation(app.description, currentLanguage)}
+                </p>
+                {categories.length !== 1 && (
+                  <div class="flex flex-wrap gap-1.5 mb-4">
+                    {app.categories.map((cat: string) => (
+                      <span class="px-2 py-0.5 bg-primary-700/30 text-primary-100 text-sm font-medium rounded border border-primary-700/50 group-hover:border-primary-500 group-hover:bg-primary-700/40 transition-all duration-300">
+                        {translations[cat]}
+                      </span>
                     ))}
                   </div>
                 )}
+                <div class="mt-auto pt-3">
+                  <div class="flex gap-2">
+                    <button
+                      type="button"
+                      class="jsonly flex-1 px-3 py-2 bg-linear-to-r from-gray-700 to-gray-800 text-white font-medium rounded-md hover:from-gray-600 hover:to-gray-700 transition-all duration-200 hover:shadow-lg"
+                      onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, 0))})`}
+                    >
+                      {translations["copy"]}
+                    </button>
+                    <a
+                      class="flex-1 px-3 py-2 bg-linear-to-r from-primary-600 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 text-center hover:shadow-lg hover:shadow-primary-400/20"
+                      href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, 0))}`}
+                    >
+                      {translations["install"]}
+                    </a>
+                  </div>
+                  {appConfigs.length > 1 && (
+                    <div class="space-y-2 pt-3 mt-3 border-t border-gray-800">
+                      {appConfigs.slice(1).map((c: ComplexAppConfig, index) => (
+                        <div class="flex items-center justify-between">
+                          <span class="px-2 py-0.5 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700 group-hover:border-primary-500/50 group-hover:text-primary-200 transition-all duration-300">
+                            {c.altLabel || c.name}
+                          </span>
+                          <div class="flex gap-1.5">
+                            <button
+                              type="button"
+                              class="jsonly px-2 py-1 bg-linear-to-r from-gray-700 to-gray-800 text-white text-sm font-medium rounded hover:from-gray-600 hover:to-gray-700 transition-all duration-200 hover:shadow"
+                              onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, index + 1))})`}
+                            >
+                              {translations["copy"]}
+                            </button>
+                            <a
+                              class="px-2 py-1 bg-linear-to-r from-primary-600 to-primary-700 text-white text-sm font-medium rounded hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow hover:shadow-primary-400/20"
+                              href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, index + 1))}`}
+                            >
+                              {translations["install"]}
+                            </a>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          );
-        })
+            );
+          })
+        )
       }
     </div>
 
     <!-- Pagination -->
     {
-      result.pagination.totalPages > 1 && (
+      result.pagination.totalPages > 1 && !errorMessage && (
         <div class="flex justify-center mt-8">
           <nav class="flex items-center justify-center gap-1.5">
             {page > 1 && (
