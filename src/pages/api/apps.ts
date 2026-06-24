@@ -4,6 +4,9 @@ import { extractAppParamsFromRequest, queryAppsAsync } from '../../lib/query'
 export const GET: APIRoute = async ({ request }) => {
   const result = await queryAppsAsync(await extractAppParamsFromRequest(request))
   return new Response(JSON.stringify(result), {
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'public, max-age=300, s-maxage=600',
+    },
   })
 }

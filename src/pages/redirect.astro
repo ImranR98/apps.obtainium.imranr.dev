@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
 
 const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
-const translations = await getLocalizedStrings(currentLanguage);
+const translations = getLocalizedStrings(currentLanguage);
 
 const url = Astro.url;
 const redirectUrl = url.searchParams.get("r");

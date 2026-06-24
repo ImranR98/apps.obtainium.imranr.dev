@@ -1,26 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Icon from "../components/Icon.astro";
+import AppCard from "../components/AppCard.astro";
+import FilterForm from "../components/FilterForm.astro";
+import Pagination from "../components/Pagination.astro";
 import {
-  getAppConfig,
   queryAppsAsync,
   extractAppParamsFromRequest,
 } from "../lib/query";
 import { getApps } from "../lib/data";
 import {
   getCurrentLanguage,
-  pickLocalTranslation,
   getLocalizedStrings,
 } from "../lib/i18n";
-import type { ComplexApp, ComplexAppConfig, SimpleApp } from "../lib/types";
-
-type PaginationItem = { type: "page"; value: number } | { type: "ellipsis" };
 
 const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
-const translations = await getLocalizedStrings(currentLanguage);
+const translations = getLocalizedStrings(currentLanguage);
 
-const url = Astro.url;
-const allApps = await getApps();
+const allApps = getApps();
 const allCategories = [
   ...new Set(allApps.flatMap((app) => app.categories)),
 ].sort();
@@ -49,194 +45,20 @@ const fullCategoryMessage = categoryFilterMessage;
 if (categoryFilterMessage.length > 50) {
   categoryFilterMessage = `${categoryFilterMessage.slice(0, 50)}...`;
 }
-
-const getAppConfigString = (app: SimpleApp | ComplexApp, configIndex = 0) => {
-  const description = pickLocalTranslation(app.description, currentLanguage);
-
-  if (app.type === "complex") {
-    const config = JSON.parse(JSON.stringify(app.configs[configIndex]));
-    if (description) {
-      try {
-        const settings = JSON.parse(config.additionalSettings || "{}");
-        if (!settings.about) settings.about = description;
-        config.additionalSettings = JSON.stringify(settings);
-      } catch (e) {
-        console.error(config);
-      }
-    }
-    if (config.altLabel) delete config.altLabel;
-    return JSON.stringify(config);
-  }
-  return JSON.stringify(app.config);
-};
-
-const getPageHref = (pageNum: number) => {
-  const params = new URLSearchParams({
-    ...Object.fromEntries(url.searchParams),
-    categories: categories.join(","),
-    category: "",
-    page: String(pageNum),
-  });
-  return `?${params}`;
-};
-
-const PAGINATION_WINDOW_SIZE = 3;
-
-const getPaginationItems = (
-  windowSize = PAGINATION_WINDOW_SIZE,
-): PaginationItem[] => {
-  const totalPages = result.pagination.totalPages;
-  const currentPage = page;
-  const items: PaginationItem[] = [];
-
-  if (totalPages <= windowSize) {
-    for (let i = 1; i <= totalPages; i++) {
-      items.push({ type: "page" as const, value: i });
-    }
-    return items;
-  }
-
-  const pages = new Set<number>();
-  pages.add(1);
-  pages.add(totalPages);
-
-  let startWindow = Math.max(2, currentPage - Math.floor((windowSize - 1) / 2));
-  let endWindow = Math.min(totalPages - 1, currentPage + Math.floor(windowSize / 2));
-
-  if (endWindow - startWindow + 1 > windowSize) {
-    endWindow = startWindow + windowSize - 1;
-  }
-  startWindow = Math.max(2, startWindow);
-  endWindow = Math.min(totalPages - 1, endWindow);
-
-  for (let i = startWindow; i <= endWindow; i++) {
-    pages.add(i);
-  }
-
-  const sorted = Array.from(pages).sort((a, b) => a - b);
-  for (let i = 0; i < sorted.length; i++) {
-    const pageNum = sorted[i];
-    if (i > 0 && sorted[i] - sorted[i - 1] > 1) {
-      items.push({ type: "ellipsis" as const });
-    }
-    items.push({ type: "page" as const, value: pageNum });
-  }
-
-  return items;
-};
 ---
 
 <Layout>
   <div class="container mx-auto px-4 py-6">
-    <!-- Filter/Search Form -->
-    <form
-      method="get"
-      action="/apps"
-      class="bg-surface border border-border rounded-xl p-5 mb-6"
-    >
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
-        <!-- Categories column -->
-        <div class="lg:col-span-2">
-          <div class="flex items-center justify-between mb-2">
-            <label class="text-text-secondary text-sm font-medium"
-              >{translations["categorySelect"]}</label
-            >
-            <div class="flex items-center space-x-3">
-              <label class="flex items-center cursor-pointer">
-                <input
-                  type="radio"
-                  name="categoryMode"
-                  value="exclusive"
-                  checked={categoryMode === "exclusive"}
-                   class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-hover focus:outline-none focus:ring-1 focus:ring-primary-400"
-                />
-                <span class="ml-1.5 text-text-muted text-sm"
-                  >{translations["exclusive"]}</span
-                >
-              </label>
-              <label class="flex items-center cursor-pointer">
-                <input
-                  type="radio"
-                  name="categoryMode"
-                  value="inclusive"
-                  checked={categoryMode === "inclusive"}
-                  class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-hover focus:outline-none focus:ring-1 focus:ring-primary-400"
-                />
-                <span class="ml-1.5 text-text-muted text-sm"
-                  >{translations["inclusive"]}</span
-                >
-              </label>
-            </div>
-          </div>
-
-          <select
-            name="category"
-            multiple
-            size="5"
-            class="w-full bg-surface-hover border border-border-hover rounded-lg text-text-secondary accent-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2 text-sm"
-          >
-            {
-              allCategories.map((cat: string) => (
-                <option
-                  value={cat}
-                  selected={categories.includes(cat)}
-                  class="px-2 py-1.5 rounded-md"
-                >
-                  {translations[cat]}
-                </option>
-              ))
-            }
-          </select>
-        </div>
-
-        <!-- App type and search column -->
-        <div class="lg:col-span-2 flex flex-col justify-between">
-          <div class="mb-3">
-            <label class="block text-text-secondary text-sm font-medium mb-1.5"
-              >{translations["search"]}</label
-            >
-            <div class="relative">
-              <div
-                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  class="w-4 h-4 text-text-subtle"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
-                </svg>
-              </div>
-              <input
-                type="text"
-                name="q"
-                value={q}
-                placeholder={translations["search"]}
-                class="w-full pl-10 pr-3 py-2 bg-surface-hover border border-border-hover rounded-lg text-text-secondary placeholder-text-subtle text-sm focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400"
-              />
-            </div>
-          </div>
-          <div>
-            <button
-              type="submit"
-              class="w-full px-4 py-2.5 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-500 transition-colors duration-200"
-            >
-              {translations["go"]}
-            </button>
-          </div>
-        </div>
-      </div>
-    </form>
+    <FilterForm
+      translations={translations}
+      allCategories={allCategories}
+      categories={categories}
+      categoryMode={categoryMode}
+      q={q}
+    />
 
     <!-- Results header -->
-    <div
-      class="mb-6 px-4 py-3 bg-surface border border-border rounded-lg"
-    >
+    <div class="mb-6 px-4 py-3 bg-surface border border-border rounded-lg">
       <p class="text-text-muted text-sm">
         <span class="font-medium text-text">{result.apps.length}</span> / <span
           class="font-medium text-text">{result.pagination.total}</span
@@ -251,7 +73,6 @@ const getPaginationItems = (
       </p>
     </div>
 
-    <!-- Error message -->
     {
       errorMessage && (
         <div class="mb-6 p-4 bg-red-900/20 border border-red-800/40 rounded-lg">
@@ -261,9 +82,7 @@ const getPaginationItems = (
     }
 
     <!-- App grid -->
-    <div
-      class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4"
-    >
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
       {
         result.apps.length === 0 && !errorMessage ? (
           <div class="col-span-full flex flex-col items-center justify-center py-16 text-center">
@@ -282,145 +101,26 @@ const getPaginationItems = (
             </p>
           </div>
         ) : (
-          result.apps.map((app) => {
-            const appConfigs = getAppConfig(app);
-            return (
-              <div class="group relative bg-surface border border-border rounded-xl p-4 hover:border-border-hover transition-all duration-200 flex flex-col h-full">
-                <div class="flex items-start mb-3">
-                  <Icon
-                    src={app.icon}
-                    alt={appConfigs[0].name}
-                    width={44}
-                    height={44}
-                    className="mr-3 rounded-lg"
-                  />
-                  <div class="min-w-0 flex-1">
-                    <h3 class="text-sm font-semibold text-text truncate">
-                      <a href={appConfigs[0].url} class="hover:text-primary-500 transition-colors">{appConfigs[0].name}</a>
-                    </h3>
-                    <p class="text-text-subtle text-xs truncate mt-0.5">
-                      by {appConfigs[0].author}
-                    </p>
-                  </div>
-                  {appConfigs.length > 1 &&
-                    (appConfigs[0] as ComplexAppConfig).altLabel && (
-                      <span class="px-2 py-0.5 bg-surface-hover text-text-muted text-xs font-medium rounded-md border border-border-hover">
-                        {(appConfigs[0] as ComplexAppConfig).altLabel}
-                      </span>
-                    )}
-                </div>
-                <p class="text-text-muted text-sm mb-3 line-clamp-2">
-                  {pickLocalTranslation(app.description, currentLanguage)}
-                </p>
-                {categories.length !== 1 && (
-                  <div class="flex flex-wrap gap-1.5 mb-4">
-                    {app.categories.map((cat: string) => (
-                      <span class="px-2 py-0.5 bg-primary-50/80 text-primary-700 text-xs font-medium rounded-md">
-                        {translations[cat]}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                <div class="mt-auto pt-3">
-                  <div class="flex gap-2">
-                    <button
-                      type="button"
-                      class="jsonly flex-1 px-3 py-2 bg-surface-hover text-text-secondary text-sm font-medium rounded-lg hover:bg-surface-alt transition-colors duration-200"
-                      onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, 0))})`}
-                    >
-                      {translations["copy"]}
-                    </button>
-                    <a
-                      class="flex-1 px-3 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-500 transition-colors duration-200 text-center"
-                      href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, 0))}`}
-                    >
-                      {translations["install"]}
-                    </a>
-                  </div>
-                  {appConfigs.length > 1 && (
-                    <div class="space-y-2 pt-3 mt-3 border-t border-border">
-                      {appConfigs.slice(1).map((c: ComplexAppConfig, index) => (
-                        <div class="flex items-center justify-between">
-                          <span class="px-2 py-0.5 bg-surface-hover text-text-muted text-xs font-medium rounded-md border border-border-hover">
-                            {c.altLabel || c.name}
-                          </span>
-                          <div class="flex gap-1.5">
-                            <button
-                              type="button"
-                              class="jsonly px-2.5 py-1.5 bg-surface-hover text-text-secondary text-xs font-medium rounded-md hover:bg-surface-alt transition-colors duration-200"
-                              onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, index + 1))})`}
-                            >
-                              {translations["copy"]}
-                            </button>
-                            <a
-                              class="px-2.5 py-1.5 bg-primary-600 text-white text-xs font-medium rounded-md hover:bg-primary-500 transition-colors duration-200"
-                              href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, index + 1))}`}
-                            >
-                              {translations["install"]}
-                            </a>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })
+          result.apps.map((app) => (
+            <AppCard
+              app={app}
+              translations={translations}
+              currentLanguage={currentLanguage}
+              hideCategories={categories.length === 1}
+            />
+          ))
         )
       }
     </div>
 
-    <!-- Pagination -->
     {
-      result.pagination.totalPages > 1 && !errorMessage && (
-        <div class="flex justify-center mt-8">
-          <nav class="flex items-center gap-1">
-            {page > 1 && (
-              <a
-                href={getPageHref(page - 1)}
-                class="px-3 py-1.5 bg-surface-hover text-text-muted text-sm rounded-lg hover:bg-surface-alt hover:text-text transition-colors duration-200"
-              >
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                </svg>
-              </a>
-            )}
-
-            <div class="flex items-center gap-1">
-              {getPaginationItems().map((item) => {
-                if (item.type === "ellipsis") {
-                  return <span class="px-2 text-text-subtle text-sm">...</span>;
-                }
-                if (item.type === "page") {
-                  return (
-                    <a
-                      href={getPageHref(item.value)}
-                      class={`px-3 py-1.5 text-sm rounded-lg transition-colors duration-200 ${
-                        item.value === page
-                          ? "bg-primary-600 text-white"
-                          : "bg-surface-hover text-text-muted hover:bg-surface-alt hover:text-text"
-                      }`}
-                    >
-                      {item.value}
-                    </a>
-                  );
-                }
-                return null;
-              })}
-            </div>
-            {page < result.pagination.totalPages && (
-              <a
-                href={getPageHref(page + 1)}
-                class="px-3 py-1.5 bg-surface-hover text-text-muted text-sm rounded-lg hover:bg-surface-alt hover:text-text transition-colors duration-200"
-              >
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
-            )}
-          </nav>
-        </div>
+      !errorMessage && (
+        <Pagination
+          page={page}
+          totalPages={result.pagination.totalPages}
+          categories={categories}
+          url={Astro.url}
+        />
       )
     }
   </div>

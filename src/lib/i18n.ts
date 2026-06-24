@@ -9,11 +9,8 @@ export const getCurrentLanguage = async (url: URL, request: Request) => {
   let browserLang = 'en'
   const browserLangHeader = request.headers.get('accept-language')
   if (browserLangHeader) {
-    const languages = browserLangHeader.split(',')
-    for (const lang of languages) {
-      const code = lang.split(';')[0].trim().split('-')[0].toLowerCase()
-      browserLang = code
-    }
+    const preferred = browserLangHeader.split(',')[0]
+    browserLang = preferred.split(';')[0].trim().split('-')[0].toLowerCase()
   }
   return langParam || browserLang || 'en'
 }
@@ -40,28 +37,28 @@ const translationCache: { [key: string]: { [key: string]: string } } = {}
 /**
  * Get localized strings for a given language with caching
  */
-export const getLocalizedStrings = async (language: string) => {
+export const getLocalizedStrings = (language: string) => {
   if (translationCache[language]) {
     return translationCache[language]
   }
   const thisLang: { [key: string]: string } = {}
   let atLeastOne = false
-  const cats = await getCategories()
-  Object.keys(cats).forEach(c => {
+  const cats = getCategories()
+  for (const c of Object.keys(cats)) {
     const tr = pickLocalTranslation(cats[c], language)
     if (tr) {
       atLeastOne = true
     }
     thisLang[c] = tr || c
-  })
-  const strings = await getStrings()
-  Object.keys(strings).forEach(s => {
+  }
+  const strings = getStrings()
+  for (const s of Object.keys(strings)) {
     const tr = pickLocalTranslation(strings[s], language)
     if (tr) {
       atLeastOne = true
     }
     thisLang[s] = tr || s
-  })
+  }
   if (atLeastOne) {
     translationCache[language] = thisLang
   }

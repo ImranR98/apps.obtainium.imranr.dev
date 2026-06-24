@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import type { SimpleApp, ComplexApp, Translations } from './types'
 
-
 const DATA_DIR = path.join(process.cwd(), 'public/data')
 const APPS_DIR = path.join(DATA_DIR, '/apps')
 const CATEGORIES_FILE = path.join(DATA_DIR, '/categories.json')
@@ -27,40 +26,31 @@ let categories: Translations = {}
 let apps: (SimpleApp | ComplexApp)[] = []
 let strings: Translations = {}
 
-/**
- * Get categories translations
- */
-export const getCategories = async (): Promise<Translations> => {
+export const getCategories = (): Translations => {
   if (Object.keys(categories).length === 0) {
     categories = JSON.parse(fs.readFileSync(CATEGORIES_FILE, 'utf8'))
   }
   return categories
 }
 
-/**
- * Get strings translations
- */
-export const getStrings = async (): Promise<Translations> => {
+export const getStrings = (): Translations => {
   if (Object.keys(strings).length === 0) {
-    strings = JSON.parse(fs.readFileSync(path.join(STRINGS_FILE), 'utf8'))
+    strings = JSON.parse(fs.readFileSync(STRINGS_FILE, 'utf8'))
   }
   return strings
 }
 
-/**
- * Get apps with icons validation and categorization
- */
-export const getApps = async (): Promise<(SimpleApp | ComplexApp)[]> => {
+export const getApps = (): (SimpleApp | ComplexApp)[] => {
   if (apps.length === 0) {
-    const cats = Object.keys(await getCategories())
+    const cats = Object.keys(getCategories())
     const files = getAllJsonFiles(APPS_DIR)
-    await Promise.all(files.map(async filePath => {
+    for (const filePath of files) {
       try {
         const data = JSON.parse(fs.readFileSync(filePath, 'utf8'))
         const appBase = {
           icon: data.icon,
           categories: (data.categories as string[] | undefined || []).filter((cat: string) => cats.includes(cat)),
-          description: data.description || {}
+          description: data.description || {},
         }
         if (appBase.categories.length === 0) {
           appBase.categories.push('other')
@@ -80,23 +70,23 @@ export const getApps = async (): Promise<(SimpleApp | ComplexApp)[]> => {
           apps.push({
             ...appBase,
             configs: data.configs,
-            type: 'complex'
+            type: 'complex',
           })
         } else {
           apps.push({
             ...appBase,
             config: data.config,
-            type: 'simple'
+            type: 'simple',
           })
         }
       } catch (e) {
         console.error(`Error parsing ${filePath}`, e)
       }
-    }))
+    }
 
-    apps = apps.sort((a, b) => {
-      const nameA = a.type == 'simple' ? a.config.name : a.configs[0].name
-      const nameB = b.type == 'simple' ? b.config.name : b.configs[0].name
+    apps.sort((a, b) => {
+      const nameA = a.type === 'simple' ? a.config.name : a.configs[0].name
+      const nameB = b.type === 'simple' ? b.config.name : b.configs[0].name
       return nameA.localeCompare(nameB)
     })
   }

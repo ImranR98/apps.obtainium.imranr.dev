@@ -1,0 +1,117 @@
+---
+export interface Props {
+  translations: Record<string, string>;
+  allCategories: string[];
+  categories: string[];
+  categoryMode: "inclusive" | "exclusive";
+  q: string;
+}
+
+const { translations, allCategories, categories, categoryMode, q } =
+  Astro.props as Props;
+---
+
+<form
+  method="get"
+  action="/apps"
+  class="bg-surface border border-border rounded-xl p-5 mb-6"
+  role="search"
+  aria-label="Filter apps"
+>
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
+    <div class="lg:col-span-2">
+      <div class="flex items-center justify-between mb-2">
+        <label class="text-text-secondary text-sm font-medium"
+          >{translations["categorySelect"]}</label
+        >
+        <div class="flex items-center space-x-3">
+          <label class="flex items-center cursor-pointer">
+            <input
+              type="radio"
+              name="categoryMode"
+              value="exclusive"
+              checked={categoryMode === "exclusive"}
+              class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-hover focus:outline-none focus:ring-1 focus:ring-primary-400"
+            />
+            <span class="ml-1.5 text-text-muted text-sm"
+              >{translations["exclusive"]}</span
+            >
+          </label>
+          <label class="flex items-center cursor-pointer">
+            <input
+              type="radio"
+              name="categoryMode"
+              value="inclusive"
+              checked={categoryMode === "inclusive"}
+              class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-hover focus:outline-none focus:ring-1 focus:ring-primary-400"
+            />
+            <span class="ml-1.5 text-text-muted text-sm"
+              >{translations["inclusive"]}</span
+            >
+          </label>
+        </div>
+      </div>
+
+      <select
+        name="category"
+        multiple
+        size="5"
+        class="w-full bg-surface-hover border border-border-hover rounded-lg text-text-secondary accent-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2 text-sm"
+        aria-label={translations["categorySelect"]}
+      >
+        {
+          allCategories.map((cat: string) => (
+            <option
+              value={cat}
+              selected={categories.includes(cat)}
+              class="px-2 py-1.5 rounded-md"
+            >
+              {translations[cat]}
+            </option>
+          ))
+        }
+      </select>
+    </div>
+
+    <div class="lg:col-span-2 flex flex-col justify-between">
+      <div class="mb-3">
+        <label class="block text-text-secondary text-sm font-medium mb-1.5"
+          >{translations["search"]}</label
+        >
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+          >
+            <svg
+              class="w-4 h-4 text-text-subtle"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
+            </svg>
+          </div>
+          <input
+            type="text"
+            name="q"
+            value={q}
+            placeholder={translations["search"]}
+            class="w-full pl-10 pr-3 py-2 bg-surface-hover border border-border-hover rounded-lg text-text-secondary placeholder-text-subtle text-sm focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400"
+          />
+        </div>
+      </div>
+      <div>
+        <button
+          type="submit"
+          class="w-full px-4 py-2.5 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-500 transition-colors duration-200"
+        >
+          {translations["go"]}
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

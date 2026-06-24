@@ -4,11 +4,11 @@ import Icon from "../components/Icon.astro";
 import { getCategoriesWithRandomApps, getAppConfig } from "../lib/query";
 import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
 
-const categoryApps = await getCategoriesWithRandomApps(4);
+const categoryApps = getCategoriesWithRandomApps(4);
 const categories = Object.keys(categoryApps).sort();
 
 const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
-const translations = await getLocalizedStrings(currentLanguage);
+const translations = getLocalizedStrings(currentLanguage);
 ---
 
 <Layout>

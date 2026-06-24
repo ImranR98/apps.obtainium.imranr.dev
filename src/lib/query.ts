@@ -1,5 +1,6 @@
 import { getApps } from './data'
 import type { SimpleApp, ComplexApp, QueryOptions, PaginatedResult, SimpleAppConfig, ComplexAppConfig } from './types'
+import { pickLocalTranslation } from './i18n'
 
 function escapeRegex(str: string): string {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
@@ -10,6 +11,33 @@ function escapeRegex(str: string): string {
  */
 export const getAppConfig = (app: SimpleApp | ComplexApp): (SimpleAppConfig | ComplexAppConfig)[] => {
   return app.type === 'simple' ? [app.config] : app.configs
+}
+
+/**
+ * Serialize app config as JSON string, injecting description into additionalSettings
+ */
+export const getAppConfigString = (
+  app: SimpleApp | ComplexApp,
+  currentLanguage: string,
+  configIndex = 0,
+): string => {
+  const description = pickLocalTranslation(app.description, currentLanguage)
+
+  if (app.type === 'complex') {
+    const config = JSON.parse(JSON.stringify(app.configs[configIndex]))
+    if (description) {
+      try {
+        const settings = JSON.parse(config.additionalSettings || '{}')
+        if (!settings.about) settings.about = description
+        config.additionalSettings = JSON.stringify(settings)
+      } catch (e) {
+        console.error(config)
+      }
+    }
+    if (config.altLabel) delete config.altLabel
+    return JSON.stringify(config)
+  }
+  return JSON.stringify(app.config)
 }
 
 /**
@@ -49,7 +77,7 @@ export const queryAppsAsync = async (options: QueryOptions): Promise<PaginatedRe
     limit = 50
   } = options
 
-  const apps = await getApps()
+  const apps = getApps()
   let filteredApps = apps
 
   if (type !== 'both') {
@@ -93,8 +121,8 @@ export const queryAppsAsync = async (options: QueryOptions): Promise<PaginatedRe
 /**
  * Get categories with random apps (limited per category)
  */
-export const getCategoriesWithRandomApps = async (countPerCategory: number): Promise<Record<string, (SimpleApp | ComplexApp)[]>> => {
-  const apps = await getApps()
+export const getCategoriesWithRandomApps = (countPerCategory: number): Record<string, (SimpleApp | ComplexApp)[]> => {
+  const apps = getApps()
   const categories: Record<string, (SimpleApp | ComplexApp)[]> = {}
 
   for (const app of apps) {

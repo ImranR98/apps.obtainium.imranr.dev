@@ -1,7 +1,12 @@
-const jsonPath = process.argv[2]
-const configsPath = `${__dirname}/data/apps`
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-const fs = require('fs')
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+const jsonPath = process.argv[2]
+const configsPath = path.join(__dirname, '..', 'public', 'data', 'apps')
 
 const existingAppIds = fs.readdirSync(configsPath).filter(f => f.toLowerCase().endsWith('.json')).map(f => f.slice(0, -5))
 

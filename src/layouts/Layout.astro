@@ -4,7 +4,20 @@ import "../styles/global.css";
 
 const { title } = Astro.props;
 const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
-const translations = await getLocalizedStrings(currentLanguage);
+const translations = getLocalizedStrings(currentLanguage);
+
+const siteTitle = title
+  ? `${title} | ${translations["title"]}`
+  : translations["title"];
+const siteDescription =
+  translations["subtitle"] || "Crowdsourced app configurations for Obtainium";
+
+const plausibleUrl =
+  import.meta.env.PUBLIC_PLAUSIBLE_URL ||
+  "https://plausible.imranr.dev/js/pa-QUJdq-IXltRTJmyc-Jfmy.js";
+const adsenseId =
+  import.meta.env.PUBLIC_ADSENSE_ID ||
+  "ca-pub-6629162404802829";
 ---
 
 <!doctype html>
@@ -12,7 +25,17 @@ const translations = await getLocalizedStrings(currentLanguage);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title ? `${title} |` : ""} {translations["title"]}</title>
+    <title>{siteTitle}</title>
+    <meta name="description" content={siteDescription} />
+    <meta name="theme-color" content="#6438B5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1A0E4A" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={siteDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={siteTitle} />
+    <meta name="twitter:description" content={siteDescription} />
     <link
       rel="icon"
       href="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png"
@@ -30,26 +53,24 @@ const translations = await getLocalizedStrings(currentLanguage);
         }
       </style>
     </noscript>
-    <script
-      async
-      src="https://plausible.imranr.dev/js/pa-QUJdq-IXltRTJmyc-Jfmy.js"
-    ></script>
-    <script>
+    <script is:inline async src={plausibleUrl}></script>
+    <script is:inline>
       ((window.plausible =
         window.plausible ||
         function () {
-          (plausible.q = plausible.q || []).push(arguments);
+          (window.plausible.q = window.plausible.q || []).push(arguments);
         }),
-        (plausible.init =
-          plausible.init ||
+        (window.plausible.init =
+          window.plausible.init ||
           function (i) {
-            plausible.o = i || {};
+            window.plausible.o = i || {};
           }));
-      plausible.init();
+      window.plausible.init();
     </script>
     <script
+      is:inline
       async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6629162404802829"
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
       crossorigin="anonymous"></script>
   </head>
   <body
@@ -82,7 +103,7 @@ const translations = await getLocalizedStrings(currentLanguage);
                 >{translations["about"]}</a
               >
               <a
-                href="https://github.com/ImranR98/apps.obtainium.imranr.dev/issues/new"
+                href="https://github.com/ImranR98/apps.obtainium.imranr.dev/issues"
                 target="_blank"
                 class="text-sm font-medium text-text-secondary hover:text-primary-500 transition-colors"
                 >{translations["contribute"]}</a
@@ -97,12 +118,10 @@ const translations = await getLocalizedStrings(currentLanguage);
       <slot />
     </main>
 
-    <footer
-      class="border-t border-border py-4 mt-8"
-    >
+    <footer class="border-t border-border py-4 mt-8">
       <div class="container mx-auto px-4 text-center">
         <a
-           class="text-xs text-text-subtle hover:text-primary-400 transition-colors"
+          class="text-xs text-text-subtle hover:text-primary-400 transition-colors"
           href="https://github.com/ImranR98/apps.obtainium.imranr.dev"
           target="_blank"
         >
