@@ -11,6 +11,7 @@
         }
     ],
     "icon": "https://github.com/protonpass/android-pass/blob/main/app/src/main/ic_launcher-playstore.png?raw=true",
+    "apkVerificationLocation": "https://protonapps.com/protonpass-android#hash",
     "categories": [
         "password_and_authentication"
     ],
