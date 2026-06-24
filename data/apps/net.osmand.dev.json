@@ -1,0 +1,17 @@
+{
+  "configs": [
+    {
+      "id": "net.osmand.dev",
+      "url": "https://download.osmand.net/latest-night-build/OsmAnd-default.apk",
+      "author": "osmandapp",
+      "name": "OsmAnd Nightly",
+      "categories": [
+        "maps_and_navigation"
+      ],
+      "overrideSource": "DirectAPKLink",
+      "description": {
+        "en": "Unstable Nightly Builds of OSMAnd free."
+      }
+    }
+  ]
+}
