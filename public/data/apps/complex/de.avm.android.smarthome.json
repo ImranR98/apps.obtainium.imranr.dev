@@ -1,0 +1,22 @@
+{
+    "configs": [
+        {
+            "id": "de.avm.android.smarthome",
+            "url": "https://service.avm.de/downloads/fritzapps/FritzAppSmartHome.apk",
+            "author": "FRITZ! GmbH",
+            "name": "FRITZ!App Smart Home",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"invertAPKFilter\":false,\"appName\":\"FRITZ!App Smart Home\",\"appAuthor\":\"FRITZ! GmbH\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"autoApkFilterByArch\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/vUJWKz2ISParTnWrXi6n64Nl9UJJsn2AygfQ6nawAgCkZts-0LeVlsqr310oPkS6qjA=w480-h960",
+    "categories": [
+        "automation"
+    ],
+    "description": {
+        "en": "Control your FRITZ! Smart Home devices conveniently at home or from the go.",
+        "de": "Steuern Sie Ihre FRITZ! Smart-Home-Geräte bequem zuhause und unterwegs.",
+        "pl": "Steruj swoimi urządzeniami FRITZ! Smart Home wygodnie z domu lub z daleka."
+    }
+}

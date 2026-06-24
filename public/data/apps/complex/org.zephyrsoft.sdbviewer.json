@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.zephyrsoft.sdbviewer",
+            "url": "https://codeberg.org/mathisdt/sdbviewer",
+            "author": "Mathis Dirksen-Thedens",
+            "name": "SDB Viewer",
+            "additionalSettings": "{\"apkFilterRegEx\":\"-signed\"}"
+        }
+    ],
+    "icon": "https://codeberg.org/mathisdt/sdbviewer/raw/branch/master/metadata/en-US/images/icon-small.png",
+    "categories": [
+    	"miscellaneous",
+        "utilities"
+    ],
+    "description": {
+        "en": "View song lyrics, a translation of it and guitar chords."
+    }
+}
