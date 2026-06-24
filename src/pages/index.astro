@@ -64,7 +64,7 @@ const translations = await getLocalizedStrings(currentLanguage);
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
       {
-        categories.map((cat: string, _: number) => (
+        categories.map((cat: string) => (
           <a
             href={`/apps?category=${cat}`}
             class="group relative block p-4 bg-linear-to-br from-gray-900/90 via-gray-900/80 to-gray-950/90 border border-gray-700/50 rounded-xl hover:border-primary-400/60 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/20 shadow-xl shadow-gray-900/20 transform-gpu backdrop-blur-sm"
@@ -88,13 +88,14 @@ const translations = await getLocalizedStrings(currentLanguage);
               </svg>
             </div>
             <div class="flex flex-wrap gap-2 mb-3 relative z-10">
-              {categoryApps[cat].map((app, _) => (
+              {categoryApps[cat].map((app, appIndex) => (
                 <Icon
                   src={app.icon}
                   alt={getAppConfig(app)[0].name}
                   width={36}
                   height={36}
                   className="rounded-lg group-hover:scale-110 transition-all duration-300 icon-float group-hover:border-primary-400/50"
+                  style={`--i: ${appIndex}`}
                 />
               ))}
             </div>
