@@ -1,0 +1,76 @@
+name: Auto Respond to App Requests
+
+on:
+    issues:
+        types: [opened]
+
+permissions:
+    contents: read
+    issues: write
+
+jobs:
+    respond:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository
+              uses: actions/checkout@v4
+
+            - name: Check word and character count
+              id: validation
+              run: |
+                  MIN_WORDS=5
+                  MIN_CHARS=10
+
+                  BODY=$(jq -r '.issue.body' "$GITHUB_EVENT_PATH")
+                  WORD_COUNT=$(echo "$BODY" | wc -w)
+                  CHAR_COUNT=$(echo -n "$BODY" | wc -m)
+
+                  if [ "$WORD_COUNT" -lt $MIN_WORDS ] || [ "$CHAR_COUNT" -lt $MIN_CHARS ]; then
+                    echo "too_short=true" >> "$GITHUB_OUTPUT"
+                    echo "words=$WORD_COUNT" >> "$GITHUB_OUTPUT"
+                    echo "chars=$CHAR_COUNT" >> "$GITHUB_OUTPUT"
+                  else
+                    echo "too_short=false" >> "$GITHUB_OUTPUT"
+                  fi
+                  echo "$GITHUB_OUTPUT"
+
+            - name: If spam, notify and close issue
+              if: steps.validation.outputs.too_short == 'true'
+              uses: actions/github-script@v7
+              env:
+                  WORDS: ${{ steps.validation.outputs.words }}
+                  CHARS: ${{ steps.validation.outputs.chars }}
+              with:
+                  script: |
+                      const { issue } = context.payload;
+
+                      await github.rest.issues.createComment({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        issue_number: issue.number,
+                        body: `⚠️ @${issue.user.login}\nTo protect against spam, this issue will be closed in a few minutes as it does not meet a minimum word and character count. Please create a more detailed post.`
+                      });
+
+                      await new Promise(resolve => setTimeout(resolve, 1000 * 60 * 2))
+
+                      await github.rest.issues.update({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        issue_number: issue.number,
+                        state: 'closed',
+                        state_reason: 'not_planned'
+                      });
+
+            - name: If not spam, post response comment
+              if: steps.validation.outputs.too_short != 'true'
+              uses: actions/github-script@v7
+              with:
+                  script: |
+                      const fs = require('fs');
+                      const RESPONSE_CONTENT = fs.readFileSync('.github/issue_auto_response.md', 'utf8');
+                      await github.rest.issues.createComment({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        issue_number: context.payload.issue.number,
+                        body: RESPONSE_CONTENT
+                      });
