@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
 
+Astro.response.headers.set('Cache-Control', 'no-store');
+
 const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
 const translations = getLocalizedStrings(currentLanguage);
 

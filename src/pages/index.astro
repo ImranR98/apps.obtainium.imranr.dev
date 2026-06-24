@@ -5,6 +5,8 @@ import { getCategoriesWithRandomApps, getAppConfig } from "../lib/query";
 import { getApps } from "../lib/data";
 import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
 
+Astro.response.headers.set('Cache-Control', 'public, max-age=600, s-maxage=1800');
+
 const allApps = getApps();
 const categoryApps = getCategoriesWithRandomApps(4);
 const categoryCounts: Record<string, number> = {};
