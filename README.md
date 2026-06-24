@@ -1,8 +1,8 @@
-# [apps.obtainium.imranr.dev](https://apps.obtainium.imranr.dev)
+# [apps.obtainium.page](https://apps.obtainium.page)
 
 Crowdsourced App Configurations website for [Obtainium](https://github.com/ImranR98/Obtainium).
 
-The website is accessible at [apps.obtainium.imranr.dev](https://apps.obtainium.imranr.dev)
+The website is accessible at [apps.obtainium.page](https://apps.obtainium.page)
 
 Analytics: https://ln.imranr.dev/obt-apps-visits
 
