@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.zephyrsoft.trackworktime",
+            "url": "https://codeberg.org/mathisdt/trackworktime",
+            "author": "Mathis Dirksen-Thedens",
+            "name": "Track Work Time",
+            "additionalSettings": "{\"apkFilterRegEx\":\"-signed\"}"
+        }
+    ],
+    "icon": "https://codeberg.org/mathisdt/trackworktime/raw/branch/master/metadata/en-US/images/icon.png",
+    "categories": [
+        "automation",
+        "utilities"
+    ],
+    "description": {
+        "en": "Record your work time. Categorize it with different tasks. Generate reports."
+    }
+}

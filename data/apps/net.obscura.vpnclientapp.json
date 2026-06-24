@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "net.obscura.vpnclientapp",
+            "url": "https://github.com/Sovereign-Engineering/obscuravpn-client",
+            "author": "Sovereign-Engineering",
+            "name": "Obscura VPN"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/61391325?s=48&v=4",
+    "categories": [
+        "vpn",
+        "utilities"
+    ],
+    "description": {
+        "en": "A VPN (Virtual Private Network) app that encrypts your internet traffic, hides your IP address, and uses a two-party relay architecture for private access."
+    }
+}
