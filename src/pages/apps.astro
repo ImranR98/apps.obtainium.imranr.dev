@@ -50,9 +50,6 @@ if (categoryFilterMessage.length > 50) {
   categoryFilterMessage = `${categoryFilterMessage.slice(0, 50)}...`;
 }
 
-/**
- * Get app configuration as JSON string with description injection
- */
 const getAppConfigString = (app: SimpleApp | ComplexApp, configIndex = 0) => {
   const description = pickLocalTranslation(app.description, currentLanguage);
 
@@ -73,9 +70,6 @@ const getAppConfigString = (app: SimpleApp | ComplexApp, configIndex = 0) => {
   return JSON.stringify(app.config);
 };
 
-/**
- * Generate href for a given page number
- */
 const getPageHref = (pageNum: number) => {
   const params = new URLSearchParams({
     ...Object.fromEntries(url.searchParams),
@@ -133,61 +127,60 @@ const getPaginationItems = (
 ---
 
 <Layout>
-  <div class="container mx-auto px-4 py-4">
+  <div class="container mx-auto px-4 py-6">
     <!-- Filter/Search Form -->
     <form
       method="get"
       action="/apps"
-      class="bg-linear-to-br from-gray-900/80 via-gray-900/70 to-gray-950/80 border border-gray-800 rounded-xl p-4 mb-6 shadow-lg shadow-gray-900/30"
+      class="bg-surface border border-border rounded-xl p-5 mb-6"
     >
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
         <!-- Categories column -->
         <div class="lg:col-span-2">
           <div class="flex items-center justify-between mb-2">
-            <label class="text-gray-300 font-medium"
+            <label class="text-text-secondary text-sm font-medium"
               >{translations["categorySelect"]}</label
             >
             <div class="flex items-center space-x-3">
-              <label class="flex items-center">
+              <label class="flex items-center cursor-pointer">
                 <input
                   type="radio"
                   name="categoryMode"
                   value="exclusive"
                   checked={categoryMode === "exclusive"}
-                  class="h-3.5 w-3.5 text-primary-400 bg-gray-800 border-gray-700 focus:ring-1 focus:ring-primary-400"
+                   class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-hover focus:outline-none focus:ring-1 focus:ring-primary-400"
                 />
-                <span class="ml-1.5 text-gray-300"
+                <span class="ml-1.5 text-text-muted text-sm"
                   >{translations["exclusive"]}</span
                 >
               </label>
-              <label class="flex items-center">
+              <label class="flex items-center cursor-pointer">
                 <input
                   type="radio"
                   name="categoryMode"
                   value="inclusive"
                   checked={categoryMode === "inclusive"}
-                  class="h-3.5 w-3.5 text-primary-400 bg-gray-800 border-gray-700 focus:ring-1 focus:ring-primary-400"
+                  class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-hover focus:outline-none focus:ring-1 focus:ring-primary-400"
                 />
-                <span class="ml-1.5 text-gray-300"
+                <span class="ml-1.5 text-text-muted text-sm"
                   >{translations["inclusive"]}</span
                 >
               </label>
             </div>
           </div>
 
-          <!-- multi-select -->
           <select
             name="category"
             multiple
             size="5"
-            class="w-full bg-gray-800 border border-gray-700 rounded-md text-gray-300 focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2"
+            class="w-full bg-surface-hover border border-border-hover rounded-lg text-text-secondary accent-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2 text-sm"
           >
             {
               allCategories.map((cat: string) => (
                 <option
                   value={cat}
                   selected={categories.includes(cat)}
-                  class="px-2 py-1.5 hover:bg-gray-700"
+                  class="px-2 py-1.5 rounded-md"
                 >
                   {translations[cat]}
                 </option>
@@ -198,16 +191,16 @@ const getPaginationItems = (
 
         <!-- App type and search column -->
         <div class="lg:col-span-2 flex flex-col justify-between">
-          <div class="mb-3 lg:mb-0">
-            <label class="block text-gray-300 font-medium mb-1"
+          <div class="mb-3">
+            <label class="block text-text-secondary text-sm font-medium mb-1.5"
               >{translations["search"]}</label
             >
             <div class="relative">
               <div
-                class="absolute inset-y-0 left-0 flex items-center pl-2.5 pointer-events-none"
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
               >
                 <svg
-                  class="w-3.5 h-3.5 text-gray-500"
+                  class="w-4 h-4 text-text-subtle"
                   fill="none"
                   viewBox="0 0 20 20"
                 >
@@ -224,19 +217,17 @@ const getPaginationItems = (
                 name="q"
                 value={q}
                 placeholder={translations["search"]}
-                class="w-full pl-9 pr-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-gray-300 placeholder-gray-500 focus:ring-1 focus:ring-primary-400 focus:border-primary-400"
+                class="w-full pl-10 pr-3 py-2 bg-surface-hover border border-border-hover rounded-lg text-text-secondary placeholder-text-subtle text-sm focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400"
               />
             </div>
           </div>
           <div>
-            <div class="flex space-x-2">
-              <button
-                type="submit"
-                class="flex-1 px-4 py-2 bg-linear-to-r from-primary-600 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow-lg hover:shadow-primary-400/20"
-              >
-                {translations["go"]}
-              </button>
-            </div>
+            <button
+              type="submit"
+              class="w-full px-4 py-2.5 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-500 transition-colors duration-200"
+            >
+              {translations["go"]}
+            </button>
           </div>
         </div>
       </div>
@@ -244,42 +235,47 @@ const getPaginationItems = (
 
     <!-- Results header -->
     <div
-      class="mb-6 p-3 bg-linear-to-r from-gray-900/50 to-gray-950/50 border border-gray-800 rounded-lg"
+      class="mb-6 px-4 py-3 bg-surface border border-border rounded-lg"
     >
-      <p class="text-gray-300">
-        <span class="font-medium text-white">{result.apps.length}</span> / <span
-          class="font-medium">{result.pagination.total}</span
+      <p class="text-text-muted text-sm">
+        <span class="font-medium text-text">{result.apps.length}</span> / <span
+          class="font-medium text-text">{result.pagination.total}</span
         >
         {translations["apps"] || "apps"}
         {categories.length > 0 && ` • `}
         {categories.length > 0 && (
-          <span title={fullCategoryMessage}>{categoryFilterMessage}</span>
+          <span title={fullCategoryMessage} class="text-primary-300">{categoryFilterMessage}</span>
         )}
-        {q && ` • "${q}"`}
+        {q && ` • `}
+        {q && <span class="text-primary-300">"{q}"</span>}
       </p>
     </div>
 
     <!-- Error message -->
     {
       errorMessage && (
-        <div class="mb-6 p-4 bg-red-900/30 border border-red-700/30 rounded-lg">
-          <p class="text-red-300">{errorMessage}</p>
+        <div class="mb-6 p-4 bg-red-900/20 border border-red-800/40 rounded-lg">
+          <p class="text-red-400 text-sm">{errorMessage}</p>
         </div>
       )
     }
 
     <!-- App grid -->
     <div
-      class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6"
+      class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4"
     >
       {
         result.apps.length === 0 && !errorMessage ? (
           <div class="col-span-full flex flex-col items-center justify-center py-16 text-center">
-            <div class="text-5xl mb-4">🔍</div>
-            <h3 class="text-xl font-bold text-gray-300 mb-2">
+            <div class="w-14 h-14 bg-surface-hover rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-text-subtle" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </div>
+            <h3 class="text-base font-semibold text-text-secondary mb-1">
               {translations["noAppsFound"] || "No apps found"}
             </h3>
-            <p class="text-gray-500 max-w-md">
+            <p class="text-text-subtle text-sm max-w-md">
               {q
                 ? (translations["noAppsFoundSearch"] || "Try adjusting your search query or filters.")
                 : (translations["noAppsFoundFilters"] || "Try selecting different categories or clearing filters.")}
@@ -289,37 +285,37 @@ const getPaginationItems = (
           result.apps.map((app) => {
             const appConfigs = getAppConfig(app);
             return (
-              <div class="group relative bg-linear-to-br from-gray-900/80 via-gray-900/70 to-gray-950/80 border border-gray-800 rounded-xl p-4 hover:border-primary-400/40 transition-all duration-300 flex flex-col h-full hover:shadow-2xl hover:shadow-primary-400/10 shadow-lg shadow-gray-900/30 transform-gpu">
-                <div class="flex items-start mb-3 relative z-10">
+              <div class="group relative bg-surface border border-border rounded-xl p-4 hover:border-border-hover transition-all duration-200 flex flex-col h-full">
+                <div class="flex items-start mb-3">
                   <Icon
                     src={app.icon}
                     alt={appConfigs[0].name}
                     width={44}
                     height={44}
-                    className="mr-3 rounded-lg group-hover:scale-110 transition-transform duration-300 group-hover:border-primary-400/50"
+                    className="mr-3 rounded-lg"
                   />
                   <div class="min-w-0 flex-1">
-                    <h3 class="text-base font-bold text-white truncate mb-1 group-hover:text-primary-100 transition-colors duration-300">
-                      <span><a href={appConfigs[0].url} class="hover:underline">{appConfigs[0].name}</a></span>
+                    <h3 class="text-sm font-semibold text-text truncate">
+                      <a href={appConfigs[0].url} class="hover:text-primary-500 transition-colors">{appConfigs[0].name}</a>
                     </h3>
-                    <p class="text-gray-400 truncate group-hover:text-gray-300 transition-colors duration-300">
+                    <p class="text-text-subtle text-xs truncate mt-0.5">
                       by {appConfigs[0].author}
                     </p>
                   </div>
                   {appConfigs.length > 1 &&
                     (appConfigs[0] as ComplexAppConfig).altLabel && (
-                      <span class="px-2 py-0.5 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700 group-hover:border-primary-500/50 group-hover:text-primary-200 transition-all duration-300">
+                      <span class="px-2 py-0.5 bg-surface-hover text-text-muted text-xs font-medium rounded-md border border-border-hover">
                         {(appConfigs[0] as ComplexAppConfig).altLabel}
                       </span>
                     )}
                 </div>
-                <p class="text-gray-300 mb-3 line-clamp-2 group-hover:text-gray-200 transition-colors duration-300">
+                <p class="text-text-muted text-sm mb-3 line-clamp-2">
                   {pickLocalTranslation(app.description, currentLanguage)}
                 </p>
                 {categories.length !== 1 && (
                   <div class="flex flex-wrap gap-1.5 mb-4">
                     {app.categories.map((cat: string) => (
-                      <span class="px-2 py-0.5 bg-primary-700/30 text-primary-100 text-sm font-medium rounded border border-primary-700/50 group-hover:border-primary-500 group-hover:bg-primary-700/40 transition-all duration-300">
+                      <span class="px-2 py-0.5 bg-primary-50/80 text-primary-700 text-xs font-medium rounded-md">
                         {translations[cat]}
                       </span>
                     ))}
@@ -329,35 +325,35 @@ const getPaginationItems = (
                   <div class="flex gap-2">
                     <button
                       type="button"
-                      class="jsonly flex-1 px-3 py-2 bg-linear-to-r from-gray-700 to-gray-800 text-white font-medium rounded-md hover:from-gray-600 hover:to-gray-700 transition-all duration-200 hover:shadow-lg"
+                      class="jsonly flex-1 px-3 py-2 bg-surface-hover text-text-secondary text-sm font-medium rounded-lg hover:bg-surface-alt transition-colors duration-200"
                       onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, 0))})`}
                     >
                       {translations["copy"]}
                     </button>
                     <a
-                      class="flex-1 px-3 py-2 bg-linear-to-r from-primary-600 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 text-center hover:shadow-lg hover:shadow-primary-400/20"
+                      class="flex-1 px-3 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-500 transition-colors duration-200 text-center"
                       href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, 0))}`}
                     >
                       {translations["install"]}
                     </a>
                   </div>
                   {appConfigs.length > 1 && (
-                    <div class="space-y-2 pt-3 mt-3 border-t border-gray-800">
+                    <div class="space-y-2 pt-3 mt-3 border-t border-border">
                       {appConfigs.slice(1).map((c: ComplexAppConfig, index) => (
                         <div class="flex items-center justify-between">
-                          <span class="px-2 py-0.5 bg-gray-800/80 text-gray-300 text-sm font-medium rounded border border-gray-700 group-hover:border-primary-500/50 group-hover:text-primary-200 transition-all duration-300">
+                          <span class="px-2 py-0.5 bg-surface-hover text-text-muted text-xs font-medium rounded-md border border-border-hover">
                             {c.altLabel || c.name}
                           </span>
                           <div class="flex gap-1.5">
                             <button
                               type="button"
-                              class="jsonly px-2 py-1 bg-linear-to-r from-gray-700 to-gray-800 text-white text-sm font-medium rounded hover:from-gray-600 hover:to-gray-700 transition-all duration-200 hover:shadow"
+                              class="jsonly px-2.5 py-1.5 bg-surface-hover text-text-secondary text-xs font-medium rounded-md hover:bg-surface-alt transition-colors duration-200"
                               onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, index + 1))})`}
                             >
                               {translations["copy"]}
                             </button>
                             <a
-                              class="px-2 py-1 bg-linear-to-r from-primary-600 to-primary-700 text-white text-sm font-medium rounded hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow hover:shadow-primary-400/20"
+                              class="px-2.5 py-1.5 bg-primary-600 text-white text-xs font-medium rounded-md hover:bg-primary-500 transition-colors duration-200"
                               href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, index + 1))}`}
                             >
                               {translations["install"]}
@@ -379,30 +375,31 @@ const getPaginationItems = (
     {
       result.pagination.totalPages > 1 && !errorMessage && (
         <div class="flex justify-center mt-8">
-          <nav class="flex items-center justify-center gap-1.5">
+          <nav class="flex items-center gap-1">
             {page > 1 && (
               <a
                 href={getPageHref(page - 1)}
-                class="px-3 py-1.5 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-200 hover:shadow"
+                class="px-3 py-1.5 bg-surface-hover text-text-muted text-sm rounded-lg hover:bg-surface-alt hover:text-text transition-colors duration-200"
               >
-                ←
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
               </a>
             )}
 
-            {/* Unified pagination */}
             <div class="flex items-center gap-1">
               {getPaginationItems().map((item) => {
                 if (item.type === "ellipsis") {
-                  return <span class="px-2 text-gray-500">...</span>;
+                  return <span class="px-2 text-text-subtle text-sm">...</span>;
                 }
                 if (item.type === "page") {
                   return (
                     <a
                       href={getPageHref(item.value)}
-                      class={`px-3 py-1.5 rounded-md transition-all duration-200 hover:shadow ${
+                      class={`px-3 py-1.5 text-sm rounded-lg transition-colors duration-200 ${
                         item.value === page
-                          ? "bg-linear-to-r from-primary-600 to-primary-700 border border-primary-600 text-white shadow-lg shadow-primary-400/20"
-                          : "bg-gray-800 text-gray-300 border border-gray-700 hover:bg-gray-700 hover:text-white"
+                          ? "bg-primary-600 text-white"
+                          : "bg-surface-hover text-text-muted hover:bg-surface-alt hover:text-text"
                       }`}
                     >
                       {item.value}
@@ -415,9 +412,11 @@ const getPaginationItems = (
             {page < result.pagination.totalPages && (
               <a
                 href={getPageHref(page + 1)}
-                class="px-3 py-1.5 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:bg-gray-700 hover:text-white transition-all duration-200 hover:shadow"
+                class="px-3 py-1.5 bg-surface-hover text-text-muted text-sm rounded-lg hover:bg-surface-alt hover:text-text transition-colors duration-200"
               >
-                →
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
               </a>
             )}
           </nav>
@@ -435,14 +434,14 @@ const getPaginationItems = (
         .then(() => {
           const toast = document.createElement("div");
           toast.className =
-            "fixed top-4 right-4 z-50 px-4 py-3 bg-linear-to-r from-secondary-800 to-secondary-800 border border-secondary-800 rounded-lg shadow-xl flex items-center animate-fade-in";
+            "fixed top-4 right-4 z-50 px-4 py-3 bg-primary-600 rounded-lg shadow-xl flex items-center animate-fade-in";
           toast.innerHTML = `
             <div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-white/20 mr-2">
               <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
               </svg>
             </div>
-            <div class="font-medium text-white">Copied to clipboard!</div>
+            <div class="font-medium text-sm text-white">Copied to clipboard!</div>
            `;
           document.body.appendChild(toast);
 

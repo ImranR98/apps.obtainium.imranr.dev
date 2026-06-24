@@ -17,6 +17,12 @@ const translations = await getLocalizedStrings(currentLanguage);
       rel="icon"
       href="https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <noscript>
       <style>
         .jsonly {
@@ -24,7 +30,6 @@ const translations = await getLocalizedStrings(currentLanguage);
         }
       </style>
     </noscript>
-    <!-- Privacy-friendly analytics by Plausible -->
     <script
       async
       src="https://plausible.imranr.dev/js/pa-QUJdq-IXltRTJmyc-Jfmy.js"
@@ -48,10 +53,11 @@ const translations = await getLocalizedStrings(currentLanguage);
       crossorigin="anonymous"></script>
   </head>
   <body
-    class="text-gray-100 min-h-screen flex flex-col relative overflow-x-hidden"
+    class="text-text min-h-screen flex flex-col relative overflow-x-hidden"
+    style="font-family: 'Montserrat', system-ui, sans-serif;"
   >
     <header
-      class="sticky top-0 z-40 border-b border-gray-800 backdrop-blur-sm bg-gray-900/85 group"
+      class="sticky top-0 z-40 border-b border-border bg-surface/80 backdrop-blur-sm"
     >
       <div class="container mx-auto px-4 py-3">
         <div class="flex justify-between items-center">
@@ -59,11 +65,11 @@ const translations = await getLocalizedStrings(currentLanguage);
             <h1>
               <a
                 href="/"
-                class="text-xl font-bold text-primary-100 hover:text-secondary-100"
+                class="text-lg font-bold text-text hover:text-primary-400 transition-colors"
                 >{translations["title"]}</a
               >
             </h1>
-            <h2 class="text-gray-400 text-sm mt-0.5">
+             <h2 class="text-text-secondary font-semibold text-xs mt-0.5">
               {translations["subtitle"]}
             </h2>
           </div>
@@ -72,13 +78,13 @@ const translations = await getLocalizedStrings(currentLanguage);
               <a
                 href="https://wiki.obtainium.imranr.dev/"
                 target="_blank"
-                class="text-gray-300 hover:text-secondary-100 transition-colors"
+                class="text-sm font-medium text-text-secondary hover:text-primary-500 transition-colors"
                 >{translations["about"]}</a
               >
               <a
                 href="https://github.com/ImranR98/apps.obtainium.imranr.dev/issues/new"
                 target="_blank"
-                class="text-gray-300 hover:text-secondary-100 transition-colors"
+                class="text-sm font-medium text-text-secondary hover:text-primary-500 transition-colors"
                 >{translations["contribute"]}</a
               >
             </nav>
@@ -92,11 +98,11 @@ const translations = await getLocalizedStrings(currentLanguage);
     </main>
 
     <footer
-      class="border-t border-gray-800 py-4 mt-8 backdrop-blur-sm bg-gray-900/85"
+      class="border-t border-border py-4 mt-8"
     >
       <div class="container mx-auto px-4 text-center">
         <a
-          class="text-gray-400 hover:text-primary-100 transition-colors"
+           class="text-xs text-text-subtle hover:text-primary-400 transition-colors"
           href="https://github.com/ImranR98/apps.obtainium.imranr.dev"
           target="_blank"
         >
@@ -110,68 +116,14 @@ const translations = await getLocalizedStrings(currentLanguage);
 
 <script is:inline>
   (() => {
-    const glows = [];
-    const colors = [
-      "radial-gradient(circle at center, rgba(116, 40, 190, 0.12) 0%, transparent 70%)",
-      "radial-gradient(circle at center, rgba(255, 193, 7, 0.08) 0%, transparent 60%)",
-    ];
-    colors.forEach((color, index) => {
-      const glow = document.createElement("div");
-      glow.className = "fixed pointer-events-none -z-10 opacity-0";
-      glow.style.cssText = `
-        width: ${1200 + index * 400}px;
-        height: ${1200 + index * 400}px;
-        background: ${color};
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        transition:
-          transform ${0.4 + index * 0.1}s ease-out,
-          opacity ${0.3 + index * 0.1}s ease-out;
-        filter: blur(${20 + index * 10}px);
-      `;
-      document.body.appendChild(glow);
-      glows.push(glow);
-    });
-    let mouseX = 0,
-      mouseY = 0;
-    let rafId;
-    const updateGlow = () => {
-      glows.forEach((glow, index) => {
-        const offset = index * 10;
-        glow.style.opacity = "1";
-        glow.style.transform = `translate(${mouseX + offset}px, ${mouseY + offset}px) translate(-50%, -50%)`;
-      });
-      rafId = requestAnimationFrame(updateGlow);
-    };
-    document.addEventListener("mousemove", (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-
-      if (!rafId) {
-        updateGlow();
-      }
-    });
-    document.addEventListener("mouseleave", () => {
-      if (rafId) {
-        cancelAnimationFrame(rafId);
-        rafId = null;
-      }
-      glows.forEach((glow) => {
-        glow.style.opacity = "0";
-      });
-    });
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
         const targetId = this.getAttribute("href");
         if (targetId === "#") return;
-
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           e.preventDefault();
-          targetElement.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
+          targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       });
     });

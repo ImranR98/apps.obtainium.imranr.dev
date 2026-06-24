@@ -45,16 +45,16 @@ if (redirectUrl) {
 <Layout>
   <div class="container mx-auto px-4 py-6">
     <div
-      class="max-w-md mx-auto bg-linear-to-br from-gray-900/80 via-gray-900/70 to-gray-950/80 border border-gray-800 rounded-xl p-6 shadow-2xl shadow-gray-900/30"
+      class="max-w-md mx-auto bg-surface border border-border rounded-xl p-6"
     >
       <!-- Page Title -->
       <div class="text-center mb-6">
         <div class="mb-3">
           <div
-            class="w-12 h-12 mx-auto bg-linear-to-r from-primary-400 to-secondary-500 rounded-lg flex items-center justify-center shadow-lg"
+            class="w-12 h-12 mx-auto bg-primary-50/80 rounded-xl flex items-center justify-center"
           >
             <svg
-              class="w-6 h-6 text-white"
+              class="w-6 h-6 text-primary-400"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -65,12 +65,10 @@ if (redirectUrl) {
             </svg>
           </div>
         </div>
-        <h1
-          class="text-xl font-bold bg-linear-to-r from-primary-100 via-primary-100 to-secondary-300 bg-clip-text text-transparent mb-2"
-        >
+        <h1 class="text-lg font-semibold text-text mb-1">
           {translations["obtainiumRedirect"]}
         </h1>
-        <p class="text-gray-400">
+        <p class="text-text-subtle text-sm">
           {translations["redirectDescription"]}
         </p>
       </div>
@@ -78,7 +76,7 @@ if (redirectUrl) {
       <!-- Noscript Warning -->
       <noscript>
         <div
-          class="p-3 mb-4 bg-yellow-900/30 border border-yellow-700/30 rounded-md text-yellow-300"
+          class="p-3 mb-4 bg-yellow-900/20 border border-yellow-800/40 rounded-lg text-yellow-400 text-sm"
         >
           <p>{translations["enableJavaScript"]}</p>
         </div>
@@ -87,7 +85,7 @@ if (redirectUrl) {
       <!-- Error Message -->
       {
         errorMessage && (
-          <div class="p-3 mb-4 bg-red-900/30 border border-red-700/30 rounded-md text-red-300">
+          <div class="p-3 mb-4 bg-red-900/20 border border-red-800/40 rounded-lg text-red-400 text-sm">
             <p>{errorMessage}</p>
           </div>
         )
@@ -100,21 +98,21 @@ if (redirectUrl) {
         data-redirect-url={parsedRedirectUrl}
       >
         <div
-          class="p-4 mb-4 bg-primary-700/20 border border-primary-700/30 rounded-md"
+          class="p-5 mb-4 bg-surface-hover border border-border-hover rounded-lg"
         >
           <div class="flex flex-col items-center">
             <!-- Spinner -->
             <div class="relative mb-3">
-              <div class="w-10 h-10 border-3 border-gray-800 rounded-full">
+              <div class="w-10 h-10 border-2 border-border-hover rounded-full">
               </div>
               <div
-                class="w-10 h-10 border-3 border-primary-400 border-t-transparent rounded-full animate-spin absolute top-0 left-0"
+                class="w-10 h-10 border-2 border-primary-400 border-t-transparent rounded-full animate-spin absolute top-0 left-0"
               >
               </div>
             </div>
 
             <!-- Redirecting Text -->
-            <p class="text-base font-medium text-white mb-3">
+            <p class="text-sm font-medium text-text mb-4">
               {translations["redirecting"]}
             </p>
 
@@ -122,7 +120,7 @@ if (redirectUrl) {
             <a
               id="redirectBtn"
               href={parsedRedirectUrl}
-              class="w-full py-2.5 px-4 bg-linear-to-r from-primary-600 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow-lg hover:shadow-primary-400/20"
+              class="w-full py-2.5 px-4 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-500 transition-colors duration-200"
             >
               {translations["clickToRedirect"]}
             </a>
@@ -132,17 +130,17 @@ if (redirectUrl) {
         <!-- App Link -->
         {
           appData.url && (
-            <div class="mb-4 p-3 bg-gray-800/50 border border-gray-700 rounded-md">
-              <p class="text-gray-300 text-sm">
+            <div class="mb-4 p-3 bg-surface-hover border border-border rounded-lg">
+              <p class="text-text-muted text-xs">
                 {translations["dontHaveObtainium"]}
-                <span class="font-medium text-white">
+                <span class="font-medium text-text">
                   {appData.name ? appData.name : `"${appData.url}"`}
                 </span>{" "}
                 {translations["manuallyFromHomePage"]}{" "}
                 <a
                   id="appLinkHref"
                   href={appData.url}
-                  class="text-primary-400 hover:text-primary-100 font-medium hover:underline transition-colors"
+                  class="text-primary-400 hover:text-primary-300 font-medium hover:underline transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -158,7 +156,7 @@ if (redirectUrl) {
         <div class="mb-3">
           <a
             href="https://obtainium.imranr.dev/"
-            class="w-full inline-flex justify-center items-center py-2.5 px-4 border border-gray-700 font-medium rounded-md text-gray-300 bg-gray-800/50 hover:bg-gray-700/50 hover:text-white hover:border-gray-600 transition-all duration-200 hover:shadow"
+            class="w-full inline-flex justify-center items-center py-2.5 px-4 border border-border-hover text-sm font-medium rounded-lg text-text-secondary bg-surface-hover hover:bg-surface-alt hover:text-text hover:border-border transition-all duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -170,7 +168,7 @@ if (redirectUrl) {
         <div>
           <a
             href="/"
-            class="w-full inline-flex justify-center items-center py-2.5 px-4 font-medium rounded-md text-gray-400 hover:text-white transition-colors duration-200"
+            class="w-full inline-flex justify-center items-center py-2.5 px-4 text-sm font-medium rounded-lg text-text-subtle hover:text-text-secondary transition-colors duration-200"
           >
             {translations["browseAppList"]}
           </a>
@@ -180,23 +178,23 @@ if (redirectUrl) {
       <!-- Instructions for invalid URL -->
       {
         !isValid && !errorMessage && (
-          <div class="text-center p-4 border border-gray-800 rounded-md bg-gray-800/30">
-            <h3 class="text-base font-medium text-white mb-2">
+          <div class="text-center p-5 border border-border rounded-lg bg-surface-hover">
+            <h3 class="text-sm font-semibold text-text mb-2">
               {translations["howToUse"]}
             </h3>
-            <p class="text-gray-400 mb-4">
+            <p class="text-text-subtle text-sm mb-4">
               {translations["redirectInstructions"]}
             </p>
             <div class="flex flex-col sm:flex-row gap-2 justify-center">
               <a
                 href="/apps"
-                class="inline-flex justify-center items-center px-4 py-2.5 bg-linear-to-r from-primary-400 to-primary-700 text-white font-medium rounded-md hover:from-primary-500 hover:to-primary-600 transition-all duration-200 hover:shadow-lg hover:shadow-primary-400/20"
+                class="inline-flex justify-center items-center px-4 py-2.5 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-500 transition-colors duration-200"
               >
                 {translations["browseApps"]}
               </a>
               <a
                 href="/"
-                class="inline-flex justify-center items-center px-4 py-2.5 border border-gray-700 font-medium rounded-md text-gray-300 bg-gray-800/50 hover:bg-gray-700/50 hover:text-white transition-all duration-200"
+                class="inline-flex justify-center items-center px-4 py-2.5 border border-border-hover text-sm font-medium rounded-lg text-text-secondary bg-surface-hover hover:bg-surface-alt hover:text-text transition-all duration-200"
               >
                 {translations["goHome"]}
               </a>
@@ -207,7 +205,6 @@ if (redirectUrl) {
     </div>
   </div>
   <script>
-    // Auto-redirect for users with JavaScript enabled
     (function() {
       const redirectingDiv = document.getElementById('redirecting');
       if (!redirectingDiv) return;

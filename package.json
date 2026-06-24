@@ -12,7 +12,6 @@
     "@astrojs/node": "^9.5.2",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.14",
-    "flowbite": "^4.0.1",
     "node-fetch": "^3.3.2",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.1.18"
