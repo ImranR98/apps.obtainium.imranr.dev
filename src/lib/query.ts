@@ -1,6 +1,10 @@
 import { getApps } from './data'
 import type { SimpleApp, ComplexApp, QueryOptions, PaginatedResult, SimpleAppConfig, ComplexAppConfig } from './types'
 
+function escapeRegex(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
 /**
  * Get app configuration(s) based on app type
  */
@@ -61,7 +65,8 @@ export const queryAppsAsync = async (options: QueryOptions): Promise<PaginatedRe
   }
 
   if (q) {
-    const regex = new RegExp(q, 'i')
+    const escaped = escapeRegex(q)
+    const regex = new RegExp(escaped, 'i')
     filteredApps = filteredApps.filter(app => {
       const { name, author } = getAppConfig(app)[0]
       const descText = Object.values(app.description).filter(Boolean).join(' ')
