@@ -1,0 +1,43 @@
+{
+  "configs": [
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Full)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-full\\\\.apk\"}",
+      "altLabel": "full"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Minified)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-minified\\\\.apk\"}",
+      "altLabel": "minified"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Beta)",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-b$\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-beta\\\\.apk\"}",
+      "altLabel": "beta"
+    },
+    {
+      "id": "com.nevar.nzik.foss",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (FOSS)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-foss\\\\.apk\"}",
+      "altLabel": "foss"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/N-Zik-Group/N-Zik/main/ComposeN-Zik/src/androidMain/res/mipmap-xxxhdpi/ic_launcher.png",
+  "categories": [
+    "music_players"
+  ],
+  "description": {
+    "en": "N-Zik is a multilingual YouTube Music client built with performance improvements, UI/UX refinement, and new features."
+  }
+}
