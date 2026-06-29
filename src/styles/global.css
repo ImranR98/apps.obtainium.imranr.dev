@@ -1,27 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #6438B5;
-  --color-primary-50: #EDE7F6;
-  --color-primary-100: #D1C4E9;
-  --color-primary-200: #B39DDB;
-  --color-primary-300: #9575CD;
-  --color-primary-400: #7E57C2;
-  --color-primary-500: #6438B5;
-  --color-primary-600: #512DA8;
-  --color-primary-700: #4527A0;
-  --color-primary-800: #311B92;
-  --color-primary-900: #1A0E4A;
+  --color-brand: light-dark(#6438B5, #D0BCFF);
 
-  --color-surface: light-dark(#FFFFFF, #18181b);
-  --color-surface-hover: light-dark(#F0EEF6, #27272a);
-  --color-surface-alt: light-dark(#E8E6ED, #3f3f46);
-  --color-border: light-dark(#E5E4EC, #27272a);
-  --color-border-hover: light-dark(#CCC9D6, #3f3f46);
-  --color-text: light-dark(#1C1B1F, #f4f4f5);
-  --color-text-secondary: light-dark(#49454F, #d4d4d8);
-  --color-text-muted: light-dark(#7B7883, #a1a1aa);
-  --color-text-subtle: light-dark(#9F9BA3, #71717a);
+  --color-primary-50: light-dark(#EDE7F6, #4F378B);
+  --color-primary-100: light-dark(#D1C4E9, #5C44A0);
+  --color-primary-200: light-dark(#B39DDB, #6A50B5);
+  --color-primary-300: light-dark(#9575CD, #7E57C2);
+  --color-primary-400: light-dark(#7E57C2, #9575CD);
+  --color-primary-500: light-dark(#6438B5, #B39DDB);
+  --color-primary-600: light-dark(#512DA8, #D0BCFF);
+  --color-primary-700: light-dark(#4527A0, #EADDFF);
+  --color-primary-800: light-dark(#311B92, #F3EDFF);
+  --color-primary-900: light-dark(#1A0E4A, #F8F4FF);
+  --color-on-primary: light-dark(#FFFFFF, #381E72);
+
+  --color-surface: light-dark(#FFFFFF, #2B2930);
+  --color-surface-hover: light-dark(#F0EEF6, #36343B);
+  --color-surface-alt: light-dark(#E8E6ED, #49464F);
+  --color-border: light-dark(#E5E4EC, #49454F);
+  --color-border-hover: light-dark(#CCC9D6, #938F99);
+
+  --color-text: light-dark(#1C1B1F, #E6E1E5);
+  --color-text-secondary: light-dark(#49454F, #CAC4D0);
+  --color-text-muted: light-dark(#7B7883, #938F99);
+  --color-text-subtle: light-dark(#9F9BA3, #787579);
+
+  --color-error: light-dark(#B3261E, #F2B8B5);
 }
 
 :root {
@@ -29,23 +34,34 @@
 }
 
 body {
-  background: light-dark(#F5F3FA, #0E0E14);
+  background: light-dark(#F5F3FA, #1C1B1F);
   min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: light) {
+  body::before {
+    background:
+      radial-gradient(ellipse at 25% 0%, rgba(100, 56, 181, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 75% 100%, rgba(100, 56, 181, 0.03) 0%, transparent 50%);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background:
-      radial-gradient(ellipse at 25% 0%, rgba(100, 56, 181, 0.08) 0%, transparent 50%),
-      radial-gradient(ellipse at 75% 100%, rgba(100, 56, 181, 0.06) 0%, transparent 50%);
-    z-index: -1;
-    pointer-events: none;
+      radial-gradient(ellipse at 25% 0%, rgba(100, 56, 181, 0.10) 0%, transparent 50%),
+      radial-gradient(ellipse at 75% 100%, rgba(100, 56, 181, 0.08) 0%, transparent 50%);
   }
 }
 
@@ -69,7 +85,7 @@ body {
 
 select[multiple] {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-primary-300) light-dark(#D0CED6, #27272a);
+  scrollbar-color: var(--color-primary-300) light-dark(#D0CED6, var(--color-surface-hover));
 }
 
 select[multiple]::-webkit-scrollbar {
@@ -77,7 +93,7 @@ select[multiple]::-webkit-scrollbar {
 }
 
 select[multiple]::-webkit-scrollbar-track {
-  background: light-dark(#E5E4EC, #27272a);
+  background: light-dark(#E5E4EC, var(--color-surface-hover));
   border-radius: 3px;
 }
 
@@ -104,11 +120,12 @@ select[multiple]:focus option:checked {
 
 @media (prefers-color-scheme: dark) {
   select[multiple] option:checked {
-    background: linear-gradient(0deg, #512DA8, #512DA8) !important;
-    color: #D1C4E9 !important;
+    background: linear-gradient(0deg, var(--color-primary-600), var(--color-primary-600)) !important;
+    color: var(--color-on-primary) !important;
   }
 
   select[multiple]:focus option:checked {
-    background: linear-gradient(0deg, #B39DDB, #B39DDB) !important;
+    background: linear-gradient(0deg, var(--color-primary-500), var(--color-primary-500)) !important;
+    color: var(--color-on-primary) !important;
   }
 }
