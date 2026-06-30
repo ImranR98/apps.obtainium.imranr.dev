@@ -10,7 +10,7 @@
     ],
     "icon": "https://git.lonecloud.dev/lone-cloud/prism-android/raw/branch/main/assets/prism.webp",
     "categories": [
-        "messaging"
+        "utilities"
     ],
     "description": {
         "en": "UnifiedPush distributor for Android with support for a self-hosted Prism server."
