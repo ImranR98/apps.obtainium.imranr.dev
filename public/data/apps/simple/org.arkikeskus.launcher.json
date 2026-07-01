@@ -1,0 +1,13 @@
+{
+    "config": {
+        "id": "org.arkikeskus.launcher",
+        "url": "https://github.com/jrs8205/arkikeskus-launcher",
+        "author": "jrs8205",
+        "name": "Arkikeskus Launcher"
+    },
+    "icon": "https://github.com/jrs8205/arkikeskus-launcher/raw/main/docs/icon.png",
+    "categories": ["launcher_and_desktop"],
+    "description": {
+        "en": "A modern, customizable open-source home-screen launcher built with Jetpack Compose."
+    }
+}
