@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.prismplural.prism",
+            "url": "https://prismplural.com/download/",
+            "author": "Prism Plural",
+            "name": "Prism",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"/download/android-latest\\\\.apk$\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"name=\\\"prism:android-version\\\" content=\\\"([^\\\"]+)\\\"\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Prism\",\"appAuthor\":\"Prism Plural\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Private, encrypted app for plural systems.\",\"refreshBeforeDownload\":true,\"supportFixedAPKURL\":true}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/prismplural/prism-app/main/packaging/linux/icons/hicolor/512x512/apps/com.prismplural.prism.png",
+    "categories": [
+        "utilities",
+        "notes"
+    ],
+    "description": {
+        "en": "Prism is a private, encrypted app for plural systems."
+    }
+}
