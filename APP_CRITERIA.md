@@ -20,7 +20,7 @@ Before opening a new app request/PR with updates to a config, please read the fo
 4. Only configs from official sources from the app are accepted. This means reupload site (eg. APKPure, APKMirror etc...) configs will NOT be added.
 
 
-If you've gone through the above steps, then you can [open an app request](https://github.com/ImranR98/apps.obtainium.page/issues). Make sure to include at a minimum:
+If you've gone through the above steps, then you can [open an app request](https://github.com/ImranR98/apps.obtainium.imranr.dev/issues). Make sure to include at a minimum:
 
 - The link from where you can download the APK.
 - What you have tried to get the app working so far. If you have a working config, consider creating a PR yourself.
@@ -56,7 +56,7 @@ Bevor Sie eine neue App-Anfrage oder einen neuen Pull-Request mit einer neuen Ko
 4. Es werden nur Konfigurationen aus offiziellen Quellen der App akzeptiert. Das bedeutet, dass Konfigurationen von Re-Upload-Seiten (z.B. APKPure, APKMirror usw.) NICHT hinzugefügt werden.
 
 
-Nachdem Sie die oben genannten Punkte überprüft haben, können Sie [eine App-Anfrage eröffnen] (https://github.com/ImranR98/apps.obtainium.page/issues). Stellen Sie sicher, dass Sie mindestens die folgenden Informationen angeben:
+Nachdem Sie die oben genannten Punkte überprüft haben, können Sie [eine App-Anfrage eröffnen] (https://github.com/ImranR98/apps.obtainium.imranr.dev/issues). Stellen Sie sicher, dass Sie mindestens die folgenden Informationen angeben:
 
 - Den Link, über den Sie die APK herunterladen können.
 - Was Sie bisher versucht haben, um die App zum Laufen zu bringen. Wenn Sie eine funktionierende Konfiguration haben, sollten Sie selbst einen PR erstellen.
@@ -91,7 +91,7 @@ Nachdem Sie die oben genannten Punkte überprüft haben, können Sie einen PR er
 4. 只接受来自应用官方源的配置。这意味着不会添加第三方下载站（如 APKPure、APKMirror 等……）的配置。
 
 
-如果您已完成上述步骤，则可以[打开应用请求](https://github.com/ImranR98/apps.obtainium.page/issues)。请确保至少包含：
+如果您已完成上述步骤，则可以[打开应用请求](https://github.com/ImranR98/apps.obtainium.imranr.dev/issues)。请确保至少包含：
 
 - 您可以下载 APK 的链接。
 - 到目前为止，您为使应用正常运行所做的尝试。如果您的配置可以正常运行，请考虑自行创建 PR。
