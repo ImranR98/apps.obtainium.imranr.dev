@@ -1,0 +1,90 @@
+{
+    "configs": [
+        {
+            "id": "org.xbmc.kodi",
+            "url": "https://mirrors.kodi.tv/releases/android/arm64-v8a/",
+            "author": "Kodi Foundation",
+            "name": "Kodi",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"kodi-([^-]+)-\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"_beta|_rc\",\"invertAPKFilter\":true,\"autoApkFilterByArch\":true,\"appName\":\"Kodi\",\"appAuthor\":\"Kodi Foundation\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "arm64-v8a"
+        },
+        {
+            "id": "org.xbmc.kodi",
+            "url": "https://mirrors.kodi.tv/releases/android/arm/",
+            "author": "Kodi Foundation",
+            "name": "Kodi",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"kodi-([^-]+)-\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"_beta|_rc\",\"invertAPKFilter\":true,\"autoApkFilterByArch\":true,\"appName\":\"Kodi\",\"appAuthor\":\"Kodi Foundation\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "armeabi-v7a"
+        },
+        {
+            "id": "org.xbmc.kodi",
+            "url": "https://mirrors.kodi.tv/releases/android/x86/",
+            "author": "Kodi Foundation",
+            "name": "Kodi",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"kodi-([^-]+)-\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"_beta|_rc\",\"invertAPKFilter\":true,\"autoApkFilterByArch\":true,\"appName\":\"Kodi\",\"appAuthor\":\"Kodi Foundation\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "x86_64"
+        },
+        {
+            "id": "org.xbmc.kodi",
+            "url": "https://mirrors.kodi.tv/releases/android/arm64-v8a/",
+            "author": "Kodi Foundation",
+            "name": "Kodi (Beta)",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"kodi-([^-]+)-\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"_beta|_rc\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Kodi (Beta)\",\"appAuthor\":\"Kodi Foundation\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "Beta (arm64-v8a)"
+        },
+        {
+            "id": "org.xbmc.kodi",
+            "url": "https://mirrors.kodi.tv/releases/android/arm/",
+            "author": "Kodi Foundation",
+            "name": "Kodi (Beta)",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"kodi-([^-]+)-\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"_beta|_rc\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Kodi (Beta)\",\"appAuthor\":\"Kodi Foundation\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "Beta (armeabi-v7a)"
+        },
+        {
+            "id": "org.xbmc.kodi",
+            "url": "https://mirrors.kodi.tv/releases/android/x86/",
+            "author": "Kodi Foundation",
+            "name": "Kodi (Beta)",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"kodi-([^-]+)-\",\"matchGroupToUse\":\"1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"_beta|_rc\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Kodi (Beta)\",\"appAuthor\":\"Kodi Foundation\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":true}",
+            "pinned": false,
+            "releaseDate": null,
+            "changeLog": null,
+            "overrideSource": "HTML",
+            "allowIdChange": false,
+            "altLabel": "Beta (x86_64)"
+        }
+    ],
+    "icon": "https://kodi.tv/icons/icon-512x512.png",
+    "description": {
+        "en": "Media center"
+    },
+    "categories": [
+        "music",
+        "video_player"
+    ]
+}
