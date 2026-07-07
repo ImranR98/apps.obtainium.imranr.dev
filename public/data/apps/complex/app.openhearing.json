@@ -8,7 +8,7 @@
       "additionalSettings": "{\"includePrereleases\":true}"
     }
   ],
-  "icon": null,
+  "icon": "https://raw.githubusercontent.com/HMAKT99/OpenHearing/main/fastlane/metadata/android/en-US/images/icon.png",
   "categories": [
     "sports_and_health"
   ],
