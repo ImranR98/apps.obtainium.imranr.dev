@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "com.opengps.nogpsgeolocation",
+            "url": "https://codeberg.org/pashabey/NoGPS-Geolocation",
+            "author": "pashabey",
+            "name": "NoGPS-Geolocation",
+        }
+    ],
+    "icon": "https://codeberg.org/pashabey/NoGPS-Geolocation/raw/branch/master/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "This app uses BeaconDB to provide geolocation without using GPS, by scanning for WiFi and Mobile Network signals."
+    }
+}
