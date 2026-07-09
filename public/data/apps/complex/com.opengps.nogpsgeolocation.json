@@ -4,7 +4,7 @@
             "id": "com.opengps.nogpsgeolocation",
             "url": "https://codeberg.org/pashabey/NoGPS-Geolocation",
             "author": "pashabey",
-            "name": "NoGPS-Geolocation",
+            "name": "NoGPS-Geolocation"
         }
     ],
     "icon": "https://codeberg.org/pashabey/NoGPS-Geolocation/raw/branch/master/fastlane/metadata/android/en-US/images/icon.png",
