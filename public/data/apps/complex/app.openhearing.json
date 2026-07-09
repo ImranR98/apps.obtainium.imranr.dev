@@ -1,0 +1,18 @@
+{
+  "configs": [
+    {
+      "id": "app.openhearing",
+      "url": "https://github.com/HMAKT99/OpenHearing",
+      "author": "HMAKT99",
+      "name": "OpenHearing",
+      "additionalSettings": "{\"includePrereleases\":true}"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/HMAKT99/OpenHearing/main/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": [
+    "sports_and_health"
+  ],
+  "description": {
+    "en": "Hearing check, personal per-ear sound profile, and real-time amplification of quiet sound on any earbuds. No internet permission."
+  }
+}
