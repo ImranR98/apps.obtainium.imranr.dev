@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "app.lonecloud.prism",
+            "url": "https://git.lonecloud.dev/lone-cloud/prism-android",
+            "author": "lone-cloud",
+            "name": "Prism",
+            "overrideSource": "Forgejo (Codeberg)"
+        }
+    ],
+    "icon": "https://git.lonecloud.dev/lone-cloud/prism-android/raw/branch/main/assets/prism.webp",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "UnifiedPush distributor for Android with support for a self-hosted Prism server."
+    }
+}
