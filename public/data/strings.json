@@ -1,113 +1,146 @@
 {
     "title": {
-        "en": "Obtainium Apps"
+        "en": "Obtainium Apps",
+        "fa": "کاره‌های آب‌تینیوم"
     },
     "subtitle": {
-        "en": "Crowdsourced App Configurations for Obtainium"
+        "en": "Crowdsourced App Configurations for Obtainium",
+        "fa": "پیکربندی‌های جمع‌سپاری‌شده‌ی کاره‌ها برای آب‌تینیوم"
     },
     "about": {
-        "en": "About"
+        "en": "About",
+        "fa": "درباره"
     },
     "contribute": {
-        "en": "Contribute"
+        "en": "Contribute",
+        "fa": "مشارکت"
     },
     "source": {
-        "en": "Source"
+        "en": "Source",
+        "fa": "منبع"
     },
     "exclusive": {
-        "en": "Exclusive"
+        "en": "Exclusive",
+        "fa": "انحصاری"
     },
     "inclusive": {
-        "en": "Inclusive"
+        "en": "Inclusive",
+        "fa": "فراگیر"
     },
     "browseAllApps": {
-        "en": "Browse all apps"
+        "en": "Browse all apps",
+        "fa": "مرور همه‌ی کاره‌ها"
     },
     "go": {
         "en": "Go",
         "de": "Suchen",
         "ja": "絞り込む",
-        "zh": "搜索"
+        "zh": "搜索",
+        "fa": "برو"
     },
     "categorySelect": {
         "en": "Select App Categories",
         "de": "Wähle eine Kategorie aus",
         "ja": "アプリカテゴリを選択",
-        "zh": "选择应用类别"
+        "zh": "选择应用类别",
+        "fa": "انتخاب دسته‌بندی‌های کاره‌ها"
     },
     "search": {
         "en": "RegExp Search",
         "de": "RegExp Suche",
         "ja": "正規表現で検索",
-        "zh": "正则表达式搜索"
+        "zh": "正则表达式搜索",
+        "fa": "جست‌وجوی رج‌اکس"
     },
     "allCategories": {
-        "en": "All Categories"
+        "en": "All Categories",
+        "fa": "همه‌ی دسته‌بندی‌ها"
     },
     "apps": {
-        "en": "Apps"
+        "en": "Apps",
+        "fa": "کاره‌ها"
     },
     "install": {
-        "en": "Install"
+        "en": "Install",
+        "fa": "نصب"
     },
     "copy": {
-        "en": "Copy"
+        "en": "Copy",
+        "fa": "رونوشت"
     },
     "categories": {
         "en": "Categories",
         "de": "Kategorien",
         "ja": "種類",
-        "zh": "类别"
+        "zh": "类别",
+        "fa": "دسته‌بندی‌ها"
     },
     "invalidUrlPrefix": {
-        "en": "Invalid URL. Redirect should start with \"obtainium://\"."
+        "en": "Invalid URL. Redirect should start with \"obtainium://\".",
+        "fa": "نشانی نامعتبر است. تغییر مسیر باید با «obtainium://» شروع شود."
     },
     "invalidUrl": {
-        "en": "Invalid URL. Valid app URL could not be found."
+        "en": "Invalid URL. Valid app URL could not be found.",
+        "fa": "نشانی نامعتبر است. نشانی معتبر کاره پیدا نشد."
     },
     "noRedirectParam": {
-        "en": "No redirect parameter provided."
+        "en": "No redirect parameter provided.",
+        "fa": "پارامتر تغییر مسیر ارائه نشده است."
     },
     "obtainiumRedirect": {
-        "en": "Obtainium Redirect"
+        "en": "Obtainium Redirect",
+        "fa": "تغییر مسیر آب‌تینیوم"
     },
     "redirectDescription": {
-        "en": "Redirecting to Obtainium app..."
+        "en": "Redirecting to Obtainium app...",
+        "fa": "در حال تغییر مسیر به کاره‌ی آب‌تینیوم..."
     },
     "enableJavaScript": {
-        "en": "Enable JavaScript in your browser to redirect to Obtainium."
+        "en": "Enable JavaScript in your browser to redirect to Obtainium.",
+        "fa": "جاوااسکریپت را در مرورگر خود فعال کنید تا به آب‌تینیوم تغییر مسیر داده شود."
     },
     "redirecting": {
-        "en": "Redirecting to Obtainium..."
+        "en": "Redirecting to Obtainium...",
+        "fa": "در حال تغییر مسیر به آب‌تینیوم..."
     },
     "clickToRedirect": {
-        "en": "Click here if you are not redirected"
+        "en": "Click here if you are not redirected",
+        "fa": "اگر تغییر مسیر انجام نشد، اینجا کلیک کنید"
     },
     "dontHaveObtainium": {
-        "en": "Don't have Obtainium? Get"
+        "en": "Don't have Obtainium? Get",
+        "fa": "آب‌تینیوم ندارید؟ دریافت کنید"
     },
     "manuallyFromHomePage": {
-        "en": "manually from their home page"
+        "en": "manually from their home page",
+        "fa": "به‌صورت دستی از صفحه‌ی اصلی آن‌ها"
     },
     "here": {
-        "en": "here"
+        "en": "here",
+        "fa": "اینجا"
     },
     "downloadObtainium": {
-        "en": "Download Obtainium here"
+        "en": "Download Obtainium here",
+        "fa": "آب‌تینیوم را از اینجا دریافت کنید"
     },
     "browseAppList": {
-        "en": "Browse the full app list here"
+        "en": "Browse the full app list here",
+        "fa": "فهرست کامل کاره‌ها را اینجا مرور کنید"
     },
     "howToUse": {
-        "en": "How to use this page"
+        "en": "How to use this page",
+        "fa": "چگونه از این صفحه استفاده کنیم"
     },
     "redirectInstructions": {
-        "en": "This page requires a valid Obtainium redirect URL. Make sure you're coming from an app listing."
+        "en": "This page requires a valid Obtainium redirect URL. Make sure you're coming from an app listing.",
+        "fa": "این صفحه به یک نشانی تغییر مسیر معتبر آب‌تینیوم نیاز دارد. مطمئن شوید که از فهرست یک کاره وارد شده‌اید."
     },
     "browseApps": {
-        "en": "Browse Apps"
+        "en": "Browse Apps",
+        "fa": "مرور کاره‌ها"
     },
     "goHome": {
-        "en": "Go Home"
+        "en": "Go Home",
+        "fa": "رفتن به خانه"
     }
 }
