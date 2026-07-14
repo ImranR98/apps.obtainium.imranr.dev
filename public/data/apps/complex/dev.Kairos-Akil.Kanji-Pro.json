@@ -1,0 +1,15 @@
+{
+    "configs": [
+        {
+            "id": "dev.Kairos-Akil.Kanji-Pro",
+            "url": "https://github.com/Kairos-Akil/Kanji-Pro",
+            "author": "Kairos-Akil",
+            "name": "Kanji Pro"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Kairos-Akil/Kanji-Pro/main/assets/MyAssets/blueLogo.png",
+    "categories": ["dictionaries", "science_and_education"],
+    "description": {
+        "en": "Learn Japanese kana, kanji (N5 to N1), and radicals offline with a star-based spaced mastery system."
+    }
+}
