@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "xyz.malkki.neostumbler",
+            "url": "https://github.com/mjaakko/NeoStumbler",
+            "author": "mjaakko",
+            "name": "NeoStumbler"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/mjaakko/NeoStumbler/c6fc3c0ba483ba46c88a5727d0d094a67e1ad591/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "NeoStumbler is an Android application designed for mapping wireless infrastructure for geolocation purposes. It allows users to collect locations of cell towers, Wi-Fi access points and Bluetooth beacons and contribute them to Ichnaea-compatible (i.e. Mozilla Location Services) geolocation services – such as beaconDB."
+    }
+}
