@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "org.retroshelf.app",
+        "url": "https://github.com/retroshelf-org/android",
+        "author": "retroshelf-org",
+        "name": "retroshelf"
+    },
+    "icon": "https://www.retroshelf.org/icon-512.png",
+    "categories": [
+        "synchronisation",
+        "utilities"
+    ],
+    "description": {
+        "en": "Automatically track and sync play sessions from Android retro handhelds and phones to your retroshelf profile."
+    }
+}
