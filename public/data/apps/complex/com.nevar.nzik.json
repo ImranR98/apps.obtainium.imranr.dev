@@ -33,9 +33,9 @@
       "altLabel": "foss"
     }
   ],
-  "icon": "https://raw.githubusercontent.com/N-Zik-Group/N-Zik/main/ComposeN-Zik/src/androidMain/res/mipmap-xxxhdpi/ic_launcher.png",
+  "icon": "https://raw.githubusercontent.com/N-Zik-Group/N-Zik/main/assets/design/N-Zik%202027/app.png",
   "categories": [
-    "music_players"
+    "music"
   ],
   "description": {
     "en": "N-Zik is a multilingual YouTube Music client built with performance improvements, UI/UX refinement, and new features."
