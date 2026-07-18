@@ -1,0 +1,14 @@
+{
+    "configs": [
+        {
+            "id": "com.pikasim.esim",
+            "url": "https://pikasim.com/downloads/pikasim-latest.apk",
+            "author": "PikaSim",
+            "additionalSettings": "{\"directAPKLink\":true,\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"appName\":\"PikaSim\",\"appAuthor\":\"PikaSim\",\"about\":\"Private, no-Google eSIM management. Anonymous data eSIMs, phone numbers, and SMS verification for 190+ countries. No account, no email, no Google Play Services required.\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://pikasim.com/img/app-icon.png",
+    "description": {
+        "en": "Private, no-Google eSIM management. Anonymous data eSIMs, phone numbers, and SMS verification for 190+ countries. No account, no email, installs with zero Google Play Services."
+    }
+}
