@@ -1,0 +1,18 @@
+{
+  "configs": [
+    {
+      "id": "com.nononsenseapps.feeder",
+      "url": "https://github.com/spacecowboy/Feeder",
+      "author": "spacecowboy",
+      "name": "Feeder",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":true,\"releaseTitleAsVersion\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"fdroid\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Feeder\",\"appAuthor\":\"spacecowboy\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Android feed reader app\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}"
+    }
+  ],
+  "icon": "https://github.com/spacecowboy/Feeder/blob/master/graphics/f_foreground_512.png",
+  "categories": [
+    "rss_readers"
+  ],
+  "description": {
+    "en": "Android feed reader app"
+  }
+}
