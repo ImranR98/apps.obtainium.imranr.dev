@@ -1,0 +1,23 @@
+{
+    "configs": [
+        {
+            "id": "bin.mt.plus",
+            "url": "https://mt2.cn/download/",
+            "author": "mt2.cn",
+            "name": "MT Manager",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"apk/[0-9]+/target28\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"onDemandOnly\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+\",\"matchGroupToUse\":\"\",\"versionDetection\":\"auto\",\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"refreshBeforeDownload\":false,\"useVersionCodeAsOSVersion\":false,\"appName\":\"MT Manager\",\"supportFixedAPKURL\":false,\"appAuthor\":\"MT2.cn\",\"versionStringSource\":\"default\",\"releaseDateAsVersion\":false,\"releaseTitleAsVersion\":false,\"extractVersionFromAssetName\":false,\"releaseCommitShaAsVersion\":false,\"folderNames\":{},\"lastInstalledTime\":1784246096081,\"about\":\"MT Manager\\n(TargetSDK28 Version)\\n\\n—\\n\\nBy Bin MT | MT2\\nmt2.cn | bbs.binmt.cc\"}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Mt_Manager_Logo.png",
+    "categories": [
+        "file_manager",
+        "research_and_development",
+        "system",
+        "utilities"
+    ],
+    "description": {
+        "en": "Android platform file management & reverse engineering"
+    }
+}
