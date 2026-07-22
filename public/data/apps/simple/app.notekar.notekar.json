@@ -1,0 +1,17 @@
+{
+  "configs": [
+    {
+      "id": "app.notekar.notekar",
+      "url": "https://github.com/dheeraz101/Notekar-Android",
+      "author": "Dheeraj V",
+      "name": "NoteKar"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/dheeraz101/Notekar-Android/main/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": [
+    "productivity"
+  ],
+  "description": {
+    "en": "A privacy-first offline timestamp logger for quickly recording events, arrivals, work sessions, deliveries, reminders, and other moments with optional notes. No account required."
+  }
+}
