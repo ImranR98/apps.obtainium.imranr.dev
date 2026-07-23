@@ -1,0 +1,15 @@
+{
+    "configs": [
+        {
+            "id": "com.anant.fitbuddy",
+            "url": "https://github.com/anantdark/FitBuddy",
+            "author": "anantdark",
+            "name": "FitBuddy",
+            "additionalSettings": "{\"apkFilterRegEx\":\"FitBuddy-[0-9]+\\\\.[0-9]+\\\\.[0-9]+\\\\.apk$\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":false,\"about\":\"AI-powered calorie and workout tracker for Indian diets. Log meals and workouts by photo or text; an LLM estimates calories and macros.\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/anantdark/FitBuddy/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "description": {
+        "en": "AI-powered calorie & workout tracker for Indian diets. Log meals and workouts by photo or text; an LLM estimates calories and macros. Features editable meal review, reusable presets, dashboards, progress charts, and Material You theming. AI provider configured at runtime — no proprietary SDK bundled."
+    }
+}
