@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.kenschenke.csabuddy",
+            "url": "https://github.com/jschenke488/CSA-Buddy-Android",
+            "author": "Jay Schenke & Ken Schenke",
+            "name": "CSA Buddy",
+            "additionalSettings": "{\"versionExtractionRegEx\":\"v(.*)\",\"matchGroupToUse\":\"$1\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/jschenke488/CSA-Buddy-Assets/refs/heads/main/csa-buddy-nobg.png",
+    "categories": [
+        "utilities",
+        "science_and_education"
+    ],
+    "description": {
+        "en": "This app is for teams and volunteers at FIRST Robotics Competition (FRC) and FIRST Tech Challenge (FTC) events, designed primarily for CSA (Control System Advisor) volunteers. It's a small app that shows a quick reference page with some helpful technical tidbits."
+    }
+}
