@@ -3,111 +3,143 @@
         "en": "Obtainium Apps"
     },
     "subtitle": {
-        "en": "Crowdsourced App Configurations for Obtainium"
+        "en": "Crowdsourced App Configurations for Obtainium",
+        "ru": "Конфигурации приложений для Obtainium, найденные сообществом"
     },
     "about": {
-        "en": "About"
+        "en": "About",
+        "ru": "О Obtainium"
     },
     "contribute": {
-        "en": "Contribute"
+        "en": "Contribute",
+        "ru": "Внести вклад"
     },
     "source": {
-        "en": "Source"
+        "en": "Source",
+        "ru": "Исходный код"
     },
     "exclusive": {
-        "en": "Exclusive"
+        "en": "Exclusive",
+        "ru": "Исключить"
     },
     "inclusive": {
-        "en": "Inclusive"
+        "en": "Inclusive",
+        "ru": "Включить"
     },
     "browseAllApps": {
-        "en": "Browse all apps"
+        "en": "Browse all apps",
+        "ru": "Все приложения"
     },
     "go": {
         "en": "Go",
         "de": "Suchen",
         "ja": "絞り込む",
-        "zh": "搜索"
+        "zh": "搜索",
+        "ru": "Ввод"
     },
     "categorySelect": {
         "en": "Select App Categories",
         "de": "Wähle eine Kategorie aus",
         "ja": "アプリカテゴリを選択",
-        "zh": "选择应用类别"
+        "zh": "选择应用类别",
+        "ru": "Выбрать Категории"
     },
     "search": {
         "en": "RegExp Search",
         "de": "RegExp Suche",
         "ja": "正規表現で検索",
-        "zh": "正则表达式搜索"
+        "zh": "正则表达式搜索",
+        "ru": "RegExp поиск"
     },
     "allCategories": {
-        "en": "All Categories"
+        "en": "All Categories",
+        "ru": "Все категории"
     },
     "apps": {
-        "en": "Apps"
+        "en": "Apps",
+        "ru": "Приложения"
     },
     "install": {
-        "en": "Install"
+        "en": "Install",
+        "ru": "Установить"
     },
     "copy": {
-        "en": "Copy"
+        "en": "Copy",
+        "ru": "Скопировать"
     },
     "categories": {
         "en": "Categories",
         "de": "Kategorien",
         "ja": "種類",
-        "zh": "类别"
+        "zh": "类别",
+        "ru": "Категории"
     },
     "invalidUrlPrefix": {
-        "en": "Invalid URL. Redirect should start with \"obtainium://\"."
+        "en": "Invalid URL. Redirect should start with \"obtainium://\".",
+        "ru": "Неверный URL. Адрес должен начинаться с \"obtainium://\"."
     },
     "invalidUrl": {
-        "en": "Invalid URL. Valid app URL could not be found."
+        "en": "Invalid URL. Valid app URL could not be found.",
+        "ru": "Неверный URL. Не удалось найти корректный URL приложения."
     },
     "noRedirectParam": {
-        "en": "No redirect parameter provided."
+        "en": "No redirect parameter provided.",
+        "ru": "Не указан параметр перенаправления."
     },
     "obtainiumRedirect": {
-        "en": "Obtainium Redirect"
+        "en": "Obtainium Redirect",
+        "ru": "Перенаправление Obtainium"
     },
     "redirectDescription": {
-        "en": "Redirecting to Obtainium app..."
+        "en": "Redirecting to Obtainium app...",
+        "ru": "Перенаправление в Obtainium..."
     },
     "enableJavaScript": {
-        "en": "Enable JavaScript in your browser to redirect to Obtainium."
+        "en": "Enable JavaScript in your browser to redirect to Obtainium.",
+        "ru": "Включите JavaScript в вашем бразуере для перенаправления в Obtainium"
     },
     "redirecting": {
-        "en": "Redirecting to Obtainium..."
+        "en": "Redirecting to Obtainium...",
+        "ru": "Перенаправление в Obtainium..."
     },
     "clickToRedirect": {
-        "en": "Click here if you are not redirected"
+        "en": "Click here if you are not redirected",
+        "ru": "Нажмите, если вы не были перенаправлены"
     },
     "dontHaveObtainium": {
-        "en": "Don't have Obtainium? Get"
+        "en": "Don't have Obtainium? Get",
+        "ru": "У вас нет Obtainium? Установите"
     },
     "manuallyFromHomePage": {
-        "en": "manually from their home page"
+        "en": "manually from their home page",
+        "ru": "вручную с их домашней страницы"
     },
     "here": {
-        "en": "here"
+        "en": "here",
+        "ru": "здесь"
     },
     "downloadObtainium": {
-        "en": "Download Obtainium here"
+        "en": "Download Obtainium here",
+        "ru": "Скачать Obtainium"
     },
     "browseAppList": {
-        "en": "Browse the full app list here"
+        "en": "Browse the full app list here",
+        "ru": "Исследовать полный список приложений"
     },
     "howToUse": {
-        "en": "How to use this page"
+        "en": "How to use this page",
+        "ru": "Как пользоваться этой страницей"
     },
     "redirectInstructions": {
-        "en": "This page requires a valid Obtainium redirect URL. Make sure you're coming from an app listing."
+        "en": "This page requires a valid Obtainium redirect URL. Make sure you're coming from an app listing.",
+        "ru": "Для этой страницы нужен корректный URL перенаправления Obtainium. Убедитесь, что вы перешли со страницы приложения."
     },
     "browseApps": {
-        "en": "Browse Apps"
+        "en": "Browse Apps",
+        "ru": "Искать Приложения"
     },
     "goHome": {
-        "en": "Go Home"
+        "en": "Go Home",
+        "ru": "Домой"
     }
 }
