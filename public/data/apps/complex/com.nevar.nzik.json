@@ -12,6 +12,14 @@
       "id": "com.nevar.nzik",
       "url": "https://github.com/N-Zik-Group/N-Zik",
       "author": "N-Zik-Group",
+      "name": "N-Zik (Full32)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-full32\\\\.apk\"}",
+      "altLabel": "full32"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
       "name": "N-Zik (Minified)",
       "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-minified\\\\.apk\"}",
       "altLabel": "minified"
@@ -20,9 +28,25 @@
       "id": "com.nevar.nzik",
       "url": "https://github.com/N-Zik-Group/N-Zik",
       "author": "N-Zik-Group",
+      "name": "N-Zik (Minified32)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-minified32\\\\.apk\"}",
+      "altLabel": "minified32"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
       "name": "N-Zik (Beta)",
       "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-b$\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-beta\\\\.apk\"}",
       "altLabel": "beta"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Beta32)",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-b$\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-beta32\\\\.apk\"}",
+      "altLabel": "beta32"
     },
     {
       "id": "com.nevar.nzik.foss",
