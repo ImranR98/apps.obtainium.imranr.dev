@@ -55,6 +55,22 @@
       "name": "N-Zik (FOSS)",
       "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-foss\\\\.apk\"}",
       "altLabel": "foss"
+    },
+    {
+      "id": "com.nevar.nzik.dev",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Dev)",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-dev$\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-dev\\\\.apk\"}",
+      "altLabel": "dev"
+    },
+    {
+      "id": "com.nevar.nzik.dev",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Dev32)",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-dev$\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-dev32\\\\.apk\"}",
+      "altLabel": "dev32"
     }
   ],
   "icon": "https://raw.githubusercontent.com/N-Zik-Group/N-Zik/main/assets/design/N-Zik%202027/app.png",
