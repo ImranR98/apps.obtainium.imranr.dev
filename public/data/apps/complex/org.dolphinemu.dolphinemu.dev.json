@@ -2,9 +2,9 @@
     "configs": [
         {
             "id": "org.dolphinemu.dolphinemu",
-            "url": "https://dolphin-emu.org/update/latest/beta",
+            "url": "https://dolphin-emu.org/update/latest/dev",
             "author": "dolphin-emu.org",
-            "name": "Dolphin Emulator",
+            "name": "Dolphin Emulator (Development version)",
             "preferredApkIndex": 0,
             "additionalSettings": "{\"matchLinksOutsideATags\": true, \"versionExtractWholePage\": true, \"versionExtractionRegEx\": \"shortrev.+?\\\"(\\\\d.+?)\\\"\", \"matchGroupToUse\": \"$1\"}"
         }
@@ -14,6 +14,6 @@
         "emulator"
     ],
     "description": {
-        "en": "Dolphin Emulator, a popular emulator for Nintendo GameCube and Wii games, allowing users to play console games on Android devices."
+        "en": "Development version of Dolphin Emulator, a popular emulator for Nintendo GameCube and Wii games, allowing users to play console games on Android devices."
     }
 }

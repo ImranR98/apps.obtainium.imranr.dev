@@ -1,0 +1,18 @@
+{
+  "configs": [
+    {
+      "id": "com.luc4n3x.levyra",
+      "url": "https://github.com/LUC4N3X/Levyra-deepsound",
+      "author": "LUC4N3X",
+      "name": "Levyra",
+      "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"^Levyra [0-9]+\\\\.[0-9]+\\\\.[0-9]+$\",\"apkFilterRegEx\":\"^LEVYRA-[0-9]+\\\\.[0-9]+\\\\.[0-9]+\\\\.apk$\"}"
+    }
+  ],
+  "categories": [
+    "music"
+  ],
+  "description": {
+    "en": "A native open-source music client for Android with fast streaming, offline playback, tagged downloads, synced lyrics, local listening statistics, and no telemetry.",
+    "it": "Un client musicale open source nativo per Android con streaming rapido, riproduzione offline, download con tag, testi sincronizzati, statistiche locali e nessuna telemetria."
+  }
+}
