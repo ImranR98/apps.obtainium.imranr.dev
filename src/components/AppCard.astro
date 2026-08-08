@@ -107,19 +107,6 @@ const appConfigs = getAppConfig(app);
       </h3>
       <p class="text-text-subtle text-xs truncate mt-0.5">
         by {appConfigs[0].author}
-        {app.homepage && (
-          <>
-            {" "}•{" "}
-            <a
-              href={app.homepage}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-primary-400 hover:text-primary-300 hover:underline transition-colors"
-            >
-              {translations["homepage"]}
-            </a>
-          </>
-        )}
       </p>
     </div>
     {appConfigs.length > 1 && (appConfigs[0] as ComplexAppConfig).altLabel && (

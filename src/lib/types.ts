@@ -24,7 +24,6 @@ interface BaseApp {
   icon?: string
   categories: string[]
   description: Translation
-  homepage?: string
 }
 
 export interface SimpleApp extends BaseApp {
