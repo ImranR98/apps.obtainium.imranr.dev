@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "dev.chomusuke.vidra",
+            "url": "https://github.com/chomusuke-mk/vidra",
+            "author": "chomusuke-mk",
+            "name": "Vidra",
+            "additionalSettings": "{\"autoApkFilterByArch\":true,\"includePrereleases\":false,\"trackOnly\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/chomusuke-mk/vidra/main/assets/icon/icon.png",
+    "categories": [
+        "downloader_and_manager",
+        "utilities"
+    ],
+    "description": {
+        "en": "Vidra is an advanced video download manager for desktop and mobile devices built with Flutter and a powerful Python background process [yt-dlp].",
+        "es": "Vidra es un gestor avanzado de descargas de video para escritorio y smartphones construido en Flutter con un potente motor integrado en Python [yt-dlp]."
+    }
+}
