@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.gemwallet.android",
+            "url": "https://github.com/gemwalletcom/wallet",
+            "author": "Gem Wallet",
+            "name": "Gem Wallet",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^gem_wallet_universal_.*\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/gemwalletcom/wallet/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "finance"
+    ],
+    "description": {
+        "en": "A secure, private, open-source self-custody crypto wallet with native swaps and support for 100+ blockchains."
+    }
+}
