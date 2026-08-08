@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.leanbitlab.leantype",
+            "url": "https://github.com/LeanBitLab/LeanType",
+            "author": "LeanBitLab",
+            "name": "LeanType",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"verifyLatestTag\":false,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"githubBuildVerificationMode\":\"off\",\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"onDemandOnly\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"versionStringSource\":\"default\",\"versionExtractionRegEx\":\"([0-9]+\\\\.[0-9]+\\\\.[0-9]+)\",\"matchGroupToUse\":\"$1\",\"versionDetection\":\"auto\",\"apkFilterRegEx\":\"standardfull-release.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\",\"enforceGitHubAttestations\":false,\"releaseDateAsVersion\":false,\"releaseTitleAsVersion\":false,\"extractVersionFromAssetName\":false,\"releaseCommitShaAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"lastInstalledTime\":1784743694445,\"appName\":\"LeanType\",\"appAuthor\":\"LeanBitLab\",\"about\":\"LeanType\\n(Standard Full Version)\\n\\n—\\n\\nBy LeanBitLab\\nhttps://github.com/LeanBitLab\"}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://f-droid.org/repo/com.leanbitlab.leantype/en-US/icon_NwRUOnV-3ttKUPje0fc1CZR7Tru_DjWhfl6cAB6zGe4=.png",
+    "categories": [
+        "keyboard"
+    ],
+    "description": {
+        "en": null
+    }
+}
