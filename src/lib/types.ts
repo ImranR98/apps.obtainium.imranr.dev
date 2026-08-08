@@ -24,6 +24,7 @@ interface BaseApp {
   icon?: string
   categories: string[]
   description: Translation
+  homepage?: string
 }
 
 export interface SimpleApp extends BaseApp {
@@ -43,7 +44,7 @@ export interface QueryOptions {
   q: string
   page: number;
   limit: number;
-  sort?: 'name' | 'popular'
+  sort?: 'name' | 'popular' | 'relevance'
 }
 
 export interface PaginatedResult {
@@ -54,4 +55,5 @@ export interface PaginatedResult {
     total: number
     totalPages: number
   }
+  letterPages?: Record<string, number>
 }

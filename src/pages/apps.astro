@@ -94,6 +94,25 @@ if (categoryFilterMessage.length > 50) {
       )
     }
 
+    {
+      !errorMessage && sort === "name" && !q && Object.keys(result.letterPages || {}).length > 0 && (
+        <nav class="mb-6 px-4 py-3 bg-surface border border-border rounded-2xl flex flex-wrap gap-1.5" aria-label="Jump to letter">
+          {Object.entries(result.letterPages || {}).map(([letter, letterPage]) => (
+            <a
+              href={`/apps?sort=name&page=${letterPage}${categories.length > 0 ? `&category=${categories.join("&category=")}` : ""}${categoryMode !== "inclusive" ? `&categoryMode=${categoryMode}` : ""}${type !== "both" ? `&type=${type}` : ""}`}
+              class={`w-8 h-8 inline-flex items-center justify-center rounded-lg text-sm font-medium transition-colors ${
+                letterPage === page
+                  ? "bg-primary-600 text-on-primary"
+                  : "bg-surface-hover text-text-muted hover:text-primary-500"
+              }`}
+            >
+              {letter}
+            </a>
+          ))}
+        </nav>
+      )
+    }
+
     <!-- App grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
       {

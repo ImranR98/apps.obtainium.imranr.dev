@@ -30,19 +30,31 @@
         "zh": "搜索"
     },
     "categorySelect": {
-        "en": "Select App Categories",
+        "en": "Select app categories",
         "de": "Wähle eine Kategorie aus",
         "ja": "アプリカテゴリを選択",
         "zh": "选择应用类别"
     },
     "search": {
-        "en": "RegExp Search",
+        "en": "RegExp search",
         "de": "RegExp Suche",
         "ja": "正規表現で検索",
         "zh": "正则表达式搜索"
     },
+    "selectAll": {
+        "en": "Select all",
+        "de": "Alle auswählen",
+        "ja": "すべて選択",
+        "zh": "全选"
+    },
+    "deselectAll": {
+        "en": "Deselect all",
+        "de": "Alle abwählen",
+        "ja": "すべて解除",
+        "zh": "取消全选"
+    },
     "allCategories": {
-        "en": "All Categories"
+        "en": "All categories"
     },
     "apps": {
         "en": "Apps"
@@ -83,6 +95,12 @@
     "clickToRedirect": {
         "en": "Click here if you are not redirected"
     },
+    "intentBlockedHint": {
+        "en": "Nothing happened? Your browser may be blocking the redirect to Obtainium. Enable \"Allow forward URL requests to external intents\" (or similar) in your browser settings, then tap the button below.",
+        "de": "Nichts passiert? Ihr Browser blockiert möglicherweise die Weiterleitung zu Obtainium. Aktivieren Sie „Weiterleitungsanfragen an externe Intents erlauben“ (oder ähnlich) in den Browser-Einstellungen und tippen Sie dann auf die Schaltfläche unten.",
+        "ja": "何も起きませんでしたか？ブラウザがObtainiumへのリダイレクトをブロックしている可能性があります。ブラウザ設定で「外部インテントへのフォワードURLリクエストを許可」（または類似の設定）を有効にしてから、下のボタンをタップしてください。",
+        "zh": "什么都没发生？您的浏览器可能阻止了跳转到 Obtainium。请在浏览器设置中启用“允许转发 URL 请求到外部意图”（或类似选项），然后点击下方按钮。"
+    },
     "dontHaveObtainium": {
         "en": "Don't have Obtainium? Get"
     },
@@ -105,10 +123,10 @@
         "en": "This page requires a valid Obtainium redirect URL. Make sure you're coming from an app listing."
     },
     "browseApps": {
-        "en": "Browse Apps"
+        "en": "Browse apps"
     },
     "goHome": {
-        "en": "Go Home"
+        "en": "Go home"
     },
     "popular": {
         "en": "Popular this month",
@@ -123,7 +141,7 @@
         "zh": "查看全部"
     },
     "sortBy": {
-        "en": "Sort By",
+        "en": "Sort by",
         "de": "Sortieren nach",
         "ja": "並べ替え",
         "zh": "排序方式"
@@ -140,6 +158,12 @@
         "ja": "人気",
         "zh": "热门"
     },
+    "sortRelevance": {
+        "en": "Relevance",
+        "de": "Relevanz",
+        "ja": "関連性",
+        "zh": "相关度"
+    },
     "monthlyInstalls": {
         "en": "installs/mo",
         "de": "Installationen/Monat",
@@ -151,5 +175,11 @@
         "de": "Wähle eine Variante:",
         "ja": "バリアントを選択:",
         "zh": "选择变体:"
+    },
+    "homepage": {
+        "en": "Homepage",
+        "de": "Homepage",
+        "ja": "ホームページ",
+        "zh": "主页"
     }
 }

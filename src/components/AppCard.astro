@@ -67,7 +67,7 @@ const appConfigs = getAppConfig(app);
                   class="flex items-center justify-between px-2 py-1.5 rounded-lg hover:bg-surface-hover transition-colors"
                   href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, currentLanguage, index))}`}
                 >
-                  <span class="text-xs font-medium text-text truncate">{c.altLabel || c.name}</span>
+                  <span class="text-xs font-medium text-text truncate">{(c as ComplexAppConfig).altLabel || c.name}</span>
                   <svg class="w-3 h-3 text-text-subtle shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                   </svg>
@@ -107,6 +107,19 @@ const appConfigs = getAppConfig(app);
       </h3>
       <p class="text-text-subtle text-xs truncate mt-0.5">
         by {appConfigs[0].author}
+        {app.homepage && (
+          <>
+            {" "}•{" "}
+            <a
+              href={app.homepage}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-primary-400 hover:text-primary-300 hover:underline transition-colors"
+            >
+              {translations["homepage"]}
+            </a>
+          </>
+        )}
       </p>
     </div>
     {appConfigs.length > 1 && (appConfigs[0] as ComplexAppConfig).altLabel && (

@@ -51,6 +51,7 @@ export const getApps = (): (SimpleApp | ComplexApp)[] => {
           icon: data.icon,
           categories: (data.categories as string[] | undefined || []).filter((cat: string) => cats.includes(cat)),
           description: data.description || {},
+          homepage: data.homepage,
         }
         if (appBase.categories.length === 0) {
           appBase.categories.push('other')

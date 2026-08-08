@@ -1,0 +1,53 @@
+name: Auto-Decline Simple Config PRs
+
+on:
+    pull_request:
+        types: [opened, synchronize, reopened]
+
+permissions:
+    contents: read
+    pull-requests: write
+
+jobs:
+    decline-simple-config:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository
+              uses: actions/checkout@v4
+
+            - name: Check if PR only adds simple configs
+              id: check
+              run: |
+                  jq -r '.pull_request.changed_files' "$GITHUB_EVENT_PATH"
+                  echo "changes=$(jq -r '.pull_request.changed_files' "$GITHUB_EVENT_PATH")" >> "$GITHUB_OUTPUT"
+                  echo "head_sha=${{ github.event.pull_request.head.sha }}" >> "$GITHUB_OUTPUT"
+
+            - name: Determine if all changed files are simple configs
+              id: analyze
+              if: steps.check.outputs.changes != '0'
+              run: |
+                  git fetch origin "${{ github.event.pull_request.base.ref }}" --depth=1
+                  BASE_SHA=$(git merge-base HEAD "origin/${{ github.event.pull_request.base.ref }}" || echo "${{ github.event.pull_request.base.sha }}")
+                  echo "base_sha=$BASE_SHA" >> "$GITHUB_OUTPUT"
+                  CHANGED=$(git diff --name-only "$BASE_SHA" HEAD -- . ':!public/data/apps/simple/*.json')
+                  echo "non_simple_changes=$CHANGED" >> "$GITHUB_OUTPUT"
+                  echo "changed=$(echo "$CHANGED" | grep -c . || true)" >> "$GITHUB_OUTPUT"
+
+            - name: Comment and close if simple-config only
+              if: steps.analyze.outputs.changed == '0'
+              uses: actions/github-script@v7
+              with:
+                  script: |
+                      const { pull_request } = context.payload;
+                      await github.rest.issues.createComment({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        issue_number: pull_request.number,
+                        body: `Hi @${pull_request.user.login}, thanks for contributing!\n\nThis PR only adds a **simple config** (an app obtainable directly from a GitHub source with default settings). Since users can add these in one tap from the app's own GitHub releases page, simple configs are not accepted in this repository — only configurations that require custom settings or non-default sources are kept.\n\nIf the app actually requires custom settings, please update the PR with the complete \`additionalSettings\` needed to make it work (see the [app criteria](https://github.com/ImranR98/apps.obtainium.imranr.dev/blob/main/APP_CRITERIA.md) and [contributing guide](https://github.com/ImranR98/apps.obtainium.imranr.dev/blob/main/CONTRIBUTING.md)). Closing this for now.`
+                      });
+                      await github.rest.pulls.update({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        pull_number: pull_request.number,
+                        state: 'closed'
+                      });
