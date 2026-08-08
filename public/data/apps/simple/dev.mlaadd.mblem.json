@@ -1,0 +1,13 @@
+{
+    "config": {
+        "id": "dev.mlaadd.mblem",
+        "url": "https://github.com/mlaadd/mblem",
+        "author": "mlaadd",
+        "name": "MBLEM"
+    },
+    "icon": "https://github.com/mlaadd/mblem/raw/main/design/icon.svg",
+    "categories": ["games"],
+    "description": {
+        "en": "Play the card game Mau-Mau with a nearby player over Bluetooth Low Energy, fully offline."
+    }
+}
