@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "at.techbee.jtx",
+            "url": "https://github.com/TechbeeAT/jtxBoard",
+            "author": "TechbeeAT",
+            "name": "jtxBoard",
+            "additionalSettings": "{\"autoApkFilterByArch\":true,\"includePrereleases\":false,\"trackOnly\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false}"
+        }
+    ],
+    "icon": "https://jtx.techbee.at/wp-content/uploads/2021/11/jtx_logo_mit_hintergrund.svg",
+    "categories": [
+        "notes",
+        "calendar"
+    ],
+    "description": {
+        "en": "jtx Board allows you to manage your Journals (like meeting minutes), Notes and Tasks in one Android app.",
+        "fr": "jtx Board vous permet de gérer vos journaux (comme les comptes-rendus de réunion), vos notes et vos tâches au sein d'une seule application Android."
+    }
+}
