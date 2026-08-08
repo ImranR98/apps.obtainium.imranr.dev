@@ -5,9 +5,10 @@ export interface Props {
   categories: string[];
   categoryMode: "inclusive" | "exclusive";
   q: string;
+  sort?: "name" | "popular" | "relevance";
 }
 
-const { translations, allCategories, categories, categoryMode, q } =
+const { translations, allCategories, categories, categoryMode, q, sort = "popular" } =
   Astro.props as Props;
 ---
 
@@ -71,9 +72,37 @@ const { translations, allCategories, categories, categoryMode, q } =
           ))
         }
       </select>
+      <div class="flex justify-end gap-2 mt-2">
+        <button type="button" data-select-all class="text-xs text-text-muted hover:text-primary-500 transition-colors">
+          {translations["selectAll"]}
+        </button>
+        <button type="button" data-deselect-all class="text-xs text-text-muted hover:text-primary-500 transition-colors">
+          {translations["deselectAll"]}
+        </button>
+      </div>
     </div>
 
     <div class="lg:col-span-2 flex flex-col justify-between">
+      <div class="mb-3">
+        <label class="block text-text-secondary text-sm font-medium mb-1.5"
+          >{translations["sortBy"]}</label
+        >
+        <select
+          name="sort"
+          class="w-full bg-surface-alt border border-border-hover rounded-xl text-text-secondary accent-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2 text-sm"
+          aria-label={translations["sortBy"]}
+        >
+          <option value="name" selected={sort === "name"} class="px-2 py-1.5 rounded-md">
+            {translations["sortName"]}
+          </option>
+          <option value="popular" selected={sort === "popular"} class="px-2 py-1.5 rounded-md">
+            {translations["sortPopular"]}
+          </option>
+          <option value="relevance" selected={sort === "relevance"} class="px-2 py-1.5 rounded-md">
+            {translations["sortRelevance"]}
+          </option>
+        </select>
+      </div>
       <div class="mb-3">
         <label class="block text-text-secondary text-sm font-medium mb-1.5"
           >{translations["search"]}</label
@@ -131,6 +160,47 @@ const { translations, allCategories, categories, categoryMode, q } =
           searchInput.focus();
         }
       });
+    }
+
+    const categorySelect = document.querySelector('select[name="category"]');
+    const sortSelect = document.querySelector('select[name="sort"]');
+    const selectAllBtn = document.querySelector('[data-select-all]');
+    const deselectAllBtn = document.querySelector('[data-deselect-all]');
+    if (categorySelect && selectAllBtn) {
+      selectAllBtn.addEventListener('click', () => {
+        Array.from(categorySelect.options).forEach((o) => (o.selected = true));
+        categorySelect.dispatchEvent(new Event('change', { bubbles: true }));
+      });
+    }
+    if (categorySelect && deselectAllBtn) {
+      deselectAllBtn.addEventListener('click', () => {
+        Array.from(categorySelect.options).forEach((o) => (o.selected = false));
+        categorySelect.dispatchEvent(new Event('change', { bubbles: true }));
+      });
+    }
+    if (categorySelect && sortSelect) {
+      let userTouchedSort = false;
+      sortSelect.addEventListener('change', () => {
+        userTouchedSort = true;
+      });
+      const defaultSortForSelection = () => {
+        const selected = Array.from(categorySelect.options).filter((o) => o.selected).length;
+        const total = categorySelect.options.length;
+        return selected <= 1 || selected >= total ? 'popular' : 'relevance';
+      };
+      categorySelect.addEventListener('change', () => {
+        if (!userTouchedSort) {
+          sortSelect.value = defaultSortForSelection();
+        }
+      });
+    }
+
+    if (searchInput) {
+      const params = new URLSearchParams(window.location.search);
+      const isFreshBrowse = !params.has('q') && !params.has('category') && !params.has('categories') && !params.has('page');
+      if (isFreshBrowse && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        setTimeout(() => searchInput.focus({ preventScroll: true }), 100);
+      }
     }
   })();
 </script>

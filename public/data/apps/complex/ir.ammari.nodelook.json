@@ -1,0 +1,19 @@
+{
+  "configs": [
+    {
+      "id": "ir.ammari.nodelook",
+      "url": "https://github.com/nodelook/android",
+      "author": "NodeLook Project",
+      "name": "NodeLook",
+      "additionalSettings": "{\"includePrereleases\":false}"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/nodelook/android/main/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": [
+    "research_and_development"
+  ],
+  "description": {
+    "en": "NodeLook is a general website checker for users facing internet restrictions. It helps users determine whether a service is accessible through their current connection, or whether it is filtered or unavailable.",
+    "fa": "گره‌نما یک بررسی‌کننده عمومی وب‌سایت برای کاربرانی است که با محدودیت‌های اینترنت مواجه‌اند. این برنامه به کاربران کمک می‌کند تا مشخص کنند آیا یک سرویس از طریق اتصال فعلی قابل دسترسی است یا فیلتر شده و در دسترس نیست."
+  }
+}

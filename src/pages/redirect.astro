@@ -119,14 +119,17 @@ if (redirectUrl) {
               {translations["redirecting"]}
             </p>
 
-            <!-- Manual Redirect Button -->
-            <a
-              id="redirectBtn"
-              href={parsedRedirectUrl}
-              class="w-full py-2.5 px-4 bg-primary-600 text-on-primary text-sm font-medium rounded-full hover:bg-primary-500 transition-colors duration-200"
-            >
-              {translations["clickToRedirect"]}
-            </a>
+        <!-- Manual Redirect Button -->
+        <div id="intentBlocked" class="hidden p-3 mb-4 bg-yellow-900/20 border border-yellow-800/40 rounded-xl text-yellow-400 text-sm">
+          <p>{translations["intentBlockedHint"]}</p>
+        </div>
+        <a
+          id="redirectBtn"
+          href={parsedRedirectUrl}
+          class="w-full py-2.5 px-4 bg-primary-600 text-on-primary text-sm font-medium rounded-full hover:bg-primary-500 transition-colors duration-200"
+        >
+          {translations["clickToRedirect"]}
+        </a>
           </div>
         </div>
 
@@ -213,7 +216,17 @@ if (redirectUrl) {
       if (!redirectingDiv) return;
       const redirectUrl = redirectingDiv.dataset.redirectUrl;
       if (!redirectUrl) return;
-        window.location.href = redirectUrl;
+      const hintEl = document.getElementById('intentBlocked');
+      let navigatedAway = false;
+      const markNavigated = () => { navigatedAway = true; };
+      window.addEventListener('blur', markNavigated);
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) markNavigated();
+      });
+      window.location.href = redirectUrl;
+      setTimeout(() => {
+        if (!navigatedAway && hintEl) hintEl.classList.remove('hidden');
+      }, 2000);
     })();
   </script>
 </Layout>

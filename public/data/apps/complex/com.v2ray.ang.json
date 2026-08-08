@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.v2ray.ang",
+            "url": "https://github.com/2dust/v2rayng",
+            "author": "2dust",
+            "name": "v2rayNG",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\": false, \"fallbackToOlderReleases\": true, \"filterReleaseTitlesByRegEx\": \"\", \"filterReleaseNotesByRegEx\": \"\", \"verifyLatestTag\": false, \"dontSortReleasesList\": false, \"useLatestAssetDateAsReleaseDate\": false, \"trackOnly\": false, \"versionExtractionRegEx\": \"\", \"matchGroupToUse\": \"\", \"versionDetection\": true, \"releaseDateAsVersion\": false, \"useVersionCodeAsOSVersion\": false, \"apkFilterRegEx\": \"^v2rayNG_[0-9.]+_\", \"invertAPKFilter\": false, \"autoApkFilterByArch\": true, \"appName\": \"\", \"exemptFromBackgroundUpdates\": false, \"skipUpdateNotifications\": false, \"about\": \"\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/2dust/v2rayNG/master/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "A V2Ray client for Android, support Xray core and v2fly core."
+    }
+}

@@ -1,8 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Icon from "../components/Icon.astro";
+import AppCard from "../components/AppCard.astro";
 import { getCategoriesWithRandomApps, getAppConfig } from "../lib/query";
 import { getApps } from "../lib/data";
+import { getInstallCounts, getAppInstallCount } from "../lib/stats";
 import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
 
 Astro.response.headers.set('Cache-Control', 'public, max-age=600, s-maxage=1800');
@@ -16,6 +18,12 @@ for (const app of allApps) {
   }
 }
 const categories = Object.keys(categoryApps).sort((a, b) => (categoryCounts[b] || 0) - (categoryCounts[a] || 0));
+
+const installCounts = await getInstallCounts();
+const popularApps = [...allApps]
+  .filter((app) => getAppInstallCount(app, installCounts) > 0)
+  .sort((a, b) => getAppInstallCount(b, installCounts) - getAppInstallCount(a, installCounts))
+  .slice(0, 8);
 
 const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
 const translations = getLocalizedStrings(currentLanguage);
@@ -67,7 +75,42 @@ const translations = getLocalizedStrings(currentLanguage);
       </a>
     </div>
 
+    {
+      popularApps.length > 0 && (
+        <div class="mb-8">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-semibold text-text">
+              {translations["popular"]}
+            </h2>
+            <a
+              href="/apps?sort=popular"
+              class="text-xs text-text-muted hover:text-primary-500 transition-colors"
+            >
+              {translations["viewAll"]} &rarr;
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-4">
+            {popularApps.map((app) => (
+              <AppCard
+                app={app}
+                translations={translations}
+                currentLanguage={currentLanguage}
+                hideCategories={true}
+                installCount={getAppInstallCount(app, installCounts)}
+                compact={true}
+              />
+            ))}
+          </div>
+        </div>
+      )
+    }
+
     <!-- Category tiles grid -->
+    <div class="mb-4">
+      <h2 class="text-lg font-semibold text-text">
+        {translations["categories"]}
+      </h2>
+    </div>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
