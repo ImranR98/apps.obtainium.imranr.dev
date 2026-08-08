@@ -5,9 +5,10 @@ export interface Props {
   categories: string[];
   categoryMode: "inclusive" | "exclusive";
   q: string;
+  sort?: "name" | "popular";
 }
 
-const { translations, allCategories, categories, categoryMode, q } =
+const { translations, allCategories, categories, categoryMode, q, sort = "popular" } =
   Astro.props as Props;
 ---
 
@@ -74,6 +75,23 @@ const { translations, allCategories, categories, categoryMode, q } =
     </div>
 
     <div class="lg:col-span-2 flex flex-col justify-between">
+      <div class="mb-3">
+        <label class="block text-text-secondary text-sm font-medium mb-1.5"
+          >{translations["sortBy"]}</label
+        >
+        <select
+          name="sort"
+          class="w-full bg-surface-alt border border-border-hover rounded-xl text-text-secondary accent-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2 text-sm"
+          aria-label={translations["sortBy"]}
+        >
+          <option value="name" selected={sort === "name"} class="px-2 py-1.5 rounded-md">
+            {translations["sortName"]}
+          </option>
+          <option value="popular" selected={sort === "popular"} class="px-2 py-1.5 rounded-md">
+            {translations["sortPopular"]}
+          </option>
+        </select>
+      </div>
       <div class="mb-3">
         <label class="block text-text-secondary text-sm font-medium mb-1.5"
           >{translations["search"]}</label

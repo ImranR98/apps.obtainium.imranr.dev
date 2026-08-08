@@ -8,6 +8,7 @@ import {
   extractAppParamsFromRequest,
 } from "../lib/query";
 import { getApps } from "../lib/data";
+import { getInstallCounts, getAppInstallCount } from "../lib/stats";
 import {
   getCurrentLanguage,
   getLocalizedStrings,
@@ -23,7 +24,7 @@ const allCategories = [
   ...new Set(allApps.flatMap((app) => app.categories)),
 ].sort();
 
-const { categories, categoryMode, type, q, page, limit } =
+const { categories, categoryMode, type, q, page, limit, sort } =
   await extractAppParamsFromRequest(Astro.request);
 
 let result;
@@ -36,11 +37,14 @@ try {
     q,
     page,
     limit,
+    sort,
   });
 } catch (e) {
   errorMessage = "An error occurred while loading apps. Please try again.";
   result = { apps: [], pagination: { page: 1, limit: 50, total: 0, totalPages: 1 } };
 }
+
+const installCounts = await getInstallCounts();
 
 let categoryFilterMessage = categories.map((c) => translations[c]).join(", ");
 const fullCategoryMessage = categoryFilterMessage;
@@ -58,6 +62,7 @@ if (categoryFilterMessage.length > 50) {
       categories={categories}
       categoryMode={categoryMode}
       q={q}
+      sort={sort}
     />
 
     <!-- Results header -->
@@ -115,6 +120,7 @@ if (categoryFilterMessage.length > 50) {
               translations={translations}
               currentLanguage={currentLanguage}
               hideCategories={categories.length === 1}
+              installCount={getAppInstallCount(app, installCounts)}
             />
           ))
         )

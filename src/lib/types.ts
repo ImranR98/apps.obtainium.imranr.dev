@@ -43,6 +43,7 @@ export interface QueryOptions {
   q: string
   page: number;
   limit: number;
+  sort?: 'name' | 'popular'
 }
 
 export interface PaginatedResult {

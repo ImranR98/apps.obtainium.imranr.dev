@@ -1,6 +1,7 @@
 import { getApps } from './data'
 import type { SimpleApp, ComplexApp, QueryOptions, PaginatedResult, SimpleAppConfig, ComplexAppConfig } from './types'
 import { pickLocalTranslation } from './i18n'
+import { getInstallCounts, getAppInstallCount } from './stats'
 
 function escapeRegex(str: string): string {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
@@ -54,13 +55,15 @@ export const extractAppParamsFromRequest = async (request: Request): Promise<Que
   const categoryMode = (url.searchParams.get('categoryMode') as 'inclusive' | 'exclusive') || 'inclusive'
   const type = (url.searchParams.get('type') as 'simple' | 'complex' | 'both') || 'both'
   const q = url.searchParams.get('q') || ''
+  const sort = (url.searchParams.get('sort') as 'name' | 'popular') || 'popular'
   return {
     categories: categories,
     categoryMode,
     type,
     q,
     page,
-    limit
+    limit,
+    sort
   }
 }
 
@@ -74,7 +77,8 @@ export const queryAppsAsync = async (options: QueryOptions): Promise<PaginatedRe
     type = 'both',
     q = '',
     page = 1,
-    limit = 50
+    limit = 50,
+    sort = 'popular'
   } = options
 
   const apps = getApps()
@@ -99,6 +103,17 @@ export const queryAppsAsync = async (options: QueryOptions): Promise<PaginatedRe
       const { name, author } = getAppConfig(app)[0]
       const descText = Object.values(app.description).filter(Boolean).join(' ')
       return regex.test(name) || regex.test(author) || regex.test(descText)
+    })
+  }
+
+  if (sort === 'popular') {
+    const counts = await getInstallCounts()
+    filteredApps = [...filteredApps].sort((a, b) => {
+      const diff = getAppInstallCount(b, counts) - getAppInstallCount(a, counts)
+      if (diff !== 0) return diff
+      const nameA = getAppConfig(a)[0].name.toLowerCase()
+      const nameB = getAppConfig(b)[0].name.toLowerCase()
+      return nameA.localeCompare(nameB)
     })
   }
 

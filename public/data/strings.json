@@ -109,5 +109,47 @@
     },
     "goHome": {
         "en": "Go Home"
+    },
+    "popular": {
+        "en": "Popular this month",
+        "de": "Beliebt diesen Monat",
+        "ja": "今月の人気",
+        "zh": "本月热门"
+    },
+    "viewAll": {
+        "en": "View all",
+        "de": "Alle ansehen",
+        "ja": "すべて見る",
+        "zh": "查看全部"
+    },
+    "sortBy": {
+        "en": "Sort By",
+        "de": "Sortieren nach",
+        "ja": "並べ替え",
+        "zh": "排序方式"
+    },
+    "sortName": {
+        "en": "Name",
+        "de": "Name",
+        "ja": "名前",
+        "zh": "名称"
+    },
+    "sortPopular": {
+        "en": "Popularity",
+        "de": "Beliebtheit",
+        "ja": "人気",
+        "zh": "热门"
+    },
+    "monthlyInstalls": {
+        "en": "installs/mo",
+        "de": "Installationen/Monat",
+        "ja": "月間インストール",
+        "zh": "每月安装"
+    },
+    "chooseVariant": {
+        "en": "Choose a variant:",
+        "de": "Wähle eine Variante:",
+        "ja": "バリアントを選択:",
+        "zh": "选择变体:"
     }
 }
