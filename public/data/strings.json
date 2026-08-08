@@ -1,55 +1,66 @@
 {
     "title": {
-        "en": "Obtainium Apps"
+        "en": "Obtainium Apps",
+        "fa": "کاره‌های آب‌تینیوم"
     },
     "subtitle": {
         "en": "Crowdsourced App Configurations for Obtainium",
-        "ru": "Конфигурации приложений для Obtainium, найденные сообществом"
+        "ru": "Конфигурации приложений для Obtainium, найденные сообществом",
+        "fa": "پیکربندی‌های جمع‌سپاری‌شده‌ی کاره‌ها برای آب‌تینیوم"
     },
     "about": {
         "en": "About",
-        "ru": "О Obtainium"
+        "ru": "О Obtainium",
+        "fa": "درباره"
     },
     "contribute": {
         "en": "Contribute",
-        "ru": "Внести вклад"
+        "ru": "Внести вклад",
+        "fa": "مشارکت"
     },
     "source": {
         "en": "Source",
-        "ru": "Исходный код"
+        "ru": "Исходный код",
+        "fa": "منبع"
     },
     "exclusive": {
         "en": "Exclusive",
-        "ru": "Исключить"
+        "ru": "Исключить",
+        "fa": "انحصاری"
     },
     "inclusive": {
         "en": "Inclusive",
-        "ru": "Включить"
+        "ru": "Включить",
+        "fa": "فراگیر"
     },
     "browseAllApps": {
         "en": "Browse all apps",
-        "ru": "Все приложения"
+        "ru": "Все приложения",
+        "fa": "مرور همه‌ی کاره‌ها"
     },
     "go": {
         "en": "Go",
         "de": "Suchen",
         "ja": "絞り込む",
         "zh": "搜索",
-        "ru": "Ввод"
+        "ru": "Ввод",
+        "fa": "برو"
     },
     "categorySelect": {
         "en": "Select app categories",
         "de": "Wähle eine Kategorie aus",
         "ja": "アプリカテゴリを選択",
         "zh": "选择应用类别",
-        "ru": "Выбрать Категории"
+        "ru": "Выбрать Категории",
+        "fa": "انتخاب دسته‌بندی‌های کاره‌ها"
     },
     "search": {
         "en": "RegExp search",
         "de": "RegExp Suche",
         "ja": "正規表現で検索",
         "zh": "正则表达式搜索",
-        "ru": "RegExp поиск"
+        "ru": "RegExp поиск",
+        "fa": "جست‌وجوی رج‌اکس"
     },
     "selectAll": {
         "en": "Select all",
@@ -65,58 +76,71 @@
     },
     "allCategories": {
         "en": "All categories",
-        "ru": "Все категории"
+        "ru": "Все категории",
+        "fa": "همه‌ی دسته‌بندی‌ها"
     },
     "apps": {
         "en": "Apps",
-        "ru": "Приложения"
+        "ru": "Приложения",
+        "fa": "کاره‌ها"
     },
     "install": {
         "en": "Install",
-        "ru": "Установить"
+        "ru": "Установить",
+        "fa": "نصب"
     },
     "copy": {
         "en": "Copy",
-        "ru": "Скопировать"
+        "ru": "Скопировать",
+        "fa": "رونوشت"
     },
     "categories": {
         "en": "Categories",
         "de": "Kategorien",
         "ja": "種類",
         "zh": "类别",
-        "ru": "Категории"
+        "ru": "Категории",
+        "fa": "دسته‌بندی‌ها"
     },
     "invalidUrlPrefix": {
         "en": "Invalid URL. Redirect should start with \"obtainium://\".",
-        "ru": "Неверный URL. Адрес должен начинаться с \"obtainium://\"."
+        "ru": "Неверный URL. Адрес должен начинаться с \"obtainium://\".",
+        "fa": "نشانی نامعتبر است. تغییر مسیر باید با «obtainium://» شروع شود."
     },
     "invalidUrl": {
         "en": "Invalid URL. Valid app URL could not be found.",
-        "ru": "Неверный URL. Не удалось найти корректный URL приложения."
+        "ru": "Неверный URL. Не удалось найти корректный URL приложения.",
+        "fa": "نشانی نامعتبر است. نشانی معتبر کاره پیدا نشد."
     },
     "noRedirectParam": {
         "en": "No redirect parameter provided.",
-        "ru": "Не указан параметр перенаправления."
+        "ru": "Не указан параметр перенаправления.",
+        "fa": "پارامتر تغییر مسیر ارائه نشده است."
     },
     "obtainiumRedirect": {
         "en": "Obtainium Redirect",
-        "ru": "Перенаправление Obtainium"
+        "ru": "Перенаправление Obtainium",
+        "fa": "تغییر مسیر آب‌تینیوم"
     },
     "redirectDescription": {
         "en": "Redirecting to Obtainium app...",
-        "ru": "Перенаправление в Obtainium..."
+        "ru": "Перенаправление в Obtainium...",
+        "fa": "در حال تغییر مسیر به کاره‌ی آب‌تینیوم..."
     },
     "enableJavaScript": {
         "en": "Enable JavaScript in your browser to redirect to Obtainium.",
-        "ru": "Включите JavaScript в вашем бразуере для перенаправления в Obtainium"
+        "ru": "Включите JavaScript в вашем бразуере для перенаправления в Obtainium",
+        "fa": "جاوااسکریپت را در مرورگر خود فعال کنید تا به آب‌تینیوم تغییر مسیر داده شود."
     },
     "redirecting": {
         "en": "Redirecting to Obtainium...",
-        "ru": "Перенаправление в Obtainium..."
+        "ru": "Перенаправление в Obtainium...",
+        "fa": "در حال تغییر مسیر به آب‌تینیوم..."
     },
     "clickToRedirect": {
         "en": "Click here if you are not redirected",
-        "ru": "Нажмите, если вы не были перенаправлены"
+        "ru": "Нажмите, если вы не были перенаправлены",
+        "fa": "اگر تغییر مسیر انجام نشد، اینجا کلیک کنید"
     },
     "intentBlockedHint": {
         "en": "Nothing happened? Your browser may be blocking the redirect to Obtainium. Enable \"Allow forward URL requests to external intents\" (or similar) in your browser settings, then tap the button below.",
@@ -126,39 +150,48 @@
     },
     "dontHaveObtainium": {
         "en": "Don't have Obtainium? Get",
-        "ru": "У вас нет Obtainium? Установите"
+        "ru": "У вас нет Obtainium? Установите",
+        "fa": "آب‌تینیوم ندارید؟ دریافت کنید"
     },
     "manuallyFromHomePage": {
         "en": "manually from their home page",
-        "ru": "вручную с их домашней страницы"
+        "ru": "вручную с их домашней страницы",
+        "fa": "به‌صورت دستی از صفحه‌ی اصلی آن‌ها"
     },
     "here": {
         "en": "here",
-        "ru": "здесь"
+        "ru": "здесь",
+        "fa": "اینجا"
     },
     "downloadObtainium": {
         "en": "Download Obtainium here",
-        "ru": "Скачать Obtainium"
+        "ru": "Скачать Obtainium",
+        "fa": "آب‌تینیوم را از اینجا دریافت کنید"
     },
     "browseAppList": {
         "en": "Browse the full app list here",
-        "ru": "Исследовать полный список приложений"
+        "ru": "Исследовать полный список приложений",
+        "fa": "فهرست کامل کاره‌ها را اینجا مرور کنید"
     },
     "howToUse": {
         "en": "How to use this page",
-        "ru": "Как пользоваться этой страницей"
+        "ru": "Как пользоваться этой страницей",
+        "fa": "چگونه از این صفحه استفاده کنیم"
     },
     "redirectInstructions": {
         "en": "This page requires a valid Obtainium redirect URL. Make sure you're coming from an app listing.",
-        "ru": "Для этой страницы нужен корректный URL перенаправления Obtainium. Убедитесь, что вы перешли со страницы приложения."
+        "ru": "Для этой страницы нужен корректный URL перенаправления Obtainium. Убедитесь, что вы перешли со страницы приложения.",
+        "fa": "این صفحه به یک نشانی تغییر مسیر معتبر آب‌تینیوم نیاز دارد. مطمئن شوید که از فهرست یک کاره وارد شده‌اید."
     },
     "browseApps": {
         "en": "Browse apps",
-        "ru": "Искать Приложения"
+        "ru": "Искать Приложения",
+        "fa": "مرور کاره‌ها"
     },
     "goHome": {
         "en": "Go home",
-        "ru": "Домой"
+        "ru": "Домой",
+        "fa": "رفتن به خانه"
     },
     "popular": {
         "en": "Popular this month",
