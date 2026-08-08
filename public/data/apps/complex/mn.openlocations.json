@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "mn.openlocations",
+            "url": "https://codeberg.org/waterfinder/waterfinder",
+            "author": "Mario Nachbaur",
+            "name": "Water Finder",
+            "additionalSettings":"{\"includePrereleases\":false}"
+        }
+    ],
+    "icon": "https://waterfinder.org/assets/icon.png",
+    "categories": [
+        "maps_and_navigation",
+        "utilities"
+    ],
+    "description": {
+        "en": "Find fountains & restrooms near you",
+        "es": "Encuentra fuentes y baños cerca de ti"
+    }
+}

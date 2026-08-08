@@ -1,0 +1,21 @@
+{
+    "configs": [
+        {
+            "id": "app.trizum.capacitor",
+            "url": "https://github.com/HorusGoul/trizum",
+            "author": "HorusGoul",
+            "name": "trizum",
+            "additionalSettings":"{\"includePrereleases\":false,\"filterReleaseTitlesByRegEx\":\"mobile\"}"
+        }
+    ],
+    "icon": "https://trizum.app/maskable.svg",
+    "categories": [
+        "calculator",
+        "finance",
+        "utilities"
+    ],
+    "description": {
+        "en": "Split bills with friends and family",
+        "es": "Divide facturas con amigos y familia"
+    }
+}
