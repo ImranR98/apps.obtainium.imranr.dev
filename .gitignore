@@ -25,5 +25,3 @@ pnpm-debug.log*
 
 # custom
 public/data/apps/mock/
-public/data/.vscode/settings.json
-package-lock.json
