@@ -56,7 +56,7 @@ Bevor Sie eine neue App-Anfrage oder einen neuen Pull-Request mit einer neuen Ko
 4. Es werden nur Konfigurationen aus offiziellen Quellen der App akzeptiert. Das bedeutet, dass Konfigurationen von Re-Upload-Seiten (z.B. APKPure, APKMirror usw.) NICHT hinzugefügt werden.
 
 
-Nachdem Sie die oben genannten Punkte überprüft haben, können Sie [eine App-Anfrage eröffnen] (https://github.com/ImranR98/apps.obtainium.imranr.dev/issues). Stellen Sie sicher, dass Sie mindestens die folgenden Informationen angeben:
+Nachdem Sie die oben genannten Punkte überprüft haben, können Sie [eine App-Anfrage eröffnen](https://github.com/ImranR98/apps.obtainium.imranr.dev/issues). Stellen Sie sicher, dass Sie mindestens die folgenden Informationen angeben:
 
 - Den Link, über den Sie die APK herunterladen können.
 - Was Sie bisher versucht haben, um die App zum Laufen zu bringen. Wenn Sie eine funktionierende Konfiguration haben, sollten Sie selbst einen PR erstellen.
