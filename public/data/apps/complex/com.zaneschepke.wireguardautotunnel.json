@@ -1,0 +1,18 @@
+{
+  "configs": [
+    {
+      "id": "com.zaneschepke.wireguardautotunnel",
+      "url": "https://github.com/zaneschepke/wgtunnel",
+      "author": "zaneschepke",
+      "name": "WG Tunnel",
+      "preferredApkIndex": 0,
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":true,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"WG Tunnel\",\"appAuthor\":\"Zane Schepke\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
+      "overrideSource": null
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/zaneschepke/wgtunnel/master/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": ["vpn"],
+  "description": {
+    "en": "WG Tunnel is a FOSS WireGuard & AmneziaWG Android client with auto-tunneling, lockdown & local proxying."
+  }
+}
