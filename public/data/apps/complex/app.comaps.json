@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "app.comaps",
+            "url": "https://codeberg.org/comaps/comaps",
+            "author": "comaps",
+            "name": "CoMaps"
+        }
+    ],
+    "icon": "https://codeberg.org/comaps/comaps/raw/branch/main/android/app/src/fdroid/play/listings/en-US/graphics/icon/logo.png",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "CoMaps is a community-led, free and open-source offline maps and navigation app based on OpenStreetMap data, built with a focus on privacy (no tracking, no ads) and being not-for-profit. It offers offline maps, search, turn-by-turn navigation for walking, cycling and driving, outdoor/hiking features, bookmarks, track recording and a built-in OSM editor. CoMaps is a fork of Organic Maps."
+    }
+}
