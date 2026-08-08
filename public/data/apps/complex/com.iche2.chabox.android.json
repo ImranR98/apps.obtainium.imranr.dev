@@ -1,0 +1,25 @@
+{
+    "configs": [
+        {
+            "id": "com.iche2.chabox.android",
+            "url": "https://github.com/huanguan1978/chacrypt",
+            "author": "huanguan1978",
+            "name": "ChaBox",
+            "additionalSettings": "{\"includePrereleases\":false,\"filterReleaseTitlesByRegEx\":\"^chabox-\",\"apkFilterRegEx\":\"chabox\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/huanguan1978/chacrypt/main/chabox/assets/chabox_icon_square_512x512.png",
+    "categories": [
+        "utilities",
+        "file_manager",
+        "science_and_education",
+        "notes",
+        "text_editors"
+    ],
+    "description": {
+        "en": "A 100% offline, open-source file encryption and secure diary app powered by ChaCha20-Poly1305. Built with zero ads, zero tracking, and no network dependencies, it serves as a secure mobile companion for protecting your private data.",
+        "de": "Eine 100 % Offline- und Open-Source-Dateiverschlüsselungs- und sichere Tagebuch-App, betrieben mit ChaCha20-Poly1305. Ohne Werbung, Registrierung oder Netzwerkabhängigkeit – ein sicherer Begleiter für Ihre Privatsphäre.",
+        "ja": "ChaCha20-Poly1305を採用した、100%オフラインかつオープンソース的ファイル暗号化・安全な日記アプリ。広告・登録・ネット依存・データ収集は一切なく、外出先でもデータを守る安全なモバイル伴侶です。",
+        "zh": "一款基于 ChaCha20-Poly1305 的 100% 离线、开源文件加密与安全日记应用。无广告、免注册、无网络依赖、无数据收集，是在移动端保护您私密数据的安全伴侣。"
+    }
+}
