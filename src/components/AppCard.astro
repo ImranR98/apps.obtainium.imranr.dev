@@ -9,16 +9,86 @@ interface Props {
   translations: Record<string, string>;
   currentLanguage: string;
   hideCategories?: boolean;
+  installCount?: number;
+  compact?: boolean;
 }
 
-const { app, translations, currentLanguage, hideCategories = false } =
+const { app, translations, currentLanguage, hideCategories = false, installCount = 0, compact = false } =
   Astro.props;
 const appConfigs = getAppConfig(app);
 ---
 
-<div
-  class="group relative bg-surface border border-border rounded-3xl p-4 hover:border-border-hover transition-all duration-200 flex flex-col h-full"
->
+{
+  compact ? (
+    <div
+      class="group relative bg-surface border border-border rounded-3xl p-3 hover:border-border-hover transition-all duration-200 flex items-center gap-3"
+    >
+      <Icon
+        src={app.icon}
+        alt={appConfigs[0].name}
+        width={32}
+        height={32}
+        className="rounded-xl shrink-0"
+      />
+      <div class="min-w-0 flex-1">
+        <h3 class="text-sm font-semibold text-text truncate">
+          <a
+            href={appConfigs[0].url}
+            class="hover:text-primary-500 transition-colors"
+            >{appConfigs[0].name}</a
+          >
+        </h3>
+        <p class="text-text-subtle text-xs truncate">
+          by {appConfigs[0].author}
+        </p>
+      </div>
+      {installCount > 0 && (
+        <span class="text-text-muted text-xs font-medium whitespace-nowrap">
+          {new Intl.NumberFormat(undefined, { notation: "compact", maximumFractionDigits: 1 }).format(installCount)}
+          {" "}{translations["monthlyInstalls"]}
+        </span>
+      )}
+      {
+        appConfigs.length > 1 ? (
+          <details class="variant-picker relative shrink-0">
+            <summary
+              class="cursor-pointer list-none [&::-webkit-details-marker]:hidden select-none px-3 py-1.5 bg-primary-600 text-on-primary text-xs font-medium rounded-full hover:bg-primary-500 transition-colors duration-200 text-center"
+            >
+              {translations["install"]}
+            </summary>
+            <div
+              class="absolute right-0 top-full mt-2 z-20 w-64 bg-surface border border-border rounded-2xl p-2 shadow-xl"
+            >
+              <p class="text-text-muted text-xs px-2 pt-1 pb-2">
+                {translations["chooseVariant"]}
+              </p>
+              {appConfigs.map((c, index) => (
+                <a
+                  class="flex items-center justify-between px-2 py-1.5 rounded-lg hover:bg-surface-hover transition-colors"
+                  href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, currentLanguage, index))}`}
+                >
+                  <span class="text-xs font-medium text-text truncate">{(c as ComplexAppConfig).altLabel || c.name}</span>
+                  <svg class="w-3 h-3 text-text-subtle shrink-0 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                  </svg>
+                </a>
+              ))}
+            </div>
+          </details>
+        ) : (
+          <a
+            class="shrink-0 px-3 py-1.5 bg-primary-600 text-on-primary text-xs font-medium rounded-full hover:bg-primary-500 transition-colors duration-200 text-center"
+            href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, currentLanguage, 0))}`}
+          >
+            {translations["install"]}
+          </a>
+        )
+      }
+    </div>
+  ) : (
+    <div
+      class="group relative bg-surface border border-border rounded-3xl p-4 hover:border-border-hover transition-all duration-200 flex flex-col h-full"
+    >
   <div class="flex items-start mb-3">
     <Icon
       src={app.icon}
@@ -65,6 +135,14 @@ const appConfigs = getAppConfig(app);
   )}
 
   <div class="mt-auto pt-3">
+    {installCount > 0 && (
+      <div class="flex items-center mb-3 text-text-muted">
+        <svg class="w-4 h-4 mr-1.5 text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+        </svg>
+        <span class="text-xs font-medium">{new Intl.NumberFormat(undefined, { notation: "compact", maximumFractionDigits: 1 }).format(installCount)} {translations["monthlyInstalls"]}</span>
+      </div>
+    )}
     <div class="flex gap-2">
       <button
         type="button"
@@ -108,5 +186,16 @@ const appConfigs = getAppConfig(app);
         ))}
       </div>
     )}
+    </div>
   </div>
-</div>
+  )
+}
+
+<script>
+  document.addEventListener("click", (e) => {
+    if ((e.target as Element | null)?.closest(".variant-picker")) return;
+    document.querySelectorAll<HTMLDetailsElement>(".variant-picker[open]").forEach((d) => {
+      d.removeAttribute("open");
+    });
+  });
+</script>
