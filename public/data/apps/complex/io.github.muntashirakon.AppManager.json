@@ -1,0 +1,22 @@
+{
+    "configs": [
+        {
+            "id": "io.github.muntashirakon.AppManager",
+            "url": "https://github.com/MuntashirAkon/AppManager",
+            "author": "MuntashirAkon",
+            "name": "App Manager",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"verifyLatestTag\":false,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"App Manager\",\"filterReleaseNotesByRegEx\":\"\",\"githubBuildVerificationMode\":\"off\",\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"onDemandOnly\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"versionStringSource\":\"assetName\",\"versionExtractionRegEx\":\"([0-9]+(\\\\.[0-9]+)+)\",\"matchGroupToUse\":\"$1\",\"versionDetection\":\"auto\",\"apkFilterRegEx\":\"\\\\.apk$\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\",\"useVersionCodeAsOSVersion\":false,\"releaseTitleAsVersion\":false,\"releaseDateAsVersion\":false,\"appName\":\"App Manager\",\"appAuthor\":\"Muntashir Akon\",\"extractVersionFromAssetName\":true,\"releaseCommitShaAsVersion\":false,\"folderIds\":[\"mqc926o6743bf3\",\"mqcow8t4co6zhw\"],\"excludedFolderIds\":[],\"lastInstalledTime\":1782711818469,\"enforceGitHubAttestations\":false,\"folderNames\":{\"mqc926o6743bf3\":\"[ESSENTIAL]\",\"mqcow8t4co6zhw\":\"APP MANAGEMENT\"},\"about\":\"App Manager\\n\\n—\\n\\nBy Muntashir Akon\\nhttps://muntashir.dev\"}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://f-droid.org/repo/io.github.muntashirakon.AppManager/en-US/icon_0Na4ecQZhaD_xCtbJ9rEhuaUfjlqhu70S_-PiBGlIes=.png",
+    "categories": [
+        "other",
+        "system",
+        "utilities"
+    ],
+    "description": {
+        "en": null
+    }
+}

@@ -1,6 +1,7 @@
 import { getApps } from './data'
 import type { SimpleApp, ComplexApp, QueryOptions, PaginatedResult, SimpleAppConfig, ComplexAppConfig } from './types'
 import { pickLocalTranslation } from './i18n'
+import { getInstallCounts, getAppInstallCount } from './stats'
 
 function escapeRegex(str: string): string {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
@@ -54,14 +55,32 @@ export const extractAppParamsFromRequest = async (request: Request): Promise<Que
   const categoryMode = (url.searchParams.get('categoryMode') as 'inclusive' | 'exclusive') || 'inclusive'
   const type = (url.searchParams.get('type') as 'simple' | 'complex' | 'both') || 'both'
   const q = url.searchParams.get('q') || ''
+  const explicitSort = url.searchParams.get('sort')
+  const sort = explicitSort === 'name' || explicitSort === 'popular' || explicitSort === 'relevance'
+    ? explicitSort
+    : getDefaultSort(categories)
   return {
     categories: categories,
     categoryMode,
     type,
     q,
     page,
-    limit
+    limit,
+    sort
   }
+}
+
+/**
+ * Default sort: popularity when none, one or all categories are selected,
+ * relevance otherwise (sorts by category match count).
+ * The category set mirrors what the filter form offers (categories present on apps).
+ */
+export const getDefaultSort = (categories: string[]): 'popular' | 'relevance' => {
+  if (categories.length <= 1) {
+    return 'popular'
+  }
+  const totalCategories = new Set(getApps().flatMap((app) => app.categories)).size
+  return categories.length >= totalCategories ? 'popular' : 'relevance'
 }
 
 /**
@@ -74,7 +93,8 @@ export const queryAppsAsync = async (options: QueryOptions): Promise<PaginatedRe
     type = 'both',
     q = '',
     page = 1,
-    limit = 50
+    limit = 50,
+    sort = 'popular'
   } = options
 
   const apps = getApps()
@@ -102,10 +122,41 @@ export const queryAppsAsync = async (options: QueryOptions): Promise<PaginatedRe
     })
   }
 
+  if (sort === 'popular') {
+    const counts = await getInstallCounts()
+    filteredApps = [...filteredApps].sort((a, b) => {
+      const diff = getAppInstallCount(b, counts) - getAppInstallCount(a, counts)
+      if (diff !== 0) return diff
+      const nameA = getAppConfig(a)[0].name.toLowerCase()
+      const nameB = getAppConfig(b)[0].name.toLowerCase()
+      return nameA.localeCompare(nameB)
+    })
+  } else if (sort === 'relevance') {
+    filteredApps = [...filteredApps].sort((a, b) => {
+      const countA = a.categories.filter(cat => categories.includes(cat)).length
+      const countB = b.categories.filter(cat => categories.includes(cat)).length
+      if (countB !== countA) return countB - countA
+      const nameA = getAppConfig(a)[0].name.toLowerCase()
+      const nameB = getAppConfig(b)[0].name.toLowerCase()
+      return nameA.localeCompare(nameB)
+    })
+  }
+
   const total = filteredApps.length
   const start = (page - 1) * limit
   const end = start + limit
   const paginatedApps = filteredApps.slice(start, end)
+
+  const letterPages: Record<string, number> = {}
+  if (sort === 'name') {
+    for (let i = 0; i < total; i++) {
+      const name = getAppConfig(filteredApps[i])[0].name
+      const letter = name.charAt(0).toUpperCase()
+      if (/[A-Z]/.test(letter) && !(letter in letterPages)) {
+        letterPages[letter] = Math.floor(i / limit) + 1
+      }
+    }
+  }
 
   return {
     apps: paginatedApps,
@@ -114,7 +165,8 @@ export const queryAppsAsync = async (options: QueryOptions): Promise<PaginatedRe
       limit,
       total,
       totalPages: Math.ceil(total / limit)
-    }
+    },
+    letterPages
   }
 }
 
