@@ -43,6 +43,7 @@ export interface QueryOptions {
   q: string
   page: number;
   limit: number;
+  sort?: 'name' | 'popular' | 'relevance'
 }
 
 export interface PaginatedResult {
@@ -53,4 +54,5 @@ export interface PaginatedResult {
     total: number
     totalPages: number
   }
+  letterPages?: Record<string, number>
 }

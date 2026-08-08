@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.aidictation.app",
+            "url": "https://github.com/writingmate/aidictation",
+            "author": "Writingmate",
+            "name": "AI Dictation",
+            "additionalSettings": "{\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"^(AIDictation )?Android\",\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+\\\\.\\\\d+$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/writingmate/aidictation/main/AIDictationAndroid/app/src/main/play/listings/en-US/graphics/icon/1.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Open-source voice-to-text with offline recognition on supported devices and optional cloud transcription and cleanup."
+    }
+}

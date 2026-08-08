@@ -1,0 +1,15 @@
+{
+    "configs": [
+        {
+            "id": "com.networkscanner.app",
+            "url": "https://github.com/usamaiqb/network-scanner",
+            "author": "usamaiqb",
+            "name": "Network Scanner"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/usamaiqb/network-scanner/refs/heads/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": ["utilities"],
+    "description": {
+        "en": "Fast, privacy-focused network scanner to discover devices on your local network"
+    }
+}
