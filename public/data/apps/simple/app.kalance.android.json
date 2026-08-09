@@ -1,0 +1,16 @@
+{
+  "config": {
+    "id": "app.kalance.android",
+    "url": "https://github.com/kattulus1997/kalance-android",
+    "author": "Kalance",
+    "name": "Kalance"
+  },
+  "icon": "https://kalance.app/apple-touch-icon.png",
+  "categories": [
+    "sports_and_health"
+  ],
+  "description": {
+    "en": "A private calorie and macro diary with barcode scanning, food history, goals, and a free plan without ads.",
+    "es": "Diario privado de calorías y macros con escáner de códigos, historial, objetivos y un plan gratuito sin anuncios."
+  }
+}
