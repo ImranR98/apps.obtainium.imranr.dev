@@ -1,0 +1,16 @@
+{
+  "config": {
+    "id": "com.santiagorodriguez.countaway",
+    "url": "https://github.com/santirodriguez/CountAway",
+    "author": "Santiago Rodriguez",
+    "name": "CountAway"
+  },
+  "icon": "https://raw.githubusercontent.com/santirodriguez/CountAway/main/docs/assets/branding/countaway.webp",
+  "categories": [
+    "clock_and_time"
+  ],
+  "description": {
+    "en": "A lightweight Android countdown app with home-screen widgets, local notifications, and no ads, accounts, analytics, or Internet permission.",
+    "es": "Una app ligera de cuenta regresiva para Android con widgets de pantalla de inicio y notificaciones locales, sin anuncios, cuentas, analíticas ni permiso de Internet."
+  }
+}
