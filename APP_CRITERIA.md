@@ -34,7 +34,7 @@ If you've gone through the above steps, then you can [open an app request](https
 
 3. Only configs from official sources from the app are accepted. This means reupload site (eg. APKPure, APKMirror etc...) configs will NOT be added.
 
-If you've gone through the above steps, then you can open an PR. Keep these things in mind:
+If you've gone through the above steps, then you can open a PR. Keep these things in mind:
 
 - Keep the amount of alternative configs to a minimum, only provide the ones that will work the best in the long term.
 - Ensure that you leave as many config options as you can as the default setting. Only change what you need. For example, with a GitHub config you would not add an app with the `Include prereleases` setting enabled unless necessary as not everyone will want prereleases.

@@ -22,13 +22,23 @@
 - Note: Using `scripts/generate_from_url.py` requires you to install "Colorama" by using the `pip` command `pip install colorama`
 
 
+### Where to Put Your Config
+
+Config files must be placed in the `public/data/apps/` directory:
+
+- `public/data/apps/complex/<package-id>.json` — apps that need custom settings (an app using `additionalSettings`, a non-default source, or multiple variants). These use a `configs` array.
+- `public/data/apps/simple/<package-id>.json` — apps that work with default settings only (e.g. a plain GitHub source). These use a single `config` object.
+
+Do not put config files anywhere else (e.g. a top-level `data/` directory) — files outside `public/data/apps/` are not loaded by the website.
+
+
 ### Minimal Example
 
 To add an app config to this repo, your app configuration JSON must contain at least the `id`, `url`, `author`, und `name` keys. Note that for any app-specific setting you don't define in `additionalSettings`, the default value will be used.
 
 For example:
 - Minimal app JSON: `{"id":"dev.patrickgold.florisboard.beta","url":"https://github.com/florisboard/florisboard","author":"florisboard","name":"FlorisBoard Beta","additionalSettings":"{\"includePrereleases\":true}"}`
-- As URL: http://apps.obtainium.imranr.dev/redirect.html?r=obtainium://app/%7B%22id%22%3A%22dev.patrickgold.florisboard.beta%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fflorisboard%2Fflorisboard%22%2C%22author%22%3A%22florisboard%22%2C%22name%22%3A%22FlorisBoard%20Beta%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%7D%22%7D
+- As URL: https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22dev.patrickgold.florisboard.beta%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fflorisboard%2Fflorisboard%22%2C%22author%22%3A%22florisboard%22%2C%22name%22%3A%22FlorisBoard%20Beta%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%7D%22%7D
 
 ---
 
@@ -50,10 +60,20 @@ For example:
 - Hinweis: Die Verwendung von `scripts/generate_from_url.py` erfordert die Installation von „Colorama“ mit dem `pip` Befehl `pip install colorama`.
 
 
+### Wohin mit der Konfiguration
+
+Konfigurationsdateien müssen im Verzeichnis `public/data/apps/` abgelegt werden:
+
+- `public/data/apps/complex/<package-id>.json` — für Apps, die benutzerdefinierte Einstellungen benötigen (eine App mit `additionalSettings`, einer nicht standardmäßigen Quelle oder mehreren Varianten). Diese verwenden ein `configs`-Array.
+- `public/data/apps/simple/<package-id>.json` — für Apps, die nur mit Standardeinstellungen funktionieren (z. B. eine einfache GitHub-Quelle). Diese verwenden ein einzelnes `config`-Objekt.
+
+Legen Sie Konfigurationsdateien nicht an anderen Orten ab (z. B. in einem `data`-Verzeichnis auf oberster Ebene) — Dateien außerhalb von `public/data/apps/` werden von der Website nicht geladen.
+
+
 ### Minimalbeispiel
 
 Um eine App-Konfiguration zu diesem Repo hinzuzufügen, muss Ihre App-Konfiguration JSON mindestens die Schlüssel `id`, `url`, `author`, und `name` enthalten. Beachten Sie, dass für jede app-spezifische Einstellung, die Sie nicht in `additionalSettings` definieren, der Standardwert verwendet wird.
 
 Zum Beispiel:
-- Minimale App JSON: `{„id“: „dev.patrickgold.florisboard.beta“, „url“: „https://github.com/florisboard/florisboard“, „author“: „florisboard“, „name“: „FlorisBoard Beta“, „additionalSettings“:„{\“includePrereleases\„:true}“}`
-- Als URL: http://apps.obtainium.imranr.dev/redirect.html?r=obtainium://app/%7B%22id%22%3A%22dev.patrickgold.florisboard.beta%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fflorisboard%2Fflorisboard%22%2C%22author%22%3A%22florisboard%22%2C%22name%22%3A%22FlorisBoard%20Beta%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%7D%22%7D
+- Minimale App JSON: `{"id":"dev.patrickgold.florisboard.beta","url":"https://github.com/florisboard/florisboard","author":"florisboard","name":"FlorisBoard Beta","additionalSettings":"{\"includePrereleases\":true}"}`
+- Als URL: https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22dev.patrickgold.florisboard.beta%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fflorisboard%2Fflorisboard%22%2C%22author%22%3A%22florisboard%22%2C%22name%22%3A%22FlorisBoard%20Beta%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Atrue%7D%22%7D
