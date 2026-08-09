@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.liuml.apptimelimiter",
+            "url": "https://github.com/Xposed-Modules-Repo/com.liuml.apptimelimiter",
+            "author": "TACPR",
+            "name": "Time Stop",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"^app-time-limiter-v.*\\\\.apk$\"}"
+        }
+    ],
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "Time Stop provides precise app-time control with daily quotas, per-launch timers, schedules, shared group budgets, cooldowns, LSPosed enforcement, and a privacy-focused non-root mode.",
+        "zh": "时停提供精细的应用计时与管控：每日额度、单次计时、时段规则、分组共享额度、冷却机制、LSPosed 管控以及注重隐私的非 Root 模式。"
+    }
+}
