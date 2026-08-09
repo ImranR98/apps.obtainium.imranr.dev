@@ -1,6 +1,14 @@
 {
   "configs": [
     {
+      "id": "com.nevar.nzik.foss",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (FOSS)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-foss\\\\.apk\"}",
+      "altLabel": "foss"
+    },
+    {
       "id": "com.nevar.nzik",
       "url": "https://github.com/N-Zik-Group/N-Zik",
       "author": "N-Zik-Group",
@@ -37,7 +45,7 @@
       "url": "https://github.com/N-Zik-Group/N-Zik",
       "author": "N-Zik-Group",
       "name": "N-Zik (Beta)",
-      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-b$\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-beta\\\\.apk\"}",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-beta\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-beta\\\\.apk\"}",
       "altLabel": "beta"
     },
     {
@@ -45,16 +53,8 @@
       "url": "https://github.com/N-Zik-Group/N-Zik",
       "author": "N-Zik-Group",
       "name": "N-Zik (Beta32)",
-      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-b$\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-beta32\\\\.apk\"}",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-beta\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-beta32\\\\.apk\"}",
       "altLabel": "beta32"
-    },
-    {
-      "id": "com.nevar.nzik.foss",
-      "url": "https://github.com/N-Zik-Group/N-Zik",
-      "author": "N-Zik-Group",
-      "name": "N-Zik (FOSS)",
-      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-foss\\\\.apk\"}",
-      "altLabel": "foss"
     },
     {
       "id": "com.nevar.nzik.dev",
