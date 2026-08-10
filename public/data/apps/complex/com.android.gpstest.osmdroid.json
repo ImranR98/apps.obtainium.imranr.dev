@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.android.gpstest.osmdroid",
+            "url": "https://github.com/barbeau/gpstest",
+            "author": "barbeau",
+            "name": "GPSTest",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^osmdroidRelease-.*\\\\.apk$\"}",
+            "altLabel": "F-Droid flavor (osmdroid)"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/barbeau/gpstest/master/icons/ic_launcher-playstore.png",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "An open-source GNSS testing app that displays real-time satellite and location information. This config installs the F-Droid flavor without Google Maps."
+    }
+}
