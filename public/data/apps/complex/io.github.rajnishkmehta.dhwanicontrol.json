@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "io.github.rajnishkmehta.dhwanicontrol",
+            "url": "https://github.com/RajnishKMehta/DhwaniControl",
+            "author": "RajnishKMehta",
+            "name": "DhwaniControl"
+        }
+    ],
+    "icon": "https://github.com/RajnishKMehta/DhwaniControl/raw/refs/heads/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "Utilities"
+    ],
+    "description": {
+        "en": "DhwaniControl is a lightweight Android utility app that lets you adjust system volume without hardware keys, perfect for devices with broken physical volume buttons."
+    }
+}
