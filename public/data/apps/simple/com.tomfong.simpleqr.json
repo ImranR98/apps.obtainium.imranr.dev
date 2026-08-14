@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "com.tomfong.simpleqr",
+        "url": "https://github.com/tomfong/simple-qr",
+        "author": "Tom FONG",
+        "name": "Simple QR"
+    },
+    "icon": "https://github.com/tomfong/simple-qr/raw/main/.github/images/icon_round.png",
+    "categories": [
+        "barcode_scanner",
+        "utilities"
+    ],
+    "description": {
+        "en": "A lightweight, privacy-first QR code and barcode scanner and generator that works offline without ads or data collection."
+    }
+}
