@@ -1,0 +1,17 @@
+{
+  "configs": [
+    {
+      "id": "io.github.picocrypt_ng.picocrypt_ng",
+      "url": "https://github.com/Picocrypt-NG/Picocrypt-NG",
+      "author": "Picocrypt NG",
+      "name": "Picocrypt NG",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,",
+      "overrideSource": null
+    }
+  ],
+  "icon": "https://github.com/Picocrypt-NG/Picocrypt-NG/blob/main/images/key.png",
+  "categories": ["utilities", "file_manager"],
+  "description": {
+    "en": "A very small, very simple, yet very secure encryption tool. Picocrypt NG uses the secure XChaCha20 cipher and the Argon2id key derivation function to provide a high level of security."
+  }
+}
