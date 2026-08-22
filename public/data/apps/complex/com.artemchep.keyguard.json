@@ -1,0 +1,22 @@
+{
+    "schemaVersion": 2,
+    "exportedAt": "2026-08-22T11:29:59.274755",
+    "appVersion": "0.0.0",
+    "apps": [
+        {
+            "id": "com.artemchep.keyguard",
+            "url": "https://github.com/AChep/keyguard-app",
+            "author": "AChep",
+            "name": "Keyguard",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"v?(\\\\d+\\\\.\\\\d+\\\\.\\\\d+)\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"Keyguard-Mobile\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}",
+            "lastUpdateCheck": 1787412581719616,
+            "pinned": false,
+            "categories": [],
+            "overrideSource": "GitHub",
+            "allowIdChange": false,
+            "pendingRepoRenameUrl": null
+        }
+    ],
+    "settings": null
+}
