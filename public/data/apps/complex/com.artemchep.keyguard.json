@@ -1,0 +1,28 @@
+{
+    "schemaVersion": 2,
+    "exportedAt": "2026-08-22T11:29:59.274755",
+    "appVersion": "0.0.0",
+    "apps": [
+        {
+            "id": "com.artemchep.keyguard",
+            "url": "https://github.com/AChep/keyguard-app",
+            "author": "AChep",
+            "name": "Keyguard",
+            "installedVersion": "3.0.4",
+            "latestVersion": "3.0.4",
+            "apkUrls": "[[\"Keyguard-Mobile-3.0.4.apk\",\"https://api.github.com/repos/AChep/keyguard-app/releases/assets/521007461\"]]",
+            "otherAssetUrls": "[[\"androidApp-none-release.apk\",\"https://api.github.com/repos/AChep/keyguard-app/releases/assets/521007460\"],[\"Keyguard-3.0.4-aarch64.flatpak\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/Keyguard-3.0.4-aarch64.flatpak\"],[\"Keyguard-3.0.4-apple.dmg\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/Keyguard-3.0.4-apple.dmg\"],[\"Keyguard-3.0.4-intel.dmg\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/Keyguard-3.0.4-intel.dmg\"],[\"Keyguard-3.0.4-linux-aarch64.tar.gz\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/Keyguard-3.0.4-linux-aarch64.tar.gz\"],[\"Keyguard-3.0.4-linux-x86_64.tar.gz\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/Keyguard-3.0.4-linux-x86_64.tar.gz\"],[\"Keyguard-3.0.4-x86_64.flatpak\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/Keyguard-3.0.4-x86_64.flatpak\"],[\"Keyguard-3.0.4.msi\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/Keyguard-3.0.4.msi\"],[\"keyguard-android-ssh-agent_3.0.4_aarch64.deb\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/keyguard-android-ssh-agent_3.0.4_aarch64.deb\"],[\"keyguard-android-ssh-agent_3.0.4_arm.deb\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/keyguard-android-ssh-agent_3.0.4_arm.deb\"],[\"keyguard-android-ssh-agent_3.0.4_x86_64.deb\",\"https://github.com/AChep/keyguard-app/releases/download/r20260819.2/keyguard-android-ssh-agent_3.0.4_x86_64.deb\"],[\"Keyguard-Watch-3.0.4.apk\",\"https://api.github.com/repos/AChep/keyguard-app/releases/assets/521007459\"],[\"Release v3.0.4-20260819.2.tar.gz\",\"https://api.github.com/repos/AChep/keyguard-app/tarball/r20260819.2\"],[\"Release v3.0.4-20260819.2.zip\",\"https://api.github.com/repos/AChep/keyguard-app/zipball/r20260819.2\"]]",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"v?(\\\\d+\\\\.\\\\d+\\\\.\\\\d+)\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"Keyguard-Mobile\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}",
+            "lastUpdateCheck": 1787412581719616,
+            "pinned": false,
+            "categories": [],
+            "releaseDate": 1787153073000000,
+            "changeLog": "This release resolves several issues affecting the desktop application on Windows, macOS, and Linux.\n\n### Desktop Application Fixes\n\n*   Fixed an issue where images, such as website favicons for vault entries, would not load correctly.\n*   Resolved a bug that prevented the file picker from opening. This affected functionality such as adding attachments to items or opening KDBX database files from the local filesystem.\n",
+            "overrideSource": "GitHub",
+            "allowIdChange": false,
+            "pendingRepoRenameUrl": null
+        }
+    ],
+    "settings": null
+}
