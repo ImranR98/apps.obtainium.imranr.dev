@@ -1,0 +1,36 @@
+{
+    "configs": [
+        {
+            "id": "org.mozilla.fennec_fdroid",
+            "url": "https://f-droid.org/packages/org.mozilla.fennec_fdroid",
+            "author": "F-Droid",
+            "name": "Fennec F-Droid",
+            "additionalSettings": "{\"apkFilterRegEx\":\"_\\\\d+20\\\\.apk$\"}",
+            "altLabel": "arm64-v8a"
+        },
+        {
+            "id": "org.mozilla.fennec_fdroid",
+            "url": "https://f-droid.org/packages/org.mozilla.fennec_fdroid",
+            "author": "F-Droid",
+            "name": "Fennec F-Droid",
+            "additionalSettings": "{\"apkFilterRegEx\":\"_\\\\d+00\\\\.apk$\"}",
+            "altLabel": "armeabi-v7a"
+        },
+        {
+            "id": "org.mozilla.fennec_fdroid",
+            "url": "https://f-droid.org/packages/org.mozilla.fennec_fdroid",
+            "author": "F-Droid",
+            "name": "Fennec F-Droid",
+            "additionalSettings": "{\"apkFilterRegEx\":\"_\\\\d+10\\\\.apk$\"}",
+            "altLabel": "x86_64"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/org.mozilla.fennec_fdroid/en-US/icon_RCxqbONQXgoTeWvoYAQjC0nmDVTlBoCXvzZ1Rx27gRM=.png",
+    "categories": [
+        "browser",
+        "privacy_and_anonymity"
+    ],
+    "description": {
+        "en": "A Firefox-based browser built by F-Droid with proprietary components and telemetry removed."
+    }
+}
