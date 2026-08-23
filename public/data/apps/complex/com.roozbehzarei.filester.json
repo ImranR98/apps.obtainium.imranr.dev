@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.roozbehzarei.filester",
+            "url": "https://github.com/roozbehzarei/filester",
+            "author": "Roozbeh Zarei",
+            "name": "Filester",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":true,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"filester-universal\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":false,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/roozbehzarei/filester/main/app/src/main/ic_launcher-playstore.png",
+    "categories": [
+        "file_sharing"
+    ],
+    "description": {
+        "en": "Temporary cloud storage for fast, private file sharing"
+    }
+}
