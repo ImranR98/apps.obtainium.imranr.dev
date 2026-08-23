@@ -1,25 +1,16 @@
 {
-    "schemaVersion": 2,
-    "exportedAt": "2026-08-20T22:30:46.829831",
-    "appVersion": "0.0.0",
-    "apps": [
-        {
-            "id": "app.morphe.android.youtube",
-            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
-            "author": "FiorenMas",
-            "name": "YouTube Morphe",
-            "installedVersion": "all",
-            "latestVersion": "all",
-            "preferredApkIndex": 0,
-            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":true,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"^youtube-(?!(?:music|beta|lite)-).+-morphe(?:\\\\.apk)?$\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":true,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}",
-            "lastUpdateCheck": 1787279328269855,
-            "pinned": false,
-            "categories": [],
-            "releaseDate": 1786974470000000,
-            "overrideSource": null,
-            "allowIdChange": true,
-            "pendingRepoRenameUrl": null
-        }
-    ],
-    "settings": null
+  "icon": "https://raw.githubusercontent.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root/refs/heads/master/icon.png",
+  "categories": ["media", "video"],
+  "description": {
+    "en": "YouTube Morphe"
+  },
+  "configs": [
+    {
+      "id": "app.morphe.android.youtube",
+      "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+      "author": "FiorenMas",
+      "name": "YouTube Morphe",
+      "additionalSettings": "{\"apkFilterRegEx\":\"^youtube-(?!(?:music|beta|lite)-).+-morphe(?:\\\\.apk)?$\"}"
+    }
+  ]
 }
