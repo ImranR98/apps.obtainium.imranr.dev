@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": "dev.diego.expanda",
+    "url": "https://github.com/diegomarzaa/expanda",
+    "author": "diegomarzaa",
+    "name": "Expanda"
+  },
+  "icon": "https://raw.githubusercontent.com/diegomarzaa/expanda/main/docs/expanda-readme-icon.png",
+  "categories": [
+    "utilities"
+  ],
+  "description": {
+    "en": "Offline, open-source text expansion for Android with reusable snippets and dynamic templates."
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "com.beemdevelopment.aegis",
+        "url": "https://github.com/beemdevelopment/Aegis",
+        "author": "Beem Development",
+        "name": "Aegis Authenticator"
+    },
+    "icon": "https://github.com/beemdevelopment/Aegis/raw/master/metadata/en-US/images/icon.png",
+    "categories": [
+        "2FA",
+        "password_and_authentication"
+    ],
+    "description": {
+        "en": "A free, secure, and open source two-factor authentication app with encrypted vaults and backup support."
+    }
+}

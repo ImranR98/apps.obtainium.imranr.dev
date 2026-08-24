@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": "com.opentasker.app",
+    "url": "https://github.com/SysAdminDoc/OpenTasker",
+    "author": "SysAdminDoc",
+    "name": "OpenTasker"
+  },
+  "icon": "https://raw.githubusercontent.com/SysAdminDoc/OpenTasker/master/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": [
+    "automation"
+  ],
+  "description": {
+    "en": "An on-device Tasker alternative. Profiles watch device contexts such as time, location, network, battery, NFC and calendar, then run tasks built from the action catalog. No account, no telemetry and no Play Services."
+  }
+}
