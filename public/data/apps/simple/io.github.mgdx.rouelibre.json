@@ -1,0 +1,22 @@
+{
+  "config": {
+    "id": "io.github.mgdx.rouelibre",
+    "url": "https://github.com/mgdx/RoueLibre",
+    "author": "mgdx",
+    "name": "Roue Libre"
+  },
+  "icon": "https://raw.githubusercontent.com/mgdx/RoueLibre/main/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": [
+    "maps_and_navigation"
+  ],
+  "description": {
+    "en": "Roue Libre shows bike-share stations on a map and computes a door-to-door journey combining walking and cycling. Everything runs on the device: the map, the address search and the route computation need no connection at all. Only real-time bike availability goes out on the network.",
+    "fr": "Roue Libre affiche les stations de vélos en libre-service sur une carte et calcule un itinéraire porte-à-porte combinant la marche et le vélo. Tout fonctionne sur l’appareil : la carte, la recherche d’adresses et le calcul d’itinéraire n’ont besoin d’aucune connexion. Seule la disponibilité des vélos en temps réel sort sur le réseau.",
+    "de": "Roue Libre zeigt die Stationen von Leihrad-Netzen auf einer Karte und berechnet eine Route von Tür zu Tür, die Gehen und Radfahren verbindet. Alles läuft auf dem Gerät: Die Karte, die Adresssuche und die Routenberechnung brauchen überhaupt keine Verbindung. Nur die Verfügbarkeit der Räder in Echtzeit geht ins Netz.",
+    "es": "Roue Libre muestra las estaciones de bicis compartidas en un mapa y calcula una ruta puerta a puerta que combina caminar y pedalear. Todo funciona en el dispositivo: el mapa, la búsqueda de direcciones y el cálculo de rutas no necesitan ninguna conexión. Solo la disponibilidad de bicis en tiempo real sale a la red.",
+    "it": "Roue Libre mostra le stazioni di bike sharing su una mappa e calcola un itinerario da porta a porta che unisce tratti a piedi e tratti in bici. Tutto funziona sul dispositivo: la mappa, la ricerca degli indirizzi e il calcolo dei percorsi non hanno bisogno di nessuna connessione. Solo la disponibilità delle bici in tempo reale esce in rete.",
+    "pt": "O Roue Libre mostra as estações de bicicletas partilhadas num mapa e calcula um percurso porta a porta que combina caminhar e pedalar. Tudo funciona no dispositivo: o mapa, a pesquisa de endereços e o cálculo de percursos não precisam de ligação nenhuma. Só a disponibilidade das bicicletas em tempo real sai para a rede.",
+    "nl": "Roue Libre toont de stations van deelfietsnetwerken op een kaart en berekent een reis van deur tot deur waarin lopen en fietsen elkaar afwisselen. Alles draait op het apparaat: de kaart, het zoeken naar adressen en de routeberekening hebben helemaal geen verbinding nodig. Alleen de beschikbaarheid van de fietsen in real time gaat het netwerk op.",
+    "ja": "Roue Libre は、シェアサイクルのステーションを地図に表示し、徒歩と自転車を組み合わせたドアからドアまでの経路を計算します。すべては端末の中で動きます。地図も、住所の検索も、経路の計算も、通信をまったく必要としません。ネットワークに出ていくのは、リアルタイムの空き状況だけです。"
+  }
+}

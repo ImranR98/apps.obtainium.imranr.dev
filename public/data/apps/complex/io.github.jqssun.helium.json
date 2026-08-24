@@ -1,0 +1,27 @@
+{
+    "configs": [
+        {
+            "id": "io.github.jqssun.helium",
+            "url": "https://github.com/jqssun/android-titanium-browser",
+            "author": "jqssun",
+            "name": "Titanium Browser",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":true,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":true,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"arm64\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false}",
+            "altLabel": "arm64-v8a"
+        },
+        {
+            "id": "io.github.jqssun.helium",
+            "url": "https://github.com/jqssun/android-titanium-browser",
+            "author": "jqssun",
+            "name": "Titanium Browser",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":true,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":true,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"armeabi\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false}",
+            "altLabel": "armeabi-v7a"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/jqssun/android-titanium-browser/refs/heads/main/res/icon.svg",
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "Private and secure open-source Android browser with support for extensions."
+    }
+}

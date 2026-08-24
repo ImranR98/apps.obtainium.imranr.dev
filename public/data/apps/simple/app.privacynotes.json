@@ -1,0 +1,30 @@
+{
+  "config": {
+    "id": "app.privacynotes",
+    "url": "https://github.com/LifetimeLabsDev/PrivacyNotes.app",
+    "author": "LifetimeLabsDev",
+    "name": "PrivacyNotes"
+  },
+  "icon": "https://privacynotes.app/icon-512.png",
+  "categories": [
+    "notes",
+    "privacy_and_anonymity"
+  ],
+  "description": {
+    "en": "One encrypted place for everything you’d never post. Encrypted on your device before it goes anywhere. We couldn’t read it if we tried.",
+    "de": "Ein verschlüsselter Ort für alles, was du nie posten würdest. Verschlüsselt auf deinem Gerät, bevor es irgendwohin geht. Wir könnten es nicht lesen, selbst wenn wir wollten.",
+    "fr": "Un seul endroit chiffré pour tout ce que tu ne publierais jamais. Chiffré sur ton appareil avant d'aller où que ce soit. On ne pourrait pas le lire même en essayant.",
+    "es": "Un único lugar cifrado para todo lo que nunca publicarías. Cifrado en tu dispositivo antes de ir a cualquier parte. No podríamos leerlo ni aunque lo intentáramos.",
+    "it": "Un unico posto cifrato per tutto ciò che non pubblicheresti mai. Cifrato sul tuo dispositivo prima ancora di uscirne. Non potremmo leggerlo nemmeno volendo.",
+    "nl": "Eén versleutelde plek voor alles wat je nooit zou posten. Versleuteld op je apparaat voordat het ook maar ergens heen gaat. We zouden het niet kunnen lezen, al wilden we het.",
+    "pl": "Jedno zaszyfrowane miejsce na wszystko, czego nigdy byś nie opublikował. Szyfrowane na Twoim urządzeniu, zanim gdziekolwiek trafi. Nie odczytalibyśmy tego, nawet gdybyśmy chcieli.",
+    "pt": "Um lugar encriptado para tudo o que nunca publicarias. Encriptado no teu dispositivo antes de ir seja para onde for. Não conseguíamos ler nem que quiséssemos.",
+    "ja": "誰にも見せないすべてを、ひとつの暗号化された場所に。どこかへ送られる前に、あなたのデバイス上で暗号化。私たちが読もうとしても、読めません。",
+    "ko": "절대 어디에도 올리지 않을 것들을 위한 하나의 암호화 공간. 어디로 가기 전에 먼저 당신의 기기에서 암호화돼요. 저희는 읽으려 해도 읽을 수 없어요.",
+    "cs": "Jedno šifrované místo pro všechno, co nikdy nezveřejníš. Šifruje se na tvém zařízení, ještě než někam odejde. Nepřečteme to, ani kdybychom chtěli.",
+    "tr": "Asla paylaşmayacağınız her şey için tek bir şifreli yer. Hiçbir yere gitmeden önce cihazınızda şifrelenir. İstesek de okuyamazdık.",
+    "sv": "En krypterad plats för allt du aldrig skulle lägga ut. Krypteras på din enhet innan det går någonstans. Vi skulle inte kunna läsa det ens om vi försökte.",
+    "ca": "Un sol lloc xifrat per a tot allò que mai no publicaries. Es xifra al teu dispositiu abans d'anar enlloc. No podríem llegir-ho ni volent.",
+    "ar": "مكان مشفّر واحد لكل ما لن تنشره أبدًا. يُشفَّر على جهازك قبل أن يذهب إلى أي مكان. لا يمكننا قراءته حتى لو حاولنا."
+  }
+}
