@@ -1,0 +1,16 @@
+{
+  "config": {
+    "id": "com.pixelvault.pixelvault",
+    "url": "https://github.com/nilo99/PixelVault",
+    "author": "nilo99",
+    "name": "PixelVault"
+  },
+  "icon": "https://raw.githubusercontent.com/nilo99/PixelVault/main/assets/PixelVault.png",
+  "categories": [
+    "downloader_and_manager"
+  ],
+  "description": {
+    "en": "A link aggregator for retro game sources. Browse download links organised by manufacturer and console across Nintendo, Sony and Sega systems, plus full rompacks, with the catalogue maintained on a companion site.",
+    "pt": "Um agregador de links para fontes de jogos retro. Consulta links organizados por fabricante e consola nos sistemas Nintendo, Sony e Sega, além de rompacks completos, com o catálogo mantido num site companheiro."
+  }
+}
