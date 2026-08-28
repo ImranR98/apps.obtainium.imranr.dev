@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.documents",
+            "url": "https://github.com/FossifyOrg/Documents",
+            "author": "Fossify",
+            "name": "Documents",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^documents-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Documents/main/graphics/icon.webp",
+    "categories": [
+        "document_and_pdf_viewer",
+        "text_editors"
+    ],
+    "description": {
+        "en": "Read and organize PDF, DOCX, text, Markdown, CSV, TSV, and HTML files."
+    }
+}

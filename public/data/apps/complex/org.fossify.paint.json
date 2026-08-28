@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.paint",
+            "url": "https://github.com/FossifyOrg/Paint",
+            "author": "Fossify",
+            "name": "Paint",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^paint-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Paint/main/graphics/icon.webp",
+    "categories": [
+        "drawing",
+        "painting"
+    ],
+    "description": {
+        "en": "Draw, pick colors, set backgrounds, and export images."
+    }
+}

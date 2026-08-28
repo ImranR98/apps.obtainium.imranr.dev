@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.voicerecorder",
+            "url": "https://github.com/FossifyOrg/Voice-Recorder",
+            "author": "Fossify",
+            "name": "Voice Recorder",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^voicerecorder-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Voice-Recorder/main/graphics/icon.webp",
+    "categories": [
+        "recorder"
+    ],
+    "description": {
+        "en": "Capture audio, manage recordings, and keep files local."
+    }
+}

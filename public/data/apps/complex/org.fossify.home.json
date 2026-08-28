@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.home",
+            "url": "https://github.com/FossifyOrg/Launcher",
+            "author": "Fossify",
+            "name": "Launcher",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^launcher-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Launcher/main/graphics/icon.webp",
+    "categories": [
+        "launcher_and_desktop"
+    ],
+    "description": {
+        "en": "Customize your home screen, app drawer, widgets, search, and layout without a content feed."
+    }
+}
