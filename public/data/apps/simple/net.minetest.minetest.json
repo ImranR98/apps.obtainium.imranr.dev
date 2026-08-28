@@ -1,0 +1,16 @@
+{
+  "config": {
+    "id": "net.minetest.minetest",
+    "url": "https://github.com/luanti-org/luanti",
+    "author": "luanti-org",
+    "name": "Luanti"
+  },
+  "icon": "https://raw.githubusercontent.com/luanti-org/luanti/master/misc/luanti.svg",
+  "categories": [
+    "games"
+  ],
+  "description": {
+    "en": "Luanti (formerly Minetest) is an open source voxel game creation platform. Play one of the available games, create your own, or explore a huge variety of user-made content.",
+    "de": "Luanti (früher Minetest) ist eine Open-Source-Voxel-Spieleplattform. Spiele eines der verfügbaren Spiele, erstelle dein eigenes oder erkunde eine riesige Auswahl an nutzergestellten Inhalten."
+  }
+}
