@@ -31,6 +31,15 @@ The dev server will be available at `http://localhost:8080`.
 npm run build
 ```
 
+## Badge your own project
+
+[![Get it on Obtainium](public/badge_obtainium.png)](BADGING.md)
+
+Any project can link straight to an Obtainium import without a listing in this directory, the way
+[Delta Chat](https://delta.chat/en/download) and [PrivacyNotes](https://privacynotes.app/#downloads)
+do on their own download pages. See [BADGING.md](BADGING.md) for the two link forms and a worked
+example.
+
 ## Contributing
 
 See the [contributing guidelines](CONTRIBUTING.md) for how to add new app configs.
