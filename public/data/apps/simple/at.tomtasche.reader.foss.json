@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": "at.tomtasche.reader.foss",
+    "url": "https://github.com/opendocument-app/OpenDocument.droid",
+    "author": "opendocument-app",
+    "name": "OpenDocument Reader"
+  },
+  "icon": "https://opendocument.app/icon-512.png",
+  "categories": [
+    "document_and_pdf_viewer"
+  ],
+  "description": {
+    "en": "Views and edits ODT, ODS, ODP, DOCX, XLSX, PPTX and PDF entirely on the device: offline, without an account, without uploading anything."
+  }
+}
