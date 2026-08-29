@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.contacts",
+            "url": "https://github.com/FossifyOrg/Contacts",
+            "author": "Fossify",
+            "name": "Contacts",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^contacts-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Contacts/main/graphics/icon.webp",
+    "categories": [
+        "contacts"
+    ],
+    "description": {
+        "en": "Search, edit, group, favorite, import, and export contacts stored on the device."
+    }
+}

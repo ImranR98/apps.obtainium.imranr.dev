@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.phone",
+            "url": "https://github.com/FossifyOrg/Phone",
+            "author": "Fossify",
+            "name": "Phone",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^phone-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Phone/main/graphics/icon.webp",
+    "categories": [
+        "dialer",
+        "call_blocker_and_spam_filter"
+    ],
+    "description": {
+        "en": "Manage calls with number blocking, call history, contact integration, and multi-SIM support."
+    }
+}

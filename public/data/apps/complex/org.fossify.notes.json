@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.notes",
+            "url": "https://github.com/FossifyOrg/Notes",
+            "author": "Fossify",
+            "name": "Notes",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^notes-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Notes/main/graphics/icon.webp",
+    "categories": [
+        "notes"
+    ],
+    "description": {
+        "en": "Write notes, shopping lists, and checklists, and keep them visible with home-screen widgets."
+    }
+}
