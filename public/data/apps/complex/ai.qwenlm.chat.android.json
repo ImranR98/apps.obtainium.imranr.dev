@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "ai.qwenlm.chat.android",
+            "url": "https://download.qwen.ai/android/Qwen_release.apk",
+            "author": "Alibaba Cloud",
+            "name": "Qwen Studio",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"invertAPKFilter\":false,\"appName\":\"Qwen Studio\",\"appAuthor\":\"Alibaba Cloud\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"autoApkFilterByArch\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/dzkqF1JNhipb2N9PXsjyPX8-HPyCuhbbRcNNNa89d19dAZKUvu8uhteLBhh9ayK0cQqDdFHvyRTzJDVgH9Swvlw=s512",
+    "categories": [
+        "miscellaneous"
+    ],
+    "description": {
+        "en": "Official Qwen Studio app by Alibaba Cloud - AI chat assistant."
+    }
+}
