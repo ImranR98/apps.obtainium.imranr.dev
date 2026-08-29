@@ -10,7 +10,7 @@
     ],
     "icon": "https://raw.githubusercontent.com/MorpheApp/morphe-patches/refs/heads/main/patches-bundle.png",
     "categories": [
-        "Community Clients"
+        "community_clients"
     ],
     "description": {
         "en": "YouTube, enhanced with Morphe"

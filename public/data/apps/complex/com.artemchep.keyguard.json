@@ -10,7 +10,7 @@
     ],
     "icon": "https://raw.githubusercontent.com/AChep/keyguard-app/refs/heads/master/desktopApp/src/jvmMain/resources/icon.png",
     "categories": [
-        "Password & Authentication"
+        "password_and_authentication"
     ],
     "description": {
         "en": "A password manager that supports Bitwarden platform and KeePass (KDBX) files. It autofills your logins, supports passkeys, works offline, and runs a Watchtower that finds leaked and reused passwords and other issues."
