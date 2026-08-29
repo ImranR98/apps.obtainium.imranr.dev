@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.camera",
+            "url": "https://github.com/FossifyOrg/Camera",
+            "author": "Fossify",
+            "name": "Camera",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^camera-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Camera/main/graphics/icon.webp",
+    "categories": [
+        "camera"
+    ],
+    "description": {
+        "en": "Capture photos and videos with camera switching, zoom, quality controls, and configurable save paths."
+    }
+}

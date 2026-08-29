@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.messages",
+            "url": "https://github.com/FossifyOrg/Messages",
+            "author": "Fossify",
+            "name": "Messages",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^messages-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Messages/main/graphics/icon.webp",
+    "categories": [
+        "sms",
+        "messaging"
+    ],
+    "description": {
+        "en": "Send, schedule, search, back up, block, and manage SMS/MMS conversations."
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.filemanager",
+            "url": "https://github.com/FossifyOrg/File-Manager",
+            "author": "Fossify",
+            "name": "File Manager",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^file-manager-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/File-Manager/main/graphics/icon.webp",
+    "categories": [
+        "file_manager",
+        "utilities"
+    ],
+    "description": {
+        "en": "Browse folders, manage archives, organize storage, and move files on the device."
+    }
+}

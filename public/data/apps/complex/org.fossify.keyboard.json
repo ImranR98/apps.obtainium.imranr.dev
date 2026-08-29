@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.keyboard",
+            "url": "https://github.com/FossifyOrg/Keyboard",
+            "author": "Fossify",
+            "name": "Keyboard",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^keyboard-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Keyboard/main/graphics/icon.webp",
+    "categories": [
+        "keyboard"
+    ],
+    "description": {
+        "en": "Type with a keyboard that works offline, supports multiple layouts, and avoids network permission by design."
+    }
+}
