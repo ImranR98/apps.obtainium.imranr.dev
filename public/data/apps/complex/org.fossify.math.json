@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.math",
+            "url": "https://github.com/FossifyOrg/Calculator",
+            "author": "Fossify",
+            "name": "Calculator",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^calculator-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Calculator/main/graphics/icon.webp",
+    "categories": [
+        "calculator"
+    ],
+    "description": {
+        "en": "Handle everyday calculations, advanced functions, unit conversions, and history."
+    }
+}

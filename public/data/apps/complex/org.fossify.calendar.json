@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.calendar",
+            "url": "https://github.com/FossifyOrg/Calendar",
+            "author": "Fossify",
+            "name": "Calendar",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^calendar-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Calendar/main/graphics/icon.webp",
+    "categories": [
+        "calendar"
+    ],
+    "description": {
+        "en": "Plan events, reminders, widgets, holidays, and recurring schedules with local calendar data."
+    }
+}
