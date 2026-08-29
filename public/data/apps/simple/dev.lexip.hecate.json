@@ -5,7 +5,7 @@
     "author": "xLexip",
     "name": "Adaptive Theme"
   },
-  "icon": "https://raw.githubusercontent.com/xLexip/Adaptive-Theme/develop/app/src/foss/fastlane/en-US/images/icon.png",
+  "icon": "https://raw.githubusercontent.com/xLexip/Adaptive-Theme/develop/app/fastlane/metadata/android/en-US/images/icon.png",
   "categories": ["automation", "system", "utilities", "wallpapers"],
   "description": {
     "en": "Automatically switches between light and dark theme using your device's ambient light sensor. It can also update your wallpaper to match the active theme."

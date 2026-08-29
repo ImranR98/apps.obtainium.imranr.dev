@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.clock",
+            "url": "https://github.com/FossifyOrg/Clock",
+            "author": "Fossify",
+            "name": "Clock",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^clock-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Clock/main/graphics/icon.webp",
+    "categories": [
+        "clock_and_time"
+    ],
+    "description": {
+        "en": "Check time zones, set alarms, run timers, use a stopwatch, and add clock widgets."
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.gallery",
+            "url": "https://github.com/FossifyOrg/Gallery",
+            "author": "Fossify",
+            "name": "Gallery",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^gallery-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Gallery/main/graphics/icon.webp",
+    "categories": [
+        "image_viewer_and_gallery",
+        "image_manipulation",
+        "video_player"
+    ],
+    "description": {
+        "en": "Browse, organize, edit, hide, recover, and share local photos and videos."
+    }
+}

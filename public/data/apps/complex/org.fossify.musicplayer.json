@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.musicplayer",
+            "url": "https://github.com/FossifyOrg/Music-Player",
+            "author": "Fossify",
+            "name": "Music Player",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^musicplayer-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Music-Player/main/graphics/icon.webp",
+    "categories": [
+        "music",
+        "media_frontends"
+    ],
+    "description": {
+        "en": "Play local music, manage playlists, use widgets, set sleep timers, and keep listening offline."
+    }
+}

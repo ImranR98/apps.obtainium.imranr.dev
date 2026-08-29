@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.fossify.thankyou",
+            "url": "https://github.com/FossifyOrg/Thank-You",
+            "author": "Fossify",
+            "name": "Thank You",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^thankyou-[0-9]+-foss-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/FossifyOrg/Thank-You/main/graphics/icon.webp",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Support Fossify and add customization options and shared settings to supported apps."
+    }
+}
