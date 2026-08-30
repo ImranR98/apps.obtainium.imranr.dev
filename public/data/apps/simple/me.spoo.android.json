@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": "me.spoo.android",
+    "url": "https://github.com/spoo-me/spoo-android",
+    "author": "spoo.me",
+    "name": "spoo.me"
+  },
+  "icon": "https://raw.githubusercontent.com/spoo-me/spoo-android/main/.github/assets/icon.png",
+  "categories": [
+    "url_manipulation"
+  ],
+  "description": {
+    "en": "Shorten, manage, and analyze your spoo.me links. Material 3 Expressive, with build-your-own chart widgets and emoji aliases."
+  }
+}
