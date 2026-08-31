@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": "com.ubercharged.driverdriver",
+    "url": "https://github.com/chosen-man/driver-driver",
+    "author": "chosen-man",
+    "name": "Driver Driver"
+  },
+  "categories": [
+    "downloader_and_manager",
+    "utilities"
+  ],
+  "description": {
+    "en": "Find and download emulator graphics-driver packages from public GitHub releases, with recommendations based on your Android device's GPU."
+  }
+}
