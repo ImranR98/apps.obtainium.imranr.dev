@@ -1,0 +1,26 @@
+{
+  "configs": [
+    {
+      "id": "dev.sk2andy.materialbrowser",
+      "url": "https://github.com/sk2andy/candy-browser",
+      "author": "sk2andy",
+      "name": "Candy Browser",
+      "additionalSettings": "{\"apkFilterRegEx\":\"^CandyBrowser-v[0-9]+(?:\\\\.[0-9]+){1,2}-release\\\\.apk$\"}",
+      "altLabel": "Standard (recommended)"
+    },
+    {
+      "id": "dev.sk2andy.materialbrowser",
+      "url": "https://github.com/sk2andy/candy-browser",
+      "author": "sk2andy",
+      "name": "Candy Browser User CA",
+      "additionalSettings": "{\"apkFilterRegEx\":\"^CandyBrowser-v[0-9]+(?:\\\\.[0-9]+){1,2}-user-ca-release\\\\.apk$\"}",
+      "altLabel": "User CA (advanced)"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/sk2andy/candy-browser/main/app/src/main/res/drawable-nodpi/ic_launcher_foreground_art.png",
+  "categories": ["browser"],
+  "description": {
+    "en": "A privacy-focused Android browser with local content blocking and private browsing.",
+    "de": "Ein datenschutzorientierter Android-Browser mit lokaler Inhaltsblockierung und privatem Surfen."
+  }
+}
