@@ -1,0 +1,17 @@
+{
+  "config": {
+    "id": "com.agustin.videoboostao",
+    "url": "https://github.com/AgusRomeroL/video-boost-ao",
+    "author": "AgusRomeroL",
+    "name": "Video Boost AO"
+  },
+  "icon": "https://raw.githubusercontent.com/AgusRomeroL/video-boost-ao/main/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": [
+    "camera",
+    "automation"
+  ],
+  "description": {
+    "en": "Pixel Camera turns Video Boost off every time you close it. This app re-enables it automatically each time you open the camera in video mode, without root. For Pixel 8 Pro and newer.",
+    "es": "La cámara del Pixel apaga el Video mejorado cada vez que la cierras. Esta app lo reactiva automáticamente al abrir la cámara en modo video, sin root. Para Pixel 8 Pro y posteriores."
+  }
+}
