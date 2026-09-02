@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "io.unom.punktfunk",
+            "url": "https://git.unom.io/unom/punktfunk/releases",
+            "author": "unom",
+            "name": "Punktfunk",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"punktfunk-[0-9]+(?:\\\\.[0-9]+)+\\\\.apk$\",\"filterByLinkText\":false,\"matchLinksOutsideATags\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Obtainium/1.0\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"punktfunk-([0-9]+(?:\\\\.[0-9]+)+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Punktfunk\",\"appAuthor\":\"unom\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Next-generation game streaming client\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\"}",
+            "overrideSource": "HTML"
+        }
+    ],
+    "icon": "https://git.unom.io/unom/punktfunk/raw/branch/main/docs-site/public/favicon.svg",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": "Next-generation game streaming client"
+    }
+}
