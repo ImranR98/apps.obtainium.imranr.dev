@@ -1,0 +1,16 @@
+{
+  "config": {
+    "id": "dev.radivoice",
+    "url": "https://github.com/Aureliusxradix/RadiVoice",
+    "author": "Aureliusxradix",
+    "name": "RadiVoice"
+  },
+  "icon": "https://aureliusxradix.com/assets/img/logo-512.png",
+  "categories": [
+    "utilities",
+    "privacy_and_anonymity"
+  ],
+  "description": {
+    "en": "A phone that calls your own machine, and answers in your own voice. Hands-free voice into an agent you host yourself, as a real phone call. No default server."
+  }
+}
