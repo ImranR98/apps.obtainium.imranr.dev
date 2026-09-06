@@ -1,0 +1,116 @@
+---
+interface Props {
+  translations: Record<string, string>;
+}
+
+const { translations } = Astro.props;
+
+const message =
+  translations["keepAndroidOpen"] ||
+  "Android will become a locked-down platform by 2027";
+const learnMore =
+  translations["keepAndroidOpenLearnMore"] || "Learn more";
+const closeLabel = translations["close"] || "Close";
+---
+
+<div
+  id="keep-android-open-banner"
+  class="relative bg-gradient-to-b from-red-800 to-red-900 border-b border-red-950/60"
+>
+  <div
+    class="container mx-auto pl-4 pr-12 sm:pr-14 py-2.5 sm:py-3 flex items-center justify-center text-center"
+  >
+    <a
+      href="https://keepandroidopen.org"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group flex items-center gap-3 transition-colors"
+    >
+      <svg
+        class="w-5 h-5 text-white/80 shrink-0"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.5"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+        />
+      </svg>
+      <p
+        class="text-white text-sm sm:text-base font-semibold tracking-wide group-hover:underline underline-offset-4 transition-colors"
+      >
+        {message}
+      </p>
+      <span
+        class="hidden sm:inline-flex shrink-0 items-center gap-1 rounded-full bg-white/10 border border-white/20 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-white group-hover:bg-white/20 transition-colors"
+      >
+        {learnMore}
+        <svg
+          class="w-3.5 h-3.5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </span>
+    </a>
+  </div>
+  <button
+    id="keep-android-open-banner-close"
+    type="button"
+    aria-label={closeLabel}
+    class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 p-1.5 rounded-full text-white/60 hover:text-white hover:bg-white/10 transition-colors"
+  >
+    <svg
+      class="w-4 h-4"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+      aria-hidden="true"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  </button>
+</div>
+
+<script is:inline>
+  (() => {
+    const banner = document.getElementById("keep-android-open-banner");
+    const closeBtn = document.getElementById("keep-android-open-banner-close");
+    if (!banner || !closeBtn) return;
+    const storageKey = "kao-banner-hidden";
+    const dismissDays = 30;
+    try {
+      const dismissed = localStorage.getItem(storageKey);
+      if (
+        dismissed &&
+        Date.now() - Number(dismissed) < dismissDays * 24 * 60 * 60 * 1000
+      ) {
+        banner.style.display = "none";
+        return;
+      }
+    } catch (e) {}
+    closeBtn.addEventListener("click", () => {
+      banner.style.display = "none";
+      try {
+        localStorage.setItem(storageKey, String(Date.now()));
+      } catch (e) {}
+    });
+  })();
+</script>

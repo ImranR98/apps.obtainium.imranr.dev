@@ -240,5 +240,20 @@
         "de": "Wähle eine Variante:",
         "ja": "バリアントを選択:",
         "zh": "选择变体:"
+    },
+    "keepAndroidOpen": {
+        "en": "Android will become a locked-down platform by 2027",
+        "fa": "اندروید تا 2027 به یک سکوی قفل‌شده تبدیل خواهد شد",
+        "ru": "Android станет закрытой платформой к 2027 году"
+    },
+    "keepAndroidOpenLearnMore": {
+        "en": "Learn more",
+        "fa": "بیشتر بدانید",
+        "ru": "Узнать больше"
+    },
+    "close": {
+        "en": "Close",
+        "fa": "بستن",
+        "ru": "Закрыть"
     }
 }

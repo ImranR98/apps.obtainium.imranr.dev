@@ -1,5 +1,6 @@
 ---
 import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
+import KeepAndroidOpenBanner from "../components/KeepAndroidOpenBanner.astro";
 import "../styles/global.css";
 
 const { title } = Astro.props;
@@ -50,7 +51,6 @@ const adsenseId =
       rel="stylesheet"
     />
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
-    <link rel="dns-prefetch" href="https://keepandroidopen.org" />
     <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
     <script is:inline type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
@@ -82,6 +82,7 @@ const adsenseId =
     class="text-text min-h-screen flex flex-col relative overflow-x-hidden"
     style="font-family: 'Montserrat', system-ui, sans-serif;"
   >
+    <KeepAndroidOpenBanner translations={translations} />
     <header
       class="sticky top-0 z-40 border-b border-border bg-surface/80 backdrop-blur-sm"
     >
@@ -135,7 +136,6 @@ const adsenseId =
       </div>
     </footer>
 
-    <script is:inline async src="https://keepandroidopen.org/banner.js"></script>
   </body>
 </html>
 
