@@ -1,12 +1,10 @@
 {
-    "configs": [
-        {
-            "id": "org.localsend.localsend_app",
-            "url": "https://github.com/localsend/localsend",
-            "author": "localsend",
-            "name": "LocalSend"
-        }
-    ],
+    "config": {
+        "id": "org.localsend.localsend_app",
+        "url": "https://github.com/localsend/localsend",
+        "author": "localsend",
+        "name": "LocalSend"
+    },
     "icon": "https://localsend.org/img/logo.png",
     "categories": [
         "file_sharing"
