@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.whatsapp",
+            "url": "https://www.whatsapp.com/android/current/WhatsApp.apk",
+            "author": "WhatsApp LLC",
+            "name": "WhatsApp",
+            "additionalSettings": "{\"requestHeader\":[]}",
+            "overrideSource": "DirectAPKLink"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "WhatsApp from the official website.",
+        "de": "WhatsApp von der offiziellen Webseite."
+    }
+}
