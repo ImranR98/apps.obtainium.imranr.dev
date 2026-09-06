@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.chmouel.liseur",
+        "url": "https://github.com/chmouel/liseur",
+        "author": "Chmouel Boudjnah",
+        "name": "Liseur"
+    },
+    "icon": "https://raw.githubusercontent.com/chmouel/liseur/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "document_and_pdf_viewer"
+    ],
+    "description": {
+        "en": "An open-source EPUB reader for Android with calibre-web, Komga, liseur-sync, and OPDS sync support."
+    }
+}
