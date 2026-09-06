@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.github.flextube",
+            "url": "https://github.com/flexxxxer/FlexTube",
+            "author": "flexxxxer",
+            "name": "FlexTube",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/flexxxxer/FlexTube/refs/heads/master/assets/icons/FlexTube.png",
+    "categories": [
+        "video_player"
+    ],
+    "description": {
+        "en": "YouTube front-end for Android, inspired by LibreTube with a simple goal: provide distraction-free experience"
+    }
+}
