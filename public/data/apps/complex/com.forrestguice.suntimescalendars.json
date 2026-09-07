@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.forrestguice.suntimescalendars",
+            "url": "https://forrestguice.codeberg.page/SuntimesApps/repo?fingerprint=94C212B75BCCD660A2B03F7C7D28534FC9A38569B3E98A020CE05AE67EC19968",
+            "author": "Forrest Guice",
+            "name": "Suntimes Calendars",
+            "additionalSettings": "{\"appIdOrName\":\"com.forrestguice.suntimescalendars\"}"
+        }
+    ],
+    "icon": "https://forrestguice.codeberg.page/Suntimes/images/ic_launcher.png",
+    "categories": [
+        "calendar"
+    ],
+    "description": {
+        "en": "A calendar provider add-on for Suntimes."
+    }
+}
