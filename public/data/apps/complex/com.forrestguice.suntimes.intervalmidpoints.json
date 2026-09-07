@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.forrestguice.suntimes.intervalmidpoints",
+            "url": "https://forrestguice.codeberg.page/SuntimesApps/repo?fingerprint=94C212B75BCCD660A2B03F7C7D28534FC9A38569B3E98A020CE05AE67EC19968",
+            "author": "Forrest Guice",
+            "name": "Interval Midpoints",
+            "additionalSettings": "{\"appIdOrName\":\"com.forrestguice.suntimes.intervalmidpoints\"}"
+        }
+    ],
+    "icon": "https://forrestguice.codeberg.page/Suntimes/images/ic_imidpoints.png",
+    "categories": [
+        "clock_and_time"
+    ],
+    "description": {
+        "en": "A midpoint calculator add-on for Suntimes."
+    }
+}
