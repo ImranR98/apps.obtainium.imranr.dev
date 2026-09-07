@@ -1,0 +1,44 @@
+{
+    "configs": [
+        {
+            "id": "deckers.thibault.aves",
+            "url": "https://github.com/deckerst/aves",
+            "author": "Thibault Deckers",
+            "name": "Aves",
+            "altLabel": "universal (Play)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"play\"}"
+        },
+        {
+            "id": "deckers.thibault.aves",
+            "url": "https://github.com/deckerst/aves",
+            "author": "Thibault Deckers",
+            "name": "Aves",
+            "altLabel": "arm64-v8a (Izzy)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64-v8a\"}"
+        },
+        {
+            "id": "deckers.thibault.aves",
+            "url": "https://github.com/deckerst/aves",
+            "author": "Thibault Deckers",
+            "name": "Aves",
+            "altLabel": "armeabi-v7a (Izzy)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"armeabi-v7a\"}"
+        },
+        {
+            "id": "deckers.thibault.aves",
+            "url": "https://github.com/deckerst/aves",
+            "author": "Thibault Deckers",
+            "name": "Aves",
+            "altLabel": "x86_64 (Izzy)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"x86_64\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/hjNJiZPUKWphA9rFPpydtR7S2ZvK1fgWLmdV4Srgse6wgphbf1pwrWbe0rb7Yg2DxxyVQfX-EZHXMHhxsKU=s0?imgmax=0",
+    "categories": [
+        "image_viewer_and_gallery",
+        "video_player"
+    ],
+    "description": {
+        "en": "[Izzy: no Crashlytics, GMaps off by default] Aves is a gallery and metadata explorer app, built for Android with Flutter."
+    }
+}
