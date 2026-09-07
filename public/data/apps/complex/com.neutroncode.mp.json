@@ -1,0 +1,95 @@
+{
+    "configs": [
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/2-neutronmpapkarm64",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "ARM64 (generic)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/4-neutronmpapkarm64-usb-no-def",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "ARM64, no USB DAC (generic)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/6-neutronmpapkx64",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "x64 (generic)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/5-neutronmpapk",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "ARMv7 (generic)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/8-neutronmpapkneon",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "ARMv7+NEON (generic)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/2-neutronmpapkarm64",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "ARMv7+NEON, no USB DAC (generic)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/12-neutronmpapkx86",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "x86+SSE2 (generic)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/3-neutronmpapkarm64-googleplay",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "ARM64 (GPlay)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/7-neutronmpapk-googleplay",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "ARMv7 (GPlay)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/10-neutronmpapkneon-googleplay",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "ARMv7+NEON (GPlay)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/14-neutronmpapkx86-googleplay",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "x86+SSE2 (GPlay)"
+        },
+        {
+            "id": "com.neutroncode.mp",
+            "url": "https://neutroncode.com/downloads/file/15-neutronmpapkx64-googleplay",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Music Player",
+            "altLabel": "x64 (GPlay)"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/H_Lz_YCPVRqwtA9yCdO5tZW9wZcvW0gTA552vUZSS8LpNPWTeXG1U0PPJpyyGCrRpDaQWxIcXU-NLyAJDpNFLg=s0?imgmax=0",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Audiophile music player with advanced DSP"
+    }
+}
