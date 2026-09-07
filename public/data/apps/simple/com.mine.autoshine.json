@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.mine.autoshine",
+        "url": "https://github.com/Valent-in/Auto-Shine",
+        "author": "Valentin",
+        "name": "Auto Shine"
+    },
+    "icon": "https://f-droid.org/repo/com.mine.autoshine/en-US/icon.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "Android app for automatic screen brightness adjustment"
+    }
+}
