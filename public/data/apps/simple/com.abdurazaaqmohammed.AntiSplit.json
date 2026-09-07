@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.abdurazaaqmohammed.AntiSplit",
+        "url": "https://github.com/AbdurazaaqMohammed/AntiSplit-M",
+        "author": "AbdurazaaqMohammed",
+        "name": "AntiSplit M"
+    },
+    "icon": "https://github.com/AbdurazaaqMohammed/AntiSplit-M/raw/refs/heads/redesign/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "App to AntiSplit (merge) split APKs (APKS/XAPK/APKM) to regular .APK file on Android"
+    }
+}
