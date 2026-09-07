@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "chat.delta",
+        "url": "https://github.com/deltachat/deltachat-android",
+        "author": "Delta Chat Contributors",
+        "name": "Delta Chat"
+    },
+    "icon": "https://delta.chat/assets/logos/delta-chat.svg",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Decentralized private messenger with chat-shared tools and games."
+    }
+}
