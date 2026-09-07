@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": "com.shadowuro.remindrop",
+    "url": "https://github.com/ShadowUR0/Remindrop",
+    "author": "ShadowUR0",
+    "name": "Remindrop"
+  },
+  "icon": "https://raw.githubusercontent.com/ShadowUR0/Remindrop/main/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": [
+    "clock_and_time"
+  ],
+  "description": {
+    "en": "Turn links, posts, videos, products, or text you share into local reminders."
+  }
+}
