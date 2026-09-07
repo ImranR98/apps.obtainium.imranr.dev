@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.reecedunn.espeak",
+        "url": "https://github.com/espeak-ng/espeak-ng",
+        "author": "eSpeak NG",
+        "name": "eSpeak NG"
+    },
+    "icon": "https://f-droid.org/repo/com.reecedunn.espeak/en-US/icon.png",
+    "categories": [
+        "text-to-speech"
+    ],
+    "description": {
+        "en": "eSpeak NG is an open source speech synthesizer that supports more than hundred languages and accents."
+    }
+}
