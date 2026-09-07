@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.privacyguides.verifiedapps",
+            "url": "https://github.com/privacyguides/verified-apps-android",
+            "author": "Privacy Guides",
+            "name": "Verified Apps",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}"
+        }
+    ],
+    "icon": "https://apt.izzysoft.de/fdroid/repo/org.privacyguides.verifiedapps/en-US/icon.png",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "An Android app to more easily contribute to our Verified Apps database"
+    }
+}
