@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "io.github.abdurazaaqmohammed.MPManager",
+        "url": "https://github.com/AbdurazaaqMohammed/MP-Manager",
+        "author": "AbdurazaaqMohammed",
+        "name": "MP Manager"
+    },
+    "icon": "https://github.com/AbdurazaaqMohammed/MP-Manager/raw/refs/heads/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "file_manager"
+    ],
+    "description": {
+        "en": "Dual pane Android file manager with focus on APKs"
+    }
+}
