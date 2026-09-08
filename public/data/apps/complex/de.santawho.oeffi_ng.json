@@ -1,0 +1,21 @@
+{
+  "configs": [
+    {
+      "id": "de.santawho.oeffi_ng",
+      "url":"https://github.com/santawho/oeffi-ng",
+      "author":"santawho",
+      "name":"Öffi NG",
+      "preferredApkIndex":0,
+      "additionalSettings":"{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"v(.*)\",\"matchGroupToUse\":\"$1-ng\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
+      "overrideSource":"GitHub"
+    }
+  ],
+  "icon": "https://github.com/santawho/oeffi-ng/wiki/images/ic_oeffi_ng_logo.svg",
+  "categories": [
+    "maps_and_navigation"
+  ],
+  "description": {
+    "en": "Öffi NG tells you where and when trains and busses go, including delays for more and more transport authorities in Europe and beyond. This is a fork of Öffi and a lot of new features have been added.",
+    "de": "Öffi NG zeigt an, wann und wo Züge und Busse fahren – einschließlich Verspätungen für immer mehr Verkehrsbetriebe in Europa und darüber hinaus. Dies ist ein Fork von Öffi und wurde um viele neue Funktionen erweitert."
+  }
+}
