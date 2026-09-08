@@ -1,0 +1,16 @@
+{
+  "config": {
+    "id": "dev.tailuge.billiards",
+    "url": "https://github.com/tailuge/wbilliards",
+    "author": "tailuge",
+    "name": "Billiards"
+  },
+  "icon": "https://billiards.tailuge.workers.dev/assets/icon-512.png",
+  "categories": [
+    "games",
+    "sports_and_health"
+  ],
+  "description": {
+    "en": "Free multiplayer lobby for Billiards. Find matches, challenge players, and play realistic pool online. Official Trusted Web Activity wrapper for billiards.tailuge.workers.dev — the app is a thin shell that opens the live game fullscreen."
+  }
+}
