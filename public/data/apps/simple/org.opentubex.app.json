@@ -1,0 +1,17 @@
+{
+    "config": {
+        "id": "org.opentubex.app",
+        "url": "https://github.com/OpenTubeX/OpenTubeX",
+        "author": "OpenTubeX",
+        "name": "OpenTubeX"
+    },
+    "icon": "https://raw.githubusercontent.com/OpenTubeX/OpenTubeX/development/_icons/iconColor.png",
+    "categories": [
+        "video_player",
+        "privacy_and_anonymity"
+    ],
+    "description": {
+        "en": "An open-source, customizable, privacy-focused YouTube client with subscriptions, playlists, and SponsorBlock. The Android app is currently in alpha.",
+        "de": "Ein quelloffener, anpassbarer YouTube-Client mit Fokus auf Datenschutz, mit Abonnements, Wiedergabelisten und SponsorBlock. Die Android-App befindet sich derzeit in der Alpha-Phase."
+    }
+}

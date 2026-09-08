@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "org.opentubex.app.nightly",
+            "url": "https://github.com/OpenTubeX/OpenTubeX",
+            "author": "OpenTubeX",
+            "name": "OpenTubeX Nightly",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"nightly\",\"apkFilterRegEx\":\"android-universal[.]apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/OpenTubeX/OpenTubeX/development/_icons/iconColor.png",
+    "categories": [
+        "video_player",
+        "privacy_and_anonymity"
+    ],
+    "description": {
+        "en": "Nightly development builds of OpenTubeX, an open-source, customizable, privacy-focused YouTube client. Installs alongside OpenTubeX and may be unstable.",
+        "de": "Nächtliche Entwicklungsversionen von OpenTubeX, einem quelloffenen, anpassbaren YouTube-Client mit Fokus auf Datenschutz. Lässt sich parallel zu OpenTubeX installieren und kann instabil sein."
+    }
+}
