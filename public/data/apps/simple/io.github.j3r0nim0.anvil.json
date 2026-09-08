@@ -1,0 +1,16 @@
+{
+  "config": {
+    "id": "io.github.j3r0nim0.anvil",
+    "url": "https://github.com/j3r0nim0/android-xmrig-monero",
+    "author": "j3r0nim0",
+    "name": "Anvil"
+  },
+  "icon": "https://raw.githubusercontent.com/j3r0nim0/android-xmrig-monero/master/docs/icon.png",
+  "categories": [
+    "finance",
+    "utilities"
+  ],
+  "description": {
+    "en": "Open-source Android host for XMRig (MoneroOcean). Paste a wallet, start mining. 0% cut. ARM64, Android 8+."
+  }
+}
