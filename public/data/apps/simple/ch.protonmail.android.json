@@ -1,0 +1,14 @@
+{
+    "config": {
+        "id": "ch.protonmail.android",
+        "url": "https://github.com/ProtonMail/android-mail",
+        "author": "Proton AG",
+        "name": "Proton Mail"
+    },
+    "categories": [
+        "email_clients"
+    ],
+    "description": {
+        "en": "Secure email with end-to-end encryption for your Android devices."
+    }
+}
