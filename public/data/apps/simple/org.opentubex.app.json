@@ -5,7 +5,7 @@
         "author": "OpenTubeX",
         "name": "OpenTubeX"
     },
-    "icon": "https://raw.githubusercontent.com/OpenTubeX/OpenTubeX/development/_icons/iconColor.png",
+    "icon": "https://raw.githubusercontent.com/OpenTubeX/fdroid/main/metadata/org.opentubex.app/en-US/images/icon.png",
     "categories": [
         "video_player",
         "privacy_and_anonymity"
