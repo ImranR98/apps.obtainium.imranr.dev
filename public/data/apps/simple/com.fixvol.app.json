@@ -1,0 +1,16 @@
+{
+  "config": {
+    "id": "com.fixvol.app",
+    "url": "https://github.com/ziuus/FixVol",
+    "author": "ziuus",
+    "name": "FixVol"
+  },
+  "icon": "https://raw.githubusercontent.com/ziuus/FixVol/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+  "categories": [
+    "tools",
+    "accessibility"
+  ],
+  "description": {
+    "en": "The most user-friendly and privacy-respecting volume control for Android devices with broken, unreliable physical volume buttons. Plays audio? FixVol detects it. Android's native volume panel appears. No floating controls, no overlays, no ads, no tracking — 100% offline."
+  }
+}
