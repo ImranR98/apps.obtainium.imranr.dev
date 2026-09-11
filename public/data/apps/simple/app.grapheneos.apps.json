@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "app.grapheneos.apps",
+        "url": "https://github.com/GrapheneOS/AppStore",
+        "author": "GrapheneOS",
+        "name": "App Store"
+    },
+    "icon": "https://avatars.githubusercontent.com/u/48847184",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "App Store is the client for the GrapheneOS app repository. It's included in GrapheneOS but can also be used on other Android 12+ operating systems."
+    }
+}
