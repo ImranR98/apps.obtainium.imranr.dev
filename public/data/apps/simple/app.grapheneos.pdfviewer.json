@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "app.grapheneos.pdfviewer",
+        "url": "https://github.com/GrapheneOS/PdfViewer",
+        "author": "GrapheneOS",
+        "name": "Secure PDF Viewer"
+    },
+    "icon": "https://play-lh.googleusercontent.com/_PRdL0erTp55d2PE7Og_yWPGBHO78Cl-fZKsLeRJWJ6Tyv82czi-aP9I2Drhpm_MPRd5VAEVBEPU5eW8R7yMWms=s0?imgmax=0",
+    "categories": [
+        "document_and_pdf_viewer"
+    ],
+    "description": {
+        "en": "Simple Android PDF viewer based on pdf.js and content providers."
+    }
+}
