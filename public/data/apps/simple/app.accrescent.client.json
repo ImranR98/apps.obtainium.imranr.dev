@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "app.accrescent.client",
+        "url": "https://github.com/accrescent/accrescent",
+        "author": "Accrescent",
+        "name": "Accrescent"
+    },
+    "icon": "https://accrescent.app/accrescent.svg",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "A novel Android app store focused on security, privacy, and usability"
+    }
+}
