@@ -1,0 +1,16 @@
+{
+  "config": {
+    "id": "dev.breathgate",
+    "url": "https://github.com/Aureliusxradix/BreathGate",
+    "author": "Aureliusxradix",
+    "name": "BreathGate"
+  },
+  "icon": "https://raw.githubusercontent.com/Aureliusxradix/BreathGate/main/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": [
+    "sports_and_health",
+    "utilities"
+  ],
+  "description": {
+    "en": "One breath before the door opens. Asks for a breath in front of the apps you choose, then asks whether you still want to go in. No internet permission, GPL-3.0, reproducible builds."
+  }
+}
