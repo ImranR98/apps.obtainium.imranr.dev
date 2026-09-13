@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "android.jonas.fakestandby",
+        "url": "https://github.com/JonasBernard/FakeStandby",
+        "author": "Jonas Bernard",
+        "name": "FakeStandby"
+    },
+    "icon": "https://f-droid.org/repo/android.jonas.fakestandby/en-US/icon.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "An Android app for turning the screen off while keeping apps running."
+    }
+}
