@@ -16,7 +16,6 @@ export default defineConfig({
     host: true
   },
   vite: {
-    // @ts-expect-error — @tailwindcss/vite plugin types lag behind Astro's bundled Vite
     plugins: [tailwindcss()]
   }
 });
