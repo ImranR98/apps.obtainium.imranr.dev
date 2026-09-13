@@ -22,7 +22,7 @@
             "author": "sam1am",
             "name": "anyapk",
             "altLabel": "universal",
-            "additionalSettings": "{\"apkFilterRegEx\":\"anyapk-(\\d+.+)-universal\"}"
+            "additionalSettings": "{\"apkFilterRegEx\":\"anyapk-(\\\\d+.+)-universal\"}"
         },
         {
             "id": "com.anyapk.installer",
@@ -38,7 +38,7 @@
             "author": "sam1am",
             "name": "anyapk",
             "altLabel": "universal (dev)",
-            "additionalSettings": "{\"apkFilterRegEx\":\"anyapk-dev-(\\d+.+)-universal\"}"
+            "additionalSettings": "{\"apkFilterRegEx\":\"anyapk-dev-(\\\\d+.+)-universal\"}"
         }
     ],
     "icon": "https://sam1am.github.io/anyapk/images/icon.png",

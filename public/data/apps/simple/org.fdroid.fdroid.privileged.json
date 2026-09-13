@@ -5,7 +5,7 @@
         "author": "F-Droid",
         "name": "F-Droid Privileged Extension"
     },
-    "icon": "https://f-droid.org/repo/org.fdroid.fdroid.privileged/en-US/icon.png",
+    "icon": null,
     "categories": [
         "system"
     ],
