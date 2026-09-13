@@ -1,0 +1,19 @@
+{
+  "configs": [
+    {
+      "id": "com.limelight.tcl",
+      "url": "https://github.com/pabragin/moonlight-tcl",
+      "author": "pabragin",
+      "name": "Moonlight TCL",
+      "additionalSettings": "{\"apkFilterRegEx\":\"armeabi-v7a\",\"versionExtractionRegEx\":\"v(.+)\",\"matchGroupToUse\":\"$1\"}"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/pabragin/moonlight-tcl/main/app/src/main/ic_launcher-web.png",
+  "categories": [
+    "games"
+  ],
+  "description": {
+    "en": "Moonlight game streaming client (Artemis fork) tuned for TCL Android TVs on Android 14: low-latency MediaTek decoder path, single-layer compositor, rumble crash workaround, 4K60 defaults.",
+    "ru": "Клиент игрового стриминга Moonlight (форк Artemis), настроенный для телевизоров TCL на Android 14: низкая задержка декодера MediaTek, обход зависаний и перезагрузок прошивки, 4K60 по умолчанию."
+  }
+}
