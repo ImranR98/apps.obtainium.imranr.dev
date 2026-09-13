@@ -9,7 +9,7 @@
         }
     ],
     "icon": "https://github.com/termux/termux-app/blob/master/art/ic_launcher2.png?raw=true",
-    "categories": ["research_&_development", "sandboxing", "system"],
+    "categories": ["research_and_development", "sandboxing", "system"],
     "description": {
         "en": "Termux add-on app which exposes device functionality as API to command line programs."
     }

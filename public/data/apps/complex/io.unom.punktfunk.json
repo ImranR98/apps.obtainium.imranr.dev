@@ -9,7 +9,7 @@
             "overrideSource": "HTML"
         }
     ],
-    "icon": "https://git.unom.io/unom/punktfunk/raw/branch/main/docs-site/public/favicon.svg",
+    "icon": null,
     "categories": [
         "other"
     ],

@@ -8,7 +8,7 @@
             "overrideSource": "Forgejo (Codeberg)"
         }
     ],
-    "icon": "https://git.lonecloud.dev/lone-cloud/prism-android/raw/branch/main/assets/prism.webp",
+    "icon": null,
     "categories": [
         "utilities"
     ],
