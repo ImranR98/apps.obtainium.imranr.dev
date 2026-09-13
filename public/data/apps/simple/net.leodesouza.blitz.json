@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "net.leodesouza.blitz",
+        "url": "https://github.com/ldeso/blitz",
+        "author": "Léo de Souza",
+        "name": "Blitz: Fischer Chess Clock"
+    },
+    "icon": "https://raw.githubusercontent.com/ldeso/blitz/HEAD/metadata/en-US/images/icon.png",
+    "categories": [
+        "clock_and_time",
+        "games"
+    ],
+    "description": {
+        "en": "A minimalist Fischer chess clock for Android."
+    }
+}

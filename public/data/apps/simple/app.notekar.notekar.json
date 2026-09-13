@@ -1,12 +1,10 @@
 {
-  "configs": [
-    {
-      "id": "app.notekar.notekar",
-      "url": "https://github.com/dheeraz101/Notekar-Android",
-      "author": "Dheeraj V",
-      "name": "NoteKar"
-    }
-  ],
+  "config": {
+    "id": "app.notekar.notekar",
+    "url": "https://github.com/dheeraz101/Notekar-Android",
+    "author": "Dheeraj V",
+    "name": "NoteKar"
+  },
   "icon": "https://raw.githubusercontent.com/dheeraz101/Notekar-Android/main/fastlane/metadata/android/en-US/images/icon.png",
   "categories": [
     "utilities",
