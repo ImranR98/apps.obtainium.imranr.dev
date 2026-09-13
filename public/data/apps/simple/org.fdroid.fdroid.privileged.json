@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "org.fdroid.fdroid.privileged",
+        "url": "https://f-droid.org/en/packages/org.fdroid.fdroid.privileged",
+        "author": "F-Droid",
+        "name": "F-Droid Privileged Extension"
+    },
+    "icon": "https://f-droid.org/repo/org.fdroid.fdroid.privileged/en-US/icon.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "Services to allow F-Droid to securely install and update apps"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "org.fdroid.nearby",
+        "url": "https://f-droid.org/en/packages/org.fdroid.nearby",
+        "author": "F-Droid",
+        "name": "F-Droid Nearby"
+    },
+    "icon": "https://f-droid.org/repo/org.fdroid.nearby/en-US/icon.png",
+    "categories": [
+        "file_sharing"
+    ],
+    "description": {
+        "en": "Exchange free software apps locally, device-to-device, even without internet!"
+    }
+}

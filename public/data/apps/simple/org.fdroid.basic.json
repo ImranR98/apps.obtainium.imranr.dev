@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "org.fdroid.basic",
+        "url": "https://f-droid.org/en/packages/org.fdroid.basic",
+        "author": "F-Droid",
+        "name": "F-Droid Basic"
+    },
+    "icon": "https://f-droid.org/repo/org.fdroid.basic/en-US/icon.png",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "The minimal client app for the app store that respects freedom and privacy"
+    }
+}
