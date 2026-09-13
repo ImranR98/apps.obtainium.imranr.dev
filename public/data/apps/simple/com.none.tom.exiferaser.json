@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.none.tom.exiferaser",
+        "url": "https://github.com/Tommy-Geenexus/exif-eraser",
+        "author": "Tom Geiselmann",
+        "name": "ExifEraser"
+    },
+    "icon": "https://apt.izzysoft.de/fdroid/repo/com.none.tom.exiferaser/en-US/icon.png",
+    "categories": [
+        "image_manipulation"
+    ],
+    "description": {
+        "en": "Permissionless image metadata erasing application for Android"
+    }
+}
