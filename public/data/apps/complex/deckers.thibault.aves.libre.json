@@ -1,0 +1,36 @@
+{
+    "configs": [
+        {
+            "id": "deckers.thibault.aves.libre",
+            "url": "https://github.com/deckerst/aves",
+            "author": "Thibault Deckers",
+            "name": "Aves Libre",
+            "altLabel": "arm64-v8a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64-v8a\"}"
+        },
+        {
+            "id": "deckers.thibault.aves.libre",
+            "url": "https://github.com/deckerst/aves",
+            "author": "Thibault Deckers",
+            "name": "Aves Libre",
+            "altLabel": "armeabi-v7a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"armeabi-v7a\"}"
+        },
+        {
+            "id": "deckers.thibault.aves.libre",
+            "url": "https://github.com/deckerst/aves",
+            "author": "Thibault Deckers",
+            "name": "Aves Libre",
+            "altLabel": "x86_64",
+            "additionalSettings": "{\"apkFilterRegEx\":\"x86_64\"}"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/deckers.thibault.aves.libre/en-US/icon.png",
+    "categories": [
+        "image_viewer_and_gallery",
+        "video_player"
+    ],
+    "description": {
+        "en": "[no Crashlytics, no GMaps] Aves is a gallery and metadata explorer app, built for Android with Flutter."
+    }
+}
