@@ -1,0 +1,51 @@
+{
+    "configs": [
+        {
+            "id": "com.anyapk.installer",
+            "url": "https://github.com/sam1am/anyapk",
+            "author": "sam1am",
+            "name": "anyapk",
+            "altLabel": "arm64-v8a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64-v8a\"}"
+        },
+        {
+            "id": "com.anyapk.installer",
+            "url": "https://github.com/sam1am/anyapk",
+            "author": "sam1am",
+            "name": "anyapk",
+            "altLabel": "armeabi-v7a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"armeabi-v7a\"}"
+        },
+        {
+            "id": "com.anyapk.installer",
+            "url": "https://github.com/sam1am/anyapk",
+            "author": "sam1am",
+            "name": "anyapk",
+            "altLabel": "universal",
+            "additionalSettings": "{\"apkFilterRegEx\":\"anyapk-(\\d+.+)-universal\"}"
+        },
+        {
+            "id": "com.anyapk.installer",
+            "url": "https://github.com/sam1am/anyapk",
+            "author": "sam1am",
+            "name": "anyapk",
+            "altLabel": "x86_64",
+            "additionalSettings": "{\"apkFilterRegEx\":\"x86_64\"}"
+        },
+        {
+            "id": "com.anyapk.installer",
+            "url": "https://github.com/sam1am/anyapk",
+            "author": "sam1am",
+            "name": "anyapk",
+            "altLabel": "universal (dev)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"anyapk-dev-(\\d+.+)-universal\"}"
+        }
+    ],
+    "icon": "https://sam1am.github.io/anyapk/images/icon.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Bypass Google and install any APK you want on the device you own."
+    }
+}
