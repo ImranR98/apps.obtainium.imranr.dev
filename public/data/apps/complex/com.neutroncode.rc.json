@@ -1,0 +1,39 @@
+{
+    "configs": [
+        {
+            "id": "com.neutroncode.rc",
+            "url": "https://neutroncode.com/downloads/file/1-neutronrcapkarm64",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Audio Recorder",
+            "altLabel": "ARM64 (generic)"
+        },
+        {
+            "id": "com.neutroncode.rc",
+            "url": "https://neutroncode.com/downloads/file/9-neutronrcapkx86",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Audio Recorder",
+            "altLabel": "x86 + SSE (generic)"
+        },
+        {
+            "id": "com.neutroncode.rc",
+            "url": "https://neutroncode.com/downloads/file/13-neutronrcapkneon",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Audio Recorder",
+            "altLabel": "ARMv7 + NEON (generic)"
+        },
+        {
+            "id": "com.neutroncode.rc",
+            "url": "https://neutroncode.com/downloads/file/18-neutronrcapkx64",
+            "author": "Neutron Code Limited",
+            "name": "Neutron Audio Recorder",
+            "altLabel": "x64 (generic)"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/0xpJN0FqtiH32nupFeFjS7M4JbH-llfjHgxs4Y582MrQs6laswL-aLZaZc1VUUBfIU8vfVug3K-mGyWOZYnufA=s0?imgmax=0",
+    "categories": [
+        "recorder"
+    ],
+    "description": {
+        "en": "Professional audio recording with DSP"
+    }
+}
