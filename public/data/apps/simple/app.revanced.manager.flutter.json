@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "app.revanced.manager.flutter",
+        "url": "https://github.com/ReVanced/revanced-manager",
+        "author": "ReVanced",
+        "name": "ReVanced Manager"
+    },
+    "icon": "https://avatars.githubusercontent.com/u/101597779",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "ReVanced Manager is an application that uses ReVanced Patcher to patch Android apps."
+    }
+}

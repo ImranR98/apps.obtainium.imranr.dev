@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "org.qownnotes.mobile",
+        "url": "https://github.com/qownnotes/qownnotes-android",
+        "author": "qownnotes",
+        "name": "QOwnNotes"
+    },
+    "icon": "https://github.com/qownnotes/qownnotes-android/raw/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "notes",
+        "synchronisation"
+    ],
+    "description": {
+        "en": "Offline Markdown notes synchronized safely with Nextcloud"
+    }
+}

@@ -1,12 +1,10 @@
 {
-    "configs": [
-        {
-            "id": "io.github.kairosakil.kanjipro",
-            "url": "https://github.com/Kairos-Akil/Kanji-Pro",
-            "author": "Kairos-Akil",
-            "name": "Kanji Pro"
-        }
-    ],
+    "config": {
+        "id": "io.github.kairosakil.kanjipro",
+        "url": "https://github.com/Kairos-Akil/Kanji-Pro",
+        "author": "Kairos-Akil",
+        "name": "Kanji Pro"
+    },
     "icon": "https://raw.githubusercontent.com/Kairos-Akil/Kanji-Pro/main/assets/MyAssets/blueLogo.png",
     "categories": [
         "dictionaries",

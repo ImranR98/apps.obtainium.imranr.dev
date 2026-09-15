@@ -8,3 +8,10 @@ interface Window {
     (...args: unknown[]): void
   }
 }
+
+declare var plausible: {
+  q?: unknown[]
+  o?: unknown
+  init?: (o?: unknown) => void
+  (...args: unknown[]): void
+}

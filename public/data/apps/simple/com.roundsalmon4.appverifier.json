@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.roundsalmon4.appverifier",
+        "url": "https://github.com/RoundSalmon4/AppVerifierBG",
+        "author": "RoundSalmon4",
+        "name": "AppVerifier BG"
+    },
+    "icon": "https://codeberg.org/unwanted9855/AppVerifierBG/raw/branch/feature/all-enhancements/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "[forked from soupslurpr/AppVerifier] Verify installed apps against shared signature hashes, the internal database, or a user-created database."
+    }
+}

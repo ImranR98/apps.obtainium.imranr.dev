@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.github.olga_yakovleva.rhvoice.android",
+        "url": "https://f-droid.org/en/packages/com.github.olga_yakovleva.rhvoice.android/",
+        "author": "Olga Yakovleva",
+        "name": "RHVoice"
+    },
+    "icon": "https://rhvoice.org/images/logo.png",
+    "categories": [
+        "text-to-speech"
+    ],
+    "description": {
+        "en": "A free and open-source speech synthesizer for Russian and other languages."
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "dubrowgn.wattz",
+        "url": "https://github.com/dubrowgn/wattz",
+        "author": "Dustin Brown",
+        "name": "Wattz"
+    },
+    "icon": "https://play-lh.googleusercontent.com/b3B9CTIVY1ZuffWuxC0BD4nFX7xr3TqVYDgsCPH3J7vuZkh-uYTA-7O-qOWeLqA6idfw6J_Py7WN8nn6PFE_xg=s0?imgmax=0",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "An Android battery power status bar indicator"
+    }
+}

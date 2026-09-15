@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "app.grapheneos.camera",
+        "url": "https://github.com/GrapheneOS/Camera",
+        "author": "GrapheneOS",
+        "name": "Secure Camera"
+    },
+    "icon": "https://play-lh.googleusercontent.com/n5lTDRC7dwZxWsEqL9ej5YhAPc9mPIoxcUAaHU9ihSuF1ROg1oVKf0233UAj-a4CDW9Oy3JpDmHZsAoiz_A0gA=s0?imgmax=0",
+    "categories": [
+        "camera"
+    ],
+    "description": {
+        "en": "Modern camera app focused on privacy and security with QR & barcode scanning."
+    }
+}

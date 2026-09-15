@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.duckduckgo.mobile.android",
+        "url": "https://github.com/duckduckgo/Android",
+        "author": "DuckDuckGo",
+        "name": "DuckDuckGo"
+    },
+    "icon": "https://play-lh.googleusercontent.com/R9-3PbO5ywKx6dA5OQI2wkesOpmgY9CzKhB_1Eqn-GC_vRjeqwtG-CLVs2o55wuRhiLS0pd1Sui_kUyn7Q4dng=s0?imgmax=0",
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "The DuckDuckGo app provides the most comprehensive online privacy protection with the push of a button. With one free download, you get an everyday private Internet browser that offers seamless protection while you search and browse, and access to tracking protection for emails you receive and apps you use. Many of these protections are not offered in most popular web browsers by default."
+    }
+}

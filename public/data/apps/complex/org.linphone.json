@@ -8,7 +8,7 @@
             "additionalSettings":"{\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\\\\d+.\\\\d+.\\\\d+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"linphone-android-\\\\d+.\\\\d+.\\\\d+.apk\"}"
         }
     ],
-    "icon": "https://gitlab.linphone.org/BC/public/linphone-android/-/raw/master/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+    "icon": null,
     "categories": [
         "dialer",
         "messaging"
