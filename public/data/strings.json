@@ -18,6 +18,9 @@
         "ru": "Внести вклад",
         "fa": "مشارکت"
     },
+    "analytics": {
+        "en": "Analytics"
+    },
     "source": {
         "en": "Source",
         "ru": "Исходный код",
