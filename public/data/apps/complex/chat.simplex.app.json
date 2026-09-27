@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "chat.simplex.app",
+            "url": "https://github.com/simplex-chat/simplex-chat",
+            "author": "SimpleX",
+            "name": "SimpleX Chat",
+            "additionalSettings": "{\"apkFilterRegEx\": \"simplex\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/simplex-chat.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Private messenger with no user IDs: end-to-end encrypted chat."
+    }
+}
