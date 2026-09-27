@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Port of CorsixTH to Android"
+    },
+    "icon": "https://github.com/alanwoolley.png",
+    "configs": [
+        {
+            "id": "uk.co.armedpineapple.cth",
+            "url": "https://github.com/alanwoolley/CorsixTH-Android",
+            "author": "alanwoolley",
+            "name": "CorsixTH Android",
+            "additionalSettings": "{\"includePrereleases\": true}"
+        }
+    ]
+}
