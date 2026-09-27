@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.soundcloud.android",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "SoundCloud Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^soundcloud-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/rfmCNUApzYntPTdAVmor5vpaOGxIUJWNlpED2pwKcDuCTUaf_2vJlOALNzX1PiejSgZIuAT8k0F5xIBU58JG3g=s0-br30",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Revanced version of SoundCloud."
+    }
+}
