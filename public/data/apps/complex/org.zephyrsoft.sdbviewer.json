@@ -8,7 +8,7 @@
             "additionalSettings": "{\"apkFilterRegEx\":\"-signed\"}"
         }
     ],
-    "icon": "https://codeberg.org/mathisdt/sdbviewer/raw/branch/master/metadata/en-US/images/icon-small.png",
+    "icon": "https://f-droid.org/repo/org.zephyrsoft.sdbviewer/en-US/icon.png",
     "categories": [
     	"miscellaneous",
         "utilities"

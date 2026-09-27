@@ -5,7 +5,7 @@
         "author": "RoundSalmon4",
         "name": "AppVerifier BG"
     },
-    "icon": "https://codeberg.org/unwanted9855/AppVerifierBG/raw/branch/feature/all-enhancements/fastlane/metadata/android/en-US/images/icon.png",
+    "icon": "https://raw.githubusercontent.com/RoundSalmon4/AppVerifierBG/HEAD/fastlane/metadata/android/en-US/images/icon.png",
     "categories": [
         "downloader_and_manager"
     ],

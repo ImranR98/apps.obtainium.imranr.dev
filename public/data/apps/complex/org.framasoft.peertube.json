@@ -8,7 +8,7 @@
             "overrideSource": "DirectAPKLink"
         }
     ],
-    "icon": "https://framasoft.frama.io/peertube/mobile-application/icon_with_background.png",
+    "icon": "https://f-droid.org/repo/org.framasoft.peertube/en-US/icon.png",
     "categories": [
         "video_player",
         "media_frontends",

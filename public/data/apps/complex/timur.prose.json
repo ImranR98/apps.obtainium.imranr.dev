@@ -10,7 +10,7 @@
             "overrideSource": null
         }
     ],
-    "icon": "https://codeberg.org/timurmobi/prosereader-android/raw/branch/master/fastlane/metadata/android/en-US/images/icon.png",
+    "icon": "https://f-droid.org/repo/timur.prose/en-US/icon.png",
     "categories": [
         "document_and_pdf_viewer"
     ],
