@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.thunderdog.challegram",
+            "url": "https://github.com/TGX-Android/Telegram-X",
+            "author": "TGX-Android",
+            "name": "Telegram X",
+            "additionalSettings": "{\"apkFilterRegEx\": \"Telegram-X-[0-9.]+\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/TGX-Android/Telegram-X/main/app/src/main/res/mipmap-xxxhdpi/app_launcher.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Official alternative Telegram client for Android."
+    }
+}
