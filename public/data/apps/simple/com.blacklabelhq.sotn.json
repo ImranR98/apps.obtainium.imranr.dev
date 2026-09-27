@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Recompilation project for Castlevania: Symphony of the Night"
+    },
+    "icon": "https://github.com/sergiomanzur.png",
+    "config": {
+        "id": "com.blacklabelhq.sotn",
+        "url": "https://github.com/sergiomanzur/SymphonyRecomp",
+        "author": "sergiomanzur",
+        "name": "Symphony Recomp"
+    }
+}
