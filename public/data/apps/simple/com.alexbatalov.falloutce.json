@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Fallout for modern operating systems"
+    },
+    "icon": "https://github.com/alexbatalov.png",
+    "config": {
+        "id": "com.alexbatalov.falloutce",
+        "url": "https://github.com/alexbatalov/fallout1-ce",
+        "author": "alexbatalov",
+        "name": "Fallout Community Edition"
+    }
+}
