@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Dual Screen Tomba! 2: The Evil Swine Return (USA) Recompiled"
+    },
+    "icon": "https://raw.githubusercontent.com/igawa6/Tomba2RecompDS/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "io.github.tomba2recomp",
+        "url": "https://github.com/igawa6/Tomba2RecompDS",
+        "author": "igawa6",
+        "name": "Tomba! 2 Recompiled"
+    }
+}
