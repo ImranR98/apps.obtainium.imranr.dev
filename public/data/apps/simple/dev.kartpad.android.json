@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Mario Kart Wii and Retro Rewind, native for iOS, iPadOS, macOS, tvOS, and Android."
+    },
+    "icon": "https://github.com/chrissotraidis.png",
+    "config": {
+        "id": "dev.kartpad.android",
+        "url": "https://github.com/chrissotraidis/kartpad",
+        "author": "chrissotraidis",
+        "name": "KartPad"
+    }
+}
