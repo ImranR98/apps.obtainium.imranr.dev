@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.anindra.messages",
+        "url": "https://github.com/an1ndra/Messages",
+        "author": "Anindra",
+        "name": "Messages"
+    },
+    "icon": "https://f-droid.org/repo/com.anindra.messages/en-US/icon.png",
+    "categories": [
+        "sms"
+    ],
+    "description": {
+        "en": "Simple, private SMS messaging. Offline-first, no ads, no tracking."
+    }
+}
