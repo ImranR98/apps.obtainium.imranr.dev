@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.perol.pixez",
+            "url": "https://github.com/Notsfsssf/pixez-flutter",
+            "author": "Notsfsssf",
+            "name": "PixEz",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^app-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Notsfsssf/pixez-flutter/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "anime_and_manga"
+    ],
+    "description": {
+        "en": "Third-party Pixiv client with direct connection and gif support."
+    }
+}
