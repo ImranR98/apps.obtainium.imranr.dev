@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "net.dinglisch.android.taskerm",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Tasker indrastorms",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^tasker-indrastorms\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/wjXpkVLT-LAzfcYOfhH0hF8ghU79nDHtqVLxBNmWOQJ2ghb4pgp_IBNfGdCTw-aQgh3WwA3Gp1k8Y4waZkGobmA=s0-br30",
+    "categories": [
+        "automation"
+    ],
+    "description": {
+        "en": "Tasker with indrastorms patches, prebuilt by FiorenMas."
+    }
+}
