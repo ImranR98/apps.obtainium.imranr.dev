@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Eboody's main Castlevania ReVamped Android repo."
+    },
+    "icon": "https://raw.githubusercontent.com/eboody/Castlevania-ReVamped-Open-Source-Edition/main/icon.png",
+    "config": {
+        "id": "com.lv4games.castlevaniarevamped",
+        "url": "https://github.com/eboody/Castlevania-ReVamped-Open-Source-Edition",
+        "author": "eboody",
+        "name": "Castlevania ReVamped"
+    }
+}
