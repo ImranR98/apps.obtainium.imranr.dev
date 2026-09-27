@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "app.organicmaps",
+            "url": "https://github.com/organicmaps/organicmaps",
+            "author": "Organic Maps",
+            "name": "Organic Maps",
+            "additionalSettings": "{\"apkFilterRegEx\": \"OrganicMaps-.*-web-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/organicmaps.png",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "Privacy-focused offline maps and navigation based on OpenStreetMap."
+    }
+}
