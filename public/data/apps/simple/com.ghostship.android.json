@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Ghostship android port"
+    },
+    "icon": "https://github.com/izzy2lost.png",
+    "config": {
+        "id": "com.ghostship.android",
+        "url": "https://github.com/izzy2lost/Ghostship",
+        "author": "izzy2lost",
+        "name": "Ghostship"
+    }
+}
