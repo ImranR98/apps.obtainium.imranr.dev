@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "OpenBOR is the ultimate 2D side scrolling engine for beat em' ups, shooters, and more!"
+    },
+    "icon": "https://github.com/DCurrent.png",
+    "config": {
+        "id": "org.openbor.engine",
+        "url": "https://github.com/DCurrent/openbor",
+        "author": "DCurrent",
+        "name": "OpenBoR"
+    }
+}
