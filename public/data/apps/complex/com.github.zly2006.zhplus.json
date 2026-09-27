@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.github.zly2006.zhplus",
+            "url": "https://github.com/zly2006/zhihu-plus-plus",
+            "author": "zly2006",
+            "name": "Zhihu++",
+            "additionalSettings": "{\"apkFilterRegEx\": \"zhihu\\\\+\\\\+-full\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/zly2006/zhihu-plus-plus/master/app/src/main/ic_launcher-playstore.png",
+    "categories": [
+        "community_clients"
+    ],
+    "description": {
+        "en": "Ad-free third-party Zhihu client."
+    }
+}
