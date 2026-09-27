@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.jellyfin.androidtv",
+            "url": "https://github.com/jellyfin/jellyfin-androidtv",
+            "author": "jellyfin",
+            "name": "Jellyfin",
+            "additionalSettings": "{\"apkFilterRegEx\": \"jellyfin-androidtv-.*-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/jellyfin/jellyfin-androidtv/master/app/src/main/res/mipmap-xxxhdpi/app_icon.png",
+    "categories": [
+        "video_player"
+    ],
+    "description": {
+        "en": "Android TV client for Jellyfin."
+    }
+}
