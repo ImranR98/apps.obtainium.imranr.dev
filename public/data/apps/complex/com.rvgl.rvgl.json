@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.rvgl.rvgl",
+            "url": "https://rvgl.org/",
+            "author": "RVGL Team",
+            "name": "RVGL",
+            "additionalSettings": "{\"versionExtractionRegEx\": \"rvgl_([0-9.a-z]+)_android\\\\.apk\", \"matchGroupToUse\": \"$1\", \"versionExtractWholePage\": true}"
+        }
+    ],
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "RVGL is a modern open-source port of the Re-Volt racing game with Android support. Requires original game files."
+    },
+    "icon": "https://rvgl.org/imgs/icon.png"
+}
