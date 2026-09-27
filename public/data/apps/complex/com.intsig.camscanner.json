@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.intsig.camscanner",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "CamScanner hoo-dles",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^camscanner-hoo-dles\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/XSoqEDquJuenUosbMN_EA2n2U5lsomPEUdCKj4j9bUdPfdWMCtRqXlyPgQ6zxQxWaDFIXrqbqyFjwXQ5FMYubw=s0-br30",
+    "categories": [
+        "document_scanner"
+    ],
+    "description": {
+        "en": "CamScanner with hoo-dles patches, prebuilt by FiorenMas."
+    }
+}
