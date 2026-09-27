@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.zhiliaoapp.musically",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "TikTok Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^tiktok-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/2o7iuqPe-0msP3DvNhzoOgNo4eZ6GkL_RtGVeKyBn5UBQAW5cw-GW5V3wDOHB1yTQuqWzrFLFOv2u4_5ea1uhg=s0-br30",
+    "categories": [
+        "community_clients"
+    ],
+    "description": {
+        "en": "Revanced version of TikTok."
+    }
+}
