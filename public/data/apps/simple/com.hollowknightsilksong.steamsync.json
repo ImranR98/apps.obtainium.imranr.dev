@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of SilksongAndroidAchievements."
+    },
+    "icon": "https://github.com/OmegaUwUr.png",
+    "config": {
+        "id": "com.hollowknightsilksong.steamsync",
+        "url": "https://github.com/OmegaUwUr/SilksongAndroid-Achievements",
+        "author": "OmegaUwUr",
+        "name": "SilksongAndroidAchievements"
+    }
+}
