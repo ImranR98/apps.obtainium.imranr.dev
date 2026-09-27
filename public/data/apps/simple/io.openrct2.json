@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An open source re-implementation of RollerCoaster Tycoon 2 🎢"
+    },
+    "icon": "https://github.com/OpenRCT2.png",
+    "config": {
+        "id": "io.openrct2",
+        "url": "https://github.com/OpenRCT2/OpenRCT2",
+        "author": "OpenRCT2",
+        "name": "OpenRCT2"
+    }
+}
