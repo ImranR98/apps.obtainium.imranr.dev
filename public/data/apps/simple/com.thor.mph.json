@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Metroid Prime Hunters recomp for the AYN Thor: native dual-screen Android port with twin-stick Prime controls and HD GLES rendering"
+    },
+    "icon": "https://raw.githubusercontent.com/aabrole/HuntersRecomp/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.thor.mph",
+        "url": "https://github.com/aabrole/HuntersRecomp",
+        "author": "aabrole",
+        "name": "Hunters Recomp"
+    }
+}
