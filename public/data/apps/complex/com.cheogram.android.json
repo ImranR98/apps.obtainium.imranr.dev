@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.cheogram.android",
+            "url": "https://f-droid.org/packages/com.cheogram.android",
+            "author": "Soprani.ca",
+            "name": "Cheogram",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":true,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/com.cheogram.android/en-US/icon.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "XMPP (Jabber) client based on Conversations, with gateway support."
+    }
+}

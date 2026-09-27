@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.kde.kdeconnect_tp",
+            "url": "https://f-droid.org/packages/org.kde.kdeconnect_tp",
+            "author": "KDE",
+            "name": "KDE Connect",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/org.kde.kdeconnect_tp/en-US/icon.png",
+    "categories": [
+        "synchronisation"
+    ],
+    "description": {
+        "en": "Integrates your phone with your KDE desktop."
+    }
+}

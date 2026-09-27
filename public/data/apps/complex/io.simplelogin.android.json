@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "io.simplelogin.android",
+            "url": "https://github.com/simple-login/Simple-Login-Android",
+            "author": "simple-login",
+            "name": "SimpleLogin",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"play\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/simple-login/Simple-Login-Android/master/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "password_and_authentication"
+    ],
+    "description": {
+        "en": "Android client for SimpleLogin email aliases."
+    }
+}

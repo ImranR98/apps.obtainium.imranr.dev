@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.futo.inputmethod.latin",
+            "url": "https://github.com/futo-org/android-keyboard",
+            "author": "futo-org",
+            "name": "FUTO Keyboard",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\",\"dontSortReleasesList\":false}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/futo-org/android-keyboard/master/java/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "keyboard"
+    ],
+    "description": {
+        "en": "Offline, privacy-focused keyboard with swipe typing and voice input."
+    }
+}

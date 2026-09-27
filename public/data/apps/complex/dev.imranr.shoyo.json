@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "dev.imranr.shoyo",
+            "url": "https://github.com/ImranR98/Shoyo",
+            "author": "ImranR98",
+            "name": "Shoyo",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\",\"dontSortReleasesList\":false}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/ImranR98/Shoyo/main/assets/graphics/icon.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Save files from the Android share sheet to local storage."
+    }
+}

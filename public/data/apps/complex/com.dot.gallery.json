@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.dot.gallery",
+            "url": "https://github.com/IacobIonut01/ReFra",
+            "author": "IacobIonut01",
+            "name": "ReFra",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"nomaps.*WithML\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}",
+            "overrideSource": "GitHub"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/IacobIonut01/ReFra/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "image_viewer_and_gallery"
+    ],
+    "description": {
+        "en": "Modern Android gallery app built with Jetpack Compose."
+    }
+}

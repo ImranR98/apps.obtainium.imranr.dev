@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "de.nulide.findmydevice",
+            "url": "https://f-droid.org/packages/de.nulide.findmydevice",
+            "author": "Nulide",
+            "name": "FMD",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/de.nulide.findmydevice/en-US/icon.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Locate and control your device remotely."
+    }
+}
