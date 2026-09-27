@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of Super Mario Strikers."
+    },
+    "icon": "https://github.com/luisxl15.png",
+    "config": {
+        "id": "io.github.newcoke.strikers",
+        "url": "https://github.com/luisxl15/Strikers-Android-Port",
+        "author": "luisxl15",
+        "name": "Strikers Android"
+    }
+}
