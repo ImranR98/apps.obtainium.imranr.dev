@@ -2,21 +2,17 @@
     "configs": [
         {
             "id": "org.tasks",
-            "url": "https://f-droid.org/packages/org.tasks",
-            "author": "Alex Baker",
+            "url": "https://github.com/tasks/tasks",
+            "author": "tasks",
             "name": "Tasks",
-            "preferredApkIndex": 0,
-            "additionalSettings": "{\"filterVersionsByRegEx\":\"\",\"trySelectingSuggestedVersionCode\":false,\"autoSelectHighestVersionCode\":false,\"trackOnly\":false,\"versionDetection\":\"standardVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+            "additionalSettings": "{\"apkFilterRegEx\": \"tasks-fdroid-.*\\\\.apk$\"}"
         }
     ],
-    "icon": "https://f-droid.org/repo/org.tasks/en-US/icon_YftLJ2dGZxgevP1f0n9c9X9HZKYmyz06c370Udel8Tk=.png",
+    "icon": "https://raw.githubusercontent.com/tasks/tasks/main/fastlane/metadata/android/en-US/images/icon.png",
     "categories": [
-        "calendar",
-        "notes",
-        "utilities"
+        "notes"
     ],
     "description": {
-        "en": "A to-do list and task management app for Android devices, offering features like task organization, reminders, and synchronization across devices.",
-        "de": "Eine To-Do-Liste und Aufgabenverwaltungs-App für Android-Geräte, die Funktionen wie Aufgabenorganisation, Erinnerungen und geräteübergreifende Synchronisierung bietet."
+        "en": "Task manager app bringing Astrid Tasks back from the dead."
     }
 }
