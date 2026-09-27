@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "app.revanced.android.magazines",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Google News Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^googlenews-arm64-v8a-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/m2k0X_fhgmj2MjDn_9rStPF9ngsXMO-DsC1ZhG3bcYl7hvJ9rwAOo7cKs9j5wnl-RNuDh-sfCUtF2sYzjcgzIg=s0-br30",
+    "categories": [
+        "rss_readers"
+    ],
+    "description": {
+        "en": "Revanced version of Google News."
+    }
+}
