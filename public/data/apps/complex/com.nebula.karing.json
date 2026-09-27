@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.nebula.karing",
+            "url": "https://github.com/KaringX/karing",
+            "author": "KaringX",
+            "name": "Karing",
+            "additionalSettings": "{\"apkFilterRegEx\": \"android_arm\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/KaringX/karing/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Simple and powerful proxy utility with routing rules for Clash and sing-box."
+    }
+}
