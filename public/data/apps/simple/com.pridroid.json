@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android launcher for Prison Architect"
+    },
+    "icon": "https://raw.githubusercontent.com/udarmolota/pridroid/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.pridroid",
+        "url": "https://github.com/udarmolota/pridroid",
+        "author": "udarmolota",
+        "name": "PriDroid"
+    }
+}
