@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of Super Mario 64."
+    },
+    "icon": "https://github.com/ManIsCat2.png",
+    "config": {
+        "id": "com.maniscat2.sm64coopdx",
+        "url": "https://github.com/ManIsCat2/sm64coopdx",
+        "author": "ManIsCat2",
+        "name": "SM64coopdx"
+    }
+}
