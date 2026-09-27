@@ -38,6 +38,7 @@ If you've gone through the above steps, then you can open a PR. Keep these thing
 
 - Keep the amount of alternative configs to a minimum, only provide the ones that will work the best in the long term.
 - Ensure that you leave as many config options as you can as the default setting. Only change what you need. For example, with a GitHub config you would not add an app with the `Include prereleases` setting enabled unless necessary as not everyone will want prereleases.
+- Apps whose source has not been updated in the last 12 months will receive increased scrutiny and may be rejected.
 
 <span id="de"></span>
 # App-Kriterien
@@ -74,6 +75,7 @@ Nachdem Sie die oben genannten Punkte überprüft haben, können Sie einen PR er
 
 - Halten Sie die Anzahl der alternativen Konfigurationen so gering wie möglich und geben Sie nur die an, die langfristig am besten funktionieren.
 - Stellen Sie sicher, dass Sie so viele Konfigurationsoptionen wie möglich als Standardeinstellung belassen. Ändern Sie nur, was zwingend für eine zufriedenstellend lauffähige Konfiguration benötigt wird. Bei einer GitHub-Konfiguration würden Sie zum Beispiel keine App mit der Einstellung „Vorabversionen einbeziehen“ hinzufügen, es sei denn, dies ist notwendig, da nicht jeder Vorabversionen haben möchte.
+- Apps, deren Quelle in den letzten 12 Monaten nicht aktualisiert wurde, werden verstärkt geprüft und können abgelehnt werden.
 
 <span id="zh-cn"></span>
 # 应用标准
@@ -109,3 +111,4 @@ Nachdem Sie die oben genannten Punkte überprüft haben, können Sie einen PR er
 
 - 尽量减少备选配置的数量，只提供长期效果最好的配置。
 - 确保将尽可能多的配置选项保留为默认设置。只更改需要的配置。例如，在 GitHub 配置中，除非有必要，否则不会在添加应用时启用“包含预发布版本”设置，因为不是每个人都需要预发布版本。
+- 源代码在过去 12 个月内未更新的应用将受到更严格的审查，并可能被拒绝。
