@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "pl.solidexplorer2",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Solid Explorer hoo-dles",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^solid-explorer-hoo-dles\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/8TYqGVCV5BgN623s6nBzxatxLlmRotCINOvZHr4BrVvvdIV9RGWR97tAtwdpDtdm9d7hWgLh1d0A0PbqfLwLEkc=s0-br30",
+    "categories": [
+        "file_manager"
+    ],
+    "description": {
+        "en": "Solid Explorer with hoo-dles patches, prebuilt by FiorenMas."
+    }
+}
