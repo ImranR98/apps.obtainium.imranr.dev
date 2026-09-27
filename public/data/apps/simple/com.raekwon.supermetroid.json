@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "early version"
+    },
+    "icon": "https://github.com/Raekwon1603.png",
+    "config": {
+        "id": "com.raekwon.supermetroid",
+        "url": "https://github.com/Raekwon1603/super_metroid-android",
+        "author": "Raekwon1603",
+        "name": "Super Metroid Dual Screen"
+    }
+}
