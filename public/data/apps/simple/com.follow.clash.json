@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.follow.clash",
+        "url": "https://github.com/chen08209/FlClash",
+        "author": "chen08209",
+        "name": "FlClash"
+    },
+    "icon": "https://raw.githubusercontent.com/chen08209/FlClash/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "A multi-platform proxy client based on ClashMeta: simple, open-source and ad-free."
+    }
+}
