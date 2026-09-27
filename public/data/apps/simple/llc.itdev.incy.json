@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "llc.itdev.incy",
+        "url": "https://github.com/INCY-DEV/incy-platforms",
+        "author": "INCY-DEV",
+        "name": "INCY"
+    },
+    "icon": "https://github.com/INCY-DEV.png",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Cross-platform proxy client built on Xray-core."
+    }
+}
