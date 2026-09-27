@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.shatteredpixel.shatteredpixeldungeon",
+            "url": "https://github.com/00-Evan/shattered-pixel-dungeon",
+            "author": "00-Evan",
+            "name": "Shattered Pixel Dungeon",
+            "additionalSettings": "{\"apkFilterRegEx\": \"ShatteredPD-.*-Android\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/00-Evan.png",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Traditional roguelike dungeon crawler RPG."
+    }
+}
