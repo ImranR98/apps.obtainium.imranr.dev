@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of Lighthouse."
+    },
+    "icon": "https://github.com/izzy2lost.png",
+    "config": {
+        "id": "com.lighthouse.android",
+        "url": "https://github.com/izzy2lost/Lighthouse",
+        "author": "izzy2lost",
+        "name": "Lighthouse"
+    }
+}
