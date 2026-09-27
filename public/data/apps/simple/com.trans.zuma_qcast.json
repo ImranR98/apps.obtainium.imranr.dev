@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Zuma Deluxe for Android - Unofficial APK"
+    },
+    "icon": "https://github.com/astola-studio.png",
+    "config": {
+        "id": "com.trans.zuma_qcast",
+        "url": "https://github.com/astola-studio/ZumaDeluxeAndroid",
+        "author": "astola-studio",
+        "name": "Zuma Deluxe for Android (Unofficial)"
+    }
+}
