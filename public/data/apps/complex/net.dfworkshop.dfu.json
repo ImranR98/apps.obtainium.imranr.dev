@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Open source recreation of Daggerfall in the Unity engine, ported to Android"
+    },
+    "icon": "https://github.com/Vwing.png",
+    "configs": [
+        {
+            "id": "net.dfworkshop.dfu",
+            "url": "https://github.com/Vwing/daggerfall-unity-android",
+            "author": "Vwing",
+            "name": "DaggerFall Unity",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^dfu.*mono.*bit.*v.*mods.*supported.*apk$\"}"
+        }
+    ]
+}
