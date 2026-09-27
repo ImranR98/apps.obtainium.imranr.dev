@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Dr. Robotnik's Ring Racers (SRB2) Android Port with GLES2 RHI, On-Screen Touch Controls, and Master Server Support"
+    },
+    "icon": "https://github.com/thegreatbbd94-ux.png",
+    "config": {
+        "id": "org.kartkrew.ringracers",
+        "url": "https://github.com/thegreatbbd94-ux/ring-racers-srb2-port",
+        "author": "thegreatbbd94-ux",
+        "name": "Ring Racers"
+    }
+}
