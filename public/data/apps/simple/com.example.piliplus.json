@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.example.piliplus",
+        "url": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+        "author": "bggRGjQaUbCoE",
+        "name": "PiliPlus"
+    },
+    "icon": "https://raw.githubusercontent.com/bggRGjQaUbCoE/PiliPlus/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "video_player"
+    ],
+    "description": {
+        "en": "PiliPlus is a third-party Bilibili client."
+    }
+}
