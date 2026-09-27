@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Gen1Recomp - A native Lua / LÖVE2D recreation of Gen 1 and 2 Poke"
+    },
+    "icon": "https://github.com/bryanthaboi.png",
+    "config": {
+        "id": "com.theboisclub.pokemonred",
+        "url": "https://github.com/bryanthaboi/gen1recomp",
+        "author": "bryanthaboi",
+        "name": "Gen1recomp"
+    }
+}
