@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "com.novadial.phone",
+        "url": "https://github.com/dhilipmpms/NovaDial",
+        "author": "Dhilip MPMS",
+        "name": "NovaDial"
+    },
+    "icon": "https://f-droid.org/repo/com.novadial.phone/en-US/icon.png",
+    "categories": [
+        "contacts",
+        "dialer"
+    ],
+    "description": {
+        "en": "Unlock a secure, open-source calling experience with NovaDialer"
+    }
+}
