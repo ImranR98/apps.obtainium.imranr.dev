@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Got of Thunder (1993 DOS) Android port"
+    },
+    "icon": "https://github.com/wootbeer.png",
+    "config": {
+        "id": "wootbeer.gotandroid",
+        "url": "https://github.com/wootbeer/gotandroid",
+        "author": "wootbeer",
+        "name": "God of Thunder Android"
+    }
+}
