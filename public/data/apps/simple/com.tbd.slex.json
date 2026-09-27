@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of Slash'EM"
+    },
+    "icon": "https://github.com/gurrhack.png",
+    "config": {
+        "id": "com.tbd.slex",
+        "url": "https://github.com/gurrhack/SlashEM-Android",
+        "author": "gurrhack",
+        "name": "Slash'EM Android"
+    }
+}
