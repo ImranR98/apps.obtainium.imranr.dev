@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.yunx.app",
+        "url": "https://github.com/CYQawa/YunX",
+        "author": "CYQawa",
+        "name": "YunX"
+    },
+    "icon": "https://raw.githubusercontent.com/CYQawa/YunX/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "Android app to parse links and download from cloud drives."
+    }
+}
