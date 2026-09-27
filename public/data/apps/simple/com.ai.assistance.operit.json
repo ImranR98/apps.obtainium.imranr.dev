@@ -1,0 +1,14 @@
+{
+    "config": {
+        "id": "com.ai.assistance.operit",
+        "url": "https://github.com/AAswordman/Operit",
+        "author": "AAswordman",
+        "name": "Operit AI"
+    },
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "AI agent and AI chat app for Android."
+    }
+}
