@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.discord",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Discord Revenge",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^discord-revenge\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/w2DdjDHGSj3DQElQQM0_J3PsNsALS-WD3CBeH0aXOYceR-F3aT02gFonhoFzz-Tc9ec8Dx9cLqh48-tzIFcP=s0-br30",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Discord with Revenge patches, prebuilt by FiorenMas."
+    }
+}
