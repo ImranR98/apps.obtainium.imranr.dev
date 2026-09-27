@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.music.bitchord",
+            "url": "https://github.com/kushagrasinghx/BitChord",
+            "author": "kushagrasinghx",
+            "name": "BitChord",
+            "additionalSettings": "{\"apkFilterRegEx\": \"BitChord-v[0-9.]+\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/kushagrasinghx/BitChord/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Modern YouTube music client with clean aesthetics."
+    }
+}
