@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "fork.risin42.nagramx",
+            "url": "https://github.com/Keeperorowner/NagramXF",
+            "author": "Keeperorowner",
+            "name": "Nagram XF",
+            "additionalSettings": "{\"apkFilterRegEx\":\"normal-universal\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Keeperorowner/NagramXF/dev/TMessagesProj/src/main/res/mipmap-xxxhdpi/ic_launcher_nagram_dark_blue.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Nagram XF is an unofficial Telegram client and a fork of Nagram X with additional features inspired by exteraGram and AyuGram."
+    }
+}
