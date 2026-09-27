@@ -1,9 +1,11 @@
 {
-  "config": {
-    "id": "hr.cankovic.mojapotrosnjastruje",
-    "url": "https://github.com/elviscankovic/moja-potrosnja-struje",
-    "author": "elviscankovic",
-    "name": "Moja potrošnja struje"
-  },
-  "categories": ["utilities"]
+    "config": {
+        "id": "hr.cankovic.mojapotrosnjastruje",
+        "url": "https://github.com/elviscankovic/moja-potrosnja-struje",
+        "author": "elviscankovic",
+        "name": "Moja potrošnja struje"
+    },
+    "categories": [
+        "utilities"
+    ]
 }
