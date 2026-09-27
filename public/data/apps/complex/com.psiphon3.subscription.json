@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.psiphon3.subscription",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Psiphon rushiranpise",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^psiphon-rushiranpise\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/yOedEdrW5mbwFSzANsZyZxm6zI2DnQ_52-KGJxUWv1kJnxeyAY4avqQC0xpMHGP4ukY5pXhE00-H40ktbWkkCVc=s0-br30",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Psiphon with rushiranpise patches, prebuilt by FiorenMas."
+    }
+}
