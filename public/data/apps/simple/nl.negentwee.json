@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "nl.negentwee",
+        "url": "https://appgallery.huawei.com/app/C101475773",
+        "author": "Reisinformatiegroep B.V.",
+        "name": "9292"
+    },
+    "icon": "https://9292.nl/apple-touch-icon.png",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "Plan public transport journeys in the Netherlands, view live vehicle locations, save favorite routes and buy e-tickets with the official 9292 app."
+    }
+}
