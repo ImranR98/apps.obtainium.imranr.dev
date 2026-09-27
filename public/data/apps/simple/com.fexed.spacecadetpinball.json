@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of 3D Pinball Space Cadet"
+    },
+    "icon": "https://raw.githubusercontent.com/fexed/Pinball-on-Android/android/fastlane/metadata/android/en-US/images/icon.png",
+    "config": {
+        "id": "com.fexed.spacecadetpinball",
+        "url": "https://github.com/fexed/Pinball-on-Android",
+        "author": "fexed",
+        "name": "Space Cadet Pinball"
+    }
+}
