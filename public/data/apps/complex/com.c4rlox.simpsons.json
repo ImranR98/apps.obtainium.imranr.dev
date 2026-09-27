@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Unofficial Android port of The Simpsons: Hit & Run. Requires legally owned game files. No assets included."
+    },
+    "icon": "https://github.com/Carlox33.png",
+    "configs": [
+        {
+            "id": "com.c4rlox.simpsons",
+            "url": "https://github.com/Carlox33/The-Simpsons-Hit-and-Run-Android",
+            "author": "Carlox33",
+            "name": "The Simpsons: Hit & Run",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^SimpsonsNTSC.*apk$\"}"
+        }
+    ]
+}
