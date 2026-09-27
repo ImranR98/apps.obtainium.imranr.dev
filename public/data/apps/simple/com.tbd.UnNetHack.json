@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of UnNetHack"
+    },
+    "icon": "https://github.com/gurrhack.png",
+    "config": {
+        "id": "com.tbd.UnNetHack",
+        "url": "https://github.com/gurrhack/UnNetHack-Android",
+        "author": "gurrhack",
+        "name": "unNetHack Android"
+    }
+}
