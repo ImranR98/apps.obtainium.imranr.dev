@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.eyecon.global",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Eyecon paresh",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^eyecon-caller-arm64-v8a-paresh\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/qIuVDutrbAWZSn8w8eOJ4OlrIKsnyApamt6qbHlaAIW9O4aLMMqYgbCRNAjIQRk8qJWeT6FpFVVMdBTHbdqFIA=s0-br30",
+    "categories": [
+        "dialer"
+    ],
+    "description": {
+        "en": "Eyecon caller ID and dialer with paresh patches, prebuilt by FiorenMas."
+    }
+}
