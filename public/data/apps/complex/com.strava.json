@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.strava",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Strava Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^strava-arm64-v8a-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/J4LN2qH2PQkZ3sFQonz-HWYkd7M38BtEO4Grzh1Xn7L2J6NUILHPkhYvPjdhMZQzrdm4BarUj547wfthyMz_vWM=s0-br30",
+    "categories": [
+        "sports_and_health"
+    ],
+    "description": {
+        "en": "Revanced version of Strava."
+    }
+}
