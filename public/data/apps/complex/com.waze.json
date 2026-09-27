@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.waze",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Waze rushiranpise",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^waze-rushiranpise\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/d4dltd4baeDGnfJD1H-ut68ERsIynfywij9zHRL7ioB-PJW3ENw-bFgg08KGPo8zQfSyRW36e58xhlqQ0pE1gg=s0-br30",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "Waze with rushiranpise patches, prebuilt by FiorenMas."
+    }
+}
