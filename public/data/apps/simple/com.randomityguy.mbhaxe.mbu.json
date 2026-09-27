@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An optimized port of Marble Blast Gold, Platinum, Ultra and PlatinumQuest with 99% identical physics and cross platform multiplayer, runs on Windows, Mac, Linux, Web, iOS and Android! Written in Haxe!"
+    },
+    "icon": "https://github.com/RandomityGuy.png",
+    "config": {
+        "id": "com.randomityguy.mbhaxe.mbu",
+        "url": "https://github.com/RandomityGuy/MBHaxe",
+        "author": "RandomityGuy",
+        "name": "MBHaxe"
+    }
+}
