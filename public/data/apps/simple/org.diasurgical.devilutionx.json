@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Diablo build for modern operating systems"
+    },
+    "icon": "https://github.com/diasurgical.png",
+    "config": {
+        "id": "org.diasurgical.devilutionx",
+        "url": "https://github.com/diasurgical/DevilutionX",
+        "author": "diasurgical",
+        "name": "DevilutionX"
+    }
+}
