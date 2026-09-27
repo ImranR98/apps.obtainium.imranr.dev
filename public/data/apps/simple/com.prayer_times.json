@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.prayer_times",
+        "url": "https://github.com/Hassan-PS/Mihrab",
+        "author": "Hassan-PS",
+        "name": "Mihrab"
+    },
+    "icon": "https://github.com/Hassan-PS/Mihrab/raw/main/branding/store/play/icon-512.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Offline-first prayer times and Quran app with no ads, no analytics and no account. Prayer times are computed on-device, with adhan reminders, a qibla compass, home-screen widgets, the Madinah mushaf in four riwayat, duas and tasbih. Swedish times from Islamiska Forbundet."
+    }
+}
