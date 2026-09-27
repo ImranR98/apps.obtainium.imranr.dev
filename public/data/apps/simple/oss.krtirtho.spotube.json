@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "oss.krtirtho.spotube",
+        "url": "https://github.com/KRTirtho/spotube",
+        "author": "KRTirtho",
+        "name": "Spotube"
+    },
+    "icon": "https://raw.githubusercontent.com/KRTirtho/spotube/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Open source music streaming app for desktop and mobile."
+    }
+}
