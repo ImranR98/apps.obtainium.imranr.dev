@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android Port!! work in progress port of n64decomp/perfect_dark to modern platforms"
+    },
+    "icon": "https://raw.githubusercontent.com/izzy2lost/perfect_dark/port/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.perfectdark.port",
+        "url": "https://github.com/izzy2lost/perfect_dark",
+        "author": "izzy2lost",
+        "name": "Perfect Dark Decomp"
+    }
+}
