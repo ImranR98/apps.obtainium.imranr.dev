@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Repository for the Knossos.NET launcher, currently in development."
+    },
+    "icon": "https://github.com/KnossosNET.png",
+    "config": {
+        "id": "com.knossosnet.knossosnet",
+        "url": "https://github.com/KnossosNET/Knossos.NET",
+        "author": "KnossosNET",
+        "name": "KnossosNET"
+    }
+}
