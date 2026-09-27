@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.ichi2.anki",
+            "url": "https://github.com/ankidroid/Anki-Android",
+            "author": "AnkiDroid",
+            "name": "AnkiDroid",
+            "additionalSettings": "{\"apkFilterRegEx\": \"full-universal\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/ankidroid.png",
+    "categories": [
+        "science_and_education"
+    ],
+    "description": {
+        "en": "Flashcard app for smart spaced-repetition learning (Anki)."
+    }
+}
