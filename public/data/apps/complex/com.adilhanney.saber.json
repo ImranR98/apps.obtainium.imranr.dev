@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.adilhanney.saber",
+            "url": "https://github.com/saber-notes/saber",
+            "author": "saber-notes",
+            "name": "Saber",
+            "additionalSettings": "{\"apkFilterRegEx\": \"Saber_FOSS_.*\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/saber-notes/saber/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "notes"
+    ],
+    "description": {
+        "en": "Cross-platform open-source app built for handwriting."
+    }
+}
