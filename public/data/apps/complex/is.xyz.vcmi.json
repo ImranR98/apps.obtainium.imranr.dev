@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Open-source engine for Heroes of Might and Magic III"
+    },
+    "icon": "https://github.com/vcmi.png",
+    "configs": [
+        {
+            "id": "is.xyz.vcmi",
+            "url": "https://github.com/vcmi/vcmi",
+            "author": "vcmi",
+            "name": "VCMI",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^VCMI.*Android.*arm.*v8a.*apk$\"}"
+        }
+    ]
+}
