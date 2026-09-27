@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A faithful and open-source remake of Cave Story's engine written in Rust"
+    },
+    "icon": "https://github.com/doukutsu-rs.png",
+    "config": {
+        "id": "io.github.doukutsu_rs",
+        "url": "https://github.com/doukutsu-rs/doukutsu-rs",
+        "author": "doukutsu-rs",
+        "name": "doukutsu-rs"
+    }
+}
