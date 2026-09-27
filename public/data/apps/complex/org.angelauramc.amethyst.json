@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.angelauramc.amethyst",
+            "url": "https://github.com/AngelAuraMC/Amethyst-Android",
+            "author": "AngelAuraMC",
+            "name": "Amethyst",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^Amethyst\\\\.apk$\"}"
+        }
+    ],
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A Minecraft: Java Edition Launcher for Android and iOS based on PojavLauncher. This repository contains source code for Android platform."
+    },
+    "icon": "https://github.com/AngelAuraMC.png"
+}
