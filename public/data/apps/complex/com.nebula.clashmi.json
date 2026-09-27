@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.nebula.clashmi",
+            "url": "https://github.com/KaringX/clashmi",
+            "author": "KaringX",
+            "name": "Clash Mi",
+            "additionalSettings": "{\"apkFilterRegEx\": \"android_arm\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/KaringX/clashmi/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Clash Mihomo client for mobile and desktop."
+    }
+}
