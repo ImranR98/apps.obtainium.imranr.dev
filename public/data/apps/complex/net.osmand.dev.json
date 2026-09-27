@@ -5,14 +5,14 @@
             "url": "https://download.osmand.net/latest-night-build/OsmAnd-default.apk",
             "author": "osmandapp",
             "name": "OsmAnd Nightly",
-            "categories": [
-                "maps_and_navigation"
-            ],
-            "overrideSource": "DirectAPKLink",
-            "description": {
-                "en": "Unstable Nightly Builds of OSMAnd free."
-            }
+            "overrideSource": "DirectAPKLink"
         }
     ],
-    "icon": "https://raw.githubusercontent.com/osmandapp/OsmAnd/master/OsmAnd/res/mipmap-xxxhdpi/adaptive_icon_osmand_logo.png"
+    "icon": "https://raw.githubusercontent.com/osmandapp/OsmAnd/master/OsmAnd/res/mipmap-xxxhdpi/adaptive_icon_osmand_logo.png",
+    "categories": [
+        "maps_and_navigation"
+    ],
+    "description": {
+        "en": "Unstable nightly builds of OsmAnd."
+    }
 }

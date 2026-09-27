@@ -9,6 +9,9 @@
         }
     ],
     "icon": "https://play-lh.googleusercontent.com/TFtHOLJSQnh483ahz8Q1mB202TnBD6Q9x9cYOnpcMP3OiI9J9qgU3YfZrS2JBFszpd2tBfhIVSLCInBVatf3AQ=s512",
+    "categories": [
+        "vpn"
+    ],
     "description": {
         "en": "Official Tor VPN app (Beta)"
     }

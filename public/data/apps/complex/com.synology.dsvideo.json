@@ -21,5 +21,12 @@
             "altLabel": "cn"
         }
     ],
-    "icon": "https://play-lh.googleusercontent.com/g0bjJ9H8SUdg8bQ_nLRUX15XUSxHDEPEKjZkeGjuemVjx7bx2raAbwGHyT_CDTryWSqmnGv6MtfvePNsC-9co4g=s512"
+    "icon": "https://play-lh.googleusercontent.com/g0bjJ9H8SUdg8bQ_nLRUX15XUSxHDEPEKjZkeGjuemVjx7bx2raAbwGHyT_CDTryWSqmnGv6MtfvePNsC-9co4g=s512",
+    "categories": [
+        "video_player",
+        "synchronisation"
+    ],
+    "description": {
+        "en": "Video streaming app for Synology NAS."
+    }
 }

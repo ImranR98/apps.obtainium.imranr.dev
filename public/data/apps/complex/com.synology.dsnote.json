@@ -21,5 +21,12 @@
             "altLabel": "cn"
         }
     ],
-    "icon": "https://play-lh.googleusercontent.com/ut_KDiMcNia4j_jyC6ST5YTR88qzzoFZ44pPBUB6C5W3lbqLZyBJUDbwBuIdOOiOT4Q2kzE6O-Ra0C0FNlrQ=s512"
+    "icon": "https://play-lh.googleusercontent.com/ut_KDiMcNia4j_jyC6ST5YTR88qzzoFZ44pPBUB6C5W3lbqLZyBJUDbwBuIdOOiOT4Q2kzE6O-Ra0C0FNlrQ=s512",
+    "categories": [
+        "notes",
+        "synchronisation"
+    ],
+    "description": {
+        "en": "Notes app for Synology NAS."
+    }
 }
