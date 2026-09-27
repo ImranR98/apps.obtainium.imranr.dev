@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.kodjodevf.mangayomi",
+            "url": "https://github.com/kodjodevf/mangayomi",
+            "author": "kodjodevf",
+            "name": "Mangayomi",
+            "additionalSettings": "{\"apkFilterRegEx\": \"-tv-\", \"invertAPKFilter\": true}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/kodjodevf/mangayomi/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "anime_and_manga"
+    ],
+    "description": {
+        "en": "Free and open source app for manga, novels and anime."
+    }
+}
