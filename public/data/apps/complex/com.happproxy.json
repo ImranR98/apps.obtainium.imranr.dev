@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.happproxy",
+            "url": "https://github.com/Happ-proxy/happ-android",
+            "author": "Happ-proxy",
+            "name": "Happ",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^Happ\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/Happ-proxy.png",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Happ is a proxy utility for Android with subscription and routing support."
+    }
+}
