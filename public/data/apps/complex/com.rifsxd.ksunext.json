@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.rifsxd.ksunext",
+            "url": "https://github.com/KernelSU-Next/KernelSU-Next",
+            "author": "KernelSU-Next",
+            "name": "KernelSU-Next",
+            "additionalSettings": "{\"apkFilterRegEx\": \"v[0-9.]+_[0-9]+-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/dev/manager/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "An advanced kernel based root solution for Android."
+    }
+}
