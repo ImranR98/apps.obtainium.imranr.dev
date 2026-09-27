@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An ongoing project to port Termina onto mobile"
+    },
+    "icon": "https://github.com/Chokage.png",
+    "config": {
+        "id": "chokage.fearandhunger.termina",
+        "url": "https://github.com/Chokage/Fear-and-Hunger-2-Termina-Mobile",
+        "author": "Chokage",
+        "name": "Fear And Hunger Termina Mobile"
+    }
+}
