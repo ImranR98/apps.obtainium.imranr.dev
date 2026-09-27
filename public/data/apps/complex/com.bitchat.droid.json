@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.bitchat.droid",
+            "url": "https://github.com/permissionlesstech/bitchat-android",
+            "author": "permissionlesstech",
+            "name": "bitchat",
+            "additionalSettings": "{\"apkFilterRegEx\": \"bitchat-android-universal\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/permissionlesstech/bitchat-android/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Decentralized mesh chat."
+    }
+}
