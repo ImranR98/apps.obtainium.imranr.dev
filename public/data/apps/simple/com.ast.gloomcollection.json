@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "ZGloom is a modern source port of the Amiga FPS Gloom with improved renderer. It is mainly focused on OUYA Android support (might work on other devices too)."
+    },
+    "icon": "https://github.com/Andiweli.png",
+    "config": {
+        "id": "com.ast.gloomcollection",
+        "url": "https://github.com/Andiweli/ZGloom-Android",
+        "author": "Andiweli",
+        "name": "ZGloom"
+    }
+}
