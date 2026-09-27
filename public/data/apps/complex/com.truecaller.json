@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.truecaller",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Truecaller paresh",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^truecaller-arm64-v8a-paresh\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/kVMxXC3fV4cyG56MZunYS2-HYaHh3eM3YTWoDbYaN5-G9xIU2k235hHVQmRrm79tzBSzt0cZ6GsBbzGzGbbMwg=s0-br30",
+    "categories": [
+        "dialer"
+    ],
+    "description": {
+        "en": "Truecaller with paresh patches, prebuilt by FiorenMas."
+    }
+}
