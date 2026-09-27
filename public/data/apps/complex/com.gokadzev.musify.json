@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.gokadzev.musify",
+            "url": "https://github.com/gokadzev/Musify",
+            "author": "gokadzev",
+            "name": "Musify",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^Musify\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/gokadzev/Musify/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Stream music effortlessly with one app."
+    }
+}
