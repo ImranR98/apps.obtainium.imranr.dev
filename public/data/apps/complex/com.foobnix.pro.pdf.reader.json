@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.foobnix.pro.pdf.reader",
+            "url": "https://github.com/foobnix/LibreraReader",
+            "author": "Foobnix",
+            "name": "Librera Reader",
+            "additionalSettings": "{\"apkFilterRegEx\": \"Librera\\\\.Fdroid-.*-uni\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/foobnix.png",
+    "categories": [
+        "document_and_pdf_viewer"
+    ],
+    "description": {
+        "en": "E-book reader for EPUB, PDF, comics and audiobooks."
+    }
+}
