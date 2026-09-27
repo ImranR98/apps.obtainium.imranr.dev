@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.google.android.apps.recorder",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Google Recorder derevanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^google-recorder-derevanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/Ek8WD_0JmEqezNGbwzw1AdtsJomBhgE9qFwmsvMBZSoWygtPIU12YuOtJXWuUg5y4C1aKFH7xxUdppTQsKj8sw=s0-br30",
+    "categories": [
+        "recorder"
+    ],
+    "description": {
+        "en": "Google Recorder with derevanced patches, prebuilt by FiorenMas."
+    }
+}
