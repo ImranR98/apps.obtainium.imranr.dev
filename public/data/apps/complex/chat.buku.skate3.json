@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "chat.buku.skate3",
+            "url": "https://github.com/Buku313/Skate3-Mobile",
+            "author": "Buku313",
+            "name": "Skate 3",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^Skate3-Mobile-Android\\\\.apk$\"}"
+        }
+    ],
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Play Skate 3 natively on Android. Download one APK, select your own ISO, and skate. ARM64 recompilation with Vulkan rendering."
+    },
+    "icon": "https://raw.githubusercontent.com/Buku313/Skate3-Mobile/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+}
