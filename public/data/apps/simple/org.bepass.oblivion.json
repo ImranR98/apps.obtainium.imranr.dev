@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "org.bepass.oblivion",
+        "url": "https://github.com/bepass-org/oblivion",
+        "author": "bepass-org",
+        "name": "Oblivion"
+    },
+    "icon": "https://raw.githubusercontent.com/bepass-org/oblivion/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Unofficial Warp client for Android."
+    }
+}
