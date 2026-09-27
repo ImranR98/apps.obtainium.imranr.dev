@@ -5,7 +5,7 @@
         "author": "Accrescent",
         "name": "Accrescent"
     },
-    "icon": "https://accrescent.app/accrescent.svg",
+    "icon": "https://raw.githubusercontent.com/accrescent/accrescent/main/app/src/main/ic_launcher-playstore.png",
     "categories": [
         "downloader_and_manager"
     ],
