@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of Wave Racer 64."
+    },
+    "icon": "https://github.com/HLLArtyParty.png",
+    "configs": [
+        {
+            "id": "com.hllartyparty.waverace64recomp",
+            "url": "https://github.com/HLLArtyParty/WaveRace64RecompForAndroid",
+            "author": "HLLArtyParty",
+            "name": "Wave Race 64 Recompiled",
+            "additionalSettings": "{\"includePrereleases\": true}"
+        }
+    ]
+}
