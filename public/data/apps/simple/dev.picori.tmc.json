@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Project Picori — a native PC port of The Legend of Zelda: The Minish Cap (Linux/Windows/macOS), built on the zeldaret/tmc decompilation."
+    },
+    "icon": "https://raw.githubusercontent.com/999sian/tmc/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "dev.picori.tmc",
+        "url": "https://github.com/999sian/tmc",
+        "author": "999sian",
+        "name": "Project Picori"
+    }
+}
