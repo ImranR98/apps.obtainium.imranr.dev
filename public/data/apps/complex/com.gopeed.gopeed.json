@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.gopeed.gopeed",
+            "url": "https://github.com/GopeedLab/gopeed",
+            "author": "GopeedLab",
+            "name": "Gopeed",
+            "additionalSettings": "{\"apkFilterRegEx\": \"Gopeed-v[0-9.]+-android\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/GopeedLab/gopeed/main/ui/flutter/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "Fast, modern download manager for HTTP, BitTorrent, Magnet and ed2k."
+    }
+}
