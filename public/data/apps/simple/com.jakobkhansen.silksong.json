@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Hollow Knight: Silksong Dual-Screen Android port (+Steam integration)"
+    },
+    "icon": "https://github.com/jakobkhansen.png",
+    "config": {
+        "id": "com.jakobkhansen.silksong",
+        "url": "https://github.com/jakobkhansen/SilksongAndroid",
+        "author": "jakobkhansen",
+        "name": "SilksongAndroid"
+    }
+}
