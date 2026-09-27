@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.deepseek.chat",
+        "url": "https://download.deepseek.com/apk/deepseek.apk",
+        "author": "DeepSeek",
+        "name": "DeepSeek"
+    },
+    "icon": null,
+    "categories": [
+        "miscellaneous"
+    ],
+    "description": {
+        "en": "Official DeepSeek app - AI chat assistant."
+    }
+}
