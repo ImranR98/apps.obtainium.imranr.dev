@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android app tool that patches AM2R 1.1.zip into modren android"
+    },
+    "icon": "https://github.com/am2r-android.png",
+    "config": {
+        "id": "com.community.am2r.patcher",
+        "url": "https://github.com/am2r-android/AM2R-Autopatcher-Android",
+        "author": "am2r-android",
+        "name": "AM2R Autopatcher"
+    }
+}
