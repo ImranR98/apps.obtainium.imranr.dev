@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "io.github.whoxamxl.aalyrics",
+        "url": "https://github.com/whoxamxl/AALyrics",
+        "author": "whoxamxl",
+        "name": "AALyrics"
+    },
+    "icon": "https://raw.githubusercontent.com/whoxamxl/AALyrics/main/app/src/main/ic_launcher-playstore.png",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Synchronized lyrics for Android and Android Auto with multi-provider matching, on-device translation, and word-synced karaoke support."
+    }
+}
