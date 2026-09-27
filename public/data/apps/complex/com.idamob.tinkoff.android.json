@@ -8,7 +8,7 @@
             "additionalSettings": "{\"defaultPseudoVersioningMethod\": \"ETag\"}"
         }
     ],
-    "icon": "https://cdn.tbank.ru/params/common_front/resourses/icons/apple-touch-icon-180x180.png",
+    "icon": null,
     "categories": [
         "finance"
     ],
