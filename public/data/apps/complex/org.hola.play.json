@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.hola.play",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Hola VPN rushiranpise",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^hola-vpn-rushiranpise\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/0XpdhvjM2TUxAD4pDvp-Bd9OHRNfkfnO5iRDLEKyyjj9cnmvjYb8kH5vhVASlXSRgjHKDTgncioNqhb3Hunxew=s0-br30",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Hola VPN with rushiranpise patches, prebuilt by FiorenMas."
+    }
+}
