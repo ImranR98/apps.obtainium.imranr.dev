@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Port of the AlephOne engine on Android"
+    },
+    "icon": "https://raw.githubusercontent.com/daniele-rapagnani/alephone-android/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "configs": [
+        {
+            "id": "com.alephone.marathoninfinity",
+            "url": "https://github.com/daniele-rapagnani/alephone-android",
+            "author": "daniele-rapagnani",
+            "name": "AlephOne",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^marathon.*inf.*signed.*apk$\"}"
+        }
+    ]
+}
