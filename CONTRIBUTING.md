@@ -19,7 +19,8 @@
 - You can auto-generate config files from an Obtainium export by running `node scripts/generate_from_export.js <path to Obtainium export>`
 - Note: Auto-generated entries will not have icon, category, or description data. Adding those manually is not required but would result in a better user experience.
 - You can also auto-generate config files from an Obtainium URL redirection link by running `scripts/generate_from_url.py`
-- Note: Using `scripts/generate_from_url.py` requires you to install "Colorama" by using the `pip` command `pip install colorama`
+- Note: Using `scripts/generate_from_url.py` requires "Colorama": install it with `pip install -r scripts/requirements.txt`
+- Run `npm run validate` to check app icons and automatically set dead ones to `null` (`npm run validate:check` reports without modifying files)
 - Apps whose source has not been updated in the last 12 months will receive increased scrutiny and may be rejected.
 - If you want to contribute a large number of apps, please do so in one PR instead of creating separate PRs for each app. Ignoring this rule may cause the PRs to be rejected as spam.
 
@@ -59,7 +60,8 @@ For example:
 - Sie können Konfigurationsdateien automatisch aus einem Obtainium-Export generieren, indem Sie `node scripts/generate_from_export.js <Pfad zum Obtainium-Export>` ausführen.
 - Hinweis: Automatisch generierte Einträge haben keine Symbol-, Kategorie- oder Beschreibungsdaten. Diese manuell hinzuzufügen ist nicht zwingend erforderlich, ist aber erwünscht, weil es zu einer besseren Benutzerfreundlichkeit führen würde.
 - Sie können auch automatisch Konfigurationsdateien aus einem Obtainium-URL-Umleitungslink generieren, indem Sie `scripts/generate_from_url.py` ausführen.
-- Hinweis: Die Verwendung von `scripts/generate_from_url.py` erfordert die Installation von „Colorama“ mit dem `pip` Befehl `pip install colorama`.
+- Hinweis: Die Verwendung von `scripts/generate_from_url.py` erfordert „Colorama“: `pip install -r scripts/requirements.txt`.
+- Führen Sie `npm run validate` aus, um App-Symbole zu prüfen und defekte automatisch auf `null` zu setzen (`npm run validate:check` meldet sie nur, ohne Dateien zu ändern).
 - Apps, deren Quelle in den letzten 12 Monaten nicht aktualisiert wurde, werden verstärkt geprüft und können abgelehnt werden.
 - Wenn Sie eine große Anzahl von Apps beitragen möchten, tun Sie dies bitte in einem einzigen PR, anstatt für jede App einen separaten PR zu erstellen. Die Missachtung dieser Regel kann dazu führen, dass die PRs als Spam abgelehnt werden.
 

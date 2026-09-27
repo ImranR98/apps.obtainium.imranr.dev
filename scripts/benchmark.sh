@@ -1,21 +1,32 @@
 #!/bin/bash
-set -e
+set -euo pipefail
 
-if ! which siege; then
+if ! command -v siege >/dev/null 2>&1; then
 	echo "Install siege first." >&2
 	exit 1
 fi
 
+BASE_URL="${BASE_URL:-http://localhost:8080}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CATEGORIES_FILE="$SCRIPT_DIR/../public/data/categories.json"
+
 SAMPLE_TEMP_FILE="$(mktemp)"
-trap "rm \"$SAMPLE_TEMP_FILE\"" EXIT
+trap 'rm -f "$SAMPLE_TEMP_FILE"' EXIT
 
-echo "http://localhost:8080/
-http://localhost:8080/apps?page=3
-http://localhost:8080/apps?category=browser
-http://localhost:8080/apps?type=complex
-http://localhost:8080/apps?categoryMode=exclusive&category=emulator&category=games&q=
-http://localhost:8080/apps?categoryMode=inclusive&category=2FA&category=ad_blocker&category=anime_and_manga&category=automation&category=barcode_scanner&category=browser&category=calculator&category=calendar&category=camera&category=clock_and_time&category=community_clients&category=dialer&category=document_and_pdf_viewer&category=document_scanner&category=downloader_and_manager&category=drawing&category=email_clients&category=emulator&category=file_manager&category=file_sharing&category=finance&category=games&category=icon_packs&category=image_manipulation&category=image_viewer_and_gallery&category=keyboard&category=launcher_and_desktop&category=maps_and_navigation&category=media_frontends&category=messaging&category=miscellaneous&category=music&category=notes&category=other&category=password_and_authentication&category=podcast_and_audio_book_player&category=privacy_and_anonymity&category=recorder&category=rss_readers&category=sandboxing&category=science_and_education&category=synchronisation&category=system&category=text_editors&category=url_manipulation&category=utilities&category=video_calling&category=video_manipulation&category=video_player&category=vpn&category=wallpapers&category=weather&q=Open
-http://localhost:8080/redirect?r=obtainium://add/https://github.com/ImranR98/Obtainium" > "$SAMPLE_TEMP_FILE"
+CATEGORY_PARAMS="$(node -e '
+const fs = require("fs");
+const keys = Object.keys(JSON.parse(fs.readFileSync(process.argv[1], "utf8")));
+process.stdout.write(keys.map(key => "category=" + encodeURIComponent(key)).join("&"));
+' "$CATEGORIES_FILE")"
 
-siege -c 10 -t MM --no-follow -f "$SAMPLE_TEMP_FILE"
-# cat "$SAMPLE_TEMP_FILE" | while read url; do ab -n 100 -c 10 "$url"; done
+{
+	echo "$BASE_URL/"
+	echo "$BASE_URL/apps?page=3"
+	echo "$BASE_URL/apps?category=browser"
+	echo "$BASE_URL/apps?type=complex"
+	echo "$BASE_URL/apps?categoryMode=exclusive&category=emulator&category=games&q="
+	echo "$BASE_URL/apps?categoryMode=inclusive&$CATEGORY_PARAMS&q=Open"
+	echo "$BASE_URL/redirect?r=obtainium://add/https://github.com/ImranR98/Obtainium"
+} > "$SAMPLE_TEMP_FILE"
+
+siege -c 10 -t 2M --no-follow -f "$SAMPLE_TEMP_FILE"

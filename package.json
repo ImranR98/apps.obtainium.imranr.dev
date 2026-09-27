@@ -8,6 +8,8 @@
     "preview": "astro preview",
     "typecheck": "astro check",
     "validate": "node scripts/validate_icons.js",
+    "validate:check": "node scripts/validate_icons.js --check",
+    "benchmark": "bash scripts/benchmark.sh",
     "astro": "astro"
   },
   "dependencies": {
