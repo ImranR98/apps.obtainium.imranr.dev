@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port ot recompiled NFS3"
+    },
+    "icon": "https://raw.githubusercontent.com/ZloiKILLER/nfs3recompiled-android/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "dev.nfs3hp.port",
+        "url": "https://github.com/ZloiKILLER/nfs3recompiled-android",
+        "author": "ZloiKILLER",
+        "name": "nfs3recompiled Android"
+    }
+}
