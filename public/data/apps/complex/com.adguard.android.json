@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.adguard.android",
+            "url": "https://github.com/AdguardTeam/AdguardForAndroid",
+            "author": "AdGuard",
+            "name": "AdGuard",
+            "additionalSettings": "{\"apkFilterRegEx\": \"adguard-[0-9.]+\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://adguard.com/apple-touch-icon.png",
+    "categories": [
+        "ad_blocker"
+    ],
+    "description": {
+        "en": "AdGuard is a system-wide content blocker for Android: blocks ads, trackers and malvertising."
+    }
+}
