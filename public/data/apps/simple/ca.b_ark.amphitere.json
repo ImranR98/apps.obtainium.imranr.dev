@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An Android port of NetHack with a specific focus on dual-screen devices"
+    },
+    "icon": "https://github.com/fancypantalons.png",
+    "config": {
+        "id": "ca.b_ark.amphitere",
+        "url": "https://github.com/fancypantalons/Amphitere",
+        "author": "fancypantalons",
+        "name": "Amphitere (Dual Screen)"
+    }
+}
