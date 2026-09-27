@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.amazon.avod.thirdpartyclient",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Prime Video hoo-dles",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^prime-video-arm64-v8a-hoo-dles\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/NnoDzfxkvlsAvU8jzoPeK8aaxbcU2sEH_btwgMQ2xI88_qtrNGQuf1vlFkxSiQODyKVFZ3-s71sU1MHyV-vc9Q=s0-br30",
+    "categories": [
+        "media_frontends"
+    ],
+    "description": {
+        "en": "Prime Video with hoo-dles patches, prebuilt by FiorenMas."
+    }
+}
