@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "app.smarttube",
+            "url": "https://github.com/yuliskov/SmartTube",
+            "author": "yuliskov",
+            "name": "SmartTube",
+            "additionalSettings": "{\"apkFilterRegEx\": \"SmartTube_stable_.*_universal\\\\.apk$\", \"fallbackToOlderReleases\": true}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/yuliskov/SmartTube/master/smarttubetv/src/main/res/mipmap-nodpi/app_icon.png",
+    "categories": [
+        "video_player"
+    ],
+    "description": {
+        "en": "Browse media content with your own rules on Android TV."
+    }
+}
