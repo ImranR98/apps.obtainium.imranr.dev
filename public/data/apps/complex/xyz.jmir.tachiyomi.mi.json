@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "xyz.jmir.tachiyomi.mi",
+            "url": "https://github.com/aniyomiorg/aniyomi",
+            "author": "aniyomiorg",
+            "name": "Aniyomi",
+            "additionalSettings": "{\"apkFilterRegEx\": \"aniyomi-v[0-9.]+\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/aniyomiorg/aniyomi/main/.github/assets/logo.png",
+    "categories": [
+        "anime_and_manga"
+    ],
+    "description": {
+        "en": "App for manga and anime."
+    }
+}
