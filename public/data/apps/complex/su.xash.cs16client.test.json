@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Counter-Strike reverse-engineered."
+    },
+    "icon": "https://raw.githubusercontent.com/Velaron/cs16-client/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "configs": [
+        {
+            "id": "su.xash.cs16client.test",
+            "url": "https://github.com/Velaron/cs16-client",
+            "author": "Velaron",
+            "name": "CS16Client",
+            "additionalSettings": "{\"includePrereleases\": true}"
+        }
+    ]
+}
