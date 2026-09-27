@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A Crash Team Racing Decompilation Project - Port on Android"
+    },
+    "icon": "https://github.com/Simon358.png",
+    "config": {
+        "id": "com.ctrnative",
+        "url": "https://github.com/Simon358/ctr-native-android",
+        "author": "Simon358",
+        "name": "CRT Native"
+    }
+}
