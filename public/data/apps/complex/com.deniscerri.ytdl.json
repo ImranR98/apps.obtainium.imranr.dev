@@ -1,0 +1,131 @@
+{
+    "configs": [
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "universal (GitHub)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"universal-github\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "armeabi-v7a (GitHub)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"armeabi-v7a-github\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "arm64-v8a (GitHub)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64-v8a-github\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "x86 (GitHub)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"x86-github\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "x86_64 (GitHub)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"x86_64-github\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "universal (F-Droid)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"foss-universal\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "armeabi-v7a (F-Droid)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"foss-armeabi-v7a\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "arm64-v8a (F-Droid)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"foss-arm64-v8a\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "x86 (F-Droid)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"foss-x86\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "x86_64 (F-Droid)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"foss-x86_64\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "universal (Izzy)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"izzy-universal\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "armeabi-v7a (Izzy)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"izzy-armeabi-v7a\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "arm64-v8a (Izzy)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"izzy-arm64-v8a\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "x86 (Izzy)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"izzy-x86\"}"
+        },
+        {
+            "id": "com.deniscerri.ytdl",
+            "url": "https://github.com/deniscerri/ytdlnis",
+            "author": "deniscerri",
+            "name": "YTDLnis",
+            "altLabel": "x86_64 (Izzy)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"izzy-x86_64\"}"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/com.deniscerri.ytdl/en-US/icon.png",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "Android Video/Audio Downloader app using yt-dlp"
+    }
+}
