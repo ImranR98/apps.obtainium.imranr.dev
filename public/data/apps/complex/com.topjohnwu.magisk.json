@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "com.topjohnwu.magisk",
+            "url": "https://github.com/topjohnwu/Magisk",
+            "author": "topjohnwu",
+            "name": "Magisk",
+            "additionalSettings": "{\"apkFilterRegEx\": \"Magisk-v[0-9.]+\\\\.apk$\"}"
+        }
+    ],
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "Magisk is a systemless root solution for Android."
+    }
+}
