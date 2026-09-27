@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.spyou.watch_app",
+            "url": "https://github.com/SpYou/Zangetsu",
+            "author": "SpYou",
+            "name": "Zangetsu",
+            "additionalSettings": "{\"apkFilterRegEx\": \"Zangetsu-.*-universal\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/SpYou.png",
+    "categories": [
+        "anime_and_manga"
+    ],
+    "description": {
+        "en": "Free, open-source app for anime, movies, series, manga and light novels."
+    }
+}
