@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.github.metacubex.clash.meta",
+            "url": "https://github.com/MetaCubeX/ClashMetaForAndroid",
+            "author": "MetaCubeX",
+            "name": "Clash Meta",
+            "additionalSettings": "{\"apkFilterRegEx\": \"meta-universal-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/MetaCubeX/ClashMetaForAndroid/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "A rule-based tunnel for Android."
+    }
+}
