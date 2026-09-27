@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android single-player port of Star Trek: Voyager - Elite Force (idTech3/Quake3e, Vulkan)."
+    },
+    "icon": "https://github.com/imjustadudegamer.png",
+    "config": {
+        "id": "com.voyager.efsp",
+        "url": "https://github.com/imjustadudegamer/VoyagerSP-Android",
+        "author": "imjustadudegamer",
+        "name": "Voyager SP Android"
+    }
+}
