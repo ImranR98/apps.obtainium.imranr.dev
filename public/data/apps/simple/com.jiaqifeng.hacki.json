@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.jiaqifeng.hacki",
+        "url": "https://github.com/Livinglist/Hacki",
+        "author": "Livinglist",
+        "name": "Hacki"
+    },
+    "icon": "https://raw.githubusercontent.com/Livinglist/Hacki/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "community_clients"
+    ],
+    "description": {
+        "en": "Highly customizable open-source Hacker News client."
+    }
+}
