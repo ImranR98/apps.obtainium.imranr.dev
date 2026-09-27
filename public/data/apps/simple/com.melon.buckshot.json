@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Mobile port of hit indie game Buckshot Roulette! (iOS & Android)"
+    },
+    "icon": "https://github.com/officialmelon.png",
+    "config": {
+        "id": "com.melon.buckshot",
+        "url": "https://github.com/officialmelon/Buckshot-Roulette-Mobile",
+        "author": "officialmelon",
+        "name": "Buckshot Roulette Mobile"
+    }
+}
