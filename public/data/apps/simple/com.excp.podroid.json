@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.excp.podroid",
+        "url": "https://github.com/ExTV/Podroid",
+        "author": "ExTV",
+        "name": "Podroid"
+    },
+    "icon": "https://raw.githubusercontent.com/ExTV/Podroid/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Rootless Android app that boots Alpine Linux with containers and GUI apps."
+    }
+}
