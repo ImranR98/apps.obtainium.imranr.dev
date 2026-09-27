@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "cn.wps.moffice_eng",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "WPS Office hoo-dles",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^wps-office-hoo-dles\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/IrviqpGmCduI8CYHUyUVPa2V4a8e1FOxO8tYCUUvaYSHGhih4BdPyjtInBf8SZokbpT6-NImQP6-BM2rQu_UgA=s0-br30",
+    "categories": [
+        "document_and_pdf_viewer"
+    ],
+    "description": {
+        "en": "WPS Office with hoo-dles patches, prebuilt by FiorenMas."
+    }
+}
