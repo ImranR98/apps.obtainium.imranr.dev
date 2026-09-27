@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "AI-driven native recompilation project for ISS Deluxe on SNES"
+    },
+    "icon": "https://raw.githubusercontent.com/sergiomanzur/issd-native/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "configs": [
+        {
+            "id": "com.issdnative",
+            "url": "https://github.com/sergiomanzur/issd-native",
+            "author": "sergiomanzur",
+            "name": "ISSD Native",
+            "additionalSettings": "{\"includePrereleases\": true}"
+        }
+    ]
+}
