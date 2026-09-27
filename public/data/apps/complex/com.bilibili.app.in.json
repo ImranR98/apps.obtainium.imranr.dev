@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.bilibili.app.in",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Bilibili BiliRoaming",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^bilibili-BiliRoamingM\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/yo17-9ouHGh2geCjk4dcZgVWZUcp-f8EhyMaeieZTlXrAtm5dowy32sQ_UfjEaSb6zLmYg-wxVhm3FKt9ppfoQ=s0-br30",
+    "categories": [
+        "media_frontends"
+    ],
+    "description": {
+        "en": "Bilibili with BiliRoamingM patches, prebuilt by FiorenMas."
+    }
+}
