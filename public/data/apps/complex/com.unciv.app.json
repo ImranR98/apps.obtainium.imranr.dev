@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.unciv.app",
+            "url": "https://github.com/yairm210/Unciv",
+            "author": "yairm210",
+            "name": "Unciv",
+            "additionalSettings": "{\"apkFilterRegEx\": \"Unciv-signed\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/yairm210.png",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Open-source remake of Civilization V for Android and desktop."
+    }
+}
