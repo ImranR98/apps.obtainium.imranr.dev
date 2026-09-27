@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "name.lmj001.savetodevice",
+        "url": "https://github.com/lmj0011/save-on-device",
+        "author": "lmj0011",
+        "name": "Save on Device"
+    },
+    "icon": "https://f-droid.org/repo/name.lmj001.savetodevice/en-US/icon.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Save shareable data to your device"
+    }
+}
