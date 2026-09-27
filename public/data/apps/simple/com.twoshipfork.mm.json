@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Unofficial Android fork of 2 Ship 2 Harkinian"
+    },
+    "icon": "https://github.com/linkzenic.png",
+    "config": {
+        "id": "com.twoshipfork.mm",
+        "url": "https://github.com/linkzenic/2ship2harkinian-Android",
+        "author": "linkzenic",
+        "name": "2 Ship 2 Harkinian"
+    }
+}
