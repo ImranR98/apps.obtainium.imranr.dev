@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Native static C/C++ recompilation of Resident Evil Gaiden (GBC) for PC with True Widescreen, 2D Dynamic Lighting, Retro Horror Shaders, and HD Texture Pack support"
+    },
+    "icon": "https://raw.githubusercontent.com/sergiomanzur/regaiden-recomp/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.capcom.regaiden",
+        "url": "https://github.com/sergiomanzur/regaiden-recomp",
+        "author": "sergiomanzur",
+        "name": "Resident Evil Gaiden"
+    }
+}
