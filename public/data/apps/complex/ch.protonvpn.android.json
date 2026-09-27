@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "ch.protonvpn.android",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Proton VPN Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^protonvpn-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/sNzvGfn-_S8SLmWYHxLjCn04oy53n1bzfkhxCV9Pp_qhEsQ8biu3D0XoAsUdwD-qfPvzMqZPcx-pjYIHSbp4wg=s0-br30",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Revanced version of Proton VPN."
+    }
+}
