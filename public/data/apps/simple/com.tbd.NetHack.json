@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of NetHack"
+    },
+    "icon": "https://github.com/gurrhack.png",
+    "config": {
+        "id": "com.tbd.NetHack",
+        "url": "https://github.com/gurrhack/NetHack-Android",
+        "author": "gurrhack",
+        "name": "Nethack Android"
+    }
+}
