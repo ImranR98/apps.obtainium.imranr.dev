@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Star Trek: Voyager - Elite Force Holomatch for Android (Vulkan renderer, touch controls, gamepad)"
+    },
+    "icon": "https://github.com/imjustadudegamer.png",
+    "configs": [
+        {
+            "id": "com.voyager.ef",
+            "url": "https://github.com/imjustadudegamer/VoyagerHM-Android",
+            "author": "imjustadudegamer",
+            "name": "Voyager HM Android",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^VoyagerHM.*malifix.*apk$\"}"
+        }
+    ]
+}
