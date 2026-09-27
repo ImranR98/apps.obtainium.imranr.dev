@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "com.dortanes.ravenpass",
+        "url": "https://github.com/dortanes/ravenpass",
+        "author": "dortanes",
+        "name": "Ravenpass"
+    },
+    "icon": "https://ravenpass.org/app-icon.png",
+    "categories": [
+        "password_and_authentication",
+        "2FA"
+    ],
+    "description": {
+        "en": "Open-source password manager with a local encrypted vault, autofill, passkeys, and TOTP codes. Currently in beta; requires Android 12+ and an ARM64 device. Passkeys require Android 14+."
+    }
+}
