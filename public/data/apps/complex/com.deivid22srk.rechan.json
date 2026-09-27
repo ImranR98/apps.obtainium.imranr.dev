@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port (Gradle/NDK, GLES3, NativeActivity) of the ReChan Jackie Chan Stuntmaster reimplementation"
+    },
+    "icon": "https://raw.githubusercontent.com/deivid22srk/ReChan-Android/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "configs": [
+        {
+            "id": "com.deivid22srk.rechan",
+            "url": "https://github.com/deivid22srk/ReChan-Android",
+            "author": "deivid22srk",
+            "name": "ReChan",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^ReChan.*release.*arm.*apk$\"}"
+        }
+    ]
+}
