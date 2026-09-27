@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An app to play Pokerogue.net in an app window. Wow!"
+    },
+    "icon": "https://github.com/Admiral-Billy.png",
+    "configs": [
+        {
+            "id": "com.example.pokerogueoffline",
+            "url": "https://github.com/Admiral-Billy/Pokerogue-App",
+            "author": "Admiral-Billy",
+            "name": "Pokerogue App",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^PokeRogue.*Android.*Legacy.*apk$\"}"
+        }
+    ]
+}
