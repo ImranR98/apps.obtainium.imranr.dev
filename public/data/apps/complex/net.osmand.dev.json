@@ -13,5 +13,6 @@
                 "en": "Unstable Nightly Builds of OSMAnd free."
             }
         }
-    ]
+    ],
+    "icon": "https://raw.githubusercontent.com/osmandapp/OsmAnd/master/OsmAnd/res/mipmap-xxxhdpi/adaptive_icon_osmand_logo.png"
 }

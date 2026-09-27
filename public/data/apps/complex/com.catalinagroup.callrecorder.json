@@ -9,7 +9,7 @@
             "additionalSettings": "{\"sortByFileNamesNotLinks\":false,\"reverseSort\":true,\"supportFixedAPKURL\":true,\"customLinkFilterRegex\":\"\",\"intermediateLinkRegex\":\"\",\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionExtractWholePage\":false,\"trackOnly\":false,\"versionDetection\":\"noVersionDetection\",\"apkFilterRegEx\":\"\",\"autoApkFilterByArch\":true,\"appName\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
         }
     ],
-    "icon": null,
+    "icon": "https://play-lh.googleusercontent.com/dJwOASgiOu0tCod_WeCDjX9d_oJI9SuZpmtFlSP6ATA63hXM8pUxnTp1HCI9YK1jD5v2lQw3JSKEWatwDzPMQg=s512",
     "categories": [
         "dialer",
         "recorder"

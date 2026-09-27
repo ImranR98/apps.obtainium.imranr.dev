@@ -8,6 +8,7 @@
             "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"^Levyra [0-9]+\\\\.[0-9]+\\\\.[0-9]+$\",\"apkFilterRegEx\":\"^LEVYRA-[0-9]+\\\\.[0-9]+\\\\.[0-9]+\\\\.apk$\"}"
         }
     ],
+    "icon": "https://raw.githubusercontent.com/LUC4N3X/Levyra-deepsound/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
     "categories": [
         "music"
     ],

@@ -5,6 +5,7 @@
         "author": "AAswordman",
         "name": "Operit AI"
     },
+    "icon": "https://raw.githubusercontent.com/AAswordman/Operit/main/app/src/main/assets/logo.svg",
     "categories": [
         "utilities"
     ],

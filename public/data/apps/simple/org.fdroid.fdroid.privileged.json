@@ -5,7 +5,7 @@
         "author": "F-Droid",
         "name": "F-Droid Privileged Extension"
     },
-    "icon": null,
+    "icon": "https://gitlab.com/fdroid/privileged-extension/-/raw/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
     "categories": [
         "system"
     ],

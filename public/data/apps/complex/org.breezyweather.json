@@ -21,7 +21,7 @@
             "altLabel": "Freenet Flavour"
         }
     ],
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/breezy-weather/breezy-weather/main/app/src/main/ic_launcher-playstore.png",
     "categories": [
         "weather"
     ],

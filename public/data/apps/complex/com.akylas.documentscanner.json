@@ -9,7 +9,7 @@
             "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"Document Scanner\",\"versionExtractionRegEx\":\"github/(.+)\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"about\":\"\"}"
         }
     ],
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/Akylas/OSS-DocumentScanner/main/App_Resources/documentscanner/Android/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
     "categories": [
         "document_scanner"
     ],

@@ -5,6 +5,7 @@
         "author": "elviscankovic",
         "name": "Moja potrošnja struje"
     },
+    "icon": "https://raw.githubusercontent.com/elviscankovic/moja-potrosnja-struje/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
     "categories": [
         "utilities"
     ]

@@ -5,6 +5,7 @@
         "author": "Proton AG",
         "name": "Proton Mail"
     },
+    "icon": "https://raw.githubusercontent.com/ProtonMail/android-mail/main/app/src/main/ic_launcher-playstore.png",
     "categories": [
         "email_clients"
     ],

@@ -28,7 +28,7 @@
             "altLabel": "universal"
         }
     ],
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/anyproto/anytype-kotlin/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
     "categories": [
         "notes"
     ],

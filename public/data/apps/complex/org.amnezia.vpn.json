@@ -21,7 +21,7 @@
             "altLabel": "Android 7"
         }
     ],
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/amnezia-vpn/amnezia-client/dev/client/android/res/mipmap-xxxhdpi/icon.png",
     "categories": [
         "vpn"
     ],

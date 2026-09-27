@@ -10,7 +10,7 @@
             "overrideSource": null
         }
     ],
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/jpd002/Play-/master/icons/icon_base_512x512.png",
     "categories": [
         "emulator"
     ],

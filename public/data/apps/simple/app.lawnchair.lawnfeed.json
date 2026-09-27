@@ -5,7 +5,7 @@
         "author": "Lawnchair Launcher",
         "name": "Lawnfeed"
     },
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/LawnchairLauncher/lawnfeed/master/app/src/main/ic_launcher-web.png",
     "categories": [
         "other"
     ],

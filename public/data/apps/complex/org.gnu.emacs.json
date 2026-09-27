@@ -89,7 +89,7 @@
             "altLabel": "armeabi, API level 8"
         }
     ],
-    "icon": null,
+    "icon": "https://www.gnu.org/software/emacs/images/emacs.png",
     "description": {
         "en": "An extensible, customizable, free/libre text editor — and more."
     },

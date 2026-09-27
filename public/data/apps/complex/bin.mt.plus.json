@@ -21,7 +21,7 @@
             "altLabel": "TargetSDK28"
         }
     ],
-    "icon": null,
+    "icon": "https://mt2.cn/logo.png",
     "categories": [
         "file_manager"
     ],
