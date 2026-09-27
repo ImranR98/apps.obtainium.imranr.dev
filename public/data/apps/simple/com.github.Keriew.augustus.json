@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An open source re-implementation of Caesar III"
+    },
+    "icon": "https://github.com/Keriew.png",
+    "config": {
+        "id": "com.github.Keriew.augustus",
+        "url": "https://github.com/Keriew/augustus",
+        "author": "Keriew",
+        "name": "Augustus"
+    }
+}
