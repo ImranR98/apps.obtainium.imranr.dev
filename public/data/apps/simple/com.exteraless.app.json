@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.exteraless.app",
+        "url": "https://github.com/exteraless/exteraless",
+        "author": "exteraless",
+        "name": "exteraless"
+    },
+    "icon": "https://raw.githubusercontent.com/exteraless/exteraless/main/assets/logo.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "exteraless is an open-source fork of Nagram X, an unofficial Telegram client, reimplementing exteraGram features with a permission model for plugins. The project is currently in beta."
+    }
+}
