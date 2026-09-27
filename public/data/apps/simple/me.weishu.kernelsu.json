@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "me.weishu.kernelsu",
+        "url": "https://github.com/tiann/KernelSU",
+        "author": "tiann",
+        "name": "KernelSU"
+    },
+    "icon": "https://raw.githubusercontent.com/tiann/KernelSU/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "Kernel based root solution for Android."
+    }
+}
