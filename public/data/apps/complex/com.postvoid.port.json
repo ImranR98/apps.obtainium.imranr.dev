@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Post Void Android (and iOS soon) native arm64 port with 1:1 fidelity as latest PC Build."
+    },
+    "icon": "https://raw.githubusercontent.com/SanGraphic/PostVoidMobile/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "configs": [
+        {
+            "id": "com.postvoid.port",
+            "url": "https://github.com/SanGraphic/PostVoidMobile",
+            "author": "SanGraphic",
+            "name": "Post Void",
+            "additionalSettings": "{\"includePrereleases\": true}"
+        }
+    ]
+}
