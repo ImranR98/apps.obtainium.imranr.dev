@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "updated port of descent ms dos game for android"
+    },
+    "icon": "https://github.com/wootbeer.png",
+    "configs": [
+        {
+            "id": "wootbeer.descent",
+            "url": "https://github.com/wootbeer/Descent-Android",
+            "author": "wootbeer",
+            "name": "Descent Android",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^Descent.*Android.*arm.*v8a.*release.*apk$\"}"
+        }
+    ]
+}
