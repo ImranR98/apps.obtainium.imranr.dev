@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.dubox.drive",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "TeraBox rushiranpise",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^terabox-rushiranpise\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/b9KKZIvnQ_X3eIqHXeR4e0Ftd3lrDgAIkJ8N1fAvgl6zpTLuX8m74aVlRnoeLQCcAnLMbSMRJGLvsmghheZe=s0-br30",
+    "categories": [
+        "file_sharing"
+    ],
+    "description": {
+        "en": "TeraBox cloud storage with rushiranpise patches, prebuilt by FiorenMas."
+    }
+}
