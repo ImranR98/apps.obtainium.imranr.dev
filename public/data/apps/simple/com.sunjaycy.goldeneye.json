@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An Android/Linux fork of Goldeneye-Recomp, with very WIP Ayn Thor Dual Screen support"
+    },
+    "icon": "https://github.com/jeffory.png",
+    "config": {
+        "id": "com.sunjaycy.goldeneye",
+        "url": "https://github.com/jeffory/GoldenEye-Recomp",
+        "author": "jeffory",
+        "name": "GoldenEye Recomp"
+    }
+}
