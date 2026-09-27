@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An Android Studio project for one-click-compilation of OpenXcom."
+    },
+    "icon": "https://github.com/sfalexrog.png",
+    "configs": [
+        {
+            "id": "org.libsdl.openxcom",
+            "url": "https://github.com/sfalexrog/openxcom-android",
+            "author": "sfalexrog",
+            "name": "OpenXcom (beta)",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^OpenXcom.*v.*g.*ec4c.*arm.*v8a.*apk$\"}"
+        }
+    ]
+}
