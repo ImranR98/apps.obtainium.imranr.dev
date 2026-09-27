@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.telegram.messenger",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Telegram Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^telegram-revanced-experiments\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/PyZ3akMGXPV0tKKirKNwfO--PSQW3FHR6rD_H9mAaukZ8LiHyYFuBLeU8UZ2ok6r5SP79-3prkfybWKh98AZAD0=s0-br30",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Telegram with revanced-experiments patches, prebuilt by FiorenMas."
+    }
+}
