@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Unofficial Project Zomboid launcher for Android"
+    },
+    "icon": "https://github.com/udarmolota.png",
+    "config": {
+        "id": "com.zomdroid",
+        "url": "https://github.com/udarmolota/zomdroid",
+        "author": "udarmolota",
+        "name": "Zomdroid"
+    }
+}
