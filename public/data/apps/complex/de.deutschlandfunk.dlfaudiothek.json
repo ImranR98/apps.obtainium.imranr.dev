@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "de.deutschlandfunk.dlfaudiothek",
+            "url": "https://www.deutschlandfunk.de/apk-download",
+            "author": "Deutschlandradio",
+            "name": "Deutschlandfunk",
+            "overrideSource": "DirectAPKLink"
+        }
+    ],
+    "icon": "https://www.deutschlandfunk.de/dlf-app/apple-touch-icon-180x180.png",
+    "categories": [
+        "podcast_and_audio_book_player"
+    ],
+    "description": {
+        "en": "Official Deutschlandfunk app with live radio streams, podcasts and programmes from the Deutschlandfunk radio stations.",
+        "de": "Offizielle Deutschlandfunk-App mit Live-Streams, Podcasts und Sendungen aus den Hörfunkprogrammen von Deutschlandfunk."
+    }
+}
