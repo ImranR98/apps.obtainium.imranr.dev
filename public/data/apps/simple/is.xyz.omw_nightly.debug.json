@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "OpenMW for Android"
+    },
+    "icon": "https://raw.githubusercontent.com/Sisah2/openmw-android/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "is.xyz.omw_nightly.debug",
+        "url": "https://github.com/Sisah2/openmw-android",
+        "author": "Sisah2",
+        "name": "OMW"
+    }
+}
