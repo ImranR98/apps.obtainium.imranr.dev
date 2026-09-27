@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Native Android port of the Sonic R PC decompilation (jnmartin84). Features a custom GLES2 shader pipeline, 60 FPS, customizable touch controls, and SAF asset installation. Requires original PC game fi"
+    },
+    "icon": "https://raw.githubusercontent.com/ZinexDa/sonic-r-android/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "org.sonicr.android",
+        "url": "https://github.com/ZinexDa/sonic-r-android",
+        "author": "ZinexDa",
+        "name": "Sonic R"
+    }
+}
