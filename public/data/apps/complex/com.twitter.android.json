@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.twitter.android",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "X Piko",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^twitter-stable-piko\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/IsLsCD4eLC2CYvlkgTI6Z5TROj0BJIBgUF7BZ5eliTzyyTjqG_mbofeG4kw2s7oG_JZMSi5ErLz_qsDi169C8w=s0-br30",
+    "categories": [
+        "community_clients"
+    ],
+    "description": {
+        "en": "X (Twitter) with Piko patches, prebuilt by FiorenMas."
+    }
+}
