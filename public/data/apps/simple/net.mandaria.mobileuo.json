@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "MobileUO - the first mobile client for Ultima Online!"
+    },
+    "icon": "https://github.com/MobileUO.png",
+    "config": {
+        "id": "net.mandaria.mobileuo",
+        "url": "https://github.com/MobileUO/MobileUO",
+        "author": "MobileUO",
+        "name": "MobileUO"
+    }
+}
