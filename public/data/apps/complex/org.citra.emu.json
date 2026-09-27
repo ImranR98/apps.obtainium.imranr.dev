@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.citra.emu",
+            "url": "https://github.com/weihuoya/citra",
+            "author": "weihuoya",
+            "name": "Citra MMJ",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Citra MMJ\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/weihuoya/citra/master/dist/icon.png",
+    "categories": [
+        "emulator"
+    ],
+    "description": {
+        "en": "Citra MMJ is a fork of the Citra Nintendo 3DS emulator for Android."
+    }
+}
