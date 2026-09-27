@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A port of Stratagus real-time strategy gaming engine for Android."
+    },
+    "icon": "https://github.com/drodin.png",
+    "config": {
+        "id": "com.drodin.stratagus",
+        "url": "https://github.com/drodin/Stratagus",
+        "author": "drodin",
+        "name": "Stratagus"
+    }
+}
