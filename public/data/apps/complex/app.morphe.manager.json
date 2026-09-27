@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "app.morphe.manager",
+            "url": "https://github.com/MorpheApp/morphe-manager",
+            "author": "Morphe",
+            "name": "Morphe Manager",
+            "additionalSettings": "{\"apkFilterRegEx\": \"morphe-manager-.*\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/MorpheApp.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Patcher for Android apps: apply community patch bundles (e.g. Piko) on-device."
+    }
+}
