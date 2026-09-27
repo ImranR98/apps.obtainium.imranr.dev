@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.viber.voip",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Viber Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^viber-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/iGHZEkEJBBcOyMEETvYrwCXk-eYQ_TaEgBHPKVptKSon4QQHqhD3Zs-tdeINPZucc1sokQ5FJ4ig-YOGh1Lm=s0-br30",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Revanced version of Viber."
+    }
+}
