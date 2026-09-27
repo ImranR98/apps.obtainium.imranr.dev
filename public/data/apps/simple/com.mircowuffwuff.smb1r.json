@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "an android port of the Super Mario Bros. Remaster by JoeMama and their team"
+    },
+    "icon": "https://raw.githubusercontent.com/mircowuffwuff/super-mario-bros.-remastered-android/main/icon.png",
+    "config": {
+        "id": "com.mircowuffwuff.smb1r",
+        "url": "https://github.com/mircowuffwuff/super-mario-bros.-remastered-android",
+        "author": "mircowuffwuff",
+        "name": "Super Mario Bros. Remastered"
+    }
+}
