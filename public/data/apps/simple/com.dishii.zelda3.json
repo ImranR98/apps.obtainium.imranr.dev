@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A port of Zelda3 to Android"
+    },
+    "icon": "https://raw.githubusercontent.com/samyost1/zelda3-android/dual-screen/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.dishii.zelda3",
+        "url": "https://github.com/samyost1/zelda3-android",
+        "author": "samyost1",
+        "name": "Zelda3"
+    }
+}
