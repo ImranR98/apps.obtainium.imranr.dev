@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "tv.twitch.android.app",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Twitch Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^twitch-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/JHCM4AIyomRp6Lo2-5ugoznlGdsZmNnejVN8DLvtWFHShcz8YRgUE170f1CyOfrleYbtFL2g8tQ3VqlQNAgqoA=s0-br30",
+    "categories": [
+        "media_frontends"
+    ],
+    "description": {
+        "en": "Revanced version of Twitch."
+    }
+}
