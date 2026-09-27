@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.maxrave.simpmusic",
+            "url": "https://github.com/maxrave-dev/SimpMusic",
+            "author": "maxrave-dev",
+            "name": "SimpMusic",
+            "additionalSettings": "{\"apkFilterRegEx\": \"SimpMusic-foss-universal-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/maxrave-dev/SimpMusic/main/androidApp/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Cross-platform music app using YouTube Music for backend."
+    }
+}
