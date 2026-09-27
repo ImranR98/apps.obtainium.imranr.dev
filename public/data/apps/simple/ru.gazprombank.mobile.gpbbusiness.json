@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "ru.gazprombank.mobile.gpbbusiness",
+        "url": "https://www.gazprombank.ru/business/mobile-apps/",
+        "author": "Gazprombank",
+        "name": "GPB Business"
+    },
+    "icon": "https://www.gazprombank.ru/apple-touch-icon.png",
+    "categories": [
+        "finance"
+    ],
+    "description": {
+        "en": "GPB Business: official mobile banking for Gazprombank business clients."
+    }
+}
