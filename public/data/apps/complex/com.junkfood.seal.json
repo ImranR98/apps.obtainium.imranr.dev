@@ -1,0 +1,51 @@
+{
+    "configs": [
+        {
+            "id": "com.junkfood.seal",
+            "url": "https://github.com/JunkFood02/Seal",
+            "author": "JunkFood02",
+            "name": "Seal",
+            "altLabel": "universal",
+            "additionalSettings": "{\"apkFilterRegEx\":\"universal\"}"
+        },
+        {
+            "id": "com.junkfood.seal",
+            "url": "https://github.com/JunkFood02/Seal",
+            "author": "JunkFood02",
+            "name": "Seal",
+            "altLabel": "armeabi-v7a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"armeabi-v7a\"}"
+        },
+        {
+            "id": "com.junkfood.seal",
+            "url": "https://github.com/JunkFood02/Seal",
+            "author": "JunkFood02",
+            "name": "Seal",
+            "altLabel": "arm64-v8a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64-v8a\"}"
+        },
+        {
+            "id": "com.junkfood.seal",
+            "url": "https://github.com/JunkFood02/Seal",
+            "author": "JunkFood02",
+            "name": "Seal",
+            "altLabel": "x86",
+            "additionalSettings": "{\"apkFilterRegEx\":\"x86\"}"
+        },
+        {
+            "id": "com.junkfood.seal",
+            "url": "https://github.com/JunkFood02/Seal",
+            "author": "JunkFood02",
+            "name": "Seal",
+            "altLabel": "x86_64",
+            "additionalSettings": "{\"apkFilterRegEx\":\"x86_64\"}"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/com.junkfood.seal/en-US/icon.png",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "Video/Audio downloader designed and themed with Material You"
+    }
+}
