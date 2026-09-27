@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "CrashBandicoot native pc port"
+    },
+    "icon": "https://raw.githubusercontent.com/Matteo842/CrashBandicoot-Launcher/main/icon.png",
+    "config": {
+        "id": "io.github.matteo842.crashlauncher.runtime",
+        "url": "https://github.com/Matteo842/CrashBandicoot-Launcher",
+        "author": "Matteo842",
+        "name": "Crash Bandicoot Launcher"
+    }
+}
