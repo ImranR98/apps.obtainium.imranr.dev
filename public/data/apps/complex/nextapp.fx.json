@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "nextapp.fx",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "FX Explorer indrastorms",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^fx-file-explorer-indrastorms\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/W7jtBpt48s9vRY38gN_fNiOC_cuD_r83ITwvzviq_dqoGnac9GYhTwJpNBnqRRNI5fxUS9AthppfMxwMQfwm2A=s0-br30",
+    "categories": [
+        "file_manager"
+    ],
+    "description": {
+        "en": "FX File Explorer with indrastorms patches, prebuilt by FiorenMas."
+    }
+}
