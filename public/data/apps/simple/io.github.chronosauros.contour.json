@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "io.github.chronosauros.contour",
+        "url": "https://github.com/Chronosauros/contour",
+        "author": "Chronosaur",
+        "name": "Contour"
+    },
+    "icon": "https://chronosauros.github.io/contour/images/icon-512.png",
+    "categories": [
+        "music",
+        "utilities"
+    ],
+    "description": {
+        "en": "On-the-go EQ manager for the CrinEar Protocol Micro USB DAC: keep EQ profiles on your phone and write one into the dongle."
+    }
+}
