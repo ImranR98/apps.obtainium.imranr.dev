@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "app.revanced.android.apps.youtube.music",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "YouTube Music Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^youtube-music-arm64-v8a-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/MyptZXmcCyF59phIWPsNCfHq6zSO_ojEdw_4rMYYWPOGdikSjqeOXcoszBZ053VYpINe5K7ZR9KV1nkFWgxdOw=s0-br30",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Revanced version of YouTube Music (arm64)."
+    }
+}
