@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Native Android port of TurningWheel/Barony. Code-only APK; requires a purchased Barony v5.0.2 installation."
+    },
+    "icon": "https://raw.githubusercontent.com/DifferentNet/barony-android-port/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "configs": [
+        {
+            "id": "com.zhdan.baronyport",
+            "url": "https://github.com/DifferentNet/barony-android-port",
+            "author": "DifferentNet",
+            "name": "Barony Android Port",
+            "additionalSettings": "{\"includePrereleases\": true}"
+        }
+    ]
+}
