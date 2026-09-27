@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Unofficial Android port of Unleashed Recompiled, built with Anthropic's Fable 5 AI under human direction, device testing and debugging. Artifacts, freezes and audio issues possible. SPECIAL THANKS to"
+    },
+    "icon": "https://github.com/SansNope.png",
+    "config": {
+        "id": "com.sega.sonicunr",
+        "url": "https://github.com/SansNope/UnleashedRecomp-Android",
+        "author": "SansNope",
+        "name": "Unleashed Recomp"
+    }
+}
