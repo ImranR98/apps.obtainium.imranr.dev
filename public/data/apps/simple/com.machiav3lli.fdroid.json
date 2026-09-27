@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.machiav3lli.fdroid",
+        "url": "https://github.com/NeoApplications/Neo-Store",
+        "author": "NeoApplications",
+        "name": "Neo Store"
+    },
+    "icon": "https://raw.githubusercontent.com/NeoApplications/Neo-Store/master/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "An F-Droid client with modern UI and extra features."
+    }
+}
