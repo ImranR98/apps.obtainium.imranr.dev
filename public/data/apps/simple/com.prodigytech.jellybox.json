@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.prodigytech.jellybox",
+        "url": "https://github.com/avdept/JellyBoxPlayer",
+        "author": "avdept",
+        "name": "JellyBox Player"
+    },
+    "icon": "https://raw.githubusercontent.com/avdept/JellyBoxPlayer/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Native Jellyfin and Emby music player with Spotify-like playlists for desktop and mobile."
+    }
+}
