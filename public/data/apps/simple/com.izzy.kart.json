@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android"
+    },
+    "icon": "https://raw.githubusercontent.com/izzy2lost/SpaghettiKart/main/icon.png",
+    "config": {
+        "id": "com.izzy.kart",
+        "url": "https://github.com/izzy2lost/SpaghettiKart",
+        "author": "izzy2lost",
+        "name": "Spaghetti Kart"
+    }
+}
