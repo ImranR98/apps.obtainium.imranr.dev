@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.microblink.photomath",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Photomath Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^photomath-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/SdtwWRFWpe98RgGwOM1dsBEoNYUd9H6KZKFs8WpWFb6YZvDM3xY3kiUK0BcV-ZzPjjLp_HuFagj1lbm2fsnmcMY=s0-br30",
+    "categories": [
+        "science_and_education"
+    ],
+    "description": {
+        "en": "Revanced version of Photomath."
+    }
+}
