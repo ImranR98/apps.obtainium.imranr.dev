@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Porting of Serious Sam: The First Encounter and Serious Sam: The Second Encounter for Android"
+    },
+    "icon": "https://github.com/Skyrimus.png",
+    "configs": [
+        {
+            "id": "com.skyrimus.serioussam.tfe",
+            "url": "https://github.com/Skyrimus/Serious-Sam-Android",
+            "author": "Skyrimus",
+            "name": "Serious Sam Android",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^SeriousSamAndroid.*v.*TFE.*release.*apk$\"}"
+        }
+    ]
+}
