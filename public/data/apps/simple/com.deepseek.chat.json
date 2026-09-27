@@ -5,7 +5,7 @@
         "author": "DeepSeek",
         "name": "DeepSeek"
     },
-    "icon": "https://cdn.deepseek.com/chat/icon.png",
+    "icon": null,
     "categories": [
         "miscellaneous"
     ],
