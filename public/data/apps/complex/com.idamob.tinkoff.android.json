@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.idamob.tinkoff.android",
+            "url": "https://acdn.t-bank-app.ru/download_apk/tbank_app.html",
+            "author": "T-Bank",
+            "name": "T-Bank",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\": \"ETag\"}"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "finance"
+    ],
+    "description": {
+        "en": "T-Bank is the official mobile banking app of T-Bank (formerly Tinkoff Bank)."
+    }
+}
