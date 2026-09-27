@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.google.android.gms",
+            "url": "https://github.com/microg/GmsCore",
+            "author": "microG",
+            "name": "microG GmsCore",
+            "additionalSettings": "{\"apkFilterRegEx\": \"com\\\\.google\\\\.android\\\\.gms-[0-9]+\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/microg.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "Free reimplementation of Google Play Services (microG GmsCore)."
+    }
+}
