@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "SDL-based reimplementation of the classic Chinese-language RPG known as PAL."
+    },
+    "icon": "https://github.com/sdlpal.png",
+    "config": {
+        "id": "com.sdlpal.sdlpal",
+        "url": "https://github.com/sdlpal/sdlpal",
+        "author": "sdlpal",
+        "name": "SDLPal"
+    }
+}
