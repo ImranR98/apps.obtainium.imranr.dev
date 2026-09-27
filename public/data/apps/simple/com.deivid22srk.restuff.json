@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Port Android (arm64) do Naughty Bear ReStuff — recomp Xbox 360 via rexglue-SDK · virtual gamepad · ISO via SAF"
+    },
+    "icon": "https://raw.githubusercontent.com/deivid22srk/naughtybear-restuff-android/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.deivid22srk.restuff",
+        "url": "https://github.com/deivid22srk/naughtybear-restuff-android",
+        "author": "deivid22srk",
+        "name": "Naughty Bear ReStuff"
+    }
+}
