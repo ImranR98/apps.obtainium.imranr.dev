@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of The Legend of Zelda: Ocarina of Time 3D."
+    },
+    "icon": "https://github.com/WINDROID-EMU.png",
+    "config": {
+        "id": "org.triaevum.android",
+        "url": "https://github.com/WINDROID-EMU/RECOMP-ZELDA-3DS-ANDROID",
+        "author": "WINDROID-EMU",
+        "name": "Zelda 3DS Android"
+    }
+}
