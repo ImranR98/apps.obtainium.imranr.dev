@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Open-source Android dual-screen companion for Digimon World 2003 (SLES-03936) and Flawe's Mod 2.0. No ROM or BIOS included."
+    },
+    "icon": "https://github.com/rsigristc.png",
+    "configs": [
+        {
+            "id": "com.digitaladventure.dw2003",
+            "url": "https://github.com/rsigristc/DW3-DS-Android",
+            "author": "rsigristc",
+            "name": "DW 2003 Dual Screen",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^DW.*Dual.*Screen.*v.*apk$\"}"
+        }
+    ]
+}
