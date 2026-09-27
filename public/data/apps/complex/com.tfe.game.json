@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Modern \"Jedi Engine\" replacement supporting Dark Forces, mods, and in the future Outlaws."
+    },
+    "icon": "https://github.com/SoVRHere.png",
+    "configs": [
+        {
+            "id": "com.tfe.game",
+            "url": "https://github.com/SoVRHere/TheForceEngineVR",
+            "author": "SoVRHere",
+            "name": "The Force Engine",
+            "additionalSettings": "{\"filterReleaseTitlesByRegEx\": \"quest\"}"
+        }
+    ]
+}
