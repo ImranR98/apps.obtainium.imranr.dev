@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "ginlemon.flowerfree",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Smart Launcher hoo-dles",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^smart-launcher-hoo-dles\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/AM7MidChVOk5Uj7Vf7xM0ZaOYnGBea4PZBH5O5wlllmksRKCdMgRzPnPSgg-K7bQ0DXv2Bb7F9-kfyCVyG3JNtQ=s0-br30",
+    "categories": [
+        "launcher_and_desktop"
+    ],
+    "description": {
+        "en": "Smart Launcher with hoo-dles patches, prebuilt by FiorenMas."
+    }
+}
