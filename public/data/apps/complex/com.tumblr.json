@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.tumblr",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Tumblr Revanced",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^tumblr-revanced\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/BWSIac9IjPlQwOwxZ3aLzaX_rmP5Dfvkwn1HtSztT16WBOHdJZ6D0JSIz_lo_GatSlql3GlSFZcHuzWqAP5n8g=s0-br30",
+    "categories": [
+        "community_clients"
+    ],
+    "description": {
+        "en": "Revanced version of Tumblr."
+    }
+}
