@@ -27,6 +27,6 @@
         "utilities"
     ],
     "description": {
-        "en": null
+        "en": "Companion app for accessing a Synology BeeStation."
     }
 }

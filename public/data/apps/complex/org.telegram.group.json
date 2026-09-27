@@ -17,6 +17,6 @@
         "dialer"
     ],
     "description": {
-        "en": null
+        "en": "Third-party Telegram client with built-in translation and download acceleration."
     }
 }

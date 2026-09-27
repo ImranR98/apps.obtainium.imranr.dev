@@ -26,6 +26,6 @@
         "system"
     ],
     "description": {
-        "en": null
+        "en": "Cromite WebView builds, installable as Android System WebView."
     }
 }

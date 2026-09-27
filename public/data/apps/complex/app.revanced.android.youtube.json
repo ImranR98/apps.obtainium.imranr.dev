@@ -16,6 +16,6 @@
         "video_player"
     ],
     "description": {
-        "en": null
+        "en": "Patched YouTube client built with ReVanced patches (arm64-v8a)."
     }
 }

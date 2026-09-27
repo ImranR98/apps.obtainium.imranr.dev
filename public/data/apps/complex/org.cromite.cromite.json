@@ -33,6 +33,6 @@
         "browser"
     ],
     "description": {
-        "en": null
+        "en": "Cromite: a privacy-hardened Chromium fork with ad blocking."
     }
 }

@@ -16,6 +16,6 @@
         "media_frontends"
     ],
     "description": {
-        "en": null
+        "en": "Android client for the Madari media server."
     }
 }

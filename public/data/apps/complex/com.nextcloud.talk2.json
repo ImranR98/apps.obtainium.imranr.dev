@@ -27,6 +27,6 @@
         "messaging"
     ],
     "description": {
-        "en": null
+        "en": "Video and audio calls through Nextcloud."
     }
 }
