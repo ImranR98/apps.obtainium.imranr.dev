@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An open source re-implementation of Caesar III"
+    },
+    "icon": "https://github.com/bvschaik.png",
+    "config": {
+        "id": "com.github.bvschaik.julius",
+        "url": "https://github.com/bvschaik/julius",
+        "author": "bvschaik",
+        "name": "Julius"
+    }
+}
