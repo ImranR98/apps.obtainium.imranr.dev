@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.getlantern.lantern",
+            "url": "https://github.com/getlantern/lantern",
+            "author": "Lantern",
+            "name": "Lantern",
+            "additionalSettings": "{\"apkFilterRegEx\": \"lantern-installer\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/getlantern.png",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Open-source censorship circumvention and fast VPN."
+    }
+}
