@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "app.lawnchair.lawnfeed",
+        "url": "https://github.com/LawnchairLauncher/lawnfeed",
+        "author": "Lawnchair Launcher",
+        "name": "Lawnfeed"
+    },
+    "icon": null,
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": "Adds Google Feed to Lawnchair."
+    }
+}

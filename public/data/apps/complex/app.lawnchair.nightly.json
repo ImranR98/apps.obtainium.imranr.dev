@@ -2,17 +2,18 @@
     "configs": [
         {
             "id": "app.lawnchair.nightly",
-            "url": "https://github.com/lawnchairlauncher/lawnchair",
+            "url": "https://github.com/LawnchairLauncher/lawnchair",
             "author": "Lawnchair Launcher",
-            "name": "Lawnchair (Debug)",
-            "preferredApkIndex": 0,
-            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":false,\"filterReleaseTitlesByRegEx\":\"Lawnchair Nightly\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":false,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\"}"
+            "name": "Lawnchair Nightly",
+            "additionalSettings": "{\"includePrereleases\":true,\"filterReleaseTitlesByRegEx\":\"Lawnchair.Nightly\",\"releaseDateAsVersion\":true}"
         }
     ],
-    "icon": "https://raw.githubusercontent.com/LawnchairLauncher/lawnchair/refs/heads/15-dev/lawnchair/res/drawable/ic_launcher_home_comp.png",
-    "apkVerificationLocation": "https://github.com/LawnchairLauncher/lawnchair?tab=readme-ov-file#elsewhere",
-    "categories": ["launcher_and_desktop"],
+    "icon": "https://lawnchair.app/images/lawnchair.png",
+    "apkVerificationLocation": "https://docs.lawnchair.app/getting-started/install-and-setup/verify#github-version",
+    "categories": [
+        "launcher_and_desktop"
+    ],
     "description": {
-        "en": "Lawnchair is a free, open-source home app for Android. (NOTE: This is the debug version of Lawnchair, for the beta/stable versions see \"Lawnchair\")"
+        "en": "[Debug version] Lawnchair is a free, open-source home app for Android."
     }
 }

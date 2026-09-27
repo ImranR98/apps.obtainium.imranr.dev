@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "app.lawnchair.lawnicons",
+        "url": "https://github.com/LawnchairLauncher/lawnicons",
+        "author": "Lawnchair Launcher",
+        "name": "Lawnicons"
+    },
+    "icon": "https://apt.izzysoft.de/fdroid/repo/app.lawnchair.lawnicons/en-US/icon.png",
+    "categories": [
+        "icon_packs"
+    ],
+    "description": {
+        "en": "Monochrome outlined brand icons for Android launchers."
+    }
+}
