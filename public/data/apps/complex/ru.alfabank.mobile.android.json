@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "ru.alfabank.mobile.android",
+            "url": "https://alfamobile-web.servicecdn.ru/latest/alfa-bank.apk",
+            "author": "Alfa-Bank",
+            "name": "Alfa-Bank",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\": \"ETag\"}"
+        }
+    ],
+    "icon": "https://static.rustore.ru/imgproxy/lztUu9U7an7FjnhQ-rt4aE_g9wAIqbclExfUoX01YGw/preset:vk_og_img/plain/https://static.rustore.ru/afb07f02-5399-4f45-a366-e49a7b3420ad@webp",
+    "categories": [
+        "finance"
+    ],
+    "description": {
+        "en": "Alfa-Bank is the official mobile banking app of Alfa-Bank."
+    }
+}
