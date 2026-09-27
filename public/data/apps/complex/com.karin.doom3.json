@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.karin.doom3",
+            "url": "https://github.com/glKarin/idtech4amm_doom3_sdk",
+            "author": "glKarin",
+            "name": "IdTech4A++",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^doom3_.*-arm64\\\\.apk$\"}"
+        }
+    ],
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Doom3 SDK for Android idTech4A++"
+    },
+    "icon": "https://github.com/glKarin.png"
+}
