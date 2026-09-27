@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Recompile Castlevania: Legacy of Darkness (N64) into a native executable using N64Recomp"
+    },
+    "icon": "https://raw.githubusercontent.com/sergiomanzur/cvlod_recomp/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "org.cvlod.recomp",
+        "url": "https://github.com/sergiomanzur/cvlod_recomp",
+        "author": "sergiomanzur",
+        "name": "LOD Recomp"
+    }
+}
