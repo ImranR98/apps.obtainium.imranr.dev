@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.portableai.portable_ai_flutter",
+            "url": "https://github.com/techjarves/Uncensored-Local-AI-Multiplatform",
+            "author": "techjarves",
+            "name": "Portable AI",
+            "additionalSettings": "{\"apkFilterRegEx\": \"app-arm64-v8a-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/techjarves.png",
+    "categories": [
+        "miscellaneous"
+    ],
+    "description": {
+        "en": "Run open-source AI models (GGUF) fully offline on your device."
+    }
+}
