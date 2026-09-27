@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A native launcher for Desktop Stardew Valley for Android"
+    },
+    "icon": "https://github.com/Ekyso.png",
+    "config": {
+        "id": "com.game.cinderbox",
+        "url": "https://github.com/Ekyso/Cinderbox",
+        "author": "Ekyso",
+        "name": "Cinderbox"
+    }
+}
