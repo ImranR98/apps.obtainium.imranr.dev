@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Native PC port of Super Smash Bros. Melee (NTSC-U 1.02), built from doldecomp/melee on aurora. No game data; bring your own disc."
+    },
+    "icon": "https://github.com/999sian.png",
+    "configs": [
+        {
+            "id": "dev.melee.game",
+            "url": "https://github.com/999sian/melee-pc",
+            "author": "999sian",
+            "name": "Melee PC",
+            "additionalSettings": "{\"includePrereleases\": true}"
+        }
+    ]
+}
