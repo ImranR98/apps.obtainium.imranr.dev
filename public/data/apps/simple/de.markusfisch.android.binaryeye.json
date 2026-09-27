@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "de.markusfisch.android.binaryeye",
+        "url": "https://github.com/markusfisch/BinaryEye",
+        "author": "Markus Fisch",
+        "name": "Binary Eye"
+    },
+    "icon": "https://f-droid.org/repo/de.markusfisch.android.binaryeye/en-US/icon.png",
+    "categories": [
+        "barcode_scanner"
+    ],
+    "description": {
+        "en": "Yet another barcode scanner for Android"
+    }
+}
