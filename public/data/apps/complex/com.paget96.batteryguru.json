@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.paget96.batteryguru",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Battery Guru arandomhooman",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^battery-guru-arandomhooman\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/dGzjJqkvyNS6Iz4ze1YSaqTtzXu6PH8eiSVf56ALnykqigf9S_Sb36BvOA0xX_KVeUT8NJZDR20cIziK9nby=s0-br30",
+    "categories": [
+        "battery"
+    ],
+    "description": {
+        "en": "Battery Guru with arandomhooman patches, prebuilt by FiorenMas."
+    }
+}
