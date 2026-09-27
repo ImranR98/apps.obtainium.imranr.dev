@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.linkzenic.soh",
+            "url": "https://github.com/linkzenic/Shipwright-Android",
+            "author": "linkzenic",
+            "name": "Ship of Harkinian",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^soh-v.*\\\\.apk$\"}"
+        }
+    ],
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Ship of Harkinian Android fork"
+    },
+    "icon": "https://github.com/linkzenic.png"
+}
