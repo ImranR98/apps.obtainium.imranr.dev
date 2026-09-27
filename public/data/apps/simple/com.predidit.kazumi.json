@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.predidit.kazumi",
+        "url": "https://github.com/Predidit/Kazumi",
+        "author": "Predidit",
+        "name": "Kazumi"
+    },
+    "icon": "https://raw.githubusercontent.com/Predidit/Kazumi/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "anime_and_manga"
+    ],
+    "description": {
+        "en": "Anime streaming app with custom rules, danmaku and real-time super-resolution."
+    }
+}
