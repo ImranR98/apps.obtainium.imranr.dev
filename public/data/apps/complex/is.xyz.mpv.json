@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "is.xyz.mpv",
+            "url": "https://github.com/mpv-android/mpv-android",
+            "author": "mpv-android",
+            "name": "mpv",
+            "additionalSettings": "{\"apkFilterRegEx\": \"app-default-universal-release\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/mpv-android/mpv-android/master/app/src/main/res/mipmap-xxxhdpi/mpv_launcher_icon.png",
+    "categories": [
+        "video_player"
+    ],
+    "description": {
+        "en": "Video player for Android based on libmpv."
+    }
+}
