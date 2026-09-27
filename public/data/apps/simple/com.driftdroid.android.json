@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A native Android port of Mario Kart Wii and Retro Rewind. Fast, easy."
+    },
+    "icon": "https://raw.githubusercontent.com/dorPXP/driftdroid/android-port/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.driftdroid.android",
+        "url": "https://github.com/dorPXP/driftdroid",
+        "author": "dorPXP",
+        "name": "DriftDroid"
+    }
+}
