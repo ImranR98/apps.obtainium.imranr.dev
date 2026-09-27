@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Documentation, setup guides, features, compatibility information and release notes for XHYN V, a community Android GTA V launcher by XHYN_PH."
+    },
+    "icon": "https://github.com/XHYN-PH.png",
+    "config": {
+        "id": "com.xhynph.v.rebase",
+        "url": "https://github.com/XHYN-PH/XHYN-V",
+        "author": "XHYN-PH",
+        "name": "XHYN V"
+    }
+}
