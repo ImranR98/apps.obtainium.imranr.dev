@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "app.hiddify.com",
+            "url": "https://github.com/hiddify/hiddify-app",
+            "author": "hiddify",
+            "name": "Hiddify",
+            "additionalSettings": "{\"apkFilterRegEx\": \"Hiddify-Android-universal\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/hiddify/hiddify-app/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Multi-platform auto-proxy client supporting Sing-box, Xray, TUIC, Hysteria and more."
+    }
+}
