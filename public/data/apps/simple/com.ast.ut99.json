@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Unreal Tournament 99 (v400) for Android (32/64bit). Playable with controller, touchscreen and keyboard/mouse."
+    },
+    "icon": "https://raw.githubusercontent.com/Andiweli/UT99-Android/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.ast.ut99",
+        "url": "https://github.com/Andiweli/UT99-Android",
+        "author": "Andiweli",
+        "name": "Unreal Tournament"
+    }
+}
