@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A port of the Gish game for Android OS using SDL2, OpenAL, Ogg Vorbis and GL4ES libraries."
+    },
+    "icon": "https://github.com/EXL.png",
+    "config": {
+        "id": "ru.exlmoto.gish",
+        "url": "https://github.com/EXL/Gish",
+        "author": "EXL",
+        "name": "Gish"
+    }
+}
