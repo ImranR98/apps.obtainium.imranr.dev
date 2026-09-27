@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "SF64 Android Port"
+    },
+    "icon": "https://github.com/izzy2lost.png",
+    "config": {
+        "id": "com.starship.android",
+        "url": "https://github.com/izzy2lost/Starship",
+        "author": "izzy2lost",
+        "name": "Starship"
+    }
+}
