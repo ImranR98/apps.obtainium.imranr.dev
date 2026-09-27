@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.windscribe.vpn",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Windscribe rushiranpise",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^windscribe-rushiranpise\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/k2TAILEsjpI_9_0lpmRRYiaty4JXOc3RpluhKccooYQ_s5llbvcywrQPxAWi_U_-eRHK9yaH1J5zXKfPqgrMxg=s0-br30",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "Windscribe VPN with rushiranpise patches, prebuilt by FiorenMas."
+    }
+}
