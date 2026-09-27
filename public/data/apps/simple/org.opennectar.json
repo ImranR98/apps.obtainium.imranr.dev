@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Native Pikmin Windows/Linux/Android Port"
+    },
+    "icon": "https://raw.githubusercontent.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "org.opennectar",
+        "url": "https://github.com/SSunnKing/Open-Nectar---Pikmin-Native-PC-Mobile-Port",
+        "author": "SSunnKing",
+        "name": "Open Nectar"
+    }
+}
