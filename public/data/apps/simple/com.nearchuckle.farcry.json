@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A Android port of Far Cry 1"
+    },
+    "icon": "https://github.com/Player124413.png",
+    "config": {
+        "id": "com.nearchuckle.farcry",
+        "url": "https://github.com/Player124413/NearChuckle-android-edition",
+        "author": "Player124413",
+        "name": "Far Cry Android"
+    }
+}
