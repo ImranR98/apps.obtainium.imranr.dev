@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "com.tongyi.intl",
+            "url": "https://download.qwen.ai/android/Qwen_release.apk",
+            "author": "Qwen Team",
+            "name": "Qwen",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"partialAPKHash\",\"trackOnly\":false,\"invertAPKFilter\":false,\"appName\":\"Qwen\",\"appAuthor\":\"Qwen Team\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"autoApkFilterByArch\":false}",
+            "overrideSource": null
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/-SUB6T0UdmPr0gPcIPXogEQ3El4aYk6apnZq3lFQW_at2wMizZGf5z94g4llaFpMYT7TULJtupWPOu8r9mN8mek=s512",
+    "categories": [
+        "miscellaneous"
+    ],
+    "description": {
+        "en": "Official Qwen AI assistant app from Alibaba - chat, search, image generation and document understanding."
+    }
+}
