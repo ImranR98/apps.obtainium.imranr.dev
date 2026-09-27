@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.zing.zalo",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Zalo gnadgnaoh",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^zalo-gnadgnaoh\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/D3QF_jSgL9vmGcZ4GwaaqoyIRi-KqXh10aeHkMNZyNO4PT2MoGqmfsW63u-4CLCNQ-BdCPbKofBg8V7Rh8wgWQ=s0-br30",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Zalo messenger with gnadgnaoh patches, prebuilt by FiorenMas."
+    }
+}
