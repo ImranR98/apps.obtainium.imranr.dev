@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android launcher for RimWorld"
+    },
+    "icon": "https://raw.githubusercontent.com/udarmolota/RimDroid/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "configs": [
+        {
+            "id": "com.rimdroid",
+            "url": "https://github.com/udarmolota/RimDroid",
+            "author": "udarmolota",
+            "name": "RimDroid",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^rimdroid.*release.*v.*apk$\"}"
+        }
+    ]
+}
