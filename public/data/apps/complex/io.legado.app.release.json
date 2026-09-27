@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "io.legado.app.release",
+            "url": "https://github.com/LegadoTeam/legado",
+            "author": "Legado",
+            "name": "Legado",
+            "additionalSettings": "{\"apkFilterRegEx\": \"legado_app_.*_universal_release(_vc[0-9]+)?\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/LegadoTeam.png",
+    "categories": [
+        "document_and_pdf_viewer"
+    ],
+    "description": {
+        "en": "Free and open-source online novel and comic reader with powerful source rules."
+    }
+}
