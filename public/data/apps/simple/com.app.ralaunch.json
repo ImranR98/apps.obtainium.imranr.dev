@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of Celeste."
+    },
+    "icon": "https://github.com/FireworkSky.png",
+    "config": {
+        "id": "com.app.ralaunch",
+        "url": "https://github.com/FireworkSky/RotatingArtLauncherReleases",
+        "author": "FireworkSky",
+        "name": "Rotating Art Launcher"
+    }
+}
