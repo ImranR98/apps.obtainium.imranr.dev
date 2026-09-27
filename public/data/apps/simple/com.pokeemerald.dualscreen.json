@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Pokemon Emerald ported to multiple platforms"
+    },
+    "icon": "https://raw.githubusercontent.com/Goldoire/pokeemerald-dualscreen/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.pokeemerald.dualscreen",
+        "url": "https://github.com/Goldoire/pokeemerald-dualscreen",
+        "author": "Goldoire",
+        "name": "Pokémon Emerald Dual Screen"
+    }
+}
