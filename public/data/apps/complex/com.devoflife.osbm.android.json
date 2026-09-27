@@ -1,0 +1,18 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An OpenStarbound port to mobile devices."
+    },
+    "icon": "https://github.com/RohanBhattacharyya.png",
+    "configs": [
+        {
+            "id": "com.devoflife.osbm.android",
+            "url": "https://github.com/RohanBhattacharyya/oSBM",
+            "author": "RohanBhattacharyya",
+            "name": "open Starbound Mobile",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^oSBM.*android.*universal.*apk$\"}"
+        }
+    ]
+}
