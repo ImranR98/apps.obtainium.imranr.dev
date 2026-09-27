@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.vivi.vivimusic",
+            "url": "https://github.com/vivizzz007/vivi-music",
+            "author": "vivizzz007",
+            "name": "ViviMusic",
+            "additionalSettings": "{\"apkFilterRegEx\": \"vivi\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://github.com/vivizzz007.png",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Expressive Material 3 YouTube Music client for Android."
+    }
+}
