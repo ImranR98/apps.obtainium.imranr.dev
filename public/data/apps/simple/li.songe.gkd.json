@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "li.songe.gkd",
+        "url": "https://github.com/gkd-kit/gkd",
+        "author": "gkd-kit",
+        "name": "GKD"
+    },
+    "icon": "https://raw.githubusercontent.com/gkd-kit/gkd/main/gkd-app/src/main/res/mipmap/gkd_black.png",
+    "categories": [
+        "automation"
+    ],
+    "description": {
+        "en": "Custom screen tapping for Android based on accessibility, selectors and subscriptions."
+    }
+}
