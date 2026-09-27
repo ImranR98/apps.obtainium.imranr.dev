@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An unofficial Android launcher for Slay the Spire 2. Alpha builds can be found on the Cinderbox Discord server."
+    },
+    "icon": "https://github.com/Ekyso.png",
+    "config": {
+        "id": "com.game.sts2launcher",
+        "url": "https://github.com/Ekyso/StS2-Launcher",
+        "author": "Ekyso",
+        "name": "StS2 Launcher"
+    }
+}
