@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Eternal Sonata, recompiled for PC."
+    },
+    "icon": "https://github.com/birabittoh.png",
+    "config": {
+        "id": "com.birabittoh.eternalsonata",
+        "url": "https://github.com/birabittoh/EternalSonataReprise",
+        "author": "birabittoh",
+        "name": "Eternal Sonata Reprise"
+    }
+}
