@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Native Android port for Project Wormhole, an FTL engine implementation by ZNix"
+    },
+    "icon": "https://github.com/adamkulik.png",
+    "config": {
+        "id": "com.pocketwormhole.android",
+        "url": "https://github.com/adamkulik/pocket-wormhole",
+        "author": "adamkulik",
+        "name": "Pocket Wormhole"
+    }
+}
