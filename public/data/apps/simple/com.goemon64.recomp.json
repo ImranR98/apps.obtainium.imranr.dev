@@ -1,0 +1,15 @@
+{
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Android port of Mystical Ninja Starring Goemon via static recompilation, with RT64 Vulkan rendering. Bring your own ROM."
+    },
+    "icon": "https://raw.githubusercontent.com/ogdanimal/Goemon64Recomp-Android/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "config": {
+        "id": "com.goemon64.recomp",
+        "url": "https://github.com/ogdanimal/Goemon64Recomp-Android",
+        "author": "ogdanimal",
+        "name": "Goemon 64"
+    }
+}
