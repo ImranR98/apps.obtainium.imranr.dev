@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.chokage.fearandhunger",
+            "url": "https://github.com/Chokage/Fear-And-Hunger-Android-Application",
+            "author": "Chokage",
+            "name": "Fear And Hunger Mobile",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^Fear\\\\.and\\\\.Hunger\\\\.apk$\"}"
+        }
+    ],
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "An Android application version for Fear and Hunger that runs without an emulator."
+    },
+    "icon": "https://github.com/Chokage.png"
+}
