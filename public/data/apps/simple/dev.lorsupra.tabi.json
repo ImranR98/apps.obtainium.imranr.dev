@@ -1,0 +1,13 @@
+{
+    "config": {
+        "id": "dev.lorsupra.tabi",
+        "url": "https://gitlab.com/lorsupra/tabi",
+        "author": "lorsupra",
+        "name": "TABI"
+    },
+    "icon": "https://gitlab.com/lorsupra/tabi/-/raw/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": ["science_and_education", "games"],
+    "description": {
+        "en": "Japanese from zero in five minutes a day. Kana, phrases, signs, trains."
+    }
+}
