@@ -5,7 +5,7 @@
       "url": "https://github.com/debpalash/tru",
       "author": "debpalash",
       "name": "Tru",
-      "additionalSettings": "{\"includePrereleases\":true,\"apkFilterRegEx\":\"universal\\\\.apk$\",\"sortMethodChoice\":\"date\"}"
+      "additionalSettings": "{\"apkFilterRegEx\":\"universal\\\\.apk$\",\"sortMethodChoice\":\"date\"}"
     }
   ],
   "icon": "https://raw.githubusercontent.com/debpalash/tru/main/fastlane/metadata/android/en-US/images/icon.png",
