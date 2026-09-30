@@ -1,0 +1,18 @@
+{
+  "configs": [
+    {
+      "id": "com.tru.news",
+      "url": "https://github.com/debpalash/tru",
+      "author": "debpalash",
+      "name": "Tru",
+      "additionalSettings": "{\"includePrereleases\":true,\"apkFilterRegEx\":\"universal\\\\.apk$\",\"sortMethodChoice\":\"date\"}"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/debpalash/tru/main/fastlane/metadata/android/en-US/images/icon.png",
+  "categories": [
+    "rss_readers"
+  ],
+  "description": {
+    "en": "Read original reporting, compare coverage and save stories locally. Optional AI uses a service you choose. No ads, Tru subscription or Tru telemetry."
+  }
+}
