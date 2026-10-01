@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "io.github.aleixrodriala.arc",
+            "url": "https://github.com/aleixrodriala/newtube",
+            "author": "aleixrodriala",
+            "name": "NewTube",
+            "additionalSettings": "{\"autoApkFilterByArch\": true, \"fallbackToOlderReleases\": true}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/aleixrodriala/newtube/main/.github/assets/icon.png",
+    "categories": [
+        "video_player"
+    ],
+    "description": {
+        "en": "Unofficial YouTube client for Android phones and tablets, built on SmartTube."
+    }
+}
