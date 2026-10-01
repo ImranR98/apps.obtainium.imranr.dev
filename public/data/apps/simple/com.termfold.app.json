@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "com.termfold.app",
+        "url": "https://github.com/Bibarud/TermFold",
+        "author": "Bibarud",
+        "name": "TermFold"
+    },
+    "icon": "https://raw.githubusercontent.com/Bibarud/TermFold/main/docs/media/logo.png",
+    "categories": [
+        "research_and_development",
+        "sandboxing"
+    ],
+    "description": {
+        "en": "A full Debian Linux terminal and AI coding agents (Claude Code, Codex, Gemini CLI, OpenCode) on Android tablets and phones. No root."
+    }
+}
