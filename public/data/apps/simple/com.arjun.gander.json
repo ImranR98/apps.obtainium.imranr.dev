@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.arjun.gander",
+        "url": "https://github.com/mokshablr/gander",
+        "author": "mokshablr",
+        "name": "Gander"
+    },
+    "icon": "https://raw.githubusercontent.com/mokshablr/gander/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "document_and_pdf_viewer"
+    ],
+    "description": {
+        "en": "Offline viewer for PDF, Word, Excel, PowerPoint, photos, video, audio, Markdown, code and STL files. It requests no permissions, not even internet access."
+    }
+}
