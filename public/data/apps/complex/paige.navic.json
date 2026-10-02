@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "paige.navic",
+            "url": "https://github.com/ssalggnikool/Navic",
+            "author": "Paige",
+            "name": "Navic",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"Navic.apk\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"Navic\",\"appAuthor\":\"Paige\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"DB:73:63:E8:FD:71:E4:CD:D1:3D:14:C0:73:D6:20:85:88:B0:2B:B2:79:1D:D1:97:C5:5F:9C:BA:9D:7A:52:E4\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Subsonic music streaming app for Android\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}"
+        }
+    ],
+    "icon": "https://github.com/NavicApp/Branding/blob/main/icons/navic.png?raw=true",
+    "categories": [
+        "music"
+    ],
+    "description": {
+        "en": "Subsonic music streaming app for Android"
+    }
+}
