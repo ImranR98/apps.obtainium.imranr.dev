@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": "com.nestmusic.music",
+    "url": "https://github.com/Davidix07TV/Nest-Music",
+    "author": "Davidix07TV",
+    "name": "Nest Music"
+  },
+  "icon": "https://raw.githubusercontent.com/Davidix07TV/Nest-Music/master/app/src/main/ic_launcher-playstore.png",
+  "categories": [
+    "music"
+  ],
+  "description": {
+    "en": "YouTube Music client for Android, with offline downloads, synced lyrics and word-by-word romanisation."
+  }
+}
