@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.zacharee1.systemuituner",
+        "url": "https://github.com/zacharee/Tweaker",
+        "author": "Zachary Wander",
+        "name": "SystemUI Tuner"
+    },
+    "icon": "https://apt.izzysoft.de/fdroid/repo/com.zacharee1.systemuituner/en-US/icon.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "View and modify hidden settings on Android devices."
+    }
+}
