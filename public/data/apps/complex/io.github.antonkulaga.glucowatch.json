@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "io.github.antonkulaga.glucowatch",
+            "url": "https://github.com/GlucoseDAO/glucowatch",
+            "author": "GlucoseDAO",
+            "name": "GlucoWatch",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^glucowatch-[0-9]+\\\\.[0-9]+\\\\.[0-9]+\\\\.apk$\",\"trackOnly\":true}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/GlucoseDAO/glucowatch/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Wear OS 4+ only. Tracks releases; install on your watch using Wear Installer 2 or adb. Glucose readings, trends, history, tiles and complications from Dexcom Share, Nightscout or the optional GlucoPhone app. Includes offline demo data. Not a medical device; do not use for treatment decisions."
+    }
+}

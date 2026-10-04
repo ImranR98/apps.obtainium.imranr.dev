@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "io.github.antonkulaga.glucowatch.phone",
+            "url": "https://github.com/GlucoseDAO/glucowatch",
+            "author": "GlucoseDAO",
+            "name": "GlucoPhone",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^glucowatch-phone-[0-9]+\\\\.[0-9]+\\\\.[0-9]+\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/GlucoseDAO/glucowatch/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Glucose dashboard for Android 10+ with Dexcom Share or Nightscout, trends, history, meals, insulin and optional local forecasts. Works on its own or relays data to GlucoWatch over Bluetooth. Includes offline demo data. Not a medical device; do not use for treatment decisions."
+    }
+}
