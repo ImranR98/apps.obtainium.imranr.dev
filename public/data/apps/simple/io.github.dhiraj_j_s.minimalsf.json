@@ -1,0 +1,13 @@
+{
+    "config": {
+        "id": "io.github.dhiraj_j_s.minimalsf",
+        "url": "https://github.com/DHIRAJ-J-S/MinimalSF_Launcher",
+        "author": "DHIRAJ-J-S",
+        "name": "MinimalSF"
+    },
+    "icon": "https://raw.githubusercontent.com/DHIRAJ-J-S/MinimalSF_Launcher/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": ["launcher_and_desktop"],
+    "description": {
+        "en": "A lightweight black and white type-to-launch home screen. Start typing and the app you want opens, often before you finish the name. Gestures, optional screen time, now playing and an inline todo list. No internet permission, no ads, no tracking."
+    }
+}
