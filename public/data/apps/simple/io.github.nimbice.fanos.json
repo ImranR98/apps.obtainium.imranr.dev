@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "io.github.nimbice.fanos",
+        "url": "https://github.com/nimbice/fanos",
+        "author": "nimbice",
+        "name": "Fanos"
+    },
+    "icon": "https://raw.githubusercontent.com/nimbice/fanos/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "document_and_pdf_viewer",
+        "anime_and_manga"
+    ],
+    "description": {
+        "en": "A reader for web novels: a library checked for new chapters, offline downloads, page or scroll reading, natural voices that read aloud offline, and sites added as extensions."
+    }
+}
