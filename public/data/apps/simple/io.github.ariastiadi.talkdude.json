@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "io.github.ariastiadi.talkdude",
+        "url": "https://github.com/Ariastiadi/talkdude",
+        "author": "Ariastiadi",
+        "name": "talkdude"
+    },
+    "icon": "https://raw.githubusercontent.com/Ariastiadi/talkdude/main/src-tauri/icons/128x128@2x.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Free AI chat companion with on-device models (no API key), multi-provider cloud AI and Character.AI-style characters."
+    }
+}
