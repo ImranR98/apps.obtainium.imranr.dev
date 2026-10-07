@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "cc.hosaka.okonomi",
+            "url": "https://code.hosaka.cc/hosaka/okonomi",
+            "author": "hosaka",
+            "name": "Okonomi",
+            "overrideSource": "Codeberg"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/hosaka/okonomi/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "dictionaries"
+    ],
+    "description": {
+        "en": "Modern Japanese/English dictionary mobile app for language learners.",
+        "ja": "語学学習者向けのモダンな和英・英和辞書モバイルアプリ。"
+    }
+}
