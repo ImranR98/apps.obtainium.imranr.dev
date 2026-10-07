@@ -1,0 +1,17 @@
+{
+    "config": {
+        "id": "com.dante",
+        "url": "https://github.com/picqueanthony-arch/Dante-OS",
+        "author": "picqueanthony-arch",
+        "name": "Dante OS"
+    },
+    "icon": null,
+    "categories": [
+        "launcher_and_desktop",
+        "firewall",
+        "ad_blocker"
+    ],
+    "description": {
+        "en": "Root launcher with a per-app firewall, a DNS filter and traffic analysis. No trackers. Closed source: signed APKs with a published SHA-256 on GitHub releases."
+    }
+}
