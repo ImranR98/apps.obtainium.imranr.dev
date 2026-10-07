@@ -5,7 +5,7 @@
         "author": "picqueanthony-arch",
         "name": "Dante OS"
     },
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/picqueanthony-arch/Dante-OS/main/dante-os-icon.png",
     "categories": [
         "launcher_and_desktop",
         "firewall",
