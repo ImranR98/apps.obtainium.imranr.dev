@@ -1,0 +1,14 @@
+{
+    "config": {
+        "id": "dev.sebastiano.headroom",
+        "url": "https://github.com/rock3r/headroom",
+        "author": "rock3r",
+        "name": "Headroom"
+    },
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Shows how much of your AI subscription quotas (Claude, ChatGPT Codex, GitHub Copilot and more) you have left, with widgets and reset notifications."
+    }
+}
