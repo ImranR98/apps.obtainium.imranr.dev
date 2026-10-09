@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "dev.milanko.dartpdf",
+            "url": "https://github.com/ben-milanko/dart-pdf",
+            "author": "Ben Milanko",
+            "name": "DartPDF",
+            "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"^(DartPDF |app-v)[0-9]+[.][0-9]+[.][0-9]+([+][0-9]+)?$\",\"fallbackToOlderReleases\":true}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/ben-milanko/dart-pdf/a613e93fe74856adcb1b289134e5d8cbb47fbe0c/doc/logo.png",
+    "categories": [
+        "document_and_pdf_viewer"
+    ],
+    "description": {
+        "en": "PDF editor for annotating documents, filling forms and organising pages."
+    }
+}
