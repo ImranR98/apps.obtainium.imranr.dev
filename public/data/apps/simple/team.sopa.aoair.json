@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "team.sopa.aoair",
+        "url": "https://github.com/rferrari/boar-app",
+        "author": "SOPA",
+        "name": "BOAR"
+    },
+    "icon": "https://raw.githubusercontent.com/rferrari/boar-app/main/assets/icon.png",
+    "categories": [
+        "research_and_development",
+        "privacy_and_anonymity"
+    ],
+    "description": {
+        "en": "Offline AI research assistant. Runs a local language model on your phone: after a one-time model download, it answers questions with zero connectivity and nothing ever leaves the device."
+    }
+}
