@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "net.serosis.megamod",
+        "url": "https://sourceforge.net/projects/uqm-mods/files/MegaMod/",
+        "author": "Ur-Quan Masters HD MegaMod contributors",
+        "name": "Ur-Quan Masters HD MegaMod"
+    },
+    "icon": "https://a.fsdn.com/allura/p/uqm-mods/icon?w=135",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A fork of The Ur-Quan Masters + HD-mod that remasters the HD graphics with a veritable smorgasbord of extra features, options, QoL improvements, and much more."
+    }
+}
