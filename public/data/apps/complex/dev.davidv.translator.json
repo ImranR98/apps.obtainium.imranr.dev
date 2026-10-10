@@ -1,0 +1,27 @@
+{
+    "configs": [
+        {
+            "id": "dev.davidv.translator",
+            "url": "https://github.com/DavidVentura/offline-translator",
+            "author": "David Ventura",
+            "name": "Offline Translator",
+            "altLabel": "arm64",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64\"}"
+        },
+        {
+            "id": "dev.davidv.translator",
+            "url": "https://github.com/DavidVentura/offline-translator",
+            "author": "David Ventura",
+            "name": "Offline Translator",
+            "altLabel": "armv7",
+            "additionalSettings": "{\"apkFilterRegEx\":\"armv7\"}"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/dev.davidv.translator/en-US/icon.png",
+    "categories": [
+        "translation"
+    ],
+    "description": {
+        "en": "Use Firefox Translation Models for on-device translation on Android"
+    }
+}

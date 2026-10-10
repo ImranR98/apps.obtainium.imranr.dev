@@ -43,8 +43,9 @@
     ],
     "icon": "https://raw.githubusercontent.com/Gedsh/InviZible/refs/heads/master/tordnscrypt/src/lite/res/mipmap-xxxhdpi/ic_launcher.webp",
     "categories": [
-        "vpn",
-        "privacy_and_anonymity"
+        "firewall",
+        "privacy_and_anonymity",
+        "vpn"
     ],
     "description": {
         "en": "InviZible Lite: online privacy and security via Tor, DNSCrypt and I2P."

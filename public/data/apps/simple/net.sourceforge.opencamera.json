@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "net.sourceforge.opencamera",
+        "url": "https://sourceforge.net/projects/opencamera/files",
+        "author": "Mark Harman",
+        "name": "Open Camera"
+    },
+    "icon": "https://opencamera.org.uk/ic_launcher.png",
+    "categories": [
+        "camera"
+    ],
+    "description": {
+        "en": "An open-source camera app for Android devices, offering advanced features and manual controls for capturing photos and videos."
+    }
+}

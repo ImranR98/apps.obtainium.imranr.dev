@@ -3,16 +3,41 @@
         {
             "id": "com.gopeed.gopeed",
             "url": "https://github.com/GopeedLab/gopeed",
-            "author": "GopeedLab",
+            "author": "Gopeed Lab",
             "name": "Gopeed",
-            "additionalSettings": "{\"apkFilterRegEx\": \"Gopeed-v[0-9.]+-android\\\\.apk$\"}"
+            "altLabel": "x64",
+            "additionalSettings": "{\"apkFilterRegEx\":\"x86_64\"}"
+        },
+        {
+            "id": "com.gopeed.gopeed",
+            "url": "https://github.com/GopeedLab/gopeed",
+            "author": "Gopeed Lab",
+            "name": "Gopeed",
+            "altLabel": "ARM64",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64-v8a\"}"
+        },
+        {
+            "id": "com.gopeed.gopeed",
+            "url": "https://github.com/GopeedLab/gopeed",
+            "author": "Gopeed Lab",
+            "name": "Gopeed",
+            "altLabel": "ARMv7",
+            "additionalSettings": "{\"apkFilterRegEx\":\"armeabi-v7a\"}"
+        },
+        {
+            "id": "com.gopeed.gopeed",
+            "url": "https://github.com/GopeedLab/gopeed",
+            "author": "Gopeed Lab",
+            "name": "Gopeed",
+            "altLabel": "Universal",
+            "additionalSettings": "{\"apkFilterRegEx\":\"android\\.apk\"}"
         }
     ],
-    "icon": "https://raw.githubusercontent.com/GopeedLab/gopeed/main/ui/flutter/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "icon": "https://gopeed.com/images/logo.png",
     "categories": [
         "downloader_and_manager"
     ],
     "description": {
-        "en": "Fast, modern download manager for HTTP, BitTorrent, Magnet and ed2k."
+        "en": "A fast, modern download manager for HTTP, BitTorrent, Magnet, and ed2k."
     }
 }

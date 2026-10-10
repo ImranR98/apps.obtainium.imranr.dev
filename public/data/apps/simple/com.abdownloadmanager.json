@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.abdownloadmanager",
+        "url": "https://github.com/amir1376/ab-download-manager",
+        "author": "AmirHossein Abdolmotallebi",
+        "name": "AB Download Manager"
+    },
+    "icon": "https://abdownloadmanager.com/assets/app_icon_with_background-DacKa0NY.svg",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "A Download Manager that speeds up your downloads"
+    }
+}

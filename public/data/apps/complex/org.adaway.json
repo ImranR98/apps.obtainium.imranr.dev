@@ -11,7 +11,8 @@
     ],
     "icon": "https://github.com/AdAway/AdAway/blob/master/app/src/main/icon-web.png?raw=true",
     "categories": [
-        "ad_blocker"
+        "ad_blocker",
+        "firewall"
     ],
     "description": {
         "en": "An ad-blocking app for Android devices that blocks advertisements in web browsers and apps, enhancing the user experience and privacy.",
