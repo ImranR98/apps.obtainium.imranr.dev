@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "com.github.libretube",
+            "url": "https://github.com/libre-tube/LibreTube",
+            "author": "libre-tube",
+            "name": "LibreTube",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"app-release\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"LibreTube\",\"appAuthor\":\"Team LibreTube\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"72:0C:4F:CE:CF:73:8A:41:D0:33:B9:FB:E0:BE:F9:7A:C2:32:03:0C:E9:3E:27:4D:2E:0A:E2:32:E4:4E:EA:CE\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"An alternative frontend for YouTube, for Android.\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\",\"enableCertificatePinning\":false}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/libre-tube/LibreTube/refs/heads/master/assets/icons/LibreTube.svg",
+    "categories": [
+        "video_player"
+    ],
+    "description": {
+        "en": "An alternative frontend for YouTube, for Android."
+    }
+}
