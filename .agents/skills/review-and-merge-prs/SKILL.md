@@ -81,6 +81,9 @@ body,comments` and `gh pr diff <n>` when semantic checks are needed:
   from `reference/criteria.md` with your own judgment; check release assets exist for GitHub.
 - Popularity/age: check `stars` (≥35 where the forge counts stars) and `created` (≥4 months where a
   creation date exists) on `checks.sources[]`; `platform: "other"` has no data — don't guess.
+- Rejected for stars/age: fetch the source README and check for an explicit Obtainium installation
+  mention (badge, `obtainium://`, `apps.obtainium.imranr.dev`, "install with Obtainium"); call those
+  apps out in the report — a mention does not override the gates by itself.
 - Duplicates: interpret `duplicateIds`/`duplicateUrls`; variants sharing one URL are fine.
 - Moral flags: confirm keyword candidates by reading the app metadata; never auto-merge flagged apps.
 - Scope: any file outside `public/data/apps/` changed, or config removals, need a reason.

@@ -58,7 +58,9 @@ Priority order:
    reupload sites).
 6. Popularity/age: `stars<35` or `created` newer than 4 months (only where the forge exposes the
    data). Report the full list first; removal requires explicit maintainer consent (a batch approval
-   is acceptable), and low-star/too-new is not a simple fix.
+   is acceptable), and low-star/too-new is not a simple fix. For apps rejected on these grounds,
+   check the source README for an explicit Obtainium installation mention and call those apps out in
+   the report (it does not override the gates by itself).
 7. `duplicateIds` / `duplicateUrls` — same id in two files, or one URL shared by unrelated apps.
 8. Moral flags (gambling/betting, adult/NSFW, drugs/alcohol/tobacco) from names/descriptions/URLs.
 

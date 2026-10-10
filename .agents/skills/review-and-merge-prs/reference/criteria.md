@@ -125,6 +125,11 @@ be abandoned and to leave behind broken configs.
 - These gates apply to new submissions. Existing apps on `main` that fail them are **reported with
   the full list first**, then removed once the maintainer approves the batch — never silently or
   automatically.
+- **Obtainium mentions**: before finalizing any rejection for stars/age, fetch the source README and
+  check whether it explicitly mentions Obtainium as an installation method (an "Add to Obtainium"
+  badge, an `obtainium://` link, `apps.obtainium.imranr.dev`, or text like "install with
+  Obtainium"). These apps are called out in the report — a mention does not by itself override the
+  gates, but the maintainer may weigh it.
 - A low-star or too-new source is **not** a simple fix (see the fix catalog): the contributor must
   supply a better source or wait.
 
