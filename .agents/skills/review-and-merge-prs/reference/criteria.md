@@ -9,8 +9,9 @@ agent's to make. Repo rules come from `APP_CRITERIA.md`, `CONTRIBUTING.md`, `src
 
 - `checks.links[]`: one entry per config URL and icon URL with `status`, `contentType`, `finalUrl`
   (when redirected), `error`. There are no pass/fail labels — compare against the rules below.
-- `checks.sources[]`: raw `platform`, `repo`, `pushedAt`, `releases[]` (`tag`, `publishedAt`,
-  `assets`), `archived`, `fork`, `description`. Apply the recency rule yourself.
+- `checks.sources[]`: raw `platform`, `repo`, `pushedAt`, `createdAt`, `stars`, `releases[]` (`tag`,
+  `publishedAt`, `assets`), `archived`, `fork`, `description`. Apply the recency, popularity and age
+  rules yourself.
 - `existing`: categories list, known settings keys union, and the per-app index used for duplicates.
 - `duplicateIds` / `duplicateUrls`: candidate groups (same id or same normalized URL in more than
   one place). Not every group is a problem — stable/nightly variants legitimately share a source
@@ -104,6 +105,29 @@ accepted on `main` under this exception, **do not re-flag, remove, or block it i
 because of age** — only re-raise it if the source becomes archived/disabled, its links break, it no
 longer matches the exception, or there is other evidence it stopped working.
 
+## Source popularity and project age (bloat control)
+
+Two further gates apply to every app's official source where the host exposes the data. Their
+purpose is to limit repo bloat: unknown, brand-new and low-traction projects are the most likely to
+be abandoned and to leave behind broken configs.
+
+- **Popularity**: the source repo needs **at least 35 stars/favorites** on the forge — GitHub
+  `stars`, GitLab `star_count`, Codeberg/Forgejo/Gitea `stars_count`. Sources with no star concept
+  (plain websites, SourceForge projects, F-Droid listings, `DirectAPKLink`) are exempt. Judge the
+  actual source repo, not a mirror; a mirror's star count only counts when it is the config's source.
+- **Age**: the source project must be **at least 4 months old** (`createdAt` from the forge). Do not
+  add brand-new projects; a submission can be revisited once the project is older than 4 months.
+  Platforms that do not expose a creation date are exempt.
+- Collector facts: `checks.sources[].stars` and `checks.sources[].createdAt` are filled for GitHub,
+  GitLab, Codeberg and self-hosted Forgejo/Gitea instances that answer the API. `platform: "other"`
+  (or a source `error`) means no data — say so rather than guessing (some instances block
+  non-browser clients with anti-bot challenges).
+- These gates apply to new submissions. Existing apps on `main` that fail them are **reported with
+  the full list first**, then removed once the maintainer approves the batch — never silently or
+  automatically.
+- A low-star or too-new source is **not** a simple fix (see the fix catalog): the contributor must
+  supply a better source or wait.
+
 ## Duplicates
 
 Treat as needing a human decision, not an automatic merge:
@@ -138,12 +162,14 @@ Simple fixes (apply on a PR branch, or on a working branch for the repo audit):
 - Duplicate `altLabel` → make labels distinct
 
 Not simple: missing required fields, invalid package id, dead/banned/shortened URLs, wrong app
-identity, inactive/archived source, missing release assets, duplicates, merge conflicts, regex
-redesign, moral flags, an app that cannot be sourced officially.
+identity, inactive/archived source, missing release assets, low-star (<35) or too-new (<4 months)
+source, duplicates, merge conflicts, regex redesign, moral flags, an app that cannot be sourced
+officially.
 
 ## Report buckets
 
-- **Ready / healthy** — no errors, no major warnings, source active, no duplicates or moral flags
+- **Ready / healthy** — no errors, no major warnings, source active, popular enough (≥35 stars where
+  counted) and old enough (≥4 months where dated), no duplicates or moral flags
 - **Fixable** — only issues from the fix catalog remain
 - **Needs review** — forks, mirrors, duplicate groups, missing APK assets, pinned release URLs,
   moral flags, anything needing judgment

@@ -1,6 +1,6 @@
 ---
 name: review-and-merge-prs
-description: Use ONLY for the ImranR98/apps.obtainium.imranr.dev repo when asked to review open PRs, decide which are merge-ready, fix simple issues in app configs, or merge approved PRs. Collects PR facts with collect.mjs and applies the shared criteria (schema, simple/complex folder, categories, icons, settings, links, duplicates, source recency, moral flags), then merges approved PRs one at a time only after explicit consent.
+description: Use ONLY for the ImranR98/apps.obtainium.imranr.dev repo when asked to review open PRs, decide which are merge-ready, fix simple issues in app configs, or merge approved PRs. Collects PR facts with collect.mjs and applies the shared criteria (schema, simple/complex folder, categories, icons, settings, links, duplicates, source recency, source popularity (≥35 stars where counted), project age (≥4 months where dated), moral flags), then merges approved PRs one at a time only after explicit consent.
 ---
 
 # Review and merge open PRs
@@ -27,6 +27,9 @@ A PR is merge-ready only if all of the following hold:
   judge each on whether it could be abandoned for 12+ months and remain useful/relevant (see
   `reference/criteria.md`; examples are illustrative, not exhaustive). Banking/social/downloader/
   online-dependent apps do not qualify.
+- Popular enough and old enough where the forge exposes the data: at least 35 stars/favorites and a
+  project creation date at least 4 months old (bloat control — see `reference/criteria.md`; sources
+  with no star/creation concept are exempt, and `platform: "other"` means no data).
 - No duplicate id/URL against the repo or another open PR.
 - No moral flag (gambling/betting, adult/NSFW, drugs/alcohol/tobacco).
 
@@ -56,7 +59,8 @@ node .agents/skills/review-and-merge-prs/scripts/collect.mjs prs --skip-network 
 
 It writes `/tmp/opencode/pr-review/prs.json` plus `prs.json.digest.txt`, and prints the paths.
 The digest has one line per PR with per-file facts (path, status, ids, URLs with status/redirect/
-content-type, settings keys, source repo with last push/release/assets/fork/archived).
+content-type, settings keys, source repo with stars, creation date, last push/release/assets/fork/
+archived).
 
 Read the digest in batches with the Read tool (offset/limit) or filter it with Grep. Do not read
 the full JSON into context; open it only for PRs that need detail (long `files` lists, parse
@@ -75,6 +79,8 @@ body,comments` and `gh pr diff <n>` when semantic checks are needed:
   source belongs to the named app and is official (forks need renamed package + display name).
 - Recency: apply the 12-month rule to `checks.sources[]`, but apply the self-contained-app exception
   from `reference/criteria.md` with your own judgment; check release assets exist for GitHub.
+- Popularity/age: check `stars` (≥35 where the forge counts stars) and `created` (≥4 months where a
+  creation date exists) on `checks.sources[]`; `platform: "other"` has no data — don't guess.
 - Duplicates: interpret `duplicateIds`/`duplicateUrls`; variants sharing one URL are fine.
 - Moral flags: confirm keyword candidates by reading the app metadata; never auto-merge flagged apps.
 - Scope: any file outside `public/data/apps/` changed, or config removals, need a reason.

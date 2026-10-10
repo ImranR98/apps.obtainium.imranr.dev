@@ -22,6 +22,8 @@
 - Note: Using `scripts/generate_from_url.py` requires "Colorama": install it with `pip install -r scripts/requirements.txt`
 - Run `npm run validate` to check app icons and automatically set dead ones to `null` (`npm run validate:check` reports without modifying files)
 - Apps whose source has not been updated in the last 12 months will receive increased scrutiny and may be rejected.
+- Where the platform provides a star/favorite count (GitHub, GitLab, Codeberg/Forgejo, etc.), the app's source repository must have at least 35 of them. Sources without a star count (a plain website, SourceForge) are exempt. This keeps the repo from bloating with unknown or abandoned projects.
+- Where the platform exposes a creation date, the source project must be at least 4 months old. Brand-new projects can be resubmitted once they are older.
 - If you want to contribute a large number of apps, please do so in one PR instead of creating separate PRs for each app. Ignoring this rule may cause the PRs to be rejected as spam.
 
 
@@ -63,6 +65,8 @@ For example:
 - Hinweis: Die Verwendung von `scripts/generate_from_url.py` erfordert „Colorama“: `pip install -r scripts/requirements.txt`.
 - Führen Sie `npm run validate` aus, um App-Symbole zu prüfen und defekte automatisch auf `null` zu setzen (`npm run validate:check` meldet sie nur, ohne Dateien zu ändern).
 - Apps, deren Quelle in den letzten 12 Monaten nicht aktualisiert wurde, werden verstärkt geprüft und können abgelehnt werden.
+- Sofern die Plattform eine Stern-/Favoritenanzahl anbietet (GitHub, GitLab, Codeberg/Forgejo usw.), muss das Quell-Repository der App mindestens 35 davon haben. Quellen ohne Sternanzahl (z. B. eine reine Website oder SourceForge) sind ausgenommen. Das verhindert, dass das Repo mit unbekannten oder aufgegebenen Projekten aufgebläht wird.
+- Sofern die Plattform ein Erstellungsdatum liefert, muss das Quellprojekt mindestens 4 Monate alt sein. Ganz neue Projekte können erneut eingereicht werden, sobald sie älter sind.
 - Wenn Sie eine große Anzahl von Apps beitragen möchten, tun Sie dies bitte in einem einzigen PR, anstatt für jede App einen separaten PR zu erstellen. Die Missachtung dieser Regel kann dazu führen, dass die PRs als Spam abgelehnt werden.
 
 

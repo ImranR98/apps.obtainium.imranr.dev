@@ -1,14 +1,15 @@
 ---
 name: review-repo-apps
-description: Use ONLY for the ImranR98/apps.obtainium.imranr.dev repo when asked to audit the app configs already on main — check existing apps for validity, folder placement, dead or misleading links, source recency (12-month rule), duplicates, or morally questionable content (gambling/adult/drugs), and optionally fix them on a branch. Uses the shared collect.mjs facts and criteria.
+description: Use ONLY for the ImranR98/apps.obtainium.imranr.dev repo when asked to audit the app configs already on main — check existing apps for validity, folder placement, dead or misleading links, source recency (12-month rule), source popularity (<35 stars) and project age (<4 months), duplicates, or morally questionable content (gambling/adult/drugs), and optionally fix them on a branch. Uses the shared collect.mjs facts and criteria.
 ---
 
 # Review existing repo apps
 
 Audits the app configs already committed under `public/data/apps/` using the same standards as the
 PR review: validity (schema, filename/id, simple/complex folder, categories, settings, links),
-recency (12-month source activity rule), duplicates, and moral concerns. Reports first; only makes
-changes on a branch after explicit consent.
+recency (12-month source activity rule), source popularity (≥35 stars where counted), project age
+(≥4 months where dated), duplicates, and moral concerns. Reports first; only makes changes on a
+branch after explicit consent.
 
 The collector and criteria are shared with the PR skill:
 
@@ -34,7 +35,8 @@ node .agents/skills/review-and-merge-prs/scripts/collect.mjs repo --file <path> 
 
 Outputs `/tmp/opencode/pr-review/repo.json` (full contents, checks, existing index, duplicate
 groups) and `repo.json.digest.txt` (one line per config). The digest includes parse errors, ids,
-URLs, settings keys, link statuses/redirects/content-types, and source recency where available.
+URLs, settings keys, link statuses/redirects/content-types, and source recency/popularity/age where
+available.
 
 ## Phase 2 — review in batches
 
@@ -54,8 +56,11 @@ Priority order:
    judgment (examples are illustrative, not exhaustive).
 5. Sources that are not official (forks without renamed package/display name, aggregator or
    reupload sites).
-6. `duplicateIds` / `duplicateUrls` — same id in two files, or one URL shared by unrelated apps.
-7. Moral flags (gambling/betting, adult/NSFW, drugs/alcohol/tobacco) from names/descriptions/URLs.
+6. Popularity/age: `stars<35` or `created` newer than 4 months (only where the forge exposes the
+   data). Report the full list first; removal requires explicit maintainer consent (a batch approval
+   is acceptable), and low-star/too-new is not a simple fix.
+7. `duplicateIds` / `duplicateUrls` — same id in two files, or one URL shared by unrelated apps.
+8. Moral flags (gambling/betting, adult/NSFW, drugs/alcohol/tobacco) from names/descriptions/URLs.
 
 Note that many repo files share a source URL legitimately (stable/nightly variants of one app), and
 some lack icons or English descriptions — judge these against the criteria rather than flagging
@@ -67,6 +72,11 @@ be flagged, removed, or blocked for age. Only re-raise them if the source become
 links break, the app no longer matches the exception, or there is other evidence it stopped working.
 Use your own judgment; the example categories are not exhaustive. Banking/social/downloader/
 online-dependent apps do not qualify.
+
+The popularity/age gates are for new submissions. Existing apps that fail them are reported with
+the full list first and removed only after explicit maintainer consent (batch approval is fine),
+never silently. Forge sources that do not answer automated requests (anti-bot challenge) or expose
+no star/creation data are unknown, not failures — say so rather than guessing.
 
 ## Phase 3 — report and consent
 

@@ -17,8 +17,8 @@ function usage() {
   console.log(`Usage: node collect.mjs <prs|repo> [options]
 
 Collects raw facts only (config contents, link responses, source activity,
-categories, settings keys, duplicate candidates); verdicts come from the caller
-using reference/criteria.md.
+popularity/age (stars, createdAt), categories, settings keys, duplicate
+candidates); verdicts come from the caller using reference/criteria.md.
 
   prs    open PRs and the config files they change (--pr, --prs, --author, --limit)
   repo   configs already in public/data/apps (--file, --dir)
@@ -103,6 +103,21 @@ async function ghApiPaged(endpoint) {
     if (items.length < 100) break
   }
   return results
+}
+
+async function fetchJson(url, timeoutMs = 10000) {
+  try {
+    const res = await fetch(url, {
+      headers: { 'User-Agent': UA, Accept: 'application/json' },
+      signal: AbortSignal.timeout(timeoutMs),
+    })
+    if (!res.ok) return null
+    // Some Forgejo/Gitea instances serve JSON with a text/html content type,
+    // so parse the body instead of trusting the header.
+    return JSON.parse(await res.text())
+  } catch {
+    return null
+  }
 }
 
 async function detectRepo() {
@@ -264,28 +279,82 @@ async function collectSourceFacts(url) {
       fork: !!data.fork,
       description: data.description,
       pushedAt: data.pushed_at,
+      createdAt: data.created_at,
       defaultBranch: data.default_branch,
       stars: data.stargazers_count,
       releases: list,
     }
   }
+  if (host === 'gitlab.com' && seg.length >= 2) {
+    let repo = `${seg[0]}/${seg[1]}`
+    try {
+      let data = await fetchJson(`https://gitlab.com/api/v4/projects/${encodeURIComponent(repo)}`)
+      if (!data && seg.length > 2) {
+        repo = seg.slice(0, 3).join('/')
+        data = await fetchJson(`https://gitlab.com/api/v4/projects/${encodeURIComponent(repo)}`)
+      }
+      if (!data) return { url, platform: 'gitlab', repo, error: 'not found' }
+      const rel = await fetchJson(
+        `https://gitlab.com/api/v4/projects/${encodeURIComponent(repo)}/releases?per_page=5`
+      )
+      const releases = (Array.isArray(rel) ? rel : []).map((r) => ({
+        tag: r.tag_name,
+        publishedAt: r.released_at,
+        prerelease: false,
+        assets: (r.assets?.links || []).map((a) => a.name).slice(0, 25),
+      }))
+      return {
+        url,
+        platform: 'gitlab',
+        repo: data.path_with_namespace || repo,
+        archived: !!data.archived,
+        description: data.description,
+        pushedAt: data.last_activity_at,
+        createdAt: data.created_at,
+        stars: data.star_count,
+        releases,
+      }
+    } catch (e) {
+      return { url, platform: 'gitlab', repo, error: String(e.message || e) }
+    }
+  }
   if (host === 'codeberg.org' && seg.length >= 2) {
     const repo = `${seg[0]}/${seg[1]}`
     try {
-      const res = await fetch(`https://codeberg.org/api/v1/repos/${repo}`, { headers: { 'User-Agent': UA } })
-      if (!res.ok) return { url, platform: 'codeberg', repo, error: `HTTP ${res.status}` }
-      const data = await res.json()
+      const data = await fetchJson(`https://codeberg.org/api/v1/repos/${repo}`)
+      if (!data) return { url, platform: 'codeberg', repo, error: 'not found' }
       return {
         url,
         platform: 'codeberg',
-        repo,
+        repo: data.full_name || repo,
         archived: !!data.archived,
         description: data.description,
         pushedAt: data.updated_at,
+        createdAt: data.created_at,
+        stars: data.stars_count,
       }
     } catch (e) {
       return { url, platform: 'codeberg', repo, error: String(e.message || e) }
     }
+  }
+  // Self-hosted Forgejo/Gitea instances expose the same API shape; probe the
+  // repo endpoint so star/creation facts are available for any forge.
+  if (seg.length >= 2) {
+    try {
+      const data = await fetchJson(`https://${host}/api/v1/repos/${seg[0]}/${seg[1]}`)
+      if (data && data.full_name && typeof data.stars_count === 'number') {
+        return {
+          url,
+          platform: 'forgejo',
+          repo: data.full_name,
+          archived: !!data.archived,
+          description: data.description,
+          pushedAt: data.updated_at,
+          createdAt: data.created_at,
+          stars: data.stars_count,
+        }
+      }
+    } catch {}
   }
   return { url, platform: 'other' }
 }
@@ -445,6 +514,8 @@ function linkBits(checks) {
     if (s.platform === 'other') continue
     const parts = [`src=${s.platform}:${s.repo}`]
     if (s.pushedAt) parts.push(`pushed=${String(s.pushedAt).slice(0, 10)}`)
+    if (s.createdAt) parts.push(`created=${String(s.createdAt).slice(0, 10)}`)
+    if (s.stars !== undefined && s.stars !== null) parts.push(`stars=${s.stars}`)
     if (s.releases?.[0]?.publishedAt) parts.push(`release=${String(s.releases[0].publishedAt).slice(0, 10)}`)
     if (s.releases?.[0]?.assets?.length) parts.push(`assets=${s.releases[0].assets.slice(0, 8).join(',')}`)
     if (s.fork) parts.push('fork=yes')

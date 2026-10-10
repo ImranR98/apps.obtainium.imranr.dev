@@ -19,6 +19,10 @@ Before opening a new app request/PR with updates to a config, please read the fo
 
 4. Only configs from official sources from the app are accepted. This means reupload site (eg. APKPure, APKMirror etc...) configs will NOT be added.
 
+5. Where the platform provides a star/favorite count (GitHub, GitLab, Codeberg/Forgejo, etc.), the app's source repository should have at least 35 of them. Sources without a star count (a plain website, SourceForge) are exempt. This keeps the repo from bloating with unknown or abandoned projects.
+
+6. Where the platform exposes a creation date, the source project should be at least 4 months old. Brand-new projects can be requested again once they are older.
+
 
 If you've gone through the above steps, then you can [open an app request](https://github.com/ImranR98/apps.obtainium.imranr.dev/issues). Make sure to include at a minimum:
 
@@ -39,6 +43,8 @@ If you've gone through the above steps, then you can open a PR. Keep these thing
 - Keep the amount of alternative configs to a minimum, only provide the ones that will work the best in the long term.
 - Ensure that you leave as many config options as you can as the default setting. Only change what you need. For example, with a GitHub config you would not add an app with the `Include prereleases` setting enabled unless necessary as not everyone will want prereleases.
 - Apps whose source has not been updated in the last 12 months will receive increased scrutiny and may be rejected.
+- Where the platform provides a star/favorite count (GitHub, GitLab, Codeberg/Forgejo, etc.), the app's source repository must have at least 35 of them. Sources without a star count (a plain website, SourceForge) are exempt. This keeps the repo from bloating with unknown or abandoned projects.
+- Where the platform exposes a creation date, the source project must be at least 4 months old. Brand-new projects can be resubmitted once they are older.
 - If you want to contribute a large number of apps, please do so in one PR instead of creating separate PRs for each app. Ignoring this rule may cause the PRs to be rejected as spam.
 
 <span id="de"></span>
@@ -56,6 +62,10 @@ Bevor Sie eine neue App-Anfrage oder einen neuen Pull-Request mit einer neuen Ko
 3. In der Regel werden Forks und Mods von Apps nicht akzeptiert, es sei denn, sowohl der Paketname als auch der Anzeigename der App wurden geändert. Damit soll verhindert werden, dass Benutzer unwissentlich inoffizielle Versionen von Anwendungen herunterladen.
 
 4. Es werden nur Konfigurationen aus offiziellen Quellen der App akzeptiert. Das bedeutet, dass Konfigurationen von Re-Upload-Seiten (z.B. APKPure, APKMirror usw.) NICHT hinzugefügt werden.
+
+5. Sofern die Plattform eine Stern-/Favoritenanzahl anbietet (GitHub, GitLab, Codeberg/Forgejo usw.), sollte das Quell-Repository der App mindestens 35 davon haben. Quellen ohne Sternanzahl (z. B. eine reine Website oder SourceForge) sind ausgenommen. Das verhindert, dass das Repo mit unbekannten oder aufgegebenen Projekten aufgebläht wird.
+
+6. Sofern die Plattform ein Erstellungsdatum liefert, sollte das Quellprojekt mindestens 4 Monate alt sein. Ganz neue Projekte können erneut angefragt werden, sobald sie älter sind.
 
 
 Nachdem Sie die oben genannten Punkte überprüft haben, können Sie [eine App-Anfrage eröffnen](https://github.com/ImranR98/apps.obtainium.imranr.dev/issues). Stellen Sie sicher, dass Sie mindestens die folgenden Informationen angeben:
@@ -77,6 +87,8 @@ Nachdem Sie die oben genannten Punkte überprüft haben, können Sie einen PR er
 - Halten Sie die Anzahl der alternativen Konfigurationen so gering wie möglich und geben Sie nur die an, die langfristig am besten funktionieren.
 - Stellen Sie sicher, dass Sie so viele Konfigurationsoptionen wie möglich als Standardeinstellung belassen. Ändern Sie nur, was zwingend für eine zufriedenstellend lauffähige Konfiguration benötigt wird. Bei einer GitHub-Konfiguration würden Sie zum Beispiel keine App mit der Einstellung „Vorabversionen einbeziehen“ hinzufügen, es sei denn, dies ist notwendig, da nicht jeder Vorabversionen haben möchte.
 - Apps, deren Quelle in den letzten 12 Monaten nicht aktualisiert wurde, werden verstärkt geprüft und können abgelehnt werden.
+- Sofern die Plattform eine Stern-/Favoritenanzahl anbietet (GitHub, GitLab, Codeberg/Forgejo usw.), muss das Quell-Repository der App mindestens 35 davon haben. Quellen ohne Sternanzahl (z. B. eine reine Website oder SourceForge) sind ausgenommen. Das verhindert, dass das Repo mit unbekannten oder aufgegebenen Projekten aufgebläht wird.
+- Sofern die Plattform ein Erstellungsdatum liefert, muss das Quellprojekt mindestens 4 Monate alt sein. Ganz neue Projekte können erneut eingereicht werden, sobald sie älter sind.
 - Wenn Sie eine große Anzahl von Apps beitragen möchten, tun Sie dies bitte in einem einzigen PR, anstatt für jede App einen separaten PR zu erstellen. Die Missachtung dieser Regel kann dazu führen, dass die PRs als Spam abgelehnt werden.
 
 <span id="zh-cn"></span>
@@ -93,6 +105,10 @@ Nachdem Sie die oben genannten Punkte überprüft haben, können Sie einen PR er
 3. 除非软件包名称和显示名称都已更改，否则不会接受应用的分支。这是为了避免人们在不知情的情况下下载非官方版本的应用。
 
 4. 只接受来自应用官方源的配置。这意味着不会添加第三方下载站（如 APKPure、APKMirror 等……）的配置。
+
+5. 如果平台提供星标/收藏数（GitHub、GitLab、Codeberg/Forgejo 等），应用的源仓库应至少有 35 个星标。没有星标概念的来源（如普通网站、SourceForge）不受此限制。这可以避免仓库被未知或已放弃的项目充塞。
+
+6. 如果平台提供创建日期，源项目应至少有 4 个月的历史。全新的项目可以在满 4 个月后再次申请。
 
 
 如果您已完成上述步骤，则可以[打开应用请求](https://github.com/ImranR98/apps.obtainium.imranr.dev/issues)。请确保至少包含：
@@ -114,4 +130,6 @@ Nachdem Sie die oben genannten Punkte überprüft haben, können Sie einen PR er
 - 尽量减少备选配置的数量，只提供长期效果最好的配置。
 - 确保将尽可能多的配置选项保留为默认设置。只更改需要的配置。例如，在 GitHub 配置中，除非有必要，否则不会在添加应用时启用“包含预发布版本”设置，因为不是每个人都需要预发布版本。
 - 源代码在过去 12 个月内未更新的应用将受到更严格的审查，并可能被拒绝。
+- 如果平台提供星标/收藏数（GitHub、GitLab、Codeberg/Forgejo 等），应用的源仓库必须至少有 35 个星标。没有星标概念的来源（如普通网站、SourceForge）不受此限制。这可以避免仓库被未知或已放弃的项目充塞。
+- 如果平台提供创建日期，源项目必须至少有 4 个月的历史。全新的项目可以在满 4 个月后重新提交。
 - 如果您想贡献大量应用，请在一个 PR 中提交，而不是为每个应用单独创建 PR。无视此规则可能导致这些 PR 被作为垃圾信息拒绝。
