@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "ru.sberbankmobile",
+            "url": "https://apps.sber.ru/apps/sberbank-online/",
+            "author": "Sberbank",
+            "name": "SberBank Online",
+            "additionalSettings": "{\"versionExtractionRegEx\": \"\\\"apkVersionName\\\":\\\"(\\\\d+\\\\.\\\\d+\\\\.\\\\d+)\\\"\", \"matchGroupToUse\": \"$1\", \"versionExtractWholePage\": true}"
+        }
+    ],
+    "icon": "https://apps.sber.ru/favicon/favicon.ico",
+    "categories": [
+        "finance"
+    ],
+    "description": {
+        "en": "SberBank Online is the official mobile banking app of Sberbank."
+    }
+}
