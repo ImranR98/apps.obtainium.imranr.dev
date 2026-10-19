@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.rosan.accounts",
+        "url": "https://github.com/iamr0s/AndroidAccounts",
+        "author": "R0S",
+        "name": "Android Accounts"
+    },
+    "icon": null,
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "View apps using the Accounts feature."
+    }
+}
