@@ -8,9 +8,10 @@
             "overrideSource": "Forgejo (Codeberg)"
         }
     ],
-    "icon": null,
+    "icon": "https://git.lonecloud.dev/lone-cloud/prism-android/raw/branch/master/fastlane/metadata/android/en-US/images/icon.png",
     "categories": [
-        "utilities"
+        "utilities",
+        "privacy_and_anonymity"
     ],
     "description": {
         "en": "UnifiedPush distributor for Android with support for a self-hosted Prism server."
