@@ -4,7 +4,7 @@
             "id": "com.rosan.dhizuku",
             "url": "https://github.com/iamr0s/Dhizuku",
             "author": "R0S",
-            "name": "Dhizuku"
+            "name": "Dhizuku",
             "additionalSettings": "{\"apkFilterRegEx\":\"\\\\.apk$\"}"
         }
     ],
