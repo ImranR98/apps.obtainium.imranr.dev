@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.physphil.android.unitconverterultimate",
+        "url": "https://f-droid.org/en/packages/com.physphil.android.unitconverterultimate/",
+        "author": "Phil Shadlyn",
+        "name": "Unit Converter Ultimate"
+    },
+    "icon": "https://raw.githubusercontent.com/physphil/UnitConverterUltimate/c07516b65fadb3891b133cb7a22a49529a096c89/app/src/main/ic_launcher-web.png",
+    "categories": [
+        "calculator"
+    ],
+    "description": {
+        "en": "A simple, lightweight, Material Design themed unit converter for Android."
+    }
+}
