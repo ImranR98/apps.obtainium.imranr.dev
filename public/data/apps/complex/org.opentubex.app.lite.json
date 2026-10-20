@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "org.opentubex.app.lite",
+            "url": "https://github.com/OpenTubeX/OpenTubeX",
+            "author": "OpenTubeX",
+            "name": "OpenTubeX Lite",
+            "additionalSettings": "{\"apkFilterRegEx\":\"-lite[.-]\",\"autoApkFilterByArch\":true}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/OpenTubeX/fdroid/main/metadata/org.opentubex.app/en-US/images/icon.png",
+    "categories": [
+        "video_player",
+        "privacy_and_anonymity"
+    ],
+    "description": {
+        "en": "A smaller build of OpenTubeX, an open-source, customizable, privacy-focused YouTube client, for devices with little storage. It leaves out yt-dlp and FFmpeg, so downloads and other yt-dlp features are unavailable. Installs alongside OpenTubeX.",
+        "de": "Eine kleinere Version von OpenTubeX, einem quelloffenen, anpassbaren YouTube-Client mit Fokus auf Datenschutz, für Geräte mit wenig Speicherplatz. Sie enthält weder yt-dlp noch FFmpeg, daher sind Downloads und andere yt-dlp-Funktionen nicht verfügbar. Lässt sich parallel zu OpenTubeX installieren."
+    }
+}
