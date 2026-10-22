@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "git.artdeell.mjlaunch",
+            "url": "https://github.com/MojoLauncher/MojoLauncher",
+            "author": "MojoLauncher",
+            "name": "MJLauncher Nightly",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"Nightly Builds\",\"useLatestAssetDateAsReleaseDate\":true,\"releaseDateAsVersion\":true,\"allowedSigningCertHashes\":\"29:37:FB:5A:22:16:A7:88:BA:44:F7:69:EB:5F:EE:01:C9:02:F9:2D:BF:68:06:9D:44:F9:CA:0A:CE:08:70:91\"}"
+        }
+    ],
+    "icon": "https://github.com/MojoLauncher/MojoLauncher/blob/v3_openjdk/app_mojo/src/main/assets/mojo.png?raw=true",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "A Minecraft: Java Edition launcher, based on PojavLauncher"
+    }
+}
