@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.limelight",
+            "url": "https://github.com/moonlight-stream/moonlight-android",
+            "author": "moonlight-stream",
+            "name": "Moonlight Game Streaming",
+            "additionalSettings": "{\"appAuthor\":\"Cameron Gutman\", \"versionExtractionRegEx\":\"/*v(\\\\d+\\\\.\\\\d+)*\", \"matchGroupToUse\":\"$0\", \"versionDetection\":true, \"apkFilterRegEx\":\"app-nonRoot-release.apk\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/moonlight-stream/moonlight-android/master/app/src/main/res/drawable/app_icon.png",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Open source client to stream games from Sunshine and NVIDIA GameStream hosts."
+    }
+}
