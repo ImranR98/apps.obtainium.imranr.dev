@@ -1,0 +1,36 @@
+{
+    "configs": [
+        {
+            "id": "app.vela",
+            "url": "https://github.com/PimpinPumpkin/Vela",
+            "author": "PimpinPumpkin",
+            "name": "Vela Maps",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false}"
+        },
+        {
+            "id": "app.vela",
+            "url": "https://github.com/PimpinPumpkin/Vela",
+            "author": "PimpinPumpkin",
+            "name": "Vela Maps (Nightly and Stable)",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\\\\d{4}(?: |$)\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"(?:Vela )?(.*[^-])(.*$)\",\"matchGroupToUse\":\"v$1 $2\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"Vela Maps\",\"appAuthor\":\"PimpinPumpkin\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Vela is a free, open-source Google Maps alternative for Android. The map is open data. Live traffic, hours and reviews come from Google when you ask, with no Google account, no Play Services and no Google code on your phone.\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}"
+        },
+        {
+            "id": "app.vela",
+            "url": "https://github.com/PimpinPumpkin/Vela",
+            "author": "PimpinPumpkin",
+            "name": "Vela Maps (Canary)",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"canary\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":true,\"trackOnly\":false,\"versionExtractionRegEx\":\"(?:Vela )?(.*?)-(.*$)\",\"matchGroupToUse\":\"v$1 ($2)\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"minimumUpdateAgeDays\":\"\",\"appName\":\"Vela Maps\",\"appAuthor\":\"PimpinPumpkin\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"allowedSigningCertHashes\":\"\",\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Vela is a free, open-source Google Maps alternative for Android. The map is open data. Live traffic, hours and reviews come from Google when you ask, with no Google account, no Play Services and no Google code on your phone.\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}"
+        }
+    ],
+    "icon": "https://velamaps.org/assets/logo.svg",
+    "categories": [
+        "maps_and_navigation",
+        "utilities"
+    ],
+    "description": {
+        "en": "Maps and turn-by-turn navigation for Android without Google Play Services: the best of open map data, with Google lookups by choice. Runs on degoogled phones and can avoid Flock cameras"
+    }
+}
