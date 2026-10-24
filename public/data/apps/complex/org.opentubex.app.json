@@ -1,10 +1,13 @@
 {
-    "config": {
-        "id": "org.opentubex.app",
-        "url": "https://github.com/OpenTubeX/OpenTubeX",
-        "author": "OpenTubeX",
-        "name": "OpenTubeX"
-    },
+    "configs": [
+        {
+            "id": "org.opentubex.app",
+            "url": "https://github.com/OpenTubeX/OpenTubeX",
+            "author": "OpenTubeX",
+            "name": "OpenTubeX",
+            "additionalSettings": "{\"apkFilterRegEx\":\"-lite[.-]\",\"invertAPKFilter\":true,\"autoApkFilterByArch\":true}"
+        }
+    ],
     "icon": "https://raw.githubusercontent.com/OpenTubeX/fdroid/main/metadata/org.opentubex.app/en-US/images/icon.png",
     "categories": [
         "video_player",
