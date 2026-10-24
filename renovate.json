@@ -91,14 +91,6 @@
       "groupName": "GitHub Actions (non-major)"
     },
     {
-      "description": "Major updates always stay manual",
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "automerge": false,
-      "platformAutomerge": false
-    },
-    {
       "description": "Auto-merge major updates after the full test gate passes",
       "matchUpdateTypes": [
         "major"
