@@ -1,0 +1,27 @@
+{
+    "configs": [
+        {
+            "id": "com.colourswift.cssecurity",
+            "url": "https://github.com/phsycologicalFudge/AvarionX-Android-Antivirus",
+            "author": "MinosPrime",
+            "name": "AvarionX Security",
+            "altLabel": "arm64-v8a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64-v8a\"}"
+        },
+        {
+            "id": "com.colourswift.cssecurity",
+            "url": "https://github.com/phsycologicalFudge/AvarionX-Android-Antivirus",
+            "author": "MinosPrime",
+            "name": "AvarionX Security",
+            "altLabel": "armeabi-v7a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"armeabi-v7a\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/phsycologicalFudge/AvarionX-Android-Antivirus/34f8913c25717053f0890ad1bdb4e9c783949de8/assets/icons/ic_launcher_ax.png",
+    "categories": [
+        "malwarescanner"
+    ],
+    "description": {
+        "en": "Android malware protection without ads, tracking, or locked core features."
+    }
+}

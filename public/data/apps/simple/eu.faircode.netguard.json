@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "eu.faircode.netguard",
+        "url": "https://github.com/M66B/NetGuard",
+        "author": "Marcel Bokhorst (M66B)",
+        "name": "NetGuard"
+    },
+    "icon": "https://f-droid.org/repo/eu.faircode.netguard/en-US/icon.png",
+    "categories": [
+        "firewall"
+    ],
+    "description": {
+        "en": "A simple way to block access to the internet per application"
+    }
+}

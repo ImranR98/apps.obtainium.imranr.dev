@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.rosan.dhizuku",
+            "url": "https://github.com/iamr0s/Dhizuku",
+            "author": "R0S",
+            "name": "Dhizuku",
+            "additionalSettings": "{\"apkFilterRegEx\":\"\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/com.rosan.dhizuku/en-US/icon.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "A tool that can share DeviceOwner permissions with other applications."
+    }
+}

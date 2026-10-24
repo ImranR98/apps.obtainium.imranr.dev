@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.wesaphzt.privatelock",
+        "url": "https://f-droid.org/en/packages/com.wesaphzt.privatelock/",
+        "author": "wesaphzt",
+        "name": "Private Lock"
+    },
+    "icon": "https://f-droid.org/repo/com.wesaphzt.privatelock/en-US/icon.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "Lock your phone from its movement force"
+    }
+}

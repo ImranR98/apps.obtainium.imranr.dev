@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.aistra.hail",
+        "url": "https://github.com/aistra0528/Hail",
+        "author": "艾星 Aistra",
+        "name": "Hail"
+    },
+    "icon": "https://f-droid.org/repo/com.aistra.hail/en-US/icon.png",
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "Disable / Hide / Suspend / Uninstall Android apps without root."
+    }
+}
