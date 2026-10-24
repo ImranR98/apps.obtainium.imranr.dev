@@ -33,14 +33,20 @@ npm run build
 
 ## Test
 
-The test suite validates every app config and smokes the built SSR server
-(pages, API, redirect handling, and static assets). Build first:
+`npm test` runs unit tests with V8 coverage and the SSR/data integration suite.
+The suite validates every app config and smokes the built SSR server (pages,
+API, redirect handling, and static assets). Build first:
 
 ```bash
 npm ci
 npm run build
 npm test
 ```
+
+Coverage is measured over `src/lib`, `src/middleware.ts`, and the API routes,
+with thresholds of 95% for statements, lines, functions, and branches. Astro
+pages and components are covered behaviorally by the SSR tests rather than
+instrumented line coverage.
 
 To build and smoke the production image locally:
 
@@ -65,9 +71,10 @@ digest as a workflow artifact. The old Docker Hub image
 ## Dependency updates
 
 Renovate config lives in `renovate.json`. It groups non-major updates and keeps
-majors separate. Auto-merge stays disabled until branch protection requires the
-`test` check: without a required status check, auto-merge could land untested
-changes.
+majors separate. Minor/patch/pin/digest updates use native GitHub auto-merge
+with a squash merge once the `test` check is required on `main`; major updates
+remain manual. Do not rely on auto-merge until branch protection requires
+`test` and GitHub auto-merge is enabled for the repository.
 
 ## Badge your own project
 

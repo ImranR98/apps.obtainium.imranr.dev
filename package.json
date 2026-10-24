@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "test": "node --test tests/*.test.mjs",
+    "test": "npm run test:unit && npm run test:site",
+    "test:unit": "vitest run --coverage",
+    "test:site": "node --test tests/*.test.mjs",
     "typecheck": "astro check",
     "validate": "node scripts/validate_icons.js",
     "validate:check": "node scripts/validate_icons.js --check",
@@ -24,6 +26,8 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@types/node": "^24.13.4",
-    "typescript": "^6.0.3"
+    "@vitest/coverage-v8": "^5.0.5",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.5"
   }
 }

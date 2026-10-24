@@ -44,11 +44,20 @@ jobs:
 
       - name: Reject skipped tests
         run: |
-          if grep -Eq '(^|[[:space:]])# SKIP' test-output.log; then
+          if grep -Eq '(^|[[:space:]])# SKIP|↓' test-output.log; then
             echo "::error::Tests were skipped; install the missing prerequisite or fix the test."
-            grep -E '(^|[[:space:]])# SKIP' test-output.log
+            grep -E '(^|[[:space:]])# SKIP|↓' test-output.log
             exit 1
           fi
+
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-${{ github.sha }}
+          path: coverage/
+          if-no-files-found: ignore
+          overwrite: true
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
