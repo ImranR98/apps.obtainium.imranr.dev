@@ -1,10 +1,8 @@
 import type { SimpleApp, ComplexApp } from './types'
 
 // The deployed container fetches our own Plausible instance through the local Docker
-// edge (see the obtainium_apps extra_hosts in the Infra repo), where the origin
-// certificate may be untrusted. Accept plain HTTP and unverified HTTPS for it.
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
-
+// edge (see the obtainium_apps extra_hosts in the Infra repo). The edge serves the
+// same Let's Encrypt certificate as the public host, so keep TLS verification on.
 const PLAUSIBLE_BASE_URL =
   process.env.PLAUSIBLE_API_BASE_URL || import.meta.env.PUBLIC_PLAUSIBLE_API_BASE_URL || 'https://plausible.imranr.dev'
 const PLAUSIBLE_SITE_ID = import.meta.env.PUBLIC_PLAUSIBLE_SITE_ID || 'apps.obtainium.imranr.dev'
