@@ -1,0 +1,21 @@
+{
+    "configs": [
+        {
+            "id": "com.jherkenhoff.qalculate",
+            "url": "https://github.com/jherkenhoff/qalculate-android",
+            "author": "jherkenhoff",
+            "name": "Qalculate!",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"autoApkFilterByArch\":true,\"allowedSigningCertHashes\":\"35:6F:99:80:E2:C8:2D:41:9F:4A:53:27:C6:F2:CD:D1:50:A3:D1:70:A2:00:3C:7D:3E:38:AB:1B:75:B2:D3:31\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/jherkenhoff/qalculate-android/refs/heads/main/graphics/logo.svg",
+    "categories": [
+        "calculator",
+        "finance",
+        "research_and_development",
+        "science_and_education"
+    ],
+    "description": {
+        "en": "A powerful and versatile multi-purpose calculator for the Android platform"
+    }
+}
