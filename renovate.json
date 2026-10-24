@@ -1,0 +1,49 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests",
+    ":configMigration",
+    "security:minimumReleaseAgeNpm"
+  ],
+  "osvVulnerabilityAlerts": true,
+  "dependencyDashboard": true,
+  "rangeStrategy": "replace",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["at any time"]
+  },
+  "automerge": false,
+  "separateMajorMinor": true,
+  "separateMultipleMajor": true,
+  "pre-commit": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "description": "Batch non-major npm updates; majors stay separate and manual",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "npm dependencies (non-major)"
+    },
+    {
+      "description": "Batch non-major pre-commit hook updates; majors stay separate and manual",
+      "matchManagers": ["pre-commit"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "pre-commit hooks (non-major)"
+    },
+    {
+      "description": "Group Docker base image pins and digest refreshes",
+      "matchManagers": ["dockerfile"],
+      "matchUpdateTypes": ["digest", "pinDigest"],
+      "groupName": "Docker base images"
+    },
+    {
+      "description": "Group non-major GitHub Actions updates; majors stay separate and manual",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "GitHub Actions (non-major)"
+    }
+  ]
+}

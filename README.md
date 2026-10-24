@@ -31,6 +31,44 @@ The dev server will be available at `http://localhost:8080`.
 npm run build
 ```
 
+## Test
+
+The test suite validates every app config and smokes the built SSR server
+(pages, API, redirect handling, and static assets). Build first:
+
+```bash
+npm ci
+npm run build
+npm test
+```
+
+To build and smoke the production image locally:
+
+```bash
+docker build -t apps.obtainium.imranr.dev .
+bash scripts/smoke-image.sh apps.obtainium.imranr.dev
+```
+
+## Container image
+
+CI publishes the production image to GHCR from `main`:
+
+```bash
+docker pull ghcr.io/imranr98/apps.obtainium.imranr.dev:latest
+docker run --rm -p 8080:8080 ghcr.io/imranr98/apps.obtainium.imranr.dev:latest
+```
+
+Images are tagged `latest` and `sha-<commit>`; each publish records the image
+digest as a workflow artifact. The old Docker Hub image
+`imranrdev/apps.obtainium.imranr.dev` is deprecated; pull the GHCR image instead.
+
+## Dependency updates
+
+Renovate config lives in `renovate.json`. It groups non-major updates and keeps
+majors separate. Auto-merge stays disabled until branch protection requires the
+`test` check: without a required status check, auto-merge could land untested
+changes.
+
 ## Badge your own project
 
 [![Get it on Obtainium](public/badge_obtainium.png)](BADGING.md)

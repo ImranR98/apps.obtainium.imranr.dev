@@ -13,6 +13,9 @@ COPY --from=builder /app/node_modules ./node_modules
 EXPOSE 8080
 CMD ["node", "dist/server/entry.mjs"]
 
-# docker build -t imranrdev/apps.obtainium.imranr.dev .
-# docker push imranrdev/apps.obtainium.imranr.dev
-# docker run --rm -d -p 8080:8080 --name apps.obtainium.imranr.dev imranrdev/apps.obtainium.imranr.dev
+# docker build -t ghcr.io/imranr98/apps.obtainium.imranr.dev .
+# docker push ghcr.io/imranr98/apps.obtainium.imranr.dev
+# docker run --rm -d -p 8080:8080 --name apps.obtainium.imranr.dev ghcr.io/imranr98/apps.obtainium.imranr.dev:latest
+#
+# CI publishes latest and sha-<commit> tags to this GHCR image; the old
+# imranrdev/apps.obtainium.imranr.dev Docker Hub image is deprecated.
