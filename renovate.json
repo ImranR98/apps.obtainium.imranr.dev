@@ -12,7 +12,9 @@
   "rangeStrategy": "replace",
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["at any time"]
+    "schedule": [
+      "at any time"
+    ]
   },
   "automerge": false,
   "separateMajorMinor": true,
@@ -23,7 +25,13 @@
   "packageRules": [
     {
       "description": "Auto-merge non-major updates only when the required test check passes",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "pinDigest"
+      ],
       "automerge": true,
       "platformAutomerge": true,
       "automergeType": "pr",
@@ -31,33 +39,75 @@
     },
     {
       "description": "Batch non-major npm updates; majors stay separate and manual",
-      "matchManagers": ["npm"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "pinDigest"
+      ],
       "groupName": "npm dependencies (non-major)"
     },
     {
       "description": "Batch non-major pre-commit hook updates; majors stay separate and manual",
-      "matchManagers": ["pre-commit"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
+      "matchManagers": [
+        "pre-commit"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "pinDigest"
+      ],
       "groupName": "pre-commit hooks (non-major)"
     },
     {
       "description": "Group Docker base image pins and digest refreshes",
-      "matchManagers": ["dockerfile"],
-      "matchUpdateTypes": ["digest", "pinDigest"],
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "matchUpdateTypes": [
+        "digest",
+        "pinDigest"
+      ],
       "groupName": "Docker base images"
     },
     {
       "description": "Group non-major GitHub Actions updates; majors stay separate and manual",
-      "matchManagers": ["github-actions"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "pinDigest"
+      ],
       "groupName": "GitHub Actions (non-major)"
     },
     {
       "description": "Major updates always stay manual",
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "automerge": false,
       "platformAutomerge": false
+    },
+    {
+      "description": "Auto-merge major updates after the full test gate passes",
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": true,
+      "platformAutomerge": true,
+      "automergeType": "pr",
+      "automergeStrategy": "squash",
+      "ignoreTests": false
     }
   ]
 }
