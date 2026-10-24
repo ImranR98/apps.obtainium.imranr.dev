@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "io.silentsuite.android",
+        "url": "https://github.com/silent-suite/silentsuite",
+        "author": "SilentSuite",
+        "name": "SilentSuite"
+    },
+    "icon": "https://raw.githubusercontent.com/silent-suite/silentsuite/2471374e02a81678e0296440821124a8dcfa4a07/android/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "synchronisation",
+        "privacy_and_anonymity"
+    ],
+    "description": {
+        "en": "Open-source, end-to-end encrypted sync for calendars, contacts and tasks that integrates with the Android system and your existing apps."
+    }
+}
