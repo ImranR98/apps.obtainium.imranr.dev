@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.astermail.android",
+            "url": "https://github.com/Aster-Privacy/Aster-Android",
+            "author": "Aster-Privacy",
+            "name": "Aster Mail",
+            "additionalSettings": "{\"apkFilterRegEx\": \"^Aster-Mail-[0-9.]+-full\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Aster-Privacy/Aster-Android/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "email_clients",
+        "privacy_and_anonymity"
+    ],
+    "description": {
+        "en": "End-to-end encrypted email with PGP, aliases and custom domains."
+    }
+}
