@@ -6,9 +6,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "test": "node --test tests/*.test.mjs",
     "typecheck": "astro check",
     "validate": "node scripts/validate_icons.js",
     "validate:check": "node scripts/validate_icons.js --check",
+    "smoke:image": "bash scripts/smoke-image.sh",
     "benchmark": "bash scripts/benchmark.sh",
     "astro": "astro"
   },
