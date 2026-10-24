@@ -30,7 +30,7 @@
             "author": "Gopeed Lab",
             "name": "Gopeed",
             "altLabel": "Universal",
-            "additionalSettings": "{\"apkFilterRegEx\":\"android\\.apk\"}"
+            "additionalSettings": "{\"apkFilterRegEx\":\"android\\\\.apk\"}"
         }
     ],
     "icon": "https://gopeed.com/images/logo.png",
