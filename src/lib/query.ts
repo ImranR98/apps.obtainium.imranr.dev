@@ -41,19 +41,25 @@ export const getAppConfigString = (
   return JSON.stringify(app.config)
 }
 
+const parsePositiveInt = (value: string | null, fallback: number): number => {
+  const parsed = Number.parseInt(value ?? '', 10)
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback
+}
+
 /**
  * Extract query parameters from request
  */
 export const extractAppParamsFromRequest = async (request: Request): Promise<QueryOptions> => {
   const url = new URL(request.url)
-  const page = Math.max(1, parseInt(url.searchParams.get('page') || '1'))
-  const limit = Math.min(200, Math.max(1, parseInt(url.searchParams.get('limit') || '50')))
+  const page = parsePositiveInt(url.searchParams.get('page'), 1)
+  const limit = Math.min(200, parsePositiveInt(url.searchParams.get('limit'), 50))
   const categories = (
     url.searchParams.get("categories")?.split(",") ||
     url.searchParams.getAll("category")
-  ).filter((c) => c.trim() !== "")
-  const categoryMode = (url.searchParams.get('categoryMode') as 'inclusive' | 'exclusive') || 'inclusive'
-  const type = (url.searchParams.get('type') as 'simple' | 'complex' | 'both') || 'both'
+  ).map((c) => c.trim()).filter((c) => c !== "")
+  const categoryMode = url.searchParams.get('categoryMode') === 'exclusive' ? 'exclusive' : 'inclusive'
+  const typeParam = url.searchParams.get('type')
+  const type = typeParam === 'simple' || typeParam === 'complex' ? typeParam : 'both'
   const q = url.searchParams.get('q') || ''
   const explicitSort = url.searchParams.get('sort')
   const sort = explicitSort === 'name' || explicitSort === 'popular' || explicitSort === 'relevance'

@@ -22,15 +22,23 @@
   },
   "packageRules": [
     {
+      "description": "Auto-merge non-major updates only when the required test check passes",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
+      "automerge": true,
+      "platformAutomerge": true,
+      "automergeType": "pr",
+      "automergeStrategy": "squash"
+    },
+    {
       "description": "Batch non-major npm updates; majors stay separate and manual",
       "matchManagers": ["npm"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
       "groupName": "npm dependencies (non-major)"
     },
     {
       "description": "Batch non-major pre-commit hook updates; majors stay separate and manual",
       "matchManagers": ["pre-commit"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
       "groupName": "pre-commit hooks (non-major)"
     },
     {
@@ -42,8 +50,14 @@
     {
       "description": "Group non-major GitHub Actions updates; majors stay separate and manual",
       "matchManagers": ["github-actions"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
       "groupName": "GitHub Actions (non-major)"
+    },
+    {
+      "description": "Major updates always stay manual",
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "platformAutomerge": false
     }
   ]
 }

@@ -67,6 +67,7 @@ function delay(ms) {
 
 const appFileCount = listJsonFiles(appsDir).length
 const searchableApp = findSearchableSimpleApp()
+const sampleAppFile = fs.readdirSync(path.join(appsDir, 'simple')).find((name) => name.endsWith('.json'))
 
 let appProcess
 let appLogs = ''
@@ -166,6 +167,11 @@ test('home page renders categories and the popular app from the stats API', asyn
   assert.ok(categoryLinks.length >= 5, `expected category links, found ${categoryLinks.length}`)
   assert.ok(statsRequests > 0, 'the home page should call the configured Plausible API')
   assert.ok(body.includes(searchableApp.name), 'the popular section should include the stub install count app')
+  assert.equal(response.headers.get('cache-control'), 'public, max-age=600, s-maxage=1800')
+
+  const german = await get('/?lang=de')
+  assert.equal(german.response.status, 200)
+  assert.match(german.body, /Spiele/)
 })
 
 test('apps page renders install links and the filter form', async () => {
@@ -182,6 +188,15 @@ test('apps page renders install links and the filter form', async () => {
   const filteredInstallLinks = filtered.body.match(/obtainium:\/\/app\//g) || []
   assert.ok(filteredInstallLinks.length >= 1, 'the category-filtered apps page should render app cards')
   assert.match(filtered.body, />Games</)
+
+  const paged = await get('/apps?sort=name&page=2')
+  assert.equal(paged.response.status, 200)
+  assert.match(paged.body, /aria-label="Jump to letter"/)
+  assert.ok((paged.body.match(/obtainium:\/\/app\//g) || []).length >= 20)
+
+  const searched = await get(`/apps?q=${encodeURIComponent(searchableApp.name)}&limit=200`)
+  assert.equal(searched.response.status, 200)
+  assert.ok(searched.body.includes(searchableApp.name))
 })
 
 test('api paginates, filters, searches, and caps the page size', async () => {
@@ -205,6 +220,14 @@ test('api paginates, filters, searches, and caps the page size', async () => {
   const search = await getJson(`/api/apps?q=${encodeURIComponent(searchableApp.name)}&limit=200`)
   assert.ok(search.pagination.total >= 1)
   assert.ok(search.apps.some((app) => app.config?.id === searchableApp.id || app.configs?.some((c) => c.id === searchableApp.id)))
+
+  const invalid = await getJson('/api/apps?page=abc&limit=abc&type=invalid&categoryMode=invalid')
+  assert.equal(invalid.pagination.page, 1)
+  assert.equal(invalid.pagination.limit, 50)
+  assert.equal(invalid.pagination.total, appFileCount)
+
+  const trimmed = await getJson('/api/apps?categories=%20games%20,finance&limit=200')
+  assert.ok(trimmed.apps.every((app) => app.categories.includes('games') || app.categories.includes('finance')))
 })
 
 test('redirect page accepts valid Obtainium links and rejects other prefixes', async () => {
@@ -228,6 +251,20 @@ test('redirect page accepts valid Obtainium links and rejects other prefixes', a
   const invalid = await get('/redirect?r=https%3A%2F%2Fexample.com')
   assert.equal(invalid.response.status, 200)
   assert.ok(invalid.body.includes('Invalid URL. Redirect should start with'))
+
+  const missing = await get('/redirect')
+  assert.equal(missing.response.status, 200)
+  assert.ok(missing.body.includes('No redirect parameter provided.'))
+
+  const invalidJson = await get(`/redirect?r=${encodeURIComponent('obtainium://app/%7Bbad')}`)
+  assert.equal(invalidJson.response.status, 200)
+  assert.ok(invalidJson.body.includes('Invalid URL. Valid app URL could not be found.'))
+
+  const invalidProtocol = await get(
+    `/redirect?r=${encodeURIComponent('obtainium://add/javascript:alert(1)')}`,
+  )
+  assert.equal(invalidProtocol.response.status, 200)
+  assert.ok(invalidProtocol.body.includes('Invalid URL. Valid app URL could not be found.'))
 })
 
 test('static assets and the .html rewrite are served', async () => {
@@ -247,6 +284,17 @@ test('static assets and the .html rewrite are served', async () => {
 
   const categories = await getJson('/data/categories.json')
   assert.ok(Object.hasOwn(categories, 'games'))
+
+  const appData = await getJson(`/data/apps/simple/${sampleAppFile}`)
+  assert.ok(appData.config || appData.configs)
+
+  const badge = await fetch(`${baseUrl}/badge_obtainium.png`)
+  assert.equal(badge.status, 200)
+  assert.match(badge.headers.get('content-type') || '', /image\/png/)
+
+  const ads = await get('/ads.txt')
+  assert.equal(ads.response.status, 200)
+  assert.match(ads.body, /google\.com/)
 
   const rewritten = await get('/apps.html')
   assert.equal(rewritten.response.status, 200)
