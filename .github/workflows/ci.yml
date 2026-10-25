@@ -52,7 +52,7 @@ jobs:
 
       - name: Upload coverage
         if: always()
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: coverage-${{ github.sha }}
           path: coverage/
@@ -154,7 +154,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload digest artifact
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: image-digest-${{ github.sha }}
           path: image-digest.txt
