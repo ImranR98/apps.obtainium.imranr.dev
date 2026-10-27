@@ -4,8 +4,8 @@
     "config:recommended",
     "docker:pinDigests",
     "helpers:pinGitHubActionDigests",
-    ":configMigration",
-    "security:minimumReleaseAgeNpm"
+    "security:minimumReleaseAgeNpm",
+    ":configMigration"
   ],
   "osvVulnerabilityAlerts": true,
   "dependencyDashboard": true,
@@ -16,27 +16,12 @@
       "at any time"
     ]
   },
-  "automerge": false,
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "pre-commit": {
     "enabled": true
   },
   "packageRules": [
-    {
-      "description": "Auto-merge non-major updates only when the required test check passes",
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest",
-        "pinDigest"
-      ],
-      "automerge": true,
-      "platformAutomerge": true,
-      "automergeType": "pr",
-      "automergeStrategy": "squash"
-    },
     {
       "description": "Batch non-major npm updates; majors stay separate and manual",
       "matchManagers": [
@@ -89,17 +74,6 @@
         "pinDigest"
       ],
       "groupName": "GitHub Actions (non-major)"
-    },
-    {
-      "description": "Auto-merge major updates after the full test gate passes",
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "automerge": true,
-      "platformAutomerge": true,
-      "automergeType": "pr",
-      "automergeStrategy": "squash",
-      "ignoreTests": false
     }
   ]
 }
