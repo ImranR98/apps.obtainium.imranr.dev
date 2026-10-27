@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "logo.com.mbanking",
+            "url": "https://www.psbank.ru/personal/remote/inner_apps",
+            "author": "PSB",
+            "name": "PSB",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\": \"ETag\"}"
+        }
+    ],
+    "icon": "https://www.psbank.ru/assets/static/favicons/psb_1_2/apple-touch-icon-152x152.png",
+    "categories": [
+        "finance"
+    ],
+    "description": {
+        "en": "PSB is the official mobile banking app of Promsvyazbank."
+    }
+}
