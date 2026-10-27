@@ -85,5 +85,6 @@
       ],
       "enabled": false
     }
-  ]
+  ],
+  "minimumReleaseAge": "3 days"
 }
