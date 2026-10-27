@@ -74,6 +74,16 @@
         "pinDigest"
       ],
       "groupName": "GitHub Actions (non-major)"
+    },
+    {
+      "description": "Hold TypeScript 7 until astro check supports it (peer ^5 || ^6)",
+      "matchPackageNames": [
+        "typescript"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "enabled": false
     }
   ]
 }
