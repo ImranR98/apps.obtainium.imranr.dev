@@ -3,21 +3,21 @@
         {
             "id": "com.synology.bee.drive",
             "url": "https://archive.synology.com/download/Mobile/Android-BeeStationDrive",
-            "author": "archive.synology.com",
+            "author": "Synology",
             "name": "Synology Bee Station Drive",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"ww\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Synology Bee Station Drive\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
-            "overrideSource": null,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"ww\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Synology Bee Station Drive\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}",
+            "overrideSource": "HTML",
             "altLabel": "ww"
         },
         {
             "id": "com.synology.bee.drive",
             "url": "https://archive.synology.com/download/Mobile/Android-BeeStationDrive",
-            "author": "archive.synology.com",
+            "author": "Synology",
             "name": "Synology Bee Station Drive",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"cn\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Synology Bee Station Drive\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
-            "overrideSource": null,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"cn\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Synology Bee Station Drive\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}",
+            "overrideSource": "HTML",
             "altLabel": "cn"
         }
     ],
@@ -27,6 +27,9 @@
         "utilities"
     ],
     "description": {
-        "en": "Companion app for accessing a Synology BeeStation."
+        "en": "Companion app for accessing a Synology BeeStation.",
+        "de": "Begleit-App für den Zugriff auf eine Synology BeeStation.",
+        "es": "Aplicación complementaria para acceder a Synology BeeStation.",
+        "ru": "Приложение-компаньон для доступа к Synology BeeStation."
     }
 }
