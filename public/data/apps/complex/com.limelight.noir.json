@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.limelight.noir",
+            "url": "https://github.com/ClassicOldSong/moonlight-android",
+            "author": "ClassicOldSong",
+            "name": "Artemis Game Streaming",
+            "additionalSettings": "{\"includePrereleases\":true}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/ClassicOldSong/moonlight-android/moonlight-noir/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Moonlight fork for Apollo/Sunshine hosts, supports client auto resolution matching on Apollo."
+    }
+}
