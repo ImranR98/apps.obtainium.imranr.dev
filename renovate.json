@@ -4,8 +4,8 @@
     "config:recommended",
     "docker:pinDigests",
     "helpers:pinGitHubActionDigests",
-    ":configMigration",
-    "security:minimumReleaseAgeNpm"
+    "security:minimumReleaseAgeNpm",
+    ":configMigration"
   ],
   "osvVulnerabilityAlerts": true,
   "dependencyDashboard": true,
@@ -16,27 +16,12 @@
       "at any time"
     ]
   },
-  "automerge": false,
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "pre-commit": {
     "enabled": true
   },
   "packageRules": [
-    {
-      "description": "Auto-merge non-major updates only when the required test check passes",
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest",
-        "pinDigest"
-      ],
-      "automerge": true,
-      "platformAutomerge": true,
-      "automergeType": "pr",
-      "automergeStrategy": "squash"
-    },
     {
       "description": "Batch non-major npm updates; majors stay separate and manual",
       "matchManagers": [
@@ -91,23 +76,15 @@
       "groupName": "GitHub Actions (non-major)"
     },
     {
-      "description": "Major updates always stay manual",
+      "description": "Hold TypeScript 7 until astro check supports it (peer ^5 || ^6)",
+      "matchPackageNames": [
+        "typescript"
+      ],
       "matchUpdateTypes": [
         "major"
       ],
-      "automerge": false,
-      "platformAutomerge": false
-    },
-    {
-      "description": "Auto-merge major updates after the full test gate passes",
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "automerge": true,
-      "platformAutomerge": true,
-      "automergeType": "pr",
-      "automergeStrategy": "squash",
-      "ignoreTests": false
+      "enabled": false
     }
-  ]
+  ],
+  "minimumReleaseAge": "3 days"
 }
