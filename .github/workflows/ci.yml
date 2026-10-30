@@ -3,6 +3,13 @@ name: CI
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - 'docs/**'
+      - '.github/**'
+      - 'renovate.json'
+      - '.gitignore'
+      - 'LICENSE'
   pull_request:
   workflow_dispatch:
 
