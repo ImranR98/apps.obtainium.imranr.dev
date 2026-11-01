@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "sh.voicestudio.mobile",
+        "url": "https://github.com/debpalash/VoiceStudio",
+        "author": "debpalash",
+        "name": "VoiceStudio"
+    },
+    "icon": "https://raw.githubusercontent.com/debpalash/VoiceStudio/main/store/google-play/icon-512.png",
+    "categories": [
+        "text-to-speech",
+        "recorder"
+    ],
+    "description": {
+        "en": "On-device voice AI for speech generation, voice cloning, transcription and dubbing. Compatible models work offline after download, with optional pairing to your own VoiceStudio computer."
+    }
+}
