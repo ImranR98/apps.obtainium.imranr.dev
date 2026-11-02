@@ -11,6 +11,6 @@
         "recorder"
     ],
     "description": {
-        "en": "On-device voice AI for speech generation, voice cloning, transcription and dubbing. Compatible models work offline after download, with optional pairing to your own VoiceStudio computer."
+        "en": "Open-source AI voice studio for Android: generate speech, clone voices, transcribe recordings and dub audio or video. Compatible models run on your device and work offline after download. Optionally pair with your own VoiceStudio computer for additional engines. Requires Android 10 or later; model availability and memory requirements vary by device."
     }
 }
