@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "sh.voicestudio.mobile",
+        "url": "https://github.com/debpalash/VoiceStudio",
+        "author": "debpalash",
+        "name": "VoiceStudio"
+    },
+    "icon": "https://raw.githubusercontent.com/debpalash/VoiceStudio/main/store/google-play/icon-512.png",
+    "categories": [
+        "text-to-speech",
+        "recorder"
+    ],
+    "description": {
+        "en": "Open-source AI voice studio for Android: generate speech, clone voices, transcribe recordings and dub audio or video. Compatible models run on your device and work offline after download. Optionally pair with your own VoiceStudio computer for additional engines. Requires Android 10 or later; model availability and memory requirements vary by device."
+    }
+}
