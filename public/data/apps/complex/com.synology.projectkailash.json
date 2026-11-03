@@ -21,13 +21,15 @@
             "altLabel": "cn"
         }
     ],
-    "icon": "https://www.synology.com/img/dsm/photos/icon_photos@2x.png",
+    "icon": "https://play-lh.googleusercontent.com/Bm0lC0WkACK4i1B5rqqMhtteO_sxvLfVWA4P3V3la4QkYcJUEdoZ0SzhxJBX_4LDMga-wu0ik2MJYIonWG9GbnM=s512",
     "categories": [
         "synchronisation",
         "image_viewer_and_gallery"
     ],
     "description": {
-        "en": "A flexible and comprehensive management tool that allows photo backup and browsing by chronological order or folder structure.",
-        "de": "Ein flexibles und umfassendes Verwaltungstool, das die Sicherung von Fotos und das Durchsuchen nach chronologischer Reihenfolge oder Ordnerstruktur ermöglicht."
+        "en": "A flexible management tool for photo backup and browsing by chronological order or folder structure.",
+        "de": "Ein flexibles Verwaltungstool für die Sicherung und das Durchsuchen von Fotos — nach chronologischer Reihenfolge oder Ordnerstruktur.",
+        "es": "Una herramienta flexible de gestión para la copia de seguridad y exploración de fotos en orden cronológico o por estructura de carpetas.",
+        "ru": "Гибкий инструмент для резервного копирования и просмотра фотографий в хронологическом порядке или по структуре папок."
     }
 }

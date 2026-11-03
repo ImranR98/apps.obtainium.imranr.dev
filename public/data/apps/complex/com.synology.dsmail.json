@@ -1,0 +1,35 @@
+{
+    "configs": [
+        {
+            "id": "com.synology.dsmail",
+            "url": "https://archive.synology.com/download/Mobile/Android-DSmail",
+            "author": "Synology",
+            "name": "Synology MailPlus",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"ww\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Synology MailPlus\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}",
+            "overrideSource": "HTML",
+            "altLabel": "ww"
+        },
+        {
+            "id": "com.synology.dsmail",
+            "url": "https://archive.synology.com/download/Mobile/Android-DSmail",
+            "author": "Synology",
+            "name": "Synology MailPlus",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"cn\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Synology MailPlus\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}",
+            "overrideSource": "HTML",
+            "altLabel": "cn"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/uRy4WlD7HmlNqHd5mBeDE4Fsq61n1UUjdzoRhS3jRfavwJvTS0H7GMHKulBbt0YTNRt8E1OpkPw6VHQfq57b4GM=s512",
+    "categories": [
+        "email_clients",
+        "synchronisation"
+    ],
+    "description": {
+        "en": "Secure mail client for the Synology MailPlus server.",
+        "de": "Sicherer E-Mail-Client für den Synology MailPlus-Server.",
+        "es": "Cliente de correo seguro para el servidor Synology MailPlus.",
+        "ru": "Защищённый почтовый клиент для сервера Synology MailPlus."
+    }
+}

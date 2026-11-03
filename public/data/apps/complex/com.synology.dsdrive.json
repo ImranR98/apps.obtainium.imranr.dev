@@ -27,6 +27,8 @@
     ],
     "description": {
         "en": "Access and manage files in your Synology Drive on the go.",
-        "de": "Greifen Sie von unterwegs auf Dateien in Ihrem Synology Drive zu und verwalten Sie sie."
+        "de": "Greifen Sie unterwegs auf Dateien in Ihrem Synology Drive zu und verwalten Sie diese.",
+        "es": "Accede y gestiona los archivos de tu Synology Drive en cualquier lugar.",
+        "ru": "Доступ к файлам в Synology Drive и управление ими на ходу."
     }
 }

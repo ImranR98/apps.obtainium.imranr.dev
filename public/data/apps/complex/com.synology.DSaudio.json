@@ -3,30 +3,33 @@
         {
             "id": "com.synology.DSaudio",
             "url": "https://archive.synology.com/download/Mobile/Android-DSaudio",
-            "author": "archive.synology.com",
-            "name": "DS Audio",
+            "author": "Synology",
+            "name": "Synology DS Audio",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"ww\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"DS Audio\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
-            "overrideSource": null,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"ww\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Synology DS Audio\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}",
+            "overrideSource": "HTML",
             "altLabel": "ww"
         },
         {
             "id": "com.synology.DSaudio",
             "url": "https://archive.synology.com/download/Mobile/Android-DSaudio",
-            "author": "archive.synology.com",
-            "name": "DS Audio",
+            "author": "Synology",
+            "name": "Synology DS Audio",
             "preferredApkIndex": 0,
-            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"cn\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"DS Audio\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
-            "overrideSource": null,
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+-[0-9]+\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"cn\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Synology DS Audio\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}",
+            "overrideSource": "HTML",
             "altLabel": "cn"
         }
     ],
-    "icon": "https://www.synology.com/img/dsm/audio_station/icon72@2x.png",
+    "icon": "https://play-lh.googleusercontent.com/PK25Hh2jnYcJhVZFDhXBM6Py2KjVOANYGGYmJAwPDx5nP1jdPag_vfcQjkFlFW683XavcOgW7cUYy9Y0-k82=s512",
     "categories": [
         "music",
         "synchronisation"
     ],
     "description": {
-        "en": "Stream music from your Synology NAS."
+        "en": "Stream music from your Synology NAS.",
+        "de": "Streamen Sie Musik von Ihrer Synology NAS.",
+        "es": "Reproduce música desde tu NAS Synology.",
+        "ru": "Потоковое воспроизведение музыки с Synology NAS."
     }
 }
