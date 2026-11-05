@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "org.jarsi.devicewatch",
+        "url": "https://github.com/jrs8205/Device-Watch",
+        "author": "jrs8205",
+        "name": "Device-Watch"
+    },
+    "icon": "https://raw.githubusercontent.com/jrs8205/Device-Watch/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "system",
+        "battery"
+    ],
+    "description": {
+        "en": "Offline device monitor: home-screen widgets, Quick Settings tiles, a floating figure card, per-app usage insights, battery history and a charging screensaver."
+    }
+}
