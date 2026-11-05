@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "app.yokan",
+        "url": "https://github.com/prabarxx/Yokan",
+        "author": "prabarxx",
+        "name": "Yokan"
+    },
+    "icon": "https://raw.githubusercontent.com/prabarxx/Yokan/main/.github/assets/logo.png",
+    "categories": [
+        "video"
+    ],
+    "description": {
+        "en": "Native Android anime streaming and BitTorrent P2P player with instant SUB/LAT language switching and AniList catalog.",
+        "es": "Cliente y reproductor nativo de anime para Android con streaming directo 1080p, selector SUB/LAT en vivo y soporte BitTorrent P2P."
+    }
+}
