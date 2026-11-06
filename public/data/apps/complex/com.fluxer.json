@@ -1,0 +1,75 @@
+{
+    "configs": [
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "arm64-v8a (beta, FCM)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"^app-arm64-v8a-betafcm-release\\\\.apk$\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "armeabi-v7a (beta, FCM)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"^app-armeabi-v7a-betafcm-release\\\\.apk$\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "x86_64 (beta, FCM)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"^app-x86_64-betafcm-release\\\\.apk$\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "universal (beta, FCM)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"^app-betafcm-release\\\\.apk$\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "arm64-v8a (beta, OSS)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"^app-arm64-v8a-betaoss-release\\\\.apk$\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "armeabi-v7a (beta, OSS)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"^app-armeabi-v7a-betaoss-release\\\\.apk$\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "x86_64 (beta, OSS)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"^app-x86_64-betaoss-release\\\\.apk$\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "universal (beta, OSS)",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"^app-betaoss-release\\\\.apk$\",\"autoApkFilterByArch\":true}"
+        }
+    ],
+    "icon": "https://fluxer.com/static/img/web-apple-touch-icon.d11b564b6ae672d1.png",
+    "categories": [
+        "community_clients"
+    ],
+    "description": {
+        "en": "Official Fluxer Mobile client built on the Flutter framework."
+    }
+}
