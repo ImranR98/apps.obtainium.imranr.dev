@@ -6,7 +6,7 @@
             "author": "R0S",
             "name": "Dhizuku",
             "altLabel": "F-Droid/IzzyOnDroid",
-            "additionalSettings": "{\"apkFilterRegEx\":\"^Dhizuku-v[0-9.]+\\\\.apk$\"}"
+            "additionalSettings": "{\"apkFilterRegEx\":\"^Dhizuku.v[0-9.]+\\\\.apk$\"}"
         },
         {
             "id": "com.rosan.dhizuku",
@@ -14,7 +14,7 @@
             "author": "R0S",
             "name": "Dhizuku",
             "altLabel": "testkey",
-            "additionalSettings": "{\"apkFilterRegEx\":\"^Dhizuku-v[0-9.]+-testkey\\\\.apk$\"}"
+            "additionalSettings": "{\"apkFilterRegEx\":\"^Dhizuku.v[0-9.]+-testkey\\\\.apk$\"}"
         }
     ],
     "icon": "https://f-droid.org/repo/com.rosan.dhizuku/en-US/icon.png",
