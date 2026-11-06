@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "com.shazarr.app",
+        "url": "https://github.com/cstaelen/shazarr",
+        "author": "cstaelen",
+        "name": "Shazarr"
+    },
+    "icon": "https://raw.githubusercontent.com/cstaelen/shazarr/refs/heads/main/resources/icon.png",
+    "categories": [
+        "utilities",
+        "music"
+    ],
+    "description": {
+        "en": "Unofficial Shazam mobile app web UI."
+    }
+}
