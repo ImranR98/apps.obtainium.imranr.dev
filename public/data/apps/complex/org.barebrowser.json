@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "org.barebrowser",
+            "url": "https://github.com/BareBrowser/bare-browser",
+            "author": "BareBrowser",
+            "name": "Bare Browser",
+            "additionalSettings": "{\"includePrereleases\":true}"
+        }
+    ],
+    "icon": "https://avatars.githubusercontent.com/u/322376901?v=4",
+    "categories": [
+        "browser",
+        "privacy_and_anonymity"
+    ],
+    "description": {
+        "en": "De-Googled Chromium-based browser with extension support, uBlock Origin and background video playback."
+    }
+}
