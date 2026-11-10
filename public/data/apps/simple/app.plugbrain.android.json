@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "app.plugbrain.android",
+        "url": "https://github.com/msbelaid/PlugBrain",
+        "author": "msbelaid",
+        "name": "PlugBrain"
+    },
+    "icon": "https://raw.githubusercontent.com/msbelaid/PlugBrain/master/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Blocks distracting apps behind a quick math challenge that gets harder the more you use them. Open source, no ads, no tracking, works offline."
+    }
+}
