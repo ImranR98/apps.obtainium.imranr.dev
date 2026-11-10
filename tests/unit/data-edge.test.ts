@@ -77,7 +77,7 @@ describe('data loading edge cases', () => {
       const contents = files.get(String(target))
       if (contents === undefined) throw new Error(`unexpected read: ${String(target)}`)
       return contents
-    }) as typeof fs.readFileSync)
+    }) as unknown as typeof fs.readFileSync)
 
     const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {})
     const apps = getApps()
