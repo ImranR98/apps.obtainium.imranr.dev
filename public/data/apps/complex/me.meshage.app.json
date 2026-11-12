@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "me.meshage.app",
+            "url": "https://meshage.me",
+            "author": "Meshage",
+            "name": "Meshage",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"/apk/arm64/current-version\\\\.mu$\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"/apk/arm64/meshage\\\\.apk$\",\"versionExtractWholePage\":true,\"versionExtractionRegEx\":\"#version=(\\\\d+(?:\\\\.\\\\d+)+)\",\"matchGroupToUse\":\"1\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/RHVYWP5Y7uxY9hmLByAF2py_qyik5JVfITV57cueyLnuoKTObTBuD-fFc7fzvkNheNPHX4_DbR6hFdsRvfTMQA=w480-h960-rw",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Meshage is a multi-mesh mobile-first messaging app supporting both MeshCore and Reticulum."
+    }
+}
