@@ -1,0 +1,18 @@
+{
+  "configs": [
+    {
+      "id": "com.honerai.app",
+      "url": "https://github.com/XONER4/honor-pk-agent-ios",
+      "author": "XONER",
+      "name": "Honer AI",
+      "additionalSettings": "{\"filterReleaseTitlesByRegEx\":\"^(?:Honer AI [0-9]+(?:\\\\.[0-9]+)*|android-v[0-9]+(?:\\\\.[0-9]+)*-[0-9]+)$\",\"apkFilterRegEx\":\"^honer-ai-[0-9]+(?:\\\\.[0-9]+)*\\\\.apk$\",\"versionExtractionRegEx\":\"[0-9]+\\\\.[0-9]+\\\\.[0-9]+\"}"
+    }
+  ],
+  "categories": [
+    "miscellaneous"
+  ],
+  "description": {
+    "en": "Proprietary Android AI assistant with Russian and English interfaces, chat, web search, image analysis and voice input. Requires an online service.",
+    "ru": "Проприетарный ИИ-помощник для Android с русским и английским интерфейсом, чатом, веб-поиском, анализом изображений и голосовым вводом. Требуется подключение к онлайн-сервису."
+  }
+}
