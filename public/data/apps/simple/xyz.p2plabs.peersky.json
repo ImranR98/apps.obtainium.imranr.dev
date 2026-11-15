@@ -1,0 +1,17 @@
+{
+    "config": {
+        "id": "xyz.p2plabs.peersky",
+        "url": "https://github.com/p2plabsxyz/peersky-mobile",
+        "author": "P2P Labs",
+        "name": "PeerSky"
+    },
+    "icon": "https://peersky.p2plabs.xyz/images/logo.png",
+    "categories": [
+        "browser",
+        "messaging",
+        "file_sharing"
+    ],
+    "description": {
+        "en": "The peer-to-peer web in your pocket. Chat, write notes together, play music and share files straight between devices. No account, no servers, no tracking."
+    }
+}
