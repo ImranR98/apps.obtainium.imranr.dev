@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "br.yoofree.app",
+        "url": "https://github.com/Wennington123/YooFree",
+        "author": "Wennington123",
+        "name": "YooFree"
+    },
+    "icon": "https://raw.githubusercontent.com/Wennington123/YooFree/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "camera"
+    ],
+    "description": {
+        "en": "Open, ad-free client for Yoosee/GW (Gwell) IP cameras: live HEVC/H.265 video, PTZ, finger-anchored zoom and local MP4 recording — talking directly to the camera on your Wi-Fi, no cloud and no account."
+    }
+}
