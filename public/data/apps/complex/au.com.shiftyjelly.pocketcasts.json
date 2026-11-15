@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "au.com.shiftyjelly.pocketcasts",
+            "url": "https://github.com/Automattic/pocket-casts-android",
+            "author": "Automattic",
+            "name": "Pocket Casts",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^app-\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/9VEAFZhJZgBzOnGXhSLqxwGt_11eQ4KBczz5UpaRGWK95z1isxCv4Xpp1T4gtCAtK6OlSBILVcbM9XaWaTK05hQ",
+    "categories": [
+        "podcast_and_audio_book_player"
+    ],
+    "description": {
+        "en": "The official Pocket Casts podcast player. Releases also include automotive, TV and Wear OS builds; this config installs the phone and tablet app."
+    }
+}
