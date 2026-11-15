@@ -1,0 +1,16 @@
+{
+    "config": {
+        "id": "com.destructo.botox",
+        "url": "https://github.com/devshield-tech/botox-android",
+        "author": "devshield-tech",
+        "name": "CleanSlate"
+    },
+    "icon": "https://raw.githubusercontent.com/devshield-tech/botox-android/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "utilities",
+        "privacy_and_anonymity"
+    ],
+    "description": {
+        "en": "Remotely wipe your Android device if it is lost or stolen."
+    }
+}
