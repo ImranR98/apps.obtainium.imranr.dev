@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "link.hector.freellee",
+        "url": "https://github.com/hsanjuan/freellee",
+        "author": "hector",
+        "name": "Freellee"
+    },
+    "icon": "https://raw.githubusercontent.com/hsanjuan/freellee/master/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "Android app for pairing with Ollee Smart Watch boards and syncing step/health data to Android Health Connect."
+    }
+}
