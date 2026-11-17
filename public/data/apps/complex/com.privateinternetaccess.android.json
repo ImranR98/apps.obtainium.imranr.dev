@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.privateinternetaccess.android",
+            "url": "https://www.privateinternetaccess.com/installer/download_installer_android",
+            "author": "PIA Private Internet Access, Inc.",
+            "name": "Private Internet Access VPN",
+            "additionalSettings": "{\"matchLinksOutsideATags\":true,\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"\\\\/pia-android-(\\\\d+\\\\.\\\\d+\\\\.\\\\d+-\\\\d+)\\\\.apk$\",\"matchGroupToUse\":\"$1\"}"
+        }
+    ],
+    "icon": "https://assets-cms.privateinternetaccess.com/photos/shares/dashboard/pia.svg",
+    "categories": [
+        "vpn"
+    ],
+    "description": {
+        "en": "PIA VPN is a top-rated VPN service – with ultra-fast speeds, worldwide streaming servers, and 100% open-source software. Try PIA risk free for 30 days."
+    }
+}
