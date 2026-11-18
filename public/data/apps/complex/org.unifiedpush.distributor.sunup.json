@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "org.unifiedpush.distributor.sunup",
+            "url": "https://codeberg.org/Sunup/android",
+            "author": "UnifiedPush, S1m",
+            "name": "Sunup",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^sunup\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://codeberg.org/Sunup/android/raw/commit/b84dfd60e5ada183a1b4249428a73984631750f6/app/src/main/ic_launcher-playstore.png",
+    "categories": [
+        "miscellaneous"
+    ],
+    "description": {
+        "en": "UnifiedPush distributor using Mozilla's push server"
+    }
+}
