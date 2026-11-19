@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "app.gamenative",
+        "url": "https://github.com/utkarshdalal/GameNative",
+        "author": "utkarshdalal",
+        "name": "GameNative"
+    },
+    "icon": "https://play-lh.googleusercontent.com/juPeC8_BQgHM5MoSqM6B7F2czjFqWMjQH7uUGT2taEsjh3IfNwGufzRBmx13ANJO6SrTCAXLdBnr8yrPsYsMaA=w480-h960",
+    "categories": [
+        "games"
+    ],
+    "description": {
+        "en": "Native PC gaming with Steam, Epic, GOG and Amazon integrations on Android"
+    }
+}
