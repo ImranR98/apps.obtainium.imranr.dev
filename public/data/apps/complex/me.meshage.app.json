@@ -2,10 +2,11 @@
     "configs": [
         {
             "id": "me.meshage.app",
-            "url": "https://meshage.me",
+            "url": "https://github.com/slack-space/meshage-community",
             "author": "Meshage",
             "name": "Meshage",
-            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"/apk/arm64/current-version\\\\.mu$\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false}],\"customLinkFilterRegex\":\"/apk/arm64/meshage\\\\.apk$\",\"versionExtractWholePage\":true,\"versionExtractionRegEx\":\"#version_code=(\\\\d+)\",\"matchGroupToUse\":\"1\",\"useVersionCodeAsOSVersion\":true}"
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"includeDrafts\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"invertReleaseTitlesFilter\":false,\"filterReleaseNotesByRegEx\":\"\",\"invertReleaseNotesFilter\":false,\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Meshage\",\"appAuthor\":\"Meshage\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}"
         }
     ],
     "icon": "https://play-lh.googleusercontent.com/RHVYWP5Y7uxY9hmLByAF2py_qyik5JVfITV57cueyLnuoKTObTBuD-fFc7fzvkNheNPHX4_DbR6hFdsRvfTMQA=w480-h960-rw",
