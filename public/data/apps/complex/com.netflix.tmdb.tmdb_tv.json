@@ -1,0 +1,22 @@
+{
+    "configs": [
+        {
+            "id": "com.netflix.tmdb.tmdb_tv",
+            "url": "https://movies.smurfiez.com/downloads.html",
+            "author": "SmurfTV",
+            "name": "SmurfTV",
+            "preferredApkIndex": 0,
+            "overrideSource": "HTML",
+            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"SmurfTV-android\\\\.apk$\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":true,\"requestHeader\":[],\"trackOnly\":false,\"versionExtractionRegEx\":\"android-version-label\\\">v([0-9]+\\\\.[0-9]+\\\\.[0-9]+)\",\"matchGroupToUse\":\"$1\",\"versionDetection\":true,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"SmurfTV\",\"appAuthor\":\"SmurfTV\",\"about\":\"Cinematic 10-foot Android TV & Mobile streaming discovery app for Movies, TV, Anime, Asian Drama, Live Sports & Live TV.\"}"
+        }
+    ],
+    "icon": "https://movies.smurfiez.com/assets/app_icon_512.png",
+    "categories": [
+        "video_player",
+        "anime_and_manga",
+        "media_frontends"
+    ],
+    "description": {
+        "en": "Cinematic 10-foot Android TV and mobile touch streaming discovery app for Movies, TV Series, AniList Anime, Asian Drama, Live Sports, and Live TV."
+    }
+}
