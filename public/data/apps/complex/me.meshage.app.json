@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "me.meshage.app",
+            "url": "https://github.com/meshage-me/meshage-community",
+            "author": "Meshage",
+            "name": "Meshage",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":true,\"includeDrafts\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"invertReleaseTitlesFilter\":false,\"filterReleaseNotesByRegEx\":\"\",\"invertReleaseNotesFilter\":false,\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"Meshage\",\"appAuthor\":\"Meshage\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false,\"includeZips\":false,\"zippedApkFilterRegEx\":\"\",\"includeTarballs\":false,\"tarballedApkFilterRegEx\":\"\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/RHVYWP5Y7uxY9hmLByAF2py_qyik5JVfITV57cueyLnuoKTObTBuD-fFc7fzvkNheNPHX4_DbR6hFdsRvfTMQA=w480-h960-rw",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Meshage is a multi-mesh mobile-first messaging app supporting both MeshCore and Reticulum."
+    }
+}
