@@ -2,7 +2,7 @@
     "configs": [
         {
             "id": "me.meshage.app",
-            "url": "https://github.com/slack-space/meshage-community",
+            "url": "https://github.com/meshage-me/meshage-community",
             "author": "Meshage",
             "name": "Meshage",
             "preferredApkIndex": 0,
