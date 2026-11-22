@@ -156,20 +156,34 @@ async function getJson(pathname) {
   return JSON.parse(body)
 }
 
-test('home page renders categories and the popular app from the stats API', async () => {
+test('home page renders popular apps from the stats API', async () => {
   const { response, body } = await get('/')
   assert.equal(response.status, 200)
   assert.match(response.headers.get('content-type') || '', /text\/html/)
   assert.match(body, /<title>Obtainium Apps<\/title>/)
   assert.match(body, /href="\/apps"/)
+  assert.match(body, /href="\/categories\/"/)
 
-  const categoryLinks = body.match(/href="\/apps\?category=[^"]+"/g) || []
-  assert.ok(categoryLinks.length >= 5, `expected category links, found ${categoryLinks.length}`)
   assert.ok(statsRequests > 0, 'the home page should call the configured Plausible API')
   assert.ok(body.includes(searchableApp.name), 'the popular section should include the stub install count app')
   assert.equal(response.headers.get('cache-control'), 'public, max-age=600, s-maxage=1800')
 
   const german = await get('/?lang=de')
+  assert.equal(german.response.status, 200)
+  assert.match(german.body, /Beliebt diesen Monat/)
+})
+
+test('categories page renders the category cards', async () => {
+  const { response, body } = await get('/categories/')
+  assert.equal(response.status, 200)
+  assert.match(response.headers.get('content-type') || '', /text\/html/)
+  assert.match(body, /<title>Obtainium Apps<\/title>/)
+
+  const categoryLinks = body.match(/href="\/apps\?category=[^"]+"/g) || []
+  assert.ok(categoryLinks.length >= 5, `expected category links, found ${categoryLinks.length}`)
+  assert.match(body, />Games</)
+
+  const german = await get('/categories/?lang=de')
   assert.equal(german.response.status, 200)
   assert.match(german.body, /Spiele/)
 })
@@ -197,6 +211,33 @@ test('apps page renders install links and the filter form', async () => {
   const searched = await get(`/apps?q=${encodeURIComponent(searchableApp.name)}&limit=200`)
   assert.equal(searched.response.status, 200)
   assert.ok(searched.body.includes(searchableApp.name))
+})
+
+test('app detail page renders the app metadata and install link', async () => {
+  const page = await getJson('/api/apps?limit=200')
+  const candidates = page.apps
+    .map((app) => ({
+      id: app.config?.id ?? app.configs?.[0]?.id,
+      name: app.config?.name ?? app.configs?.[0]?.name,
+    }))
+    .filter((app) => app.id && app.name)
+  const target = candidates.find((app) => app.id === 'app.vela') ?? candidates[0]
+  assert.ok(target, 'expected at least one named app in the API')
+
+  const { response, body } = await get(`/apps/${encodeURIComponent(target.id)}`)
+  assert.equal(response.status, 200)
+  assert.match(response.headers.get('content-type') || '', /text\/html/)
+  assert.ok(body.includes(target.name), 'the detail page should display the app name')
+  assert.match(body, /obtainium:\/\/app\//)
+  assert.match(body, /href="\/apps"/)
+
+  const missing = await get('/apps/com.obtainium.definitely-not-real')
+  assert.equal(missing.response.status, 404)
+  assert.ok(missing.body.includes('App Not Found') || missing.body.includes('not found'))
+
+  const german = await get(`/apps/${encodeURIComponent(target.id)}?lang=de`)
+  assert.equal(german.response.status, 200)
+  assert.ok(german.body.includes(target.name))
 })
 
 test('api paginates, filters, searches, and caps the page size', async () => {

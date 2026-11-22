@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import AppCard from "../components/AppCard.astro";
 import FilterForm from "../components/FilterForm.astro";
 import Pagination from "../components/Pagination.astro";
+import Toast from "../components/Toast.astro";
 import {
   queryAppsAsync,
   extractAppParamsFromRequest,
@@ -67,21 +68,25 @@ if (categoryFilterMessage.length > 50) {
 
     <!-- Results header -->
     <div class="mb-6 px-4 py-3 bg-surface border border-border rounded-2xl flex items-center justify-between gap-2">
-      <p class="text-text-muted text-sm">
+      <p class="text-text-muted text-sm flex flex-wrap items-center gap-1.5">
         <span class="font-medium text-text">{result.apps.length}</span> / <span
           class="font-medium text-text">{result.pagination.total}</span
         >
         {translations["apps"] || "apps"}
         {categories.length > 0 && ` • `}
         {categories.length > 0 && (
-          <span title={fullCategoryMessage} class="text-primary-300">{categoryFilterMessage}</span>
+          <span
+            title={fullCategoryMessage}
+            class="inline-flex items-center bg-surface-hover gap-1.5 text-xs text-primary-500 hover:text-primary-400 border border-border rounded-full px-3 py-1 hover:border-primary-500 transition-colors whitespace-nowrap shrink-0"
+          >{categoryFilterMessage}</span>
         )}
         {q && ` • `}
         {q && <span class="text-primary-300">"{q}"</span>}
       </p>
       {(categories.length > 0 || q) && (
-        <a href="/apps" class="text-xs text-text-muted hover:text-primary-500 transition-colors whitespace-nowrap shrink-0">
-          {translations["clearFilters"] || "Clear filters"} &times;
+        <a href="/apps" class="inline-flex items-center bg-surface-hover gap-1.5 text-xs text-text-muted hover:text-primary-500 border border-border rounded-full px-3 py-1 hover:border-primary-500 transition-colors whitespace-nowrap shrink-0">
+          {translations["clearFilters"] || "Clear filters"}
+          <span aria-hidden="true" class="text-base leading-none">&times;</span>
         </a>
       )}
     </div>
@@ -157,36 +162,5 @@ if (categoryFilterMessage.length > 50) {
       )
     }
   </div>
+  <Toast />
 </Layout>
-
-<script is:inline>
-  (() => {
-    window.copyToClipboard = (text) => {
-      navigator.clipboard
-        .writeText(text)
-        .then(() => {
-          const toast = document.createElement("div");
-          toast.className =
-            "fixed top-4 left-1/2 -translate-x-1/2 z-50 px-4 py-3 bg-primary-600 rounded-full shadow-xl flex items-center animate-fade-in sm:left-auto sm:right-4 sm:translate-x-0";
-          toast.setAttribute('role', 'status');
-          toast.innerHTML = `
-            <div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-on-primary/20 mr-2">
-              <svg class="w-3 h-3 text-on-primary" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-            </div>
-            <div class="font-medium text-sm text-on-primary">Copied to clipboard!</div>
-           `;
-          document.body.appendChild(toast);
-
-          setTimeout(() => {
-            toast.classList.add("animate-fade-out");
-            setTimeout(() => toast.remove(), 300);
-          }, 2000);
-        })
-        .catch(() => {
-          alert("Failed to copy to clipboard");
-        });
-    };
-  })();
-</script>

@@ -1,0 +1,247 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Icon from "../../components/Icon.astro";
+import Toast from "../../components/Toast.astro";
+import { getApps } from "../../lib/data";
+import { getAppConfig, getAppConfigString } from "../../lib/query";
+import { getCurrentLanguage, getLocalizedStrings, pickLocalTranslation } from "../../lib/i18n";
+import { getInstallCounts, getAppInstallCount } from "../../lib/stats";
+
+Astro.response.headers.set('Cache-Control', 'public, max-age=600, s-maxage=1800');
+
+const appId = Astro.params.id;
+const app = getApps().find((app) =>
+  getAppConfig(app).some((config) => config.id === appId),
+);
+
+if (!app) {
+  Astro.response.status = 404;
+}
+
+const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
+const translations = getLocalizedStrings(currentLanguage);
+const installCounts = await getInstallCounts();
+const monthlyInstalls = app ? getAppInstallCount(app, installCounts) : 0;
+
+const rawCategories = (app as any)?.categories || [];
+const categories = [...new Set<string>(rawCategories)].filter((cat) => cat !== "other");
+
+const appConfigs = app ? getAppConfig(app) : [];
+const primaryConfig = appConfigs[0];
+const appName = primaryConfig?.name ?? "";
+const appSubtitle = primaryConfig?.author
+  ? `${translations["author"]}: ${primaryConfig.author}`
+  : "";
+const appDescription = app ? pickLocalTranslation(app.description, currentLanguage) : null;
+
+function aboutUrl(url: string): string {
+  if (/^https?:\/\//i.test(url)) {
+    try {
+      const u = new URL(url);
+      if (u.hostname === "github.com") {
+        return url.replace(/^https?:\/\/github\.com\//i, "https://github.com/");
+      }
+    } catch {}
+    return url;
+  }
+  return `https://${url}`;
+}
+---
+
+<Layout title={app ? appName : "App Not Found"}>
+  <div class="container mx-auto px-4 py-6">
+    {
+      !app && (
+        <div class="max-w-md mx-auto bg-surface border border-border rounded-3xl p-6">
+          <div class="text-center mb-6">
+            <div class="mb-3">
+              <div class="w-12 h-12 mx-auto bg-primary-50/80 rounded-2xl flex items-center justify-center">
+                <svg class="w-6 h-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+            <h1 class="text-lg font-semibold text-text mb-1">
+              {translations["appNotFound"]}
+            </h1>
+            <p class="text-text-subtle text-sm">
+              {translations["appNotFoundDescription"]}
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-2 justify-center">
+            <a
+              href="/apps"
+              class="inline-flex justify-center items-center px-4 py-2.5 bg-primary-600 text-on-primary text-sm font-medium rounded-full hover:bg-primary-500 transition-colors duration-200"
+            >
+              {translations["browseApps"]}
+            </a>
+            <a
+              href="/"
+              class="inline-flex justify-center items-center px-4 py-2.5 border border-border-hover text-sm font-medium rounded-full text-text-secondary bg-surface-hover hover:bg-surface-alt hover:text-text transition-all duration-200"
+            >
+              {translations["goHome"]}
+            </a>
+          </div>
+        </div>
+      )
+    }
+
+    {
+      app && (
+        <div class="max-w-3xl mx-auto">
+          <a href="/apps" class="inline-flex items-center gap-1.5 text-text-subtle hover:text-primary-400 text-sm transition-colors duration-200 mb-4">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            {translations["apps"]}
+          </a>
+
+          {/* Header card */}
+          <div class="bg-surface border border-border rounded-3xl p-5 md:p-6 mb-6">
+            <div class="flex items-start gap-4">
+              <Icon
+                src={app.icon}
+                alt={appName}
+                width={72}
+                height={72}
+                className="rounded-2xl shadow-subtle shrink-0"
+              />
+              <div class="flex-1 min-w-0">
+                <h1 class="text-xl font-bold text-text mb-1">
+                  {appName}
+                </h1>
+                {appSubtitle && (
+                  <p class="text-sm text-primary-400 hover:text-primary-300 mb-2">
+                    {appSubtitle}
+                  </p>
+                )}
+                {monthlyInstalls > 0 && (
+                  <div class="flex items-center gap-2 text-text-secondary">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <span class="text-sm">
+                      {monthlyInstalls.toLocaleString()} {translations["monthlyInstalls"]}
+                    </span>
+                  </div>
+                )}
+              </div>
+
+              {primaryConfig?.url && (
+                <a
+                  href={primaryConfig.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-4 py-2.5 bg-surface-hover border border-border-hover text-sm font-medium rounded-full text-text-secondary hover:text-text hover:border-border transition-all duration-200 shrink-0 text-right self-center"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                  </svg>
+                  {translations["source"]}
+                </a>
+              )}
+            </div>
+
+            {appDescription && (
+              <div class="mt-4 pt-4 border-t border-border">
+                <p class="text-text-secondary text-sm leading-relaxed">
+                  {appDescription}
+                </p>
+              </div>
+            )}
+
+            {categories.length > 0 && (
+              <div class="mt-4 flex flex-wrap gap-2">
+                {categories.map((cat) => (
+                  <a
+                    href={`/apps?category=${cat}`}
+                    class="inline-flex items-center px-3 py-1.5 bg-surface-hover border border-border rounded-full text-xs font-medium text-text-secondary hover:text-primary-400 hover:border-primary-500 transition-all duration-200"
+                  >
+                    {translations[cat]}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Configs / install section */}
+          {appConfigs.length === 1 ? (
+            <div class="bg-surface border border-border rounded-3xl p-5 md:p-6 mb-6">
+              <h2 class="text-sm font-semibold text-text mb-4">
+                {translations["install"]}
+              </h2>
+              <div class="flex flex-col sm:flex-row gap-2">
+                <a
+                  href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, currentLanguage, 0))}`}
+                  class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-primary-600 text-on-primary text-sm font-medium rounded-full hover:bg-primary-500 transition-colors duration-200"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  {translations["install"]}
+                </a>
+                <button
+                                  data-copy-value={getAppConfigString(app, currentLanguage, 0)}
+                  data-copy-label={translations["copied"]}
+                  data-copy-fail-label={translations["failedToCopy"]}
+                  class="copy-btn inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-surface-hover border border-border-hover text-sm font-medium rounded-full text-text-secondary hover:text-text hover:border-border transition-all duration-200"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  <span class="copy-btn-text">{translations["copy"]}</span>
+                </button>
+              </div>
+            </div>
+          ) : (
+          <div class="bg-surface border border-border rounded-3xl p-5 md:p-6 mb-6">
+            <h2 class="text-sm font-semibold text-text mb-4">
+              {translations["chooseVariant"]}
+            </h2>
+            <div class="space-y-3">
+              {appConfigs.map((config, configIndex) => (
+                <div class="p-4 bg-surface-hover border border-border rounded-2xl">
+                  {appConfigs.length > 1 && (
+                    <div class="mb-3 pb-3 border-b border-border">
+                      <span class="text-xs font-semibold uppercase tracking-wide text-text-subtle">
+                        {(config as any).altLabel || `v${configIndex + 1}`}
+                      </span>
+                    </div>
+                  )}
+                  <div class="flex flex-col sm:flex-row gap-2">
+                    <a
+                      href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, currentLanguage, configIndex))}`}
+                      class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-primary-600 text-on-primary text-sm font-medium rounded-full hover:bg-primary-500 transition-colors duration-200"
+                    >
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                      {translations["install"]}
+                    </a>
+                    <button
+                                          data-copy-value={getAppConfigString(app, currentLanguage, configIndex)}
+                      data-copy-label={translations["copied"]}
+                                          data-copy-fail-label={translations["failedToCopy"]}
+                      class="copy-btn inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-surface-hover border border-border-hover text-sm font-medium rounded-full text-text-secondary hover:text-text hover:border-border transition-all duration-200"
+                    >
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      </svg>
+                      <span class="copy-btn-text">{translations["copy"]}</span>
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          )}
+
+          {/* Metadata */}
+          
+        </div>
+      )
+    }
+  </div>
+
+  <Toast />
+</Layout>
