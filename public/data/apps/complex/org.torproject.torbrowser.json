@@ -1,0 +1,36 @@
+{
+    "configs": [
+        {
+            "id": "org.torproject.torbrowser",
+            "url": "https://download.torproject.org/tor-browser-for-android/",
+            "author": "Tor Project Inc.",
+            "name": "Tor Browser",
+            "altLabel": "aarch64",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"apkFilterRegEx\":\"tor-browser-android-aarch64-\\\\d+(\\\\.\\\\d+)*\\\\.apk$\"}"
+        },
+        {
+            "id": "org.torproject.torbrowser",
+            "url": "https://download.torproject.org/tor-browser-for-android/",
+            "author": "Tor Project Inc.",
+            "name": "Tor Browser",
+            "altLabel": "armv7",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"apkFilterRegEx\":\"tor-browser-android-armv7-\\\\d+(\\\\.\\\\d+)*\\\\.apk$\"}"
+        },
+        {
+            "id": "org.torproject.torbrowser",
+            "url": "https://download.torproject.org/tor-browser-for-android/",
+            "author": "Tor Project Inc.",
+            "name": "Tor Browser",
+            "altLabel": "x86_64",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"apkFilterRegEx\":\"tor-browser-android-x86_64-\\\\d+(\\\\.\\\\d+)*\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/TIJ5UlSUZv84PBG8iKSeANijhTdwM07seW9uAmLBsdU7Xis5eaaolLQooIZzAYUOhK94YjvPVFY9R13jdVewOQ=s0?imgmax=0",
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "Tor Browser for Android is the only official mobile browser supported by the Tor Project, developers of the world’s strongest tool for privacy and freedom online.",
+        "de": "Der Tor Browser für Android ist der einzige offizielle mobile Browser, der vom Tor-Projekt unterstützt wird – den Entwicklern des weltweit stärksten Tools für Online-Privatsphäre und -Freiheit."
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "configs": [
+        {
+            "id": "org.torproject.torbrowser_alpha",
+            "url": "https://download.torproject.org/tor-browser-for-android/",
+            "author": "Tor Project Inc.",
+            "name": "Tor Browser (Alpha)",
+            "altLabel": "aarch64",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"apkFilterRegEx\":\"tor-browser-android-aarch64-\\\\d+\\\\.[a\\\\d]+\\\\.apk$\"}"
+        },
+        {
+            "id": "org.torproject.torbrowser_alpha",
+            "url": "https://download.torproject.org/tor-browser-for-android/",
+            "author": "Tor Project Inc.",
+            "name": "Tor Browser (Alpha)",
+            "altLabel": "armv7",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"apkFilterRegEx\":\"tor-browser-android-armv7-\\\\d+\\\\.[a\\\\d]+\\\\.apk$\"}"
+        },
+        {
+            "id": "org.torproject.torbrowser_alpha",
+            "url": "https://download.torproject.org/tor-browser-for-android/",
+            "author": "Tor Project Inc.",
+            "name": "Tor Browser (Alpha)",
+            "altLabel": "x86_64",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"apkFilterRegEx\":\"tor-browser-android-x86_64-\\\\d+\\\\.[a\\\\d]+\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/49-1wteSVjviUiEvJojgPBcDepD8iQlOdxeS8XWe7p4ezU1wUAw5PmZfLkCVLKwEzlotwkQ7KPF0Rtnb5DSegA=s0?imgmax=0",
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "Tor Browser for Android is the only official mobile browser supported by the Tor Project, developers of the world’s strongest tool for privacy and freedom online.",
+        "de": "Der Tor Browser für Android ist der einzige offizielle mobile Browser, der vom Tor-Projekt unterstützt wird – den Entwicklern des weltweit stärksten Tools für Online-Privatsphäre und -Freiheit."
+    }
+}

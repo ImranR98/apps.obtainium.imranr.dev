@@ -1,0 +1,27 @@
+{
+    "configs": [
+        {
+            "id": "org.chromium.thorium",
+            "url": "https://github.com/gz83/thorium",
+            "author": "Alex313031, gz83",
+            "name": "Thorium",
+            "altLabel": "armeabi-v7a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm32\"}"
+        },
+        {
+            "id": "org.chromium.thorium",
+            "url": "https://github.com/gz83/thorium",
+            "author": "Alex313031, gz83",
+            "name": "Thorium",
+            "altLabel": "arm64-v8a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/Alex313031/thorium/738913b3e3da87f5ec101141e6835101acf9fde1/logos/NEW/thorium.svg",
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "A cross-platform Chromium fork named after radioactive element No. 90"
+    }
+}

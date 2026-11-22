@@ -1,0 +1,36 @@
+{
+    "configs": [
+        {
+            "id": "org.mozilla.klar",
+            "url": "https://download.cdn.mozilla.net/pub/focus/releases/",
+            "author": "Mozilla Foundation",
+            "name": "Firefox Klar",
+            "altLabel": "arm64-v8a",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\d+\\\\.\\\\d+\\\\.?\\\\d*/$\",\"sortByLastLinkSegment\":true},{\"customLinkFilterRegex\":\"android/$\"},{\"customLinkFilterRegex\":\"klar-.+-arm64-v8a/$\"}],\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+\\\\.?\\\\d*\"}"
+        },
+        {
+            "id": "org.mozilla.klar",
+            "url": "https://download.cdn.mozilla.net/pub/focus/releases/",
+            "author": "Mozilla Foundation",
+            "name": "Firefox Klar",
+            "altLabel": "armeabi-v7a",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\d+\\\\.\\\\d+\\\\.?\\\\d*/$\",\"sortByLastLinkSegment\":true},{\"customLinkFilterRegex\":\"android/$\"},{\"customLinkFilterRegex\":\"klar-.+-armeabi-v7a/$\"}],\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+\\\\.?\\\\d*\"}"
+        },
+        {
+            "id": "org.mozilla.klar",
+            "url": "https://download.cdn.mozilla.net/pub/focus/releases/",
+            "author": "Mozilla Foundation",
+            "name": "Firefox Klar",
+            "altLabel": "x86_64",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\d+\\\\.\\\\d+\\\\.?\\\\d*/$\",\"sortByLastLinkSegment\":true},{\"customLinkFilterRegex\":\"android/$\"},{\"customLinkFilterRegex\":\"klar-.+-x86_64/$\"}],\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+\\\\.?\\\\d*\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/EDOCttXomDpXD-WgYyQhl5P6DelaJo_4L6LZoAOqfoaU4t9Yt92THp-3pYRB4Hf6vRQNnhapJdFt1wCkaBWqDw=s0?imgmax=0",
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "Firefox Focus with telemetry disabled, for German-speaking countries.",
+        "de": "Firefox Focus mit deaktivierter Telemetrie, für deutschsprachige Länder."
+    }
+}

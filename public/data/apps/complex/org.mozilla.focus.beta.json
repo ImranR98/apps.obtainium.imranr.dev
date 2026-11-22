@@ -1,0 +1,36 @@
+{
+    "configs": [
+        {
+            "id": "org.mozilla.focus.beta",
+            "url": "https://download.cdn.mozilla.net/pub/focus/releases/",
+            "author": "Mozilla Foundation",
+            "name": "Firefox Focus (beta)",
+            "altLabel": "arm64-v8a",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\d+\\\\.\\\\d+b\\\\d*/$\",\"sortByLastLinkSegment\":true},{\"customLinkFilterRegex\":\"android/$\"},{\"customLinkFilterRegex\":\"focus-.+-arm64-v8a/$\"}],\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+b\\\\d*\"}"
+        },
+        {
+            "id": "org.mozilla.focus.beta",
+            "url": "https://download.cdn.mozilla.net/pub/focus/releases/",
+            "author": "Mozilla Foundation",
+            "name": "Firefox Focus (beta)",
+            "altLabel": "armeabi-v7a",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\d+\\\\.\\\\d+b\\\\d*/$\",\"sortByLastLinkSegment\":true},{\"customLinkFilterRegex\":\"android/$\"},{\"customLinkFilterRegex\":\"focus-.+-armeabi-v7a/$\"}],\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+b\\\\d*\"}"
+        },
+        {
+            "id": "org.mozilla.focus.beta",
+            "url": "https://download.cdn.mozilla.net/pub/focus/releases/",
+            "author": "Mozilla Foundation",
+            "name": "Firefox Focus (beta)",
+            "altLabel": "x86_64",
+            "additionalSettings": "{\"intermediateLink\":[{\"customLinkFilterRegex\":\"\\\\d+\\\\.\\\\d+b\\\\d*/$\",\"sortByLastLinkSegment\":true},{\"customLinkFilterRegex\":\"android/$\"},{\"customLinkFilterRegex\":\"focus-.+-x86_64/$\"}],\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"\\\\d+\\\\.\\\\d+b\\\\d*\"}"
+        }
+    ],
+    "icon": "https://play-lh.googleusercontent.com/-Ir9bTWTlk5Rko4NbqFADFQPnsSsptTRvb2JoZWxD-2HijWCoYk7k5ux7mKM0p_hGu0_uRPd6JbnhLNRvzgS8g=s0?imgmax=0",
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "Beta channel of the Gecko-based Firefox Focus browser.",
+        "de": "Beta Variante des auf Gecko-Basis basierenden Browsers Firefox Focus."
+    }
+}
