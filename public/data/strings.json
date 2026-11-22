@@ -258,5 +258,29 @@
         "en": "Close",
         "fa": "بستن",
         "ru": "Закрыть"
-    }
+    },
+  "appNotFound": {
+    "en": "App not found"
+  },
+  "appNotFoundDescription": {
+    "en": "This app is not in the Obtainium Apps database."
+  },
+  "author": {
+    "en": "Author"
+  },
+  "copied": {
+    "en": "Copied!"
+  },
+  "failedToCopy": {
+    "en": "Failed to copy"
+  },
+  "heroDescription": {
+    "en": "Browse through available apps, then install your favorite apps through Obtainium with a single tap."
+  },
+  "browseAllAppsHint": {
+    "en": "Browse the app list"
+  },
+  "filterByCategory": {
+    "en": "Filter by category"
+  }
 }
