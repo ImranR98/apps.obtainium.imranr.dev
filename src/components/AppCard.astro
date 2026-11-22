@@ -33,7 +33,7 @@ const appConfigs = getAppConfig(app);
       <div class="min-w-0 flex-1">
         <h3 class="text-sm font-semibold text-text truncate">
           <a
-                  href={`/apps/${appConfigs[0].id}`}
+            href={`/apps/${appConfigs[0].id}`}
             class="hover:text-primary-500 transition-colors"
             >{appConfigs[0].name}</a
           >
@@ -100,7 +100,7 @@ const appConfigs = getAppConfig(app);
     <div class="min-w-0 flex-1">
       <h3 class="text-sm font-semibold text-text truncate">
         <a
-              href={`/apps/${appConfigs[0].id}`}
+          href={`/apps/${appConfigs[0].id}`}
           class="hover:text-primary-500 transition-colors"
           >{appConfigs[0].name}</a
         >
@@ -125,12 +125,12 @@ const appConfigs = getAppConfig(app);
   {!hideCategories && (
     <div class="flex flex-wrap gap-1.5 mb-4">
       {app.categories.map((cat: string) => (
-          <a
-            href={`/apps?category=${encodeURIComponent(cat)}`}
-            class="px-2 py-0.5 bg-primary-50/80 text-primary-700 text-xs font-medium rounded-lg hover:bg-primary-100 transition-colors duration-200"
-          >
-          {translations[cat]}
-          </a>
+        <a
+          href={`/apps?category=${encodeURIComponent(cat)}`}
+          class="px-2 py-0.5 bg-primary-50/80 text-primary-700 text-xs font-medium rounded-lg hover:bg-primary-100 transition-colors duration-200"
+        >
+        {translations[cat]}
+        </a>
       ))}
     </div>
   )}
