@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "de.marmaro.krt.ffupdater",
+        "url": "https://github.com/Tobi823/ffupdater",
+        "author": "Tobias Hellmann",
+        "name": "FFUpdater"
+    },
+    "icon": "https://gitlab.com/uploads/-/system/project/avatar/5360770/ic_launcher.png?v=1793455081",
+    "categories": [
+        "downloader_and_manager"
+    ],
+    "description": {
+        "en": "Updater for privacy friendly browsers"
+    }
+}
