@@ -9,7 +9,9 @@
         }
     ],
     "icon": "https://tubeforge.co/autopost/icon.png",
-    "categories": [],
+    "categories": [
+        "automation"
+    ],
     "description": {
         "en": "Schedule videos for your YouTube channels and track their publication.",
         "ru": "Планируйте выход видео на своих каналах YouTube и следите за статусом публикаций."
