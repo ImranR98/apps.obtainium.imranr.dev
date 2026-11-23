@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "ru.vtb24.mobilebanking.android",
+            "url": "https://www.vtb.ru/personal/online-servisy/vtb-online/",
+            "author": "VTB",
+            "name": "VTB Online"
+        }
+    ],
+    "icon": "https://www.vtb.ru/media-files/system/vtb.ru/favicons/favicon-svg.svg",
+    "categories": [
+        "finance"
+    ],
+    "description": {
+        "en": "VTB Online is the official mobile banking app of VTB Bank."
+    }
+}
