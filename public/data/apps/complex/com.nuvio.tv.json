@@ -1,12 +1,14 @@
 {
-    "config": {
-        "id": "com.nuvio.tv",
-        "url": "https://github.com/NuvioMedia/NuvioTV",
-        "author": "NuvioMedia",
-        "name": "NuvioTV",
-        "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":true,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"NuvioTV\",\"appAuthor\":\"NuvioMedia\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Official Nuvio Android TV app. Free, open-source media app for Android TV.\",\"refreshBeforeDownload\":true}"
-    },
-    "icon": "https://github.com/NuvioMedia/NuvioTV/blob/dev/assets/nuviotv.png",
+    "configs": [
+        {
+            "id": "com.nuvio.tv",
+            "url": "https://github.com/NuvioMedia/NuvioTV",
+            "author": "NuvioMedia",
+            "name": "NuvioTV",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"dontSortReleasesList\":true,\"useLatestAssetDateAsReleaseDate\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":true,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"NuvioTV\",\"appAuthor\":\"NuvioMedia\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"Official Nuvio Android TV app. Free, open-source media app for Android TV.\",\"refreshBeforeDownload\":true}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/NuvioMedia/NuvioTV/dev/assets/nuviotv.png",
     "categories": [
         "video_player"
     ],
