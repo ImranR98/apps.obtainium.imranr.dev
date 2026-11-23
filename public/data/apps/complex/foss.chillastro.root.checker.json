@@ -8,6 +8,7 @@
             "additionalSettings": "{\"apkFilterRegEx\":\"^app-official-release\\\\.apk$\"}"
         }
     ],
+    "icon": "https://raw.githubusercontent.com/Chill-Astro/FOSS-Root-Checker/refs/heads/master/fastlane/metadata/android/en-US/images/icon.png",
     "categories": [
         "system"
     ],
