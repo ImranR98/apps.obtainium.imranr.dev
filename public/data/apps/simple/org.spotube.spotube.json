@@ -1,11 +1,11 @@
 {
     "config": {
         "id": "org.spotube.spotube",
-        "url": "https://github.com/KRTirtho/spotube",
+        "url": "https://github.com/team-spotube/spotube",
         "author": "KRTirtho",
         "name": "Spotube"
     },
-    "icon": "https://raw.githubusercontent.com/KRTirtho/spotube/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "icon": "https://raw.githubusercontent.com/team-spotube/spotube/master/metadata/en-US/images/icon.png",
     "categories": [
         "music"
     ],
