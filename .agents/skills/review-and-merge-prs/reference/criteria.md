@@ -152,6 +152,14 @@ Keyword hits (confirm from name/description/URL, and report as flags, not failur
 - **Drugs/alcohol/tobacco**: vape/vaping, cannabis, marijuana, weed, thc, cbd, alcohol, beer, wine,
   whisky/whiskey, vodka, tobacco, cigarette, cigar, hookah, shisha
 
+### Geopolitical ownership and affiliation
+
+Apps with known, significant ownership, funding, or operational ties to the State of Israel or
+Israeli state-affiliated entities are rejected. This rule reflects the maintainer's position on the
+conduct of the Israeli state. It applies only to documented, material ties — not to incidental
+hosting or individual employee nationality. Example: Private Internet Access (PIA) is rejected
+because its parent company is controlled by an Israeli billionaire.
+
 ## Fix catalog
 
 Simple fixes (apply on a PR branch, or on a working branch for the repo audit):

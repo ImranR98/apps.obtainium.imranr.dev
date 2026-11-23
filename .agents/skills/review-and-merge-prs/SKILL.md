@@ -31,7 +31,8 @@ A PR is merge-ready only if all of the following hold:
   project creation date at least 4 months old (bloat control — see `reference/criteria.md`; sources
   with no star/creation concept are exempt, and `platform: "other"` means no data).
 - No duplicate id/URL against the repo or another open PR.
-- No moral flag (gambling/betting, adult/NSFW, drugs/alcohol/tobacco).
+- No moral flag (gambling/betting, adult/NSFW, drugs/alcohol/tobacco, or a documented significant
+  Israeli state/ownership tie — see `reference/criteria.md`).
 
 Everything else goes in `fixable`, `needs-review`, or `not-ready`. You may override your own
 classification with judgment, but say why.
@@ -86,6 +87,8 @@ body,comments` and `gh pr diff <n>` when semantic checks are needed:
   apps out in the report — a mention does not override the gates by itself.
 - Duplicates: interpret `duplicateIds`/`duplicateUrls`; variants sharing one URL are fine.
 - Moral flags: confirm keyword candidates by reading the app metadata; never auto-merge flagged apps.
+- Geopolitical ownership: reject apps with documented significant Israeli state/ownership ties (PIA
+  precedent — see `reference/criteria.md`).
 - Scope: any file outside `public/data/apps/` changed, or config removals, need a reason.
 
 ## Phase 3 — report and consent
