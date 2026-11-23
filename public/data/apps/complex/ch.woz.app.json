@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "id": "ch.woz.app",
+            "url": "https://fdroid.woz.ch/fdroid/repo?fingerprint=f19bb95e4dd3b74906e2ef0ba41ea6f34ab82c44f78e1b9505fe207dd5e60cc2&appId=ch.woz.app",
+            "author": "Genossenschaft Infolink",
+            "name": "WOZ",
+            "additionalSettings": "{\"appIdOrName\":\"ch.woz.app\"}",
+            "overrideSource": "FDroidRepo"
+        }
+    ],
+    "icon": "https://fdroid.woz.ch/fdroid/repo/ch.woz.app/de/icon.png",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": "Official app of WOZ Die Wochenzeitung, the independent left-wing weekly newspaper of German-speaking Switzerland",
+        "de": "Die WOZ ist die unabhängige überregionale linke Zeitung der Deutschschweiz."
+    }
+}
