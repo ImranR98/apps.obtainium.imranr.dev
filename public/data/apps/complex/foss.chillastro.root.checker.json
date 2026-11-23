@@ -1,0 +1,17 @@
+{
+    "configs": [
+        {
+            "id": "foss.chillastro.root.checker",
+            "url": "https://github.com/Chill-Astro/FOSS-Root-Checker",
+            "author": "Chill-Astro",
+            "name": "Root Checker",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^app-official-release\\\\.apk$\"}"
+        }
+    ],
+    "categories": [
+        "system"
+    ],
+    "description": {
+        "en": "Open-source Android app for checking root access and BusyBox installation."
+    }
+}
