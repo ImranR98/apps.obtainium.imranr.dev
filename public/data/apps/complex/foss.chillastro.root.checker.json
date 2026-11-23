@@ -5,10 +5,10 @@
             "url": "https://github.com/Chill-Astro/FOSS-Root-Checker",
             "author": "Chill-Astro",
             "name": "Root Checker",
-            "icon" : "https://raw.githubusercontent.com/Chill-Astro/FOSS-Root-Checker/refs/heads/master/fastlane/metadata/android/en-US/images/icon.png",
             "additionalSettings": "{\"apkFilterRegEx\":\"^app-official-release\\\\.apk$\"}"
         }
     ],
+    "icon": "https://raw.githubusercontent.com/Chill-Astro/FOSS-Root-Checker/refs/heads/master/fastlane/metadata/android/en-US/images/icon.png",
     "categories": [
         "system"
     ],
