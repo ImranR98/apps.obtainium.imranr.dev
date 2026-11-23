@@ -184,4 +184,21 @@ describe('getAppInstallCount', () => {
     expect(getAppInstallCount(complex, { 'complex.one': 3, 'complex.two': 4 })).toBe(7)
     expect(getAppInstallCount(complex, {})).toBe(0)
   })
+
+  it('counts each package id once when variants share an id', async () => {
+    const { getAppInstallCount } = await import('../../src/lib/stats')
+    const complex: ComplexApp = {
+      type: 'complex',
+      categories: [],
+      description: {},
+      configs: [
+        { id: 'shared.id', url: 'https://example.com', author: 'A', name: 'Arm64' },
+        { id: 'shared.id', url: 'https://example.com', author: 'A', name: 'Armv7' },
+        { id: 'shared.id', url: 'https://example.com', author: 'A', name: 'Universal' },
+        { id: 'other.id', url: 'https://example.com', author: 'A', name: 'Other' },
+      ],
+    }
+
+    expect(getAppInstallCount(complex, { 'shared.id': 10, 'other.id': 3 })).toBe(13)
+  })
 })

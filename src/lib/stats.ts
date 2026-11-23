@@ -96,12 +96,19 @@ export const getInstallCounts = async (period = 'month'): Promise<Record<string,
 }
 
 /**
- * Sum install counts across all configs of an app
+ * Sum install counts across all configs of an app.
+ * Variants can share one package id; count each id once so the same
+ * underlying install-link events are not multiplied by the variant count.
  */
 export const getAppInstallCount = (
   app: SimpleApp | ComplexApp,
   counts: Record<string, number>,
 ): number => {
   const configs = app.type === 'simple' ? [app.config] : app.configs
-  return configs.reduce((sum, c) => sum + (counts[c.id] || 0), 0)
+  const ids = new Set(configs.map((c) => c.id))
+  let total = 0
+  for (const id of ids) {
+    total += counts[id] || 0
+  }
+  return total
 }
