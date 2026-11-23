@@ -133,7 +133,7 @@ be abandoned and to leave behind broken configs.
 - A low-star or too-new source is **not** a simple fix (see the fix catalog): the contributor must
   supply a better source or wait.
 
-### Sources without star counts (closed-source apps and standalone websites)
+### Sources without reliable popularity data (closed-source apps, standalone websites, suspicious stars)
 
 Closed-source apps, standalone download pages, and other sources with no star/favorite or creation
 date need a public-reputation check before they can be accepted. The purpose is the same bloat
@@ -150,9 +150,12 @@ control: a polished website or a brand-new changelog is not evidence that the ap
   signal.
 - Corroborate with a second indicator where possible: domain age, maintained release history, store
   metrics, or an active community.
+- If star counts or commit history look inflated or bot-driven (sudden star spikes, no matching
+  users or discussion, star-only low-engagement repositories), do not treat them as a popularity
+  signal. Ignore the forge metrics and apply the same public-reputation check.
 - If no independent evidence of use or interest can be found, reject the app as unproven. The
-  default for closed-source/standalone sources is rejection, even when the website looks
-  professional.
+  default for closed-source/standalone sources, or sources with suspicious engagement, is
+  rejection, even when the website looks professional.
 
 ## Duplicates
 
