@@ -1,0 +1,83 @@
+{
+  "configs": [
+    {
+      "id": "com.nevar.nzik.foss",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (FOSS)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-foss\\\\.apk\"}",
+      "altLabel": "foss"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Release64)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-release64\\\\.apk\"}",
+      "altLabel": "release64"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Release32)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-release32\\\\.apk\"}",
+      "altLabel": "release32"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Minified64)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-minified64\\\\.apk\"}",
+      "altLabel": "minified64"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Minified32)",
+      "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-minified32\\\\.apk\"}",
+      "altLabel": "minified32"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Beta64)",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-beta\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-beta64\\\\.apk\"}",
+      "altLabel": "beta64"
+    },
+    {
+      "id": "com.nevar.nzik",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Beta32)",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-beta\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-beta32\\\\.apk\"}",
+      "altLabel": "beta32"
+    },
+    {
+      "id": "com.nevar.nzik.dev",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Dev64)",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-dev\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-dev64\\\\.apk\"}",
+      "altLabel": "dev64"
+    },
+    {
+      "id": "com.nevar.nzik.dev",
+      "url": "https://github.com/N-Zik-Group/N-Zik",
+      "author": "N-Zik-Group",
+      "name": "N-Zik (Dev32)",
+      "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"-dev\",\"versionDetection\":true,\"apkFilterRegEx\":\"N-Zik-dev32\\\\.apk\"}",
+      "altLabel": "dev32"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/N-Zik-Group/N-Zik/main/assets/design/N-Zik%202027/app.png",
+  "categories": [
+    "music"
+  ],
+  "description": {
+    "en": "N-Zik is a multilingual YouTube Music client built with performance improvements, UI/UX refinement, and new features."
+  }
+}
