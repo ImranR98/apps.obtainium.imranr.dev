@@ -29,7 +29,8 @@ A PR is merge-ready only if all of the following hold:
   online-dependent apps do not qualify.
 - Popular enough and old enough where the forge exposes the data: at least 35 stars/favorites and a
   project creation date at least 4 months old (bloat control — see `reference/criteria.md`; sources
-  with no star/creation concept are exempt, and `platform: "other"` means no data).
+  with no reliable star/creation data — including suspicious or inflated stars — require independent
+  evidence of real users/interest, and `platform: "other"` means no forge data — do not guess).
 - No duplicate id/URL against the repo or another open PR.
 - No moral flag (gambling/betting, adult/NSFW, drugs/alcohol/tobacco, or a documented significant
   Israeli state/ownership tie — see `reference/criteria.md`).
@@ -87,7 +88,11 @@ body,comments` and `gh pr diff <n>` when semantic checks are needed:
 - Recency: apply the 12-month rule to `checks.sources[]`, but apply the self-contained-app exception
   from `reference/criteria.md` with your own judgment; check release assets exist for GitHub.
 - Popularity/age: check `stars` (≥35 where the forge counts stars) and `created` (≥4 months where a
-  creation date exists) on `checks.sources[]`; `platform: "other"` has no data — don't guess.
+  creation date exists) on `checks.sources[]`; `platform: "other"` has no forge data — don't guess.
+  If stars or commit history look inflated/bot-driven, ignore them and treat the source as
+  unstarred. For closed-source apps, standalone websites, and suspicious sources, require
+  independent evidence of real users/interest (relevant Reddit/community threads, reviews, release
+  history) and reject unproven apps — see `reference/criteria.md`.
 - Rejected for stars/age: fetch the source README and check for an explicit Obtainium installation
   mention (badge, `obtainium://`, `apps.obtainium.imranr.dev`, "install with Obtainium"); call those
   apps out in the report — a mention does not override the gates by itself.
