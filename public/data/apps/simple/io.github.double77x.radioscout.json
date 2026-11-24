@@ -1,0 +1,13 @@
+{
+  "config": {
+    "id": "io.github.double77x.radioscout",
+    "url": "https://f-droid.org/en/packages/io.github.double77x.radioscout",
+    "author": "Double77x",
+    "name": "RadioScout"
+  },
+  "icon": "https://f-droid.org/repo/io.github.double77x.radioscout/en-US/icon.png",
+  "categories": ["music"],
+  "description": {
+    "en": "Free worldwide radio with no accounts and no tracking. Search by country or genre and press play."
+  }
+}
