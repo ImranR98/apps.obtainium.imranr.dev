@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.amazon.mShop.android.shopping",
+            "url": "https://github.com/FiorenMas/Revanced-And-Revanced-Extended-Non-Root",
+            "author": "FiorenMas",
+            "name": "Amazon Shopping rushiranpise",
+            "additionalSettings": "{\"useLatestAssetDateAsReleaseDate\":true,\"apkFilterRegEx\":\"^amazon-shopping-rushiranpise\\\\.apk$\"}"
+        }
+    ],
+    "icon": null,
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": "Amazon Shopping with rushiranpise patches, prebuilt by FiorenMas."
+    }
+}
