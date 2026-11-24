@@ -133,6 +133,30 @@ be abandoned and to leave behind broken configs.
 - A low-star or too-new source is **not** a simple fix (see the fix catalog): the contributor must
   supply a better source or wait.
 
+### Sources without reliable popularity data (closed-source apps, standalone websites, suspicious stars)
+
+Closed-source apps, standalone download pages, and other sources with no star/favorite or creation
+date need a public-reputation check before they can be accepted. The purpose is the same bloat
+control: a polished website or a brand-new changelog is not evidence that the app has users.
+
+- Search for independent mentions on established communities and sites — relevant subreddits, XDA,
+  Hacker News, Lemmy, Mastodon, mainstream tech press, and reputable review sites. Prefer active
+  discussion by real users over SEO pages, APK-mirror listings, and generic download indexes.
+- Look for evidence of an actual user base: discussion threads, reviews, issue reports, tutorials,
+  community support channels, store-listing reviews/install counts, and a release history that
+  predates the submission.
+- Treat the developer's own site, social accounts, self-hosted changelog, and Discord/Telegram
+  servers as supporting evidence only. A server with negligible membership is not a popularity
+  signal.
+- Corroborate with a second indicator where possible: domain age, maintained release history, store
+  metrics, or an active community.
+- If star counts or commit history look inflated or bot-driven (sudden star spikes, no matching
+  users or discussion, star-only low-engagement repositories), do not treat them as a popularity
+  signal. Ignore the forge metrics and apply the same public-reputation check.
+- If no independent evidence of use or interest can be found, reject the app as unproven. The
+  default for closed-source/standalone sources, or sources with suspicious engagement, is
+  rejection, even when the website looks professional.
+
 ## Duplicates
 
 Treat as needing a human decision, not an automatic merge:
@@ -151,6 +175,14 @@ Keyword hits (confirm from name/description/URL, and report as flags, not failur
   hookup, tinder, grindr, bumble, dating
 - **Drugs/alcohol/tobacco**: vape/vaping, cannabis, marijuana, weed, thc, cbd, alcohol, beer, wine,
   whisky/whiskey, vodka, tobacco, cigarette, cigar, hookah, shisha
+
+### Geopolitical ownership and affiliation
+
+Apps with known, significant ownership, funding, or operational ties to the State of Israel or
+Israeli state-affiliated entities are rejected. This rule reflects the maintainer's position on the
+conduct of the Israeli state. It applies only to documented, material ties — not to incidental
+hosting or individual employee nationality. Example: Private Internet Access (PIA) is rejected
+because its parent company is controlled by an Israeli billionaire.
 
 ## Fix catalog
 

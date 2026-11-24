@@ -1,0 +1,13 @@
+{
+    "config": {
+        "id": "io.anuke.mindustry",
+        "url": "https://f-droid.org/packages/io.anuke.mindustry/",
+        "author": "Anuken",
+        "name": "Mindustry"
+    },
+    "icon": "https://raw.githubusercontent.com/Anuken/Mindustry/b873c01ed559a8803c2dad5c5c79d7ad750d5b95/core/assets/icons/icon.png",
+    "categories": ["games"],
+    "description": {
+        "en": "The automation tower defense RTS"
+    }
+}

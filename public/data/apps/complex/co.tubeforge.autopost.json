@@ -1,0 +1,19 @@
+{
+    "configs": [
+        {
+            "id": "co.tubeforge.autopost",
+            "url": "https://tubeforge.co/autopost",
+            "author": "TubeForge",
+            "name": "Auto Post Scheduler",
+            "additionalSettings": "{\"customLinkFilterRegex\":\"^https://tubeforge\\\\.co/downloads/autopost/AutoPost-[0-9]+(?:\\\\.[0-9]+)*-[0-9]+\\\\.apk$\",\"versionExtractionRegEx\":\"-([0-9]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"useVersionCodeAsOSVersion\":true,\"allowedSigningCertHashes\":\"BC:BE:46:9E:32:DE:7D:20:EB:9B:B2:54:71:D1:5B:E3:70:4E:B7:16:AF:CE:EB:AE:32:A0:42:5D:77:6E:F0:D1\"}"
+        }
+    ],
+    "icon": "https://tubeforge.co/autopost/icon.png",
+    "categories": [
+        "automation"
+    ],
+    "description": {
+        "en": "Schedule videos for your YouTube channels and track their publication.",
+        "ru": "Автопостинг видео для YouTube. Планируйте выход роликов на своих каналах и следите за статусом публикаций."
+    }
+}
