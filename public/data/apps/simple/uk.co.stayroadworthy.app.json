@@ -1,0 +1,13 @@
+{
+  "config": {
+    "id": "uk.co.stayroadworthy.app",
+    "url": "https://github.com/Double77x/roadworthy-app",
+    "author": "Double77x",
+    "name": "Roadworthy"
+  },
+  "icon": "https://stayroadworthy.co.uk/web-app-manifest-512x512.png",
+  "categories": ["utilities"],
+  "description": {
+    "en": "UK vehicle checks for MOT history and road tax, with a garage tracker for fuel prices."
+  }
+}
