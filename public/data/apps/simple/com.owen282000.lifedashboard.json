@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.owen282000.lifedashboard",
+        "url": "https://github.com/owen282000/life-dashboard-companion-app",
+        "author": "owen282000",
+        "name": "Life Dashboard"
+    },
+    "icon": "https://raw.githubusercontent.com/owen282000/life-dashboard-companion-app/main/fastlane/metadata/android/en-US/images/icon.png",
+    "categories": [
+        "sports_and_health"
+    ],
+    "description": {
+        "en": "Health Connect and screen time to Home Assistant, MQTT or webhooks. No account."
+    }
+}
