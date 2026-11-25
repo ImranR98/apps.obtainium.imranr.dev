@@ -1,0 +1,100 @@
+---
+// Shared client-side feedback helpers.
+// Exposes window.showToast() and window.copyToClipboard() for any page,
+// and wires up any element with a `data-copy-value` attribute so it copies
+// that value (and shows a toast) when clicked.
+---
+
+<script is:inline>
+  (() => {
+    const TOAST_BASE =
+      "fixed left-1/2 -translate-x-1/2 z-50 px-4 py-3 rounded-full shadow-xl flex items-center animate-fade-in sm:left-auto sm:right-4 sm:translate-x-0";
+
+    const ICONS = {
+      success:
+        '<div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-on-primary/20 mr-2">' +
+        '<svg class="w-3 h-3 text-on-primary" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">' +
+        '<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>' +
+        "</svg></div>",
+      error:
+        '<div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-on-primary/20 mr-2">' +
+        '<svg class="w-3 h-3 text-on-primary" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">' +
+        '<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>' +
+        "</svg></div>",
+    };
+
+    window.showToast = (message, options = {}) => {
+      const { variant = "success", duration = 2000 } = options;
+      const toast = document.createElement("div");
+      toast.className = `${TOAST_BASE} ${
+        variant === "error" ? "bg-red-600" : "bg-primary-600"
+      }`;
+      // Position the toast below the sticky header instead of overlaying it.
+      const header = document.querySelector("header");
+      const headerBottom = header ? header.getBoundingClientRect().bottom : 8;
+      toast.style.top = `${headerBottom + 8}px`;
+      toast.setAttribute("role", "status");
+      toast.innerHTML = `${
+        ICONS[variant] || ICONS.success
+      }<div class="font-medium text-sm text-on-primary"></div>`;
+      toast.lastElementChild.textContent = message;
+      document.body.appendChild(toast);
+
+      setTimeout(() => {
+        toast.classList.add("animate-fade-out");
+        setTimeout(() => toast.remove(), 300);
+      }, duration);
+    };
+
+    window.copyToClipboard = async (text, options = {}) => {
+      const {
+        successMessage = "Copied to clipboard!",
+        failMessage = "Failed to copy to clipboard",
+      } = options;
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          const textarea = document.createElement("textarea");
+          textarea.value = text;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          textarea.style.pointerEvents = "none";
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand("copy");
+          textarea.remove();
+        }
+        window.showToast(successMessage, { variant: "success" });
+      } catch (err) {
+        window.showToast(failMessage, { variant: "error" });
+        console.error("Failed to copy to clipboard:", err);
+      }
+    };
+
+    // Wire up any element carrying `data-copy-value` so a click copies that
+    // value and shows a toast. Re-runnable; safe to call after DOM changes.
+    function setupCopyButtons(root = document) {
+      root.querySelectorAll("[data-copy-value]").forEach((el) => {
+        if (el.__copyBound) return;
+        el.__copyBound = true;
+        el.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const configString = el.dataset.copyValue;
+          if (!configString) return;
+          window.copyToClipboard(configString, {
+            successMessage: el.dataset.copyLabel,
+            failMessage: el.dataset.copyFailLabel,
+          });
+        });
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", () => setupCopyButtons());
+    } else {
+      setupCopyButtons();
+    }
+  })();
+</script>

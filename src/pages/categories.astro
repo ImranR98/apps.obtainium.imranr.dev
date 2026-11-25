@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+import { getCategoriesWithRandomApps, getAppConfig } from "../lib/query";
+import { getApps } from "../lib/data";
+import { getCurrentLanguage, getLocalizedStrings } from "../lib/i18n";
+
+Astro.response.headers.set('Cache-Control', 'public, max-age=600, s-maxage=1800');
+
+const allApps = getApps();
+const categoryApps = getCategoriesWithRandomApps(4);
+const categoryCounts: Record<string, number> = {};
+for (const app of allApps) {
+  for (const cat of app.categories) {
+    categoryCounts[cat] = (categoryCounts[cat] || 0) + 1
+  }
+}
+const categories = Object.keys(categoryApps).sort((a, b) => (categoryCounts[b] || 0) - (categoryCounts[a] || 0));
+
+const currentLanguage = await getCurrentLanguage(Astro.url, Astro.request);
+const translations = getLocalizedStrings(currentLanguage);
+---
+
+<Layout>
+  <div class="container mx-auto px-4 py-6">
+    <div class="mb-4 px-4 py-3 border border-border rounded-2xl">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl leading-tight font-semibold text-text">
+        {translations["allCategories"]}
+      </h1>
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    >
+      {
+        categories.map((cat: string) => (
+          <a
+            href={`/apps?category=${cat}`}
+            class="group relative block p-5 bg-surface border border-border rounded-3xl hover:border-primary-500 transition-all duration-300"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-sm font-semibold text-text">
+                {translations[cat]}
+              </h3>
+              <div class="flex items-center gap-1.5">
+                <span class="text-xs text-text-subtle">{categoryCounts[cat]}</span>
+                <svg
+                  class="w-3.5 h-3.5 text-text-subtle group-hover:text-primary-400 group-hover:translate-x-0.5 transition-all duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              {categoryApps[cat].map((app) => (
+                <Icon
+                  src={app.icon}
+                  alt={getAppConfig(app)[0].name}
+                  width={32}
+                  height={32}
+                  className="rounded-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                />
+              ))}
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

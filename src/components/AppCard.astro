@@ -33,7 +33,7 @@ const appConfigs = getAppConfig(app);
       <div class="min-w-0 flex-1">
         <h3 class="text-sm font-semibold text-text truncate">
           <a
-            href={appConfigs[0].url}
+            href={`/apps/${appConfigs[0].id}`}
             class="hover:text-primary-500 transition-colors"
             >{appConfigs[0].name}</a
           >
@@ -100,7 +100,7 @@ const appConfigs = getAppConfig(app);
     <div class="min-w-0 flex-1">
       <h3 class="text-sm font-semibold text-text truncate">
         <a
-          href={appConfigs[0].url}
+          href={`/apps/${appConfigs[0].id}`}
           class="hover:text-primary-500 transition-colors"
           >{appConfigs[0].name}</a
         >
@@ -125,11 +125,12 @@ const appConfigs = getAppConfig(app);
   {!hideCategories && (
     <div class="flex flex-wrap gap-1.5 mb-4">
       {app.categories.map((cat: string) => (
-        <span
-          class="px-2 py-0.5 bg-primary-50/80 text-primary-700 text-xs font-medium rounded-lg"
+        <a
+          href={`/apps?category=${cat}`}
+          class="px-2 py-0.5 bg-primary-50/80 text-primary-700 text-xs font-medium rounded-lg hover:bg-primary-100 transition-colors"
         >
           {translations[cat]}
-        </span>
+        </a>
       ))}
     </div>
   )}
@@ -159,32 +160,42 @@ const appConfigs = getAppConfig(app);
       </a>
     </div>
     {appConfigs.length > 1 && (
-      <div class="space-y-2 pt-3 mt-3 border-t border-border">
-        {appConfigs.slice(1).map((c: ComplexAppConfig, index: number) => (
-          <div class="flex items-center justify-between">
-            <span
-              class="px-2 py-0.5 bg-surface-hover text-text-muted text-xs font-medium rounded-lg border border-border-hover"
-            >
-              {c.altLabel || c.name}
-            </span>
-            <div class="flex gap-1.5">
-              <button
-                type="button"
-                class="jsonly px-2.5 py-1.5 bg-surface-hover text-text-secondary text-xs font-medium rounded-full hover:bg-surface-alt transition-colors duration-200"
-                onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, currentLanguage, index + 1))})`}
+      <details class="group/variants pt-3 mt-3 border-t border-border">
+        <summary
+          class="flex items-center justify-center w-full py-1 cursor-pointer list-none [&::-webkit-details-marker]:hidden select-none text-text-muted hover:text-primary-500 transition-colors duration-200"
+          aria-label={translations["chooseVariant"]}
+        >
+          <svg class="w-4 h-4 transition-transform duration-200 group-open/variants:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </summary>
+        <div class="space-y-2 pt-2">
+          {appConfigs.slice(1).map((c: ComplexAppConfig, index: number) => (
+            <div class="flex items-center justify-between">
+              <span
+                class="px-2 py-0.5 bg-surface-hover text-text-muted text-xs font-medium rounded-lg border border-border-hover"
               >
-                {translations["copy"]}
-              </button>
-              <a
-                class="px-2.5 py-1.5 bg-primary-600 text-on-primary text-xs font-medium rounded-full hover:bg-primary-500 transition-colors duration-200"
-                href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, currentLanguage, index + 1))}`}
-              >
-                {translations["install"]}
-              </a>
+                {c.altLabel || c.name}
+              </span>
+              <div class="flex gap-1.5">
+                <button
+                  type="button"
+                  class="jsonly px-2.5 py-1.5 bg-surface-hover text-text-secondary text-xs font-medium rounded-full hover:bg-surface-alt transition-colors duration-200"
+                  onclick={`copyToClipboard(${JSON.stringify(getAppConfigString(app, currentLanguage, index + 1))})`}
+                >
+                  {translations["copy"]}
+                </button>
+                <a
+                  class="px-2.5 py-1.5 bg-primary-600 text-on-primary text-xs font-medium rounded-full hover:bg-primary-500 transition-colors duration-200"
+                  href={`obtainium://app/${encodeURIComponent(getAppConfigString(app, currentLanguage, index + 1))}`}
+                >
+                  {translations["install"]}
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </details>
     )}
     </div>
   </div>
