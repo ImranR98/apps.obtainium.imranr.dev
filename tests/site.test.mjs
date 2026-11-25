@@ -161,7 +161,7 @@ test('home page renders categories and the popular app from the stats API', asyn
   assert.equal(response.status, 200)
   assert.match(response.headers.get('content-type') || '', /text\/html/)
   assert.match(body, /<title>Obtainium Apps<\/title>/)
-  assert.match(body, /href="\/apps"/)
+  assert.match(body, /href="\/apps\?categoryMode=inclusive/)
 
   const categoryLinks = body.match(/href="\/apps\?category=[^"]+"/g) || []
   assert.ok(categoryLinks.length >= 5, `expected category links, found ${categoryLinks.length}`)

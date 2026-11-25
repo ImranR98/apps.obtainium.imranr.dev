@@ -258,5 +258,32 @@
         "en": "Close",
         "fa": "بستن",
         "ru": "Закрыть"
+    },
+    "categoryModeHelp": {
+        "en": "Inclusive: apps in ANY selected category. Exclusive: apps in ALL selected categories."
+    },
+    "clearFilters": {
+        "en": "Clear filters"
+    },
+    "appNotFound": {
+        "en": "App Not Found"
+    },
+    "noAppsFound": {
+        "en": "No apps found"
+    },
+    "noAppsFoundSearch": {
+        "en": "Try adjusting your search query or filters."
+    },
+    "noAppsFoundFilters": {
+        "en": "Try selecting different categories or clearing filters."
+    },
+    "appNotFoundDescription": {
+        "en": "The app you are looking for could not be found. It may have been removed or the link is incorrect."
+    },
+    "author": {
+        "en": "Author"
+    },
+    "yourArchitecture": {
+        "en": "Your architecture"
     }
 }

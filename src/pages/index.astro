@@ -34,7 +34,7 @@ const translations = getLocalizedStrings(currentLanguage);
     <!-- All Apps tile -->
     <div class="mb-8">
       <a
-        href="/apps"
+        href="/apps?categoryMode=inclusive&sort=name&q="
         class="group relative block p-10 bg-surface border border-border rounded-3xl hover:border-primary-500 transition-all duration-300"
       >
         <div class="text-center relative">
@@ -107,9 +107,17 @@ const translations = getLocalizedStrings(currentLanguage);
 
     <!-- Category tiles grid -->
     <div class="mb-4">
-      <h2 class="text-lg font-semibold text-text">
-        {translations["categories"]}
-      </h2>
+          <div class="flex items-center justify-between">
+            <h2 class="text-lg font-semibold text-text">
+              {translations["categories"]}
+            </h2>
+            <a
+              href="/categories"
+              class="text-xs text-text-muted hover:text-primary-500 transition-colors"
+            >
+              {translations["viewAll"]} &rarr;
+            </a>
+          </div>
     </div>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
