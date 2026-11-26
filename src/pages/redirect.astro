@@ -79,7 +79,7 @@ if (redirectUrl) {
       <!-- Noscript Warning -->
       <noscript>
         <div
-          class="p-3 mb-4 bg-yellow-900/20 border border-yellow-800/40 rounded-xl text-yellow-400 text-sm"
+          class="p-3 mb-4 bg-warning/10 border border-warning/30 rounded-xl text-warning text-sm"
         >
           <p>{translations["enableJavaScript"]}</p>
         </div>
@@ -88,7 +88,7 @@ if (redirectUrl) {
       <!-- Error Message -->
       {
         errorMessage && (
-          <div class="p-3 mb-4 bg-red-900/20 border border-red-800/40 rounded-xl text-red-400 text-sm">
+          <div class="p-3 mb-4 bg-error/10 border border-error/30 rounded-xl text-error text-sm">
             <p>{errorMessage}</p>
           </div>
         )
@@ -120,7 +120,7 @@ if (redirectUrl) {
             </p>
 
         <!-- Manual Redirect Button -->
-        <div id="intentBlocked" class="hidden p-3 mb-4 bg-yellow-900/20 border border-yellow-800/40 rounded-xl text-yellow-400 text-sm">
+        <div id="intentBlocked" class="hidden p-3 mb-4 bg-warning/10 border border-warning/30 rounded-xl text-warning text-sm">
           <p>{translations["intentBlockedHint"]}</p>
         </div>
         <a
@@ -146,7 +146,7 @@ if (redirectUrl) {
                 <a
                   id="appLinkHref"
                   href={appData.url}
-                  class="text-primary-400 hover:text-primary-300 font-medium hover:underline transition-colors"
+                  class="text-primary-600 hover:text-primary-500 font-medium hover:underline transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -185,9 +185,9 @@ if (redirectUrl) {
       {
         !isValid && !errorMessage && (
           <div class="text-center p-5 border border-border rounded-2xl bg-surface-hover">
-            <h3 class="text-sm font-semibold text-text mb-2">
+            <h2 class="text-sm font-semibold text-text mb-2">
               {translations["howToUse"]}
-            </h3>
+            </h2>
             <p class="text-text-subtle text-sm mb-4">
               {translations["redirectInstructions"]}
             </p>
