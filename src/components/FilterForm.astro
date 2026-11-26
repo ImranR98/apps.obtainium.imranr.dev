@@ -32,7 +32,7 @@ const { translations, allCategories, categories, categoryMode, q, sort = "popula
               name="categoryMode"
               value="exclusive"
               checked={categoryMode === "exclusive"}
-              class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-hover focus:outline-none focus:ring-1 focus:ring-primary-400"
+              class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-strong focus:outline-none focus:ring-1 focus:ring-primary-400"
             />
             <span class="ml-1.5 text-text-muted text-sm"
               >{translations["exclusive"]}</span
@@ -44,7 +44,7 @@ const { translations, allCategories, categories, categoryMode, q, sort = "popula
               name="categoryMode"
               value="inclusive"
               checked={categoryMode === "inclusive"}
-              class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-hover focus:outline-none focus:ring-1 focus:ring-primary-400"
+              class="h-3.5 w-3.5 accent-primary-500 text-primary-400 bg-surface-hover border-border-strong focus:outline-none focus:ring-1 focus:ring-primary-400"
             />
             <span class="ml-1.5 text-text-muted text-sm"
               >{translations["inclusive"]}</span
@@ -57,7 +57,7 @@ const { translations, allCategories, categories, categoryMode, q, sort = "popula
         name="category"
         multiple
         size="5"
-        class="w-full bg-surface-alt border border-border-hover rounded-xl text-text-secondary accent-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2 text-sm"
+        class="w-full bg-surface-alt border border-border-strong rounded-xl text-text-secondary accent-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2 text-sm"
         aria-label={translations["categorySelect"]}
       >
         {
@@ -89,7 +89,7 @@ const { translations, allCategories, categories, categoryMode, q, sort = "popula
         >
         <select
           name="sort"
-          class="w-full bg-surface-alt border border-border-hover rounded-xl text-text-secondary accent-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2 text-sm"
+          class="w-full bg-surface-alt border border-border-strong rounded-xl text-text-secondary accent-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 p-2 text-sm"
           aria-label={translations["sortBy"]}
         >
           <option value="name" selected={sort === "name"} class="px-2 py-1.5 rounded-md">
@@ -130,7 +130,7 @@ const { translations, allCategories, categories, categoryMode, q, sort = "popula
             name="q"
             value={q}
             placeholder={translations["search"]}
-            class="w-full pl-10 pr-3 py-2 bg-surface-alt border border-border-hover rounded-xl text-text-secondary placeholder-text-subtle text-sm focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 [&::-webkit-search-cancel-button]:hidden"
+            class="w-full pl-10 pr-3 py-2 bg-surface-alt border border-border-strong rounded-xl text-text-secondary placeholder-text-muted text-sm focus:outline-none focus:ring-1 focus:ring-primary-400 focus:border-primary-400 [&::-webkit-search-cancel-button]:hidden"
           />
         </div>
       </div>

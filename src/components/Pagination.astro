@@ -67,6 +67,7 @@ const getPaginationItems = (windowSize = PAGINATION_WINDOW_SIZE): PaginationItem
         {page > 1 && (
           <a
             href={getPageHref(page - 1)}
+            aria-label="Previous page"
             class="px-3 py-1.5 bg-surface-hover text-text-muted text-sm rounded-full hover:bg-surface-alt hover:text-text transition-colors duration-200"
           >
             <svg
@@ -108,6 +109,7 @@ const getPaginationItems = (windowSize = PAGINATION_WINDOW_SIZE): PaginationItem
         {page < totalPages && (
           <a
             href={getPageHref(page + 1)}
+            aria-label="Next page"
             class="px-3 py-1.5 bg-surface-hover text-text-muted text-sm rounded-full hover:bg-surface-alt hover:text-text transition-colors duration-200"
           >
             <svg

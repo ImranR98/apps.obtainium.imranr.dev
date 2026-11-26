@@ -74,10 +74,10 @@ if (categoryFilterMessage.length > 50) {
         {translations["apps"] || "apps"}
         {categories.length > 0 && ` • `}
         {categories.length > 0 && (
-          <span title={fullCategoryMessage} class="text-primary-300">{categoryFilterMessage}</span>
+          <span title={fullCategoryMessage} class="text-primary-600">{categoryFilterMessage}</span>
         )}
         {q && ` • `}
-        {q && <span class="text-primary-300">"{q}"</span>}
+        {q && <span class="text-primary-600">"{q}"</span>}
       </p>
       {(categories.length > 0 || q) && (
         <a href="/apps" class="text-xs text-text-muted hover:text-primary-500 transition-colors whitespace-nowrap shrink-0">
@@ -88,8 +88,8 @@ if (categoryFilterMessage.length > 50) {
 
     {
       errorMessage && (
-        <div class="mb-6 p-4 bg-red-900/20 border border-red-800/40 rounded-xl">
-          <p class="text-red-400 text-sm">{errorMessage}</p>
+        <div class="mb-6 p-4 bg-error/10 border border-error/30 rounded-xl">
+          <p class="text-error text-sm">{errorMessage}</p>
         </div>
       )
     }
@@ -123,9 +123,9 @@ if (categoryFilterMessage.length > 50) {
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
               </svg>
             </div>
-            <h3 class="text-base font-semibold text-text-secondary mb-1">
+            <h2 class="text-base font-semibold text-text-secondary mb-1">
               {translations["noAppsFound"] || "No apps found"}
-            </h3>
+            </h2>
             <p class="text-text-subtle text-sm max-w-md">
               {q
                 ? (translations["noAppsFoundSearch"] || "Try adjusting your search query or filters.")

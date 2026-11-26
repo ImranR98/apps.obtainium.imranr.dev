@@ -20,13 +20,15 @@
   --color-surface-alt: light-dark(#E8E6ED, #49464F);
   --color-border: light-dark(#E5E4EC, #49454F);
   --color-border-hover: light-dark(#CCC9D6, #938F99);
+  --color-border-strong: light-dark(#85828F, #A5A1AC);
 
   --color-text: light-dark(#1C1B1F, #E6E1E5);
   --color-text-secondary: light-dark(#49454F, #CAC4D0);
-  --color-text-muted: light-dark(#7B7883, #938F99);
-  --color-text-subtle: light-dark(#9F9BA3, #787579);
+  --color-text-muted: light-dark(#5A5761, #B7B4BE);
+  --color-text-subtle: light-dark(#6B6973, #A19EA8);
 
   --color-error: light-dark(#B3261E, #F2B8B5);
+  --color-warning: light-dark(#7C4A02, #FCD34D);
 }
 
 :root {
