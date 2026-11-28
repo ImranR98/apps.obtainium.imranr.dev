@@ -1,0 +1,28 @@
+{
+    "configs": [
+        {
+            "id": "com.novadial.phone",
+            "url": "https://github.com/dhilipmpms/NovaDial",
+            "author": "Dhilip MPMS",
+            "name": "NovaDial",
+            "altLabel": "F-Droid Build",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^NovaDial-v(\\\\d+.+)\\\\.apk$\"}"
+        },
+        {
+            "id": "com.novadial.phone",
+            "url": "https://github.com/dhilipmpms/NovaDial",
+            "author": "Dhilip MPMS",
+            "name": "NovaDial",
+            "altLabel": "GitHub Build (bundled with scrcpy-server binary)",
+            "additionalSettings": "{\"apkFilterRegEx\":\"^NovaDial-v(\\\\d+.+)-Bundled\\\\.apk$\"}"
+        }
+    ],
+    "icon": "https://f-droid.org/repo/com.novadial.phone/en-US/icon.png",
+    "categories": [
+        "contacts",
+        "dialer"
+    ],
+    "description": {
+        "en": "Modern Android dialer with built-in contacts, fast call history, AMOLED themes, dual-SIM support, privacy-focused calling, and rich contact management — a powerful alternative to Google Phone"
+    }
+}
