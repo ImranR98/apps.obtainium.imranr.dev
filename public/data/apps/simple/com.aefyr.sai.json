@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.aefyr.sai",
+        "url": "https://github.com/Aefyr/SAI",
+        "author": "Aefyr",
+        "name": "SAI [GitHub build]"
+    },
+    "icon": "https://raw.githubusercontent.com/Aefyr/SAI/37390abd41c50e12e770ed61289fb846f95c5de1/app/src/main/res/drawable-xxxhdpi/logo.png",
+    "categories": [
+        "utilities"
+    ],
+    "description": {
+        "en": "SAI (Split APKs Installer) is an Android app that lets you install split APKs (such as ones distributed as Android App Bundle). It has both rooted and rootless installation methods."
+    }
+}
