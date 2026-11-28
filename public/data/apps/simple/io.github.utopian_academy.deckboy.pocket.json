@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "io.github.utopian_academy.deckboy.pocket",
+        "url": "https://github.com/Utopian-Academy/Deckboy",
+        "author": "Utopian Academy",
+        "name": "Deckboy Pocket"
+    },
+    "icon": "https://raw.githubusercontent.com/Utopian-Academy/Deckboy/main/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+    "categories": [
+        "video_player"
+    ],
+    "description": {
+        "en": "Deckboy Pocket plays a cue list of videos, pictures and sound on an Android phone. It can run a show by itself, or follow a Deckboy desk on the same network and show one of its outputs. Open source (GPL-3.0)."
+    }
+}
