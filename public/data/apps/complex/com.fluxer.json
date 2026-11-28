@@ -1,0 +1,43 @@
+{
+    "configs": [
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "stable, FCM",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"stablefcm\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "stable, OSS",
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"stableoss\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "beta, FCM",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"betafcm\",\"autoApkFilterByArch\":true}"
+        },
+        {
+            "id": "com.fluxer",
+            "url": "https://github.com/fluxerapp/flutter_client",
+            "author": "Fluxer Platform AB",
+            "name": "Fluxer",
+            "altLabel": "beta, OSS",
+            "additionalSettings": "{\"includePrereleases\":true,\"fallbackToOlderReleases\":true,\"apkFilterRegEx\":\"betaoss\",\"autoApkFilterByArch\":true}"
+        }
+    ],
+    "icon": "https://fluxer.com/static/img/web-apple-touch-icon.d11b564b6ae672d1.png",
+    "categories": [
+        "community_clients"
+    ],
+    "description": {
+        "en": "Official Fluxer Mobile client built on the Flutter framework."
+    }
+}

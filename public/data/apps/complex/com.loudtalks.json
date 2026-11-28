@@ -1,0 +1,18 @@
+{
+    "configs": [
+        {
+            "id": "com.loudtalks",
+            "url": "https://zello.com/downloads/android/",
+            "author": "Zello Inc.",
+            "name": "Zello",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\"}"
+        }
+    ],
+    "icon": "https://res.cloudinary.com/dd217rd0j/image/upload/zellodotcom/appIcon--android-60.svg",
+    "categories": [
+        "other"
+    ],
+    "description": {
+        "en": "Turn your phone or tablet into a walkie talkie with this lightning fast free PTT (Push-To-Talk) radio app. Talk to your contacts privately or join public channels to engage in a hot debate."
+    }
+}

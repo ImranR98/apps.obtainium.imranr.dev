@@ -3,17 +3,34 @@
         {
             "id": "org.torproject.torbrowser",
             "url": "https://download.torproject.org/tor-browser-for-android/",
-            "author": "www.torproject.org",
+            "author": "Tor Project Inc.",
             "name": "Tor Browser",
-            "additionalSettings": "{\"intermediateLink\":[],\"customLinkFilterRegex\":\"\",\"filterByLinkText\":false,\"skipSort\":false,\"reverseSort\":false,\"sortByLastLinkSegment\":false,\"versionExtractWholePage\":false,\"requestHeader\":[{\"requestHeader\":\"User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36\"}],\"defaultPseudoVersioningMethod\":\"APKLinkHash\",\"trackOnly\":false,\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"1\",\"versionDetection\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"tor-browser-android-aarch64-\\\\d+(\\\\.\\\\d+)*\\\\.apk$\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"supportFixedAPKURL\":false}"
+            "altLabel": "aarch64",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"apkFilterRegEx\":\"tor-browser-android-aarch64-\\\\d+(\\\\.\\\\d+)*\\\\.apk$\"}"
+        },
+        {
+            "id": "org.torproject.torbrowser",
+            "url": "https://download.torproject.org/tor-browser-for-android/",
+            "author": "Tor Project Inc.",
+            "name": "Tor Browser",
+            "altLabel": "armv7",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"apkFilterRegEx\":\"tor-browser-android-armv7-\\\\d+(\\\\.\\\\d+)*\\\\.apk$\"}"
+        },
+        {
+            "id": "org.torproject.torbrowser",
+            "url": "https://download.torproject.org/tor-browser-for-android/",
+            "author": "Tor Project Inc.",
+            "name": "Tor Browser",
+            "altLabel": "x86_64",
+            "additionalSettings": "{\"defaultPseudoVersioningMethod\":\"ETag\",\"versionExtractionRegEx\":\"-([^-]+)\\\\.apk$\",\"matchGroupToUse\":\"$1\",\"apkFilterRegEx\":\"tor-browser-android-x86_64-\\\\d+(\\\\.\\\\d+)*\\\\.apk$\"}"
         }
     ],
-    "icon": "https://play-lh.googleusercontent.com/TIJ5UlSUZv84PBG8iKSeANijhTdwM07seW9uAmLBsdU7Xis5eaaolLQooIZzAYUOhK94YjvPVFY9R13jdVewOQ=s512",
+    "icon": "https://play-lh.googleusercontent.com/TIJ5UlSUZv84PBG8iKSeANijhTdwM07seW9uAmLBsdU7Xis5eaaolLQooIZzAYUOhK94YjvPVFY9R13jdVewOQ=s0?imgmax=0",
     "categories": [
         "browser"
     ],
     "description": {
-        "en": "Gecko-based browser that can also access the (Tor-)darknet.",
-        "de": "Gecko basierter Browser, der auch auf das (Tor-)Darknet zugreifen kann."
+        "en": "Tor Browser for Android is the only official mobile browser supported by the Tor Project, developers of the world’s strongest tool for privacy and freedom online.",
+        "de": "Der Tor Browser für Android ist der einzige offizielle mobile Browser, der vom Tor-Projekt unterstützt wird – den Entwicklern des weltweit stärksten Tools für Online-Privatsphäre und -Freiheit."
     }
 }

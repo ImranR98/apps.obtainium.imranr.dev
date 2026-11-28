@@ -1,0 +1,35 @@
+{
+    "configs": [
+        {
+            "id": "io.github.forkmaintainers.iceraven",
+            "url": "https://github.com/fork-maintainers/iceraven-browser",
+            "author": "fork-maintainers",
+            "name": "Iceraven Browser",
+            "altLabel": "arm64-v8a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"arm64-v8a\"}"
+        },
+        {
+            "id": "io.github.forkmaintainers.iceraven",
+            "url": "https://github.com/fork-maintainers/iceraven-browser",
+            "author": "fork-maintainers",
+            "name": "Iceraven Browser",
+            "altLabel": "armeabi-v7a",
+            "additionalSettings": "{\"apkFilterRegEx\":\"armeabi-v7a\"}"
+        },
+        {
+            "id": "io.github.forkmaintainers.iceraven",
+            "url": "https://github.com/fork-maintainers/iceraven-browser",
+            "author": "fork-maintainers",
+            "name": "Iceraven Browser",
+            "altLabel": "x86_64",
+            "additionalSettings": "{\"apkFilterRegEx\":\"x86_64\"}"
+        }
+    ],
+    "icon": "https://raw.githubusercontent.com/fork-maintainers/iceraven-browser/06c0bd88d883ba39ab755fe57d53747b91fd4acf/app/src/main/ic_launcher-playstore.png",
+    "categories": [
+        "browser"
+    ],
+    "description": {
+        "en": "Iceraven Browser is a web browser for Android, based on Mozilla's Fenix version of Firefox, GeckoView and Mozilla Android Components."
+    }
+}

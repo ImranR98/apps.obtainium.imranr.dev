@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "com.keylesspalace.tusky",
+        "url": "https://codeberg.org/tusky/Tusky",
+        "author": "tusky.app",
+        "name": "Tusky"
+    },
+    "icon": "https://codeberg.org/tusky/Tusky/raw/commit/eb167c623b9f29a847eba69ef0f4c5afdc007b0b/app/src/main/ic_launcher-web.png",
+    "categories": [
+        "community_clients"
+    ],
+    "description": {
+        "en": "A multi account client for the social network Mastodon"
+    }
+}

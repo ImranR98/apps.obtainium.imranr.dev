@@ -1,0 +1,15 @@
+{
+    "config": {
+        "id": "eu.siacs.conversations",
+        "url": "https://codeberg.org/iNPUTmice/Conversations",
+        "author": "Daniel Gultsch",
+        "name": "Conversations"
+    },
+    "icon": "https://codeberg.org/iNPUTmice/Conversations/raw/commit/e706912c7bdf84befb3d31101171a74b69e0ab30/src/conversations/res/drawable-xxxhdpi/main_logo.png",
+    "categories": [
+        "messaging"
+    ],
+    "description": {
+        "en": "Encrypted, easy-to-use XMPP instant messenger for your mobile device"
+    }
+}
